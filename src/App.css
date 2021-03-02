@@ -1,4 +1,31 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+.article-list-item { 
+  text-decoration: none;
+  text-align: center;
+   /* color: white;  */
+   /* background-color: white; */
+ padding: 16px 0 16px 0;
+}
+
+.article-list-item p {
+  padding-bottom: 32px; 
+  /* border-bottom: 2px solid black; */
+ }
+
+/* body {
+  font-family: "Montserrat";
+  font-size: 8px;
+} */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +62,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

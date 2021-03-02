@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import HomePage from './Pages/HomePage/HomePage';
+import ContactPage from './Pages/ContactPage/ContactPage';
 import './App.css';
+import PortfolioPage from './Pages/PortfolioPage/PortfolioPage';
+import PortfolioListPage from './Pages/PortfolioPage/PortfolioListPage';
+import ResumePage from './Pages/Resume/ResumePage';
+import NotFoundPage from './Pages/NotFoundPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <HomePage />
+        </div>
+        <Switch>
+          <Route path="/about" component={AboutPage} />
+          <Route path="/resume" component={ResumePage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/portfolio/:name" component={PortfolioPage} />
+          <Route path="/portfolio-list" component={PortfolioListPage  } />
+          <Route component={NotFoundPage} />
+        </Switch>
+        <Footer />
+
+      </Router>
+    );
+  }
 }
 
 export default App;
