@@ -21,11 +21,11 @@ const ProjectsList = ({ projects}) => {
 					<ProjectListCard>
 						<ProjectListImage src={project.image}/>
 						<ProjectListH2>
-							{project.title}
+							{/* {project.title} */}
 						</ProjectListH2>
-						{/* <ProjectListP >
+						<ProjectListP >
 						{project.description[0].substring(0, 150)}...
-						</ProjectListP> */}
+						</ProjectListP>
 						<div>
 						<ProjectsListBtnLink
 						href={project.GitHub}
