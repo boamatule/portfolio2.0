@@ -1,36 +1,32 @@
 import React from 'react';
-import {
-	FooterContainer,
-	FooterWrapper,
-	FooterLinksContainer,
-	FooterLinksWrapper,
-	FooterLinkItems,
-	FooterLink,
-	FooterLinkTitle,
-	SocialIcons,
-	SocialIconLink,
-	WebsiteRights,
-	SocialLogo,
-	SocialMediaWrapper,
-	SocialMedia,
-	NavBtnLink
-} from './FooterStyles';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import {
+  FooterContainer,
+  FooterWrapper,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinkItems,
+  FooterLink,
+  FooterLinkTitle,
+  SocialIcons,
+  SocialIconLink,
+  WebsiteRights,
+  SocialLogo,
+  SocialMediaWrapper,
+  SocialMedia,
+  NavBtnLink,
+} from './FooterStyles';
 
-
-
-const Footer = () => {
-	return (
-		<FooterContainer>
-		<FooterWrapper>
-			<SocialMedia>
-				<SocialMediaWrapper>
-					<SocialLogo to='/'>
-					</SocialLogo>
-					<WebsiteRights>
-						Crafted using Reactjs and Nodejs	&copy; {new Date().getFullYear()} Boa Matule
-					</WebsiteRights>
-					{/* <SocialIcons>
+const Footer = () => (
+  <FooterContainer>
+    <FooterWrapper>
+      <SocialMedia>
+        <SocialMediaWrapper>
+          <SocialLogo to="/" />
+          <WebsiteRights>
+            Crafted using Reactjs, Nodejs and Styled Components &copy; {new Date().getFullYear()} Boa Matule
+          </WebsiteRights>
+          {/* <SocialIcons>
 						<SocialIconLink href="https://www.linkedin.com/in/boaventura-matule-2082b068/" target="_blank" aria-label="LinkedIn">
 							<FaLinkedinIn />
 						</SocialIconLink>
@@ -44,14 +40,11 @@ const Footer = () => {
 							<FaInstagram />
 						</SocialIconLink>
 					</SocialIcons> */}
-				</SocialMediaWrapper>
-			</SocialMedia>
-			{/* <NavBtnLink></NavBtnLink> */}
-		</FooterWrapper>
-	</FooterContainer>
-
-	
-	)
-}
+        </SocialMediaWrapper>
+      </SocialMedia>
+      {/* <NavBtnLink></NavBtnLink> */}
+    </FooterWrapper>
+  </FooterContainer>
+);
 
 export default Footer;
