@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, TextArea, Input, Title, Button } from './ContactPageStyles';
+import { Container, Form, TextArea, Input, Title, Button, ArrowForward, ArrowRight } from './ContactPageStyles';
 
 const ContactPage = () => (
   // const [emailAddress, setEmailAddress] = useState('');
@@ -7,21 +7,25 @@ const ContactPage = () => (
 
   <Container>
     <Form onSubmit="" method="POST">
-      <Title>Let's get in touch</Title>
+      <Title>Let's get in touch!</Title>
       <Input
-        placeholder="Your Name"
+        placeholder="Enter Your Name"
         type="text"
+        required
         // value={emailAddress}
         // onChange={({ target }) => setEmailAddress(target.value)}
       />
       <Input
-        placeholder="Your Email"
-        type=""
+        placeholder="Enter Your Email Address"
+        type="text"
+        required
         // value={emailAddress}
         // onChange={({ target }) => setEmailAddress(target.value)}
       />
       <TextArea placeholder="What are we going to build today?" type="message" />
-      <Button type="submit">Send</Button>
+      <Button type="submit" disabled="isInvalid">
+        SUBMIT
+      </Button>
     </Form>
   </Container>
 );

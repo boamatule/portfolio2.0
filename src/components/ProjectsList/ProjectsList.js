@@ -1,55 +1,23 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-	ProjectsListContainer,
-	ProjectsListWrapper,
-	ProjectListCard,
-	ProjectListImage,
-	ProjectsListH1,
-	ProjectListH2,
-	ProjectListP,
-	ProjectsListBtnLink,
-} from './ProjectsListStyles'
+import { Container, Wrapper, ButtonLink, Meta, Card, Image, Entities, SubTitle, H1, Title } from './ProjectsListStyles';
 
-
-const ProjectsList = ({ projects}) => {
-	return (
-		<ProjectsListContainer>
-			<ProjectsListWrapper>
-			{projects.map((project, key) => (
-				<div key={key} to={`/project/${project.name}`}>
-					<ProjectListCard>
-						<ProjectListImage src={project.image}/>
-						<ProjectListH2>
-							{project.title}
-						</ProjectListH2>
-						{/* <ProjectListP >
-						{project.description[0].substring(0, 150)}...
-						</ProjectListP> */}
-						<div>
-						<ProjectsListBtnLink
-						href={project.GitHub}
-						target="_blank"
-						rel="noopener"
-						primary>
-							GitHub	
-						</ProjectsListBtnLink>
-						<ProjectsListBtnLink 
-							href={project.URL}
-							target="_blank"
-							rel="noopener"
-						primary>
-							Visit me
-							</ProjectsListBtnLink>
-						</div>
-					</ProjectListCard>
-
-				</div>
-				
-			))}
-			</ProjectsListWrapper>
-		</ProjectsListContainer>
-	)
-}
+const ProjectsList = ({ projects }) => (
+  <Container>
+    <Title>Curated projects using different tech stack</Title>
+    <Entities>
+      {projects.map((project, key) => (
+        <Card key={key} to={`/project/${project.name}`}>
+          <Image src={project.image} />
+          <Meta>
+            {/* <Title>{project.title}</Title> */}
+            <SubTitle>{project.title}</SubTitle>
+          </Meta>
+        </Card>
+      ))}
+    </Entities>
+  </Container>
+);
 
 export default ProjectsList;

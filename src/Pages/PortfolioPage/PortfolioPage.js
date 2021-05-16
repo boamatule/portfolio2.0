@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import NotFoundPage from '../NotFoundPage';
+import NotFound from '../NotFoundPage/NotFound';
 import portfolioContent from './portfolio-content';
 
 const PortfolioPage = ({ match }) => {
   const { name } = match.params;
   const project = portfolioContent.find((project) => project.name === name);
 
-  if (!project) return <NotFoundPage />;
+  if (!project) return <NotFound />;
 
   return (
     <>

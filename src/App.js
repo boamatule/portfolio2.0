@@ -8,7 +8,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 import PortfolioPage from './Pages/PortfolioPage/PortfolioPage';
 import PortfolioListPage from './Pages/PortfolioPage/PortfolioListPage';
 import ResumePage from './Pages/Resume/ResumePage';
-import NotFoundPage from './Pages/NotFoundPage';
+import NotFound from './Pages/NotFoundPage/NotFound';
 
 class App extends Component {
   render() {
@@ -23,7 +23,7 @@ class App extends Component {
           <Route path="/contact" component={ContactPage} />
           <Route path="/portfolio/:name" component={PortfolioPage} />
           <Route path="/portfolio-list" component={PortfolioListPage} />
-          <Route component={NotFoundPage} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>
