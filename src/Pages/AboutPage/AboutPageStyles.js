@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
-import { Link } from 'react-scroll';
-// import { Link } from 'react-router-dom';
+// import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const Container = styled.div`
