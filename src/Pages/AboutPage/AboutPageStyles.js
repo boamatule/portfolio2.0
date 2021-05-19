@@ -12,7 +12,7 @@ export const Container = styled.div`
   z-index: 1;
   margin-top: 100px;
   padding-top: 0px;
-  position: relative;
+  /* position: relative; */
 `;
 
 export const Content = styled.div`
@@ -23,7 +23,7 @@ export const Content = styled.div`
   left: 0; */
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */
   align-items: center;

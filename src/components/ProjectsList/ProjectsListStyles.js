@@ -78,8 +78,7 @@ export const Meta = styled.div`
   display: flex;
   /* position: absolute; */
   bottom: 0;
-  padding: 12px;
-  /* background-color: #0000008f; */
+  padding: 10px;
   background-color: transparent;
   border: 2px solid grey;
   border-radius: 4px;
