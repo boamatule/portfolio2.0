@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Form, TextArea, Input, Title, Button, ArrowForward, ArrowRight } from './ContactPageStyles';
+import { Container, Form, TextArea, Input, Title, ArrowForward, ArrowRight } from './ContactPageStyles';
+import { Button } from '../../global-styles';
 
 const ContactPage = () => (
   // const [emailAddress, setEmailAddress] = useState('');

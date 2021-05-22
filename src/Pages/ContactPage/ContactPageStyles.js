@@ -31,7 +31,8 @@ export const Container = styled.div`
   width: 100%;
   background: transparent;
   /* background-color: rgba(0, 0, 0, 0.75); */
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  border: none;
   box-sizing: border-box;
   margin: auto;
   left: 0;
@@ -64,7 +65,8 @@ export const Form = styled.form`
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px 16px;
-  overflow: hidden;
+  /* overflow: hidden;
+  outline: none; */
   /* visibility: visible; */
   /* border-radius: 4px; */
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0); */
@@ -96,10 +98,12 @@ export const TextArea = styled.textarea`
   /* height: 200px; */
   background: none;
   border: 0;
-  /* border-radius: 4px; */
+  border: none;
   line-height: 30px;
   padding: 20px 18px;
   border-bottom: 2px solid #01bf71;
+  margin-bottom: 20px;
+  /* outline: none; */
 `;
 
 export const Text = styled.span`

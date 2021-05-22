@@ -17,6 +17,9 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    /* color: #333333;
+    background-color: white; */
+
 	}
 `;
 
@@ -36,7 +39,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
+  border-radius: 38px;
   background: ${({ primary }) => (primary ? '#4B67FB' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};

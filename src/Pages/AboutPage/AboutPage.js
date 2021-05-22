@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ContactPage from '../ContactPage/ContactPage';
-import { Container, Title, Content, H1, P, Button, ArrowForward, ArrowRight } from './AboutPageStyles';
+import { Container, Title, Content, H1, P, ArrowForward, ArrowRight } from './AboutPageStyles';
+import { Button } from '../../global-styles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -19,9 +19,12 @@ const AboutPage = () => {
           most of the time wondering about the beauty of nature. I do code when i feel it. Always trying my best to be
           helpful when it's needed. I would rather spend all night working than wake up when i am dreaming at 8 a.m!
         </P>
-        <Button to="contact" onMouseEnter={onHover} primary="true" dark="true">
-          Get in touch {hover ? <ArrowForward /> : <ArrowRight />}
-        </Button>
+        <Link to="/contact">
+          <Button onMouseEnter={onHover} primary="true" dark="true">
+            Get in touch
+            {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+          </Button>
+        </Link>
       </Content>
     </Container>
   );

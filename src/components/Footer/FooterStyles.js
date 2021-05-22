@@ -1,9 +1,13 @@
 import styled from 'styled-components/macro';
 import { Link, Link as LinkRouter } from 'react-router-dom';
 
-export const FooterContainer = styled.footer`
+export const FooterContainer = styled.div`
   background-color: #282c34;
-  padding: 20px 10px;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FooterWrapper = styled.div`
