@@ -1,68 +1,8 @@
-// import React from 'react';
-// import { FaGithub, FaLinkedinIn, FaBars } from 'react-icons/fa';
-// import {
-//   Nav,
-//   NavbarContainer,
-//   NavLogo,
-//   MobilIcon,
-//   NavLinks,
-//   NavItem,
-//   NavMenu,
-//   NavBtn,
-//   NavBtnLink,
-//   SocialIcons,
-//   SocialIconLink,
-// } from './NavBarStyles';
-
-// const NavBar = () => (
-//   <>
-//     <Nav>
-//       <NavbarContainer>
-//         <NavLogo to="/about">Boa Matule</NavLogo>
-//         <MobilIcon
-//         // onClick={toggle}
-//         >
-//           <FaBars />
-//         </MobilIcon>
-//         <NavMenu>
-//           <NavItem>
-//             <NavLinks to="/about">about</NavLinks>
-//           </NavItem>
-//           <NavItem>
-//             <NavLinks to="/portfolio-list">portfolio</NavLinks>
-//           </NavItem>
-//           <NavItem>
-//             <NavLinks to="/resume">resume</NavLinks>
-//           </NavItem>
-//           <NavItem>
-//             <NavLinks to="/contact">contact</NavLinks>
-//           </NavItem>
-//         </NavMenu>
-
-//         <SocialIcons>
-//           <SocialIconLink
-//             href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-//             target="_blank"
-//             aria-label="LinkedIn"
-//           >
-//             <FaLinkedinIn />
-//           </SocialIconLink>
-//           <SocialIconLink href="https://github.com/boamatule" target="_blank" aria-label="LinkedIn">
-//             <FaGithub />
-//           </SocialIconLink>
-//         </SocialIcons>
-//       </NavbarContainer>
-//     </Nav>
-//   </>
-// );
-
-// export default NavBar;
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global-styles';
 
-// eslint-disable-next-line import/named
 import {
   Nav,
   NavbarContainer,
@@ -101,10 +41,10 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">
+            {/* <NavLogo to="/">
               <NavIcon />
               Boa Matule
-            </NavLogo>
+            </NavLogo> */}
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
@@ -122,7 +62,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLinks to="/resume">RESUME</NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="/">portfolio</NavLinks>
               </NavItem>
               <NavItemBtn>
@@ -141,7 +81,7 @@ const NavBar = () => {
                     </Button>
                   </NavBtnLink>
                 )}
-              </NavItemBtn>
+              </NavItemBtn> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>

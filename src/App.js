@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // eslint-disable-next-line import/no-named-as-default
 import GlobalStyles from './global-styles';
 import './App.css';
-import HomeInfo from './components/HomeInfo/HomeInfo';
+// import HomeInfo from './components/HomeInfo/HomeInfo';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import HomePage from './Pages/HomePage/HomePage';
 import ContactPage from './Pages/ContactPage/ContactPage';
@@ -12,16 +12,17 @@ import PortfolioListPage from './Pages/PortfolioPage/PortfolioListPage';
 import ResumePage from './Pages/Resume/ResumePage';
 import NotFound from './Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from './components';
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <GlobalStyles />
+        <ScrollToTop />
         <NavBar />
         <Switch>
           <Route path="/" component={HomePage} exact />
-          {/* <Route path="/" component={HomeInfo} exact /> */}
           <Route path="/about" component={AboutPage} />
           <Route path="/resume" component={ResumePage} />
           <Route path="/contact" component={ContactPage} />
