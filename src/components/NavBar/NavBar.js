@@ -84,7 +84,7 @@ const NavBar = () => {
                 )} */}
               </NavItemBtn>
             </NavMenu>
-            <Toggle theme={theme} toggleTheme={themeToggler} />
+            {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
