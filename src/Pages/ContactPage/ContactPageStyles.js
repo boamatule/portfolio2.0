@@ -27,7 +27,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   /* min-height: 400px; */
-  height: 800px;
+  /* height: 800px; */
   width: 100%;
   background: transparent;
   /* background-color: rgba(0, 0, 0, 0.75); */
@@ -44,6 +44,18 @@ export const Container = styled.div`
   /* margin-bottom: 100px; */
   margin-top: 10px;
   overflow: hidden;
+  color: #fff;
+  padding: 0px 0;
+  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
+`;
+
+export const ContactWrapper = styled.div`
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0px;
+  background: transparent;
+  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
 export const Title = styled.h1`
@@ -58,8 +70,8 @@ export const Form = styled.form`
   /* background: #e0e0d9; */
   /* background: transparent; */
   max-width: 400px;
-  /* height: auto; */
-  /* width: 100%; */
+  height: auto;
+  width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
@@ -68,12 +80,8 @@ export const Form = styled.form`
   /* overflow: hidden;
   outline: none; */
   /* visibility: visible; */
-  /* border-radius: 4px; */
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0); */
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
-  }
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 `;
 
 export const Input = styled.input`
@@ -91,6 +99,11 @@ export const Input = styled.input`
   &:last-of-type {
     margin-bottom: 30px;
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -103,7 +116,12 @@ export const TextArea = styled.textarea`
   padding: 20px 18px;
   border-bottom: 2px solid #01bf71;
   margin-bottom: 20px;
-  /* outline: none; */
+  color: white;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 `;
 
 export const Text = styled.span`

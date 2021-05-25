@@ -1,34 +1,66 @@
-import React from 'react';
-import { Container, Form, TextArea, Input, Title, ArrowForward, ArrowRight } from './ContactPageStyles';
-import { Button } from '../../global-styles';
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
+import { Form, TextArea, Input, Title, ArrowForward, ArrowRight, ContactWrapper } from './ContactPageStyles';
+import { Button, Container } from '../../global-styles';
 
-const ContactPage = () => (
-  // const [emailAddress, setEmailAddress] = useState('');
-  // const [password, setPassword] = useState('')
+const ContactPage = ({ lightBg }) => {
+  const [message, setMessage] = useState({});
 
-  <Container>
-    <Form onSubmit="" method="POST">
-      <Title>Let's get in touch!</Title>
-      <Input
-        placeholder="Enter Your Name"
-        type="text"
-        required
-        // value={emailAddress}
-        // onChange={({ target }) => setEmailAddress(target.value)}
-      />
-      <Input
-        placeholder="Enter Your Email Address"
-        type="text"
-        required
-        // value={emailAddress}
-        // onChange={({ target }) => setEmailAddress(target.value)}
-      />
-      <TextArea placeholder="What are we going to build today?" type="message" />
-      <Button type="submit" disabled="isInvalid">
-        SUBMIT
-      </Button>
-    </Form>
-  </Container>
-);
+  const encode = (data) =>
+    Object.keys(data)
+      .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .join('&');
+
+  const handleChange = (e) => {
+    setMessage({
+      ...message,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...message }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  return (
+    <ContactWrapper>
+      <Container lightBg={lightBg}>
+        <Title>Don't be shy! Send me a quick note :)</Title>
+        <Form name="contact" method="POST" onSubmit={handleSubmit}>
+          <Input
+            placeholder="Full Name"
+            type="text"
+            name="name"
+            onChange={handleChange}
+            required
+            // required
+            // value={emailAddress}
+            // onChange={({ target }) => setEmailAddress(target.value)}
+          />
+          <Input
+            placeholder="Email Address"
+            type="email"
+            name="email"
+            onChange={handleChange}
+            required
+            // required
+            // value={emailAddress}
+            // onChange={({ target }) => setEmailAddress(target.value)}
+          />
+          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+          <Button type="submit">SUBMIT</Button>
+        </Form>
+      </Container>
+    </ContactWrapper>
+  );
+};
 
 export default ContactPage;

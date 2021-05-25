@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
+import { ThemeProvider } from 'styled-components';
+import { FaGithub, FaLinkedinIn, FaBars, FaTimes, FaMoon, BiSun, FaSun } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../global-styles';
+import { lightTheme, darkTheme } from '../DarkMode/Themes';
+import Toggle from '../DarkMode/Toggler';
+import useDarkMode from '../DarkMode/useDarkMode';
 
 import {
   Nav,
@@ -20,6 +23,10 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  const [theme, themeToggler] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
   const handleClick = () => setClick(!click);
 
   const showButton = () => {
@@ -37,7 +44,7 @@ const NavBar = () => {
   window.addEventListener('resize', showButton);
 
   return (
-    <>
+    <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
@@ -48,25 +55,19 @@ const NavBar = () => {
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">HOME</NavLinks>
+                <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/about">ABOUT</NavLinks>
+                <NavLinks to="/about">About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+                <NavLinks to="/portfolio-list">Portfolio</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contact">CONTACT</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/resume">RESUME</NavLinks>
-              </NavItem>
-              {/* <NavItem>
-                <NavLinks to="/">portfolio</NavLinks>
+                <NavLinks to="/contact">Contact</NavLinks>
               </NavItem>
               <NavItemBtn>
-                {button ? (
+                {/* {button ? (
                   <NavBtnLink to="/sign-up">
                     <Button primary>Sign up</Button>
                   </NavBtnLink>
@@ -80,13 +81,14 @@ const NavBar = () => {
                       Sign up
                     </Button>
                   </NavBtnLink>
-                )}
-              </NavItemBtn> */}
+                )} */}
+              </NavItemBtn>
             </NavMenu>
+            <Toggle theme={theme} toggleTheme={themeToggler} />
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
-    </>
+    </ThemeProvider>
   );
 };
 

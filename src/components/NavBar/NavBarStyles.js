@@ -2,10 +2,9 @@ import styled from 'styled-components/macro';
 import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
-// import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #282c34;
+  background: transparent;
   height: 80;
   display: flex;
   justify-content: center;
@@ -82,7 +81,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 4px solid #01bf71;
+    border-bottom: 4px solid purple;
   }
 
   @media screen and (max-width: 960px) {
@@ -95,11 +94,12 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  /* color: #fff; */
+  color: silver;
   display: flex;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 4.9rem;
   height: 100%;
 
   @media screen and (max-width: 960px) {
@@ -121,7 +121,6 @@ export const NavItemBtn = styled.li`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
   }
 `;
 

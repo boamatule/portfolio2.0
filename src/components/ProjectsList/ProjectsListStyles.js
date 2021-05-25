@@ -6,10 +6,19 @@ export const Title = styled.p`
   font-size: 24px;
   color: #e5e5e5;
   font-weight: bold;
-  margin-left: 56px;
-  margin-right: 56px;
-  margin-top: 0;
-  margin-bottom: 40px;
+  /* margin-left: 56px;
+  margin-right: 56px; */
+  /* margin-top: 10px; */
+  /* margin-bottom: 40px; */
+  justify-content: center;
+  text-align: center;
+`;
+
+export const ProjectWrapper = styled.div`
+  color: #fff;
+  padding: 60px 0;
+  background: transparent;
+  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
 export const Container = styled.div`
@@ -24,6 +33,9 @@ export const Container = styled.div`
   z-index: 1;
   margin-top: 80px;
   margin-bottom: 60px;
+  color: #fff;
+  padding: 160px 0;
+  background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
 
   @media screen and (max-width: 768px) {
     height: 1100px;

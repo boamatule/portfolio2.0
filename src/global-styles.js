@@ -1,25 +1,14 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-// export const GlobalStyles = createGlobalStyle`
-// 	html, body {
-// 		font-family: 'Helvetica Neue', 'Helvetica, Arial, sans-serif';
-// 		-webkit-font-smoothing: antialiased;
-// 		-moz-osx-font-smoothing: grayscale;
-// 		background-color: black;
-// 		color: #333333;
-// 		font-size: 16px;
-// 	}
-// `;
-
 export const GlobalStyles = createGlobalStyle`
 	* {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    /* color: #333333;
-    background-color: white; */
-
+    font-family: 'Roboto Mono', monospace;
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.50s linear;
 	}
 `;
 
@@ -39,7 +28,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 38px;
+  border-radius: 1px;
   background: ${({ primary }) => (primary ? '#4B67FB' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};

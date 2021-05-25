@@ -2,12 +2,14 @@ import styled from 'styled-components/macro';
 import { Link, Link as LinkRouter } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-  background-color: #282c34;
+  background-color: #101522;
+  background-color: transparent;
   padding: 2rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border-top: 2px solid #01bf71; */
 `;
 
 export const FooterWrapper = styled.div`
@@ -82,6 +84,7 @@ export const SocialMediaWrapper = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
+  border-bottom: 2px solid #01bf71;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { HomeInfo } from '../../components';
+import ContactPage from '../ContactPage/ContactPage';
+import PortfolioListPage from '../PortfolioPage/PortfolioListPage';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
 const HomePage = () => (
@@ -8,6 +10,8 @@ const HomePage = () => (
     <HomeInfo {...homeObjTwo} />
     <HomeInfo {...homeObjThree} />
     <HomeInfo {...homeObjFour} />
+    {/* <PortfolioListPage />
+    <ContactPage /> */}
   </>
 );
 

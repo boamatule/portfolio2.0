@@ -7,11 +7,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 800px;
+  /* padding: 80px 0; */
+  /* height: 800px; */
   z-index: 1;
-  margin-top: 100px;
-  padding-top: 0px;
+  /* margin-top: 100px; */
+  /* padding-top: 100px; */
   /* position: relative; */
 `;
 
@@ -23,6 +23,7 @@ export const Content = styled.div`
   left: 0; */
   width: 100%;
   height: 100%;
+  padding: 80px 0;
   /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */

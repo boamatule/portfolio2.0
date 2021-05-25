@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+/* eslint-disable react/button-has-type */
+import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import useDarkMode from './components/DarkMode/useDarkMode';
 // eslint-disable-next-line import/no-named-as-default
 import GlobalStyles from './global-styles';
 import './App.css';
@@ -13,12 +16,19 @@ import ResumePage from './Pages/Resume/ResumePage';
 import NotFound from './Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from './components';
 import ScrollToTop from './components/ScrollToTop';
+import { lightTheme, darkTheme } from './components/DarkMode/Themes';
+import Toggle from './components/DarkMode/Toggler';
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  // if (!mountedComponent) return <div />;
+  return (
+    <ThemeProvider theme={themeMode}>
       <Router>
         <GlobalStyles />
+        {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
         <ScrollToTop />
         <NavBar />
         <Switch>
@@ -28,13 +38,12 @@ class App extends Component {
           <Route path="/contact" component={ContactPage} />
           <Route path="/portfolio/:name" component={PortfolioPage} />
           <Route path="/portfolio-list" component={PortfolioListPage} />
-          <AboutPage />
           <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>
-    );
-  }
-}
+    </ThemeProvider>
+  );
+};
 
 export default App;
