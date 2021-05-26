@@ -17,13 +17,13 @@ import NotFound from './Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from './components';
 import ScrollToTop from './components/ScrollToTop';
 import { lightTheme, darkTheme } from './components/DarkMode/Themes';
+// eslint-disable-next-line import/no-named-as-default
 import Toggle from './components/DarkMode/Toggler';
 
 const App = () => {
-  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-  // if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
       <Router>

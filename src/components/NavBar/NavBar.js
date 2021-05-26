@@ -66,25 +66,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLinks to="/contact">Contact</NavLinks>
               </NavItem>
-              <NavItemBtn>
-                {/* {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>Sign up</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to="/sign-up">
-                    <Button
-                      // onClick={closeMobileMenu}
-                      fonBig
-                      primary
-                    >
-                      Sign up
-                    </Button>
-                  </NavBtnLink>
-                )} */}
-              </NavItemBtn>
             </NavMenu>
-            {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

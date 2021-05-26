@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.50s linear;
+    transition: all 0.5s linear;
 	}
 `;
 

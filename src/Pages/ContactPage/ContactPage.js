@@ -35,26 +35,8 @@ const ContactPage = ({ lightBg }) => {
       <Container lightBg={lightBg}>
         <Title>Don't be shy! Send me a quick note :)</Title>
         <Form name="contact" method="POST" onSubmit={handleSubmit}>
-          <Input
-            placeholder="Full Name"
-            type="text"
-            name="name"
-            onChange={handleChange}
-            required
-            // required
-            // value={emailAddress}
-            // onChange={({ target }) => setEmailAddress(target.value)}
-          />
-          <Input
-            placeholder="Email Address"
-            type="email"
-            name="email"
-            onChange={handleChange}
-            required
-            // required
-            // value={emailAddress}
-            // onChange={({ target }) => setEmailAddress(target.value)}
-          />
+          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
           <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
           <Button type="submit">SUBMIT</Button>
         </Form>
