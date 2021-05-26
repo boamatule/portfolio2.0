@@ -15,13 +15,13 @@ import {
   SocialMediaWrapper,
   SocialMedia,
   NavBtnLink,
+  Copyright,
 } from './FooterStyles';
 
 const Footer = () => (
   <FooterContainer>
-    <WebsiteRights>
-      Crafted using Reactjs, Nodejs and Styled Components &copy; {new Date().getFullYear()} Boa Matule
-    </WebsiteRights>
+    <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
+    <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
     {/* <FooterWrapper>
       <SocialMedia>
         <SocialMediaWrapper>

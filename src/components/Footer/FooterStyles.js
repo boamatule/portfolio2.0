@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 import { Link, Link as LinkRouter } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  /* background-color: #101522; */
   background-color: transparent;
   padding: 2rem 0 1rem 0;
   display: flex;
@@ -10,10 +10,23 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   /* border-top: 2px solid #01bf71; */
+
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
 
 export const FooterWrapper = styled.div`
-  /* padding: 48px 24px; */
+  padding: 48px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,4 +148,10 @@ export const NavBtnLink = styled(LinkRouter)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+`;
+
+export const Copyright = styled.div`
+  color: purple;
+  font-size: 14px;
+  margin-bottom: 20px;
 `;

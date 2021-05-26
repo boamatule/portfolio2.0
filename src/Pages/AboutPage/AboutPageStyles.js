@@ -38,10 +38,6 @@ export const H1 = styled.h2`
   font-size: 20px;
   text-align: center;
 
-  @media screen and (max-width: 760px) {
-    font-size: 40px;
-  }
-
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -65,11 +61,15 @@ export const P = styled.p`
 `;
 
 export const Title = styled.h1`
-  color: silver;
+  color: purple;
   margin-top: 20px;
   padding-bottom: 20px;
   font-size: 40px;
   margin: 16px;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')}; */
 `;
 
 // export const Button = styled.a`

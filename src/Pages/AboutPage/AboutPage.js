@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Title, Content, H1, P, ArrowForward, ArrowRight } from './AboutPageStyles';
-import { Button } from '../../global-styles';
+import { Title, Content, H1, P, ArrowForward, ArrowRight } from './AboutPageStyles';
+import { Button, Container } from '../../global-styles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
