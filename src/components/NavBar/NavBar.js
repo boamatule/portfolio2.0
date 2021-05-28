@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { FaGithub, FaLinkedinIn, FaBars, FaTimes, FaMoon, BiSun, FaSun } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import Toggle from '../DarkMode/Toggler';
@@ -17,15 +16,13 @@ import {
   NavItem,
   NavItemBtn,
   NavBtnLink,
+  NavLinkedIn,
+  NavGithub,
 } from './NavBarStyles';
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
-  const [theme, themeToggler] = useDarkMode();
-
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const handleClick = () => setClick(!click);
 
@@ -44,33 +41,33 @@ const NavBar = () => {
   window.addEventListener('resize', showButton);
 
   return (
-    <ThemeProvider theme={themeMode}>
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav>
-          <NavbarContainer>
-            {/* <NavLogo to="/">
+    <IconContext.Provider value={{ color: '#fff' }}>
+      <Nav>
+        <NavbarContainer>
+          {/* <NavLogo to="/">
               <NavIcon />
               Boa Matule
             </NavLogo> */}
-            <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/">Home</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/about">About</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/portfolio-list">Portfolio</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/contact">Contact</NavLinks>
-              </NavItem>
-            </NavMenu>
-          </NavbarContainer>
-        </Nav>
-      </IconContext.Provider>
-    </ThemeProvider>
+          <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
+          <NavMenu onClick={handleClick} click={click}>
+            <NavItem>
+              <NavLinks to="/" text={{ color: 'purple' }}>
+                HOME
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/about">ABOUT</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/contact">CONTACT</NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavbarContainer>
+      </Nav>
+    </IconContext.Provider>
   );
 };
 

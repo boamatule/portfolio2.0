@@ -1,9 +1,10 @@
 import styled from 'styled-components/macro';
-import { FaMagento } from 'react-icons/fa';
+import { FaMagento, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const Nav = styled.nav`
+  /* background-color: red; */
   background: transparent;
   height: 80;
   display: flex;
@@ -13,7 +14,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 2px solid #01bf71;
+  /* border-bottom: 2px solid #01bf71; */
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -71,7 +72,7 @@ export const NavMenu = styled.ul`
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     background: #101522;
   }
 `;
@@ -94,12 +95,11 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  /* color: #fff; */
   color: silver;
   display: flex;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 4.9rem;
+  padding: 0.5rem 3rem;
   height: 100%;
 
   @media screen and (max-width: 960px) {
@@ -109,8 +109,8 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: #01bf71;
-      transition: 0.3s ease;
+      color: purple;
+      /* transition: 0.3s ease; */
     }
   }
 `;

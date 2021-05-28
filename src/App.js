@@ -26,9 +26,10 @@ const App = () => {
 
   return (
     <ThemeProvider theme={themeMode}>
+      <Toggle theme={theme} toggleTheme={themeToggler} />
       <Router>
         <GlobalStyles />
-        <Toggle theme={theme} toggleTheme={themeToggler} />
+        {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
         <ScrollToTop />
         <NavBar />
         <Switch>

@@ -20,15 +20,11 @@ import {
 
 const Footer = () => (
   <FooterContainer>
-    <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
-    <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
-    {/* <FooterWrapper>
+    <FooterWrapper>
+      <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
       <SocialMedia>
         <SocialMediaWrapper>
           <SocialLogo to="/" />
-          <WebsiteRights>
-            Crafted using Reactjs, Nodejs and Styled Components &copy; {new Date().getFullYear()} Boa Matule
-          </WebsiteRights>
           <SocialIcons>
             <SocialIconLink
               href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
@@ -57,8 +53,8 @@ const Footer = () => (
           </SocialIcons>
         </SocialMediaWrapper>
       </SocialMedia>
-      <NavBtnLink />
-    </FooterWrapper> */}
+      <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
+    </FooterWrapper>
   </FooterContainer>
 );
 

@@ -21,22 +21,25 @@ export const Content = styled.div`
   right: 0;
   bottom: 0;
   left: 0; */
-  width: 100%;
-  height: 100%;
-  padding: 80px 0;
+  /* width: 100%;
+  height: 100%; */
+  padding: 10px 100px;
   /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */
-  align-items: center;
+  /* align-items: center; */
+  justify-content: flex-start;
   /* padding: 8px 24px; */
   flex-direction: column;
-  /* z-index: 3; */
+  z-index: 1;
 `;
 
 export const H1 = styled.h2`
   color: silver;
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
+  justify-content: flex-start;
+  letter-spacing: 1.4px;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -44,12 +47,15 @@ export const H1 = styled.h2`
 `;
 
 export const P = styled.p`
+  justify-content: flex-start;
   margin-top: 20px;
   padding-bottom: 40px;
   color: silver;
-  font-size: 20px;
-  text-align: center;
-  max-width: 600px;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  /* line-height: 24px; */
+  /* text-align: center; */
+  /* max-width: 600px; */
 
   @media screen and (max-width: 760px) {
     font-size: 24px;
@@ -62,13 +68,15 @@ export const P = styled.p`
 
 export const Title = styled.h1`
   color: purple;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  /* padding-bottom: 20px; */
   font-size: 40px;
-  margin: 16px;
+  /* margin: 16px; */
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
+  justify-content: flex-start;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '')};
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')}; */
 `;
 
@@ -121,24 +129,24 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   font-size: 20px;
 `;
 
-export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-  }
-`;
+// export const NavItemBtn = styled.li`
+//   @media screen and (max-width: 960px) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 120px;
+//   }
+// `;
 
-export const NavBtnLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px 16px;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-`;
+// export const NavBtnLink = styled(Link)`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-decoration: none;
+//   padding: 8px 16px;
+//   width: 100%;
+//   height: 100%;
+//   border: none;
+//   outline: none;
+// `;
