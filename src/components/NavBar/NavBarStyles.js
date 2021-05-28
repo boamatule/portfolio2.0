@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { FaMagento, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 

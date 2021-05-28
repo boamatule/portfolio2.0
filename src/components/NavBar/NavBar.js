@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import Toggle from '../DarkMode/Toggler';
