@@ -10,9 +10,9 @@ const AboutPage = () => {
     setHover(!hover);
   };
   return (
-    <Container>
-      <Content>
-        <Title>Hi. I'm Boa Matule.</Title>
+    <Content>
+      <Container>
+        <Title>Hi, I'm Boa Matule.</Title>
         <H1>Daydreamer Full Stack Developer based in beautiful Oslo, Norway.</H1>
         <P>
           A bit obessed with imperfection and passionated about small details like the color of butterflies, i spend
@@ -20,15 +20,14 @@ const AboutPage = () => {
           helpful when it's needed. I would rather spend all night working than wake up when i am dreaming at 8 a.m!
           Check some of my work in my portfolio. If you would like to work with me, just drop me an email.
         </P>
-        {/* <P>Check my work or just get in touch</P> */}
         <Link to="/portfolio-list">
           <Button onMouseEnter={onHover} primary="true" dark="true">
             Say Hi
             {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
           </Button>
         </Link>
-      </Content>
-    </Container>
+      </Container>
+    </Content>
   );
 };
 

@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 // eslint-disable-next-line import/prefer-default-export
 export const HomeInfoSec = styled.div`
   color: #fff;
-  padding: 160px 0;
+  padding: 80px 0;
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
@@ -17,8 +17,8 @@ export const InfoRow = styled.div`
 
 export const InfoColumn = styled.div`
   margin-bottom: 15px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 60px;
+  padding-left: 60px;
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;

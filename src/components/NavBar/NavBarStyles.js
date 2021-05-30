@@ -59,9 +59,9 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  /* cursor: pointer;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 2rem; */
+  font-size: 2rem;
 
   @media screen and (max-width: 960px) {
     display: flex;
@@ -72,8 +72,10 @@ export const NavMenu = styled.ul`
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
-    /* transition: all 0.5s ease; */
+    transition: all 0.5s ease;
     background: #101522;
+    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')}; */
+    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')};
   }
 `;
 

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { lightTheme, darkTheme } from '../DarkMode/Themes';
-import Toggle from '../DarkMode/Toggler';
-import useDarkMode from '../DarkMode/useDarkMode';
-
 import {
   Nav,
   NavbarContainer,
@@ -39,7 +35,7 @@ const NavBar = () => {
   window.addEventListener('resize', showButton);
 
   return (
-    <IconContext.Provider value={{ color: '#fff' }}>
+    <IconContext.Provider value={{ color: 'purple' }}>
       <Nav>
         <NavbarContainer>
           {/* <NavLogo to="/">

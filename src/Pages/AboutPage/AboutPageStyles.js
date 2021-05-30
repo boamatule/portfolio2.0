@@ -23,27 +23,30 @@ export const Content = styled.div`
   left: 0; */
   /* width: 100%;
   height: 100%; */
-  padding: 10px 100px;
   /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */
   /* align-items: center; */
   justify-content: flex-start;
-  /* padding: 8px 24px; */
+  padding: 80px 0px;
   flex-direction: column;
   z-index: 1;
+  /* padding-right: 80px;
+  padding-left: 80px; */
 `;
 
 export const H1 = styled.h2`
   color: silver;
-  font-size: 20px;
+  font-size: 18px;
   /* text-align: center; */
   justify-content: flex-start;
   letter-spacing: 1.4px;
+  line-height: 24px;
+  margin-bottom: 35px;
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     font-size: 32px;
-  }
+  } */
 `;
 
 export const P = styled.p`
@@ -52,18 +55,14 @@ export const P = styled.p`
   padding-bottom: 40px;
   color: silver;
   font-size: 18px;
-  letter-spacing: 1.4px;
-  /* line-height: 24px; */
+  letter-spacing: 1.6px;
+  line-height: 24px;
   /* text-align: center; */
   /* max-width: 600px; */
 
-  @media screen and (max-width: 760px) {
+  /* @media screen and (max-width: 760px) {
     font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
+  } */
 `;
 
 export const Title = styled.h1`
@@ -113,6 +112,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  /* padding-bottom: 40px; */
 
   &:hover {
     transition: all 0.2s ease-in-out;
