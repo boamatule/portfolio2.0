@@ -29,6 +29,8 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
+  /* justify-content: center;
+  align-items: center; */
   background: ${({ primary }) => (primary ? '#4B67FB' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};

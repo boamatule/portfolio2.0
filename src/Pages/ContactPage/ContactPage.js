@@ -1,9 +1,8 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Form, TextArea, Input, Title, ArrowForward, ArrowRight, ContactWrapper } from './ContactPageStyles';
 import { Button, Container } from '../../global-styles';
 
-const ContactPage = ({ lightBg }) => {
+const ContactPage = () => {
   const [message, setMessage] = useState({});
 
   const encode = (data) =>
@@ -32,7 +31,7 @@ const ContactPage = ({ lightBg }) => {
 
   return (
     <ContactWrapper>
-      <Container lightBg={lightBg}>
+      <Container>
         <Title>Don't be shy! Send me a quick note :)</Title>
         <Form name="contact" method="POST" onSubmit={handleSubmit}>
           <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />

@@ -18,7 +18,7 @@ import {
 const ProjectsList = ({ projects, lightBg }) => (
   <ProjectWrapper>
     <Container lightBg={lightBg}>
-      <Title>Curated projects using different tech stack</Title>
+      <Title>Some of the projects built during my Bootcamp</Title>
       <Entities>
         {projects.map((project, key) => (
           <Card key={key} to={`/project/${project.name}`}>

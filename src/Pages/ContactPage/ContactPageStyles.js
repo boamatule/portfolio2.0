@@ -53,13 +53,13 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 100px 0px;
+  padding: 80px 0px;
   background: transparent;
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
 export const Title = styled.h1`
-  color: grey;
+  color: purple;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 28px;
@@ -91,8 +91,8 @@ export const Input = styled.input`
   border: none;
   color: grey;
   height: none;
-  line-height: 50px;
-  padding: 1px 0px;
+  line-height: 0px;
+  padding: 10px 0px;
   margin-bottom: 20px;
   border-bottom: 2px solid grey;
 
@@ -114,8 +114,9 @@ export const TextArea = styled.textarea`
   border: none;
   line-height: 50px;
   padding: 10px 0px;
-  border-bottom: 2px solid #01bf71;
+  /* border-bottom: 2px solid #01bf71; */
   margin-bottom: 14px;
+  border-bottom: 2px solid grey;
   color: grey;
 
   &:focus {

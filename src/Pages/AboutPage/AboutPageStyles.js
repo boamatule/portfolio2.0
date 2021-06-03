@@ -31,8 +31,9 @@ export const Content = styled.div`
   padding: 80px 0px;
   flex-direction: column;
   z-index: 1;
-  /* padding-right: 80px;
-  padding-left: 80px; */
+  /* padding-right: 60px;
+  padding-left: 60px; */
+  color: silver;
 `;
 
 export const H1 = styled.h2`
@@ -63,6 +64,33 @@ export const P = styled.p`
   /* @media screen and (max-width: 760px) {
     font-size: 24px;
   } */
+`;
+
+export const Heading = styled.h1`
+  /* margin-top: 100px; */
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')};
+`;
+
+export const Subtitle = styled.p`
+  /* max-width: 440px; */
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: silver;
+  /* color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; */
+`;
+
+export const TextWrapper = styled.div`
+  /* max-width: 540px; */
+  padding-top: 0;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 65px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -112,7 +140,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  /* padding-bottom: 40px; */
+  margin-bottom: px;
 
   &:hover {
     transition: all 0.2s ease-in-out;

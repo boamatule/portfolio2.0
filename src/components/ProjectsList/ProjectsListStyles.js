@@ -4,7 +4,8 @@ import { Link as LinkRouter } from 'react-router-dom';
 
 export const Title = styled.p`
   font-size: 24px;
-  color: #e5e5e5;
+  /* color: #e5e5e5; */
+  color: purple;
   font-weight: bold;
   /* margin-left: 56px;
   margin-right: 56px; */

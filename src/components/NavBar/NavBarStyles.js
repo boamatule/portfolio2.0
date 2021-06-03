@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const Nav = styled.nav`
-  /* background-color: red; */
+  background-color: red;
   background: transparent;
   height: 80;
   display: flex;
@@ -74,8 +74,8 @@ export const NavMenu = styled.ul`
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')}; */
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')};
+    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
+    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }
 `;
 
@@ -112,7 +112,7 @@ export const NavLinks = styled(Link)`
 
     &:hover {
       color: purple;
-      /* transition: 0.3s ease; */
+      transition: 0.3s ease;
     }
   }
 `;
