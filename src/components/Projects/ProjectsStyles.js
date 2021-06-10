@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const ProjectCardSection = styled.div`
   padding: 100px 0 160px;

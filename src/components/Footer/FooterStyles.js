@@ -26,7 +26,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
-  padding: 48px 24px;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,7 +105,7 @@ export const SocialMediaWrapper = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: silver;
+  color: #eee142;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -119,7 +119,8 @@ export const SocialLogo = styled(Link)`
 export const WebsiteRights = styled.small`
   color: silver;
   margin-bottom: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  /* font-weight: bold; */
   justify-content: space-between;
   align-items: center;
 `;
@@ -128,12 +129,18 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 200px;
+  padding: 10px 22px;
 `;
 
 export const SocialIconLink = styled.a`
-  color: silver;
-  font-size: 30px;
+  color: #fff;
+  /* font-size: 30px; */
+
+  &:hover {
+    color: #01bf71;
+    /* transition: 0.3s ease-out; */
+  }
 `;
 
 export const NavBtnLink = styled(LinkRouter)`
@@ -151,8 +158,8 @@ export const NavBtnLink = styled(LinkRouter)`
 `;
 
 export const Copyright = styled.div`
-  color: purple;
-  font-size: 14px;
+  color: #eee142;
+  font-size: 12px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 `;

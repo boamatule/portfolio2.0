@@ -3,10 +3,10 @@ import styled from 'styled-components/macro';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const Title = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   /* color: #e5e5e5; */
-  color: purple;
-  font-weight: bold;
+  color: #eee142;
+  /* font-weight: bold; */
   /* margin-left: 56px;
   margin-right: 56px; */
   /* margin-top: 10px; */
@@ -18,12 +18,13 @@ export const Title = styled.p`
 `;
 
 export const Heading = styled.h1`
+  font-weight: normal;
   margin-bottom: 28px;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1.1;
   justify-content: center;
   text-align: center;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 
 export const ProjectWrapper = styled.div`
@@ -65,7 +66,7 @@ export const SubTitle = styled.p`
   user-select: none;
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   /* cursor: pointer; */
 `;
@@ -102,7 +103,7 @@ export const Meta = styled.div`
   bottom: 0;
   padding: 10px;
   background-color: transparent;
-  border: 2px solid grey;
+  border: none;
   border-radius: 4px;
   flex-direction: column;
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
@@ -117,14 +118,15 @@ export const Card = styled.div`
   border-radius: 4px;
   padding: 20px;
   /* max-height: 600px; */
+  /* max-width: 305px; */
   padding-bottom: 10px;
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   /* transition: all 0.2s ease-in-out; */
-  border: solid 2px grey;
+  border: solid 0.75px #eee142;
 
   /* &:hover {
     transform: scale(1.02);

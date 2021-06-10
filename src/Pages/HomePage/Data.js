@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 export const homeObjOne = {
   lightBg: true,
-  primary: false,
+  primary: true,
   imgStart: 'true',
   lightTopLine: true,
   lightTextDesc: true,

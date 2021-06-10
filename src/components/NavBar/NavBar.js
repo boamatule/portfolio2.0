@@ -35,7 +35,7 @@ const NavBar = () => {
   window.addEventListener('resize', showButton);
 
   return (
-    <IconContext.Provider value={{ color: 'purple' }}>
+    <IconContext.Provider value={{ color: '#EEE142' }}>
       <Nav>
         <NavbarContainer>
           {/* <NavLogo to="/">
@@ -45,7 +45,7 @@ const NavBar = () => {
           <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
             <NavItem>
-              <NavLinks to="/" text={{ color: 'purple' }}>
+              <NavLinks to="/" text={{ color: '#EEE142' }}>
                 HOME
               </NavLinks>
             </NavItem>

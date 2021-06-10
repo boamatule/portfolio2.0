@@ -26,8 +26,9 @@ export const Content = styled.div`
   /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  /* justify-content: flex-start; */
+  justify-content: center;
   padding: 80px 0px;
   flex-direction: column;
   z-index: 1;
@@ -55,11 +56,11 @@ export const P = styled.p`
   margin-top: 20px;
   padding-bottom: 40px;
   color: silver;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1.6px;
   line-height: 24px;
   /* text-align: center; */
-  /* max-width: 600px; */
+  max-width: 600px;
 
   /* @media screen and (max-width: 760px) {
     font-size: 24px;
@@ -69,9 +70,9 @@ export const P = styled.p`
 export const Heading = styled.h1`
   /* margin-top: 100px; */
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')};
 `;
 
 export const Subtitle = styled.p`

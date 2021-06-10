@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat';
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.5s linear;
@@ -28,13 +28,14 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
   /* justify-content: center;
   align-items: center; */
-  background: ${({ primary }) => (primary ? '#4B67FB' : '#0467FB')};
+  background: ${({ primary }) => (primary ? 'orange' : '#f4edae')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
   color: #fff;
+  width: 80%;
+  height: 38px;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;

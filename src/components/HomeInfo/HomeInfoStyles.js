@@ -51,9 +51,9 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 
 export const Subtitle = styled.p`
@@ -65,16 +65,16 @@ export const Subtitle = styled.p`
 `;
 
 export const imgWrapper = styled.div`
-  /* max-width: 555px; */
+  max-width: 555px;
   display: flex;
-  /* justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')}; */
+  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
 export const Img = styled.img`
   padding-right: 0;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  /* vertical-align: middle; */
-  /* display: inline-block; */
+  /* border-radius: 50%; */
+  width: 300px;
+  height: 350px;
+  vertical-align: middle;
+  display: inline-block;
 `;

@@ -22,7 +22,7 @@ import {
 const ProjectsList = ({ projects, lightBg }) => (
   <ProjectWrapper onMouseEnter>
     <Container lightBg={lightBg}>
-      <Heading>Some of the projects built during my Bootcamp</Heading>
+      <Heading>Bellow is some of my projects</Heading>
       <Entities>
         {projects.map((project, key) => (
           <Card key={key} to={`/project/${project.id}`}>
@@ -31,14 +31,26 @@ const ProjectsList = ({ projects, lightBg }) => (
               <Title>{project.title}</Title>
               <SubTitle>{project.description}</SubTitle>
             </Meta>
-            <div style={{ padding: '8px 14px', display: 'flex', alignItems: 'center', outline: '0' }}>
+            <div
+              style={{
+                padding: '10px 80px',
+                display: 'flex',
+                textAlign: 'center',
+                // alignItems: 'center',
+                outline: '0',
+                justifyContent: 'center',
+              }}
+            >
               <a href={project.URL} target="_blank" rel="noreferrer">
-                <Button style={{ margin: '0px 30px' }} primary>
-                  website
-                </Button>
+                <Button primary>website</Button>
               </a>
-              <a href={project.GitHub} target="_blank" rel="noreferrer">
-                <Button style={{}} primary>
+              <a
+                style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}
+                href={project.GitHub}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button style={{ textAlign: 'center', justifyContent: 'center' }} primary>
                   github
                 </Button>
               </a>

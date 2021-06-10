@@ -59,7 +59,7 @@ export const ContactWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: purple;
+  color: #eee142;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 28px;
