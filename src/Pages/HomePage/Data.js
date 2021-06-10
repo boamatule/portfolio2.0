@@ -2,7 +2,7 @@
 export const homeObjOne = {
   lightBg: true,
   primary: false,
-  imgStart: '',
+  imgStart: 'true',
   lightTopLine: true,
   lightTextDesc: true,
   buttonLabel: 'Check my work',
@@ -10,7 +10,7 @@ export const homeObjOne = {
   headline: 'Full Stack Developer',
   lightText: false,
   // topLine: 'Love Yourself',
-  img: '/images/avatar.svg',
+  img: '/images/boa.JPG',
   alt: 'avatar',
   start: '',
 };

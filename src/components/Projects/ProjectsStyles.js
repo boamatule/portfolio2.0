@@ -86,9 +86,9 @@ export const ProjectCardIcon = styled.h3`
 export const ProjectCardInfo = styled.div`
   margin-bottom: 5px;
   font-size: 24px;
-  /* margin-bottom: auto; */
-  /* justify-content: center;
-  align-items: center; */
+  margin-bottom: auto;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ProjectCardPlan = styled.h3`

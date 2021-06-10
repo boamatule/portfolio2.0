@@ -32,7 +32,7 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  /* max-width: 540px; */
   padding-top: 0;
   padding-bottom: 60px;
 
@@ -65,16 +65,16 @@ export const Subtitle = styled.p`
 `;
 
 export const imgWrapper = styled.div`
-  max-width: 555px;
+  /* max-width: 555px; */
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  /* justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')}; */
 `;
 
 export const Img = styled.img`
   padding-right: 0;
-  border: 0;
-  max-width: 100%;
-  max-height: 500px;
-  vertical-align: middle;
-  display: inline-block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* vertical-align: middle; */
+  /* display: inline-block; */
 `;
