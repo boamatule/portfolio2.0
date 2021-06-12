@@ -38,25 +38,25 @@ const NavBar = () => {
     <IconContext.Provider value={{ color: '#EEE142' }}>
       <Nav>
         <NavbarContainer>
-          {/* <NavLogo to="/">
-              <NavIcon />
-              Boa Matule
-            </NavLogo> */}
+          <NavLogo to="/">
+            <NavIcon />
+            Boa Matule
+          </NavLogo>
           <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
             <NavItem>
               <NavLinks to="/" text={{ color: '#EEE142' }}>
-                HOME
+                Home
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/about">ABOUT</NavLinks>
+              <NavLinks to="/about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+              <NavLinks to="/portfolio-list">Portfolio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/contact">CONTACT</NavLinks>
+              <NavLinks to="/contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

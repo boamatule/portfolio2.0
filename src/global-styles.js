@@ -30,12 +30,12 @@ export const Container = styled.div`
 export const Button = styled.button`
   /* justify-content: center;
   align-items: center; */
-  background: ${({ primary }) => (primary ? 'orange' : '#f4edae')};
+  background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #fff;
-  width: 80%;
-  height: 38px;
+  padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
+  color: black;
+  /* width: 100%; */
+  /* height: 50%; */
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
@@ -43,7 +43,7 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? '#0467FB' : '#4B67FB')};
+    background: ${({ primary }) => (primary ? '#f4edae' : '#f4edae')};
   }
 
   @media screen and (max-width: 960px) {

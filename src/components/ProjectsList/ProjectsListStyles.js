@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 // import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter } from 'react-router-dom';
+import { Container } from '../../global-styles';
 
 export const Title = styled.p`
   font-size: 18px;
@@ -17,9 +18,17 @@ export const Title = styled.p`
   /* text-align: flex-start; */
 `;
 
+export const ProjectContainer = styled(Container)`
+  display: flex;
+  justify-content: space-between;
+  /* height: 80px; */
+  justify-content: center;
+  ${Container}
+`;
+
 export const Heading = styled.h1`
   font-weight: normal;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
   font-size: 28px;
   line-height: 1.1;
   justify-content: center;
@@ -41,38 +50,36 @@ export const ProjectWrapper = styled.div`
   } */
 `;
 
-export const Container = styled.div`
-  height: 1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: auto;
-  position: relative;
-  z-index: 1;
-  margin-top: 80px;
-  margin-bottom: 60px;
-  color: #fff;
-  padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
-`;
+// export const Container = styled.div`
+//   height: 1000px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0 30px;
+//   height: auto;
+//   position: relative;
+//   z-index: 1;
+//   margin-top: 80px;
+//   margin-bottom: 60px;
+//   color: #fff;
+//   padding: 160px 0;
+//   background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+// `;
 
 export const SubTitle = styled.p`
   color: grey;
   font-weight: normal;
   margin-top: 16px;
-  margin-bottom: 0;
   user-select: none;
-  max-width: 440px;
-  margin-bottom: 35px;
+  /* max-width: 440px; */
   font-size: 16px;
   line-height: 24px;
   /* cursor: pointer; */
 `;
 export const Wrapper = styled.div`
-  max-width: 1000px;
-  height: 200px;
+  /* max-width: 1000px; */
+  /* height: 200px; */
   margin: 0 auto;
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -104,8 +111,9 @@ export const Meta = styled.div`
   padding: 10px;
   background-color: transparent;
   border: none;
-  border-radius: 4px;
   flex-direction: column;
+  width: 300px;
+  height: 200px;
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
 
@@ -115,18 +123,20 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start; */
-  border-radius: 4px;
+  border-radius: 1px;
   padding: 20px;
-  /* max-height: 600px; */
-  /* max-width: 305px; */
+  /* max-height: 600px;
+  max-width: 305px; */
   padding-bottom: 10px;
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
+  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   /* transition: all 0.2s ease-in-out; */
   border: solid 0.75px #eee142;
+  /* width: 350px;
+  height: 300px; */
 
   /* &:hover {
     transform: scale(1.02);
@@ -184,7 +194,7 @@ export const Entities = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 20px;
-  padding: 40px 10px;
+  /* padding: 40px 20px 0px 20px; */
 
   @media screen and (max-width: 780px) {
     max-width: 100%;
@@ -222,9 +232,12 @@ export const ProjectListP = styled.p`
 `;
 
 export const ButtonLink = styled.a`
-  border-radius: 28px;
+  border-radius: 1px;
+  margin-top: 10px;
   background: ${({ primary }) => (primary ? '#01bf71' : '#010606')};
   display: inline-block;
+  width: 40%;
+  height: 100%;
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 46px' : '12px 30px')};
   color: ${({ dark }) => (dark ? '#010606' : '#fff')};

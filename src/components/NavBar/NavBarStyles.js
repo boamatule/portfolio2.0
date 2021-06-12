@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const Nav = styled.nav`
-  /* background-color: red; */
   background: transparent;
   height: 80;
   display: flex;

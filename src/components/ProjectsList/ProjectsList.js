@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -14,6 +15,7 @@ import {
   H1,
   Title,
   ProjectWrapper,
+  ProjectContainer,
   CardMenu,
   CardItem,
   Heading,
@@ -33,26 +35,15 @@ const ProjectsList = ({ projects, lightBg }) => (
             </Meta>
             <div
               style={{
-                padding: '10px 80px',
                 display: 'flex',
-                textAlign: 'center',
-                // alignItems: 'center',
-                outline: '0',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
               }}
             >
               <a href={project.URL} target="_blank" rel="noreferrer">
-                <Button primary>website</Button>
+                <Button primary>WEBSITE</Button>
               </a>
-              <a
-                style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}
-                href={project.GitHub}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button style={{ textAlign: 'center', justifyContent: 'center' }} primary>
-                  github
-                </Button>
+              <a href={project.GitHub} target="_blank" rel="noreferrer">
+                <Button primary>GITHUB</Button>
               </a>
             </div>
           </Card>

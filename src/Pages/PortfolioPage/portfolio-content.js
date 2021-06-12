@@ -10,7 +10,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Address Book',
+    title: 'Address Book | Javascript | Tailwind',
     image: '/images/code_review.svg',
     link1: '',
     link2: '',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'BMI',
+    title: 'BMI | React | Cypress | Semantic UI',
     image: '/images/code_review.svg',
     link1: '',
     link2: '',
@@ -40,11 +40,12 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Cooper Calculator',
+    title: 'Cooper Calculator | React | Semantic UI | Heroku | Rails ',
     image: '/images/code_review.svg',
     link1: '',
     link2: '',
-    description: '',
+    description:
+      'Famous Cooper test built in ReactJs. Back-end API built in Ruby on Rails. Styled using Semantic UI. Hosted in Heroku.',
     GitHub: 'https://github.com/SnailCoder1/Cooper_Client',
     URL: 'https://1cooper.netlify.com/',
   },

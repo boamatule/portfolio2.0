@@ -58,12 +58,14 @@ export const ContactWrapper = styled.div`
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
-export const Title = styled.h1`
-  color: #eee142;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 28px;
-  margin-top: 0px;
+export const Title = styled.h2`
+  font-weight: normal;
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.1;
+  justify-content: center;
+  text-align: center;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 
 export const Form = styled.form`
@@ -80,7 +82,7 @@ export const Form = styled.form`
   /* overflow: hidden;
   outline: none; */
   /* visibility: visible; */
-  border-radius: 4px;
+  border-radius: 1px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 `;
 

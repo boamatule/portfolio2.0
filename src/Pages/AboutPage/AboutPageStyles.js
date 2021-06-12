@@ -2,17 +2,19 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-scroll';
 // import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { Container } from '../../global-styles';
 
-export const Container = styled.div`
+export const AboutContainer = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 80px 0; */
+  padding: 40px 100px;
   /* height: 800px; */
-  z-index: 1;
+  /* z-index: 1; */
   /* margin-top: 100px; */
   /* padding-top: 100px; */
   /* position: relative; */
+  ${Container}
 `;
 
 export const Content = styled.div`
@@ -29,11 +31,11 @@ export const Content = styled.div`
   align-items: center;
   /* justify-content: flex-start; */
   justify-content: center;
-  padding: 80px 0px;
+  padding: 80px 160px 0px 0px;
   flex-direction: column;
   z-index: 1;
-  /* padding-right: 60px;
-  padding-left: 60px; */
+  /* padding-right: 160px; */
+  /* padding-left: 60px; */
   color: silver;
 `;
 

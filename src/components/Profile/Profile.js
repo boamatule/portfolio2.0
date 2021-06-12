@@ -6,9 +6,9 @@ const Profile = () => (
       <Img src="../../images/boa.JPG" />
       {/* <Heading>Boa Matule</Heading>
       <Subtitle>Full Stack Developer</Subtitle> */}
+      <Heading>Boa Matule</Heading>
+      <Subtitle>Full Stack Developer</Subtitle>
     </imgWrapper>
-    <Heading>Boa Matule</Heading>
-    <Subtitle>Full Stack Developer</Subtitle>
   </Container>
 );
 

@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 // eslint-disable-next-line import/prefer-default-export
 export const HomeInfoSec = styled.div`
   color: #fff;
-  padding: 60px 20px;
+  padding: 100px 20px;
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
@@ -32,7 +32,7 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  /* max-width: 540px; */
+  max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
 
@@ -51,7 +51,7 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
@@ -72,9 +72,9 @@ export const imgWrapper = styled.div`
 
 export const Img = styled.img`
   padding-right: 0;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   width: 300px;
-  height: 350px;
+  height: 300px;
   vertical-align: middle;
   display: inline-block;
 `;

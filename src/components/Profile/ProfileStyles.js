@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  justify-content: flex-start;
   /* text-decoration: royalblue; */
   margin-top: 80px;
+  padding: 100px 40px;
 
   @media screen and (max-width: 960px) {
     display: flex;
@@ -18,7 +20,6 @@ export const Container = styled.div`
 
 export const imgWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 0 auto;
 
@@ -31,7 +32,7 @@ export const imgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  border: 2px solid purple;
+  border: 1px solid yellow;
   border-radius: 50%;
   width: 200px;
   height: 200px;
