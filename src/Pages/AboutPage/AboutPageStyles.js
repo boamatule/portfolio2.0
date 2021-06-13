@@ -31,8 +31,8 @@ export const Content = styled.div`
   align-items: center;
   /* justify-content: flex-start; */
   justify-content: center;
-  padding: 80px 160px 0px 0px;
-  flex-direction: column;
+  padding: 40px 120px 0 0;
+  /* flex-direction: column; */
   z-index: 1;
   /* padding-right: 160px; */
   /* padding-left: 60px; */
@@ -58,7 +58,7 @@ export const P = styled.p`
   margin-top: 20px;
   padding-bottom: 40px;
   color: silver;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1.6px;
   line-height: 24px;
   /* text-align: center; */
@@ -80,7 +80,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   /* max-width: 440px; */
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: silver;
   /* color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; */

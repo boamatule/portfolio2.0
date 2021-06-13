@@ -31,6 +31,7 @@ const ProjectsList = ({ projects, lightBg }) => (
             <Image src={project.image} alt="" />
             <Meta>
               <Title>{project.title}</Title>
+              <SubTitle>{project.stack}</SubTitle>
               <SubTitle>{project.description}</SubTitle>
             </Meta>
             <div

@@ -58,13 +58,13 @@ export const ContactWrapper = styled.div`
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 `;
 
-export const Title = styled.h2`
-  font-weight: normal;
+export const Title = styled.h1`
+  /* font-weight: normal; */
   margin-bottom: 40px;
-  font-size: 28px;
-  line-height: 1.1;
-  justify-content: center;
-  text-align: center;
+  font-size: 30px;
+  /* line-height: 1.1; */
+  /* justify-content: center;
+  text-align: center; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 

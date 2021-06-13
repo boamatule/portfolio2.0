@@ -25,20 +25,17 @@ const AboutPage = () => {
       <AboutContainer>
         <TextWrapper>
           <Heading>Hi, I'm Boa Matule.</Heading>
-          <Subtitle>Daydreamer Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
+          <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
           <P>
-            A bit obessed with imperfection and passionated about small details like the color of butterflies, i spend
-            most of the time wondering about the beauty of nature. I do code when i feel it. Always trying my best to be
-            helpful when it's needed. I would rather spend all night working than wake up when i am dreaming at 8 a.m!
-            Check some of my work in my portfolio. If you would like to work with me,{' '}
-            <a href="/contact" target="_blank" rel="noreferrer">
-              just drop me an email
-            </a>
-            .
+            Former Chef turned into a highly crafted programmer using the latest tools in programming. Trained in
+            ReactJs and Ruby on Rails using methods like Agile and Test-Driven Develoment.
+            {/* <a href="/contact" target="_blank" rel="noreferrer">
+              If can always reach me ust drop me an email
+            </a> */}
           </P>
-          <Link to="/portfolio-list">
+          <Link to="/contact">
             <Button onMouseEnter={onHover} primary="true" dark="true">
-              Say Hi
+              HIRE ME
               {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
             </Button>
           </Link>

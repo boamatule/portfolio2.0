@@ -34,6 +34,9 @@ const HomeInfo = ({
       <Container>
         <InfoRow imgStart={imgStart}>
           <InfoColumn>
+            <imgWrapper start={start}>
+              <Img src={img} alt={alt} />
+            </imgWrapper>
             <TextWrapper>
               <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
@@ -45,11 +48,11 @@ const HomeInfo = ({
               </Link>
             </TextWrapper>
           </InfoColumn>
-          <InfoColumn>
+          {/* <InfoColumn>
             <imgWrapper start={start}>
               <Img src={img} alt={alt} />
             </imgWrapper>
-          </InfoColumn>
+          </InfoColumn> */}
         </InfoRow>
       </Container>
     </HomeInfoSec>

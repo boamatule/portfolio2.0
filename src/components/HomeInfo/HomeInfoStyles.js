@@ -8,20 +8,26 @@ export const HomeInfoSec = styled.div`
 `;
 
 export const InfoRow = styled.div`
-  display: flex;
-  margin: 0 -15px -15px -15px;
-  flex-wrap: wrap;
+  display: grid;
+  /* display: grid; */
+  /* margin: 0 -15px -15px -15px; */
+  /* flex-wrap: wrap; */
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+  /* flex-direction: column; */
+  padding: 40px 20px 0px 20px;
+  /* flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')}; */
 `;
 
 export const InfoColumn = styled.div`
+  /* display: grid; */
   margin-bottom: 15px;
   padding-right: 60px;
-  padding-left: 100px;
+  padding-left: 60px;
   flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* max-width: 50%; */
+  /* flex-basis: 50%; */
 
   @media screen and (max-width: 780px) {
     max-width: 100%;
@@ -32,7 +38,9 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 540px; */
   padding-top: 0;
   padding-bottom: 60px;
 
@@ -57,7 +65,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  /* max-width: 440px; */
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
@@ -65,13 +73,13 @@ export const Subtitle = styled.p`
 `;
 
 export const imgWrapper = styled.div`
-  max-width: 555px;
+  /* max-width: 555px; */
+  /* max-width: auto; */
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
 export const Img = styled.img`
-  padding-right: 0;
   border-radius: 50%;
   width: 300px;
   height: 300px;

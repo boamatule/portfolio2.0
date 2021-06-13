@@ -16,6 +16,11 @@ export const Title = styled.p`
   /* flex-direction: column; */
   /* justify-content: start-start; */
   /* text-align: flex-start; */
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    max-width: 400px;
+  }
 `;
 
 export const ProjectContainer = styled(Container)`
@@ -28,7 +33,7 @@ export const ProjectContainer = styled(Container)`
 
 export const Heading = styled.h1`
   font-weight: normal;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   font-size: 28px;
   line-height: 1.1;
   justify-content: center;
@@ -42,12 +47,12 @@ export const ProjectWrapper = styled.div`
   background: transparent;
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
-  /* @media screen and (max-width: 780px) {
+  @media screen and (max-width: 780px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-  } */
+  }
 `;
 
 // export const Container = styled.div`
@@ -70,12 +75,19 @@ export const ProjectWrapper = styled.div`
 export const SubTitle = styled.p`
   color: grey;
   font-weight: normal;
-  margin-top: 16px;
+  margin-top: 10px;
   user-select: none;
-  /* max-width: 440px; */
+  /* width: 300px; */
+  /* max-width: 500px; */
+  /* height: 200px; */
   font-size: 16px;
   line-height: 24px;
   /* cursor: pointer; */
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    /* max-width: 400px; */
+  }
 `;
 export const Wrapper = styled.div`
   /* max-width: 1000px; */
@@ -112,7 +124,7 @@ export const Meta = styled.div`
   background-color: transparent;
   border: none;
   flex-direction: column;
-  width: 300px;
+  /* width: 300px; */
   height: 200px;
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
@@ -188,18 +200,17 @@ export const CardItem = styled.li`
 
 export const Entities = styled.div`
   display: grid;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 20px;
-  /* padding: 40px 20px 0px 20px; */
+  padding: 40px 20px 0px 20px;
 
   @media screen and (max-width: 780px) {
     max-width: 100%;
     justify-content: center;
-    /* display: flex; */
     grid-template-columns: 1fr;
   }
 `;

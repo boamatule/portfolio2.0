@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 80px;
   justify-content: center;
   ${Container}
