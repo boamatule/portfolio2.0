@@ -95,11 +95,11 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   color: silver;
-  /* font-weight: bold; */
+  font-weight: bold;
   display: flex;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 4rem;
   height: 100%;
 
   @media screen and (max-width: 960px) {

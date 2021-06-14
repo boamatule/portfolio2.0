@@ -22,3 +22,27 @@ export const Container = styled.div`
   margin-top: 40px;
   overflow: hidden;
 `;
+
+export const imgWrapper = styled.div`
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+`;
+
+export const Img = styled.img`
+  border: 0;
+  align-items: center;
+  align-content: center;
+  /* border-radius: 50%; */
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+`;
