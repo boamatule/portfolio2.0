@@ -31,9 +31,10 @@ export const ProjectContainer = styled(Container)`
   ${Container}
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
   font-weight: normal;
-  /* margin-bottom: 40px; */
+  margin-top: 100px;
+  margin-bottom: 40px;
   font-size: 28px;
   line-height: 1.1;
   justify-content: center;

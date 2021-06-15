@@ -24,7 +24,7 @@ import {
 const ProjectsList = ({ projects, lightBg }) => (
   <ProjectWrapper onMouseEnter>
     <Container lightBg={lightBg}>
-      <Heading>Bellow is some of my projects</Heading>
+      {/* <Heading>Bellow is some of my projects</Heading> */}
       <Entities>
         {projects.map((project, key) => (
           <Card key={key} to={`/project/${project.id}`}>

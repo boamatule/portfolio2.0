@@ -74,7 +74,8 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 40px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')}; */
 `;
 
 export const Subtitle = styled.p`

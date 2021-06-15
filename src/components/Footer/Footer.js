@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Container } from '../../global-styles';
 import {
   FooterContainer,
   FooterWrapper,
@@ -19,43 +20,26 @@ import {
 } from './FooterStyles';
 
 const Footer = () => (
-  <FooterContainer>
-    <FooterWrapper>
-      <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
-      <SocialMedia>
-        <SocialMediaWrapper>
-          <SocialLogo to="/" />
-          <SocialIcons>
-            <SocialIconLink
-              href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedinIn />
-            </SocialIconLink>
-            <SocialIconLink href="https://github.com/boamatule" target="_blank" aria-label="LinkedIn">
-              <FaGithub />
-            </SocialIconLink>
-            <SocialIconLink
-              href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <FaFacebook />
-            </SocialIconLink>
-            <SocialIconLink
-              href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <FaInstagram />
-            </SocialIconLink>
-          </SocialIcons>
-        </SocialMediaWrapper>
-      </SocialMedia>
+  <FooterWrapper>
+    <Container>
+      {/* <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights> */}
+      <SocialMediaWrapper>
+        <SocialIcons>
+          <SocialIconLink
+            href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
+          </SocialIconLink>
+          <SocialIconLink href="https://github.com/boamatule" target="_blank" aria-label="LinkedIn">
+            <FaGithub />
+          </SocialIconLink>
+        </SocialIcons>
+      </SocialMediaWrapper>
       <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
-    </FooterWrapper>
-  </FooterContainer>
+    </Container>
+  </FooterWrapper>
 );
 
 export default Footer;

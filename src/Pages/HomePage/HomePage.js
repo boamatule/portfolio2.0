@@ -7,8 +7,8 @@ import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
 const HomePage = () => (
   <>
-    {/* <Profile /> */}
-    <HomeInfo {...homeObjOne} />
+    <Profile />
+    {/* <HomeInfo {...homeObjOne} /> */}
     {/* <HomeInfo {...homeObjTwo} />
     <HomeInfo {...homeObjThree} /> */}
     {/* <Projects /> */}

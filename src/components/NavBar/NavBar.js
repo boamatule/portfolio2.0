@@ -63,7 +63,9 @@ function NavBar() {
               <NavItem>
                 <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
               </NavItem>
-              <NavItem>{/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}</NavItem>
+              <NavItem>
+                <NavLinks to="/contact">CONTACT</NavLinks>
+              </NavItem>
             </NavMenu>
             <Toggle theme={theme} toggleTheme={themeToggler} />
           </NavbarContainer>

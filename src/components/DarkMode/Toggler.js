@@ -12,16 +12,15 @@ let Moon;
 
 Sun = Moon = styled.svg`
   position: fixed;
-  top: 1.6rem;
+  top: 1.5rem;
   right: 8rem;
-  /* left: 10rem; */
   color: #fff142;
   transition: all 0.25s linear;
   cursor: pointer;
 
   @media screen and (max-width: 960px) {
     top: 1.9rem;
-    right: 4rem;
+    right: 3rem;
     cursor: pointer;
   }
 `;
