@@ -7,15 +7,7 @@ export const Title = styled.p`
   font-size: 18px;
   /* color: #e5e5e5; */
   color: #eee142;
-  /* font-weight: bold; */
-  /* margin-left: 56px;
-  margin-right: 56px; */
-  /* margin-top: 10px; */
-  /* margin-bottom: 40px; */
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: start-start; */
-  /* text-align: flex-start; */
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -26,8 +18,8 @@ export const Title = styled.p`
 export const ProjectContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  /* height: 80px; */
   justify-content: center;
+  max-width: 1000px;
   ${Container}
 `;
 
@@ -56,46 +48,21 @@ export const ProjectWrapper = styled.div`
   }
 `;
 
-// export const Container = styled.div`
-//   height: 1000px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0 30px;
-//   height: auto;
-//   position: relative;
-//   z-index: 1;
-//   margin-top: 80px;
-//   margin-bottom: 60px;
-//   color: #fff;
-//   padding: 160px 0;
-//   background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
-// `;
-
 export const SubTitle = styled.p`
   color: grey;
   font-weight: normal;
   margin-top: 10px;
   user-select: none;
-  /* width: 300px; */
-  /* max-width: 500px; */
-  /* height: 200px; */
   font-size: 16px;
   line-height: 24px;
-  /* cursor: pointer; */
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
-    /* max-width: 400px; */
   }
 `;
 export const Wrapper = styled.div`
-  /* max-width: 1000px; */
-  /* height: 200px; */
   margin: 0 auto;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   align-items: center;
   grid-gap: 16px;
   padding: 10px 0px;
@@ -103,19 +70,15 @@ export const Wrapper = styled.div`
 
 export const Image = styled.img`
   border-radius: 4px;
-  /* width: 200px; */
-  /* height: 200px; */
-  /* border: 0; */
+  border: 0;
   width: 100%;
-  /* max-width: 305px; */
   /* cursor: pointer; */
   height: auto;
-  /* height: 30vh; */
+  /* height: 20vh; */
   padding: 0;
   margin: 0;
   padding-bottom: 0;
   object-fit: cover;
-  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
 
 export const Meta = styled.div`
@@ -131,25 +94,16 @@ export const Meta = styled.div`
 `;
 
 export const Card = styled.div`
-  /* background: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; */
   border-radius: 1px;
   padding: 20px;
-  /* max-height: 600px;
-  max-width: 305px; */
   padding-bottom: 10px;
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
   /* transition: all 0.2s ease-in-out; */
   border: solid 0.75px #eee142;
-  /* width: 350px;
-  height: 300px; */
 
   /* &:hover {
     transform: scale(1.02);
@@ -172,33 +126,6 @@ export const Card = styled.div`
   }
 `;
 
-export const CardMenu = styled.ul`
-  transform: translateY(-600px);
-  transition: all 0.4s ease-in-out;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  opacity: 0;
-`;
-
-export const CardItem = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  margin: 0 0.5rem;
-  transition: all 0.4s ease-in-out;
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease-in-out;
-  }
-`;
-
 export const Entities = styled.div`
   display: grid;
   padding-right: 50px;
@@ -215,24 +142,6 @@ export const Entities = styled.div`
     grid-template-columns: 1fr;
   }
 `;
-
-export const H1 = styled.h1`
-  color: silver;
-  font-size: 0.5rem;
-  color: black;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
-`;
-
-// export const Title = styled.h2`
-//   color: silver;
-//   font-size: 1rem;
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-// `;
 
 export const ProjectListP = styled.p`
   color: silver;
@@ -268,4 +177,10 @@ export const ButtonLink = styled.a`
     background: ${({ primary }) => (primary ? 'purple' : '#01bf71')};
     color: #010606;
   }
+`;
+
+export const buttonLabel = styled.p`
+  color: silver;
+  font-size: 1rem;
+  color: red;
 `;

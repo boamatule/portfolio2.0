@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
 import {
   Wrapper,
@@ -12,16 +12,14 @@ import {
   Image,
   Entities,
   SubTitle,
-  H1,
   Title,
   ProjectWrapper,
   ProjectContainer,
-  CardMenu,
-  CardItem,
   Heading,
+  buttonLabel,
 } from './ProjectsListStyles';
 
-const ProjectsList = ({ projects, lightBg }) => (
+const ProjectsList = ({ projects, lightBg, website, github, GitHub, buttonLabel }) => (
   <ProjectWrapper onMouseEnter>
     <Container lightBg={lightBg}>
       {/* <Heading>Bellow is some of my projects</Heading> */}
@@ -41,10 +39,16 @@ const ProjectsList = ({ projects, lightBg }) => (
               }}
             >
               <a href={project.URL} target="_blank" rel="noreferrer">
-                <Button primary>WEBSITE</Button>
+                <Button small fontSmall primary>
+                  website
+                </Button>
+                {/* <FaGlobeAfrica /> */}
               </a>
               <a href={project.GitHub} target="_blank" rel="noreferrer">
-                <Button primary>GITHUB</Button>
+                <Button small fontSmall primary>
+                  github
+                </Button>
+                {/* <FaGithub /> */}
               </a>
             </div>
           </Card>

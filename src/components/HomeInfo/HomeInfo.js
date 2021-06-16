@@ -48,11 +48,6 @@ const HomeInfo = ({
               </Link>
             </TextWrapper>
           </InfoColumn>
-          {/* <InfoColumn>
-            <imgWrapper start={start}>
-              <Img src={img} alt={alt} />
-            </imgWrapper>
-          </InfoColumn> */}
         </InfoRow>
       </Container>
     </HomeInfoSec>

@@ -53,7 +53,7 @@ function NavBar() {
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/" text={{ color: '#EEE142' }}>
+                <NavLinks to="/Home" text={{ color: '#EEE142' }}>
                   HOME
                 </NavLinks>
               </NavItem>
