@@ -95,7 +95,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   color: silver;
-  font-weight: bold;
+  font-weight: normal;
   display: flex;
   text-decoration: none;
   align-items: center;

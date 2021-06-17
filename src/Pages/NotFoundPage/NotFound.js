@@ -1,14 +1,13 @@
-/* eslint-disable react/jsx-no-undef */
 import React from 'react';
-import { Img, imgWrapper } from '../../components/HomeInfo/HomeInfoStyles';
+import { Img, imgWrapper } from './NotFoundStyle';
 import { Container } from '../../global-styles';
 
 const NotFound = () => (
-  <Container>
-    <imgWrapper>
-      <Img src="../../images/notFound.jpeg" />
-    </imgWrapper>
-  </Container>
+  <imgWrapper>
+    <Container>
+      <Img src="../../images/404.svg" />
+    </Container>
+  </imgWrapper>
 );
 
 export default NotFound;

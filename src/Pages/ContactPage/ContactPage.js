@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
-import { Form, TextArea, Input, Title, ArrowForward, ArrowRight, ContactWrapper } from './ContactPageStyles';
-import { Button, Container } from '../../global-styles';
+import {
+  Form,
+  TextArea,
+  Input,
+  Title,
+  ArrowForward,
+  ArrowRight,
+  ContactWrapper,
+  Description,
+  ContactContainer,
+  FormWrapper,
+  Button,
+} from './ContactPageStyles';
+// import { Button, Container } from '../../global-styles';
 
 const ContactPage = () => {
   const [message, setMessage] = useState({});
@@ -31,17 +43,23 @@ const ContactPage = () => {
 
   return (
     <ContactWrapper>
-      <Container>
-        <Title>Don't be shy! Send me a quick note :)</Title>
-        <Form name="contact" method="POST" onSubmit={handleSubmit}>
-          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
-          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-          <Button type="submit" primary>
-            SUBMIT
-          </Button>
-        </Form>
-      </Container>
+      <ContactContainer>
+        <Title>Get in touch</Title>
+        <Description>
+          If you would like to get in touch, fill up the form bellow or just send an email to{' '}
+          <a>boa.matule@gmail.com</a> and i will get back to you as soon as possible.
+        </Description>
+        <FormWrapper>
+          <Form name="contact" method="POST" onSubmit={handleSubmit}>
+            <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+            <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+            <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+            <Button type="submit" primary>
+              Submit
+            </Button>
+          </Form>
+        </FormWrapper>
+      </ContactContainer>
     </ContactWrapper>
   );
 };

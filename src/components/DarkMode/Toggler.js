@@ -1,11 +1,9 @@
 /* eslint-disable prefer-const */
+/* eslint-disable no-multi-assign */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable no-multi-assign */
-import React from 'react';
 import { func, string } from 'prop-types';
-import styled from 'styled-components';
-import { Container } from '../../Pages/ContactPage/ContactPageStyles';
+import styled from 'styled-components/macro';
 
 let Sun;
 let Moon;
@@ -25,7 +23,6 @@ Sun = Moon = styled.svg`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
 const Toggle = ({ theme, toggleTheme }) => (
   <>
     <div onClick={toggleTheme}>
