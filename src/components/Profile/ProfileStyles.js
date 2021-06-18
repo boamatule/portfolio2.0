@@ -2,15 +2,15 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   margin-top: 80px;
   padding: 100px 40px;
 
   @media screen and (max-width: 960px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -18,10 +18,13 @@ export const Container = styled.div`
 `;
 
 export const ProfileWrapper = styled.div`
+  display: grid;
+  flex-direction: row;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export const Avatar = styled.div`
@@ -52,7 +55,7 @@ export const Img = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  display: flex;
+  display: grid;
   margin-top: 1.9rem;
   align-items: center;
   margin-bottom: 0.8rem;
@@ -101,7 +104,7 @@ export const Location = styled.h4`
   letter-spacing: 10;
   justify-content: center;
   align-items: center; */
-  font-size: 1rem;
+  font-size: 0.6rem;
   line-height: 1;
   color: grey;
   font-weight: normal;

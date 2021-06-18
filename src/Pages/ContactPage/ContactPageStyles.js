@@ -6,7 +6,7 @@ import { Container } from '../../global-styles';
 // import { Link } from 'react-scroll';
 
 export const ContactContainer = styled(Container)`
-  width: 1000px;
+  width: 600px;
   ${Container}
 `;
 
@@ -15,11 +15,13 @@ export const ContactWrapper = styled.div`
   align-items: flex-start; */
   padding: 100px 0px 0px 125px;
   background: transparent;
-  width: auto;
+  /* width: auto; */
+  /* width: 600px;
+  height: 600px; */
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
   @media screen and (max-width: 760px) {
-    padding: 100px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     display: flex;
     align-items: flex-start;
   }
@@ -37,6 +39,7 @@ export const Description = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: flex-start;
   }
 `;
 
@@ -74,10 +77,8 @@ export const Input = styled.input`
   background: none;
   border: none;
   color: silver;
-  height: none;
   font-size: 16px;
-  line-height: 0px;
-  padding: 8px 0px;
+  padding: 8px 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
 
@@ -92,6 +93,7 @@ export const Input = styled.input`
 
   @media screen and (max-width: 760px) {
     font-size: 14px;
+    padding: 8px 120px 2px 0px;
   }
 `;
 
@@ -100,7 +102,7 @@ export const TextArea = styled.textarea`
   border: 0;
   border: none;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 20px;
   padding: 10px 0px;
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
@@ -113,6 +115,7 @@ export const TextArea = styled.textarea`
 
   @media screen and (max-width: 760px) {
     font-size: 14px;
+    padding: 50px 0px 0px 0px;
   }
 `;
 

@@ -9,7 +9,8 @@ export const AboutContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   padding: 40px 100px;
-  /* height: 800px; */
+  /* width: 50%; */
+  /* height: 400px; */
   /* z-index: 1; */
   /* margin-top: 100px; */
   /* padding-top: 100px; */
@@ -23,17 +24,16 @@ export const Content = styled.div`
   right: 0;
   bottom: 0;
   left: 0; */
-  /* width: 100%;
-  height: 100%; */
+  /* width: 600px;
+  height: 600px; */
   /* overflow: hidden; */
   display: flex;
   /* max-width: 1200px; */
   align-items: center;
-  /* justify-content: flex-start; */
   justify-content: center;
-  padding: 90px 120px 60px 150px;
+  padding: 60px 0px 0px 0px;
   /* flex-direction: column; */
-  z-index: 1;
+  /* z-index: 1; */
   /* padding-right: 160px; */
   /* padding-left: 60px; */
   color: silver;
@@ -54,15 +54,12 @@ export const H1 = styled.h2`
 `;
 
 export const Description = styled.p`
-  /* justify-content: flex-start; */
   margin-top: 20px;
   padding-bottom: 40px;
   color: silver;
   font-size: 18px;
   letter-spacing: 1.6px;
   line-height: 24px;
-  /* text-align: center; */
-  /* max-width: 600px; */
 
   @media screen and (max-width: 760px) {
     font-size: 24px;
