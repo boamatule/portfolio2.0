@@ -59,12 +59,12 @@ export const TextWrapper = styled.div`
   margin-top: 1.9rem;
   align-items: center;
   margin-bottom: 0.8rem;
-  justify-content: center;
+  /* justify-content: center; */
 
   @media screen and (min-width: 480px) {
     margin-top: 1.7rem;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
 `;
 

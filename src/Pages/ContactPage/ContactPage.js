@@ -10,7 +10,7 @@ import {
   Description,
   ContactContainer,
   FormWrapper,
-  Button,
+  ContactButton,
 } from './ContactPageStyles';
 // import { Button, Container } from '../../global-styles';
 
@@ -54,10 +54,13 @@ const ContactPage = () => {
             <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
             <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
             <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-            <Button type="submit" primary>
+            <ContactButton type="submit" primary>
               Submit
-            </Button>
+            </ContactButton>
           </Form>
+          {/* <ContactButton type="submit" primary>
+            Submit
+          </ContactButton> */}
         </FormWrapper>
       </ContactContainer>
     </ContactWrapper>
