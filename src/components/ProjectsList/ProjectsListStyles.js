@@ -19,25 +19,30 @@ export const ProjectContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   ${Container}
 `;
 
-export const Heading = styled.h2`
-  font-weight: normal;
-  margin-top: 100px;
+export const Heading = styled.h3`
+  /* font-weight: normal; */
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.1;
   justify-content: center;
   text-align: center;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+
+  @media screen and (max-width: 760px) {
+    font-size: 20px;
+  }
 `;
 
 export const ProjectWrapper = styled.div`
-  color: #fff;
-  padding: 60px 0;
-  background: transparent;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  /* color: #fff; */
+  /* padding: 60px 0; */
+  /* background: transparent; */
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
   @media screen and (max-width: 780px) {
@@ -59,13 +64,6 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }
-`;
-export const Wrapper = styled.div`
-  margin: 0 auto;
-  display: grid;
-  align-items: center;
-  grid-gap: 16px;
-  padding: 10px 0px;
 `;
 
 export const Image = styled.img`
@@ -96,12 +94,10 @@ export const Meta = styled.div`
 export const Card = styled.div`
   border-radius: 1px;
   padding: 20px;
-  padding-bottom: 10px;
-  padding-top: 8px;
+  padding-bottom: 4px;
+  padding-top: 10px;
   padding-left: 8px;
   padding-right: 8px;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
   /* transition: all 0.2s ease-in-out; */
   border: solid 0.75px #eee142;
 
@@ -118,7 +114,7 @@ export const Card = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    width: 90%;
+    width: 100%;
 
     &:hover {
       transform: none;
@@ -128,18 +124,17 @@ export const Card = styled.div`
 
 export const Entities = styled.div`
   display: grid;
-  padding-right: 50px;
-  padding-left: 50px;
+  /* padding-left: 50px;
+  margin-top: 100px; */
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 20px;
-  padding: 40px 20px 0px 20px;
 
   @media screen and (max-width: 780px) {
-    max-width: 100%;
     justify-content: center;
     grid-template-columns: 1fr;
+    padding: 0px 0px 0px 0px;
   }
 `;
 

@@ -12,7 +12,6 @@ import {
   FormWrapper,
   ContactButton,
 } from './ContactPageStyles';
-// import { Button, Container } from '../../global-styles';
 
 const ContactPage = () => {
   const [message, setMessage] = useState({});
@@ -40,6 +39,7 @@ const ContactPage = () => {
 
     e.preventDefault();
   };
+  // <Img src"=../../images/emailSent.svg" />'))
 
   return (
     <ContactWrapper>
@@ -58,9 +58,6 @@ const ContactPage = () => {
               Submit
             </ContactButton>
           </Form>
-          {/* <ContactButton type="submit" primary>
-            Submit
-          </ContactButton> */}
         </FormWrapper>
       </ContactContainer>
     </ContactWrapper>

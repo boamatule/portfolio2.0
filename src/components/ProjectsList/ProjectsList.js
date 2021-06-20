@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
 import {
-  Wrapper,
   ButtonLink,
   Meta,
   Card,

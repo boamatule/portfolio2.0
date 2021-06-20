@@ -6,7 +6,7 @@ const Profile = () => (
   <ProfileWrapper>
     <Container>
       <Avatar>
-        <Img src="../../images/avatar.png" alt="" />
+        <Img src="../../images/avatar.png" alt="Boa" />
       </Avatar>
       <TextWrapper>
         <Heading>Boa Matule | Full Stack Developer</Heading>

@@ -7,18 +7,19 @@ import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
   /* width: 600px; */
-  padding: 40px 120px 0px 120px;
+  /* padding: 100px 0px 0px 0px; */
   /* justify-content: center; */
+  margin-top: 80px;
   ${Container}
   @media screen and (max-width: 760px) {
-    padding: 0px 10px 0px 40px;
+    /* padding: 0px 10px 0px 40px; */
   }
 `;
 
 export const ContactWrapper = styled.div`
   display: flex;
   align-items: flex-start;
-  /* padding: 100px 0px 0px 125px; */
+  /* padding: 100px 0px 0px 0px; */
   background: transparent;
   text-align: center;
   /* width: auto; */
@@ -27,9 +28,9 @@ export const ContactWrapper = styled.div`
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
   @media screen and (max-width: 760px) {
-    padding: 80px 80px 0px 10px;
-    display: flex;
-    align-items: flex-start;
+    /* padding: 80px 80px 0px 10px; */
+    /* display: flex;
+    align-items: flex-start; */
   }
 `;
 
@@ -174,4 +175,16 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const Img = styled.img`
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+
+  @media screen and (min-width: 480px) {
+    width: 10.6rem;
+    height: 10.6rem;
+  }
 `;

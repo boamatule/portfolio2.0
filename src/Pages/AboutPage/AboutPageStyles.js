@@ -39,6 +39,10 @@ export const Content = styled.div`
   /* z-index: 1; */
   /* padding-right: 160px; */
   /* padding-left: 60px; */
+  @media screen and (max-width: 760px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 `;
 
 export const H1 = styled.h2`
