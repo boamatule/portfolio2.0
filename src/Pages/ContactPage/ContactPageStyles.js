@@ -7,35 +7,40 @@ import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
   /* width: 600px; */
-  /* padding: 100px 0px 0px 0px; */
+  /* padding: 40px 80px 0px 100px; */
   /* justify-content: center; */
   margin-top: 80px;
   ${Container}
   @media screen and (max-width: 760px) {
-    /* padding: 0px 10px 0px 40px; */
+    padding: 0px 0px 0px 0px;
   }
 `;
 
 export const ContactWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
+  /* position: relative; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* padding: 100px 0px 0px 0px; */
-  background: transparent;
-  text-align: center;
+  /* padding: 40px 0px 0px 100px; */
+  /* background: transparent;
+  text-align: flex-start; */
   /* width: auto; */
-  /* width: 600px;
-  height: 600px; */
+  /* width: 600px; */
+  /* height: 600px; */
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
   @media screen and (max-width: 760px) {
-    /* padding: 80px 80px 0px 10px; */
-    /* display: flex;
-    align-items: flex-start; */
+    padding: 80px 80px 0px 10px;
+    display: flex;
+    align-items: flex-start;
   }
 `;
 
 export const Description = styled.p`
-  padding: 0px 0px 20px 0px;
+  padding: 10px 0px 10px 300px;
+  max-width: 75%;
   color: grey;
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -47,10 +52,11 @@ export const Description = styled.p`
   }
 `;
 
-export const Title = styled.h1`
-  font-weight: normal;
-  margin-bottom: 40px;
-  font-size: 30px;
+export const Title = styled.h3`
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0px 0px 10px 300px;
+  max-width: 75%;
   /* padding: 0px 0px 0px 40px; */
   /* line-height: 1.1; */
   /* justify-content: center;
@@ -59,7 +65,7 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 760px) {
     font-size: 20px;
-    padding: 0px 0px 0px 0px;
+    /* padding: 0px 0px 0px 0px; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -68,20 +74,22 @@ export const Title = styled.h1`
 `;
 
 export const Form = styled.form`
-  /* height: auto; */
-  /* width: 80%; */
-  z-index: 1;
   display: grid;
-  font-size: 16px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 20px 0px 0px 0px;
-  border-radius: 0px;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0); */
+  max-width: 50%;
+  margin: 40px auto;
+  border: 1px solid #eee142;
+  padding: 24px;
+  border-radius: 1px;
+  box-shadow: -8px 8px 16px 4px rgba(0, 0, 0, 0.1);
+  background: transparent;
 `;
 
 export const FormWrapper = styled.div`
-  align-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #777;
 `;
 
 export const Input = styled.input`
@@ -92,6 +100,9 @@ export const Input = styled.input`
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
+  border: 1px solid #eee142;
+  border-radius: 1px;
+  padding: 8px;
 
   &:last-of-type {
     margin-bottom: 20px;
@@ -104,7 +115,7 @@ export const Input = styled.input`
 
   @media screen and (max-width: 760px) {
     font-size: 12px;
-    padding: 8px 120px 2px 0px;
+    /* padding: 8px 120px 2px 0px; */
   }
 `;
 
@@ -118,6 +129,9 @@ export const TextArea = styled.textarea`
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
   color: grey;
+  border: 1px solid #eee142;
+  border-radius: 1px;
+  padding: 8px;
 
   &:focus {
     outline: none;
@@ -139,10 +153,16 @@ export const Text = styled.span`
 `;
 
 export const ContactButton = styled(Button)`
-  border-radius: 0px;
+  border-radius: 1px;
+  width: 80px;
   /* width: auto; */
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  display: flex;
+  color: grey;
+  font-size: 12px;
+  font: ${({ fontBig }) => (fontBig ? '16px' : '12px')};
+  font-weight: bold;
   ${Button};
   // export const Button = styled.button
 `;

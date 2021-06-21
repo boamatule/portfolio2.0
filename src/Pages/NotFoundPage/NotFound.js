@@ -1,12 +1,12 @@
 import React from 'react';
-import { Img, imgWrapper } from './NotFoundStyle';
+import { Img, imgWrapper, ErrorContainer } from './NotFoundStyle';
 import { Container } from '../../global-styles';
 
 const NotFound = () => (
   <imgWrapper>
-    <Container>
+    <ErrorContainer>
       <Img src="../../images/404.svg" />
-    </Container>
+    </ErrorContainer>
   </imgWrapper>
 );
 

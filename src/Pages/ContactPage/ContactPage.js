@@ -49,16 +49,14 @@ const ContactPage = () => {
           If you would like to get in touch, fill up the form bellow or just send an email to boa.matule@gmail.com and i
           will get back to you as soon as possible.
         </Description>
-        <FormWrapper>
-          <Form name="contact" method="POST" onSubmit={handleSubmit}>
-            <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-            <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
-            <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-            <ContactButton type="submit" primary>
-              Submit
-            </ContactButton>
-          </Form>
-        </FormWrapper>
+        <Form name="contact" method="POST" onSubmit={handleSubmit}>
+          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+          <ContactButton type="submit" primary>
+            SUBMIT
+          </ContactButton>
+        </Form>
       </ContactContainer>
     </ContactWrapper>
   );
