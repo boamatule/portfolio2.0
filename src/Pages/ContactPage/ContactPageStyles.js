@@ -7,12 +7,13 @@ import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
   /* width: 600px; */
-  /* padding: 40px 80px 0px 100px; */
   /* justify-content: center; */
   margin-top: 80px;
   ${Container}
   @media screen and (max-width: 760px) {
-    padding: 0px 0px 0px 0px;
+    /* padding: 0px 0px 0px 100px;
+    display: flex;
+    align-items: center; */
   }
 `;
 
@@ -31,11 +32,11 @@ export const ContactWrapper = styled.div`
   /* height: 600px; */
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
-  @media screen and (max-width: 760px) {
-    padding: 80px 80px 0px 10px;
+  /* @media screen and (max-width: 760px) {
+    padding: 0px 0px 0px 10px;
     display: flex;
-    align-items: flex-start;
-  }
+    align-items: center;
+  } */
 `;
 
 export const Description = styled.p`
@@ -48,7 +49,11 @@ export const Description = styled.p`
   font-weight: normal;
 
   @media screen and (max-width: 760px) {
-    font-size: 12px;
+    /* display: flex; */
+    font-size: 14px;
+    padding: 0px 0px 0px 20px;
+    justify-content: flex-start;
+    max-width: 90%;
   }
 `;
 
@@ -65,11 +70,9 @@ export const Title = styled.h3`
 
   @media screen and (max-width: 760px) {
     font-size: 20px;
-    /* padding: 0px 0px 0px 0px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* text-align: flex-start; */
+    padding: 0px 0px 40px 20px;
+    justify-content: flex-start;
+    max-width: 90%;
   }
 `;
 
@@ -82,6 +85,11 @@ export const Form = styled.form`
   border-radius: 1px;
   box-shadow: -8px 8px 16px 4px rgba(0, 0, 0, 0.1);
   background: transparent;
+
+  @media screen and (max-width: 760px) {
+    max-width: 90%;
+    /* padding: 50px 0px 0px 0px; */
+  }
 `;
 
 export const FormWrapper = styled.div`
@@ -115,7 +123,7 @@ export const Input = styled.input`
 
   @media screen and (max-width: 760px) {
     font-size: 12px;
-    /* padding: 8px 120px 2px 0px; */
+    /* padding: 0px 0px 0px 0px; */
   }
 `;
 
@@ -140,7 +148,7 @@ export const TextArea = styled.textarea`
 
   @media screen and (max-width: 760px) {
     font-size: 12px;
-    padding: 50px 0px 0px 0px;
+    /* padding: 50px 0px 0px 0px; */
   }
 `;
 
