@@ -8,15 +8,16 @@ export const AboutContainer = styled(Container)`
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  padding: 40px 80px 0px 100px;
+  /* padding: 40px 80px 0px 100px; */
   /* width: 50%; */
   /* height: 400px; */
   /* z-index: 1; */
   /* margin-top: 100px; */
   /* padding-top: 100px; */
   /* position: relative; */
-  @media screen and (max-width: 760px) {
-    padding: 40px 10px 0px 40px;
+  max-width: 900px;
+  @media screen and (max-width: 960px) {
+    /* padding: 40px 10px 0px 40px; */
   }
   ${Container}
 `;
@@ -39,7 +40,7 @@ export const Content = styled.div`
   /* z-index: 1; */
   /* padding-right: 160px; */
   /* padding-left: 60px; */
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     padding-right: 0px;
     padding-left: 0px;
   }
@@ -68,7 +69,7 @@ export const Description = styled.p`
   line-height: 24px;
   font-weight: normal;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
   }
 `;
@@ -81,7 +82,7 @@ export const Subtitle = styled.h2`
   letter-spacing: 1.6px;
   font-weight: normal;
   /* color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; */
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
   }
 `;
@@ -93,7 +94,7 @@ export const Heading = styled.h1`
   font-weight: bold;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')}; */
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 30px;
   }
 `;
@@ -101,7 +102,7 @@ export const Heading = styled.h1`
 export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     padding-bottom: 65px;
   }
 `;

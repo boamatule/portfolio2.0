@@ -10,7 +10,7 @@ export const ContactContainer = styled(Container)`
   /* justify-content: center; */
   margin-top: 80px;
   ${Container}
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     /* padding: 0px 0px 0px 100px;
     display: flex;
     align-items: center; */
@@ -48,7 +48,7 @@ export const Description = styled.p`
   line-height: 24px;
   font-weight: normal;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     /* display: flex; */
     font-size: 14px;
     padding: 0px 0px 0px 20px;
@@ -68,7 +68,7 @@ export const Title = styled.h3`
   text-align: center; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 20px;
     padding: 0px 0px 40px 20px;
     justify-content: flex-start;
@@ -86,7 +86,7 @@ export const Form = styled.form`
   box-shadow: -8px 8px 16px 4px rgba(0, 0, 0, 0.1);
   background: transparent;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     max-width: 90%;
     /* padding: 50px 0px 0px 0px; */
   }
@@ -121,7 +121,7 @@ export const Input = styled.input`
     box-shadow: none;
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 12px;
     /* padding: 0px 0px 0px 0px; */
   }
@@ -146,7 +146,7 @@ export const TextArea = styled.textarea`
     box-shadow: none;
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 12px;
     /* padding: 50px 0px 0px 0px; */
   }
@@ -211,7 +211,7 @@ export const Img = styled.img`
   border-radius: 50%;
   border: 1px solid transparent;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 960px) {
     width: 10.6rem;
     height: 10.6rem;
   }

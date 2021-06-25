@@ -4,9 +4,9 @@ import { Container } from '../../global-styles';
 import portfolioContent from './portfolio-content';
 
 const PortfolioListPage = () => (
-  <>
+  <Container>
     <ProjectsList projects={portfolioContent} />
-  </>
+  </Container>
 );
 
 export default PortfolioListPage;

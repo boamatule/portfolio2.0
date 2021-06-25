@@ -3,24 +3,24 @@ import styled from 'styled-components/macro';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
-export const Title = styled.p`
-  font-size: 18px;
-  /* color: #e5e5e5; */
-  color: #eee142;
-  display: flex;
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-    max-width: 400px;
-  }
-`;
-
 export const ProjectContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   justify-content: center;
   /* max-width: 1000px; */
   ${Container}
+`;
+
+export const Title = styled.p`
+  font-size: 18px;
+  /* color: #e5e5e5; */
+  color: #eee142;
+  display: flex;
+
+  @media screen and (max-width: 960px) {
+    font-size: 14px;
+    max-width: 400px;
+  }
 `;
 
 export const Heading = styled.h3`
@@ -32,7 +32,7 @@ export const Heading = styled.h3`
   text-align: center;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     font-size: 20px;
   }
 `;
@@ -45,7 +45,7 @@ export const ProjectWrapper = styled.div`
   /* background: transparent; */
   /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 960px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -61,7 +61,7 @@ export const SubTitle = styled.p`
   font-size: 16px;
   line-height: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
   }
 `;
@@ -94,8 +94,8 @@ export const Meta = styled.div`
 export const Card = styled.div`
   border-radius: 1px;
   padding: 20px;
-  padding-bottom: 4px;
-  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
   /* transition: all 0.2s ease-in-out; */
@@ -131,7 +131,7 @@ export const Entities = styled.div`
   align-items: center;
   grid-gap: 20px;
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 960px) {
     justify-content: center;
     grid-template-columns: 1fr;
     padding: 0px 0px 0px 0px;
@@ -144,19 +144,19 @@ export const ProjectListP = styled.p`
   font-size: 1rem;
   text-align: start;
   margin-top: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 `;
 
 export const ButtonLink = styled.a`
-  border-radius: 1px;
-  margin-top: 10px;
+  border-radius: 4px;
+  margin-top: 0px;
   background: ${({ primary }) => (primary ? '#01bf71' : '#010606')};
   display: inline-block;
   width: 40%;
   height: 100%;
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 46px' : '12px 30px')};
-  color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+  color: ${({ dark }) => (dark ? '#000' : '#fff')};
   font-size: ${({ fontBig }) => (fontBig ? '18px' : '14px')};
   justify-content: center;
   align-items: center;

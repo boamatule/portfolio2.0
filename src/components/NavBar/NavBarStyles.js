@@ -70,7 +70,6 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
     background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }
@@ -88,18 +87,19 @@ export const NavItem = styled.li`
     width: 100%;
 
     &:hover {
-      border: none;
+      border-bottom: 2px solid transparent;
+      border-bottom: 4px solid #eee142;
     }
   }
 `;
 
 export const NavLinks = styled(Link)`
   color: silver;
-  font-weight: normal;
+  font-weight: bold;
   display: flex;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2.2rem;
   height: 100%;
 
   @media screen and (max-width: 960px) {
@@ -109,7 +109,6 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: purple;
       transition: 0.3s ease;
     }
   }

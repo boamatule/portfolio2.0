@@ -28,11 +28,12 @@ const Footer = () => (
           <SocialIconLink
             href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
             target="_blank"
+            rel="noreferrer"
             aria-label="LinkedIn"
           >
             <FaLinkedinIn />
           </SocialIconLink>
-          <SocialIconLink href="https://github.com/boamatule" target="_blank" aria-label="LinkedIn">
+          <SocialIconLink href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FaGithub />
           </SocialIconLink>
         </SocialIcons>

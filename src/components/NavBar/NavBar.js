@@ -49,7 +49,6 @@ function NavBar() {
         <GlobalStyles />
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/" />
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>

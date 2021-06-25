@@ -15,11 +15,16 @@ Sun = Moon = styled.svg`
   color: #fff142;
   transition: all 0.25s linear;
   cursor: pointer;
+  color: none;
+  background-color: transparent;
 
   @media screen and (max-width: 960px) {
     top: 1.9rem;
     right: 3rem;
     cursor: pointer;
+    color: none;
+    background-color: transparent;
+    display: none;
   }
 `;
 
