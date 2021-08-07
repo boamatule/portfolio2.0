@@ -16,8 +16,8 @@ export const imgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 200px;
   margin-bottom: 100px;
   margin-top: 100px;
   @media screen and (max-width: 960px) {
