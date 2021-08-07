@@ -5,7 +5,7 @@ import { Container } from '../../global-styles';
 const NotFound = () => (
   <imgWrapper>
     <ErrorContainer>
-      <Img src="../../images/404.png" alt="Page Not Found" />
+      <Img src="../../images/404.svg" alt="Page Not Found" />
     </ErrorContainer>
   </imgWrapper>
 );
