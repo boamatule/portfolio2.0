@@ -9,19 +9,19 @@ export const ErrorContainer = styled(Container)`
 
 export const imgWrapper = styled.div`
   @media screen and (max-width: 960px) {
-    max-width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
   }
 `;
 
 export const Img = styled.img`
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   margin-bottom: 100px;
   margin-top: 100px;
   @media screen and (max-width: 960px) {
-    max-width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
   }

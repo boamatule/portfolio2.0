@@ -88,14 +88,15 @@ export const Subtitle = styled.h2`
 `;
 
 export const Heading = styled.h1`
+  margin-top: 24px;
   margin-bottom: 24px;
-  font-size: 40px;
-  line-height: 1.1;
+  font-size: 30px;
+  /* line-height: 1.1; */
   font-weight: bold;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')}; */
   @media screen and (max-width: 960px) {
-    font-size: 30px;
+    font-size: 20px;
   }
 `;
 
@@ -138,6 +139,9 @@ export const Button = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({ primary }) => (primary ? '#fff' : '#01BF71')};
+  }
+
+  @media screen and (max-width: 960px) {
   }
 `;
 

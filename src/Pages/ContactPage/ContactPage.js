@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
+import { FiSend } from 'react-icons/fi';
 import {
   Form,
   TextArea,
   Input,
   Title,
-  ArrowForward,
-  ArrowRight,
-  ContactWrapper,
   Description,
   ContactContainer,
   FormWrapper,
@@ -40,22 +38,21 @@ const ContactPage = () => {
   };
 
   return (
-    <ContactWrapper>
-      <ContactContainer>
-        <Title>Get in touch</Title>
-        <Description>
-          If you would like to get in touch, fill up the form below and i will get back to you as soon as possible.
-        </Description>
-        <Form name="contact" method="POST" onSubmit={handleSubmit}>
-          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
-          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-          <ContactButton type="submit" primary>
-            SUBMIT
-          </ContactButton>
-        </Form>
-      </ContactContainer>
-    </ContactWrapper>
+    <ContactContainer>
+      <Title>Get in touch</Title>
+      <Description>
+        If you would like to get in touch, fill up the form below and i will get back to you as soon as possible.
+      </Description>
+      <Form name="contact" method="POST" onSubmit={handleSubmit}>
+        <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+        <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+        <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+        <ContactButton type="submit" primary style={{ justifyContent: 'center' }}>
+          SUBMIT
+          {/* <FiSend /> */}
+        </ContactButton>
+      </Form>
+    </ContactContainer>
   );
 };
 

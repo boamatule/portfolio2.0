@@ -12,7 +12,7 @@ import {
   ArrowRight,
   Description,
 } from './AboutPageStyles';
-import { Button, Container } from '../../global-styles';
+import { Button } from '../../global-styles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -32,8 +32,7 @@ const AboutPage = () => {
           </Description>
           <Link to="/contact">
             <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-              HIRE ME
-              {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+              HIRE ME{' '}
             </Button>
           </Link>
         </TextWrapper>

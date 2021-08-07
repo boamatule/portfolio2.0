@@ -94,9 +94,10 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: silver;
-  font-weight: bold;
   display: flex;
+  font-size: 16px;
+  color: silver;
+  font-weight: normal;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 2.2rem;
@@ -107,6 +108,7 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 2rem;
     display: table;
+    font-size: 14px;
 
     &:hover {
       transition: 0.3s ease;

@@ -164,7 +164,7 @@ export const Copyright = styled.h3`
   /* display: flex; */
   align-items: center;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: 10px;
 
   @media screen and (min-width: 480px) {

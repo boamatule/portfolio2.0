@@ -1,42 +1,18 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { MdArrowForward, MdKeyboardArrowRight, FiSend } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
-// import { Link } from 'react-scroll';
-
 export const ContactContainer = styled(Container)`
-  /* width: 600px; */
-  /* justify-content: center; */
   margin-top: 80px;
   ${Container}
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 960px) {
     /* padding: 0px 0px 0px 100px;
     display: flex;
     align-items: center; */
   }
-`;
-
-export const ContactWrapper = styled.div`
-  /* position: relative; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 100px 0px 0px 0px; */
-  /* padding: 40px 0px 0px 100px; */
-  /* background: transparent;
-  text-align: flex-start; */
-  /* width: auto; */
-  /* width: 600px; */
-  /* height: 600px; */
-  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
-
-  /* @media screen and (max-width: 760px) {
-    padding: 0px 0px 0px 10px;
-    display: flex;
-    align-items: center;
-  } */
 `;
 
 export const Description = styled.p`
@@ -47,12 +23,14 @@ export const Description = styled.p`
   letter-spacing: 1.6px;
   line-height: 24px;
   font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   @media screen and (max-width: 960px) {
-    /* display: flex; */
     font-size: 14px;
     padding: 0px 0px 0px 20px;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 90%;
   }
 `;
@@ -62,10 +40,8 @@ export const Title = styled.h3`
   font-size: 22px;
   padding: 0px 0px 10px 300px;
   max-width: 75%;
-  /* padding: 0px 0px 0px 40px; */
-  /* line-height: 1.1; */
-  /* justify-content: center;
-  text-align: center; */
+  justify-content: center;
+  text-align: center;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 
   @media screen and (max-width: 960px) {
@@ -78,16 +54,16 @@ export const Title = styled.h3`
 
 export const Form = styled.form`
   display: grid;
-  max-width: 50%;
+  max-width: 60%;
   margin: 40px auto;
   border: 1px solid #eee142;
   padding: 24px;
   border-radius: 1px;
-  box-shadow: -8px 8px 16px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 
   @media screen and (max-width: 960px) {
-    max-width: 90%;
+    max-width: 100%;
     /* padding: 50px 0px 0px 0px; */
   }
 `;
@@ -117,13 +93,12 @@ export const Input = styled.input`
   }
 
   &:focus {
-    outline: none;
+    outline: true;
     box-shadow: none;
   }
 
   @media screen and (max-width: 960px) {
     font-size: 12px;
-    /* padding: 0px 0px 0px 0px; */
   }
 `;
 
@@ -142,13 +117,12 @@ export const TextArea = styled.textarea`
   padding: 8px;
 
   &:focus {
-    outline: none;
+    outline: true;
     box-shadow: none;
   }
 
   @media screen and (max-width: 960px) {
     font-size: 12px;
-    /* padding: 50px 0px 0px 0px; */
   }
 `;
 
@@ -161,40 +135,17 @@ export const Text = styled.span`
 `;
 
 export const ContactButton = styled(Button)`
+  ${Button};
   border-radius: 1px;
   width: 80px;
-  /* width: auto; */
-  /* align-items: center; */
-  justify-content: center;
   display: flex;
   color: grey;
   font-size: 12px;
   font: ${({ fontBig }) => (fontBig ? '16px' : '12px')};
   font-weight: bold;
-  ${Button};
-  // export const Button = styled.button
+  justify-content: center;
+  align-items: center;
 `;
-//   border-radius: 4px;
-//   width: auto;
-//   height: auto;
-//   background: ${({ primary }) => (primary ? '#01BF71' : '#010606')};
-//   white-space: nowrap;
-//   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-//   color: ${({ dark }) => (dark ? '#010606' : '#fff')};
-//   font: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-//   outline: none;
-//   border: none;
-//   margin-top: 20px;
-//   cursor: pointer;
-//   justify-content: center;
-//   align-items: center;
-//   transition: all 0.2s ease-in-out;
-
-//   &:hover {
-//     transition: all 0.2s ease-in-out;
-//     background: ${({ primary }) => (primary ? '#fff' : '#01BF71')};
-//   }
-// `;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
