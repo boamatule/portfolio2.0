@@ -1,25 +1,15 @@
 import styled from 'styled-components/macro';
-// import { Link as LinkScroll } from 'react-scroll';
-import { Link as LinkRouter } from 'react-router-dom';
-import { Container } from '../../global-styles';
 
-export const ProjectContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-  /* max-width: 1000px; */
-  ${Container}
-`;
-
-export const Title = styled.p`
-  font-size: 18px;
-  /* color: #e5e5e5; */
+export const Title = styled.h1`
+  font-size: 16px;
   color: #eee142;
-  display: flex;
+  font-weight: bold;
+
+  /* display: flex; */
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
-    max-width: 400px;
+    font-weight: bold;
   }
 `;
 
@@ -40,21 +30,17 @@ export const Heading = styled.h3`
 export const ProjectWrapper = styled.div`
   margin-top: 80px;
   margin-bottom: 40px;
-  /* color: #fff; */
-  /* padding: 60px 0; */
-  /* background: transparent; */
-  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
 
   @media screen and (max-width: 960px) {
     max-width: 100%;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     display: flex;
     justify-content: center;
   }
 `;
 
 export const SubTitle = styled.p`
-  color: grey;
+  color: silver;
   font-weight: normal;
   margin-top: 10px;
   user-select: none;
@@ -63,12 +49,13 @@ export const SubTitle = styled.p`
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
+    font-weight: normal;
   }
 `;
 
 export const Image = styled.img`
   border-radius: 4px;
-  border: 0;
+  border: none;
   width: 100%;
   /* cursor: pointer; */
   height: auto;
@@ -86,18 +73,18 @@ export const Meta = styled.div`
   background-color: transparent;
   border: none;
   flex-direction: column;
-  /* width: 300px; */
+  width: auto;
   height: 200px;
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
 
 export const Card = styled.div`
   border-radius: 1px;
-  padding: 20px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding: 20px; */
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
   /* transition: all 0.2s ease-in-out; */
   border: solid 0.75px #eee142;
 

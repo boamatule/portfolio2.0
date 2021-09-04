@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
+// import { Link } from 'react-router-dom';
+// import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
 import {
   ButtonLink,
@@ -13,7 +13,7 @@ import {
   SubTitle,
   Title,
   ProjectWrapper,
-  ProjectContainer,
+  // ProjectContainer,
   Heading,
   buttonLabel,
 } from './ProjectsListStyles';

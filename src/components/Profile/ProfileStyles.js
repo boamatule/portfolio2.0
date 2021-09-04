@@ -2,15 +2,11 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  justify-content: center; */
   margin-top: 80px;
   padding: 100px 40px;
 
   @media screen and (max-width: 960px) {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -18,10 +14,10 @@ export const Container = styled.div`
 `;
 
 export const ProfileWrapper = styled.div`
-  display: grid;
+  /* display: grid; */
   flex-direction: row;
-  width: 100%;
-  /* overflow: hidden; */
+  /* width: 100%; */
+  height: 50%;
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
@@ -59,12 +55,9 @@ export const TextWrapper = styled.div`
   margin-top: 1.9rem;
   align-items: center;
   margin-bottom: 0.8rem;
-  /* justify-content: center; */
 
   @media screen and (min-width: 768px) {
     margin-top: 1.9rem;
-    /* align-items: center; */
-    /* justify-content: center; */
   }
 `;
 
@@ -75,9 +68,9 @@ export const Heading = styled.h3`
   align-items: center;
   font-size: 1.4rem;
   line-height: 2rem;
-  color: grey;
+  color: #eee142;
   /* font-weight: bold; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
   /* margin-left: 5.8rem; */
   @media screen and (max-width: 768px) {
     font-size: 20px;

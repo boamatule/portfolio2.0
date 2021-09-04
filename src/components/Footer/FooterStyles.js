@@ -3,7 +3,7 @@ import { Link, Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  /* background-color: #101522; */
+  background-color: #101522;
   background-color: transparent;
   /* padding: 2rem 0 1rem 0; */
   display: flex;
@@ -19,15 +19,10 @@ export const FooterContainer = styled(Container)`
 `;
 
 export const FooterWrapper = styled.div`
-  /* padding: 0 24px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* max-width: 1100px; */
-  /* margin: 0 auto; */
-  /* padding-right: 50px;
-  padding-left: 50px; */
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -91,7 +86,7 @@ export const SocialMediaWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 40px auto 0 auto;
-  /* border-bottom: 2px solid #01bf71; */
+  border-bottom: 2px solid #eee142;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -118,7 +113,7 @@ export const WebsiteRights = styled.h3`
   /* margin-bottom: 0.8rem; */
   justify-content: center;
   font-size: 1rem;
-  color: #eee142;
+  color: silver;
 
   @media screen and (min-width: 480px) {
     margin-top: 1.7rem;

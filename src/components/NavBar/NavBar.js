@@ -51,6 +51,7 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
+              <NavLogo>{/* <Image src="../../images/avatar.png" alt="Boa" /> */}</NavLogo>
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
                   HOME
@@ -65,8 +66,11 @@ function NavBar() {
               <NavItem>
                 <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
+              <NavItem>
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItem>
+              {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
             </NavMenu>
-            <Toggle theme={theme} toggleTheme={themeToggler} />
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

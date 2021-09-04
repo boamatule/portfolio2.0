@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  AboutContainer,
-  Title,
-  Content,
-  H1,
-  Heading,
-  Subtitle,
-  TextWrapper,
-  ArrowForward,
-  ArrowRight,
-  Description,
-} from './AboutPageStyles';
-import { Button } from '../../global-styles';
+import { Container, Button } from '../../global-styles';
+import { Content, Heading, Subtitle, TextWrapper, Description } from './AboutPageStyles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -21,8 +10,8 @@ const AboutPage = () => {
     setHover(!hover);
   };
   return (
-    <Content>
-      <AboutContainer>
+    <Container>
+      <Content>
         <TextWrapper>
           <Heading>Hi, I'm Boa Matule.</Heading>
           <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
@@ -36,8 +25,8 @@ const AboutPage = () => {
             </Button>
           </Link>
         </TextWrapper>
-      </AboutContainer>
-    </Content>
+      </Content>
+    </Container>
   );
 };
 

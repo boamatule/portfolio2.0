@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
     font-family: 'Montserrat';
+    /* font-family: 'Spartan, sans-serif'; */
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.5s linear;
@@ -15,11 +16,11 @@ export const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   @media screen and (max-width: 991px) {
     padding-right: 30px;
@@ -28,14 +29,10 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  /* justify-content: center;
-  align-items: center; */
   background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
   color: black;
-  /* width: 100%; */
-  /* height: 50%; */
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;

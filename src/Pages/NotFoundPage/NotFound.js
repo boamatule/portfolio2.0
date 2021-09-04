@@ -1,13 +1,11 @@
 import React from 'react';
-import { Img, imgWrapper, ErrorContainer } from './NotFoundStyle';
+import { ErrorContainer, textWrapper, textRaw } from './NotFoundStyle';
 import { Container } from '../../global-styles';
 
 const NotFound = () => (
-  <imgWrapper>
-    <ErrorContainer>
-      <Img src="../../images/404.svg" alt="Page Not Found" />
-    </ErrorContainer>
-  </imgWrapper>
+  <ErrorContainer>
+    <textRaw>404: Page Not Found ;-( The page you are looking for doesn't exist or has been moved.</textRaw>
+  </ErrorContainer>
 );
 
 export default NotFound;
