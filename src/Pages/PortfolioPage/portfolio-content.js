@@ -1,114 +1,86 @@
 const projects = [
-		{
-			id: 1,
-			"title": "Fist steps in web development",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. Growth Giant is an A/B testing tool that dynamically directs traffic to better performing pages to ensure that you get the maximum conversion rate. A few friends and I came up with the idea and it was fun designing and building it from the ground up. Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories.",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		{
-			"id": 2,
-			"title": "Fizzbuzz challenge",
-			"image": "https://miro.medium.com/proxy/1*lPfdDAivK_QNzqknqLCP8w.png",
-			"description": "FizzBuzz game built in Javascrip. A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React. ",
-			"GitHub": "https://github.com/SnailCoder1/fizzbuzz_js_BOA",
-			"URL": "https://fizzbuzz1.netlify.com/"
-		},
-		{
-			id: 3,
-			"title": "Newsroom in Reactjs and Rails News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper. Pair programmed with all my fellow student",
-			"image": "https://images-ra.adoptapet.com/images/Homepage-Cat-MOBILE.png",
-			"description": "Just a basic website build in HTML and CSS.A contact form represents an opportunity for web app users to address the web app owner or team. As a rule, “contact us” pages use the email method for communication. A user needs to fill in the required fields like name, email address, and message. When he or she submits the form, the details are sent as an email to your email address. The final stage is the response, which confirms that the user’s request has been accepted. Today, we’re going to dismantle this process and find out how you can implement a contact form with React.Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. ",
-			"GitHub": "https://github.com/SnailCoder1/bmi_calculator_reactJs",
-			"URL": "https://boafirstwebsite.netlify.com/"
-		},
-		
-		
-		
-
-		
-		
-	]
+  {
+    id: 1,
+    title: 'Newsroom | Reactjs | Cypress | Rails',
+    stack: 'Reactjs | Cypress | Rails',
+    image: '/images/code_review.svg',
+    link1: '',
+    link2: '',
+    description: 'News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper.',
+    URL: 'https://glocal-news.netlify.com/news',
+  },
+  {
+    id: 2,
+    title: 'Address Book | Javascript | Tailwind',
+    stack: 'Javascript | Tailwind',
+    image: '/images/code_review.svg',
+    description:
+      'A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.',
+    GitHub: 'https://github.com/boamatule/adressbook_Challenge/tree/01-project-setup',
+    URL: 'https://addressbookit.netlify.app/',
+  },
+  {
+    id: 3,
+    title: 'BMI Calculator',
+    image: '/images/code_review.svg',
+    stack: 'React | Cypress | Semantic UI',
+    description: 'Build in React and Acceptance testing using Cypress. Styled using Semantic UI for React',
+    GitHub: 'https://github.com/SnailCoder1/bmi_calculator_reactJs',
+    URL: 'https://1bmi.netlify.app/',
+  },
+  {
+    id: 4,
+    title: 'Library | Ruby on Rails ',
+    image: '/images/code_review.svg',
+    stack: 'Ruby on Rails',
+    description: 'Library management. The database is stored in a YAML file.',
+    GitHub: 'https://github.com/SnailCoder1/library-challenge',
+    URL: 'https://github.com/boamatule/library-challenge',
+  },
+  {
+    id: 5,
+    title: 'Cooper Calculator | ReactJs | Semantic UI | Heroku | Rails',
+    stack: ' ReactJs | Semantic UI | Heroku | Rails',
+    image: '/images/code_review.svg',
+    description:
+      'Famous Cooper test built in ReactJs. Back-end API built in Ruby on Rails. Styled using Semantic UI. Hosted in Heroku.',
+    GitHub: 'https://github.com/SnailCoder1/Cooper_Client',
+    URL: 'https://1cooper.netlify.com/',
+  },
+  {
+    id: 6,
+    title: 'Cat-BnB | ReactJs | Semantic UI | Heroku | Ruby on Rails | Semaphore',
+    stack: 'ReactJs | Semantic UI | Heroku | Ruby on Rails | Semaphore',
+    image: '/images/code_review.svg',
+    description: 'An AirBNB for cats.',
+    GitHub: '',
+    URL: 'https://kattbnb.herokuapp.com/',
+  },
+  {
+    id: 7,
+    title: 'ATM | Ruby on Rails  | RSpec',
+    image: '/images/code_review.svg',
+    description:
+      'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
+    GitHub: 'https://github.com/SnailCoder1/atm_challenge-1',
+    URL: '',
+  },
+  {
+    id: 8,
+    title: 'Blog | ReactJs | NodeJs | MongoDB | ',
+    image: '/images/code_review.svg',
+    description: 'Blog built in ReactJs and Backended using MongoDB',
+    GitHub: 'https://github.com/boamatule/raw-details-blog',
+    URL: '',
+  },
+  {
+    id: 9,
+    title: 'Blog | ReactJs | NodeJs | MongoDB | ',
+    image: '/images/code_review.svg',
+    description: 'Blog built in ReactJs and Backended using MongoDB',
+    GitHub: 'https://github.com/boamatule/raw-details-blog',
+    URL: '',
+  },
+];
 
 export default projects;

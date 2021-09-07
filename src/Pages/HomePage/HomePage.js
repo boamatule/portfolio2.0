@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
-import NavBar from '../../components/NavBar/NavBar';
-import SideBar from '../../components/SiderBar/SideBar';
+import { HomeInfo, Profile } from '../../components';
+import ContactPage from '../ContactPage/ContactPage';
+import PortfolioListPage from '../PortfolioPage/PortfolioListPage';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
-const HomePage = () => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const toggle = () => {
-		setIsOpen(!isOpen);
-	}
-
-	return (
-		<>
-			<SideBar isOpen={isOpen} toggle={toggle}/>
-			<NavBar toggle={toggle}/>
-		</>
-	)
-}
+const HomePage = () => (
+  <>
+    <Profile />
+    <PortfolioListPage />
+  </>
+);
 
 export default HomePage;

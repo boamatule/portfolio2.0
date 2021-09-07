@@ -1,36 +1,33 @@
-import React from 'react'
-import {
-	AboutContainer,
-	AboutWrapper,
-	AboutTitle,
-	AboutContent,
-	AboutH1,
-	AboutP,
-} from './AboutPageStyles';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Button } from '../../global-styles';
+import { Content, Heading, Subtitle, TextWrapper, Description } from './AboutPageStyles';
 
 const AboutPage = () => {
-	return (
-		<>
-			<AboutContainer>
-				<AboutContent>
-					<AboutTitle>
-						about me
-					</AboutTitle>
-					<AboutH1>
-						Junior Full Stack Developer based in beautiful Oslo, Norway.
-					</AboutH1>
-					<AboutP>
-						Highly trained in modern web stack working with tools like Git, Github, Node, Visual Studio and working in teams. 
-						Always focus om test-driven development and in an agile process. 
-					</AboutP>
-					<AboutP>
-					I enjoy learning new skills and using code to build beautiful digital products. When I'm not coding, you will find me in the kitchen, swimming or playing Capoeira.
+  const [hover, setHover] = useState(false);
 
-					</AboutP>
-				</AboutContent>
-			</AboutContainer>
-		</>
-	);
+  const onHover = () => {
+    setHover(!hover);
+  };
+  return (
+    <Container>
+      <Content>
+        <TextWrapper>
+          <Heading>Hi, I'm Boa Matule.</Heading>
+          <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
+          <Description>
+            Former Chef turned into a highly crafted programmer using the latest tools in programming. Trained in
+            ReactJs and Ruby on Rails using methods like Agile and Test-Driven Develoment.
+          </Description>
+          <Link to="/contact">
+            <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
+              HIRE ME{' '}
+            </Button>
+          </Link>
+        </TextWrapper>
+      </Content>
+    </Container>
+  );
 };
 
 export default AboutPage;

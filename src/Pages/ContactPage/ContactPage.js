@@ -1,42 +1,62 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react';
 import {
-	ContactPageContainer,
-	ContactPageWrapper,
-	ContactPageFormContent,
-	ContactPageForm,
-	ContactPageFormH1,
-	ContactPageLabel,
-	ContactPageFormInput,
-	ContactPageFormButtom,
-	ContactPageText,
-	ContactPageTextArea
-} from './ContactPageStyles'
+  Form,
+  TextArea,
+  Input,
+  Title,
+  Description,
+  ContactContainer,
+  ContactButton,
+  ContactWrapper,
+  ContactButtonWrapper,
+} from './ContactPageStyles';
 
 const ContactPage = () => {
-	return (
-		<div>
-			<ContactPageContainer>
-				<ContactPageWrapper>
-					{/* <ContactPageFormH1>Send me an email</ContactPageFormH1> */}
-					<ContactPageText>Contact me</ContactPageText>
+  const [message, setMessage] = useState({});
 
-					<ContactPageFormContent>
-						<ContactPageForm>
-							<ContactPageFormInput type="text" placeholder="Your Name" name="name"
-								id="" required />
-							<ContactPageFormInput type="email" placeholder="Your Email" name="email"
-								id="" required />
-							<ContactPageTextArea name="message" placeholder="Your Message"
-								id=""
-								required>
-							</ContactPageTextArea>
-							<ContactPageFormButtom>Send Email</ContactPageFormButtom>
-						</ContactPageForm>
-					</ContactPageFormContent>
-				</ContactPageWrapper>
-			</ContactPageContainer>
-		</div>
-	)
-}
+  const encode = (data) =>
+    Object.keys(data)
+      .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .join('&');
+
+  const handleChange = (e) => {
+    setMessage({
+      ...message,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...message }),
+    })
+      .then(() => alert('<Img src="../../images/emailSent.svg" />'))
+      .catch((error) => alert(error));
+    e.preventDefault();
+  };
+
+  return (
+    <ContactContainer>
+      <ContactWrapper>
+        <Title>Get in touch</Title>
+        <Description>
+          If you would like to get in touch, fill up the form below and i will get back to you as soon as possible.
+        </Description>
+        <Form name="contact" method="POST" onSubmit={handleSubmit}>
+          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+          <ContactButtonWrapper>
+            <ContactButton type="submit" primary style={{ justifyContent: 'center' }}>
+              SUBMIT
+            </ContactButton>
+          </ContactButtonWrapper>
+        </Form>
+      </ContactWrapper>
+    </ContactContainer>
+  );
+};
 
 export default ContactPage;
