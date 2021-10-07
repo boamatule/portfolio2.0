@@ -1,59 +1,81 @@
-import React from 'react';
-import { FaGithub, FaLinkedinIn, FaBars } from 'react-icons/fa';
+/* eslint-disable import/no-named-as-default */
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles, { Button } from '../../global-styles';
+import { lightTheme, darkTheme } from '../DarkMode/Themes';
+import useDarkMode from '../DarkMode/useDarkMode';
+import Toggle from '../DarkMode/Toggler';
 import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobilIcon,
+  NavIcon,
+  MobileIcon,
+  NavMenu,
   NavLinks,
   NavItem,
-  NavMenu,
-  NavBtn,
+  NavItemBtn,
   NavBtnLink,
-  SocialIcons,
-  SocialIconLink,
 } from './NavBarStyles';
 
-const NavBar = () => (
-  <>
-    <Nav>
-      <NavbarContainer>
-        <NavLogo to="/about">Boa Matule</NavLogo>
-        <MobilIcon
-        // onClick={toggle}
-        >
-          <FaBars />
-        </MobilIcon>
-        <NavMenu>
-          <NavItem>
-            <NavLinks to="/about">about</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/portfolio-list">portfolio</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/resume">resume</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/contact">contact</NavLinks>
-          </NavItem>
-        </NavMenu>
+function NavBar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-        <SocialIcons>
-          <SocialIconLink
-            href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedinIn />
-          </SocialIconLink>
-          <SocialIconLink href="https://github.com/boamatule" target="_blank" aria-label="LinkedIn">
-            <FaGithub />
-          </SocialIconLink>
-        </SocialIcons>
-      </NavbarContainer>
-    </Nav>
-  </>
-);
+  const handleClick = () => setClick(!click);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
+  const [theme, themeToggler] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  return (
+    <ThemeProvider theme={themeMode}>
+      <IconContext.Provider value={{ color: '#EEE142' }}>
+        <GlobalStyles />
+        <Nav>
+          <NavbarContainer>
+            <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavLogo>{/* <Image src="../../images/avatar.png" alt="Boa" /> */}</NavLogo>
+              <NavItem>
+                <NavLinks to="/home" text={{ color: '#EEE142' }}>
+                  HOME
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/about">ABOUT</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/contact">CONTACT</NavLinks>
+              </NavItem>
+              <NavItem>
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItem>
+              {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
+    </ThemeProvider>
+  );
+}
 
 export default NavBar;

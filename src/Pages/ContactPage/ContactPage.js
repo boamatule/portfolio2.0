@@ -1,33 +1,62 @@
-import React from 'react';
-import { Container, Form, TextArea, Input, Title, Button, ArrowForward, ArrowRight } from './ContactPageStyles';
+import React, { useState } from 'react';
+import {
+  Form,
+  TextArea,
+  Input,
+  Title,
+  Description,
+  ContactContainer,
+  ContactButton,
+  ContactWrapper,
+  ContactButtonWrapper,
+} from './ContactPageStyles';
 
-const ContactPage = () => (
-  // const [emailAddress, setEmailAddress] = useState('');
-  // const [password, setPassword] = useState('')
+const ContactPage = () => {
+  const [message, setMessage] = useState({});
 
-  <Container>
-    <Form onSubmit="" method="POST">
-      <Title>Let's get in touch!</Title>
-      <Input
-        placeholder="Enter Your Name"
-        type="text"
-        required
-        // value={emailAddress}
-        // onChange={({ target }) => setEmailAddress(target.value)}
-      />
-      <Input
-        placeholder="Enter Your Email Address"
-        type="text"
-        required
-        // value={emailAddress}
-        // onChange={({ target }) => setEmailAddress(target.value)}
-      />
-      <TextArea placeholder="What are we going to build today?" type="message" />
-      <Button type="submit" disabled="isInvalid">
-        SUBMIT
-      </Button>
-    </Form>
-  </Container>
-);
+  const encode = (data) =>
+    Object.keys(data)
+      .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .join('&');
+
+  const handleChange = (e) => {
+    setMessage({
+      ...message,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...message }),
+    })
+      .then(() => alert('<Img src="../../images/emailSent.svg" />'))
+      .catch((error) => alert(error));
+    e.preventDefault();
+  };
+
+  return (
+    <ContactContainer>
+      <ContactWrapper>
+        <Title>Get in touch</Title>
+        <Description>
+          If you would like to get in touch, fill up the form below and i will get back to you as soon as possible.
+        </Description>
+        <Form name="contact" method="POST" onSubmit={handleSubmit}>
+          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+          <ContactButtonWrapper>
+            <ContactButton type="submit" primary style={{ justifyContent: 'center' }}>
+              SUBMIT
+            </ContactButton>
+          </ContactButtonWrapper>
+        </Form>
+      </ContactWrapper>
+    </ContactContainer>
+  );
+};
 
 export default ContactPage;

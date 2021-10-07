@@ -1,19 +1,28 @@
 import styled from 'styled-components/macro';
 import { Link, Link as LinkRouter } from 'react-router-dom';
+import { Container } from '../../global-styles';
 
-export const FooterContainer = styled.footer`
-  background-color: #282c34;
-  padding: 20px 10px;
-`;
-
-export const FooterWrapper = styled.div`
-  /* padding: 48px 24px; */
+export const FooterContainer = styled(Container)`
+  background-color: #101522;
+  background-color: transparent;
+  /* padding: 2rem 0 1rem 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  ${Container};
+
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+`;
+
+export const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -69,15 +78,15 @@ export const FooterLink = styled(Link)`
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
-  width: 100%;
+  /* width: 100%; */
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
   margin: 40px auto 0 auto;
+  border-bottom: 2px solid #eee142;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -85,35 +94,48 @@ export const SocialMediaWrapper = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: silver;
-  justify-self: start;
+  color: #eee142;
+  /* justify-self: start; */
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
 `;
 
-export const WebsiteRights = styled.small`
-  color: silver;
-  margin-bottom: 16px;
-  font-weight: bold;
-  justify-content: space-between;
+export const WebsiteRights = styled.h3`
+  display: flex;
+  font-weight: normal;
+  margin-top: 1.9rem;
   align-items: center;
+  /* margin-bottom: 0.8rem; */
+  justify-content: center;
+  font-size: 1rem;
+  color: silver;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 1.7rem;
+  }
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 100px;
+  padding: 10px 22px;
 `;
 
 export const SocialIconLink = styled.a`
   color: silver;
-  font-size: 30px;
+  /* font-size: 30px; */
+
+  &:hover {
+    color: #01bf71;
+    /* transition: 0.3s ease-out; */
+  }
 `;
 
 export const NavBtnLink = styled(LinkRouter)`
@@ -128,4 +150,22 @@ export const NavBtnLink = styled(LinkRouter)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+`;
+
+export const Copyright = styled.h3`
+  color: #eee142;
+  font-size: 16px;
+  /* font-weight: normal; */
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 480px) {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+  }
 `;
