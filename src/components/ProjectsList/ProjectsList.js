@@ -4,63 +4,9 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 // import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
-import {
-  ButtonLink,
-  Meta,
-  Card,
-  Image,
-  Entities,
-  SubTitle,
-  Title,
-  ProjectWrapper,
-  // ProjectContainer,
-  Heading,
-  buttonLabel,
-} from './ProjectsListStyles';
+import { ButtonLink, Meta, Card, Image, Entities, SubTitle, Title, ProjectWrapper } from './ProjectsListStyles';
 
-<<<<<<< HEAD
-
-const ProjectsList = ({ projects}) => {
-	return (
-		<ProjectsListContainer>
-			<ProjectsListWrapper>
-			{projects.map((project, key) => (
-				<div key={key} to={`/project/${project.name}`}>
-					<ProjectListCard>
-						<ProjectListImage src={project.image}/>
-						<ProjectListH2>
-							{/* {project.title} */}
-						</ProjectListH2>
-						<ProjectListP >
-						{project.description[0].substring(0, 150)}...
-						</ProjectListP>
-						<div>
-						<ProjectsListBtnLink
-						href={project.GitHub}
-						target="_blank"
-						rel="noopener"
-						primary>
-							GitHub	
-						</ProjectsListBtnLink>
-						<ProjectsListBtnLink 
-							href={project.URL}
-							target="_blank"
-							rel="noopener"
-						primary>
-							Visit me
-							</ProjectsListBtnLink>
-						</div>
-					</ProjectListCard>
-
-				</div>
-				
-			))}
-			</ProjectsListWrapper>
-		</ProjectsListContainer>
-	)
-}
-=======
-const ProjectsList = ({ projects, lightBg, website, github, GitHub, buttonLabel }) => (
+const ProjectsList = ({ projects, lightBg }) => (
   <ProjectWrapper onMouseEnter>
     <Container lightBg={lightBg}>
       {/* <Heading>Bellow is some of my projects</Heading> */}
@@ -98,6 +44,5 @@ const ProjectsList = ({ projects, lightBg, website, github, GitHub, buttonLabel 
     </Container>
   </ProjectWrapper>
 );
->>>>>>> alternative-design
 
 export default ProjectsList;

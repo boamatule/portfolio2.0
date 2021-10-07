@@ -1,6 +1,6 @@
 import { Container } from '../../global-styles';
 
-const { Avatar, ProfileWrapper, Img, Heading, Subtitle, TextWrapper, Location } = require('./ProfileStyles');
+const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location } = require('./ProfileStyles');
 
 const Profile = () => (
   <Container>
