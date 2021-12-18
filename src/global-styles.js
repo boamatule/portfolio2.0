@@ -35,8 +35,9 @@ export const Button = styled.button`
   color: black;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
-  border: none;
+  border: 2 solid silver;
   cursor: pointer;
+  /* background-color: transparent; */
 
   &:hover {
     transition: all 0.3s ease-out;

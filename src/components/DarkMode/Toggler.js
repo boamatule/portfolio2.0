@@ -13,10 +13,14 @@ Sun = Moon = styled.svg`
   top: 1.5rem;
   right: 8rem;
   color: #fff142;
-  transition: all 0.25s linear;
+  transition: all transform 2s;
   cursor: pointer;
   color: none;
   background-color: transparent;
+
+  &:hover {
+    transform: none;
+  }
 
   @media screen and (max-width: 960px) {
     top: 1.9rem;

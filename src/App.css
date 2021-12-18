@@ -14,16 +14,17 @@
    /* background-color: white; */
   padding: 16px 0 16px 0;
 }
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
 
 .article-list-item p {
   padding-bottom: 32px; 
   /* border-bottom: 2px solid black; */
- }
-
-/* body {
-  font-family: "Montserrat";
-  font-size: 8px;
-} */
+}
 
 /* .App {
   text-align: center;

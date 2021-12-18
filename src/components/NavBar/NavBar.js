@@ -1,12 +1,14 @@
-/* eslint-disable import/no-named-as-default */
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles, { Button } from '../../global-styles';
+import { GlobalStyles, Button } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
+// import Logo from '../../public/images/logo.png';
+// import { ReactComponent as Logo } from '../../../public/images/logo.png';
+
 import {
   Nav,
   NavbarContainer,
@@ -51,7 +53,8 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-              <NavLogo>{/* <Image src="../../images/avatar.png" alt="Boa" /> */}</NavLogo>
+              <NavLogo>{/* <img src="../" width="24" height="24" alt="places icon" /> */}</NavLogo>
+
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
                   HOME
@@ -69,7 +72,6 @@ function NavBar() {
               <NavItem>
                 <Toggle theme={theme} toggleTheme={themeToggler} />
               </NavItem>
-              {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>
