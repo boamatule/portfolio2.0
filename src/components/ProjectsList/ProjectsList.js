@@ -15,10 +15,10 @@ const ProjectsList = ({ projects }) => (
           <Image src={project.imageUrl} />
           <Card>
             <ButtonWrapperLink>
-              <Button>{project.stack}</Button>
+              {/* <Button>{project.stack}</Button>
               <Button>{project.stack1}</Button>
               <Button>{project.stack2}</Button>
-              <Button>{project.stack3}</Button>
+              <Button>{project.stack3}</Button> */}
             </ButtonWrapperLink>
           </Card>
         </GlassmorphismContainer>

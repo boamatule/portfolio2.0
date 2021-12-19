@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const Nav = styled.nav`
-  background: transparent;
-  height: 80;
+  /* background: red; */
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,9 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  /* background-color: red; */
+  /* border-radius: 100%;
+  border: 1px solid purle; */
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -20,23 +23,42 @@ export const NavbarContainer = styled(Container)`
   /* justify-content: space-between; */
   height: 80px;
   justify-content: center;
-  ${Container}
+  ${Container},/* border-radius: 50%;
+  border: 28px solid red; */
+  /* background-color: red; */
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  display: inline-flex;
+  /* color: #fff; */
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+  /* font-size: 1.5rem; */
+  /* display: flex; */
+  /* align-items: center; */
+  padding: 10px 0px 0px 0px;
+  /* background-color: red; */
 `;
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+  background-color: red;
 `;
 
+export const Img = styled.img`
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100%; */
+  /* border: 1px solid transparent; */
+  /* background-color: red; */
+
+  @media screen and (min-width: 480px) {
+    /* width: 60px;
+    height: 50px; */
+    /* border-radius: 100%; */
+  }
+`;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -59,12 +81,13 @@ export const NavMenu = styled.ul`
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  /* background-color: red; */
 
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     position: absolute;
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
@@ -75,9 +98,15 @@ export const NavMenu = styled.ul`
   }
 `;
 
+export const NavItemSeparator = styled.div`
+|
+color: red;
+`;
+
 export const NavItem = styled.li`
   height: 80px;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
+  font-weight: normal;
 
   &:hover {
     border-bottom: 4px solid #eee142;

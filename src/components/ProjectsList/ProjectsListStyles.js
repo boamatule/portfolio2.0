@@ -9,6 +9,13 @@ export const ProjectContainer = styled.div`
   padding-right: 1rem /* 16px */;
 
   backdrop-filter: blur(10px);
+
+  @media screen and (max-width: 960px) {
+    padding-left: 2rem /* 16px */;
+    padding-right: 2rem /* 16px */;
+    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
+    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
+  }
 `;
 
 export const Title = styled.h1`

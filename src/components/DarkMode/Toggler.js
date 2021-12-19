@@ -10,8 +10,8 @@ let Moon;
 
 Sun = Moon = styled.svg`
   position: fixed;
-  top: 1.5rem;
-  right: 8rem;
+  top: 2.6rem;
+  right: 6rem;
   color: #fff142;
   transition: all transform 2s;
   cursor: pointer;

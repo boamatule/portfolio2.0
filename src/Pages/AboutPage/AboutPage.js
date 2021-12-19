@@ -21,7 +21,7 @@ const AboutPage = () => {
           </Description>
           <Link to="/contact">
             <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-              HIRE ME{' '}
+              Let me your valuable asset{' '}
             </Button>
           </Link>
         </TextWrapper>

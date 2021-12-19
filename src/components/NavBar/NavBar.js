@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, Button } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
-// import Logo from '../../public/images/logo.png';
-// import { ReactComponent as Logo } from '../../../public/images/logo.png';
 
 import {
   Nav,
@@ -20,6 +18,8 @@ import {
   NavItem,
   NavItemBtn,
   NavBtnLink,
+  Img,
+  NavItemSeparator,
 } from './NavBarStyles';
 
 function NavBar() {
@@ -52,22 +52,37 @@ function NavBar() {
         <Nav>
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
+            <NavLogo>
+              <Img src="../../images/logo.svg" alt="logo" />
+            </NavLogo>
             <NavMenu onClick={handleClick} click={click}>
-              <NavLogo>{/* <img src="../" width="24" height="24" alt="places icon" /> */}</NavLogo>
-
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
-                  HOME
+                  01 : HOME
+                </NavLinks>
+              </NavItem>
+              |
+              <NavItem>
+                <NavLinks to="/about">02 : ABOUT</NavLinks>
+              </NavItem>
+              |
+              <NavItem>
+                <NavLinks to="/portfolio-list">03 : PORTFOLIO</NavLinks>
+              </NavItem>
+              |
+              <NavItem>
+                <NavLinks to="/contact">04 : CONTACT</NavLinks>
+              </NavItem>
+              |
+              <NavItem>
+                <NavLinks href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <FaGithub />
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/about">ABOUT</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/contact">CONTACT</NavLinks>
+                <NavLinks href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <FaLinkedinIn />
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <Toggle theme={theme} toggleTheme={themeToggler} />
