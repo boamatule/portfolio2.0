@@ -23,12 +23,20 @@ Sun = Moon = styled.svg`
   }
 
   @media screen and (max-width: 960px) {
-    top: 1.9rem;
+    /* top: 1.9rem;
     right: 3rem;
     cursor: pointer;
     color: none;
     background-color: transparent;
-    display: none;
+    display: none; */
+    @media screen and (max-width: 960px) {
+      height: none;
+      top: 1.6rem;
+      right: 4em;
+      padding: 0px 0px 0px 0px;
+      opacity: ;
+      transition: all 0.5s ease;
+    }
   }
 `;
 

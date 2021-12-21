@@ -1,7 +1,8 @@
 const projects = [
   {
     id: 1,
-    title: 'Newsroom | Reactjs | Cypress | Rails',
+    title: 'Coffee Connoisseur',
+    stack: 'Nextjs | GraphSQL | Serverless',
     stack1: 'Reactjs',
     stack2: 'Cypress',
     stack3: 'Rails',
@@ -14,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Address Book | Javascript | Tailwind',
+    title: 'Address Book',
     stack: 'Javascript | Tailwind',
     imageUrl: '/images/robot.png',
     description:
@@ -33,7 +34,7 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Library | Ruby on Rails ',
+    title: 'Library',
     imageUrl: '/images/code_review.svg',
     stack: 'Ruby on Rails',
     description: 'Library management. The database is stored in a YAML file.',
@@ -42,7 +43,7 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Cooper Calculator | ReactJs | Semantic UI | Heroku | Rails',
+    title: 'Cooper Calculator',
     stack: ' ReactJs | Semantic UI | Heroku | Rails',
     imageUrl: '/images/boa.png',
     description:
@@ -52,7 +53,7 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Cat-BnB | ReactJs | Semantic UI | Heroku | Ruby on Rails | Semaphore',
+    title: 'Cat-BnB',
     stack: 'ReactJs | Semantic UI | Heroku | Ruby on Rails | Semaphore',
     imageUrl: '/images/logo.png',
     description: 'An AirBNB for cats.',
@@ -61,7 +62,8 @@ const projects = [
   },
   {
     id: 7,
-    title: 'ATM | Ruby on Rails  | RSpec',
+    title: 'ATM',
+    stack: 'Ruby on Rails  | RSpec',
     imageUrl: '/images/code_review.svg',
     description:
       'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
@@ -70,16 +72,9 @@ const projects = [
   },
   {
     id: 8,
-    title: 'Blog | ReactJs | NodeJs | MongoDB | ',
+    title: 'Blog',
+    stack: 'ReactJs | NodeJs | MongoDB |',
     imageUrl: '/images/code_review.svg',
-    description: 'Blog built in ReactJs and Backended using MongoDB',
-    GitHub: 'https://github.com/boamatule/raw-details-blog',
-    URL: '',
-  },
-  {
-    id: 9,
-    title: 'Blog | ReactJs | NodeJs | MongoDB | ',
-    imageUrl: '/images/logo.png',
     description: 'Blog built in ReactJs and Backended using MongoDB',
     GitHub: 'https://github.com/boamatule/raw-details-blog',
     URL: '',

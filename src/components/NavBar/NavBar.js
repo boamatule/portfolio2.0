@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles, Button } from '../../global-styles';
+import { GlobalStyles } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
@@ -11,15 +11,14 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   MobileIcon,
   NavMenu,
   NavLinks,
   NavItem,
-  NavItemBtn,
-  NavBtnLink,
   Img,
-  NavItemSeparator,
+  NavItemSocialIconLink,
+  NavItemSocialIcon,
+  NavItemToggle,
 } from './NavBarStyles';
 
 function NavBar() {
@@ -53,7 +52,9 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
             <NavLogo>
-              <Img src="../../images/logo.svg" alt="logo" />
+              <NavLinks to="/home" text={{ color: '#EEE142' }}>
+                <Img src="../../images/logo.svg" alt="logo" />
+              </NavLinks>
             </NavLogo>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
@@ -74,18 +75,30 @@ function NavBar() {
                 <NavLinks to="/contact">04 : CONTACT</NavLinks>
               </NavItem>
               |
-              <NavItem>
-                <NavLinks href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://github.com/boamatule"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
                   <FaGithub />
-                </NavLinks>
-              </NavItem>
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaGithub />
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
               <NavItem>
-                <NavLinks href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                  <FaLinkedinIn />
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <Toggle theme={theme} toggleTheme={themeToggler} />
+                <NavItemToggle>
+                  <Toggle theme={theme} toggleTheme={themeToggler} />
+                </NavItemToggle>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

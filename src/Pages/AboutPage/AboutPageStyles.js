@@ -17,19 +17,20 @@ export const Content = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  /* width: 80%; */
+  width: 50%;
   height: auto;
-  color: silver;
-  justify-content: center;
-  align-items: center;
+  margin-left: 60px;
+  /* color: silver; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
   /* overflow: hidden; */
   /* display: flex; */
   /* max-width: 1200px; */
-  align-items: center;
-  justify-content: center;
-  text-align: start;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: start; */
   /* justify-content: flex-start; */
-  padding: 100px 200px 0px 200px;
+  padding: 100px 0px 40px 60px;
   /* flex-direction: column; */
   /* z-index: 1; */
   /* padding-right: 160px; */
@@ -37,6 +38,8 @@ export const Content = styled.div`
   @media screen and (max-width: 960px) {
     padding-right: 0px;
     padding-left: 0px;
+    width: 100%;
+    height: auto;
   }
 `;
 
@@ -60,9 +63,10 @@ export const Description = styled.p`
   color: silver;
   font-size: 16px;
   letter-spacing: 1.6px;
-  line-height: 24px;
+  line-height: none;
   font-weight: normal;
   justify-content: flex-start;
+  margin-left: 0;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -71,8 +75,8 @@ export const Description = styled.p`
 
 export const Subtitle = styled.h2`
   margin-bottom: 35px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 20px;
   color: silver;
   letter-spacing: 1.6px;
   font-weight: normal;
@@ -83,30 +87,26 @@ export const Subtitle = styled.h2`
 `;
 
 export const Heading = styled.h1`
-  /* margin-top: 24px; */
-  margin-bottom: 24px;
-  font-size: 30px;
-  color: silver;
-  /* line-height: 1.1; */
-  font-weight: bold;
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  justify-content: flex-start;
+  /* text-align: center; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'silver')}; */
+
   @media screen and (max-width: 960px) {
     font-size: 20px;
-    /* padding-right: 10px;
-    padding-left: 10px; */
   }
 `;
 
 export const TextWrapper = styled.div`
   color: silver;
   padding-top: 0;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   @media screen and (max-width: 960px) {
     padding-bottom: 65px;
-    color: silver;
-    /* padding-right: 10px;
-    padding-left: 10px; */
+    /* color: silver; */
   }
 `;
 

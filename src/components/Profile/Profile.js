@@ -10,7 +10,7 @@ const Profile = () => (
       </Avatar>
       <TextWrapper>
         <Heading>Boa Matule | Full Stack Developer</Heading>
-        <Location> boa.matule@gmail.com | +4740101117 | Oslo, Norway </Location>
+        <Location> boa.matule@gmail.com | +4740101117 | Oslo - Norway </Location>
       </TextWrapper>
     </ProfileWrapper>
   </Container>

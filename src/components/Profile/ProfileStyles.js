@@ -39,10 +39,10 @@ export const Avatar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 9.6rem;
-  height: 9.6rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 4px solid purple;
 
   @media screen and (min-width: 480px) {
     width: 10.6rem;
@@ -62,7 +62,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h3`
-  /* font-weight: normal; */
+  font-weight: bold;
   letter-spacing: 1;
   justify-content: center;
   align-items: center;
@@ -102,9 +102,9 @@ export const Location = styled.h4`
   letter-spacing: 10;
   justify-content: center;
   align-items: center; */
-  font-size: 0.6rem;
+  font-size: 1.1rem;
   line-height: 1;
   color: grey;
-  font-weight: normal;
+  font-weight: none;
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')}; */
 `;

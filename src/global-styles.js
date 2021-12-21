@@ -49,7 +49,7 @@ export const Container = styled.div`
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-  background: transparent;
+  background: none;
 
   @media screen and (max-width: 991px) {
     padding-right: 30px;

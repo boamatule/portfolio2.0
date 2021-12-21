@@ -5,22 +5,34 @@ import { withRouter, Link } from 'react-router-dom';
 
 // import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
-import { Image, CardContainer, GlassmorphismContainer, ButtonWrapperLink, Card, Span } from './ProjectsListStyles';
+import {
+  Image,
+  CardContainer,
+  GlassmorphismContainer,
+  ButtonWrapperLink,
+  CardTitle,
+  Heading,
+  ProjectDescription,
+  Title,
+} from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
   <Container>
+    <Heading>Portfolio.</Heading>
+    <CardTitle>
+      Please, check out some of my curated projects built using the lastet tech stack in the industry.
+    </CardTitle>
     <CardContainer>
       {projects.map((project, key) => (
         <GlassmorphismContainer key={key} to={`/project/${project.id}`}>
           <Image src={project.imageUrl} />
-          <Card>
-            <ButtonWrapperLink>
-              {/* <Button>{project.stack}</Button>
-              <Button>{project.stack1}</Button>
-              <Button>{project.stack2}</Button>
-              <Button>{project.stack3}</Button> */}
-            </ButtonWrapperLink>
-          </Card>
+          <Title>{project.title}</Title>
+          {/* <ProjectDescription>{project.description}</ProjectDescription> */}
+          <ProjectDescription>{project.stack}</ProjectDescription>
+
+          {/* <CardTitle>{project.description}</CardTitle> */}
+          {/* <Button>check me out</Button>
+          <Button>Github</Button> */}
         </GlassmorphismContainer>
       ))}
     </CardContainer>

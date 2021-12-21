@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { Button } from '../../global-styles';
 
 export const ProjectContainer = styled.div`
   border-radius: 0.75rem /* 12px */;
@@ -7,8 +8,7 @@ export const ProjectContainer = styled.div`
   padding-bottom: 1.25rem /* 20px */;
   padding-left: 1rem /* 16px */;
   padding-right: 1rem /* 16px */;
-
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 
   @media screen and (max-width: 960px) {
     padding-left: 2rem /* 16px */;
@@ -22,8 +22,9 @@ export const Title = styled.h1`
   font-size: 16px;
   color: #eee142;
   font-weight: bold;
-
-  /* display: flex; */
+  justify-content: flex-start;
+  text-align: flex-start;
+  background-color: transparent;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -31,13 +32,13 @@ export const Title = styled.h1`
   }
 `;
 
-export const Heading = styled.h3`
-  /* font-weight: normal; */
-  margin-bottom: 40px;
-  font-size: 30px;
-  line-height: 1.1;
-  justify-content: center;
-  text-align: center;
+export const Heading = styled.h2`
+  font-weight: normal;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-left: 20px;
+  justify-content: flex-start;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 
   @media screen and (max-width: 960px) {
@@ -58,10 +59,12 @@ export const CardContainer = styled.div`
   padding-left: 0.5rem /* 16px */;
   padding-right: 0.5rem /* 16px */;
   text-align: center;
-  backdrop-filter: blur(10px);
   justify-content: space-between;
-  /* position: relative; */
   cursor: pointer;
+  margin-left: 20px;
+
+  /* &:hover {
+    ${Button} */
 
   @media screen and (max-width: 640px) {
     justify-content: center;
@@ -87,38 +90,43 @@ export const CardContainer = styled.div`
 `;
 
 export const GlassmorphismContainer = styled.div`
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 0px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid purple;
+  border-radius: 4px;
+  display: block;
+  position: stycky;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? 'purple' : '#01bf71')};
-    color: #010606;
+    /* transition: all 0.5s ease-in-out; */
+    /* background: ${({ primary }) => (primary ? 'purple' : '#01bf71')}; */
+  }
+
+  &:hover ${Button} {
+    display: none;
   }
 `;
 
 export const ButtonWrapperLink = styled.div`
-  /* height: 20px;
-  width: 40px;
-  border: 1px solid purple;
+  /* height: 20px; */
+  max-width: 40px;
+  /* border: 1px solid purple; */
   background: none;
   cursor: pointer;
-  position: relative;
-  display: flex;
-  object-fit: cover;
+  /* position: relative; */
+  /* display: flex; */
+  /* object-fit: cover; */
   justify-content: center;
-  align-items: center; */
-  /* display: inline-block; */
+  align-items: center;
+  display: block;
   /* padding-left: 30px;
   padding-right: 40px; */
-  position: absolute;
+  position: relative;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
   background-color: transparent;
 `;
 
@@ -129,6 +137,7 @@ export const SubTitle = styled.p`
   user-select: none;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 20px;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -137,28 +146,14 @@ export const SubTitle = styled.p`
 `;
 
 export const Image = styled.img`
-  /* border-radius: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 0;
-  object-fit: cover; */
-  /* object-fit: cover; */
-  /* background-color: transparent;
-  border-radius: none;
-  justify-content: center;
-  text-align: center; */
-
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 340px;
   height: 200px;
-  border-radius: 0px;
-  padding-top: 0rem;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  border-radius: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: transparent;
 
   @media screen and (max-width: 960px) {
@@ -258,12 +253,79 @@ export const Card = styled.div`
   }
 `;
 
+export const CardTitle = styled.p`
+  left: 0;
+  top: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 20px;
+  color: silver;
+  /* text-transform: uppercase; */
+  background: transparent;
+  /* transition: top 0.5s ease; */
+
+  @media screen and (max-width: 960px) {
+    /* width: 100%;
+    &:hover {
+      transform: none;
+    } */
+  }
+`;
+
 export const Span = styled.span`
-  display: inline-block;
-  position: relative;
+  /* display: inline-block; */
+  position: absolute;
   align-items: center;
   margin-left: 0px;
   margin-right: 0px;
   justify-content: space-evenly;
   background-color: transparent;
+`;
+
+export const ProjectWrapper = styled.div`
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* width: 50%; */
+  color: silver;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* max-width: 1200px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: start; */
+  /* justify-content: flex-start; */
+  /* padding: 100px 0px 40px 60px; */
+  /* flex-direction: column; */
+  /* z-index: 1; */
+  /* padding-right: 160px; */
+  /* padding-left: 60px; */
+  @media screen and (max-width: 960px) {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const ProjectDescription = styled.p`
+  display: inline-block;
+  color: silver;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  line-height: 20px;
+  font-weight: normal;
+  background: transparent;
+  height: 120px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 14px;
+  }
 `;

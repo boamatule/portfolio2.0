@@ -6,14 +6,11 @@ import { Container, Button } from '../../global-styles';
 export const ContactContainer = styled(Container)`
   margin-top: 100px;
   ${Container}
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  /* align-items: center; */
   width: 60%;
   @media screen and (max-width: 960px) {
     width: 100%;
-    /* padding: 0px 0px 0px 100px;
-    display: flex;
-    align-items: center; */
   }
 `;
 
@@ -120,6 +117,7 @@ export const TextArea = styled.textarea`
   border: 1px solid #eee142;
   border-radius: 1px;
   padding: 8px;
+  height: 200px;
 
   &:focus {
     outline: true;
@@ -145,6 +143,15 @@ export const ContactButton = styled(Button)`
   /* font: ${({ fontBig }) => (fontBig ? '12px' : '10px')}; */
   font-weight: bold;
   border-radius: 0px;
+  display: flex;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 960px) {
+    justify-content: flex-start;
+    /* align-items: center; */
+    display: flex;
+    /* width: 50%; */
+  }
 `;
 
 export const ContactButtonWrapper = styled.div`

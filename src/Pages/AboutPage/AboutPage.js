@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button } from '../../global-styles';
-import { Content, Heading, Subtitle, TextWrapper, Description } from './AboutPageStyles';
+import { Content, Heading, Subtitle, Description } from './AboutPageStyles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -12,19 +12,17 @@ const AboutPage = () => {
   return (
     <Container>
       <Content>
-        <TextWrapper>
-          <Heading>Hi, I'm Boa Matule.</Heading>
-          <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
-          <Description>
-            Former Chef turned into a highly crafted programmer using the latest tools in programming. Trained in
-            ReactJs and Ruby on Rails using methods like Agile and Test-Driven Develoment.
-          </Description>
-          <Link to="/contact">
-            <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-              Let me your valuable asset{' '}
-            </Button>
-          </Link>
-        </TextWrapper>
+        <Heading>About.</Heading>
+        <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
+        <Description>
+          Former Chef turned into a highly crafted programmer using the latest tools in programming. Trained in ReactJs
+          and Ruby on Rails using methods like Agile and Test-Driven Development.
+        </Description>
+        <Link to="/contact">
+          <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
+            CONTACT{' '}
+          </Button>
+        </Link>
       </Content>
     </Container>
   );

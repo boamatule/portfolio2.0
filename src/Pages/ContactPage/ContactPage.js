@@ -10,6 +10,7 @@ import {
   ContactWrapper,
   ContactButtonWrapper,
 } from './ContactPageStyles';
+import { Container } from '../../global-styles';
 
 const ContactPage = () => {
   const [message, setMessage] = useState({});
@@ -32,7 +33,7 @@ const ContactPage = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...message }),
     })
-      .then(() => alert('<Img src="../../images/emailSent.svg" />'))
+      .then(() => alert('Your message as been sent successfully'))
       .catch((error) => alert(error));
     e.preventDefault();
   };
