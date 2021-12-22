@@ -156,9 +156,12 @@ export const ContactButton = styled(Button)`
 
 export const ContactButtonWrapper = styled.div`
   /* width: 50%; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: flex-start;
+  flex-direction: row; */
+  /* align-items: center; */
   display: flex;
+  justify-content: flex-end;
 
   @media screen and (min-width: 960px) {
     justify-content: center;

@@ -14,6 +14,7 @@ import {
   Heading,
   ProjectDescription,
   Title,
+  ButtonWrapperLinkText,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -26,17 +27,14 @@ const ProjectsList = ({ projects }) => (
       {projects.map((project, key) => (
         <GlassmorphismContainer key={key} to={`/project/${project.id}`}>
           <Image src={project.imageUrl} />
-          <ButtonWrapperLink>
-            <Button />
-            <Button />
-          </ButtonWrapperLink>
           <Title>{project.title}</Title>
-          {/* <ProjectDescription>{project.description}</ProjectDescription> */}
           <ProjectDescription>{project.stack}</ProjectDescription>
-
-          {/* <CardTitle>{project.description}</CardTitle> */}
-          {/* <Button>check me out</Button>
-          <Button>Github</Button> */}
+          <ButtonWrapperLink>
+            <ButtonWrapperLinkText>
+              <Button>See live</Button>
+            </ButtonWrapperLinkText>
+            <Button>See live</Button>
+          </ButtonWrapperLink>
         </GlassmorphismContainer>
       ))}
     </CardContainer>

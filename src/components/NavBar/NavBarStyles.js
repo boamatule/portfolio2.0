@@ -82,6 +82,11 @@ export const NavMenu = styled.ul`
   text-decoration: none;
   font-size: 2rem;
 
+  &:hover {
+    transition: 0.3s ease;
+    color: #01bf71;
+  }
+
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -109,9 +114,15 @@ export const NavItem = styled.li`
     width: 80%;
 
     &:hover {
+      color: #01bf71;
+
       border-bottom: 2px solid transparent;
       /* border-bottom: 4px solid #eee142; */
     }
+  }
+  &:hover {
+    color: #01bf71;
+    /* transition: 0.3s ease-out; */
   }
 `;
 
@@ -162,10 +173,6 @@ export const NavBtnLink = styled(Link)`
 export const NavSocialIconsWrapper = styled.div`
   /* height: 80px; */
   /* flex-direction: column; */
-
-  &:hover {
-    /* border-bottom: 4px solid #eee142; */
-  }
 
   @media screen and (max-width: 960px) {
     /* width: 80%; */

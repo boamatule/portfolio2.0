@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-	/* * {
+	* {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.5s linear;  
-	} */
+	}
   *{
     margin: 0;
     padding: 0;
@@ -78,7 +78,7 @@ export const Button = styled.button`
   color: black;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
-  border: 2 solid silver;
+  border: 2 solid purple;
   cursor: pointer;
   /* background-color: transparent; */
 

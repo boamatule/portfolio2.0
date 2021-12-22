@@ -8,7 +8,6 @@ export const ProjectContainer = styled.div`
   padding-bottom: 1.25rem /* 20px */;
   padding-left: 1rem /* 16px */;
   padding-right: 1rem /* 16px */;
-  /* backdrop-filter: blur(10px); */
 
   @media screen and (max-width: 960px) {
     padding-left: 2rem /* 16px */;
@@ -24,7 +23,6 @@ export const Title = styled.h1`
   font-weight: bold;
   justify-content: flex-start;
   text-align: flex-start;
-  background-color: transparent;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -63,9 +61,6 @@ export const CardContainer = styled.div`
   cursor: pointer;
   margin-left: 20px;
 
-  /* &:hover {
-    ${Button} */
-
   @media screen and (max-width: 640px) {
     justify-content: center;
     grid-template-columns: 1fr;
@@ -90,31 +85,59 @@ export const CardContainer = styled.div`
 `;
 
 export const GlassmorphismContainer = styled.div`
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 2px solid purple;
   border-radius: 4px;
   display: block;
-  position: stycky;
+  position: stycky; */
+  /* width: 360px; */
+  /* height: 240px; */
 
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 2px solid purple;
+  border-radius: 4px;
+
+  /* border: 2px solid purple;
+  border-radius: 4px;
   &:hover {
-    /* transition: all 0.5s ease-in-out; */
-    /* background: ${({ primary }) => (primary ? 'purple' : '#01bf71')}; */
-  }
+    transition: all 0.35s ease-in-out;
+    background: ${({ primary }) => (primary ? 'purple' : '#01bf71')};
+  } */
 `;
 
 export const ButtonWrapperLink = styled.div`
-  background: none;
+  cursor: pointer;
+  display: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  align-items: space-between;
+  position: relative;
+
+  padding-right: 40px;
+  /* position: relative; */
+  /* top: 40%; */
+  /* background-color: transparent; */
+`;
+
+export const ButtonWrapperLinkText = styled.text`
+  /* background: none;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  display: block;
-  /* padding-left: 30px;
-  padding-right: 40px; */
-  /* position: relative; */
-  /* top: 40%; */
+  display: flex;
+  flex-direction: 'row';
+  margin-bottom: 10px; */
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
 `;
 
@@ -136,7 +159,7 @@ export const SubTitle = styled.p`
 export const Image = styled.img`
   display: block;
   width: 340px;
-  height: 200px;
+  height: 180px;
   border-radius: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -162,25 +185,8 @@ export const Meta = styled.div`
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
 
-export const Entities = styled.div`
-  display: grid;
-  /* padding-left: 50px;
-  margin-top: 100px; */
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  grid-gap: 20px;
-
-  @media screen and (max-width: 960px) {
-    justify-content: center;
-    grid-template-columns: 1fr;
-    padding: 0px 0px 0px 0px;
-  }
-`;
-
 export const ProjectListP = styled.p`
   color: silver;
-  /* display: flex; */
   font-size: 1rem;
   text-align: start;
   margin-top: 14px;
@@ -246,7 +252,7 @@ export const CardTitle = styled.p`
   top: 0px;
   font-weight: normal;
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 26px;
   color: silver;
   /* text-transform: uppercase; */
   background: transparent;
@@ -275,22 +281,7 @@ export const ProjectWrapper = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  /* width: 50%; */
   color: silver;
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  /* overflow: hidden; */
-  /* display: flex; */
-  /* max-width: 1200px; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: start; */
-  /* justify-content: flex-start; */
-  /* padding: 100px 0px 40px 60px; */
-  /* flex-direction: column; */
-  /* z-index: 1; */
-  /* padding-right: 160px; */
-  /* padding-left: 60px; */
   @media screen and (max-width: 960px) {
     padding-right: 0px;
     padding-left: 0px;

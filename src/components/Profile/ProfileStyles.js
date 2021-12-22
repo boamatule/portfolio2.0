@@ -24,16 +24,7 @@ export const ProfileWrapper = styled.div`
   /* cursor: pointer; */
 `;
 
-export const ProfileWrapperDiv = styled.div`
-  margin-top: 160px;
-  display: flex;
-  /* flex-direction: row; */
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  margin: 0 auto;
-  cursor: pointer;
-`;
+export const ProfileWrapperDiv = styled.div``;
 export const Avatar = styled.div`
   z-index: 1;
   position: relative;
@@ -92,12 +83,12 @@ export const Heading = styled.h3`
 export const Subtitle = styled.p`
   font-size: 16px;
   /* line-height: 24px; */
-  color: grey;
+  color: silver;
   font-weight: normal;
   margin-top: 20px;
   letter-spacing: 1px;
-  justify-content: center;
-  align-items: flex-start;
+  /* justify-content: center;
+  align-items: flex-start; */
   padding: 0px 100px 0px 80px;
 
   letter-spacing: 1.6px;
@@ -131,7 +122,7 @@ export const Location = styled.p`
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1;
-  color: grey;
+  color: silver;
   font-weight: none;
   letter-spacing: 1px;
   cursor: pointer;

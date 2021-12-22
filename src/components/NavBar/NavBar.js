@@ -92,7 +92,7 @@ function NavBar() {
                   rel="noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <FaGithub />
+                  <FaLinkedinIn />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
               <NavItem>
