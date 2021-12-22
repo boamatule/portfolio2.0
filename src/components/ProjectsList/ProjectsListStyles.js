@@ -103,30 +103,18 @@ export const GlassmorphismContainer = styled.div`
     /* transition: all 0.5s ease-in-out; */
     /* background: ${({ primary }) => (primary ? 'purple' : '#01bf71')}; */
   }
-
-  &:hover ${Button} {
-    display: none;
-  }
 `;
 
 export const ButtonWrapperLink = styled.div`
-  /* height: 20px; */
-  max-width: 40px;
-  /* border: 1px solid purple; */
   background: none;
   cursor: pointer;
-  /* position: relative; */
-  /* display: flex; */
-  /* object-fit: cover; */
   justify-content: center;
   align-items: center;
   display: block;
   /* padding-left: 30px;
   padding-right: 40px; */
-  position: relative;
-  top: 50%;
-  /* -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
+  /* position: relative; */
+  /* top: 40%; */
   background-color: transparent;
 `;
 

@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 // import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
 import { Button, Container } from '../../global-styles';
@@ -26,6 +26,10 @@ const ProjectsList = ({ projects }) => (
       {projects.map((project, key) => (
         <GlassmorphismContainer key={key} to={`/project/${project.id}`}>
           <Image src={project.imageUrl} />
+          <ButtonWrapperLink>
+            <Button />
+            <Button />
+          </ButtonWrapperLink>
           <Title>{project.title}</Title>
           {/* <ProjectDescription>{project.description}</ProjectDescription> */}
           <ProjectDescription>{project.stack}</ProjectDescription>

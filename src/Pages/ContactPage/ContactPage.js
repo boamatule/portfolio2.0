@@ -10,7 +10,6 @@ import {
   ContactWrapper,
   ContactButtonWrapper,
 } from './ContactPageStyles';
-import { Container } from '../../global-styles';
 
 const ContactPage = () => {
   const [message, setMessage] = useState({});
