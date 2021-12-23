@@ -6,6 +6,9 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
     font-family: "Roboto";
+    /* background: white; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.5s linear;  
@@ -30,15 +33,12 @@ html {
   }
 }
 body{
-    font-family: 'Roboto';
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 1.6rem;
-    background: #F9F9F9;
-    color: #333;
-
-}
-
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background: #F9F9F9;
+  /* color: black; */
 `;
 
 export const Container = styled.div`
@@ -72,7 +72,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')};
+  /* background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')}; */
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
   color: black;
@@ -80,16 +80,30 @@ export const Button = styled.button`
   outline: none;
   border: 2 solid purple;
   cursor: pointer;
-  /* background-color: transparent; */
+  background: #4568DC;
+  background: (#4568DC 0%, #B06AB3  51%, #4568DC  100%)
+  transition: 0.5s;
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? '#f4edae' : '#f4edae')};
+    background: ${({ primary }) => (primary ? '#fff' : 'purple')};
+    color: #fff;
+    text-decoration: none;
   }
 
   @media screen and (max-width: 960px) {
     width: 100%;
   }
+`;
+
+export const Span = styled.span`
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 20px;
+  padding-left: 0px;
+  text-align: center;
+  background: transparent;
+  /* text-transform: uppercase; */
 `;
 
 export default GlobalStyles;

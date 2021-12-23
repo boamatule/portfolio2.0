@@ -3,8 +3,8 @@ import { Link, Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  background-color: #101522;
-  background-color: transparent;
+  /* background-color: #101522;
+  background-color: transparent; */
   /* padding: 2rem 0 1rem 0; */
   display: flex;
   flex-direction: column;
@@ -23,6 +23,11 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  /* width: 100%;
+  background-color: #4568dc;
+  color: purple;
+  text-align: center; */
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -152,7 +157,7 @@ export const NavBtnLink = styled(LinkRouter)`
   text-decoration: none;
 `;
 
-export const Copyright = styled.h3`
+export const Copyright = styled.h2`
   color: #eee142;
   font-size: 16px;
   /* font-weight: normal; */

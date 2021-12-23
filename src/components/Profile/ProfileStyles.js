@@ -15,16 +15,12 @@ export const Container = styled.div`
 `;
 
 export const ProfileWrapper = styled.div`
-  /* display: grid; */
-  /* flex-direction: row; */
-  width: 100%;
-  /* height: 50%; */
   text-align: center;
   margin: 0 auto;
-  /* cursor: pointer; */
+  justify-content: center;
+  align-items: center;
 `;
 
-export const ProfileWrapperDiv = styled.div``;
 export const Avatar = styled.div`
   z-index: 1;
   position: relative;
@@ -53,10 +49,14 @@ export const Img = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  /* display: grid; */
+  display: grid;
   margin-top: 1.9rem;
   align-items: center;
   margin-bottom: 0.8rem;
+  text-align: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  /* margin-left: 20px; */
 
   @media screen and (min-width: 768px) {
     margin-top: 1.9rem;
@@ -70,8 +70,7 @@ export const Heading = styled.h3`
   align-items: center;
   font-size: 20px;
   line-height: 1rem;
-  color: #eee142;
-  /* font-weight: bold; */
+  color: #4568dc;
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
   /* margin-left: 5.8rem; */
   @media screen and (max-width: 768px) {
@@ -81,44 +80,22 @@ export const Heading = styled.h3`
 `;
 
 export const Subtitle = styled.p`
-  font-size: 16px;
-  /* line-height: 24px; */
-  color: silver;
-  font-weight: normal;
   margin-top: 20px;
-  letter-spacing: 1px;
-  /* justify-content: center;
-  align-items: flex-start; */
-  padding: 0px 100px 0px 80px;
-
+  padding-bottom: 40px;
+  color: silver;
+  font-size: 16px;
   letter-spacing: 1.6px;
   line-height: none;
   font-weight: normal;
+  justify-content: flex-start;
   margin-left: 0;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
   }
-
-  /* margin-left: 0.85rem; */
-  /* max-width: 440px;
-  margin-bottom: 35px;
-  display: flex;
-  font-size: 18px;
-  line-height: 1;
-  letter-spacing: 1.15;
-  justify-content: center;
-  align-items: flex-start;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; */
 `;
 
 export const Location = styled.p`
-  /* margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.5;
-  letter-spacing: 10;
-  justify-content: center;
-  align-items: center; */
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1;

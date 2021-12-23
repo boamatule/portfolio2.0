@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <Container>
       <Content>
-        <Heading>About.</Heading>
+        <Heading>| 02 : a b o u t |</Heading>
         <Subtitle>Full Stack Developer based in beautiful Oslo, Norway.</Subtitle>
         <Description>
           Former Chef turned into a highly crafted programmer using the latest tools in programming. Trained in ReactJs
@@ -21,7 +21,7 @@ const AboutPage = () => {
         <Link to="/contact">
           <ButtonWrapper>
             <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-              CONTACT{' '}
+              Get in touch{' '}
             </Button>
           </ButtonWrapper>
         </Link>

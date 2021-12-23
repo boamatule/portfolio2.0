@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { Button } from '../../global-styles';
 
 export const ProjectContainer = styled.div`
   border-radius: 0.75rem /* 12px */;
@@ -37,7 +36,8 @@ export const Heading = styled.h2`
   font-size: 40px;
   margin-left: 20px;
   justify-content: flex-start;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+  /* text-transform: uppercase; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -65,23 +65,6 @@ export const CardContainer = styled.div`
     justify-content: center;
     grid-template-columns: 1fr;
   }
-
-  /* @media screen and (max-width: 768px) {
-    justify-content: center;
-    grid-template-columns: 1fr;
-  }
-  @media screen and (max-width: 1024px) {
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (max-width: 1280px) {
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media screen and (max-width: 1536px) {
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
 `;
 
 export const GlassmorphismContainer = styled.div`
@@ -93,33 +76,22 @@ export const GlassmorphismContainer = styled.div`
   border-radius: 4px;
   display: block;
   position: stycky; */
-  /* width: 360px; */
-  /* height: 240px; */
-
+  background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 2px solid purple;
-  border-radius: 4px;
-
-  /* border: 2px solid purple;
-  border-radius: 4px;
-  &:hover {
-    transition: all 0.35s ease-in-out;
-    background: ${({ primary }) => (primary ? 'purple' : '#01bf71')};
-  } */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 export const ButtonWrapperLink = styled.div`
   cursor: pointer;
-  /* display: block; */
   justify-content: center;
   margin-bottom: 10px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
     justify-content: center;
-    /* margin-top: 20px; */
     padding: 40px 0px 40px 0px;
     align-items: center;
     display: flex;
@@ -127,20 +99,11 @@ export const ButtonWrapperLink = styled.div`
 `;
 
 export const ButtonWrapperLinkText = styled.text`
-  /* background: none;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: 'row';
-  margin-bottom: 10px; */
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: normal;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  /* display: inline-block; */
 `;
 
 export const SubTitle = styled.p`
@@ -162,29 +125,14 @@ export const Image = styled.img`
   display: block;
   width: 340px;
   height: 180px;
-  border-radius: 22px;
-  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: transparent;
+  border-radius: 10px;
+  justify-content: center;
 
   @media screen and (max-width: 960px) {
-    font-size: 14px;
-    font-weight: normal;
+    justify-content: center;
   }
-`;
-
-export const Meta = styled.div`
-  display: flex;
-  bottom: 0;
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  flex-direction: column;
-  width: auto;
-  height: 200px;
-  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
 `;
 
 export const Span = styled.span`
@@ -194,7 +142,7 @@ export const Span = styled.span`
   padding-left: 0px;
   text-align: center;
   background: transparent;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 `;
 
 export const ProjectListP = styled.p`
@@ -277,16 +225,6 @@ export const CardTitle = styled.p`
     } */
   }
 `;
-
-// export const Span = styled.span`
-//   /* display: inline-block; */
-//   position: absolute;
-//   align-items: center;
-//   margin-left: 0px;
-//   margin-right: 0px;
-//   justify-content: space-evenly;
-//   background-color: transparent;
-// `;
 
 export const ProjectWrapper = styled.div`
   top: 0;

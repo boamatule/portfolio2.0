@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Span } from '../../global-styles';
 import {
   Form,
   TextArea,
@@ -40,7 +41,7 @@ const ContactPage = () => {
   return (
     <ContactContainer>
       <ContactWrapper>
-        <Title>| 04 : Get in touch |</Title>
+        <Title>| 04 : c o n t a c t |</Title>
         <Description>
           {/* If you would like to get in touch, fill up the form below and i will get back to you as soon as possible. */}
         </Description>
@@ -49,8 +50,8 @@ const ContactPage = () => {
           <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
           <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
           <ContactButtonWrapper>
-            <ContactButton type="submit" primary style={{ justifyContent: 'center' }}>
-              SUBMIT
+            <ContactButton type="submit" primary style={{ justifyContent: 'center', color: 'grey' }}>
+              <Span>SUBMIT</Span>
             </ContactButton>
           </ContactButtonWrapper>
         </Form>

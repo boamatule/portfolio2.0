@@ -1,15 +1,6 @@
 import { Container } from '../../global-styles';
 
-const {
-  Avatar,
-  ProfileWrapper,
-  Img,
-  Heading,
-  TextWrapper,
-  Location,
-  ProfileWrapperDiv,
-  Subtitle,
-} = require('./ProfileStyles');
+const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location, Subtitle } = require('./ProfileStyles');
 
 const Profile = () => (
   <Container>
@@ -26,16 +17,6 @@ const Profile = () => (
           Development. Proficient and vid learner.
         </Subtitle>
       </TextWrapper>
-      <ProfileWrapperDiv>
-        {/* <Subtitle>
-          Boa Matule | Full Stack Developer. The most efficient and supportive way for you to learn the most in-demand
-          skills, get hired and advance your career. Boa Matule | Full Stack Developer. The most efficient and
-          supportive way for you to learn the most in-demand skills, get hired and advance your career. Boa Matule |
-          Full Stack Developer. The most efficient and supportive way for you to learn the most in-demand skills, get
-          hired and advance your career. Boa Matule | Full Stack Developer. The most efficient and supportive way for
-          you to learn the most in-demand skills, get hired and advance your career.
-        </Subtitle> */}
-      </ProfileWrapperDiv>
     </ProfileWrapper>
   </Container>
 );

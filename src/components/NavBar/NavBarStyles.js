@@ -4,21 +4,16 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const Nav = styled.nav`
-  background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: stycky;
-  top: 0;
-  z-index: 999;
-  /* border: 1px solid pur; */
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  /* justify-content: space-between; */
   height: 80px;
   justify-content: center;
   ${Container}
@@ -31,8 +26,6 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   padding: 12px 0px 0px 0px;
-  /* font-size: 1.5rem; */
-  /* align-items: center; */
 
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -50,13 +43,8 @@ export const NavIcon = styled(FaMagento)`
 export const Img = styled.img`
   width: 40px;
   height: 40px;
-  /* border-radius: 100%; */
-  /* border: 1px solid transparent; */
 
   @media screen and (min-width: 480px) {
-    /* width: 60px;
-    height: 50px; */
-    /* border-radius: 100%; */
   }
 `;
 export const MobileIcon = styled.div`
@@ -81,10 +69,10 @@ export const NavMenu = styled.ul`
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  background: transparent;
 
   &:hover {
     transition: 0.3s ease;
-    color: #01bf71;
   }
 
   @media screen and (max-width: 960px) {
@@ -107,7 +95,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 4px solid #eee142;
+    border-bottom: 4px solid #4568dc;
   }
 
   @media screen and (max-width: 960px) {
@@ -117,12 +105,10 @@ export const NavItem = styled.li`
       color: #01bf71;
 
       border-bottom: 2px solid transparent;
-      /* border-bottom: 4px solid #eee142; */
     }
   }
   &:hover {
     color: #01bf71;
-    /* transition: 0.3s ease-out; */
   }
 `;
 
@@ -171,15 +157,9 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const NavSocialIconsWrapper = styled.div`
-  /* height: 80px; */
-  /* flex-direction: column; */
-
   @media screen and (max-width: 960px) {
-    /* width: 80%; */
-
     &:hover {
       border-bottom: 2px solid transparent;
-      /* border-bottom: 4px solid #eee142; */
     }
   }
 `;
@@ -193,7 +173,6 @@ export const NavItemSocialIconLink = styled.a`
   align-items: center;
   padding: 0.5rem 4.2rem;
   height: 100%;
-  /* color: red; */
   color: silver;
 
   &:hover {
@@ -214,16 +193,14 @@ export const NavItemSocialIconLink = styled.a`
 
   &:hover {
     color: #01bf71;
-    /* transition: 0.3s ease-out; */
   }
 `;
 
 export const NavItemSocialIcon = styled.div`
-  height: 80px;
   border-bottom: 2px solid transparent;
 
   &:hover {
-    color: #01bf71;
+    color: #4568dc;
   }
 
   @media screen and (max-width: 960px) {
@@ -231,7 +208,7 @@ export const NavItemSocialIcon = styled.div`
 
     &:hover {
       border-bottom: 2px solid transparent;
-      /* border-bottom: 4px solid #eee142; */
+      color: #4568dc;
     }
   }
 `;
@@ -250,7 +227,6 @@ export const NavItemToggle = styled.div`
 
     &:hover {
       border-bottom: 2px solid transparent;
-      /* border-bottom: 4px solid #eee142; */
     }
   }
 `;

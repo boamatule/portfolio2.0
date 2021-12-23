@@ -1,13 +1,11 @@
 import styled from 'styled-components/macro';
-import { Link } from 'react-router-dom';
-import { MdArrowForward, MdKeyboardArrowRight, FiSend } from 'react-icons/md';
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
   margin-top: 100px;
   ${Container}
   justify-content: flex-start;
-  /* align-items: center; */
   width: 60%;
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -15,7 +13,6 @@ export const ContactContainer = styled(Container)`
 `;
 
 export const ContactWrapper = styled.div`
-  /* margin-top: 80px; */
   align-items: center;
   justify-content: center;
   text-align: start;
@@ -37,9 +34,6 @@ export const Description = styled.h2`
   letter-spacing: 1.6px;
   line-height: 24px;
   font-weight: normal;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center; */
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -49,15 +43,18 @@ export const Description = styled.h2`
   }
 `;
 
-export const Title = styled.h1`
-  font-weight: bold;
-  font-size: 30px;
-  padding: 0px 0px 20px 80px;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+export const Title = styled.h2`
+  font-weight: normal;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-left: 20px;
+  justify-content: flex-start;
+  /* text-transform: uppercase; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
-    max-width: 90%;
   }
 `;
 
@@ -66,12 +63,10 @@ export const Form = styled.form`
   width: 100%;
   max-width: 80%;
   margin: 40px auto;
-  /* border: 1px solid #eee142; */
   padding: 10px;
   border-radius: 1px;
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
-  /* position: sticky; */
 
   @media screen and (max-width: 960px) {
     max-width: 100%;
@@ -130,7 +125,6 @@ export const TextArea = styled.textarea`
 `;
 
 export const Text = styled.span`
-  /* margin-top: 24px; */
   margin-bottom: 24px;
   color: silver;
   font-size: 34px;
@@ -148,18 +142,11 @@ export const ContactButton = styled(Button)`
 
   @media screen and (min-width: 960px) {
     justify-content: flex-start;
-    /* align-items: center; */
     display: flex;
-    /* width: 50%; */
   }
 `;
 
 export const ContactButtonWrapper = styled.div`
-  /* width: 50%; */
-  /* justify-content: center; */
-  /* justify-content: flex-start;
-  flex-direction: row; */
-  /* align-items: center; */
   display: flex;
   justify-content: flex-end;
 
@@ -167,7 +154,6 @@ export const ContactButtonWrapper = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
-    /* width: 50%; */
   }
 `;
 

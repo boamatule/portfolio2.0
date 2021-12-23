@@ -20,21 +20,7 @@ export const Content = styled.div`
   width: 50%;
   height: auto;
   margin-left: 60px;
-  /* color: silver; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  /* overflow: hidden; */
-  /* display: flex; */
-  /* max-width: 1200px; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: start; */
-  /* justify-content: flex-start; */
   padding: 100px 0px 40px 60px;
-  /* flex-direction: column; */
-  /* z-index: 1; */
-  /* padding-right: 160px; */
-  /* padding-left: 60px; */
   @media screen and (max-width: 960px) {
     padding-right: 0px;
     padding-left: 0px;
@@ -86,14 +72,19 @@ export const Subtitle = styled.h2`
   }
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
   font-weight: normal;
-  margin-top: 40px;
+  margin-top: 120px;
   margin-bottom: 20px;
   font-size: 40px;
+  margin-left: 20px;
   justify-content: flex-start;
-  /* text-align: center; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+  /* text-transform: uppercase; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+
+  @media screen and (max-width: 960px) {
+    font-size: 20px;
+  }
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
