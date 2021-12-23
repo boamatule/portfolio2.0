@@ -112,17 +112,18 @@ export const GlassmorphismContainer = styled.div`
 
 export const ButtonWrapperLink = styled.div`
   cursor: pointer;
-  display: row;
+  /* display: block; */
   justify-content: center;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  align-items: space-between;
-  position: relative;
 
-  padding-right: 40px;
-  /* position: relative; */
-  /* top: 40%; */
-  /* background-color: transparent; */
+  @media screen and (max-width: 960px) {
+    cursor: pointer;
+    justify-content: center;
+    /* margin-top: 20px; */
+    padding: 40px 0px 40px 0px;
+    align-items: center;
+    display: flex;
+  }
 `;
 
 export const ButtonWrapperLinkText = styled.text`
@@ -139,6 +140,7 @@ export const ButtonWrapperLinkText = styled.text`
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  /* display: inline-block; */
 `;
 
 export const SubTitle = styled.p`
@@ -183,6 +185,16 @@ export const Meta = styled.div`
   width: auto;
   height: 200px;
   /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2); */
+`;
+
+export const Span = styled.span`
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 20px;
+  padding-left: 0px;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
 `;
 
 export const ProjectListP = styled.p`
@@ -266,15 +278,15 @@ export const CardTitle = styled.p`
   }
 `;
 
-export const Span = styled.span`
-  /* display: inline-block; */
-  position: absolute;
-  align-items: center;
-  margin-left: 0px;
-  margin-right: 0px;
-  justify-content: space-evenly;
-  background-color: transparent;
-`;
+// export const Span = styled.span`
+//   /* display: inline-block; */
+//   position: absolute;
+//   align-items: center;
+//   margin-left: 0px;
+//   margin-right: 0px;
+//   justify-content: space-evenly;
+//   background-color: transparent;
+// `;
 
 export const ProjectWrapper = styled.div`
   top: 0;

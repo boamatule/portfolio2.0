@@ -155,3 +155,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const ButtonWrapper = styled.div`
+  @media screen and (max-width: 960px) {
+    cursor: pointer;
+    justify-content: center;
+    /* margin-top: 20px; */
+    /* padding: 10px 0px 10px 0px; */
+    align-items: center;
+    width: 40%;
+    display: flex;
+  }
+`;

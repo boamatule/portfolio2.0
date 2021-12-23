@@ -1,14 +1,6 @@
 const projects = [
   {
     id: 1,
-    title: 'Coffee Connoisseur',
-    stack: 'Nextjs | GraphSQL | Serverless',
-    imageUrl: '/images/chingu_boa.png',
-    description: 'News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper.',
-    URL: 'https://glocal-news.netlify.com/news',
-  },
-  {
-    id: 2,
     title: 'Address Book',
     stack: 'Javascript | Tailwind',
     imageUrl: '/images/robot.png',
@@ -16,6 +8,14 @@ const projects = [
       'A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.',
     GitHub: 'https://github.com/boamatule/adressbook_Challenge/tree/01-project-setup',
     URL: 'https://addressbookit.netlify.app/',
+  },
+  {
+    id: 2,
+    title: 'Coffee Connoisseur',
+    stack: 'Nextjs | GraphSQL | Serverless',
+    imageUrl: '/images/chingu_boa.png',
+    description: 'News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper.',
+    URL: 'https://glocal-news.netlify.com/news',
   },
   {
     id: 3,
@@ -56,13 +56,13 @@ const projects = [
   },
   {
     id: 7,
-    title: 'ATM',
-    stack: 'Ruby on Rails  | RSpec',
+    title: 'MealsToGo',
+    stack: 'React Native  | Firebase | Expo',
     imageUrl: '/images/code_review.svg',
     description:
       'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
     GitHub: 'https://github.com/SnailCoder1/atm_challenge-1',
-    URL: '',
+    URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
     id: 8,

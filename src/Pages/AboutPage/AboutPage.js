@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button } from '../../global-styles';
-import { Content, Heading, Subtitle, Description } from './AboutPageStyles';
+import { Content, Heading, Subtitle, Description, ButtonWrapper } from './AboutPageStyles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -19,9 +19,11 @@ const AboutPage = () => {
           and Ruby on Rails using methods like Agile and Test-Driven Development.
         </Description>
         <Link to="/contact">
-          <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-            CONTACT{' '}
-          </Button>
+          <ButtonWrapper>
+            <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
+              CONTACT{' '}
+            </Button>
+          </ButtonWrapper>
         </Link>
       </Content>
     </Container>

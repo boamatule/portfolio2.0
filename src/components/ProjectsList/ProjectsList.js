@@ -15,6 +15,7 @@ import {
   ProjectDescription,
   Title,
   ButtonWrapperLinkText,
+  Span,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -30,10 +31,25 @@ const ProjectsList = ({ projects }) => (
           <Title>{project.title}</Title>
           <ProjectDescription>{project.stack}</ProjectDescription>
           <ButtonWrapperLink>
-            <ButtonWrapperLinkText>
-              <Button>See live</Button>
-            </ButtonWrapperLinkText>
-            <Button>See live</Button>
+            <Button
+              style={{
+                margin: '10px',
+                color: 'silver',
+              }}
+            >
+              <Span>SEE LIVE</Span>
+            </Button>
+            <Button
+              style={{
+                margin: '10px',
+                background: 'transparent',
+                border: 'none',
+                color: 'silver',
+                transition: 'all 0.3s ease-out',
+              }}
+            >
+              <Span>SOURCE CODE</Span>
+            </Button>
           </ButtonWrapperLink>
         </GlassmorphismContainer>
       ))}
