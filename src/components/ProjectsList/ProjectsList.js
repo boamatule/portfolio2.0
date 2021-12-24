@@ -30,8 +30,11 @@ const ProjectsList = ({ projects }) => (
           <Title>{project.title}</Title>
           <ProjectDescription>{project.stack}</ProjectDescription>
           <ButtonWrapperLink>
-            <a href={project.URL} target="_blank" rel="noreferrer">
+            <a href="project.URL" target="_blank" rel="noreferrer">
               <Button
+                small
+                fontSmall
+                primary
                 style={{
                   margin: '10px',
                   color: 'white',
@@ -41,8 +44,11 @@ const ProjectsList = ({ projects }) => (
                 <Span>See Live</Span>
               </Button>
             </a>
-            <a href={project.GitHub} target="_blank" rel="noreferrer">
+            <a href="project.GitHub" target="_blank" rel="noreferrer">
               <Button
+                small
+                fontSmall
+                primary
                 style={{
                   margin: '10px',
                   background: 'transparent',
