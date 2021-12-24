@@ -23,11 +23,8 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  /* width: 100%;
-  background-color: #4568dc;
-  color: purple;
-  text-align: center; */
+  left: 0;
+  bottom: 0;
 `;
 
 export const FooterLinksContainer = styled.div`

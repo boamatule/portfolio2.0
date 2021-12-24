@@ -3,18 +3,15 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-// import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaGlobeAfrica } from 'react-icons/fa';
-import { Button, Container, Span } from '../../global-styles';
+import { Button, Container, Span, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
-  GlassmorphismContainer,
   ButtonWrapperLink,
   CardTitle,
   Heading,
   ProjectDescription,
   Title,
-  ButtonWrapperLinkText,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -25,12 +22,12 @@ const ProjectsList = ({ projects }) => (
     </CardTitle>
     <CardContainer>
       {projects.map((project, key) => (
-        <GlassmorphismContainer key={key} to={`/project/${project.id}`}>
+        <Glassmorphism key={key} to={`/project/${project.id}`}>
           <Image src={project.imageUrl} alt={project.alt} />
           <Title>{project.title}</Title>
           <ProjectDescription>{project.stack}</ProjectDescription>
           <ButtonWrapperLink>
-            <a href="project.URL" target="_blank" rel="noreferrer">
+            <a href={project.URL} target="_blank" rel="noreferrer">
               <Button
                 small
                 fontSmall
@@ -44,7 +41,7 @@ const ProjectsList = ({ projects }) => (
                 <Span>See Live</Span>
               </Button>
             </a>
-            <a href="project.GitHub" target="_blank" rel="noreferrer">
+            <a href={project.GitHub} target="_blank" rel="noreferrer">
               <Button
                 small
                 fontSmall
@@ -61,7 +58,7 @@ const ProjectsList = ({ projects }) => (
               </Button>
             </a>
           </ButtonWrapperLink>
-        </GlassmorphismContainer>
+        </Glassmorphism>
       ))}
     </CardContainer>
   </Container>

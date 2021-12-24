@@ -18,10 +18,11 @@ export const ProjectContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 16px;
-  color: #eee142;
-  font-weight: bold;
+  color: #4568dc;
+  font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
+  /* text-transform: uppercase; */
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -65,23 +66,6 @@ export const CardContainer = styled.div`
     justify-content: center;
     grid-template-columns: 1fr;
   }
-`;
-
-export const GlassmorphismContainer = styled.div`
-  /* background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 2px solid purple;
-  border-radius: 4px;
-  display: block;
-  position: stycky; */
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 export const ButtonWrapperLink = styled.div`

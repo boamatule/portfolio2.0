@@ -13,9 +13,9 @@ export const ContactContainer = styled(Container)`
 `;
 
 export const ContactWrapper = styled.div`
-  align-items: center;
-  justify-content: center;
-  text-align: start;
+  /* align-items: center;
+  justify-content: center; */
+  /* text-align: start; */
   padding: 0px 0px 10px 0px;
 
   @media screen and (max-width: 960px) {
@@ -28,8 +28,8 @@ export const ContactWrapper = styled.div`
 
 export const Description = styled.h2`
   padding: 0px 0px 0px 80px;
-  max-width: 75%;
-  color: silver;
+  /* max-width: 75%; */
+  color: grey;
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 24px;
@@ -48,7 +48,7 @@ export const Title = styled.h2`
   margin-top: 120px;
   margin-bottom: 20px;
   font-size: 40px;
-  margin-left: 20px;
+  margin-left: 0px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
@@ -61,10 +61,10 @@ export const Title = styled.h2`
 export const Form = styled.form`
   display: grid;
   width: 100%;
-  max-width: 80%;
+  /* max-width: 80%; */
   margin: 40px auto;
-  padding: 10px;
-  border-radius: 1px;
+  padding: 0px 0px 0px 0px;
+  /* border-radius: 1px; */
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 
@@ -76,13 +76,14 @@ export const Form = styled.form`
 export const Input = styled.input`
   background: none;
   border: none;
-  color: silver;
-  font-size: 14px;
+  color: grey;
+  font-weight: normal;
+  font-size: 12px;
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
-  border: 1px solid #eee142;
-  border-radius: 1px;
+  border: 2px solid #4568dc;
+  border-radius: 2px;
   padding: 8px;
 
   &:last-of-type {
@@ -103,14 +104,15 @@ export const TextArea = styled.textarea`
   background: none;
   border: 0;
   border: none;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 12px;
   line-height: 20px;
   padding: 20px 1px;
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
   color: silver;
-  border: 1px solid #eee142;
-  border-radius: 1px;
+  border: 2px solid #4568dc;
+  border-radius: 2px;
   padding: 8px;
   height: 200px;
 
@@ -124,18 +126,11 @@ export const TextArea = styled.textarea`
   }
 `;
 
-export const Text = styled.span`
-  margin-bottom: 24px;
-  color: silver;
-  font-size: 34px;
-  text-align: center;
-`;
-
 export const ContactButton = styled(Button)`
   ${Button};
-  font-size: 12px;
+  font-size: 14px;
   /* font: ${({ fontBig }) => (fontBig ? '12px' : '10px')}; */
-  font-weight: bold;
+  font-weight: normal;
   border-radius: 0px;
   display: flex;
   justify-content: flex-start;
@@ -151,9 +146,10 @@ export const ContactButtonWrapper = styled.div`
   justify-content: flex-end;
 
   @media screen and (min-width: 960px) {
-    justify-content: center;
     align-items: center;
     display: flex;
+    justify-content: flex-end;
+    /* width: 50%; */
   }
 `;
 
@@ -164,16 +160,4 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`;
-
-export const Img = styled.img`
-  width: 9.6rem;
-  height: 9.6rem;
-  border-radius: 50%;
-  border: 1px solid transparent;
-
-  @media screen and (min-width: 960px) {
-    width: 10.6rem;
-    height: 10.6rem;
-  }
 `;

@@ -8,51 +8,33 @@ export const AboutContainer = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 80px 0px 100px;
-  width: 50%;
+  padding: 0px 0px 0px 0px;
+  /* width: 50%; */
 `;
 
 export const Content = styled.div`
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: auto;
-  margin-left: 60px;
-  padding: 100px 0px 40px 60px;
-  @media screen and (max-width: 960px) {
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 100%;
-    height: auto;
-  }
-`;
-
-export const H1 = styled.h2`
-  color: silver;
-  font-size: 18px;
-  /* text-align: center; */
+  margin: 80px 40px auto;
+  margin-bottom: 40px;
   justify-content: flex-start;
-  letter-spacing: 1.6px;
-  line-height: 24px;
-  margin-bottom: 35px;
+  cursor: pointer;
 
-  /* @media screen and (max-width: 480px) {
-    font-size: 32px;
-  } */
+  @media screen and (min-width: 960px) {
+    margin: 0px 20px auto;
+    /* margin-left: 300px; */
+  }
 `;
 
 export const Description = styled.p`
   margin-top: 20px;
   padding-bottom: 40px;
-  color: silver;
+  color: black;
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: none;
   font-weight: normal;
   justify-content: flex-start;
-  margin-left: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -60,13 +42,18 @@ export const Description = styled.p`
 `;
 
 export const Subtitle = styled.h2`
-  margin-bottom: 35px;
-  font-size: 18px;
+  margin-top: 20px;
+  /* padding-bottom: 40px; */
+  color: black;
+  font-size: 16px;
+  letter-spacing: 2px;
   line-height: 20px;
-  color: silver;
-  letter-spacing: 1.6px;
   font-weight: normal;
-  letter-spacing: 1.6px;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-bottom: 20px;
+  padding: 0px 10px 0px 10px;
+
   @media screen and (max-width: 960px) {
     font-size: 14px;
   }
@@ -75,15 +62,15 @@ export const Subtitle = styled.h2`
 export const Heading = styled.h2`
   font-weight: normal;
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 40px;
-  margin-left: 20px;
+  margin-left: 40px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   @media screen and (max-width: 960px) {
@@ -148,13 +135,18 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `;
 
 export const ButtonWrapper = styled.div`
+  cursor: pointer;
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 28px;
+  margin-top: 20px;
+
   @media screen and (max-width: 960px) {
     cursor: pointer;
-    justify-content: center;
-    /* margin-top: 20px; */
-    /* padding: 10px 0px 10px 0px; */
-    align-items: center;
-    width: 40%;
+    margin-left: 40px;
+    justify-content: flex-end;
+    max-width: 50%;
     display: flex;
+    margin-right: 28px;
   }
 `;

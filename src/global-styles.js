@@ -6,12 +6,11 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
     font-family: "Roboto";
-    /* background: white; */
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.5s linear;  
+    /* transition: all 0.5s linear;   */
 	}
   *{
     margin: 0;
@@ -37,8 +36,6 @@ body{
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.6rem;
-  background: #F9F9F9;
-  /* color: black; */
 `;
 
 export const Container = styled.div`
@@ -78,15 +75,14 @@ export const Button = styled.button`
   color: black;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
-  border: 2 solid purple;
   cursor: pointer;
   background: #4568DC;
   background: (#4568DC 0%, #B06AB3  51%, #4568DC  100%)
   transition: 0.5s;
-
+  border-radius: 2px;
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? '#fff' : 'purple')};
+    background: ${({ primary }) => (primary ? 'purple' : 'purple')};
     color: #fff;
     text-decoration: none;
   }
@@ -104,6 +100,15 @@ export const Span = styled.span`
   text-align: center;
   background: transparent;
   /* text-transform: uppercase; */
+`;
+
+export const Glassmorphism = styled.div`
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 export default GlobalStyles;
