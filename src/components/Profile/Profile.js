@@ -7,7 +7,7 @@ const Profile = () => (
     <ProfileWrapper>
       <Glassmorphism>
         <Avatar>
-          <Img src="../../images/avatar.png" alt="Boa" />
+          <Img src="../../images/avatar.webp" alt="Boa" />
         </Avatar>
         <Heading>Boa Matule | Full Stack Developer</Heading>
         <Location> +4740101117 | Oslo - Norway </Location>
