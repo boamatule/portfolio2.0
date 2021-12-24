@@ -12,14 +12,21 @@ import {
   Heading,
   ProjectDescription,
   Title,
+  CardTitleWrapper,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
   <Container>
     <Heading>| 03 : p o r t f o l i o |</Heading>
-    <CardTitle>
-      Please, check out some of my curated projects built using the lastet tech stack in the industry.
-    </CardTitle>
+
+    {/* <CardTitleWrapper>
+      <Glassmorphism>
+        <CardTitle>
+          Please, check out some of my curated projects built using the lastet tech stack in the industry.
+        </CardTitle>
+      </Glassmorphism>
+    </CardTitleWrapper> */}
+
     <CardContainer>
       {projects.map((project, key) => (
         <Glassmorphism key={key} to={`/project/${project.id}`}>

@@ -19,6 +19,14 @@ export const ProfileWrapper = styled.div`
   margin: 80px 40px auto;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 80px 0px auto;
+  }
 `;
 
 export const Avatar = styled.div`
@@ -33,6 +41,7 @@ export const Avatar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
 `;
 
@@ -56,8 +65,11 @@ export const TextWrapper = styled.div`
   justify-content: flex-start;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 1.9rem;
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px auto;
   }
 `;
 
@@ -66,7 +78,7 @@ export const Heading = styled.h2`
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1rem;
   color: #4568dc;
   padding-top: 10px;
@@ -74,9 +86,10 @@ export const Heading = styled.h2`
 
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
   /* margin-left: 5.8rem; */
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
+  @media screen and (max-width: 960px) {
+    /* font-size: 14px; */
     line-height: 1rem;
+    padding: 10px;
   }
 `;
 
@@ -95,6 +108,7 @@ export const Subtitle = styled.p`
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
+    padding: 0px 10px 0px 10px;
   }
 `;
 
