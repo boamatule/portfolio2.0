@@ -46,10 +46,10 @@ export const Avatar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border: 4px solid #4568dc;
+  /* border: 4px solid #4568dc; */
   margin-bottom: 20px;
 
   @media screen and (min-width: 480px) {
@@ -95,16 +95,15 @@ export const Heading = styled.h2`
 
 export const Subtitle = styled.p`
   margin-top: 20px;
-  /* padding-bottom: 40px; */
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;
   justify-content: flex-start;
   margin-left: 0;
   margin-bottom: 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 14px 0px 14px;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -116,8 +115,8 @@ export const Location = styled.p`
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1;
-  color: silver;
-  font-weight: none;
+  color: grey;
+  font-weight: normal;
   letter-spacing: 1px;
   cursor: pointer;
   margin-bottom: 20px;

@@ -52,14 +52,14 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
-                <FaTimes style={{ width: '25px', height: '25px', color: 'red' }} />
+                <FaTimes style={{ width: '25px', height: '25px', color: '4568dc' }} />
               ) : (
                 <FaBars style={{ width: '25px', height: '25px', color: '#4568dc' }} />
               )}
             </MobileIcon>
-            <NavLogo to="/home">
+            <NavLogo to="/">
               {/* <NavLinks to="/home" text={{ color: '#EEE142' }}> */}
-              <Img src="../../images/logo.svg" alt="logo" />
+              {/* <Img src="../../images/logo.svg" alt="logo" /> */}
               {/* </NavLinks> */}
             </NavLogo>
             <NavMenu onClick={handleClick} click={click}>
