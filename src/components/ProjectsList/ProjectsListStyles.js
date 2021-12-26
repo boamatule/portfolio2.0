@@ -31,8 +31,8 @@ export const Title = styled.h1`
 `;
 
 export const Heading = styled.h2`
-  font-weight: normal;
-  margin-top: 120px;
+  font-weight: bold;
+  margin-top: 100px;
   margin-bottom: 20px;
   font-size: 40px;
   margin-left: 20px;
@@ -41,22 +41,25 @@ export const Heading = styled.h2`
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: flex-start;
+    text-align: flex-start;
+    /* margin: 60px 10px auto; */
+    margin-right: 0px;
+    /* padding: 20px 0px 40px 0px; */
   }
 `;
 
 export const CardContainer = styled.div`
   display: grid;
-  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 20px;
-  border-radius: 0.75rem;
   padding-top: 4rem /* 4px */;
   padding-bottom: 0.25rem /* 4px */;
-  padding-bottom: 1.25rem /* 20px */;
-  padding-left: 0.5rem /* 16px */;
-  padding-right: 0.5rem /* 16px */;
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
   justify-content: space-between;
   cursor: pointer;
@@ -170,27 +173,6 @@ export const buttonLabel = styled.p`
   color: silver;
   font-size: 1rem;
   color: red;
-`;
-
-export const Card = styled.div`
-  /* padding: 10px 20px 40px 100px; */
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  /* white-space: nowrap; */
-  padding-top: 0rem /* 4px */;
-  padding-bottom: 0rem /* 4px */;
-  padding-bottom: 0rem /* 20px */;
-  padding-left: 0rem /* 16px */;
-  padding-right: 0rem /* 16px */;
-  /* position: relative; */
-
-  @media screen and (max-width: 960px) {
-    /* width: 100%;
-    &:hover {
-      transform: none;
-    } */
-  }
 `;
 
 export const CardTitle = styled.p`

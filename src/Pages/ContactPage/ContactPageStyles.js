@@ -13,9 +13,6 @@ export const ContactContainer = styled(Container)`
 `;
 
 export const ContactWrapper = styled.div`
-  /* align-items: center;
-  justify-content: center; */
-  /* text-align: start; */
   padding: 0px 0px 10px 0px;
 
   @media screen and (max-width: 960px) {

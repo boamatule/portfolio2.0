@@ -17,18 +17,17 @@ export const Content = styled.div`
   margin: 80px 40px auto;
   margin-bottom: 40px;
   justify-content: flex-start;
-  cursor: pointer;
   background: transparent;
 
   @media screen and (min-width: 960px) {
-    margin: 0px 20px auto;
-    /* margin-left: 300px; */
+    margin: 0px 0px auto;
+    padding: 0px 0px 0px 0px;
   }
 `;
 
 export const Description = styled.p`
   margin-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: grey;
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -41,12 +40,12 @@ export const Description = styled.p`
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
+    margin-top: 20px;
   }
 `;
 
 export const Subtitle = styled.h2`
   margin-top: 20px;
-  /* padding-bottom: 40px; */
   color: black;
   font-size: 16px;
   letter-spacing: 2px;
@@ -64,11 +63,11 @@ export const Subtitle = styled.h2`
 `;
 
 export const Heading = styled.h2`
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 120px;
   margin-bottom: 40px;
   font-size: 40px;
-  margin-left: 40px;
+  margin-left: 10px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
   background: transparent;
@@ -76,6 +75,8 @@ export const Heading = styled.h2`
 
   @media screen and (max-width: 960px) {
     font-size: 30px;
+    margin-left: 42px;
+    margin-top: 80px;
   }
 
   @media screen and (max-width: 960px) {
