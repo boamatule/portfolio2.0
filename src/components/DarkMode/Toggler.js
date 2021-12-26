@@ -9,10 +9,10 @@ let Sun;
 let Moon;
 
 Sun = Moon = styled.svg`
-  position: fixed;
-  top: 2.6rem;
-  right: 6rem;
-  color: #fff142;
+  position: stycky;
+  /* top: 40px;
+  right: 6rem; */
+  color: #4568dc;
   transition: all transform 2s;
   cursor: pointer;
   color: none;
@@ -23,12 +23,6 @@ Sun = Moon = styled.svg`
   }
 
   @media screen and (max-width: 960px) {
-    /* top: 1.9rem;
-    right: 3rem;
-    cursor: pointer;
-    color: none;
-    background-color: transparent;
-    display: none; */
     @media screen and (max-width: 960px) {
       height: none;
       top: 1.6rem;

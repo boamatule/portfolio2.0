@@ -10,6 +10,7 @@ export const AboutContainer = styled(Container)`
   align-items: center;
   padding: 0px 0px 0px 0px;
   /* width: 50%; */
+  /* background: transparent; */
 `;
 
 export const Content = styled.div`
@@ -17,6 +18,7 @@ export const Content = styled.div`
   margin-bottom: 40px;
   justify-content: flex-start;
   cursor: pointer;
+  background: transparent;
 
   @media screen and (min-width: 960px) {
     margin: 0px 20px auto;
@@ -27,7 +29,7 @@ export const Content = styled.div`
 export const Description = styled.p`
   margin-top: 20px;
   padding-bottom: 40px;
-  color: black;
+  color: grey;
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: none;
@@ -35,6 +37,7 @@ export const Description = styled.p`
   justify-content: flex-start;
   margin-left: 10px;
   margin-right: 10px;
+  background: transparent;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -53,6 +56,7 @@ export const Subtitle = styled.h2`
   margin-left: 0;
   margin-bottom: 20px;
   padding: 0px 10px 0px 10px;
+  background: transparent;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -67,6 +71,7 @@ export const Heading = styled.h2`
   margin-left: 40px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
+  background: transparent;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
@@ -85,6 +90,7 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 960px) {
     padding-bottom: 65px;
     /* color: silver; */
+    background: transparent;
   }
 `;
 

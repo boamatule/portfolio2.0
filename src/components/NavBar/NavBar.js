@@ -101,12 +101,11 @@ function NavBar() {
                   <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
-              {/* <NavItem>
-                <NavItemToggle>
-                  <Toggle theme={theme} toggleTheme={themeToggler} />
-                </NavItemToggle>
-              </NavItem> */}
+              <NavItemToggle>
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItemToggle>
             </NavMenu>
+            {/* <Toggle style={{}} theme={theme} toggleTheme={themeToggler} /> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
