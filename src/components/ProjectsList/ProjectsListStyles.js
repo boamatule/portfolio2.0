@@ -22,7 +22,6 @@ export const Title = styled.h1`
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
-  /* text-transform: uppercase; */
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -43,9 +42,6 @@ export const Heading = styled.h2`
   @media screen and (max-width: 960px) {
     font-size: 15px;
     font-weight: bold;
-    justify-content: flex-start;
-    text-align: flex-start;
-    /* margin: 60px 10px auto; */
     margin-right: 0px;
     /* padding: 20px 0px 40px 0px; */
   }
@@ -132,6 +128,19 @@ export const Span = styled.span`
   text-align: center;
   background: transparent;
   /* text-transform: uppercase; */
+`;
+
+export const ProjectLinks = styled.a`
+  /* display: flex;
+  font-weight: normal;
+  text-decoration: none;
+  align-items: center;
+  padding: 0.5rem 4.2rem;
+  height: 100%; */
+
+  &:hover {
+    color: #01bf71;
+  }
 `;
 
 export const ProjectListP = styled.p`

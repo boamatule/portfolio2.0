@@ -7,7 +7,7 @@ const projects = [
     alt: 'Coffee',
     description:
       'A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.',
-    GitHub: 'https://github.com/boamatule/adressbook_Challenge/tree/01-project-setup',
+    sourceCodeUrl: 'https://github.com/boamatule/adressbook_Challenge/tree/01-project-setup',
     URL: 'https://addressbookit.netlify.app/',
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     alt: 'Coffee',
     stack: 'React | Cypress | Semantic UI',
     description: 'Build in React and Acceptance testing using Cypress. Styled using Semantic UI for React',
-    GitHub: 'https://github.com/SnailCoder1/bmi_calculator_reactJs',
+    sourceCodeUrl: 'https://github.com/SnailCoder1/bmi_calculator_reactJs',
     URL: 'https://1bmi.netlify.app/',
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     alt: 'Coffee',
     stack: 'Ruby on Rails',
     description: 'Library management. The database is stored in a YAML file.',
-    GitHub: 'https://github.com/SnailCoder1/library-challenge',
+    sourceCodeUrl: 'https://github.com/SnailCoder1/library-challenge',
     URL: 'https://github.com/boamatule/library-challenge',
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     alt: 'Coffee',
     description:
       'Famous Cooper test built in ReactJs. Back-end API built in Ruby on Rails. Styled using Semantic UI. Hosted in Heroku.',
-    GitHub: 'https://github.com/SnailCoder1/Cooper_Client',
+    sourceCodeUrl: 'https://github.com/SnailCoder1/Cooper_Client',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     imageUrl: '/images/chingu_boa.webp',
     alt: 'Coffee',
     description: 'An AirBNB for cats.',
-    GitHub: '',
+    sourceCodeUrl: '',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     alt: 'Coffee',
     description:
       'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
-    GitHub: 'https://github.com/SnailCoder1/atm_challenge-1',
+    sourceCodeUrl: 'https://github.com/SnailCoder1/atm_challenge-1',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
@@ -78,7 +78,7 @@ const projects = [
     imageUrl: '/images/chingu_boa.webp',
     alt: 'Coffee',
     description: 'Blog built in ReactJs and Backended using MongoDB',
-    GitHub: 'https://github.com/boamatule/raw-details-blog',
+    sourceCodeUrl: 'https://github.com/boamatule/raw-details-blog',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
@@ -88,7 +88,7 @@ const projects = [
     imageUrl: '/images/chingu_boa.webp',
     alt: 'Coffee',
     description: 'Blog built in ReactJs and Backended using MongoDB',
-    GitHub: 'https://github.com/boamatule/raw-details-blog',
+    sourceCodeUrl: 'https://github.com/boamatule/raw-details-blog',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     imageUrl: '/images/chingu_boa.webp',
     alt: 'Coffee',
     description: 'Blog built in ReactJs and Backended using MongoDB',
-    GitHub: 'https://github.com/boamatule/raw-details-blog',
+    sourceCodeUrl: 'https://github.com/boamatule/raw-details-blog',
     URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
 ];

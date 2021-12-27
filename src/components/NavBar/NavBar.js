@@ -15,7 +15,6 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
-  Img,
   NavItemSocialIconLink,
   NavItemSocialIcon,
   NavItemToggle,
@@ -62,7 +61,7 @@ function NavBar() {
               {/* <Img src="../../images/logo.svg" alt="logo" /> */}
               {/* </NavLinks> */}
             </NavLogo>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu>
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
                   01 : HOME

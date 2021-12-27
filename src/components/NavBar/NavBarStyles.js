@@ -47,6 +47,7 @@ export const Img = styled.img`
   @media screen and (min-width: 480px) {
   }
 `;
+
 export const MobileIcon = styled.div`
   display: none;
 
@@ -166,14 +167,11 @@ export const NavSocialIconsWrapper = styled.div`
 
 export const NavItemSocialIconLink = styled.a`
   display: flex;
-  font-size: 16px;
-  color: silver;
   font-weight: normal;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 4.2rem;
   height: 100%;
-  color: silver;
 
   &:hover {
     color: #01bf71;
@@ -188,11 +186,8 @@ export const NavItemSocialIconLink = styled.a`
 
     &:hover {
       transition: 0.3s ease;
+      color: #01bf71;
     }
-  }
-
-  &:hover {
-    color: #01bf71;
   }
 `;
 
@@ -207,7 +202,6 @@ export const NavItemSocialIcon = styled.div`
     width: 80%;
 
     &:hover {
-      border-bottom: 2px solid transparent;
       color: #4568dc;
     }
   }

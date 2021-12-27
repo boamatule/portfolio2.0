@@ -2,17 +2,17 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import { Button, Container, Span, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
   ButtonWrapperLink,
-  CardTitle,
   Heading,
   ProjectDescription,
   Title,
-  CardTitleWrapper,
+  ProjectLinks,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -40,7 +40,7 @@ const ProjectsList = ({ projects }) => (
                 <Span>See Live</Span>
               </Button>
             </a>
-            <a href={project.GitHub} target="_blank" rel="noreferrer">
+            <ProjectLinks href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
               <Button
                 small
                 fontSmall
@@ -53,9 +53,11 @@ const ProjectsList = ({ projects }) => (
                   transition: 'all 0.3s ease-out',
                 }}
               >
-                <Span>Source Code</Span>
+                <Span>
+                  <FaGithub style={{ width: '28px', height: '28px' }} />
+                </Span>
               </Button>
-            </a>
+            </ProjectLinks>
           </ButtonWrapperLink>
         </Glassmorphism>
       ))}
