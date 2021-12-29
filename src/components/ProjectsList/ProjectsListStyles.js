@@ -52,7 +52,7 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 20px;
+  grid-gap: 14px;
   padding-top: 4rem /* 4px */;
   padding-bottom: 0.25rem /* 4px */;
   padding-left: 0px;
@@ -111,6 +111,7 @@ export const Image = styled.img`
   display: block;
   width: 340px;
   height: 180px;
+  /* max-width: 100%; */
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px;
@@ -258,12 +259,7 @@ export const ProjectDescription = styled.p`
 export const BoxStyled = styled(motion.div)`
   position: relative;
   display: inline-block;
-
-  /* padding: 10px 10px 0px 0px; */
-
   &:hover {
-    /* transition: all 0.2s ease-in-out; */
-    /* color: #010606; */
     z-index: 99;
   }
 `;

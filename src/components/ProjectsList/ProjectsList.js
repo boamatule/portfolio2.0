@@ -4,6 +4,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
+import { motion } from 'framer-motion';
+
 import { Button, Container, Span, Glassmorphism } from '../../global-styles';
 import {
   Image,
@@ -22,9 +24,7 @@ const ProjectsList = ({ projects }) => (
 
     <CardContainer>
       {projects.map((project, key) => (
-        <BoxStyled
-        // animate={{ scaleY: 0.5 }} transition={{ duration: 2 }}
-        >
+        <BoxStyled whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
           <Glassmorphism key={key} to={`/project/${project.id}`}>
             <Image src={project.imageUrl} alt={project.alt} />
             <Title>{project.title}</Title>
@@ -70,5 +70,4 @@ const ProjectsList = ({ projects }) => (
     </CardContainer>
   </Container>
 );
-
 export default withRouter(ProjectsList);
