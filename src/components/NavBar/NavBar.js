@@ -61,7 +61,7 @@ function NavBar() {
               {/* <Img src="../../images/logo.svg" alt="logo" /> */}
               {/* </NavLinks> */}
             </NavLogo>
-            <NavMenu>
+            <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
                   01 : HOME
@@ -80,16 +80,14 @@ function NavBar() {
                 <NavLinks to="/contact">04 : CONTACT</NavLinks>
               </NavItem>
 
-              <NavItemSocialIcon>
-                <NavItemSocialIconLink
-                  href="https://github.com/boamatule"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub"
-                >
-                  <FaGithub style={{ width: '25px', height: '25px' }} />
-                </NavItemSocialIconLink>
-              </NavItemSocialIcon>
+              <NavItemSocialIconLink
+                href="https://github.com/boamatule"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub style={{ width: '25px', height: '25px' }} />
+              </NavItemSocialIconLink>
               <NavItemSocialIcon>
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boaventura-matule-2082b068/"

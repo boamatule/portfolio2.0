@@ -10,7 +10,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 `;
 
@@ -21,11 +20,8 @@ export const ProfileWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 960px) {
-    justify-content: center;
+    justify-content: cente
     align-items: center;
-    /* width: 100%; */
-    margin: 0px 0px;
-    /* padding: 20px; */
   }
 `;
 

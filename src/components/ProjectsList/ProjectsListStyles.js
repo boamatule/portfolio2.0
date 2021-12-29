@@ -32,7 +32,7 @@ export const Title = styled.h1`
 
 export const Heading = styled.h2`
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 20px;
   font-size: 40px;
   margin-left: 20px;
@@ -108,6 +108,7 @@ export const SubTitle = styled.p`
 `;
 
 export const Image = styled.img`
+  display: block;
   width: 340px;
   height: 180px;
   max-width: 100%;
