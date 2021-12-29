@@ -50,7 +50,7 @@ const ContactPage = () => {
           <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
           <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
           <ContactButtonWrapper>
-            <ContactButton type="submit" primary style={{ justifyContent: 'center', color: 'grey' }}>
+            <ContactButton type="submit" primary style={{ justifyContent: 'center' }}>
               <Span>SEND</Span>
             </ContactButton>
           </ContactButtonWrapper>

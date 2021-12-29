@@ -2,9 +2,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-
-import { motion } from 'framer-motion';
 
 import { Button, Container, Span, Glassmorphism } from '../../global-styles';
 import {
@@ -57,10 +54,7 @@ const ProjectsList = ({ projects }) => (
                     transition: 'all 0.3s ease-out',
                   }}
                 >
-                  <Span>
-                    Source Code
-                    {/* <FaGithub style={{ width: '28px', height: '28px' }} /> */}
-                  </Span>
+                  <Span>Source Code</Span>
                 </Button>
               </ProjectLinks>
             </ButtonWrapperLink>

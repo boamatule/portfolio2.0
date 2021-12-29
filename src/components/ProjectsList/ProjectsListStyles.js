@@ -66,7 +66,7 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px auto;
+    /* margin: 0px 10px auto; */
   }
 `;
 
@@ -108,18 +108,15 @@ export const SubTitle = styled.p`
 `;
 
 export const Image = styled.img`
-  display: block;
   width: 340px;
   height: 180px;
-  /* max-width: 100%; */
+  max-width: 100%;
   padding-bottom: 10px;
   background-color: transparent;
-  border-radius: 10px;
-  justify-content: center;
   border-radius: 10px 10px 0px 0px;
-
+  object-fit: fill;
   @media screen and (max-width: 960px) {
-    justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -134,13 +131,6 @@ export const Span = styled.span`
 `;
 
 export const ProjectLinks = styled.a`
-  /* display: flex;
-  font-weight: normal;
-  text-decoration: none;
-  align-items: center;
-  padding: 0.5rem 4.2rem;
-  height: 100%; */
-
   &:hover {
     color: #01bf71;
   }
@@ -185,26 +175,6 @@ export const buttonLabel = styled.p`
   color: silver;
   font-size: 1rem;
   color: red;
-`;
-
-export const CardTitle = styled.p`
-  margin-top: 10px;
-  color: grey;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 20px;
-  font-weight: normal;
-  justify-content: flex-start;
-  margin-left: 10px;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px auto;
-    margin-left: 20px;
-    margin-bottom: 10px; 
 `;
 
 export const CardTitleWrapper = styled.div`
@@ -257,8 +227,9 @@ export const ProjectDescription = styled.p`
 `;
 
 export const BoxStyled = styled(motion.div)`
+  border-radius: 10px 10px 0px 0px;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   &:hover {
     z-index: 99;
   }
