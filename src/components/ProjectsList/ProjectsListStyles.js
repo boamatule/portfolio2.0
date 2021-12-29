@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { motion } from 'framer-motion';
 
 export const ProjectContainer = styled.div`
   border-radius: 0.75rem /* 12px */;
@@ -114,6 +115,7 @@ export const Image = styled.img`
   background-color: transparent;
   border-radius: 10px;
   justify-content: center;
+  border-radius: 10px 10px 0px 0px;
 
   @media screen and (max-width: 960px) {
     justify-content: center;
@@ -250,5 +252,18 @@ export const ProjectDescription = styled.p`
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
+  }
+`;
+
+export const BoxStyled = styled(motion.div)`
+  position: relative;
+  display: inline-block;
+
+  /* padding: 10px 10px 0px 0px; */
+
+  &:hover {
+    /* transition: all 0.2s ease-in-out; */
+    /* color: #010606; */
+    z-index: 99;
   }
 `;

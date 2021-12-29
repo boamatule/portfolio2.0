@@ -94,7 +94,8 @@ const projects = [
   {
     id: 10,
     title: 'Kind Like Netflix',
-    stack: 'Nextjs | Serveless | Framer | GraphSQL | Redis |Hasura| Vercel | Serveless |',
+    stack:
+      'Nextjs | Serveless | Framer | GraphQL | Redis |Hasura| Vercel | Serveless | Magic | ISG | JWT | Framer | React Hooks |',
     imageUrl: '/images/chingu_boa.webp',
     alt: 'Coffee',
     description: 'Blog built in ReactJs and Backended using MongoDB',

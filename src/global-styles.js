@@ -80,6 +80,7 @@ export const Button = styled.button`
   background: (#4568DC 0%, #B06AB3  51%, #4568DC  100%)
   transition: 0.5s;
   border-radius: 2px;
+  
   &:hover {
     transition: all 0.3s ease-out;
     background: ${({ primary }) => (primary ? 'purple' : 'purple')};
@@ -108,7 +109,8 @@ export const Glassmorphism = styled.div`
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: 10px 10px 0px 0px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
