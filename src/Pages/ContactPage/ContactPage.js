@@ -41,7 +41,7 @@ const ContactPage = () => {
   return (
     <ContactContainer>
       <ContactWrapper>
-        <Title>| 04 : c o n t a c t |</Title>
+        <Title>c o n t a c t</Title>
         <Description>
           {/* If you would like to get in touch, fill up the form below and i will get back to you as soon as possible. */}
         </Description>

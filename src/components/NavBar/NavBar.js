@@ -64,20 +64,20 @@ function NavBar() {
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
-                  01 : HOME
+                  HOME
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/about">02 : ABOUT</NavLinks>
+                <NavLinks to="/about">ABOUT</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/portfolio-list">03 : PORTFOLIO</NavLinks>
+                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/contact">04 : CONTACT</NavLinks>
+                <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
 
               <NavItemSocialIconLink
@@ -98,11 +98,10 @@ function NavBar() {
                   <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
-              <NavItemToggle>
+              <NavItemToggle whileHover={{ scale: 1.1, rotate: 60 }}>
                 <Toggle theme={theme} toggleTheme={themeToggler} />
               </NavItemToggle>
             </NavMenu>
-            {/* <Toggle style={{}} theme={theme} toggleTheme={themeToggler} /> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

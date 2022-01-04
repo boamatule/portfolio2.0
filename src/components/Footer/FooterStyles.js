@@ -3,9 +3,6 @@ import { Link, Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  /* background-color: #101522;
-  background-color: transparent; */
-  /* padding: 2rem 0 1rem 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,14 +94,12 @@ export const SocialMediaWrapper = styled.div`
 
 export const SocialLogo = styled(Link)`
   color: #eee142;
-  /* justify-self: start; */
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  /* font-weight: bold; */
 `;
 
 export const WebsiteRights = styled.h3`
@@ -112,7 +107,6 @@ export const WebsiteRights = styled.h3`
   font-weight: normal;
   margin-top: 1.9rem;
   align-items: center;
-  /* margin-bottom: 0.8rem; */
   justify-content: center;
   font-size: 1rem;
   color: silver;
@@ -132,11 +126,9 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: silver;
-  /* font-size: 30px; */
 
   &:hover {
     color: #01bf71;
-    /* transition: 0.3s ease-out; */
   }
 `;
 
@@ -157,8 +149,6 @@ export const NavBtnLink = styled(LinkRouter)`
 export const Copyright = styled.h2`
   color: #eee142;
   font-size: 16px;
-  /* font-weight: normal; */
-  /* display: flex; */
   align-items: center;
   text-align: center;
   margin-bottom: 60px;

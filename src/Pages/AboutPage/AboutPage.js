@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button, Glassmorphism } from '../../global-styles';
-import { Content, Heading, Subtitle, Description, ButtonWrapper } from './AboutPageStyles';
+import { Content, Heading, Description, ButtonWrapper } from './AboutPageStyles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -11,7 +11,7 @@ const AboutPage = () => {
   };
   return (
     <Container>
-      <Heading>| 02 : a b o u t |</Heading>
+      <Heading>a b o u t</Heading>
       <Content>
         <Glassmorphism>
           <Description>

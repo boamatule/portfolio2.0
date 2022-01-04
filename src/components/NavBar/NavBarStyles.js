@@ -222,11 +222,10 @@ export const NavItemSocialIcon = styled.div`
   }
 `;
 
-export const NavItemToggle = styled.div`
+export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
   padding: 30px;
-
   border-bottom: 2px solid transparent;
   &:hover {
     color: none;
