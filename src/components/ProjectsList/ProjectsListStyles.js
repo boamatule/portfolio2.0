@@ -10,8 +10,8 @@ export const ProjectContainer = styled.div`
   padding-right: 1rem /* 16px */;
 
   @media screen and (max-width: 960px) {
-    padding-left: 2rem /* 16px */;
-    padding-right: 2rem /* 16px */;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
     background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }
@@ -62,7 +62,7 @@ export const CardContainer = styled.div`
   cursor: pointer;
   margin-left: 20px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 940px) {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
@@ -72,8 +72,10 @@ export const CardContainer = styled.div`
 
 export const ButtonWrapperLink = styled.div`
   cursor: pointer;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 10px;
+  justify-content: 'space-between';
+  padding: 0px 80px 0px 0px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
@@ -115,9 +117,12 @@ export const Image = styled.img`
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px 10px 0px 0px;
-  object-fit: fill;
+  /* object-fit: fill; */
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 960px) {
     width: 100%;
+    max-width: 100%;
   }
 `;
 

@@ -40,7 +40,6 @@ export const Heading = styled.h2`
   /* margin-left: 5.8rem; */
   @media screen and (max-width: 960px) {
     line-height: 1px;
-    /* padding: 3px; */
     font-size: 14px;
   }
 `;
@@ -65,7 +64,6 @@ export const Img = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* border: 4px solid #4568dc; */
   margin-bottom: 20px;
 
   @media screen and (min-width: 480px) {
@@ -77,14 +75,11 @@ export const Img = styled.img`
 export const TextWrapper = styled.div`
   margin: 80px 40px auto;
   margin-top: 1.9rem;
-  /* margin-bottom: 0.8rem; */
   justify-content: flex-start;
 
   @media screen and (max-width: 960px) {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    margin: 60px 0px auto;
   }
 `;
 

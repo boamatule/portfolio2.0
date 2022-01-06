@@ -4,48 +4,28 @@ import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
-  height: 80px;
+  background: transparent;
+  height: 80;
   display: flex;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: stycky;
-  background: transparent;
-
-  @media screen and (max-width: 960px) {
-    justify-content: center;
-    align-items: center;
-    top: 0px;
-    height: 80px;
-    padding: 30px;
-    height: 80px;
-    font-size: 1rem;
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
+  position: sticky;
+  top: 0;
+  z-index: 999;
   }
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
   height: 80px;
+  width: 100%;
   justify-content: center;
   ${Container}
-
-  @media screen and (max-width: 960px) {
-    justify-content: center;
-    align-items: center;
-    top: 0px;
-    bottom: 60px;
-    height: 80px;
-    /* font-size: 1.2rem; */
-    /* padding: 10px 10px 0px 0px; */
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
-  }
 `;
 
 export const NavLogo = styled(Link)`
-  display: inline-flex;
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -65,13 +45,14 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 960px) {
-    display: hidden;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    /* background: transparent; */
   }
 `;
 
@@ -82,30 +63,21 @@ export const NavMenu = styled.ul`
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background: transparent;
-
-  &:hover {
-    transition: 0.3s ease;
-  }
+  font-size: 2rem;
 
   @media screen and (max-width: 960px) {
-    /* font-size: 1rem; */
-    align-items: start-flex;
-    justify-self: flex-start;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    /* height: 100%; */
-    /* height: 100vh; */
-    position: center;
-    top: 0px;
-    bottom: : 60px;
-    top: ${({ click }) => (click ? 0 : '-100%')};
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    padding: 0px 40px 0px 0px;
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
     background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
-  }
+  }}
 `;
 
 export const NavItem = styled.li`
@@ -115,20 +87,11 @@ export const NavItem = styled.li`
   &:hover {
     border-bottom: 4px solid #4568dc;
   }
-
   @media screen and (max-width: 960px) {
     width: 100%;
-    /* padding: 0px 0px 0px 0px;
-    margin-left: 10px; */
-
     &:hover {
-      color: #01bf71;
-
-      border-bottom: 2px solid transparent;
+      border-bottom: 4px solid #4568dc;
     }
-  }
-  &:hover {
-    color: #01bf71;
   }
 `;
 

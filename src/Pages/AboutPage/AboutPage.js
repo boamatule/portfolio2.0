@@ -11,8 +11,8 @@ const AboutPage = () => {
   };
   return (
     <Container>
-      <Heading>a b o u t</Heading>
       <Content>
+        <Heading>a b o u t</Heading>
         <Glassmorphism>
           <Description>
             Full Stack Developer based in beautiful Oslo, Norway. Former Chef turned into a highly crafted programmer

@@ -67,7 +67,7 @@ export const Heading = styled.h2`
   margin-top: 120px;
   margin-bottom: 40px;
   font-size: 40px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   justify-content: flex-start;
   /* text-transform: uppercase; */
   background: transparent;
@@ -75,7 +75,7 @@ export const Heading = styled.h2`
 
   @media screen and (max-width: 960px) {
     font-size: 30px;
-    margin-left: 42px;
+    /* margin-left: 42px; */
     margin-top: 80px;
   }
 

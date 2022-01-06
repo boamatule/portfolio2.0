@@ -17,11 +17,11 @@ const Profile = () => (
     <TextWrapper>
       <Glassmorphism>
         <Subtitle>
-          Former Chef and E-business Manager turned into a highly crafted Full Stack Software Developer using the latest
-          tools in programming. Trained in ReactJs and Ruby on Rails using methods like Agile and Test-Driven
-          Development. Proficient and vid learner. Former Chef and E-business Manager turned into a highly crafted Full
-          Stack Software Developer using the latest tools in programming. Trained in ReactJs and Ruby on Rails using
-          methods like Agile and Test-Driven Development. Proficient and vid learner.
+          Chef and E-business Manager turned into a highly crafted Full Stack Software Developer using the latest tools
+          in programming. Trained in ReactJs and Ruby on Rails. Agile lover and Test-Driven Development method
+          enthusiast. A bit obessed with perfection. Love mushroom and poetry. I listen to 2 Pac everyday. I do love
+          Afro Jazz. Learning to enjoy lakris since i was introduced to it... I try to spend my holidays in Bazaruto
+          whenever i can.
         </Subtitle>
       </Glassmorphism>
     </TextWrapper>

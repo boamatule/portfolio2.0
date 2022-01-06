@@ -10,7 +10,6 @@ import Toggle from '../DarkMode/Toggler';
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavLinks,
@@ -56,11 +55,6 @@ function NavBar() {
                 <FaBars style={{ width: '25px', height: '25px', color: '#4568dc' }} />
               )}
             </MobileIcon>
-            <NavLogo to="/">
-              {/* <NavLinks to="/home" text={{ color: '#EEE142' }}> */}
-              {/* <Img src="../../images/logo.svg" alt="logo" /> */}
-              {/* </NavLinks> */}
-            </NavLogo>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to="/home" text={{ color: '#EEE142' }}>
@@ -79,7 +73,6 @@ function NavBar() {
               <NavItem>
                 <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
-
               <NavItemSocialIconLink
                 href="https://github.com/boamatule"
                 target="_blank"
