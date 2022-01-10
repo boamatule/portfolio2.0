@@ -22,6 +22,7 @@ export const ProfileWrapper = styled.div`
   @media screen and (max-width: 960px) {
     justify-content: cente
     align-items: center;
+    margin: 40px 22px auto;
   }
 `;
 
@@ -40,7 +41,8 @@ export const Heading = styled.h2`
   /* margin-left: 5.8rem; */
   @media screen and (max-width: 960px) {
     line-height: 1px;
-    font-size: 14px;
+    font-size: 12px;
+    /* margin: 0px 1px auto; */
   }
 `;
 
@@ -80,6 +82,7 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 960px) {
     justify-content: center;
     align-items: center;
+    margin: 20px 22px auto;
   }
 `;
 

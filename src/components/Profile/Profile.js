@@ -9,7 +9,7 @@ const Profile = () => (
         <Avatar>
           <Img src="../../images/avatar.webp" alt="Boa" />
         </Avatar>
-        <Heading>Boa Matule | Full Stack Developer</Heading>
+        <Heading>Boa Matule | Fullstack Developer</Heading>
         <Location> +4740101117 | Oslo - Norway </Location>
       </Glassmorphism>
     </ProfileWrapper>

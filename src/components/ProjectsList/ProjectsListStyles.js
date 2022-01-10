@@ -32,16 +32,18 @@ export const Title = styled.h1`
 
 export const Heading = styled.h2`
   font-weight: bold;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-bottom: 20px;
   font-size: 40px;
   margin-left: 20px;
   justify-content: flex-start;
+  margin: 40px 0px auto;
+
   /* text-transform: uppercase; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 0px;
     /* padding: 20px 0px 40px 0px; */
@@ -62,11 +64,11 @@ export const CardContainer = styled.div`
   cursor: pointer;
   margin-left: 20px;
 
-  @media screen and (max-width: 940px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 2fr;
     justify-content: center;
     align-items: center;
-    /* margin: 0px 10px auto; */
+    margin: 0px 0px auto;
   }
 `;
 

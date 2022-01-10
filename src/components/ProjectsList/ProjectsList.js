@@ -33,7 +33,7 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    margin: '0px',
+                    marginLeft: '0px',
                     color: 'white',
                     fontSize: '20px',
                   }}
@@ -47,7 +47,7 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    margin: '20px',
+                    margin: '0px 12px 0px 10px',
                     background: 'transparent',
                     // border: 'none',
                     color: 'grey',

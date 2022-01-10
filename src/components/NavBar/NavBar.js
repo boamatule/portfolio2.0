@@ -50,9 +50,9 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
-                <FaTimes style={{ width: '25px', height: '25px', color: '4568dc' }} />
+                <FaTimes style={{ width: '25px', height: '25px', color: '4568dc', background: 'transparent' }} />
               ) : (
-                <FaBars style={{ width: '25px', height: '25px', color: '#4568dc' }} />
+                <FaBars style={{ width: '25px', height: '25px', color: '#4568dc', background: 'transparent' }} />
               )}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
