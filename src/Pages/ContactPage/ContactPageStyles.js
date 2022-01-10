@@ -41,13 +41,11 @@ export const Description = styled.h2`
 `;
 
 export const Title = styled.h2`
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 120px;
   margin-bottom: 20px;
   font-size: 40px;
-  margin-left: 0px;
   justify-content: flex-start;
-  /* text-transform: uppercase; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
@@ -58,10 +56,8 @@ export const Title = styled.h2`
 export const Form = styled.form`
   display: grid;
   width: 100%;
-  /* max-width: 80%; */
   margin: 40px auto;
   padding: 0px 0px 0px 0px;
-  /* border-radius: 1px; */
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 
@@ -124,7 +120,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const ContactButton = styled(Button)`
-  ${Button};
+  /* ${Button}; */
   font-size: 14px;
   /* font: ${({ fontBig }) => (fontBig ? '12px' : '10px')}; */
   font-weight: normal;

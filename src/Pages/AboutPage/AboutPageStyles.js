@@ -1,27 +1,15 @@
 import styled from 'styled-components/macro';
-// import { Link } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container } from '../../global-styles';
 
 export const AboutContainer = styled(Container)`
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 0px 0px;
-  /* width: 50%; */
-  /* background: transparent; */
-`;
-
-export const Content = styled.div`
-  margin: 80px 40px auto;
-  margin-bottom: 40px;
-  justify-content: flex-start;
-  background: transparent;
+  margin-top: 80px;
 
   @media screen and (min-width: 960px) {
-    margin: 0px 0px auto;
-    padding: 0px 0px 0px 0px;
+    margin: 80px 0px auto;
   }
 `;
 
@@ -63,11 +51,10 @@ export const Subtitle = styled.h2`
 `;
 
 export const Heading = styled.h2`
+  /* margin: 80px 0px auto; */
   font-weight: bold;
-  margin-top: 120px;
-  margin-bottom: 40px;
   font-size: 40px;
-  /* margin-left: 10px; */
+  margin-bottom: 20px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
   background: transparent;
@@ -76,11 +63,7 @@ export const Heading = styled.h2`
   @media screen and (max-width: 960px) {
     font-size: 30px;
     /* margin-left: 42px; */
-    margin-top: 80px;
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
+    margin-top: 0px;
   }
 `;
 
@@ -145,15 +128,12 @@ export const ButtonWrapper = styled.div`
   cursor: pointer;
   justify-content: flex-end;
   display: flex;
-  margin-right: 28px;
+  margin-right: 0px;
   margin-top: 20px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
-    margin-left: 40px;
-    justify-content: flex-end;
+    justify-content: center;
     max-width: 50%;
-    display: flex;
-    margin-right: 28px;
   }
 `;

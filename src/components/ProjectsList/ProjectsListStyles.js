@@ -37,7 +37,7 @@ export const Heading = styled.h2`
   font-size: 40px;
   margin-left: 20px;
   justify-content: flex-start;
-  margin: 40px 0px auto;
+  margin: 80px 20px auto;
 
   /* text-transform: uppercase; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
@@ -46,7 +46,7 @@ export const Heading = styled.h2`
     font-size: 20px;
     font-weight: bold;
     margin-right: 0px;
-    /* padding: 20px 0px 40px 0px; */
+    margin: 20px 4px auto;
   }
 `;
 

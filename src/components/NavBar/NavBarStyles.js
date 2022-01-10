@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
-  background: transparent;
+  /* background: transparent; */
   height: 80;
   display: flex;
-  /* width: 100%; */
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -99,7 +98,7 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 4.2rem;
@@ -111,7 +110,7 @@ export const NavLinks = styled(Link)`
     padding: 2rem;
     display: table;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
     align-items: center;
     justify-self: center;

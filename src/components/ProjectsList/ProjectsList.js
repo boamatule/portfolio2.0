@@ -17,7 +17,7 @@ import {
 
 const ProjectsList = ({ projects }) => (
   <Container>
-    <Heading>p o r t f o l i o</Heading>
+    <Heading>P o r t f o l i o.</Heading>
 
     <CardContainer>
       {projects.map((project, key) => (

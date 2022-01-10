@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button, Glassmorphism } from '../../global-styles';
-import { Content, Heading, Description, ButtonWrapper } from './AboutPageStyles';
+import { Heading, Description, ButtonWrapper, AboutContainer } from './AboutPageStyles';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -11,8 +11,8 @@ const AboutPage = () => {
   };
   return (
     <Container>
-      <Content>
-        <Heading>a b o u t</Heading>
+      <AboutContainer>
+        <Heading>A b o u t.</Heading>
         <Glassmorphism>
           <Description>
             Full Stack Developer based in beautiful Oslo, Norway. Former Chef turned into a highly crafted programmer
@@ -20,15 +20,14 @@ const AboutPage = () => {
             Test-Driven Development.
           </Description>
         </Glassmorphism>
-      </Content>
-
-      <Link to="/contact">
-        <ButtonWrapper>
-          <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-            Get in touch{' '}
-          </Button>
-        </ButtonWrapper>
-      </Link>
+        <Link to="/contact">
+          <ButtonWrapper>
+            <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
+              Get in touch{' '}
+            </Button>
+          </ButtonWrapper>
+        </Link>
+      </AboutContainer>
     </Container>
   );
 };
