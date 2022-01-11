@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { Container } from '../../global-styles';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Container, Glassmorphism } from '../../global-styles';
 import {
   FooterContainer,
   FooterWrapper,
@@ -19,27 +19,25 @@ import {
 } from './FooterStyles';
 
 const Footer = () => (
-  <FooterWrapper>
-    <FooterContainer>
-      <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
-      <SocialMediaWrapper>
-        <SocialIcons>
-          <SocialIconLink
-            href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedinIn />
-          </SocialIconLink>
-          <SocialIconLink href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <FaGithub />
-          </SocialIconLink>
-        </SocialIcons>
-      </SocialMediaWrapper>
-      <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
-    </FooterContainer>
-  </FooterWrapper>
+  <FooterContainer>
+    <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
+    <SocialMediaWrapper>
+      <SocialIcons>
+        <SocialIconLink
+          href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedinIn />
+        </SocialIconLink>
+        <SocialIconLink href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <FaGithub />
+        </SocialIconLink>
+      </SocialIcons>
+    </SocialMediaWrapper>
+    <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
+  </FooterContainer>
 );
 
 export default Footer;

@@ -22,9 +22,9 @@ const App = () => (
       <Route path="/resume" component={ResumePage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/portfolio-list" component={PortfolioListPage} />
-      <Route path="/footer" component={Footer} />
       <Route component={NotFound} />
     </Switch>
+    {/* <Footer /> */}
   </Router>
 );
 

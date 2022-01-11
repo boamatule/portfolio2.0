@@ -17,7 +17,7 @@ import {
 
 const ProjectsList = ({ projects }) => (
   <Container>
-    <Heading>P o r t f o l i o.</Heading>
+    <Heading>p o r t f o l i o</Heading>
 
     <CardContainer>
       {projects.map((project, key) => (
@@ -41,7 +41,7 @@ const ProjectsList = ({ projects }) => (
                   <Span>See Live</Span>
                 </Button>
               </a>
-              <ProjectLinks href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
+              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
@@ -49,14 +49,14 @@ const ProjectsList = ({ projects }) => (
                   style={{
                     margin: '0px 12px 0px 10px',
                     background: 'transparent',
-                    // border: 'none',
+                    border: 'none',
                     color: 'grey',
                     // transition: 'all 0.3s ease-out',
                   }}
                 >
                   <Span>Source Code</Span>
                 </Button>
-              </ProjectLinks>
+              </a>
             </ButtonWrapperLink>
           </Glassmorphism>
         </BoxStyled>

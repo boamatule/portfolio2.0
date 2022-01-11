@@ -3,20 +3,16 @@ import { Link, Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  /* background-color: #101522; */
-  background-color: transparent;
-  /* padding: 2rem 0 1rem 0; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  margin-top: 200px;
   ${Container};
   @media screen and (max-width: 991px) {
     padding-right: 30px;
     padding-left: 30px;
-  }
+  } */
+  top: 40px;
 `;
 
 export const FooterWrapper = styled.div`
@@ -24,11 +20,8 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  height: 300px;
-  background: blue;
-  width: 100%;
   margin-top: 200px;
+  background: dark-grey;
 `;
 
 export const FooterLinksContainer = styled.div`

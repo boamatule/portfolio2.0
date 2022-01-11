@@ -46,7 +46,8 @@ export const Title = styled.h2`
   margin-bottom: 20px;
   font-size: 40px;
   justify-content: flex-start;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
 
   @media screen and (max-width: 960px) {
     font-size: 20px;

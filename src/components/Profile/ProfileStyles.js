@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const ProfileWrapper = styled.div`
   text-align: center;
-  margin: 80px 40px auto;
+  margin: 100px 40px auto;
   justify-content: center;
   align-items: center;
 
@@ -33,8 +33,10 @@ export const Heading = styled.h2`
   align-items: center;
   font-size: 16px;
   line-height: 1rem;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
   padding-top: 10px;
+
   /* text-transform: uppercase; */
 
   /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */

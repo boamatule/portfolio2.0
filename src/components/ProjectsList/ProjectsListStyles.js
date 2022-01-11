@@ -5,7 +5,7 @@ export const ProjectContainer = styled.div`
   border-radius: 0.75rem /* 12px */;
   padding-top: 0.25rem /* 4px */;
   padding-bottom: 0.25rem /* 4px */;
-  padding-bottom: 1.25rem /* 20px */;
+  padding-bottom: 2rem;
   padding-left: 1rem /* 16px */;
   padding-right: 1rem /* 16px */;
 
@@ -22,7 +22,8 @@ export const Title = styled.h1`
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -36,11 +37,13 @@ export const Heading = styled.h2`
   margin-bottom: 20px;
   font-size: 40px;
   margin-left: 20px;
-  justify-content: flex-start;
-  margin: 80px 20px auto;
+  justify-content: center;
+  text-align: center;
+  margin: 80px 20px 40px auto;
 
   /* text-transform: uppercase; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -155,7 +158,8 @@ export const ProjectListP = styled.p`
 export const ButtonLink = styled.a`
   border-radius: 4px;
   margin-top: 0px;
-  background: ${({ primary }) => (primary ? '#01bf71' : '#010606')};
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  /* background: ${({ primary }) => (primary ? '#01bf71' : '#010606')}; */
   display: inline-block;
   width: 40%;
   height: 100%;

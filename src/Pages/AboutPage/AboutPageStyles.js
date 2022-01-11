@@ -7,6 +7,7 @@ export const AboutContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  padding: 0px 100px 0px 100px;
 
   @media screen and (min-width: 960px) {
     margin: 80px 0px auto;
@@ -54,11 +55,12 @@ export const Heading = styled.h2`
   /* margin: 80px 0px auto; */
   font-weight: bold;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   justify-content: flex-start;
   /* text-transform: uppercase; */
   background: transparent;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
 
   @media screen and (max-width: 960px) {
     font-size: 30px;

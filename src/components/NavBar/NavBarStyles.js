@@ -150,6 +150,7 @@ export const NavItemSocialIconLink = styled.a`
   height: 100%;
 
   &:hover {
+    transition: 0.5s ease;
     color: #01bf71;
   }
 
@@ -171,7 +172,8 @@ export const NavItemSocialIcon = styled.div`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    color: #4568dc;
+    transition: 0.3s ease;
+    color: #01bf71;
   }
 
   @media screen and (max-width: 960px) {
