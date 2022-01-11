@@ -1,6 +1,5 @@
 import React from 'react';
-import { ErrorContainer, textWrapper, textRaw } from './NotFoundStyle';
-import { Container } from '../../global-styles';
+import { ErrorContainer, textRaw } from './NotFoundStyle';
 
 const NotFound = () => (
   <ErrorContainer>
