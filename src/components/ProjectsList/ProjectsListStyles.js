@@ -19,10 +19,10 @@ export const ProjectContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 16px;
-  color: #4568dc;
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
 
   @media screen and (max-width: 960px) {
     font-size: 14px;

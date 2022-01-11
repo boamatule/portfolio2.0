@@ -4,13 +4,14 @@ import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
-  /* background: transparent; */
+  background: transparent;
   height: 80;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  /* position: sticky; */
+  position: none;
   top: 0;
   z-index: 999;
   }
@@ -19,7 +20,6 @@ export const Nav = styled(motion.div)`
 export const NavbarContainer = styled(Container)`
   display: flex;
   height: 80px;
-  width: 100%;
   justify-content: center;
   ${Container}
 `;
@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    background: transparent;
+    /* background: transparent; */
   }
 `;
 
@@ -74,8 +74,6 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }}
 `;
 
@@ -87,7 +85,7 @@ export const NavItem = styled.li`
     border-bottom: 4px solid #4568dc;
   }
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 30%;
     &:hover {
       border-bottom: 4px solid #4568dc;
     }

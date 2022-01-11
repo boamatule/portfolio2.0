@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import 'normalize.css';
@@ -6,6 +7,7 @@ import HomePage from '../src/Pages/HomePage/HomePage';
 import ContactPage from '../src/Pages/ContactPage/ContactPage';
 import PortfolioPage from '../src/Pages/PortfolioPage/PortfolioPage';
 import PortfolioListPage from '../src/Pages/PortfolioPage/PortfolioListPage';
+// eslint-disable-next-line import/no-unresolved
 import ResumePage from '../src/Pages/Resume/ResumePage';
 import NotFound from '../src/Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from '../src/components';
@@ -26,6 +28,7 @@ const App = () => (
       <Route path="/portfolio-list" component={PortfolioListPage} />
       <Route component={NotFound} />
     </Switch>
+    <Footer />
   </Router>
 );
 

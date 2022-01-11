@@ -12,7 +12,6 @@ import {
   SocialIcons,
   SocialIconLink,
   WebsiteRights,
-  SocialLogo,
   SocialMediaWrapper,
   SocialMedia,
   NavBtnLink,
@@ -21,8 +20,8 @@ import {
 
 const Footer = () => (
   <FooterWrapper>
-    <Container>
-      {/* <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights> */}
+    <FooterContainer>
+      <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
       <SocialMediaWrapper>
         <SocialIcons>
           <SocialIconLink
@@ -39,7 +38,7 @@ const Footer = () => (
         </SocialIcons>
       </SocialMediaWrapper>
       <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
-    </Container>
+    </FooterContainer>
   </FooterWrapper>
 );
 

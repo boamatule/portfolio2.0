@@ -7,7 +7,6 @@ import {
   Title,
   Description,
   ContactContainer,
-  ContactButton,
   ContactWrapper,
   ContactButtonWrapper,
 } from './ContactPageStyles';

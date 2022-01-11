@@ -33,7 +33,7 @@ export const Heading = styled.h2`
   align-items: center;
   font-size: 16px;
   line-height: 1rem;
-  color: #4568dc;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')};
   padding-top: 10px;
   /* text-transform: uppercase; */
 

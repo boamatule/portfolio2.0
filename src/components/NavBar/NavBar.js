@@ -61,18 +61,17 @@ function NavBar() {
                   HOME
                 </NavLinks>
               </NavItem>
-
               <NavItem>
                 <NavLinks to="/about">ABOUT</NavLinks>
               </NavItem>
-
               <NavItem>
                 <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
               </NavItem>
-
               <NavItem>
                 <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
+            </NavMenu>
+            <NavItemSocialIcon>
               <NavItemSocialIconLink
                 href="https://github.com/boamatule"
                 target="_blank"
@@ -81,20 +80,20 @@ function NavBar() {
               >
                 <FaGithub style={{ width: '25px', height: '25px' }} />
               </NavItemSocialIconLink>
-              <NavItemSocialIcon>
-                <NavItemSocialIconLink
-                  href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
-                </NavItemSocialIconLink>
-              </NavItemSocialIcon>
-              <NavItemToggle whileHover={{ scale: 1.1, rotate: 60 }}>
-                <Toggle theme={theme} toggleTheme={themeToggler} />
-              </NavItemToggle>
-            </NavMenu>
+            </NavItemSocialIcon>
+            <NavItemSocialIcon>
+              <NavItemSocialIconLink
+                href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
+              </NavItemSocialIconLink>
+            </NavItemSocialIcon>
+            <NavItemToggle whileHover={{ scale: 1.1, rotate: 60 }}>
+              <Toggle theme={theme} toggleTheme={themeToggler} />
+            </NavItemToggle>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
