@@ -24,7 +24,7 @@ const App = () => (
       <Route path="/portfolio-list" component={PortfolioListPage} />
       <Route component={NotFound} />
     </Switch>
-    {/* <Footer /> */}
+    <Footer />
   </Router>
 );
 

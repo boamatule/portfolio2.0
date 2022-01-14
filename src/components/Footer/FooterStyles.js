@@ -3,25 +3,32 @@ import { Link, Link as LinkRouter } from 'react-router-dom';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  ${Container};
-  @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  } */
-  top: 40px;
-`;
-
-export const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  background: dark-grey;
+  margin: 80px 0px 80px 0px;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+
+  ${Container};
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+`;
+
+export const FooterWrapper = styled.div`
+  align-items: center;
+  margin-top: 20px;
+  /* background: transparent; */
+  /* margin-top: 6rem /* 96px */; */
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  margin-bottom: 0.5rem /* 8px */;
+  font-weight: 700;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -39,15 +46,15 @@ export const FooterLinksWrapper = styled.div`
   }
 `;
 
-export const FooterLinkItems = styled.div`
+export const FooterLinkItems = styled.span`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
-  box-sizing: border-box;
-  color: black;
+  font-weight: normal;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+
   @media screen and (max-width: 420) {
     margin: 0;
     padding: 10px;
@@ -61,7 +68,7 @@ export const FooterLinkTitle = styled.h1`
 `;
 
 export const FooterLink = styled(Link)`
-  color: black;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;

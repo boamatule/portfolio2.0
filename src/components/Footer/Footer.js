@@ -1,42 +1,14 @@
 import React from 'react';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { Container, Glassmorphism } from '../../global-styles';
-import {
-  FooterContainer,
-  FooterWrapper,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLink,
-  FooterLinkTitle,
-  SocialIcons,
-  SocialIconLink,
-  WebsiteRights,
-  SocialMediaWrapper,
-  SocialMedia,
-  NavBtnLink,
-  Copyright,
-} from './FooterStyles';
+import { Link } from 'react-router-dom';
+import { FooterContainer, FooterWrapper } from './FooterStyles';
 
 const Footer = () => (
   <FooterContainer>
-    <WebsiteRights>Crafted with ♥ using Reactjs, Nodejs and Styled Components.</WebsiteRights>
-    <SocialMediaWrapper>
-      <SocialIcons>
-        <SocialIconLink
-          href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedinIn />
-        </SocialIconLink>
-        <SocialIconLink href="https://github.com/boamatule" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <FaGithub />
-        </SocialIconLink>
-      </SocialIcons>
-    </SocialMediaWrapper>
-    <Copyright>&copy; {new Date().getFullYear()} Boa Matule</Copyright>
+    <FooterWrapper>
+      <Link to="/home" style={{ color: '#3333CC' }}>
+        ← Back to home
+      </Link>
+    </FooterWrapper>
   </FooterContainer>
 );
 

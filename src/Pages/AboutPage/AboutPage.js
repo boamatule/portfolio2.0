@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <Container>
       <AboutContainer>
-        <Heading>A b o u t.</Heading>
+        <Heading>a b o u t.</Heading>
         <Glassmorphism>
           <Description>
             Full Stack Developer based in beautiful Oslo, Norway. Former Chef turned into a highly crafted programmer
