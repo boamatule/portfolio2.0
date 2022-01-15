@@ -16,7 +16,7 @@ import {
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
-  <Container>
+  <>
     <Heading>p o r t f o l i o</Heading>
 
     <CardContainer>
@@ -41,7 +41,8 @@ const ProjectsList = ({ projects }) => (
                   <Span>See Live</Span>
                 </Button>
               </a>
-              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
+
+              {/* <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
@@ -51,17 +52,16 @@ const ProjectsList = ({ projects }) => (
                     background: 'transparent',
                     border: 'none',
                     color: 'grey',
-                    // transition: 'all 0.3s ease-out',
                   }}
                 >
                   <Span>Source Code</Span>
                 </Button>
-              </a>
+              </a> */}
             </ButtonWrapperLink>
           </Glassmorphism>
         </BoxStyled>
       ))}
     </CardContainer>
-  </Container>
+  </>
 );
 export default withRouter(ProjectsList);

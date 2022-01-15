@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles, Glassmorphism } from '../../global-styles';
+import { GlobalStyles } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';

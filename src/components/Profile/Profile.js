@@ -3,7 +3,7 @@ import { Container, Glassmorphism } from '../../global-styles';
 const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location, Subtitle } = require('./ProfileStyles');
 
 const Profile = () => (
-  <Container>
+  <>
     <ProfileWrapper>
       <Glassmorphism>
         <Avatar>
@@ -23,7 +23,7 @@ const Profile = () => (
         <Subtitle> You might find myself most of the time trying different kind of mushrooms.</Subtitle>
       </Glassmorphism>
     </TextWrapper>
-  </Container>
+  </>
 );
 
 export default Profile;

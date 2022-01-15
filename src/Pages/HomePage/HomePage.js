@@ -6,11 +6,10 @@ import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import { Container } from '../../global-styles';
 
 const HomePage = () => (
-  <Container>
+  <>
     <Profile />
     <PortfolioListPage />
-    {/* <ContactPage /> */}
-  </Container>
+  </>
 );
 
 export default HomePage;
