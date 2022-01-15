@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container } from '../../global-styles';
 
-export const AboutContainer = styled(Container)`
+export const AboutContainer = styled.div`
+  text-align: center;
+  margin: 100px 40px auto;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  padding: 0px 100px 0px 100px;
 
-  @media screen and (min-width: 960px) {
-    margin: 80px 0px auto;
+  @media screen and (max-width: 960px) {
+    justify-content: cente
+    align-items: center;
+    margin: 40px 22px auto;
   }
 `;
 
@@ -128,14 +130,12 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const ButtonWrapper = styled.div`
   cursor: pointer;
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
-  margin-right: 0px;
   margin-top: 20px;
 
   @media screen and (max-width: 960px) {
-    cursor: pointer;
-    justify-content: center;
-    max-width: 50%;
+    /* justify-content: center;
+    display: flex; */
   }
 `;

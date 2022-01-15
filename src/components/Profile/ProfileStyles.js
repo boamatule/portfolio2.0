@@ -1,17 +1,5 @@
 import styled from 'styled-components/macro';
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: 'row';
-  margin-top: 120px;
-  padding: 100px 40px;
-
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-`;
+import { Container, Button } from '../../global-styles';
 
 export const ProfileWrapper = styled.div`
   text-align: center;
@@ -44,7 +32,7 @@ export const Heading = styled.h2`
   @media screen and (max-width: 960px) {
     line-height: 1px;
     font-size: 12px;
-    /* margin: 0px 1px auto; */
+    /* margin: 0px 10px auto; */
   }
 `;
 

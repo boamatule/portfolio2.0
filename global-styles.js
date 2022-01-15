@@ -49,8 +49,9 @@ export const Container = styled.div`
   background: none;
 
   @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    margin: 0 30px auto;
   }
 
   /** Breakpoints:
