@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { Container, Button } from '../../global-styles';
 
 export const ProfileWrapper = styled.div`
   text-align: center;
@@ -19,20 +18,14 @@ export const Heading = styled.h2`
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1rem;
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
   padding-top: 10px;
 
-  /* text-transform: uppercase; */
-
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
-  /* margin-left: 5.8rem; */
   @media screen and (max-width: 960px) {
     line-height: 1px;
-    font-size: 12px;
-    /* margin: 0px 10px auto; */
+    font-size: 14px;
   }
 `;
 
@@ -44,7 +37,6 @@ export const Avatar = styled.div`
   display: inline-flex;
 
   @media screen and (max-width: 960px) {
-    margin: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,14 +45,14 @@ export const Avatar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 10.6rem;
-    height: 10.6rem;
+  @media screen and (min-width: 960px) {
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -79,7 +71,7 @@ export const TextWrapper = styled.div`
 export const Subtitle = styled.p`
   margin-top: 20px;
   color: grey;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   line-height: 20px;
   font-weight: normal;
@@ -103,6 +95,4 @@ export const Location = styled.p`
   letter-spacing: 1px;
   cursor: pointer;
   margin-bottom: 20px;
-
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'purple')}; */
 `;
