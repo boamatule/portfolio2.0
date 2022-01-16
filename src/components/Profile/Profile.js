@@ -1,4 +1,4 @@
-import { Container, Glassmorphism } from '../../global-styles';
+import { Glassmorphism } from '../../global-styles';
 
 const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location, Subtitle } = require('./ProfileStyles');
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
-import { Container } from '../../global-styles';
 
 export const AboutContainer = styled.div`
   text-align: center;
@@ -61,8 +60,7 @@ export const Heading = styled.h2`
   justify-content: flex-start;
   /* text-transform: uppercase; */
   background: transparent;
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 960px) {
     font-size: 30px;

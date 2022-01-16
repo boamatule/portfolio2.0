@@ -3,7 +3,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { Button, Container, Span, Glassmorphism } from '../../global-styles';
+import { Button, Span, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
@@ -11,7 +11,6 @@ import {
   Heading,
   ProjectDescription,
   Title,
-  ProjectLinks,
   BoxStyled,
 } from './ProjectsListStyles';
 
@@ -42,7 +41,7 @@ const ProjectsList = ({ projects }) => (
                 </Button>
               </a>
 
-              {/* <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
+              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
@@ -56,7 +55,7 @@ const ProjectsList = ({ projects }) => (
                 >
                   <Span>Source Code</Span>
                 </Button>
-              </a> */}
+              </a>
             </ButtonWrapperLink>
           </Glassmorphism>
         </BoxStyled>

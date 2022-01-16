@@ -22,8 +22,7 @@ export const Title = styled.h1`
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -33,17 +32,13 @@ export const Title = styled.h1`
 
 export const Heading = styled.h2`
   font-weight: bold;
-  /* margin-top: 80px; */
   margin-bottom: 20px;
   font-size: 40px;
   margin-left: 20px;
   justify-content: center;
   text-align: center;
   margin: 80px 20px 40px auto;
-
-  /* text-transform: uppercase; */
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -116,13 +111,13 @@ export const SubTitle = styled.p`
 
 export const Image = styled.img`
   display: block;
-  width: 340px;
+  width: 100%;
   height: 180px;
   max-width: 100%;
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px 10px 0px 0px;
-  /* object-fit: fill; */
+  object-fit: fill;
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 960px) {
@@ -158,13 +153,12 @@ export const ProjectListP = styled.p`
 export const ButtonLink = styled.a`
   border-radius: 4px;
   margin-top: 0px;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
-  /* background: ${({ primary }) => (primary ? '#01bf71' : '#010606')}; */
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
   display: inline-block;
   width: 40%;
   height: 100%;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 46px' : '12px 30px')};
+  /* padding: ${({ big }) => (big ? '12px 46px' : '12px 30px')}; */
   color: ${({ dark }) => (dark ? '#000' : '#fff')};
   font-size: ${({ fontBig }) => (fontBig ? '18px' : '14px')};
   justify-content: center;
@@ -241,7 +235,6 @@ export const ProjectDescription = styled.p`
 export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
-  /* display: inline-block; */
   &:hover {
     z-index: 99;
   }

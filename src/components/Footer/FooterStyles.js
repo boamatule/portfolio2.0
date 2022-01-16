@@ -20,15 +20,10 @@ export const FooterContainer = styled(Container)`
 export const FooterWrapper = styled.div`
   align-items: center;
   margin-top: 20px;
-  /* background: transparent; */
-  /* margin-top: 6rem /* 96px */; */
   font-size: 1.125rem /* 18px */;
   line-height: 1.75rem /* 28px */;
   margin-bottom: 0.5rem /* 8px */;
   font-weight: 700;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
-
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
 `;
 
 export const FooterLinksContainer = styled.div`
