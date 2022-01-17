@@ -17,10 +17,15 @@ const Profile = () => (
     <TextWrapper>
       <Glassmorphism>
         <Subtitle>
-          Decent Chef and E-business Manager turned into a highly crafted Fullstack Software Developer using the latest
-          tools in programming. Trained in React and Ruby on Rails. Agile and Test-Driven Development enthusiast.
+          Decent Chef and E-business Manager turned into a highly crafted Fullstack Developer using the latest
+          programming tools to build digital products that scale with focus for the end user.
         </Subtitle>
-        <Subtitle> You might find myself most of the time trying different kind of mushrooms.</Subtitle>
+        <Subtitle>
+          Crafted in React and Ruby on Rails, Agile and Test-Driven Development methods with a mobile first approach to
+          software development. In the last 2 years i have taken the time and resources to finisse my skills. And i have
+          gained a deeper understand of building, architecting and scaling web and mobile apps.
+        </Subtitle>
+        <Subtitle />
       </Glassmorphism>
     </TextWrapper>
   </>

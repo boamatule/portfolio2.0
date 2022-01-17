@@ -9,6 +9,7 @@ import {
   ContactContainer,
   ContactWrapper,
   ContactButtonWrapper,
+  ButtonText,
 } from './ContactPageStyles';
 
 const ContactPage = () => {
@@ -50,7 +51,7 @@ const ContactPage = () => {
           <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
           <ContactButtonWrapper>
             <Button small fontSmall primary type="submit">
-              Send
+              <ButtonText>Submit</ButtonText>
             </Button>
           </ContactButtonWrapper>
         </Form>

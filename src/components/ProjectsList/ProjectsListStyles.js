@@ -37,7 +37,7 @@ export const Heading = styled.h2`
   margin-left: 20px;
   justify-content: center;
   text-align: center;
-  margin: 80px 20px 40px auto;
+  margin: 100px 20px 40px auto;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 960px) {

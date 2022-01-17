@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const AboutContainer = styled.div`
-  text-align: center;
+  text-align: flex-start;
+
   margin: 100px 100px auto;
   justify-content: center;
   align-items: center;
@@ -20,8 +21,8 @@ export const Description = styled.p`
   padding-bottom: 20px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 1.6px;
-  line-height: 20px;
+  letter-spacing: 1px;
+  line-height: 18px;
   font-weight: normal;
   justify-content: flex-start;
   margin-left: 10px;
@@ -31,6 +32,7 @@ export const Description = styled.p`
   @media screen and (max-width: 960px) {
     font-size: 14px;
     margin-top: 20px;
+    justify-content: flex-start;
   }
 `;
 

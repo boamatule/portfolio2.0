@@ -73,19 +73,18 @@ export const Button = styled.button`
   /* background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')}; */
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
-  /* color: black; */
+  color: grey;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   cursor: pointer;
-  background: #4568DC;
-  background: (#4568DC 0%, #B06AB3  51%, #4568DC  100%)
+  background: #4568dc;
   transition: 0.5s;
   border-radius: 2px;
-  
+
   &:hover {
     transition: all 0.3s ease-out;
     background: ${({ primary }) => (primary ? 'purple' : 'purple')};
-    color: #fff;
+    color: grey;
     text-decoration: none;
   }
 
@@ -101,7 +100,8 @@ export const Span = styled.span`
   padding-left: 0px;
   text-align: center;
   background: transparent;
-  /* text-transform: uppercase; */
+  font-size: 14px;
+  text-transform: uppercase;
 `;
 
 export const Glassmorphism = styled.div`
