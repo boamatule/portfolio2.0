@@ -2,7 +2,10 @@ import styled from 'styled-components/macro';
 
 export const ProfileWrapper = styled.div`
   text-align: center;
-  margin: 100px 40px auto;
+  /* margin: 100px 40px 40px 40px; */
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
   justify-content: center;
   align-items: center;
 
@@ -45,8 +48,8 @@ export const Avatar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 142px;
+  height: 153px;
   border-radius: 50%;
   margin-bottom: 20px;
 
@@ -57,7 +60,7 @@ export const Img = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  margin: 80px 40px auto;
+  margin: 80px 80px auto;
   margin-top: 1.9rem;
   justify-content: flex-start;
 
@@ -72,7 +75,7 @@ export const Subtitle = styled.p`
   margin-top: 20px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.5px;
   line-height: 20px;
   font-weight: normal;
   justify-content: flex-start;

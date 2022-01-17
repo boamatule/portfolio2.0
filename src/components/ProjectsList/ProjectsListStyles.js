@@ -53,14 +53,15 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 14px;
-  padding-top: 4rem /* 4px */;
-  padding-bottom: 0.25rem /* 4px */;
+  padding-top: 4rem;
+  padding-bottom: 0.25rem;
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
   justify-content: space-between;
   cursor: pointer;
   margin-left: 20px;
+  margin-right: 20px;
 
   @media screen and (max-width: 960px) {
     grid-template-columns: 2fr;
@@ -72,26 +73,18 @@ export const CardContainer = styled.div`
 
 export const ButtonWrapperLink = styled.div`
   cursor: pointer;
-  /* justify-content: center; */
   margin-bottom: 10px;
-  justify-content: 'space-between';
+  justify-content: 'center';
+  align-items: 'center';
   padding: 0px 80px 0px 0px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
     justify-content: center;
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
     align-items: center;
     display: flex;
   }
-`;
-
-export const ButtonWrapperLinkText = styled.text`
-  font-size: 14px;
-  font-weight: normal;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
 `;
 
 export const SubTitle = styled.p`
@@ -109,6 +102,15 @@ export const SubTitle = styled.p`
   }
 `;
 
+export const ButtonText = styled.p`
+  /* font-weight: bold; */
+  font-size: 1rem;
+  line-height: 20px;
+  padding-left: 0px;
+  text-align: center;
+  background: transparent;
+`;
+
 export const Image = styled.img`
   display: block;
   width: 100%;
@@ -124,16 +126,6 @@ export const Image = styled.img`
     width: 100%;
     max-width: 100%;
   }
-`;
-
-export const Span = styled.span`
-  font-weight: bold;
-  font-size: 1.125rem;
-  line-height: 20px;
-  padding-left: 0px;
-  text-align: center;
-  background: transparent;
-  /* text-transform: uppercase; */
 `;
 
 export const ProjectLinks = styled.a`

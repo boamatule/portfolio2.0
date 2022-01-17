@@ -148,9 +148,11 @@ export const NavItemSocialIconLink = styled.a`
   align-items: center;
   padding: 0.5rem 4.2rem;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
+    transition: all 0.5s ease-in-out;
     color: #01bf71;
   }
 
@@ -170,9 +172,10 @@ export const NavItemSocialIconLink = styled.a`
 
 export const NavItemSocialIcon = styled.div`
   border-bottom: 2px solid transparent;
+  transition: all transform 2s;
 
   &:hover {
-    transition: 0.3s ease;
+    transition: all 0.2s ease-in-out;
     color: #01bf71;
   }
 
@@ -188,7 +191,7 @@ export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
   padding: 30px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   &:hover {
     color: none;
   }
@@ -196,9 +199,10 @@ export const NavItemToggle = styled(motion.div)`
   @media screen and (max-width: 960px) {
     width: 80%;
     display: none;
-
+    margin: 0px 0px 0px -60px;
     &:hover {
-      border-bottom: 2px solid transparent;
+      border-bottom: 1px solid transparent;
+      transition: none;
     }
   }
 `;

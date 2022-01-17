@@ -50,16 +50,14 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
-                <FaTimes style={{ width: '25px', height: '25px', color: '4568dc', background: 'transparent' }} />
+                <FaTimes style={{ width: '25px', height: '25px', color: '#6969FB', background: 'transparent' }} />
               ) : (
-                <FaBars style={{ width: '25px', height: '25px', color: '#4568dc', background: 'transparent' }} />
+                <FaBars style={{ width: '25px', height: '25px', color: '#6969FB', background: 'transparent' }} />
               )}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/home" text={{ color: '#EEE142' }}>
-                  HOME
-                </NavLinks>
+                <NavLinks to="/home">HOME</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/about">ABOUT</NavLinks>
@@ -91,7 +89,7 @@ function NavBar() {
                 <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
               </NavItemSocialIconLink>
             </NavItemSocialIcon>
-            <NavItemToggle whileHover={{ scale: 1.1, rotate: 60 }}>
+            <NavItemToggle whileHover={{ scale: 1.1, rotate: 20 }}>
               <Toggle theme={theme} toggleTheme={themeToggler} />
             </NavItemToggle>
           </NavbarContainer>
