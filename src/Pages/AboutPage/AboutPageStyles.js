@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const AboutContainer = styled.div`
-  text-align: center;
-  margin: 100px 40px auto;
+  text-align: flex-start;
+
+  margin: 100px 100px auto;
   justify-content: center;
   align-items: center;
 
@@ -20,8 +21,8 @@ export const Description = styled.p`
   padding-bottom: 20px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 1.6px;
-  line-height: none;
+  letter-spacing: 1px;
+  line-height: 18px;
   font-weight: normal;
   justify-content: flex-start;
   margin-left: 10px;
@@ -31,6 +32,7 @@ export const Description = styled.p`
   @media screen and (max-width: 960px) {
     font-size: 14px;
     margin-top: 20px;
+    justify-content: flex-start;
   }
 `;
 
@@ -53,12 +55,10 @@ export const Subtitle = styled.h2`
 `;
 
 export const Heading = styled.h2`
-  /* margin: 80px 0px auto; */
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 40px;
   justify-content: flex-start;
-  /* text-transform: uppercase; */
   background: transparent;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
@@ -80,7 +80,7 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   color: purple;
   margin-top: 60px;
   font-size: 40px;
@@ -130,10 +130,10 @@ export const ButtonWrapper = styled.div`
   cursor: pointer;
   justify-content: center;
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 
   @media screen and (max-width: 960px) {
-    /* justify-content: center;
-    display: flex; */
+    justify-content: center;
+    display: flex;
   }
 `;

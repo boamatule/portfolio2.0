@@ -3,7 +3,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { Button, Span, Glassmorphism } from '../../global-styles';
+import { Button, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
@@ -12,6 +12,7 @@ import {
   ProjectDescription,
   Title,
   BoxStyled,
+  ButtonText,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -32,12 +33,11 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    marginLeft: '0px',
+                    // margin: '0px 0px 0px 40px',
                     color: 'white',
-                    fontSize: '20px',
                   }}
                 >
-                  <Span>See Live</Span>
+                  <ButtonText>See Live</ButtonText>
                 </Button>
               </a>
 
@@ -47,13 +47,13 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    margin: '0px 12px 0px 10px',
+                    margin: '0px 0px 0px 20px',
                     background: 'transparent',
                     border: 'none',
-                    color: 'grey',
+                    color: '#6969FB',
                   }}
                 >
-                  <Span>Source Code</Span>
+                  <ButtonText>Source Code</ButtonText>
                 </Button>
               </a>
             </ButtonWrapperLink>

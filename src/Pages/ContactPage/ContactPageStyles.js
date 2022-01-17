@@ -136,13 +136,14 @@ export const ContactButton = styled(Button)`
 
 export const ContactButtonWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 
   @media screen and (min-width: 960px) {
+    display: block;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    /* width: 50%; */
   }
 `;
 
@@ -153,4 +154,15 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const ButtonText = styled.p`
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 20px;
+  padding-left: 0px;
+  text-align: center;
+  color: white;
+  background: transparent;
+  text-transform: uppercase;
 `;
