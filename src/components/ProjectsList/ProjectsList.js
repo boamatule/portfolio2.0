@@ -33,7 +33,6 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    // margin: '0px 0px 0px 40px',
                     color: 'white',
                   }}
                 >
@@ -42,7 +41,7 @@ const ProjectsList = ({ projects }) => (
               </a>
 
               <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
-                <Button
+                {/* <Button
                   small
                   fontSmall
                   primary
@@ -52,9 +51,18 @@ const ProjectsList = ({ projects }) => (
                     border: 'none',
                     color: '#6969FB',
                   }}
+                > */}
+                <ButtonText
+                  style={{
+                    margin: '0px 0px 0px 200px',
+                    background: 'transparent',
+                    border: 'none',
+                    color: '#6969FB',
+                  }}
                 >
-                  <ButtonText>Source Code</ButtonText>
-                </Button>
+                  Source Code
+                </ButtonText>
+                {/* </Button> */}
               </a>
             </ButtonWrapperLink>
           </Glassmorphism>

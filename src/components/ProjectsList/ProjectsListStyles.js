@@ -76,7 +76,7 @@ export const ButtonWrapperLink = styled.div`
   margin-bottom: 10px;
   justify-content: 'center';
   align-items: 'center';
-  padding: 0px 80px 0px 0px;
+  margin: 0px 80px 0px 0px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;

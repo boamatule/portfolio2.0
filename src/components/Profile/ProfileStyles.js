@@ -48,14 +48,14 @@ export const Avatar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 142px;
-  height: 153px;
+  width: 144px;
+  height: 144px;
   border-radius: 50%;
   margin-bottom: 20px;
 
   @media screen and (min-width: 960px) {
-    width: 100px;
-    height: 100px;
+    width: 144px;
+    height: 144px;
   }
 `;
 
