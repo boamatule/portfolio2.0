@@ -22,15 +22,15 @@ const AboutPage = () => {
           originally from Mozambique and I have lived in Canada and Nambia as well. 
         </Description>
         <Description>
-          I'm an avid leaner with interest in loads of fields. Just a curious mind. Lately i am been focusing on
-          E-commerce, Fintech, Cyber Security. 
+          I'm an avid learner with an interest in loads of fields. Just a curious mind. Lately, I am been focusing on
+          E-commerce, Fintech, Cyber Security.
         </Description>
         <Description>
           As a passionate Chef, sharing a good homemade meal with friends it's always a pleasure.
         </Description>
         <Description>
           Currently available to join any exciting project where my skills can be used to help achieve some of your
-          goals. <Link to="/contact" />
+          goals.
         </Description>
       </Glassmorphism>
       <Link to="/contact">
