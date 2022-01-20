@@ -148,12 +148,10 @@ export const NavItemSocialIconLink = styled.a`
   align-items: center;
   padding: 0.5rem 4.2rem;
   height: 100%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
 
   &:hover {
-    /* transition: 0.5s ease; */
-    transition: all 0.5s ease-in-out;
-    color: #01bf71;
+    transition: 0.5s ease;
   }
 
   @media screen and (max-width: 960px) {
@@ -172,11 +170,10 @@ export const NavItemSocialIconLink = styled.a`
 
 export const NavItemSocialIcon = styled.div`
   border-bottom: 2px solid transparent;
-  transition: all transform 2s;
+  /* transition: all 0.5s ease; */
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    color: #01bf71;
+    transition: all 0.5s ease;
   }
 
   @media screen and (max-width: 960px) {

@@ -72,8 +72,9 @@ export const CardContainer = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
+  /* display: flex; */
   cursor: pointer;
-  justify-content: 'space-between';
+  /* justify-content: 'center'; */
   align-items: 'center';
   margin: 0px 100px 10px 4px;
 

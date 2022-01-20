@@ -5,7 +5,7 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 export const AboutContainer = styled.div`
   text-align: flex-start;
 
-  margin: 100px 100px auto;
+  margin: 100px 200px auto;
   justify-content: center;
   align-items: center;
 
@@ -22,7 +22,7 @@ export const Description = styled.p`
   color: grey;
   font-size: 16px;
   letter-spacing: 1px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: normal;
   justify-content: flex-start;
   margin-left: 10px;
