@@ -11,7 +11,7 @@ const AboutPage = () => {
   };
   return (
     <AboutContainer>
-      <Heading>a b o u t.</Heading>
+      <Heading>A b o u t me </Heading>
       <Glassmorphism>
         <Description>
           Hi there! I'm Boa. I am a Fullstack Developer with a background in E-commerce and hospitality industry both as

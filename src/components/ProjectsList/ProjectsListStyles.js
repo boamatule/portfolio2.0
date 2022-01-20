@@ -71,12 +71,11 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const ButtonWrapperLink = styled.div`
+export const ButtonWrapper = styled.div`
   cursor: pointer;
-  margin-bottom: 10px;
-  justify-content: 'center';
+  justify-content: 'space-between';
   align-items: 'center';
-  margin: 0px 80px 0px 0px;
+  margin: 0px 100px 10px 4px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
@@ -103,7 +102,7 @@ export const SubTitle = styled.p`
 `;
 
 export const ButtonText = styled.p`
-  /* font-weight: bold; */
+  font-weight: bold;
   font-size: 1rem;
   line-height: 20px;
   padding-left: 0px;

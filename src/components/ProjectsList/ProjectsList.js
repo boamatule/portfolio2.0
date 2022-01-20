@@ -7,7 +7,7 @@ import { Button, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
-  ButtonWrapperLink,
+  ButtonWrapper,
   Heading,
   ProjectDescription,
   Title,
@@ -26,7 +26,7 @@ const ProjectsList = ({ projects }) => (
             <Image src={project.imageUrl} alt={project.alt} />
             <Title>{project.title}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
-            <ButtonWrapperLink>
+            <ButtonWrapper>
               <a href={project.URL} target="_blank" rel="noreferrer">
                 <Button
                   small
@@ -41,30 +41,21 @@ const ProjectsList = ({ projects }) => (
               </a>
 
               <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
-                {/* <Button
+                <Button
                   small
                   fontSmall
                   primary
                   style={{
-                    margin: '0px 0px 0px 20px',
-                    background: 'transparent',
-                    border: 'none',
-                    color: '#6969FB',
-                  }}
-                > */}
-                <ButtonText
-                  style={{
-                    margin: '0px 0px 0px 200px',
+                    marginLeft: '40px',
                     background: 'transparent',
                     border: 'none',
                     color: '#6969FB',
                   }}
                 >
-                  Source Code
-                </ButtonText>
-                {/* </Button> */}
+                  <ButtonText>Source Code</ButtonText>
+                </Button>
               </a>
-            </ButtonWrapperLink>
+            </ButtonWrapper>
           </Glassmorphism>
         </BoxStyled>
       ))}
