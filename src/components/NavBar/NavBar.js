@@ -81,7 +81,7 @@ function NavBar() {
             </NavItemSocialIcon>
             <NavItemSocialIcon>
               <NavItemSocialIconLink
-                href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+                href="https://www.linkedin.com/in/boa-matule-2082b068/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
