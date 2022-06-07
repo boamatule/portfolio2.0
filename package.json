@@ -31,7 +31,6 @@
     "workbox-strategies": "^6.4.2"
   },
   "scripts": {
-    "dev": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
