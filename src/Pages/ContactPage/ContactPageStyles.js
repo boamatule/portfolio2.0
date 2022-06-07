@@ -5,21 +5,18 @@ import { Container, Button } from '../../global-styles';
 export const ContactContainer = styled(Container)`
   margin-top: 100px;
   ${Container}
-  justify-content: flex-start;
+  justify-content: center;
   width: 60%;
-  @media screen and (max-width: 960px) {
+  text-align: center;
+  @media screen and (max-width: 800px) {
     width: 100%;
+    text-align: center;
   }
 `;
 
 export const ContactWrapper = styled.div`
-  padding: 0px 0px 10px 0px;
-
-  @media screen and (max-width: 960px) {
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    padding: 0px 0px 0px 10px;
+  @media screen and (max-width: 800px) {
+    text-align: center;
   }
 `;
 
@@ -41,14 +38,14 @@ export const Description = styled.h2`
 `;
 
 export const Title = styled.h2`
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 120px;
   margin-bottom: 20px;
   font-size: 40px;
-  justify-content: flex-start;
+  justify-content: center;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 20px;
   }
 `;

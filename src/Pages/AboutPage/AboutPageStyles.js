@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const AboutContainer = styled.div`
-  text-align: flex-start;
+  text-align: center;
+  margin: 80px 20px auto;
 
-  margin: 100px 200px auto;
-  justify-content: center;
-  align-items: center;
 
   @media screen and (max-width: 960px) {
     justify-content: cente
@@ -29,7 +27,7 @@ export const Description = styled.p`
   margin-right: 10px;
   background: transparent;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     margin-top: 20px;
     justify-content: flex-start;
@@ -49,7 +47,7 @@ export const Subtitle = styled.h2`
   padding: 0px 10px 0px 10px;
   background: transparent;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
   }
 `;
@@ -58,7 +56,7 @@ export const Heading = styled.h2`
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 40px;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   background: transparent;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
@@ -113,7 +111,7 @@ export const Button = styled(Link)`
     background: ${({ primary }) => (primary ? '#fff' : '#01BF71')};
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
   }
 `;
 

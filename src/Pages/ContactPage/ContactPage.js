@@ -41,7 +41,7 @@ const ContactPage = () => {
   return (
     <ContactContainer>
       <ContactWrapper>
-        <Title>L e t's G e t In Touch </Title>
+        <Title>get in touch...</Title>
         <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success.js/">
           <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
           <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />

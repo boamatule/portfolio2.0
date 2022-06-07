@@ -9,10 +9,12 @@ import ResumePage from './Pages/Resume/ResumePage';
 import NotFound from './Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from './components';
 import ScrollToTop from './components/ScrollToTop';
+import { GlobalStyles } from './global-styles';
 // eslint-disable-next-line import/no-named-as-default
 
 const App = () => (
   <Router>
+    <GlobalStyles />
     <ScrollToTop />
     <NavBar />
     <Switch>

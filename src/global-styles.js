@@ -5,12 +5,11 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-    font-family: "Roboto Mono";
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    /* transition: all 0.5s linear;   */
+    transition: all 0.5s linear;  
 	}
   *{
     margin: 0;
@@ -24,33 +23,38 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @media only screen and (max-width: 1200px){
+  @media only screen and (max-width: 800px){
     font-size: 58%;
   }
-  @media only screen and (min-width: 1980px){
+  @media only screen and (min-width: 800px){
     font-size: 70%;
   }
 }
-body{
+body {
   font-family: 'Roboto';
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.6rem;
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+		}
 `;
 
+export default GlobalStyles;
+
 export const Container = styled.div`
-  z-index: 1;
-  width: 100%;
-  max-width: 1200px;
+  /* z-index: 1; */
+  /* width: 100%; */
+  /* max-width: 1200px; */
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
   background: none;
 
-  @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
+  @media screen and (max-width: 800px) {
+    /* padding-right: 30px;
+    padding-left: 30px; */
   }
 
   /** Breakpoints:
@@ -113,5 +117,3 @@ export const Glassmorphism = styled.div`
   border-radius: 10px 10px 0px 0px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
-
-export default GlobalStyles;
