@@ -115,3 +115,5 @@ export const Glassmorphism = styled.div`
   border-radius: 10px 10px 0px 0px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
+
+export default GlobalStyles;

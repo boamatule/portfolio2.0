@@ -14,7 +14,7 @@ import { GlobalStyles } from './global-styles';
 
 const App = () => (
   <Router>
-    <GlobalStyles />
+    {/* <GlobalStyles /> */}
     <ScrollToTop />
     <NavBar />
     <Switch>
