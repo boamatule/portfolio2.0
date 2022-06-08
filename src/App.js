@@ -9,8 +9,8 @@ import ResumePage from './Pages/Resume/ResumePage';
 import NotFound from './Pages/NotFoundPage/NotFound';
 import { NavBar, Footer } from './components';
 import ScrollToTop from './components/ScrollToTop';
+// eslint-disable-next-line no-unused-vars
 import { GlobalStyles } from './global-styles';
-// eslint-disable-next-line import/no-named-as-default
 
 const App = () => (
   <Router>
