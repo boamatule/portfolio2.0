@@ -40,7 +40,7 @@ const ProjectsList = ({ projects }) => (
                 </Button>
               </a>
 
-              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
+              <a href="/project/sourceCodeUrl" target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
