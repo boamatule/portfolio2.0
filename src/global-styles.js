@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.5s linear;  
+    /* transition: all 0.5s linear;   */
 	}
   *{
     margin: 0;
@@ -43,13 +43,13 @@ body {
 export default GlobalStyles;
 
 export const Container = styled.div`
-  /* z-index: 1; */
+  z-index: 1;
   /* width: 100%; */
   /* max-width: 1200px; */
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   background: none;
 
   @media screen and (max-width: 800px) {
@@ -64,7 +64,7 @@ export const Container = styled.div`
   xl: min-width: 1280px;
   2xl: min-width: 1536px;
 **/
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     padding-left: 3rem /* 16px */;
     padding-right: 3rem /* 16px */;
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
@@ -88,7 +88,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.3s ease-out;
     background: ${({ primary }) => (primary ? 'purple' : 'purple')};
-    color: #fff;
+    color: grey;
     text-decoration: none;
   }
 
