@@ -9,7 +9,7 @@ export const ProjectContainer = styled.div`
   padding-left: 1rem /* 16px */;
   padding-right: 1rem /* 16px */;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     /* padding-left: 2rem;
     padding-right: 2rem; */
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
@@ -24,7 +24,7 @@ export const Title = styled.h1`
   text-align: flex-start;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     font-weight: bold;
   }
@@ -40,7 +40,7 @@ export const Heading = styled.h2`
   margin: 100px 20px 40px auto;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 20px;
     font-weight: bold;
     margin-right: 0px;
@@ -63,7 +63,7 @@ export const CardContainer = styled.div`
   margin-left: 20px;
   margin-right: 20px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     grid-template-columns: 2fr;
     justify-content: center;
     align-items: center;
@@ -74,11 +74,10 @@ export const CardContainer = styled.div`
 export const ButtonWrapper = styled.div`
   /* display: flex; */
   cursor: pointer;
-  /* justify-content: 'center'; */
+  justify-content: 'space-between';
   align-items: 'center';
-  margin: 0px 100px 10px 4px;
-
-  @media screen and (max-width: 960px) {
+  margin: 0px 0px 10px 0px;
+  @media screen and (max-width: 800px) {
     cursor: pointer;
     justify-content: center;
     padding: 0px 0px 0px 0px;
@@ -96,7 +95,7 @@ export const SubTitle = styled.p`
   line-height: 24px;
   margin-left: 20px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     font-weight: normal;
   }
@@ -122,7 +121,7 @@ export const Image = styled.img`
   object-fit: fill;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     max-width: 100%;
   }
@@ -183,7 +182,7 @@ export const CardTitleWrapper = styled.div`
   width: 100%;
   align-items: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     justify-content: center;
     align-items: center;
     margin: 30px 10px auto;
@@ -197,7 +196,7 @@ export const ProjectWrapper = styled.div`
   bottom: 0;
   left: 0;
   color: silver;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%;
@@ -219,7 +218,7 @@ export const ProjectDescription = styled.p`
   background: transparent;
   height: 120px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
   }
 `;
