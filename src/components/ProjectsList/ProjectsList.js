@@ -26,29 +26,21 @@ const ProjectsList = ({ projects }) => (
             <Image src={project.imageUrl} alt={project.alt} />
             <Title>{project.title}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
-            <ButtonWrapper
-              style={
-                {
-                  // padding: '0px 10px 10px 0px',
-                  // padding: '40px',
-                }
-              }
-            >
-              <a href="/project/URL" target="_blank" rel="noreferrer">
+            <ButtonWrapper>
+              <a href={project.URL} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
                   primary
                   style={{
                     color: 'white',
-                    margin: '40px',
                   }}
                 >
                   <ButtonText>See Live</ButtonText>
                 </Button>
               </a>
 
-              <a href="/project/sourceCodeUrl" target="_blank" rel="noreferrer">
+              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall

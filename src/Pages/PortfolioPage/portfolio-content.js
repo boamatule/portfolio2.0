@@ -8,7 +8,7 @@ const projects = [
     description:
       'A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.',
     sourceCodeUrl: 'https://github.com/boamatule/crwn-clothing',
-    deployedUrl: 'https://crwn-live-clothing-app.herokuapp.com/',
+    URL: 'https://crwn-live-clothing-app.herokuapp.com/',
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     alt: 'Coffee',
     description: 'News for everyone, by anyone, from everywhere! A peer-to-peer review online newspaper.',
     sourceCodeUrl: 'https://github.com/boamatule/Coffee_Connoisseur_Nextjs',
-    deployedUrl: '',
+    URL: '',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const projects = [
     alt: 'Newsroom',
     description: 'Blog built in ReactJs and Backended using MongoDB',
     sourceCodeUrl: 'https://github.com/boamatule/Glocal_news-Client',
-    deployedUrl: 'https://glocal-news.netlify.app/news',
+    URL: 'https://glocal-news.netlify.app/news',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projects = [
     alt: 'space',
     description: 'Blog built in ReactJs and Backended using MongoDB',
     sourceCodeUrl: 'https://github.com/boamatule/discover_videos_nextjs',
-    deployedUrl: '',
+    URL: '',
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projects = [
     stack: 'React | Cypress | Semantic UI',
     description: 'Build in React and Acceptance testing using Cypress. Styled using Semantic UI for React',
     sourceCodeUrl: 'https://github.com/SnailCoder1/bmi_calculator_reactJs',
-    deployedUrl: 'https://1bmi.netlify.app/',
+    URL: 'https://1bmi.netlify.app/',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const projects = [
     stack: 'Ruby on Rails',
     description: 'Library management. The database is stored in a YAML file.',
     sourceCodeUrl: 'https://github.com/SnailCoder1/library-challenge',
-    deployedUrl: 'https://github.com/boamatule/library-challenge',
+    URL: 'https://github.com/boamatule/library-challenge',
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const projects = [
     description:
       'Famous Cooper test built in ReactJs. Back-end API built in Ruby on Rails. Styled using Semantic UI. Hosted in Heroku.',
     sourceCodeUrl: 'https://github.com/SnailCoder1/Cooper_Client',
-    deployedUrl: 'https://github.com/SnailCoder1/atm_challenge-1',
+    URL: 'https://github.com/SnailCoder1/atm_challenge-1',
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const projects = [
     alt: 'Coffee',
     description: 'An AirBNB for cats.',
     sourceCodeUrl: 'https://github.com/boamatule/cat-bnb',
-    deployedUrl: 'https://kattbnb.herokuapp.com/',
+    URL: 'https://kattbnb.herokuapp.com/',
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ const projects = [
     description:
       'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
     sourceCodeUrl: 'https://github.com/boamatule/MealsToGo',
-    deployedUrl: '',
+    URL: '',
   },
   {
     id: 10,
@@ -101,7 +101,7 @@ const projects = [
     alt: 'Coffee',
     description: 'Blog built in ReactJs and Backended using MongoDB',
     sourceCodeUrl: 'https://github.com/boamatule/raw-details-blog',
-    deployedUrl: '',
+    URL: '',
   },
 ];
 
