@@ -101,7 +101,7 @@ export const SubTitle = styled.p`
   }
 `;
 
-export const ButtonText = styled.p`
+export const Text = styled.p`
   font-weight: bold;
   font-size: 1rem;
   line-height: 20px;

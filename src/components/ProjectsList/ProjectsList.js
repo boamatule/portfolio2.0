@@ -12,7 +12,7 @@ import {
   ProjectDescription,
   Title,
   BoxStyled,
-  ButtonText,
+  Text,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
@@ -26,7 +26,11 @@ const ProjectsList = ({ projects }) => (
             <Image src={project.imageUrl} alt={project.alt} />
             <Title>{project.title}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
-            <ButtonWrapper>
+            <ButtonWrapper
+              style={{
+                margin: '10px',
+              }}
+            >
               <a href={project.URL} target="_blank" rel="noreferrer">
                 <Button
                   small
@@ -36,7 +40,7 @@ const ProjectsList = ({ projects }) => (
                     color: 'white',
                   }}
                 >
-                  <ButtonText>See Live</ButtonText>
+                  <Text>See Live</Text>
                 </Button>
               </a>
 
@@ -46,13 +50,13 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    marginLeft: '40px',
+                    paddingLeft: '60px',
                     background: 'transparent',
                     border: 'none',
                     color: '#6969FB',
                   }}
                 >
-                  <ButtonText>Source Code</ButtonText>
+                  <Text>Source Code</Text>
                 </Button>
               </a>
             </ButtonWrapper>
