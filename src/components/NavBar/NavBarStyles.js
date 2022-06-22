@@ -14,7 +14,6 @@ export const Nav = styled(motion.div)`
   position: none;
   top: 0;
   z-index: 999;
-  }
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -195,7 +194,7 @@ export const NavItemToggle = styled(motion.div)`
 
   @media screen and (max-width: 960px) {
     width: 80%;
-    display: none;
+    display: flex;
     margin: 0px 0px 0px -60px;
     &:hover {
       border-bottom: 1px solid transparent;
