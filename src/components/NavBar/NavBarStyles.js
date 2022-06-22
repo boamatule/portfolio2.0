@@ -13,7 +13,7 @@ export const Nav = styled(motion.div)`
   /* position: sticky; */
   position: none;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -30,7 +30,7 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   padding: 12px 0px 0px 0px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: none;
     padding: 10px 10px 10px 10px;
@@ -63,7 +63,7 @@ export const NavMenu = styled.ul`
   text-decoration: none;
   font-size: 2rem;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -73,7 +73,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-  }}
+  }
 `;
 
 export const NavItem = styled.li`
@@ -101,7 +101,7 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 4.2rem;
   height: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
     padding: 2rem;
@@ -120,7 +120,7 @@ export const NavLinks = styled(Link)`
 `;
 
 export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@ export const NavItemSocialIconLink = styled.a`
     transition: 0.5s ease;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
     padding: 2rem;
@@ -175,7 +175,7 @@ export const NavItemSocialIcon = styled.div`
     transition: all 0.5s ease;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: hidden;
     &:hover {
       color: #4568dc;
@@ -184,6 +184,7 @@ export const NavItemSocialIcon = styled.div`
 `;
 
 export const NavItemToggle = styled(motion.div)`
+  z-index: 999;
   height: 80px;
   display: flex;
   padding: 30px;
@@ -192,9 +193,9 @@ export const NavItemToggle = styled(motion.div)`
     color: none;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 80%;
-    display: flex;
+    display: none;
     margin: 0px 0px 0px -60px;
     &:hover {
       border-bottom: 1px solid transparent;

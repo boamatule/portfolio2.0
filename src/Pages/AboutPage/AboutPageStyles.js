@@ -1,14 +1,16 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { Container } from '../../global-styles';
 
-export const AboutContainer = styled.div`
-  text-align: center;
-  margin: 80px 20px auto;
+export const AboutContainer = styled(Container)`
+  /* text-align: flex-start; */
+  /* padding: 0px 0px 0px 0px; */
+  margin: 100px 200px auto;
+  /* padding: 0px 2000px 0px 0px: */
 
-
-  @media screen and (max-width: 960px) {
-    justify-content: cente
+  @media screen and (max-width: 800px) {
+    justify-content: flex-start;
     align-items: center;
     margin: 40px 22px auto;
   }
@@ -16,21 +18,21 @@ export const AboutContainer = styled.div`
 
 export const Description = styled.p`
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 16px;
+  letter-spacing: 2px;
+  line-height: 20px;
   font-weight: normal;
   justify-content: flex-start;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   background: transparent;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
     margin-top: 20px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 `;
 
@@ -56,11 +58,11 @@ export const Heading = styled.h2`
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 40px;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
   background: transparent;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 30px;
     /* margin-left: 42px; */
     margin-top: 0px;
