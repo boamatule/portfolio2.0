@@ -112,8 +112,8 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   display: block;
-  width: 315px;
-  height: 170px;
+  width: 100%;
+  height: 180px;
   max-width: 100%;
   padding-bottom: 10px;
   background-color: transparent;

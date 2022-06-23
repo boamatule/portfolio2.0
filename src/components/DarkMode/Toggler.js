@@ -22,15 +22,13 @@ Sun = Moon = styled.svg`
     transform: none;
   }
 
-  @media screen and (max-width: 960px) {
-    @media screen and (max-width: 960px) {
-      height: none;
-      top: 1.6rem;
-      right: 4em;
-      padding: 0px 0px 0px 0px;
-      opacity: ;
-      transition: all 0.5s ease;
-    }
+  @media screen and (max-width: 800px) {
+    height: none;
+    top: 1.6rem;
+    right: 4em;
+    padding: 0px 0px 0px 0px;
+    opacity: ;
+    transition: all 0.5s ease;
   }
 `;
 

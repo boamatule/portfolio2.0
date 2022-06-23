@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
     "ci": "^2.1.1",
+    "css-aspect-ratio": "^1.0.5",
     "eact": "^0.0.1-security",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",

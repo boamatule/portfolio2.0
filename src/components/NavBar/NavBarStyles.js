@@ -184,7 +184,7 @@ export const NavItemSocialIcon = styled.div`
 `;
 
 export const NavItemToggle = styled(motion.div)`
-  z-index: 999;
+  z-index: 1;
   height: 80px;
   display: flex;
   padding: 30px;
