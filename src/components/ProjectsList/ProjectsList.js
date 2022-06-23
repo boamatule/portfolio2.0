@@ -31,18 +31,18 @@ const ProjectsList = ({ projects }) => (
                 margin: '10px',
               }}
             >
-              <a href={project.URL} target="_blank" rel="noreferrer">
-                <Button
-                  small
-                  fontSmall
-                  primary
-                  style={{
-                    color: 'white',
-                  }}
-                >
+              <Button
+                small
+                fontSmall
+                primary
+                style={{
+                  color: 'white',
+                }}
+              >
+                <a href={project.URL} target="_blank" rel="noreferrer">
                   <Text>See Live</Text>
-                </Button>
-              </a>
+                </a>
+              </Button>
 
               <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button

@@ -112,8 +112,8 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   display: block;
-  width: 100%;
-  height: 180px;
+  width: 315px;
+  height: 170px;
   max-width: 100%;
   padding-bottom: 10px;
   background-color: transparent;
@@ -227,6 +227,6 @@ export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
   &:hover {
-    z-index: 99;
+    z-index: 1;
   }
 `;
