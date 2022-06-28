@@ -19,6 +19,8 @@ const AboutPage = () => {
         in loads of fields. <br />
         Just a curious mind. Lately, I am been focusing on E-commerce, Fintech, Cyber Security. Currently available to
         join any exciting project where my skills can be used to help achieve some of your goals.
+        <br />
+        {/* <p>Fell free to get in touch here</p> */}
       </Description>
 
       <Link to="/contact">

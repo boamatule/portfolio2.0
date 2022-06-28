@@ -1,15 +1,13 @@
 import styled from 'styled-components/macro';
 
 export const ProfileWrapper = styled.div`
-  text-align: center;
-  /* margin: 100px 40px 40px 40px; */
-  margin-top: 100px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 100px 0px auto;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     justify-content: cente
     align-items: center;
     margin: 40px 22px auto;
@@ -26,7 +24,7 @@ export const Heading = styled.h2`
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
   padding-top: 10px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     line-height: 1px;
     font-size: 14px;
   }
@@ -62,30 +60,50 @@ export const Img = styled.img`
 export const TextWrapper = styled.div`
   margin: 80px 80px auto;
   margin-top: 1.9rem;
+  align-items: flex-start;
   justify-content: flex-start;
 
   @media screen and (max-width: 960px) {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 20px 22px auto;
   }
 `;
 
 export const Subtitle = styled.p`
-  margin-top: 20px;
+  /* margin-top: 20px;
   color: grey;
   font-size: 16px;
   letter-spacing: 1.5px;
   line-height: 20px;
   font-weight: normal;
-  justify-content: flex-start;
-  margin-left: 0;
+  text-align: flex-start; */
+  /* justify-content: center; */
+  /* margin-left: 0;
   margin-bottom: 20px;
   padding: 0px 14px 0px 14px;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
     padding: 0px 10px 0px 10px;
+  } */
+
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: grey;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-weight: normal;
+  justify-content: flex-start;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  background: transparent;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    margin-top: 20px;
+    justify-content: center;
   }
 `;
 

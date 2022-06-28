@@ -5,7 +5,7 @@ import { FooterContainer, FooterWrapper } from './FooterStyles';
 const Footer = () => (
   <FooterContainer>
     <FooterWrapper>
-      <Link to="/" style={{ color: '#6969FB' }}>
+      <Link to="/" style={{ color: '#6969FB', fontSize: '16px', lineHeight: '1.75rem' }}>
         ← Back to home
       </Link>
     </FooterWrapper>
