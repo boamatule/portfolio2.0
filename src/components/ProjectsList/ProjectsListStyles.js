@@ -112,8 +112,8 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   display: block;
+  height: 170px;
   width: 100%;
-  height: 180px;
   max-width: 100%;
   padding-bottom: 10px;
   background-color: transparent;
@@ -126,6 +126,14 @@ export const Image = styled.img`
     max-width: 100%;
   }
 `;
+
+// export const Img = styled.img`
+//   border-radius: 50%;
+//   width: 300px;
+//   height: 300px;
+//   vertical-align: middle;
+//   display: inline-block;
+// `;
 
 export const ProjectLinks = styled.a`
   &:hover {

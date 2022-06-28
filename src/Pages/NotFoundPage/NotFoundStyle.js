@@ -18,7 +18,7 @@ export const imgWrapper = styled.div`
   }
 `;
 
-export const textRaw = styled.h1`
+export const TextRaw = styled.h1`
   color: silver;
   font-size: 24px;
   letter-spacing: 1.6px;

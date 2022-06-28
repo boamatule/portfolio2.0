@@ -27,9 +27,9 @@ const ProjectsList = ({ projects }) => (
             <Title>{project.title}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
             <ButtonWrapper
-              style={{
-                margin: '10px',
-              }}
+            // style={{
+            //   margin: '10px',
+            // }}
             >
               <a href={project.URL} target="_blank" rel="noreferrer">
                 <Button

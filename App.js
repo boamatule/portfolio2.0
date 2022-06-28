@@ -30,7 +30,7 @@ const App = () => (
       <ScrollToTop />
       <NavBar />
       <Switch>
-        <Route path="/" component={HomePage} exact />
+        <Route path="/" exact />
         <Route path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/resume" component={ResumePage} />

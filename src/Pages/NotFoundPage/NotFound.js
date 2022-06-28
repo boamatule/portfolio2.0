@@ -1,10 +1,10 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import { ErrorContainer, textRaw } from './NotFoundStyle';
+import { ErrorContainer, TextRaw } from './NotFoundStyle';
 
 const NotFound = () => (
   <ErrorContainer>
-    <textRaw>404: Page Not Found ;-( The page you are looking for doesn't exist or has been moved.</textRaw>
+    <TextRaw>404: Page Not Found ;-( The page you are looking for doesn't exist or has been moved.</TextRaw>
   </ErrorContainer>
 );
 
