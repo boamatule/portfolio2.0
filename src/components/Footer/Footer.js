@@ -5,7 +5,7 @@ import { FooterContainer, FooterWrapper } from './FooterStyles';
 const Footer = () => (
   <FooterContainer>
     <FooterWrapper>
-      <Link to="/home" style={{ color: '#6969FB' }}>
+      <Link to="/" style={{ color: '#6969FB' }}>
         ← Back to home
       </Link>
     </FooterWrapper>
