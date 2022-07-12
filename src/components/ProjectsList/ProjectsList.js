@@ -26,11 +26,7 @@ const ProjectsList = ({ projects }) => (
             <Image src={project.imageUrl} alt={project.alt} />
             <Title>{project.title}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
-            <ButtonWrapper
-            // style={{
-            //   margin: '10px',
-            // }}
-            >
+            <ButtonWrapper>
               <a href={project.deployedUrl} target="_blank" rel="noreferrer">
                 <Button
                   small

@@ -1,10 +1,34 @@
 import styled from 'styled-components/macro';
+import { Container } from '../../global-styles';
+
+export const ProfileWrapperContainer = styled(Container)`
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+export const ProfileWrapperRow = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px auto;
+  }
+`;
+
+export const ProfileWrapperColumn = styled.div`
+  width: 100%;
+`;
 
 export const ProfileWrapper = styled.div`
-  margin: 100px 0px auto;
+  margin-top: 80px;
   justify-content: center;
   align-items: center;
   text-align: center;
+;
   
 
   @media screen and (max-width: 800px) {
@@ -37,7 +61,7 @@ export const Avatar = styled.div`
   align-items: center;
   display: inline-flex;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,19 +75,19 @@ export const Img = styled.img`
   border-radius: 50%;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 800px) {
     width: 144px;
     height: 144px;
   }
 `;
 
 export const TextWrapper = styled.div`
-  margin: 80px 80px auto;
-  margin-top: 1.9rem;
+  margin: 120px 0px auto;
+  /* margin-top: 120px; */
   align-items: flex-start;
   justify-content: flex-start;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 20px 22px auto;
