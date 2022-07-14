@@ -26,6 +26,8 @@ const Profile = () => (
 
       <ProfileWrapperColumn>
         <TextWrapper>
+          <Heading>Fullstack Developer</Heading>
+
           <Subtitle>
             Decent Chef and E-business Manager turned into a highly crafted Fullstack Developer using the latest
             programming tools to build digital products that scale with a focus for the end user.

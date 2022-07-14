@@ -43,7 +43,7 @@ export const Heading = styled.h2`
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1rem;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
   padding-top: 10px;

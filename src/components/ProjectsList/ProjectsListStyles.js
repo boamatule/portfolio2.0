@@ -34,10 +34,9 @@ export const Heading = styled.h2`
   font-weight: bold;
   margin-bottom: 20px;
   font-size: 40px;
-  margin-left: 20px;
   justify-content: center;
   text-align: center;
-  margin: 100px 20px 40px auto;
+  margin: 60px 0px 0px auto;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
@@ -64,7 +63,7 @@ export const CardContainer = styled.div`
   margin-right: 20px;
 
   @media screen and (max-width: 800px) {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     margin: 0px 0px auto;
@@ -114,6 +113,7 @@ export const Image = styled.img`
   display: block;
   height: 100%;
   width: 100%;
+  /* max-width: 100%; */
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px 10px 0px 0px;
@@ -125,14 +125,6 @@ export const Image = styled.img`
     max-width: 100%;
   }
 `;
-
-// export const Img = styled.img`
-//   border-radius: 50%;
-//   width: 300px;
-//   height: 300px;
-//   vertical-align: middle;
-//   display: inline-block;
-// `;
 
 export const ProjectLinks = styled.a`
   &:hover {
