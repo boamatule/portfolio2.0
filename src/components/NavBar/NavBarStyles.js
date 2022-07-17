@@ -5,20 +5,35 @@ import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
-  height: 80;
+  /* height: 80;
+  width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  /* position: sticky; */
-  position: none;
+  position: sticky;
+  /* position: none; */
   top: 0;
   z-index: 1;
 `;
 
+// export const Nav = styled.nav`
+//   position: relative;
+//   width: 100%;
+//   height: 80px;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   user-select: none;
+//   border-bottom: #0abead 1px solid;
+//   background-color: #050711;
+// `;
+
 export const NavbarContainer = styled(Container)`
-  display: flex;
+  display: fixed;
   height: 80px;
+  width: 100%;
   justify-content: center;
   ${Container}
 `;
@@ -202,4 +217,26 @@ export const NavItemToggle = styled(motion.div)`
       transition: none;
     }
   }
+`;
+
+export const NavProfileWrapper = styled.div`
+  /* position: relative; */
+  /* height: 100%; */
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  background: linear-gradient(90deg, rgb(78, 255, 207) 0%, rgb(8, 164, 188) 100%);
+  color: white;
+`;
+
+export const NavProfileImg = styled.img`
+  position: absolute;
+  /* left: -28px; */
+`;
+
+export const NavProfileName = styled.h1`
+  font-size: 16px;
+  font-weight: 500;
 `;
