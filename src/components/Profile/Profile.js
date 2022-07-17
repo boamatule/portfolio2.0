@@ -26,7 +26,7 @@ const Profile = () => (
 
       <ProfileWrapperColumn>
         <TextWrapper>
-          <Heading>Fullstack Developer</Heading>
+          {/* <Heading>Fullstack Developer</Heading> */}
 
           <Subtitle>
             Decent Chef and E-business Manager turned into a highly crafted Fullstack Developer using the latest

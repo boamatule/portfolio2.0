@@ -4,7 +4,7 @@ import { Container } from '../../global-styles';
 export const ProfileWrapperContainer = styled(Container)`
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 `;
 export const ProfileWrapperRow = styled.div`
   display: grid;
@@ -16,6 +16,7 @@ export const ProfileWrapperRow = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0px 0px auto;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -30,7 +31,6 @@ export const ProfileWrapper = styled.div`
   text-align: center;
 ;
   
-
   @media screen and (max-width: 800px) {
     justify-content: cente
     align-items: center;
@@ -51,11 +51,15 @@ export const Heading = styled.h2`
   @media screen and (max-width: 800px) {
     line-height: 1px;
     font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
 export const Avatar = styled.div`
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
   margin-top: 20px;
   align-items: center;
@@ -138,6 +142,6 @@ export const Location = styled.p`
   color: grey;
   font-weight: normal;
   letter-spacing: 1px;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-bottom: 20px;
 `;

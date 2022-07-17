@@ -6,7 +6,6 @@ import { GlobalStyles } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
-// import Avatar from '../../assets/images/avatar.webp';
 import {
   Nav,
   NavbarContainer,
@@ -17,11 +16,7 @@ import {
   NavItemSocialIconLink,
   NavItemSocialIcon,
   NavItemToggle,
-  NavProfileWrapper,
-  NavProfileImg,
-  NavProfileName,
 } from './NavBarStyles';
-// import ProfileAvatar from '../ProfileAvatar/ProfileAvatar';
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -86,13 +81,6 @@ function NavBar() {
               <NavItem>
                 <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
-              {/* <NavItem>
-                <NavProfileWrapper>
-                  <NavProfileImg src={Avatar} alt="avatar" />
-                  <NavProfileName>Boa Matule</NavProfileName>
-                </NavProfileWrapper>
-              </NavItem> */}
-              {/* <ProfileAvatar /> */}
             </NavMenu>
             <NavItemSocialIcon>
               <NavItemSocialIconLink

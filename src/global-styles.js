@@ -45,17 +45,11 @@ export default GlobalStyles;
 
 export const Container = styled.div`
   z-index: 1;
-  /* width: 100%; */
-  /* max-width: 1200px; */
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
   background: none;
-
-  @media screen and (max-width: 800px) {
-    /* padding-right: 30px;
-    padding-left: 30px; */
   }
 
   /** Breakpoints:

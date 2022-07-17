@@ -11,7 +11,7 @@ const AboutPage = () => {
   };
   return (
     <AboutContainer>
-      <Heading>a b o u t m e </Heading>
+      <Heading>about me... </Heading>
       <Description>
         Highly crafted Fullstack Developer with a background in E-commerce and hospitality industry as a Chef.
         <br />I am based in beautiful Oslo where I have been living for the last 7 years after 6 years in Sweden. I'm
