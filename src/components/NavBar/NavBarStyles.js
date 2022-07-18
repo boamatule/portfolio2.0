@@ -5,10 +5,10 @@ import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
-  /* height: 80;
-  width: 100%; */
+  height: 80px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
@@ -18,7 +18,7 @@ export const Nav = styled(motion.div)`
 `;
 
 // export const Nav = styled.nav`
-//   position: relative;
+//   position: sticky;
 //   width: 100%;
 //   height: 80px;
 //   display: flex;
@@ -26,8 +26,7 @@ export const Nav = styled(motion.div)`
 //   align-items: center;
 //   justify-content: space-between;
 //   user-select: none;
-//   border-bottom: #0abead 1px solid;
-//   background-color: #050711;
+//   background: transparent;
 // `;
 
 export const NavbarContainer = styled(Container)`
