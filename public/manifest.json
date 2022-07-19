@@ -34,7 +34,6 @@
     "description": "Manifest information on the Report Card"
   }
 ], 
-"orientation": "any", 
   "short_name": "Boa Matule",
   "name": "Full Stack Developer",
   "icons": [
@@ -47,16 +46,21 @@
     {
       "src": "/android-chrome-192x192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
+
     },
     {
       "src": "/android-chrome-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+
 }

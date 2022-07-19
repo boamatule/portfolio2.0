@@ -49,10 +49,9 @@ export const Heading = styled.h2`
   padding-top: 10px;
 
   @media screen and (max-width: 800px) {
-    line-height: 1px;
     font-size: 14px;
-    line-height: 1rem;
-    letter-spacing: 1px;
+    line-height: 1.6rem;
+    letter-spacing: 1.1px;
     justify-content: center;
     align-items: center;
   }
