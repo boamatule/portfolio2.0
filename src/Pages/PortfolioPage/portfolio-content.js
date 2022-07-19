@@ -19,7 +19,7 @@ const projects = [
     alt: 'space',
     description: 'Blog built in ReactJs and Backended using MongoDB',
     sourceCodeUrl: 'https://github.com/boamatule/discover_videos_nextjs',
-    deployedUrl: 'https://crwn-live-clothing-app.herokuapp.com/',
+    deployedUrl: 'https://discover-videos-nextjs.vercel.app/',
   },
   {
     id: 3,
