@@ -54,12 +54,12 @@ const projects = [
   },
   {
     id: 6,
-    title: 'BMI Calculator',
+    title: 'NASA Mission Control',
     imageUrl: '/images/bmi.svg',
-    alt: 'Coffee',
-    stack: 'React | Cypress | Semantic UI',
+    alt: 'Nasa',
+    stack: 'Reactjs | Nodejs | NASA | SpaceX | RESTful API) |Express |Mongoose  | Docker |',
     description: 'Build in React and Acceptance testing using Cypress. Styled using Semantic UI for React',
-    sourceCodeUrl: 'https://github.com/SnailCoder1/bmi_calculator_reactJs',
+    sourceCodeUrl: 'https://github.com/boamatule/nasa_nodejs_project',
     deployedUrl: 'https://1bmi.netlify.app/',
   },
   {

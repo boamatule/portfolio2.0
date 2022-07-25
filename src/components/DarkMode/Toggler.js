@@ -27,6 +27,8 @@ Sun = Moon = styled.svg`
     height: none;
     top: 1.6rem;
     right: 4em;
+    background: "transparent"
+
   }
 `;
 
@@ -59,6 +61,7 @@ const Toggle = ({ theme, toggleTheme }) => (
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          background="transparent"
         >
           <path
             strokeLinecap="round"
