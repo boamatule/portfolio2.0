@@ -54,7 +54,7 @@ function NavBar() {
                     width: '25px',
                     height: '25px',
                     color: '#6969FB',
-                    background: 'transparent',
+                    background: 'none',
                   }}
                 />
               ) : (
@@ -63,7 +63,7 @@ function NavBar() {
                     width: '25px',
                     height: '25px',
                     color: '#6969FB',
-                    background: 'transparent',
+                    background: 'none',
                   }}
                 />
               )}

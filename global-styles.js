@@ -31,11 +31,6 @@ html {
     font-size: 70%;
   }
 }
-body{
-  font-family: 'Roboto';
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.6rem;
 `;
 
 export const Container = styled.div`
@@ -44,15 +39,9 @@ export const Container = styled.div`
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   background: none;
-
-  @media screen and (max-width: 991px) {
-    /* padding-right: 10px;
-    padding-left: 10px; */
-    margin: 0 30px auto;
-  }
 
   /** Breakpoints:
   sm: min-width: 640px;
@@ -61,9 +50,9 @@ export const Container = styled.div`
   xl: min-width: 1280px;
   2xl: min-width: 1536px;
 **/
-  @media screen and (max-width: 960px) {
-    padding-left: 3rem /* 16px */;
-    padding-right: 3rem /* 16px */;
+  @media screen and (max-width: 800px) {
+    padding-left: 10px;
+    padding-right: 10px;
     /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
     background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }

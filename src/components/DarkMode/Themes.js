@@ -1,9 +1,8 @@
 export const lightTheme = {
   body: '#fff',
-  background: '#000',
-  // background: '#101522',
+  background: 'transparent',
 };
 export const darkTheme = {
   body: '#000',
-  background: '#fff',
+  background: 'transparent',
 };

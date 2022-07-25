@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 	* {
 		box-sizing: border-box;
-    padding: 20px 80px;
+    /* padding: 20px 80px; */
 		/* margin: 0;
 		padding: 0; */
     background: rgb(2,0,36);

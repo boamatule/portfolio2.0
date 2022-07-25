@@ -16,7 +16,8 @@ Sun = Moon = styled.svg`
   transition: all transform 2s;
   cursor: pointer;
   color: none;
-  background-color: transparent;
+  background: "transparent"
+
 
   &:hover {
     transform: none;
@@ -26,9 +27,6 @@ Sun = Moon = styled.svg`
     height: none;
     top: 1.6rem;
     right: 4em;
-    padding: 0px 0px 0px 0px;
-    opacity: ;
-    transition: all 0.5s ease;
   }
 `;
 
@@ -44,6 +42,7 @@ const Toggle = ({ theme, toggleTheme }) => (
           viewBox="0 0 24 24"
           stroke="currentColor"
           overflow="show"
+          background="transparent"
         >
           <path
             strokeLinecap="round"

@@ -10,24 +10,11 @@ export const Nav = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: sticky;
-  /* position: none; */
   top: 0;
   z-index: 1;
 `;
-
-// export const Nav = styled.nav`
-//   position: sticky;
-//   width: 100%;
-//   height: 80px;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-//   user-select: none;
-//   background: transparent;
-// `;
 
 export const NavbarContainer = styled(Container)`
   display: fixed;
