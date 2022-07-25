@@ -45,7 +45,7 @@ export const Heading = styled.h2`
   align-items: center;
   font-size: 16px;
   line-height: 1rem;
-  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
+  color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')};
   padding-top: 10px;
 
   @media screen and (max-width: 800px) {
