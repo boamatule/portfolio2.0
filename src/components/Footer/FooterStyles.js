@@ -22,19 +22,19 @@ export const FooterWrapper = styled.div`
 export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 820) {
+  @media screen and (max-width: 800) {
     padding-top: 32px;
   }
 `;
 
 export const Copyright = styled.h1`
   color: #6969fb;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
   text-align: center;
   /* margin-bottom: 60px; */
   margin-top: 10px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 800px) {
     align-items: center;
     text-align: center;
     justify-content: center;
