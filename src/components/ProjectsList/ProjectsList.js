@@ -1,4 +1,5 @@
 import { withRouter } from 'react-router-dom';
+import { func, string } from 'prop-types';
 import { Container, Button, Glassmorphism } from '../../global-styles';
 import {
   Image,
@@ -77,4 +78,9 @@ const ProjectsList = ({ projects }) => (
     </CardContainer>
   </Container>
 );
+
+ProjectsList.propTypes = {
+  projects: string.isRequired,
+};
+
 export default withRouter(ProjectsList);
