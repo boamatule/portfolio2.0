@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles, Glassmorphism } from '../../global-styles';
+import { GlobalStyles } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
-
 import {
   Nav,
   NavbarContainer,
@@ -50,16 +49,28 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
-                <FaTimes style={{ width: '25px', height: '25px', color: '4568dc', background: 'transparent' }} />
+                <FaTimes
+                  style={{
+                    width: '25px',
+                    height: '25px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
               ) : (
-                <FaBars style={{ width: '25px', height: '25px', color: '#4568dc', background: 'transparent' }} />
+                <FaBars
+                  style={{
+                    width: '25px',
+                    height: '25px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
               )}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/home" text={{ color: '#EEE142' }}>
-                  HOME
-                </NavLinks>
+                <NavLinks to="/home">HOME</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/about">ABOUT</NavLinks>
@@ -78,20 +89,20 @@ function NavBar() {
                 rel="noreferrer"
                 aria-label="GitHub"
               >
-                <FaGithub style={{ width: '25px', height: '25px' }} />
+                <FaGithub style={{ width: '24px', height: '24px' }} />
               </NavItemSocialIconLink>
             </NavItemSocialIcon>
             <NavItemSocialIcon>
               <NavItemSocialIconLink
-                href="https://www.linkedin.com/in/boaventura-matule-2082b068/"
+                href="https://www.linkedin.com/in/boa-matule-2082b068/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
               >
-                <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
+                <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
               </NavItemSocialIconLink>
             </NavItemSocialIcon>
-            <NavItemToggle whileHover={{ scale: 1.1, rotate: 60 }}>
+            <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
               <Toggle theme={theme} toggleTheme={themeToggler} />
             </NavItemToggle>
           </NavbarContainer>

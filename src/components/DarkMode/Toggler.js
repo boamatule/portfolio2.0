@@ -16,21 +16,16 @@ Sun = Moon = styled.svg`
   transition: all transform 2s;
   cursor: pointer;
   color: none;
-  background-color: transparent;
+  background: 'transparent';
 
   &:hover {
     transform: none;
   }
-
-  @media screen and (max-width: 960px) {
-    @media screen and (max-width: 960px) {
-      height: none;
-      top: 1.6rem;
-      right: 4em;
-      padding: 0px 0px 0px 0px;
-      opacity: ;
-      transition: all 0.5s ease;
-    }
+  @media screen and (max-width: 800px) {
+    top: 0rem;
+    right: 0em;
+    transform: translate(0%, -24%);
+    background: 'transparent';
   }
 `;
 
@@ -46,6 +41,7 @@ const Toggle = ({ theme, toggleTheme }) => (
           viewBox="0 0 24 24"
           stroke="currentColor"
           overflow="show"
+          background="transparent"
         >
           <path
             strokeLinecap="round"

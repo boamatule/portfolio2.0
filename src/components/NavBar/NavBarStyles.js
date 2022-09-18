@@ -1,62 +1,49 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
-  height: 80;
-  display: flex;
-  justify-content: center;
+  width: 100%;
   align-items: center;
-  font-size: 1.2rem;
-  /* position: sticky; */
-  position: none;
+  position: fixed;
   top: 0;
-  z-index: 999;
-  }
-`;
+  z-index: 99;
 
-export const NavbarContainer = styled(Container)`
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  ${Container}
-`;
-
-export const NavLogo = styled(Link)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 12px 0px 0px 0px;
-
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: none;
-    padding: 10px 10px 10px 10px;
-    opacity: 1;
-    transition: all 0.5s ease;
+    top: 0px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
   }
+`;
+
+export const NavbarContainer = styled.div`
+  display: fixed;
+  justify-content: center;
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 960px) {
-    display: block;
+  @media screen and (max-width: 800px) {
+    display: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
     cursor: pointer;
-    /* background: transparent; */
+    background: none;
+    color: #4568dc;
   }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
+  height: 80px;
   align-items: center;
   list-style: none;
   text-align: center;
@@ -64,28 +51,31 @@ export const NavMenu = styled.ul`
   text-decoration: none;
   font-size: 2rem;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 90vh;
     position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
-    opacity: 1;
+    top: 0px;
+    align-items: center;
+    list-style: none;
+    text-align: center;
     transition: all 0.5s ease;
-  }}
+  }
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
   border-bottom: 2px solid transparent;
 
   &:hover {
     border-bottom: 4px solid #4568dc;
   }
-  @media screen and (max-width: 960px) {
-    width: 30%;
+
+  @media screen and (max-width: 800px) {
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
     &:hover {
       border-bottom: 4px solid #4568dc;
     }
@@ -102,26 +92,22 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 4.2rem;
   height: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
-    padding: 2rem;
-    display: table;
     font-size: 14px;
-    font-weight: bold;
     text-decoration: none;
     align-items: center;
-    justify-self: center;
-    bottom: 40px;
+    justify-content: center;
 
     &:hover {
-      transition: 0.3s ease;
+      transition: 0.3s ease-out;
     }
   }
 `;
 
 export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,36 +134,33 @@ export const NavItemSocialIconLink = styled.a`
   align-items: center;
   padding: 0.5rem 4.2rem;
   height: 100%;
+  transition: all 0.5s ease;
 
   &:hover {
     transition: 0.5s ease;
-    color: #01bf71;
   }
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-    display: none;
-    font-size: 14px;
+  @media screen and (max-width: 800px) {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0px;
 
     &:hover {
       transition: 0.3s ease;
-      color: #01bf71;
+      color: red;
     }
   }
 `;
 
 export const NavItemSocialIcon = styled.div`
-  border-bottom: 2px solid transparent;
-
   &:hover {
-    transition: 0.3s ease;
-    color: #01bf71;
+    transition: all 1.9s ease;
   }
 
-  @media screen and (max-width: 960px) {
-    display: hidden;
+  @media screen and (max-width: 800px) {
+    display: none;
     &:hover {
       color: #4568dc;
     }
@@ -188,17 +171,17 @@ export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
   padding: 30px;
-  border-bottom: 2px solid transparent;
   &:hover {
     color: none;
   }
 
-  @media screen and (max-width: 960px) {
-    width: 80%;
-    display: none;
+  @media screen and (max-width: 800px) {
+    margin: 4px 0px 0px 380px;
+    color: none;
+    background-color: none;
 
     &:hover {
-      border-bottom: 2px solid transparent;
+      transition: none;
     }
   }
 `;
