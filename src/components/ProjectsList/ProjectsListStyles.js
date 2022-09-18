@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const ProjectContainer = styled.div`
@@ -6,14 +6,12 @@ export const ProjectContainer = styled.div`
   padding-top: 0.25rem /* 4px */;
   padding-bottom: 0.25rem /* 4px */;
   padding-bottom: 2rem;
-  padding-left: 1rem /* 16px */;
-  padding-right: 1rem /* 16px */;
+  padding-left: 0px;
+  padding-right: 0px;
 
-  @media screen and (max-width: 960px) {
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
+  @media screen and (max-width: 800px) {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 `;
 
@@ -22,10 +20,9 @@ export const Title = styled.h1`
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     font-weight: bold;
   }
@@ -33,23 +30,19 @@ export const Title = styled.h1`
 
 export const Heading = styled.h2`
   font-weight: bold;
-  /* margin-top: 80px; */
   margin-bottom: 20px;
-  font-size: 40px;
-  margin-left: 20px;
+  line-height: 1px;
+  letter-spacing: 1px;
+  font-size: 18px;
   justify-content: center;
   text-align: center;
-  margin: 80px 20px 40px auto;
+  margin-top: 140px;
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
-  /* text-transform: uppercase; */
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#4568DC')}; */
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 0px;
-    margin: 20px 4px auto;
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 100px 0px auto;
   }
 `;
 
@@ -58,87 +51,75 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 14px;
-  padding-top: 4rem /* 4px */;
-  padding-bottom: 0.25rem /* 4px */;
+  padding-top: 4rem;
+  padding-bottom: 0.25rem;
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
   justify-content: space-between;
   cursor: pointer;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 2fr;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     margin: 0px 0px auto;
   }
 `;
 
-export const ButtonWrapperLink = styled.div`
+export const ButtonWrapper = styled.div`
   cursor: pointer;
-  /* justify-content: center; */
-  margin-bottom: 10px;
   justify-content: 'space-between';
-  padding: 0px 80px 0px 0px;
-
-  @media screen and (max-width: 960px) {
+  align-items: 'center';
+  margin: 0px 0px 10px 0px;
+  @media screen and (max-width: 800px) {
     cursor: pointer;
     justify-content: center;
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
     align-items: center;
     display: flex;
   }
 `;
 
-export const ButtonWrapperLinkText = styled.text`
-  font-size: 14px;
-  font-weight: normal;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-`;
-
 export const SubTitle = styled.p`
-  color: silver;
   font-weight: normal;
   margin-top: 10px;
-  user-select: none;
   font-size: 16px;
-  line-height: 24px;
-  margin-left: 20px;
+  justify-content: flex-start;
+  text-align: flex-start;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     font-weight: normal;
   }
 `;
 
-export const Image = styled.img`
-  display: block;
-  width: 340px;
-  height: 180px;
-  max-width: 100%;
-  padding-bottom: 10px;
-  background-color: transparent;
-  border-radius: 10px 10px 0px 0px;
-  /* object-fit: fill; */
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    max-width: 100%;
-  }
-`;
-
-export const Span = styled.span`
+export const Text = styled.p`
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 20px;
   padding-left: 0px;
   text-align: center;
   background: transparent;
-  /* text-transform: uppercase; */
+`;
+
+export const Image = styled.img`
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: fill;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const ProjectLinks = styled.a`
@@ -147,24 +128,14 @@ export const ProjectLinks = styled.a`
   }
 `;
 
-export const ProjectListP = styled.p`
-  color: silver;
-  font-size: 1rem;
-  text-align: start;
-  margin-top: 14px;
-  margin-bottom: 10px;
-`;
-
 export const ButtonLink = styled.a`
   border-radius: 4px;
   margin-top: 0px;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#3333CC')};
-  /* background: ${({ primary }) => (primary ? '#01bf71' : '#010606')}; */
+  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
   display: inline-block;
   width: 40%;
   height: 100%;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 46px' : '12px 30px')};
   color: ${({ dark }) => (dark ? '#000' : '#fff')};
   font-size: ${({ fontBig }) => (fontBig ? '18px' : '14px')};
   justify-content: center;
@@ -197,7 +168,7 @@ export const CardTitleWrapper = styled.div`
   width: 100%;
   align-items: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     justify-content: center;
     align-items: center;
     margin: 30px 10px auto;
@@ -211,7 +182,7 @@ export const ProjectWrapper = styled.div`
   bottom: 0;
   left: 0;
   color: silver;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%;
@@ -233,7 +204,7 @@ export const ProjectDescription = styled.p`
   background: transparent;
   height: 120px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     font-size: 14px;
   }
 `;
@@ -241,8 +212,30 @@ export const ProjectDescription = styled.p`
 export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
-  /* display: inline-block; */
   &:hover {
-    z-index: 99;
+    z-index: 1;
+  }
+`;
+
+export const Subtitle = styled.p`
+  margin: 40px 20px auto;
+  color: grey;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-weight: normal;
+  justify-content: flex-start;
+  text-align: center;
+  background: transparent;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    margin-top: 0px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: normal;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px auto;
   }
 `;

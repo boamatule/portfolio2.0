@@ -1,29 +1,30 @@
-import { Container, Glassmorphism } from '../../global-styles';
+import React from 'react';
 
-const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location, Subtitle } = require('./ProfileStyles');
+const {
+  Avatar,
+  ProfileWrapper,
+  Img,
+  Heading,
+  Location,
+  Subtitle,
+  ProfileWrapperContainer,
+} = require('./ProfileStyles');
 
 const Profile = () => (
-  <Container>
+  <ProfileWrapperContainer>
     <ProfileWrapper>
-      <Glassmorphism>
-        <Avatar>
-          <Img src="../../images/avatar.webp" alt="Boa" />
-        </Avatar>
-        <Heading>Boa Matule | Fullstack Developer</Heading>
-        <Location> +4740101117 | Oslo - Norway </Location>
-      </Glassmorphism>
+      <Avatar>
+        <Img src="../../images/avatar.webp" alt="Boa" />
+      </Avatar>
+      <Heading>Boa Matule ☆ Fullstack Developer</Heading>
+      <Location>Oslo - Norway </Location>
+      <Subtitle>
+        Hello! I'm a Fullstack Developer with a background in E-commerce. I build highly scalable web and mobile
+        applications using the latest tools in development. With a focus on end-user usability and security, I can help
+        your organization reach high heights with a very efficient approach.
+      </Subtitle>
     </ProfileWrapper>
-
-    <TextWrapper>
-      <Glassmorphism>
-        <Subtitle>
-          Decent Chef and E-business Manager turned into a highly crafted Fullstack Software Developer using the latest
-          tools in programming. Trained in React and Ruby on Rails. Agile and Test-Driven Development enthusiast.
-        </Subtitle>
-        <Subtitle> You might find myself most of the time trying different kind of mushrooms.</Subtitle>
-      </Glassmorphism>
-    </TextWrapper>
-  </Container>
+  </ProfileWrapperContainer>
 );
 
 export default Profile;

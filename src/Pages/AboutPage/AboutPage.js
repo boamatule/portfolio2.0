@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Button, Glassmorphism } from '../../global-styles';
-import { Heading, Description, ButtonWrapper, AboutContainer } from './AboutPageStyles';
+import { Container } from '../../global-styles';
+import { AboutWrapper, Heading, Description } from './AboutPageStyles';
+import PortfolioListPage from '../PortfolioPage/PortfolioListPage';
 
 const AboutPage = () => {
   const [hover, setHover] = useState(false);
@@ -11,23 +11,14 @@ const AboutPage = () => {
   };
   return (
     <Container>
-      <AboutContainer>
-        <Heading>a b o u t.</Heading>
-        <Glassmorphism>
-          <Description>
-            Full Stack Developer based in beautiful Oslo, Norway. Former Chef turned into a highly crafted programmer
-            using the latest tools in programming. Trained in ReactJs and Ruby on Rails using methods like Agile and
-            Test-Driven Development.
-          </Description>
-        </Glassmorphism>
-        <Link to="/contact">
-          <ButtonWrapper>
-            <Button small fontSmall onMouseEnter={onHover} primary="true" dark="true">
-              Get in touch{' '}
-            </Button>
-          </ButtonWrapper>
-        </Link>
-      </AboutContainer>
+      <AboutWrapper>
+        <Heading>Hello! I'm Boa Matule... </Heading>
+        <Description>
+          I have been coding for the last 3 years now! I live in Oslo, Norway but I'm originally from Xai-Xai,
+          Mozambique. I love building, architecting, and scaling web and mobile apps :).
+        </Description>
+      </AboutWrapper>
+      <PortfolioListPage />
     </Container>
   );
 };
