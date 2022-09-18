@@ -1,4 +1,3 @@
-import React from 'react';
 import { ErrorContainer, textRaw } from './NotFoundStyle';
 
 const NotFound = () => (

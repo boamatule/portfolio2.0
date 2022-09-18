@@ -1,4 +1,3 @@
-import React from 'react';
 import { ErrorContainer, TextRaw } from './SuccessPageStyles.js';
 
 const SuccessPage = () => (
