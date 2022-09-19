@@ -1,5 +1,5 @@
 import { withRouter } from 'react-router-dom';
-import { func, string } from 'prop-types';
+import { string } from 'prop-types';
 import { Container, Button, Glassmorphism } from '../../global-styles';
 import {
   Image,
