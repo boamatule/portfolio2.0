@@ -1,16 +1,10 @@
 import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
-export const ProfileWrapperContainer = styled(Container)`
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; */
-`;
+export const ProfileWrapperContainer = styled(Container)``;
 export const ProfileWrapperRow = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center;
-  align-items: center; */
   margin: 100px 0px auto;
 
   @media screen and (max-width: 800px) {

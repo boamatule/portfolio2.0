@@ -192,7 +192,7 @@ export const ProjectWrapper = styled.div`
 
 export const ProjectDescription = styled.p`
   display: inline-block;
-  color: silver;
+  color: grey;
   padding-top: 10px;
   padding-bottom: 0px;
   padding-left: 10px;

@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+
+  @media screen and (max-width: 800px) {
+    /* padding: 10px; */
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

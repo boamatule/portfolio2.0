@@ -62,7 +62,7 @@ const ProjectsList = ({ projects }) => (
                   fontSmall
                   primary
                   style={{
-                    paddingLeft: '60px',
+                    paddingLeft: '80px',
                     background: 'transparent',
                     border: 'none',
                     color: '#6969FB',
