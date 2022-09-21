@@ -78,39 +78,25 @@ export const Img = styled.img`
   }
 `;
 
-export const TextWrapper = styled.div`
-  margin: 120px 0px auto;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  @media screen and (max-width: 800px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px 0px auto;
-    margin: 40px 0px 30px auto;
-  }
-`;
-
 export const Subtitle = styled.p`
-  margin: 40px 40px;
-  padding-bottom: 10px;
+  margin: 40px 20px auto;
   color: grey;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;
+  justify-content: flex-start;
+  text-align: center;
   background: transparent;
-  justify-content: start;
-  text-align: start;
-  align-items: start;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
     margin-top: 0px;
     letter-spacing: 2px;
     line-height: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    font-weight: normal;
+    justify-content: center;
+    text-align: center;
     margin: 20px 20px auto;
   }
 `;

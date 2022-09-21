@@ -71,11 +71,11 @@ export const NavItem = styled.li`
   }
 
   @media screen and (max-width: 800px) {
-    width: 20%;
+    width: 26%;
     align-items: center;
     text-align: center;
     justify-content: center;
-
+    padding: 0rem 0.5rem;
     &:hover {
       border-bottom: 4px solid #4568dc;
     }
@@ -84,10 +84,9 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
   color: grey;
   font-weight: bold;
-  letter-spacing: 2px;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 4.2rem;
