@@ -13,7 +13,7 @@ export const TextRaw = styled.h1`
   font-size: 24px;
   letter-spacing: 1.6px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: normal;
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;

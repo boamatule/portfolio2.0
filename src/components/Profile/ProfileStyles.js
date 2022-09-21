@@ -34,11 +34,11 @@ export const ProfileWrapper = styled.div`
 `;
 
 export const Heading = styled.h2`
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1rem;
   color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')};
   padding-top: 10px;
@@ -81,7 +81,7 @@ export const Img = styled.img`
 export const Subtitle = styled.p`
   margin: 40px 20px auto;
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;

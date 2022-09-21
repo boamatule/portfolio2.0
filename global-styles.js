@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
     color: ${({ theme }) => theme.text};
-    /* transition: all 0.5s linear;   */
 	}
   * {
     margin: 0;
@@ -48,8 +47,6 @@ export const Container = styled.div`
   @media screen and (max-width: 800px) {
     padding-left: 2px;
     padding-right: 2px;
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
   }
 `;
 
@@ -71,14 +68,10 @@ export const Button = styled.button`
     color: grey;
     text-decoration: none;
   }
-
-  /* @media screen and (max-width: 800px) {
-    width: 100%;
-  } */
 `;
 
 export const Span = styled.span`
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 20px;
   padding-left: 0px;

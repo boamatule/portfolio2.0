@@ -11,7 +11,7 @@ export const ErrorContainer = styled(Container)`
 export const textWrapper = styled.div``;
 
 export const imgWrapper = styled.div`
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
     max-width: 80%;
     display: flex;
     justify-content: center;
@@ -20,11 +20,11 @@ export const imgWrapper = styled.div`
 
 export const textRaw = styled.h1`
   color: silver;
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 24px;
-  font-weight: bold;
-  @media screen and (max-width: 960px) {
+  font-weight: normal;
+  @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
   }

@@ -29,11 +29,11 @@ export const Title = styled.h1`
 `;
 
 export const Heading = styled.h2`
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   line-height: 1px;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 16px;
   justify-content: center;
   text-align: center;
   margin-top: 140px;
@@ -98,7 +98,7 @@ export const SubTitle = styled.p`
 `;
 
 export const Text = styled.p`
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 20px;
   padding-left: 0px;
@@ -155,7 +155,7 @@ export const ButtonLink = styled.a`
 `;
 
 export const buttonLabel = styled.p`
-  color: silver;
+  color: grey;
   font-size: 1rem;
   color: red;
 `;
@@ -220,7 +220,7 @@ export const BoxStyled = styled(motion.div)`
 export const Subtitle = styled.p`
   margin: 40px 20px auto;
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;

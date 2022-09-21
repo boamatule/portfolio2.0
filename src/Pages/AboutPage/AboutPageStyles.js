@@ -19,7 +19,7 @@ export const AboutWrapper = styled.div`
 export const Description = styled.p`
   margin-top: 20px;
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;
@@ -35,18 +35,18 @@ export const Description = styled.p`
 `;
 
 export const Heading = styled.h2`
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 40px;
   line-height: 1px;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 16px;
   justify-content: center;
   text-align: center;
   margin-top: 140px;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 100px 0px auto;
   }
