@@ -71,11 +71,10 @@ export const NavItem = styled.li`
   }
 
   @media screen and (max-width: 800px) {
-    width: 26%;
+    width: 25%;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 0rem 0.5rem;
     &:hover {
       border-bottom: 4px solid #4568dc;
     }
