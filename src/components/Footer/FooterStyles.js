@@ -4,10 +4,8 @@ import { Container } from '../../global-styles';
 export const FooterContainer = styled(Container)`
   display: flex;
   position: sticky;
-  /* flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   align-items: center;
-  /* margin-bottom: 80px; */
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 
