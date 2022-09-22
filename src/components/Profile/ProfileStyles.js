@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
-export const ProfileWrapperContainer = styled(Container)``;
+export const ProfileWrapperContainer = styled(Container)`
+  margin-bottom: 0px;
+`;
 export const ProfileWrapperRow = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  margin: 100px 0px auto;
+  margin: 0px 0px auto;
 
   @media screen and (max-width: 800px) {
     justify-content: center;
@@ -23,7 +25,7 @@ export const ProfileWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 120px 0px auto;
+  margin-top: 120px;
 
 
   @media screen and (max-width: 800px) {
@@ -104,9 +106,9 @@ export const Subtitle = styled.p`
 export const Location = styled.p`
   margin-top: 10px;
   font-size: 1.1rem;
-  line-height: 1;
+  letter-spacing: 2px;
+  line-height: 20px;
   color: grey;
   font-weight: normal;
-  letter-spacing: 1px;
   margin-bottom: 0px;
 `;

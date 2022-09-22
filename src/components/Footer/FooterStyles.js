@@ -13,9 +13,8 @@ export const FooterWrapper = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 1.125rem /* 18px */;
-  line-height: 2
-  margin-bottom: 18px
+  /* font-size: 1.125rem; */
+  line-height: 2;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -29,6 +28,8 @@ export const FooterLinksContainer = styled.div`
 export const Copyright = styled.h1`
   color: #6969fb;
   font-size: 16px;
+  line-height: 4px;
+  letter-spacing: 4px;
   align-items: center;
   text-align: center;
   /* margin-bottom: 60px; */
@@ -38,5 +39,7 @@ export const Copyright = styled.h1`
     text-align: center;
     justify-content: center;
     font-size: 12px;
+    line-height: 2px;
+    letter-spacing: 2px;
   }
 `;

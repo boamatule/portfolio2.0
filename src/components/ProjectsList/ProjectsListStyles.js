@@ -16,8 +16,10 @@ export const ProjectContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
+  letter-spacing: 4px;
+  line-height: 4px;
   justify-content: flex-start;
   text-align: flex-start;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
@@ -100,8 +102,7 @@ export const SubTitle = styled.p`
 
 export const Text = styled.p`
   font-weight: normal;
-  font-size: 1rem;
-  line-height: 20px;
+  font-size: 12px;
   padding-left: 0px;
   text-align: center;
   background: transparent;

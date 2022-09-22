@@ -37,13 +37,13 @@ export const Description = styled.h2`
 `;
 
 export const Title = styled.h2`
-  letter-spacing: 0.5px;
-  line-height: 10px;
+  letter-spacing: 1.6px;
+  line-height: 24px;
   font-weight: normal;
   margin-top: 120px;
   margin-bottom: 20px;
   font-size: 16px;
-  justify-content: flex-start;
+  justify-content: start;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
@@ -69,7 +69,9 @@ export const Input = styled.input`
   border: none;
   color: grey;
   font-weight: normal;
-  font-size: 16px;
+  letter-spacing: 1.6px;
+  line-height: 24px;
+  font-size: 14px;
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
@@ -79,7 +81,7 @@ export const Input = styled.input`
 
   &:last-of-type {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   &:focus {
@@ -97,8 +99,9 @@ export const TextArea = styled.textarea`
   border: 0;
   border: none;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  line-height: 24px;
   padding: 20px 1px;
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
@@ -114,7 +117,7 @@ export const TextArea = styled.textarea`
   }
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
@@ -123,10 +126,10 @@ export const ContactButton = styled(Button)`
   min-width: 165px;
   width: auto;
   height: 50px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.6px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 12px;
   background-color: none;
   color: white;
   text-transform: uppercase;
@@ -134,6 +137,7 @@ export const ContactButton = styled(Button)`
   border: 4px;
   cursor: pointer;
   justify-content: center;
+  text-align: center;
 `;
 
 export const ContactButtonWrapper = styled.div`

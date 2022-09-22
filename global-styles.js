@@ -33,8 +33,8 @@ export const Container = styled.div`
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: auto;
-  padding-left: auto;
+  padding-right: 4px;
+  padding-left: 4px;
   background: none;
 
   /** Breakpoints:
@@ -45,8 +45,8 @@ export const Container = styled.div`
   2xl: min-width: 1536px;
 **/
   @media screen and (max-width: 800px) {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 `;
 
@@ -76,7 +76,7 @@ export const Span = styled.span`
   padding-left: 0px;
   text-align: center;
   background: transparent;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
 `;
 

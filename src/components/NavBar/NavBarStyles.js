@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
-  /* font-size: 14px; */
+
   &:hover {
     border-bottom: 4px solid #4568dc;
   }
@@ -77,7 +77,6 @@ export const NavItem = styled.li`
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 14px;
     &:hover {
       border-bottom: 4px solid #4568dc;
     }
@@ -88,10 +87,10 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 4.2rem;
+  padding: 0.5rem 3rem;
   height: 100%;
 
   @media screen and (max-width: 800px) {
