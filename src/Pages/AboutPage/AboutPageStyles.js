@@ -37,8 +37,8 @@ export const Description = styled.p`
 export const Heading = styled.h2`
   font-weight: normal;
   margin-bottom: 40px;
-  line-height: 1px;
-  letter-spacing: 1px;
+  line-height: 4px;
+  letter-spacing: 4px;
   font-size: 16px;
   justify-content: center;
   text-align: center;
@@ -47,7 +47,7 @@ export const Heading = styled.h2`
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     margin: 100px 0px auto;
   }
 `;

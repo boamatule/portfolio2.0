@@ -5,12 +5,11 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-    font-family: "Roboto Mono";
+    font-family: 'IBM Plex Sans', sans-serif;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    /* transition: all 0.5s linear;   */
 	}
   * {
     margin: 0;

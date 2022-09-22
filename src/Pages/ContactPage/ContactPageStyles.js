@@ -38,11 +38,11 @@ export const Description = styled.h2`
 
 export const Title = styled.h2`
   letter-spacing: 0.5px;
-  line-height: 50px;
-  font-weight: bold;
+  line-height: 10px;
+  font-weight: normal;
   margin-top: 120px;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 16px;
   justify-content: flex-start;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 

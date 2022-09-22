@@ -8,7 +8,7 @@ export const Nav = styled(motion.div)`
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 1;
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -47,25 +47,27 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  letter-spacing: 4px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 0rem;
 
   @media screen and (max-width: 800px) {
-    display: flex;
     width: 100%;
-    position: absolute;
     top: 0px;
     align-items: center;
     list-style: none;
     text-align: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 0rem;
     transition: all 0.5s ease;
   }
 `;
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
-
+  /* font-size: 14px; */
   &:hover {
     border-bottom: 4px solid #4568dc;
   }
@@ -75,6 +77,7 @@ export const NavItem = styled.li`
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-size: 14px;
     &:hover {
       border-bottom: 4px solid #4568dc;
     }
@@ -86,8 +89,6 @@ export const NavLinks = styled(Link)`
   font-size: 16px;
   color: grey;
   font-weight: normal;
-  line-height: 20px;
-  letter-spacing: 4px;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 4.2rem;

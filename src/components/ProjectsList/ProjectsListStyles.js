@@ -24,15 +24,14 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
-    font-weight: bold;
   }
 `;
 
 export const Heading = styled.h2`
   font-weight: normal;
   margin-bottom: 20px;
-  line-height: 1px;
-  letter-spacing: 1px;
+  line-height: 4px;
+  letter-spacing: 4px;
   font-size: 16px;
   justify-content: center;
   text-align: center;
@@ -40,8 +39,10 @@ export const Heading = styled.h2`
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
+    line-height: 4px;
+    letter-spacing: 4px;
     margin: 100px 0px auto;
   }
 `;

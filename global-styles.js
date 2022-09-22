@@ -51,7 +51,6 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  /* background: ${({ primary }) => (primary ? '#eee142' : '#f4edae')}; */
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
   color: grey;
@@ -71,7 +70,7 @@ export const Button = styled.button`
 `;
 
 export const Span = styled.span`
-  font-weight: normal;
+  font-weight: ;
   font-size: 1rem;
   line-height: 20px;
   padding-left: 0px;
