@@ -40,7 +40,7 @@ const projects = [
     description:
       'A simple prototype of an Automatic Teller Machine (ATM) system with limited functionality built in Ruby program and RSpec',
     sourceCodeUrl: 'https://github.com/boamatule/MealsToGo',
-    deployedUrl: '',
+    deployedUrl: 'https://github.com/boamatule/MealsToGo',
   },
   {
     id: 5,
