@@ -30,7 +30,6 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "dev": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

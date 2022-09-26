@@ -18,7 +18,7 @@ import {
   NavItemToggle,
 } from './NavBarStyles';
 
-function NavBar() {
+const NavBar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -110,6 +110,6 @@ function NavBar() {
       </IconContext.Provider>
     </ThemeProvider>
   );
-}
+};
 
 export default NavBar;
