@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const AboutWrapper = styled.div`
   border-radius: 0.75rem /* 12px */;
-  margin-top: 160px;
+  margin-top: 140px;
   /* padding: 0px 40px; */
 `;
 
 export const Description = styled.h2`
   margin-top: 0px;
-  margin-bottom: 40px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2px;
@@ -20,8 +19,9 @@ export const Description = styled.h2`
   padding: 0px 44px;
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 12px;
+    margin-top: 0px;
+    padding: 0px 20px;
     justify-content: center;
   }
 `;
