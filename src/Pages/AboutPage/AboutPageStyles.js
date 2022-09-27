@@ -17,7 +17,7 @@ export const Description = styled.h2`
   justify-content: center;
   align-items: center;
   background: transparent;
-  /* padding: 0px 40px; */
+  padding: 0px 44px;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
@@ -27,19 +27,23 @@ export const Description = styled.h2`
 `;
 
 export const Heading = styled.h2`
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 2px;
   line-height: 20px;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 20px;
   color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')};
-  padding-top: 10px;
+  padding: 0px 44px;
+
   @media screen and (max-width: 800px) {
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 14px;
     line-height: 1.8rem;
     letter-spacing: 1.1px;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px;
   }
 `;

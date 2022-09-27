@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 export const ProjectContainer = styled.div`
   margin-top: 140px;
-  /* padding-bottom: 0.25rem /* 4px */; */
 `;
 
 export const Title = styled.p`
@@ -22,10 +21,10 @@ export const Title = styled.p`
 
 export const Heading = styled.h1`
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   line-height: 4px;
   letter-spacing: 4px;
-  font-size: 24px;
+  font-size: 20px;
   padding: 0px 30px;
   margin-top: 140px;
   justify-content: flex-start;
@@ -209,7 +208,7 @@ export const Subtitle = styled.h2`
   margin-top: 20px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   line-height: 20px;
   padding: 0px 30px;
   font-weight: normal;
@@ -219,7 +218,6 @@ export const Subtitle = styled.h2`
 
   @media screen and (max-width: 800px) {
     font-size: 12px;
-    font-weight: bold;
     line-height: 16px;
     letter-spacing: 4px;
     padding: 0px 10px;

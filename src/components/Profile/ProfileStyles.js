@@ -9,12 +9,8 @@ export const ProfileWrapperContainer = styled(Container)`
 `;
 
 export const ProfileWrapper = styled.div`
-  /* justify-content: flex-start; */
-  /* align-items: center; */
   text-align: center;
-  /* margin-top: 120px; */
   margin-bottom: 0px;
-  /* padding: 80px 80px; */
   @media screen and (max-width: 800px) {
     justify-content: flex-start;
     align-items: center;
@@ -74,7 +70,6 @@ export const Subtitle = styled.h2`
   font-weight: normal;
   justify-content: flex-start;
   text-align: flex-start;
-  align-items: center;
   margin-bottom: 20px;
   background: transparent;
   /* padding: 0px 40px; */
@@ -82,7 +77,10 @@ export const Subtitle = styled.h2`
   @media screen and (max-width: 800px) {
     font-size: 14px;
     margin-top: 20px;
-    /* justify-content: center; */
+    justify-content: flex-start;
+    text-align: flex-start;
+    letter-spacing: 2px;
+    line-height: 20px;
   }
 `;
 
