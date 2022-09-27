@@ -15,27 +15,27 @@ import {
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
-  <ProjectContainer>
-    <Heading>Curated projects</Heading>
-    <Subtitle>
-      A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
-      <a
-        style={{
-          color: '#6969FB',
-          backgroundColor: 'transparent',
-          fontSize: '16px',
-        }}
-        href="https://github.com/boamatule"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="GitHub"
-      >
-        {' '}
-        github profile
-      </a>{' '}
-      for more projects.
-    </Subtitle>
-
+  <Container>
+    <ProjectContainer>
+      <Heading>Curated projects</Heading>
+      <Subtitle>
+        A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
+        <a
+          style={{
+            color: '#6969FB',
+            backgroundColor: 'transparent',
+          }}
+          href="https://github.com/boamatule"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
+          {' '}
+          github profile
+        </a>{' '}
+        for more projects.
+      </Subtitle>
+    </ProjectContainer>
     <CardContainer>
       {projects.map((project) => (
         <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
@@ -79,7 +79,7 @@ const ProjectsList = ({ projects }) => (
         </BoxStyled>
       ))}
     </CardContainer>
-  </ProjectContainer>
+  </Container>
 );
 
 ProjectsList.propTypes = {

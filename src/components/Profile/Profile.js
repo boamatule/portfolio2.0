@@ -17,7 +17,7 @@ const Profile = () => (
         <Img src="../../images/avatar.webp" alt="Boa" />
       </Avatar>
       <Heading>Boa Matule ☆ Fullstack Developer</Heading>
-      <Location>Oslo - Norway </Location>
+      {/* <Location>Oslo - Norway </Location> */}
       <Subtitle>
         Hello! I'm a Fullstack Developer with a background in E-commerce and hospitality industry as a Chef and Waiter.
         I build highly scalable web and mobile applications using the latest tools in development. With a focus on

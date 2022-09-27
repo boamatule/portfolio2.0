@@ -2,15 +2,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const ProjectContainer = styled.div`
-  border-radius: 0.75rem /* 12px */;
-  margin-top: 0px;
-  padding-bottom: 0.25rem /* 4px */;
-  /* padding-bottom: 2rem; */
-  padding: 40px 40px;
-
-  @media screen and (max-width: 800px) {
-    padding: 10px 10px;
-  }
+  margin-top: 140px;
+  /* padding-bottom: 0.25rem /* 4px */; */
 `;
 
 export const Title = styled.p`
@@ -27,20 +20,23 @@ export const Title = styled.p`
   }
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h1`
   font-weight: bold;
-  margin-bottom: 0px;
-  line-height: 20px;
-  letter-spacing: 20px;
-  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 4px;
+  letter-spacing: 4px;
+  font-size: 24px;
+  padding: 0px 30px;
+  margin-top: 140px;
   justify-content: flex-start;
-  padding: 0px 40px;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
     font-size: 16px;
     font-weight: bold;
-    margin: 100px 0px auto;
+    line-height: 4px;
+    letter-spacing: 4px;
+    padding: 0px 10px;
   }
 `;
 
@@ -209,21 +205,26 @@ export const BoxStyled = styled(motion.div)`
   }
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.h2`
   margin-top: 20px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   line-height: 20px;
+  padding: 0px 30px;
   font-weight: normal;
   justify-content: center;
   align-items: center;
   background: transparent;
-  padding: 40px 40px;
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 4px;
+    padding: 0px 10px;
+    font-weight: normal;
     justify-content: center;
+    align-items: center;
   }
 `;

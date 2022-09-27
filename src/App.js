@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from 'react';
 import 'normalize.css';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
-const HomePage = lazy(() => import('./Pages/AboutPage/AboutPage'));
+const HomePage = lazy(() => import('./Pages/HomePage/HomePage'));
 const ContactPage = lazy(() => import('./Pages/ContactPage/ContactPage'));
 const PortfolioListPage = lazy(() => import('./Pages/PortfolioPage/PortfolioListPage'));
 const SuccessPage = lazy(() => import('./Pages/SuccessPage/SuccessPage'));
@@ -22,7 +22,7 @@ const App = () => (
       <NavBar />
       <Switch>
         <Route path="/" component={HomePage} exact />
-        <Route path="/home" component={HomePage} />
+        <Route path="/home" component={HomePage} exact />
         <Route path="/profile" component={Profile} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />

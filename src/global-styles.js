@@ -31,13 +31,10 @@ html {
   }
 }
 
-/* body {
-  font-family: 'Roboto';
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.6rem;
-} */
-  
+a {
+  text-decoration: none;
+  color: black;
+} 
 `;
 
 export const Container = styled.div`

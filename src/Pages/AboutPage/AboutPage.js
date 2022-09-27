@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container } from '../../global-styles';
 import { AboutWrapper, Heading, Description } from './AboutPageStyles';
 import PortfolioListPage from '../PortfolioPage/PortfolioListPage';
 
 const AboutPage = () => (
-  <>
+  <Container>
     <AboutWrapper>
       <Heading>Hello! I'm Boa Matule!</Heading>
       <Description>
@@ -13,7 +13,7 @@ const AboutPage = () => (
       </Description>
     </AboutWrapper>
     <PortfolioListPage />
-  </>
+  </Container>
 );
 
 export default AboutPage;
