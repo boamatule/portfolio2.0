@@ -5,39 +5,28 @@ export const ErrorContainer = styled(Container)`
   display: flex;
   justify-content: center;
   padding: 200px 0px 200px 0px;
-  ${Container};
-`;
+  /* ${Container}; */
 
-export const textWrapper = styled.div``;
-
-export const imgWrapper = styled.div`
   @media screen and (max-width: 800px) {
-    max-width: 80%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    font-size: 14px;
   }
 `;
 
-export const textRaw = styled.h1`
-  color: silver;
+export const TextRaw = styled.h1`
+  color: grey;
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 24px;
   font-weight: normal;
+
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
-  }
-`;
-
-export const Img = styled.img`
-  width: 200px;
-  height: 200px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  @media screen and (max-width: 960px) {
-    max-width: 80%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 20px;
   }
 `;

@@ -3,19 +3,17 @@ import { motion } from 'framer-motion';
 
 export const ProjectContainer = styled.div`
   border-radius: 0.75rem /* 12px */;
-  padding-top: 0.25rem /* 4px */;
+  margin-top: 0px;
   padding-bottom: 0.25rem /* 4px */;
-  padding-bottom: 2rem;
-  padding-left: 0px;
-  padding-right: 0px;
+  /* padding-bottom: 2rem; */
+  padding: 40px 40px;
 
   @media screen and (max-width: 800px) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 10px 10px;
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 4px;
@@ -30,21 +28,18 @@ export const Title = styled.h1`
 `;
 
 export const Heading = styled.h2`
-  font-weight: normal;
-  margin-bottom: 20px;
-  line-height: 4px;
-  letter-spacing: 4px;
-  font-size: 16px;
-  justify-content: center;
-  text-align: center;
-  margin-top: 140px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 20px;
+  letter-spacing: 20px;
+  font-size: 20px;
+  justify-content: flex-start;
+  padding: 0px 40px;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 4px;
-    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
     margin: 100px 0px auto;
   }
 `;
@@ -84,19 +79,6 @@ export const ButtonWrapper = styled.div`
     padding: 0px 0px 0px 0px;
     align-items: center;
     display: flex;
-  }
-`;
-
-export const SubTitle = styled.p`
-  font-weight: normal;
-  margin-top: 10px;
-  font-size: 16px;
-  justify-content: flex-start;
-  text-align: flex-start;
-
-  @media screen and (max-width: 800px) {
-    font-size: 14px;
-    font-weight: normal;
   }
 `;
 
@@ -217,27 +199,31 @@ export const BoxStyled = styled(motion.div)`
   &:hover {
     z-index: 1;
   }
+
+  @media screen and (max-width: 800px) {
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    &:hover {
+      z-index: 1;
+    }
+  }
 `;
 
-export const Subtitle = styled.p`
-  margin: 40px 20px auto;
+export const Subtitle = styled.h3`
+  margin-top: 20px;
   color: grey;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: normal;
-  justify-content: flex-start;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   background: transparent;
+  padding: 40px 40px;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
-    margin-top: 0px;
-    letter-spacing: 2px;
-    line-height: 20px;
-    font-weight: normal;
+    margin-top: 20px;
     justify-content: center;
-    text-align: center;
-    margin: 20px 20px auto;
   }
 `;

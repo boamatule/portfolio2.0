@@ -11,10 +11,11 @@ import {
   BoxStyled,
   Text,
   Subtitle,
+  ProjectContainer,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
-  <Container>
+  <ProjectContainer>
     <Heading>Curated projects</Heading>
     <Subtitle>
       A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
@@ -78,7 +79,7 @@ const ProjectsList = ({ projects }) => (
         </BoxStyled>
       ))}
     </CardContainer>
-  </Container>
+  </ProjectContainer>
 );
 
 ProjectsList.propTypes = {

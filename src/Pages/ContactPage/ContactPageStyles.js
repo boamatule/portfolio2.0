@@ -3,51 +3,32 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  margin-top: 100px;
+  margin-top: 80px;
   ${Container}
   justify-content: center;
   width: 60%;
   text-align: center;
+  padding: 40px 40px;
+
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
   }
 `;
 
-export const ContactWrapper = styled.div`
-  @media screen and (max-width: 800px) {
-    text-align: center;
-  }
-`;
-
-export const Description = styled.h2`
-  padding: 0px 0px 0px 80px;
-  color: grey;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  line-height: 24px;
-  font-weight: normal;
-
-  @media screen and (max-width: 800px) {
-    font-size: 14px;
-    padding: 0px 0px 0px 0px;
-    justify-content: center;
-    max-width: 90%;
-  }
-`;
-
 export const Title = styled.h2`
   letter-spacing: 1.6px;
   line-height: 24px;
-  font-weight: normal;
-  margin-top: 120px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
   font-size: 16px;
-  justify-content: start;
+  justify-content: flex-start;
   color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
 
   @media screen and (max-width: 800px) {
-    font-size: 20px;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    line-height: 20px;
   }
 `;
 
@@ -55,7 +36,6 @@ export const Form = styled.form`
   display: grid;
   width: 100%;
   margin: 40px auto;
-  padding: 0px 0px 0px 0px;
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 

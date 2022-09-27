@@ -9,14 +9,15 @@ export const ErrorContainer = styled(Container)`
 `;
 
 export const TextRaw = styled.h1`
-  color: silver;
+  color: grey;
   font-size: 24px;
   letter-spacing: 1.6px;
-  line-height: 24px;
+  line-height: 16px;
   font-weight: normal;
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;
     text-align: center;
+    line-height: 14px;
   }
 `;

@@ -7,7 +7,6 @@ import {
   Input,
   Title,
   ContactContainer,
-  ContactWrapper,
   ContactButtonWrapper,
   ContactButton,
 } from './ContactPageStyles';
@@ -44,19 +43,17 @@ const ContactPage = () => {
 
   return (
     <ContactContainer>
-      <ContactWrapper>
-        <Title>Fill up the form and i will be at you as soon as possible. Stay healthy and keep smiling.</Title>
-        <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
-          <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-          <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
-          <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-          <ContactButtonWrapper>
-            <ContactButton small fontSmall primary type="submit">
-              Submit
-            </ContactButton>
-          </ContactButtonWrapper>
-        </Form>
-      </ContactWrapper>
+      <Title>Fill up the form and i will be at you as soon as possible. Stay healthy and keep smiling.</Title>
+      <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
+        <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+        <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+        <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+        <ContactButtonWrapper>
+          <ContactButton small fontSmall primary type="submit">
+            Submit
+          </ContactButton>
+        </ContactButtonWrapper>
+      </Form>
     </ContactContainer>
   );
 };

@@ -11,6 +11,7 @@ const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
 const ScrollToTop = lazy(() => import('./components/ScrollToTop'));
 const NavBar = lazy(() => import('./components/NavBar/NavBar'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
+const Profile = lazy(() => import('./components/Profile/Profile'));
 
 const renderLoader = () => <p>Loading</p>;
 
@@ -22,6 +23,7 @@ const App = () => (
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/home" component={HomePage} />
+        <Route path="/profile" component={Profile} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/portfolio-list" component={PortfolioListPage} />
