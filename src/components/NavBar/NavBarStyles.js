@@ -87,19 +87,21 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   align-items: center;
-  padding: 0.5rem 3rem;
+  padding: 10px 60px;
   height: 100%;
 
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 12px;
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    padding: 10px 4px;
 
     &:hover {
       transition: 0.3s ease-out;

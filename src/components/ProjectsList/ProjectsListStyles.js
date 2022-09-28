@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const ProjectContainer = styled.div`
   margin-top: 140px;
@@ -85,7 +86,7 @@ export const Text = styled.p`
   background: transparent;
 `;
 
-export const Image = styled.img`
+export const Image = styled(LazyLoadImage)`
   display: block;
   height: 100%;
   width: 100%;
