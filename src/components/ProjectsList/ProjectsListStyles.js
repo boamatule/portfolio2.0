@@ -205,25 +205,23 @@ export const BoxStyled = styled(motion.div)`
   }
 `;
 
-export const Subtitle = styled.h2`
-  margin-top: 20px;
+export const SubTitle = styled.h2`
   color: grey;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 20px;
   padding: 0px 30px;
   font-weight: normal;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: centert;
   background: transparent;
+  margin-top: 20px;
 
   @media screen and (max-width: 800px) {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 4px;
-    padding: 0px 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
     font-weight: normal;
-    justify-content: center;
-    align-items: center;
+    padding: 0px 10px;
   }
 `;

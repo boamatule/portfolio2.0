@@ -66,19 +66,19 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 
   &:hover {
-    border-bottom: 4px solid #4568dc;
+    border-bottom: 2px solid #4568dc;
   }
 
   @media screen and (max-width: 800px) {
-    width: 25%;
+    width: 22%;
     align-items: center;
     text-align: center;
     justify-content: center;
     &:hover {
-      border-bottom: 4px solid #4568dc;
+      border-bottom: 2px solid #4568dc;
     }
   }
 `;
@@ -101,7 +101,7 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    padding: 10px 4px;
+    padding: 4px 0px;
 
     &:hover {
       transition: 0.3s ease-out;
@@ -179,8 +179,8 @@ export const NavItemToggle = styled(motion.div)`
   }
 
   @media screen and (max-width: 800px) {
-    margin: 4px 0px 0px 380px;
-    color: none;
+    height: 80px;
+    padding: 30px;
     background-color: none;
 
     &:hover {

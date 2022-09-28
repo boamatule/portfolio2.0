@@ -10,7 +10,7 @@ import {
   Title,
   BoxStyled,
   Text,
-  Subtitle,
+  SubTitle,
   ProjectContainer,
 } from './ProjectsListStyles';
 
@@ -18,7 +18,7 @@ const ProjectsList = ({ projects }) => (
   <Container>
     <ProjectContainer>
       <Heading>Curated projects</Heading>
-      <Subtitle>
+      <SubTitle>
         A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
         <a
           style={{
@@ -34,7 +34,7 @@ const ProjectsList = ({ projects }) => (
           github profile
         </a>{' '}
         for more projects.
-      </Subtitle>
+      </SubTitle>
     </ProjectContainer>
     <CardContainer>
       {projects.map((project) => (

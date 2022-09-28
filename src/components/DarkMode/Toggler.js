@@ -23,9 +23,10 @@ Sun = Moon = styled.svg`
   }
   @media screen and (max-width: 800px) {
     top: 0rem;
-    right: 0em;
+    right: 20em;
     transform: translate(0%, -24%);
     background: 'transparent';
+    /* padding: 10px 30px; */
   }
 `;
 
