@@ -1,5 +1,4 @@
 import React from 'react';
-import MyAvatar from '../../assets/avatar.webp';
 
 const {
   Avatar,
@@ -15,7 +14,7 @@ const Profile = () => (
   <ProfileWrapperContainer>
     <ProfileWrapper>
       <Avatar>
-        <Img src={MyAvatar} alt="Boa" />
+        <Img src="../../images/avatar.webp" alt="Boa" />
       </Avatar>
     </ProfileWrapper>
 

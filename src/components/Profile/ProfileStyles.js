@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 export const ProfileWrapperContainer = styled(Container)`
@@ -53,17 +52,14 @@ export const Avatar = styled.div`
   }
 `;
 
-export const Img = styled(LazyLoadImage)`
-  width: 144px;
-  height: 144px;
+export const Img = styled.img`
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   margin-bottom: 20px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   @media screen and (min-width: 800px) {
-    width: 100%;
-    height: 100%;
+    /* width: 120px;
+    height: 1120px; */
   }
 `;
 
