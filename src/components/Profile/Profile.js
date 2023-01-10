@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Glassmorphism } from '../../global-styles';
 
 const { Avatar, ProfileWrapper, Img, Heading, TextWrapper, Location, Subtitle } = require('./ProfileStyles');

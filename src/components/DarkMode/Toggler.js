@@ -1,7 +1,4 @@
-/* eslint-disable prefer-const */
-/* eslint-disable no-multi-assign */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
+import React from 'react';
 import { func, string } from 'prop-types';
 import styled from 'styled-components/macro';
 

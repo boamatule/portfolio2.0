@@ -14,7 +14,6 @@ export const Nav = styled(motion.div)`
   position: none;
   top: 0;
   z-index: 999;
-  }
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -74,7 +73,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-  }}
+  }
 `;
 
 export const NavItem = styled.li`

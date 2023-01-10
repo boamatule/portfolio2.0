@@ -30,6 +30,7 @@ html {
     font-size: 70%;
   }
 }
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
@@ -38,9 +39,8 @@ body {
   @media screen and (max-width: 800px) {
     padding: 10px;
 		}
+  }
 `;
-
-export default GlobalStyles;
 
 export const Container = styled.div`
   /* z-index: 1; */
