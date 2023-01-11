@@ -89,4 +89,4 @@ ProjectsList.propTypes = {
   projects: string.isRequired,
 };
 
-export default withRouter(ProjectsList);
+export default ProjectsList;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import {
   Form,
@@ -12,7 +12,7 @@ import {
 } from './ContactPageStyles';
 
 const ContactPage = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [message, setMessage] = useState({});
 
@@ -36,7 +36,7 @@ const ContactPage = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...message }),
     })
-      .then(() => history.replace('/message-sent-successfully'))
+      .then(() => navigate('/message-sent-successfully'))
       .catch((error) => alert(error));
     event.target.reset();
   };
