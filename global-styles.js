@@ -1,32 +1,46 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+// export const GlobalStyles = createGlobalStyle`
+// 	* {
+// 		box-sizing: border-box;
+// 		margin: 0;
+// 		padding: 0;
+//     color: ${({ theme }) => theme.text};
+// 	}
+//   * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+//     background: ${({ theme }) => theme.body};
+//     color: ${({ theme }) => theme.text};
+// }
+
+// html {
+//   box-sizing: border-box;
+//   font-size: 62.5%;
+
+//   @media only screen and (max-width: 1200px){
+//     font-size: 58%;
+//   }
+//   @media only screen and (min-width: 1980px){
+//     font-size: 70%;
+//   }
+// }
+// `;
+
 export const GlobalStyles = createGlobalStyle`
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-    color: ${({ theme }) => theme.text};
-	}
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-
-  @media only screen and (max-width: 1200px){
-    font-size: 58%;
+  *, *:before, *:after {
+    box-sizing: border-box;
   }
-  @media only screen and (min-width: 1980px){
-    font-size: 70%;
-  }
-}
-`;
+  html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000;
+    color: #333333;
+    font-size: 16px;
+}`;
 
 export const Container = styled.div`
   width: 100%;

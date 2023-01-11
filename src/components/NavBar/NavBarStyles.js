@@ -87,7 +87,8 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  font-weight: normal;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: bold;
   text-decoration: none;
   align-items: center;
   padding: 10px 60px;
@@ -97,7 +98,7 @@ export const NavLinks = styled(Link)`
     width: 100%;
     text-align: center;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 700;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -110,6 +111,8 @@ export const NavLinks = styled(Link)`
 `;
 
 export const NavItemBtn = styled.li`
+  font-family: 'Montserrat', sans-serif;
+
   @media screen and (max-width: 800px) {
     display: flex;
     justify-content: center;

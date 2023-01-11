@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { lazy, Suspense } from 'react';
-import 'normalize.css';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./Pages/HomePage/HomePage'));
@@ -17,21 +17,20 @@ const renderLoader = () => <p>Loading</p>;
 
 const App = () => (
   <Suspense fallback={renderLoader()}>
-    <Router>
+    <Routes>
       <ScrollToTop />
-      <NavBar />
-      <Switch>
-        <Route path="/" component={HomePage} exact />
-        <Route path="/home" component={HomePage} exact />
-        <Route path="/profile" component={Profile} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/portfolio-list" component={PortfolioListPage} />
-        <Route path="/message-sent-successfully" component={SuccessPage} />
-        <Route component={NotFound} />
-      </Switch>
-      <Footer />
-    </Router>
+      {/* <NavBar /> */}
+      <Route path="/" element={HomePage} index />
+      {/* <Route path="/home" element={HomePage} exact /> */}
+      <Route path="/profile" element={Profile} />
+      {/* <Route path="/nav" element={NavBar} /> */}
+      <Route path="/about" element={AboutPage} />
+      <Route path="/contact" element={ContactPage} />
+      <Route path="/portfolio-list" element={PortfolioListPage} />
+      <Route path="/message-sent-successfully" element={SuccessPage} />
+      <Route element={NotFound} />
+      {/* <Footer /> */}
+    </Routes>
   </Suspense>
 );
 
