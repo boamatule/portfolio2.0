@@ -12,8 +12,9 @@ const ScrollToTop = lazy(() => import('./components/ScrollToTop'));
 const Navigation = lazy(() => import('./routes/Navigation/Navigation'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
 const Profile = lazy(() => import('./components/Profile/Profile'));
+const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.component'));
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <WithSpinner />;
 
 const App = () => (
   <Suspense fallback={renderLoader()}>
