@@ -5,13 +5,13 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+    font-family: 'Montserrat', sans-serif;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.5s linear;  
 	}
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -31,30 +31,25 @@ html {
   }
 }
 
-body {
-  font-family: 'Roboto';
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.6rem;
-  @media screen and (max-width: 800px) {
-    padding: 10px;
-		}
-  }
+a {
+  text-decoration: none;
+  color: black;
+} 
 `;
 
 export const Container = styled.div`
-  /* z-index: 1; */
-  /* width: 100%; */
+  z-index: 1;
+  width: 100%;
   /* max-width: 1200px; */
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   background: none;
 
   @media screen and (max-width: 800px) {
-    /* padding-right: 30px;
-    padding-left: 30px; */
+    padding-right: 4px;
+    padding-left: 4px;
   }
 
   /** Breakpoints:
@@ -64,12 +59,6 @@ export const Container = styled.div`
   xl: min-width: 1280px;
   2xl: min-width: 1536px;
 **/
-  @media screen and (max-width: 960px) {
-    padding-left: 3rem /* 16px */;
-    padding-right: 3rem /* 16px */;
-    /* background: ${({ lightBg }) => (lightBg ? '#101522' : '#101522')};
-    background: ${({ lightBg }) => (lightBg ? '#101522' : '#fff')}; */
-  }
 `;
 
 export const Button = styled.button`
@@ -99,7 +88,7 @@ export const Button = styled.button`
 
 export const Span = styled.span`
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 4px;
   line-height: 20px;
   padding-left: 0px;
   text-align: center;

@@ -6,7 +6,6 @@ import { GlobalStyles } from '../../global-styles';
 import { lightTheme, darkTheme } from '../DarkMode/Themes';
 import useDarkMode from '../DarkMode/useDarkMode';
 import Toggle from '../DarkMode/Toggler';
-
 import {
   Nav,
   NavbarContainer,
@@ -19,7 +18,7 @@ import {
   NavItemToggle,
 } from './NavBarStyles';
 
-function NavBar() {
+const NavBar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -50,9 +49,23 @@ function NavBar() {
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
-                <FaTimes style={{ width: '25px', height: '25px', color: '#6969FB', background: 'transparent' }} />
+                <FaTimes
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
               ) : (
-                <FaBars style={{ width: '25px', height: '25px', color: '#6969FB', background: 'transparent' }} />
+                <FaBars
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
               )}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
@@ -68,35 +81,35 @@ function NavBar() {
               <NavItem>
                 <NavLinks to="/contact">CONTACT</NavLinks>
               </NavItem>
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://github.com/boamatule"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub style={{ width: '24px', height: '24px' }} />
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
+              <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItemToggle>
             </NavMenu>
-            <NavItemSocialIcon>
-              <NavItemSocialIconLink
-                href="https://github.com/boamatule"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
-                <FaGithub style={{ width: '25px', height: '25px' }} />
-              </NavItemSocialIconLink>
-            </NavItemSocialIcon>
-            <NavItemSocialIcon>
-              <NavItemSocialIconLink
-                href="https://www.linkedin.com/in/boa-matule-2082b068/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn style={{ width: '25px', height: '25px' }} />
-              </NavItemSocialIconLink>
-            </NavItemSocialIcon>
-            <NavItemToggle whileHover={{ scale: 1.1, rotate: 20 }}>
-              <Toggle theme={theme} toggleTheme={themeToggler} />
-            </NavItemToggle>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
     </ThemeProvider>
   );
-}
+};
 
 export default NavBar;

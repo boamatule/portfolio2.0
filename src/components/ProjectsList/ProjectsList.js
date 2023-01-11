@@ -1,9 +1,7 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
-import { Button, Glassmorphism } from '../../global-styles';
+import { string } from 'prop-types';
+import { Container, Button, Glassmorphism } from '../../global-styles';
 import {
   Image,
   CardContainer,
@@ -12,22 +10,44 @@ import {
   ProjectDescription,
   Title,
   BoxStyled,
-  ButtonText,
+  Text,
+  SubTitle,
+  ProjectContainer,
 } from './ProjectsListStyles';
 
 const ProjectsList = ({ projects }) => (
-  <>
-    <Heading>p o r t f o l i o</Heading>
-
+  <Container>
+    <ProjectContainer>
+      <Heading>Curated projects</Heading>
+      <SubTitle>
+        A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
+        <a
+          style={{
+            color: '#6969FB',
+            backgroundColor: 'transparent',
+          }}
+          href="https://github.com/boamatule"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
+          {' '}
+          github profile
+        </a>{' '}
+        for more projects.
+      </SubTitle>
+    </ProjectContainer>
     <CardContainer>
-      {projects.map((project, key) => (
-        <BoxStyled whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
-          <Glassmorphism key={key} to={`/project/${project.id}`}>
+      {projects.map((project) => (
+        <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
+          <Glassmorphism>
             <Image src={project.imageUrl} alt={project.alt} />
-            <Title>{project.title}</Title>
+            <Title>{project.title.toLowerCase()}</Title>
             <ProjectDescription>{project.stack}</ProjectDescription>
+            {/* <ProjectDescription>{project.description}</ProjectDescription> */}
+
             <ButtonWrapper>
-              <a href={project.URL} target="_blank" rel="noreferrer">
+              <a href={project.deployedUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
@@ -36,23 +56,23 @@ const ProjectsList = ({ projects }) => (
                     color: 'white',
                   }}
                 >
-                  <ButtonText>See Live</ButtonText>
+                  <Text>See Live</Text>
                 </Button>
               </a>
 
-              <a href="/project/sourceCodeUrl" target="_blank" rel="noreferrer">
+              <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
                 <Button
                   small
                   fontSmall
                   primary
                   style={{
-                    marginLeft: '40px',
+                    paddingLeft: '80px',
                     background: 'transparent',
                     border: 'none',
                     color: '#6969FB',
                   }}
                 >
-                  <ButtonText>Source Code</ButtonText>
+                  <Text>Source Code</Text>
                 </Button>
               </a>
             </ButtonWrapper>
@@ -60,6 +80,11 @@ const ProjectsList = ({ projects }) => (
         </BoxStyled>
       ))}
     </CardContainer>
-  </>
+  </Container>
 );
+
+ProjectsList.propTypes = {
+  projects: string.isRequired,
+};
+
 export default withRouter(ProjectsList);

@@ -1,18 +1,6 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container } from '../../global-styles';
-import {
-  HomeInfoSec,
-  InfoRow,
-  InfoColumn,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  imgWrapper,
-  Img,
-} from './HomeInfoStyles';
+import { HomeInfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, Img } from './HomeInfoStyles';
 
 const HomeInfo = ({
   primary,
