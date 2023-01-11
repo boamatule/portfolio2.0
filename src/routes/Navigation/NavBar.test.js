@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 import '../../../setupTests';
 
 it('expect to render NavBar Component', () => {
-  expect(shallow(<NavBar />)).toMatchSnapshot();
+  expect(shallow(<Navigation />)).toMatchSnapshot();
 });

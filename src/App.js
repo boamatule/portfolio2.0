@@ -31,7 +31,7 @@ const App = () => (
         <Route element={NotFound} />
       </Route>
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </Suspense>
 );
 

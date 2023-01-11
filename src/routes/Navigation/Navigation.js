@@ -109,7 +109,7 @@ const NavBar = () => {
               </NavMenu>
             </NavbarContainer>
           </Nav>
-          <Outlet />
+          {/* <Outlet /> */}
         </IconContext.Provider>
       </ThemeProvider>
     </>
