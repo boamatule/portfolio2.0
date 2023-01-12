@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 

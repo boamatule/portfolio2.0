@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -31,7 +32,7 @@ const App = () => (
         <Route element={NotFound} />
       </Route>
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
   </Suspense>
 );
 

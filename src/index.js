@@ -7,18 +7,18 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'normalize.css';
 import { GlobalStyles } from './global-styles';
-import { CompaniesProvider } from './contexts/projects.context';
+import { ProjectsProvider } from './contexts/projects.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <CompaniesProvider>
+      <ProjectsProvider>
         <GlobalStyles />
         <App />
-      </CompaniesProvider>
+      </ProjectsProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 serviceWorkerRegistration.register();

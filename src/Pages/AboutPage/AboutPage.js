@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import React from 'react';
 import { Container } from '../../global-styles';
 import { AboutWrapper, Heading, Description } from './AboutPageStyles';

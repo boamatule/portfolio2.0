@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
