@@ -1,13 +1,16 @@
-/* eslint-disable react/function-component-definition */
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
+
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../../global-styles';
+
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 import Toggle from '../../components/DarkMode/Toggler';
+
 import {
   Nav,
   NavbarContainer,
@@ -20,7 +23,7 @@ import {
   NavItemToggle,
 } from './Navigation.Styles';
 
-const NavBar = () => {
+function NavBar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -113,6 +116,6 @@ const NavBar = () => {
       </IconContext.Provider>
     </ThemeProvider>
   );
-};
+}
 
 export default NavBar;

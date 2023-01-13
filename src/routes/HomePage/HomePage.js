@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '../../global-styles';
-import PortfolioListPage from '../PortfolioPage/PortfolioListPage';
+import PortfolioListPage from '../../Pages/PortfolioPage/PortfolioListPage';
 import { Profile } from '../../components';
 
 function HomePage() {

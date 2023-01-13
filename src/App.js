@@ -4,7 +4,7 @@ import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
-const HomePage = lazy(() => import('./Pages/HomePage/HomePage'));
+const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
 const ContactPage = lazy(() => import('./Pages/ContactPage/ContactPage'));
 const PortfolioListPage = lazy(() => import('./Pages/PortfolioPage/PortfolioListPage'));
 const SuccessPage = lazy(() => import('./Pages/SuccessPage/SuccessPage'));
@@ -17,23 +17,24 @@ const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.co
 
 const renderLoader = () => <WithSpinner />;
 
-const App = () => (
-  <Suspense fallback={renderLoader()}>
-    <Routes>
+function App() {
+  return (
+    <Suspense fallback={renderLoader()}>
+      <Routes>
+        <Route path="/" element={Navigation}>
+          <Route index element={HomePage} />
+          <Route path="profile" element={Profile} />
+          <Route path="about" element={AboutPage} />
+          <Route path="contact" element={ContactPage} />
+          <Route path="portfolio-list" element={PortfolioListPage} />
+          <Route path="message-sent-successfully" element={SuccessPage} />
+          <Route element={NotFound} />
+        </Route>
+      </Routes>
+      <Footer />
       <ScrollToTop />
-      <Route path="/" element={Navigation}>
-        <Route element={HomePage} index />
-        {/* <Route path="/home" element={HomePage} exact /> */}
-        <Route path="/profile" element={Profile} />
-        <Route path="/about" element={AboutPage} />
-        <Route path="/contact" element={ContactPage} />
-        <Route path="/portfolio-list" element={PortfolioListPage} />
-        <Route path="/message-sent-successfully" element={SuccessPage} />
-        <Route element={NotFound} />
-      </Route>
-    </Routes>
-    <Footer />
-  </Suspense>
-);
+    </Suspense>
+  );
+}
 
 export default App;

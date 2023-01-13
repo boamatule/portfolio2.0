@@ -1,6 +1,6 @@
 /* eslint-disable react/function-component-definition */
 import React, { useContext } from 'react';
-import { withRouter } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
 import { string } from 'prop-types';
 import { ProjectsContext } from '../../contexts/projects.context';
@@ -88,9 +88,5 @@ const ProjectsList = () => {
     </Container>
   );
 };
-
-// ProjectsList.propTypes = {
-//   projects: string.isRequired,
-// };
 
 export default ProjectsList;
