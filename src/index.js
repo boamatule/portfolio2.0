@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ProjectsProvider>
-        <App />
-      </ProjectsProvider>
+      {/* <ProjectsProvider> */}
+      <App />
+      {/* </ProjectsProvider> */}
     </BrowserRouter>
   </React.StrictMode>,
 );

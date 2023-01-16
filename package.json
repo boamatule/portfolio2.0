@@ -14,7 +14,7 @@
     "react-icons": "^4.2.0",
     "react-lazy-load-image-component": "^1.5.5",
     "react-router-dom": "^6.6.2",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.2.1",
     "web-vitals": "^3.1.1",
     "workbox-core": "^6.5.4",
@@ -27,7 +27,7 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
