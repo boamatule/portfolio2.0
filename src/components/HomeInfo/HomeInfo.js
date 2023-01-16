@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button, Container } from '../../global-styles';
 import { HomeInfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, Img } from './HomeInfoStyles';
 
-const HomeInfo = ({
+function HomeInfo({
   primary,
   lightBg,
   imgStart,
@@ -16,8 +16,8 @@ const HomeInfo = ({
   img,
   alt,
   start,
-}) => (
-  <>
+}) {
+  return (
     <HomeInfoSec lightBg={lightBg}>
       <Container>
         <InfoRow imgStart={imgStart}>
@@ -39,7 +39,7 @@ const HomeInfo = ({
         </InfoRow>
       </Container>
     </HomeInfoSec>
-  </>
-);
+  );
+}
 
 export default HomeInfo;

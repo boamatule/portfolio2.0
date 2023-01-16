@@ -1,15 +1,7 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
 
-const {
-  Avatar,
-  ProfileWrapper,
-  Img,
-  Heading,
-  Location,
-  Subtitle,
-  ProfileWrapperContainer,
-} = require('./ProfileStyles');
+const { Avatar, ProfileWrapper, Img, Heading, Subtitle, ProfileWrapperContainer } = require('./ProfileStyles');
 
 const Profile = () => (
   <ProfileWrapperContainer>

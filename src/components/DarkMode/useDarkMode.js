@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable no-unused-expressions */
+import { useEffect, useState } from 'react';
 
 const useDarkMode = () => {
   const [theme, setTheme] = useState('dark');

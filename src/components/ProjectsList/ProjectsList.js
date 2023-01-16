@@ -1,8 +1,8 @@
 /* eslint-disable react/function-component-definition */
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
-import { string } from 'prop-types';
+// import { string } from 'prop-types';
 import { ProjectsContext } from '../../contexts/projects.context';
 import { Container, Button, Glassmorphism } from '../../global-styles';
 import {

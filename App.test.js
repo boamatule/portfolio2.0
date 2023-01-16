@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import App from './App';
+import App from './src/App';
 import './setupTests.js';
 
 it('expect to render App Component', () => {

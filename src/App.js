@@ -2,6 +2,7 @@
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { GlobalStyles } from './global-styles';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
@@ -20,15 +21,16 @@ const renderLoader = () => <WithSpinner />;
 function App() {
   return (
     <Suspense fallback={renderLoader()}>
+      <GlobalStyles />
       <Routes>
-        <Route path="/" element={Navigation}>
-          <Route index element={HomePage} />
-          <Route path="profile" element={Profile} />
-          <Route path="about" element={AboutPage} />
-          <Route path="contact" element={ContactPage} />
-          <Route path="portfolio-list" element={PortfolioListPage} />
-          <Route path="message-sent-successfully" element={SuccessPage} />
-          <Route element={NotFound} />
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<HomePage />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="about_me" element={<AboutPage />} />
+          <Route path="contact_me" element={<ContactPage />} />
+          <Route path="curated_projects" element={<PortfolioListPage />} />
+          <Route path="message_sent_successfully" element={<SuccessPage />} />
+          <Route element={<NotFound />} />
         </Route>
       </Routes>
       <Footer />

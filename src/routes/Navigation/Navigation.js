@@ -5,7 +5,6 @@ import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../global-styles';
 
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
@@ -48,8 +47,7 @@ function NavBar() {
 
   return (
     <ThemeProvider theme={themeMode}>
-      <IconContext.Provider value={{ color: 'grey' }}>
-        <GlobalStyles />
+      <IconContext.Provider>
         <Nav>
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
@@ -112,8 +110,8 @@ function NavBar() {
             </NavMenu>
           </NavbarContainer>
         </Nav>
-        <Outlet />
       </IconContext.Provider>
+      <Outlet />
     </ThemeProvider>
   );
 }
