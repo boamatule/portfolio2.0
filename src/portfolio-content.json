@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Kind Like Netflix",
+    "stack":
+      "Nextjs ☆ Serveless ☆ Framer ☆ GraphQL ☆ Redis ☆ Hasura ☆ Vercel ☆ Serveless ☆ Magic ☆ ISG ☆ JWT ☆ Framer ☆ React Hooks",
+    "imageUrl": "../../images/netflix.webp",
+    "alt": "Netflix",
+    "description": "Blog built in ReactJs and Backended using MongoDB",
+    "sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
+  },
+  {
+    "id": 2,
+    "title": "Crwn Clothing Platform",
+    "stack": "React.js ☆ Firebase ☆ Stripe ☆ Styled-Components ☆ Express.js",
+    "imageUrl": "../../images/crown.svg",
+    "alt": "Clothes",
+    "description":
+      "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
+    "sourceCodeUrl": "https://crwn-live-clothing-app.herokuapp.com/"
+  }
+]

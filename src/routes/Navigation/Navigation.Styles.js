@@ -87,8 +87,8 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
   text-decoration: none;
   align-items: center;
   padding: 10px 60px;

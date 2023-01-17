@@ -2,10 +2,14 @@ import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
-  display: flex;
-  position: sticky;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
 `;
 

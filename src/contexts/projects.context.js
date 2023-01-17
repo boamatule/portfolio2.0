@@ -1,6 +1,6 @@
 import { createContext, useState, useMemo } from 'react';
 
-import PROJECTS from '../Pages/PortfolioPage/portfolio-content';
+import PROJECTS from '../Pages/PortfolioPage/portfolio-content.json';
 
 export const ProjectsContext = createContext({
   projects: [],

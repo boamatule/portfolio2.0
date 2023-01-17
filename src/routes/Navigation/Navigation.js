@@ -48,28 +48,27 @@ const NavBar = () => {
 
   return (
     <ThemeProvider theme={themeMode}>
-      {/* <IconContext.Provider value={{ color: '#6969FB', width: '24px', height: '24px' }}> */}
       <Nav>
         <NavbarContainer>
           <MobileIcon onClick={handleClick}>
             {click ? (
               <FaTimes
-              // style={{
-              //   width: '24px',
-              //   height: '24px',
-              //   color: '#6969FB',
-              //   background: 'none',
-              // }}
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  color: '#6969FB',
+                  background: 'none',
+                }}
               />
             ) : (
               <FaBars
-              // size={34}
-              // style={{
-              //   width: '24px',
-              //   height: '24px',
-              //   color: '#6969FB',
-              //   background: 'none',
-              // }}
+                size={34}
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  color: '#6969FB',
+                  background: 'none',
+                }}
               />
             )}
           </MobileIcon>
@@ -112,7 +111,6 @@ const NavBar = () => {
           </NavMenu>
         </NavbarContainer>
       </Nav>
-      {/* </IconContext.Provider> */}
       <Outlet />
     </ThemeProvider>
   );

@@ -2,8 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    margin: 0;
-		padding: 20px 40px;
+		padding: 10px 10px;
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,7 +16,6 @@ export const GlobalStyles = createGlobalStyle`
 
 	a {
 		text-decoration: none;
-		/* color: black; */
     color: #333333;
 	}
 
@@ -29,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 
 export const Container = styled.div`
   width: 100%;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 4px;
