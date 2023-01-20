@@ -49,7 +49,6 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-
         <Nav>
           <NavbarContainer>
             <MobileIcon onClick={handleClick}>
@@ -76,16 +75,16 @@ const NavBar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/home">HOME</NavLinks>
+                <NavLinks to="/">HOME</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/about">ABOUT</NavLinks>
+                <NavLinks to="/about_me">ABOUT</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+                <NavLinks to="/curated_projects">PORTFOLIO</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contact">CONTACT</NavLinks>
+                <NavLinks to="/contact_me">CONTACT</NavLinks>
               </NavItem>
               <NavItemSocialIcon>
                 <NavItemSocialIconLink

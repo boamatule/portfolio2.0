@@ -1,8 +1,5 @@
-/* eslint-disable react/function-component-definition */
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { GlobalStyles } from './global-styles';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
