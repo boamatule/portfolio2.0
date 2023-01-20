@@ -14,7 +14,6 @@ Sun = Moon = styled.svg`
   cursor: pointer;
   color: none;
   background: 'transparent';
-
   &:hover {
     transform: none;
   }
@@ -27,9 +26,9 @@ Sun = Moon = styled.svg`
   }
 `;
 
-const Toggle = ({ theme, toggleTheme }) => {
-  return (
-    <div role="button" onClick={toggleTheme}>
+const Toggle = ({ theme, toggleTheme }) => (
+  <>
+    <div onClick={toggleTheme}>
       {theme === 'light' ? (
         <Moon
           width="24"
@@ -66,8 +65,8 @@ const Toggle = ({ theme, toggleTheme }) => {
         </Sun>
       )}
     </div>
-  );
-}
+  </>
+);
 
 Toggle.propTypes = {
   theme: string.isRequired,

@@ -1,28 +1,32 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  body {
-		padding: 10px 10px;
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
     font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #000000;
-  }
-  
-  code {
-    font-family: 'Montserrat', sans-serif;
-			monospace;
 	}
-
-	a {
-		text-decoration: none;
-    color: #333333;
-	}
-
-
-* {
-    box-sizing: border-box;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width: 1200px){
+    font-size: 58%;
   }
+  @media only screen and (min-width: 1980px){
+    font-size: 70%;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+} 
 `;
 
 export const Container = styled.div`

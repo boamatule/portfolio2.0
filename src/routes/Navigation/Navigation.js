@@ -48,70 +48,73 @@ const NavBar = () => {
 
   return (
     <ThemeProvider theme={themeMode}>
-      <Nav>
-        <NavbarContainer>
-          <MobileIcon onClick={handleClick}>
-            {click ? (
-              <FaTimes
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  color: '#6969FB',
-                  background: 'none',
-                }}
-              />
-            ) : (
-              <FaBars
-                size={34}
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  color: '#6969FB',
-                  background: 'none',
-                }}
-              />
-            )}
-          </MobileIcon>
-          <NavMenu onClick={handleClick} click={click}>
-            <NavItem>
-              <NavLinks to="/home">HOME</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/about">ABOUT</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/contact">CONTACT</NavLinks>
-            </NavItem>
-            <NavItemSocialIcon>
-              <NavItemSocialIconLink
-                href="https://github.com/boamatule"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
-                <FaGithub style={{ width: '24px', height: '24px' }} />
-              </NavItemSocialIconLink>
-            </NavItemSocialIcon>
-            <NavItemSocialIcon>
-              <NavItemSocialIconLink
-                href="https://www.linkedin.com/in/boa-matule-2082b068/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
-              </NavItemSocialIconLink>
-            </NavItemSocialIcon>
-            <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
-              <Toggle theme={theme} toggleTheme={themeToggler} />
-            </NavItemToggle>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
-      <Outlet />
+      <IconContext.Provider value={{ color: 'grey' }}>
+
+        <Nav>
+          <NavbarContainer>
+            <MobileIcon onClick={handleClick}>
+              {click ? (
+                <FaTimes
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
+              ) : (
+                <FaBars
+                  size={34}
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
+              )}
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to="/home">HOME</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/about">ABOUT</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/portfolio-list">PORTFOLIO</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/contact">CONTACT</NavLinks>
+              </NavItem>
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://github.com/boamatule"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub style={{ width: '24px', height: '24px' }} />
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
+              <NavItemSocialIcon>
+                <NavItemSocialIconLink
+                  href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
+                </NavItemSocialIconLink>
+              </NavItemSocialIcon>
+              <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItemToggle>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+        <Outlet />
+      </IconContext.Provider>
     </ThemeProvider>
   );
 };

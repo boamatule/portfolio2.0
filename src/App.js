@@ -21,7 +21,6 @@ const renderLoader = () => <WithSpinner />;
 const App = () => {
   return (
     <Suspense fallback={renderLoader()}>
-      <GlobalStyles />
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<HomePage />} />
