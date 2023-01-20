@@ -18,7 +18,7 @@ import {
   ProjectContainer,
 } from './ProjectsListStyles';
 
-function ProjectsList() {
+const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
 
   return (

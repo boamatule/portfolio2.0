@@ -18,7 +18,7 @@ const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.co
 
 const renderLoader = () => <WithSpinner />;
 
-function App() {
+const App = () => {
   return (
     <Suspense fallback={renderLoader()}>
       <GlobalStyles />

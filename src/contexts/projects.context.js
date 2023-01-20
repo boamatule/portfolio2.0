@@ -1,6 +1,6 @@
-import { createContext, useState, useMemo } from 'react';
+import React, { createContext, useState, useMemo } from 'react';
 
-import PROJECTS from '../Pages/PortfolioPage/portfolio-content.json';
+import PROJECTS from '../portfolio-content.json';
 
 export const ProjectsContext = createContext({
   projects: [],
@@ -8,6 +8,7 @@ export const ProjectsContext = createContext({
 
 export function ProjectsProvider({ children }) {
   const [projects, setProjects] = useState(PROJECTS);
-  const value = useMemo(() => projects, [projects]);
+  const value = { projects };
+  // const value = useMemo(() => projects, [projects]);
   return <ProjectsContext.Provider value={value}>{children}</ProjectsContext.Provider>;
 }

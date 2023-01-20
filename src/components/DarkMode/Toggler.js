@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/interactive-supports-focus */
-/* eslint-disable prefer-const */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable no-multi-assign */
 import React from 'react';
 import { func, string } from 'prop-types';
 import styled from 'styled-components/macro';
@@ -31,7 +27,7 @@ Sun = Moon = styled.svg`
   }
 `;
 
-function Toggle({ theme, toggleTheme }) {
+const Toggle = ({ theme, toggleTheme }) => {
   return (
     <div role="button" onClick={toggleTheme}>
       {theme === 'light' ? (
