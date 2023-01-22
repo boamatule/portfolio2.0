@@ -56,7 +56,7 @@
 		"imageUrl": "../../images/crown.svg",
 		"alt": "Clothes",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
-		"deployedUrl": "https://crwn-live-clothing-app.herokuapp.com/",
-		"sourceCodeUrl": "https://crwn-live-clothing-app.herokuapp.com/"
+		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
+		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
 	}
 ]

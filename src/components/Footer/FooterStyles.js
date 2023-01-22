@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
 
 export const FooterContainer = styled(Container)`
@@ -6,7 +6,7 @@ export const FooterContainer = styled(Container)`
   text-align: center;
   justify-content: center;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   height: 80px;
@@ -34,7 +34,7 @@ export const Copyright = styled.p`
   letter-spacing: 2px;
   align-items: center;
   text-align: center;
-  color: #6969fb;
+  color: yellow;
   margin: 0px 0px;
 
   @media screen and (min-width: 800px) {

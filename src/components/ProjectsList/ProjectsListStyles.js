@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Container } from '../../global-styles';
 
-export const ProjectContainer = styled.div`
+export const ProjectContainer = styled(Container)`
   margin-top: 140px;
 `;
 
@@ -20,23 +21,26 @@ export const Title = styled.p`
   }
 `;
 
-export const Heading = styled.h1`
-  font-weight: bold;
-  margin-bottom: 40px;
-  line-height: 4px;
-  letter-spacing: 4px;
-  font-size: 20px;
+export const Heading = styled.h2`
   padding: 0px 30px;
-  margin-top: 140px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 20px;
   justify-content: flex-start;
-  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
+  text-align: flex-start;
+  font-size: 16px;
+  color: yellow;
+  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
+  /* padding-top: 10px; */
+  margin-bottom: 20px;
 
   @media screen and (max-width: 800px) {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 4px;
-    letter-spacing: 4px;
-    padding: 0px 10px;
+    font-size: 12px;
+    line-height: 1.8rem;
+    letter-spacing: 1.1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `;
 

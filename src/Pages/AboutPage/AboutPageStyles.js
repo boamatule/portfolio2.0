@@ -32,10 +32,12 @@ export const Heading = styled.h2`
   line-height: 20px;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')};
+  font-size: 16px;
+  margin-bottom: 0px;
+  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
   padding: 0px 44px;
+  color: yellow;
+
 
   @media screen and (max-width: 800px) {
     font-weight: bold;

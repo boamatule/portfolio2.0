@@ -1,5 +1,5 @@
 /* eslint-disable react/function-component-definition */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Profiler } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -10,7 +10,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 import Toggle from '../../components/DarkMode/Toggler';
-
+import { Container } from '../../global-styles';
 import {
   Nav,
   NavbarContainer,
@@ -21,7 +21,11 @@ import {
   NavItemSocialIconLink,
   NavItemSocialIcon,
   NavItemToggle,
+
 } from './Navigation.Styles';
+
+const { Avatar, ProfileWrapper, Img, Heading, Subtitle, ProfileWrapperContainer } = require('../../components/Profile/ProfileStyles');
+
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -49,8 +53,8 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav>
-          <NavbarContainer>
+        <Container>
+          <Nav>
             <MobileIcon onClick={handleClick}>
               {click ? (
                 <FaTimes
@@ -73,10 +77,16 @@ const NavBar = () => {
                 />
               )}
             </MobileIcon>
+          
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">HOME</NavLinks>
+                <Avatar>
+                  <Img src="../../images/avatar.webp" alt="Boa" />
+                </Avatar>
               </NavItem>
+              {/* <NavItem>
+                <NavLinks to="/">HOME</NavLinks>
+              </NavItem> */}
               <NavItem>
                 <NavLinks to="/about_me">ABOUT</NavLinks>
               </NavItem>
@@ -106,12 +116,12 @@ const NavBar = () => {
                   <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
-              <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
-                <Toggle theme={theme} toggleTheme={themeToggler} />
-              </NavItemToggle>
             </NavMenu>
-          </NavbarContainer>
-        </Nav>
+            {/* <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
+              <Toggle theme={theme} toggleTheme={themeToggler} />
+            </NavItemToggle> */}
+          </Nav>
+        </Container>
         <Outlet />
       </IconContext.Provider>
     </ThemeProvider>

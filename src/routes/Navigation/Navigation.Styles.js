@@ -6,7 +6,7 @@ export const Nav = styled(motion.div)`
   background: transparent;
   width: 100%;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 1;
 
@@ -14,7 +14,7 @@ export const Nav = styled(motion.div)`
     width: 100%;
     height: none;
     top: 0px;
-    position: fixed;
+    /* position: fixed; */
     align-items: center;
     justify-content: center;
     background: transparent;
@@ -47,10 +47,14 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 0rem;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 10rem; */
+  margin-top: 100px;
+  /* padding: 0px 100px; */
+
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -66,10 +70,17 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  border-bottom: 1px solid transparent;
+  /* border-bottom: 1px solid transparent;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  display: block;
+  flot: left;
+  margin: 10px;
 
   &:hover {
-    border-bottom: 2px solid #4568dc;
+    border-bottom: 4px solid yellow;
+    overflow: hidden;
   }
 
   @media screen and (max-width: 800px) {
@@ -83,21 +94,21 @@ export const NavItem = styled.li`
   }
 `;
 
+
 export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
   font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   align-items: center;
-  padding: 10px 60px;
-  height: 100%;
+  padding: 10px 40px;
+  /* height: 100%; */
 
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
-    font-weight: normal;
     font-size: 700;
     text-decoration: none;
     align-items: center;

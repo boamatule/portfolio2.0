@@ -1,15 +1,16 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
+import { Glassmorphism } from '../../global-styles';
 
 const { Avatar, ProfileWrapper, Img, Heading, Subtitle, ProfileWrapperContainer } = require('./ProfileStyles');
 
 const Profile = () => (
   <ProfileWrapperContainer>
-    <ProfileWrapper>
+    {/* <ProfileWrapper>
       <Avatar>
         <Img src="../../images/avatar.webp" alt="Boa" />
       </Avatar>
-    </ProfileWrapper>
+    </ProfileWrapper> */}
 
     <Heading>Boa Matule ☆ Fullstack Developer</Heading>
     {/* <Location>Oslo - Norway </Location> */}

@@ -35,7 +35,7 @@ const ProjectsList = () => {
               }}
               href="https://github.com/boamatule"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="GitHub"
             >
               {' '}
@@ -54,7 +54,7 @@ const ProjectsList = () => {
                 {/* <ProjectDescription>{project.description}</ProjectDescription> */}
 
                 <ButtonWrapper>
-                  <a href={project.deployedUrl} target="_blank" rel="noreferrer">
+                  <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">
                     <Button
                       small
                       fontSmall
@@ -67,7 +67,7 @@ const ProjectsList = () => {
                     </Button>
                   </a>
 
-                  <a href={project.sourceCodeUrl} target="_blank" rel="noreferrer">
+                  <a href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
                     <Button
                       small
                       fontSmall

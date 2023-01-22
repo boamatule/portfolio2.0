@@ -22,7 +22,8 @@ export const Title = styled.h2`
   margin-bottom: 10px;
   font-size: 16px;
   justify-content: flex-start;
-  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
+  color: yellow;
+  /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
   @media screen and (max-width: 800px) {
     font-size: 14px;
     letter-spacing: 1.6px;
@@ -52,7 +53,7 @@ export const Input = styled.input`
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
-  border: 2px solid #4568dc;
+  border: 2px solid yellow;
   border-radius: 2px;
   padding: 8px;
   &:last-of-type {
@@ -80,7 +81,7 @@ export const TextArea = styled.textarea`
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
   color: grey;
-  border: 2px solid #4568dc;
+  border: 2px solid yellow;
   border-radius: 2px;
   padding: 8px;
   height: 200px;
