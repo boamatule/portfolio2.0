@@ -14,21 +14,24 @@ export const Title = styled.p`
   line-height: 4px;
   justify-content: flex-start;
   text-align: flex-start;
-  color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')};
+  color: yellow;
+  margin-bottom: 24px;
+  /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
   }
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h1`
   padding: 0px 30px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   line-height: 20px;
   justify-content: flex-start;
   text-align: flex-start;
-  font-size: 16px;
+  font-size: 20px;
+
   color: yellow;
   /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
   /* padding-top: 10px; */
@@ -88,6 +91,7 @@ export const Text = styled.p`
   padding-left: 0px;
   text-align: center;
   background: transparent;
+  color: grey;
 `;
 
 export const Image = styled(LazyLoadImage)`
@@ -178,7 +182,7 @@ export const ProjectDescription = styled.p`
   display: inline-block;
   color: grey;
   padding-top: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 14px;

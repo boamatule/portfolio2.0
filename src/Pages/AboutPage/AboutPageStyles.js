@@ -7,12 +7,12 @@ export const AboutWrapper = styled.div`
 `;
 
 export const Description = styled.h2`
-  margin-top: 0px;
+  margin-top: 20px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
   background: transparent;

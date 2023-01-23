@@ -12,13 +12,16 @@ const Profile = () => (
       </Avatar>
     </ProfileWrapper> */}
 
-    <Heading>Boa Matule ☆ Fullstack Developer</Heading>
+    <Heading>Boa Matule</Heading>
     {/* <Location>Oslo - Norway </Location> */}
     <Subtitle>
+    I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.
+    </Subtitle>
+    {/* <Subtitle>
       Fullstack Developer with a background in E-commerce and hospitality industry as a Chef and Waiter. I build highly
       scalable web and mobile applications using the latest tools in development. With a focus on end-user usability and
       security, I can help your organization reach high heights with a very efficient approach.
-    </Subtitle>
+    </Subtitle> */}
   </ProfileWrapperContainer>
 );
 

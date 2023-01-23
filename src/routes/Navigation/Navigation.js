@@ -11,6 +11,7 @@ import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 import Toggle from '../../components/DarkMode/Toggler';
 import { Container } from '../../global-styles';
+
 import {
   Nav,
   NavbarContainer,
@@ -21,7 +22,7 @@ import {
   NavItemSocialIconLink,
   NavItemSocialIcon,
   NavItemToggle,
-
+  LogoContainer,
 } from './Navigation.Styles';
 
 const { Avatar, ProfileWrapper, Img, Heading, Subtitle, ProfileWrapperContainer } = require('../../components/Profile/ProfileStyles');
@@ -53,8 +54,8 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Container>
-          <Nav>
+        <Nav>
+          <NavbarContainer>
             <MobileIcon onClick={handleClick}>
               {click ? (
                 <FaTimes
@@ -77,25 +78,29 @@ const NavBar = () => {
                 />
               )}
             </MobileIcon>
-          
+            <LogoContainer to="/">
+              <Avatar>
+                <Img src="../../images/avatar.webp" alt="Boa" />
+              </Avatar>
+            </LogoContainer>
+
+
             <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <Avatar>
-                  <Img src="../../images/avatar.webp" alt="Boa" />
-                </Avatar>
-              </NavItem>
+
+
               {/* <NavItem>
                 <NavLinks to="/">HOME</NavLinks>
               </NavItem> */}
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="/about_me">ABOUT</NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLinks to="/curated_projects">PORTFOLIO</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/contact_me">CONTACT</NavLinks>
               </NavItem>
+
               <NavItemSocialIcon>
                 <NavItemSocialIconLink
                   href="https://github.com/boamatule"
@@ -106,6 +111,7 @@ const NavBar = () => {
                   <FaGithub style={{ width: '24px', height: '24px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
+
               <NavItemSocialIcon>
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boa-matule-2082b068/"
@@ -116,15 +122,18 @@ const NavBar = () => {
                   <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIcon>
+              <NavItem>
+                <NavItemToggle whileHover={{ scale: 1, rotate: 0 }}>
+                  <Toggle theme={theme} toggleTheme={themeToggler} />
+                </NavItemToggle>
+              </NavItem>
             </NavMenu>
-            {/* <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}>
-              <Toggle theme={theme} toggleTheme={themeToggler} />
-            </NavItemToggle> */}
-          </Nav>
-        </Container>
+          </NavbarContainer>
+
+        </Nav>
         <Outlet />
       </IconContext.Provider>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 };
 

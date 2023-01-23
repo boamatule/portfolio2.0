@@ -1,29 +1,47 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
   width: 100%;
   align-items: center;
-  /* position: fixed; */
   top: 0;
-  z-index: 1;
+  z-index: 999;
 
   @media screen and (max-width: 800px) {
     width: 100%;
     height: none;
     top: 0px;
-    /* position: fixed; */
     align-items: center;
     justify-content: center;
     background: transparent;
   }
 `;
 
-export const NavbarContainer = styled.div`
-  display: fixed;
+export const NavbarContainer = styled(Container)`
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+`;
+
+
+export const LogoContainer = styled(Link)`
+	color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 160px;
+
+	@media screen and (max-width: 800px) {
+
+	}
 `;
 
 export const MobileIcon = styled.div`
@@ -42,17 +60,17 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+  box-sizing: border-box;
   display: flex;
   height: 80px;
   align-items: center;
   list-style: none;
   text-align: center;
   letter-spacing: 2px;
-  cursor: pointer;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  /* font-size: 10rem; */
   margin-top: 100px;
+  cursor: pointer;
+
   /* padding: 0px 100px; */
 
 
@@ -70,27 +88,13 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  /* border-bottom: 1px solid transparent;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: flex-start; */
-  display: block;
-  flot: left;
-  margin: 10px;
-
-  &:hover {
-    border-bottom: 4px solid yellow;
-    overflow: hidden;
-  }
+  margin-top: 80px;
+  margin-left: 40px;
 
   @media screen and (max-width: 800px) {
-    width: 22%;
     align-items: center;
     text-align: center;
     justify-content: center;
-    &:hover {
-      border-bottom: 2px solid #4568dc;
-    }
   }
 `;
 
@@ -99,25 +103,26 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   text-decoration: none;
   align-items: center;
   padding: 10px 40px;
-  /* height: 100%; */
+  height: 100%;
+
+  &:hover {
+    color: yellow;
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
 
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
-    font-size: 700;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     padding: 4px 0px;
-
-    &:hover {
-      transition: 0.3s ease-out;
-    }
   }
 `;
 
@@ -146,16 +151,13 @@ export const NavBtnLink = styled(Link)`
 
 export const NavItemSocialIconLink = styled.a`
   display: flex;
-  font-weight: normal;
   text-decoration: none;
   align-items: center;
   padding: 0.5rem 4.2rem;
-  height: 100%;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+  margin-top: 80px;
 
-  &:hover {
-    transition: 0.5s ease;
-  }
+
 
   @media screen and (max-width: 800px) {
     padding: 2.4rem;
@@ -166,21 +168,19 @@ export const NavItemSocialIconLink = styled.a`
 
     &:hover {
       transition: 0.3s ease;
-      color: red;
     }
   }
 `;
 
 export const NavItemSocialIcon = styled.div`
   &:hover {
-    transition: all 1.9s ease;
+    color: yellow;
+    /* border-bottom: 4px solid #fff; */
+    transition: all 0.2s ease-out;
   }
 
   @media screen and (max-width: 800px) {
     display: none;
-    &:hover {
-      color: #4568dc;
-    }
   }
 `;
 
@@ -188,17 +188,10 @@ export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
   padding: 30px;
-  &:hover {
-    color: none;
-  }
 
   @media screen and (max-width: 800px) {
     height: 80px;
     padding: 30px;
     background-color: none;
-
-    &:hover {
-      transition: none;
-    }
   }
 `;

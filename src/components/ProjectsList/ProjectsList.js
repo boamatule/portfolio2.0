@@ -30,7 +30,8 @@ const ProjectsList = () => {
             A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
             <a
               style={{
-                color: '#6969FB',
+                color: 'yellow',
+                fontSize: '14px', 
                 backgroundColor: 'transparent',
               }}
               href="https://github.com/boamatule"

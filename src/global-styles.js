@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     background-color: #000000;
 	}
   * {
@@ -59,6 +59,8 @@ export const Button = styled.button`
   outline: none;
   cursor: pointer;
   background: #4568dc;
+  /* background: #4568dc; */
+
   transition: 0.5s;
   border-radius: 2px;
 

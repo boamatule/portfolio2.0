@@ -15,12 +15,12 @@ export const ContactContainer = styled(Container)`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   letter-spacing: 1.6px;
   line-height: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 20px;
   justify-content: flex-start;
   color: yellow;
   /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
@@ -44,7 +44,7 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   background: none;
-  border: none;
+  /* border: none; */
   color: grey;
   font-weight: normal;
   letter-spacing: 1.6px;
@@ -56,14 +56,17 @@ export const Input = styled.input`
   border: 2px solid yellow;
   border-radius: 2px;
   padding: 8px;
+
   &:last-of-type {
     margin-bottom: 20px;
     font-size: 12px;
   }
+
   &:focus {
     outline: true;
     box-shadow: none;
   }
+
   @media screen and (max-width: 800px) {
     font-size: 12px;
   }
@@ -71,8 +74,8 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   background: none;
-  border: 0;
-  border: none;
+  /* border: 0;
+  border: none; */
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 1.6px;
@@ -85,10 +88,12 @@ export const TextArea = styled.textarea`
   border-radius: 2px;
   padding: 8px;
   height: 200px;
+
   &:focus {
     outline: true;
     box-shadow: none;
   }
+
   @media screen and (max-width: 800px) {
     font-size: 12px;
   }
@@ -105,7 +110,7 @@ export const ContactButton = styled(Button)`
   font-size: 12px;
   background-color: none;
   color: white;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: normal;
   border: 4px;
   cursor: pointer;
