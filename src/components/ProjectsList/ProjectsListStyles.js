@@ -18,7 +18,7 @@ export const Title = styled.p`
   margin-bottom: 24px;
   /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
   }
 `;
@@ -31,19 +31,30 @@ export const Heading = styled.h1`
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 20px;
-
   color: yellow;
-  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
-  /* padding-top: 10px; */
   margin-bottom: 20px;
 
-  @media screen and (max-width: 800px) {
+  &::after {
+    content: "Curated projects";
+    margin-left: 0px;
+    top: 0px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    line-height: 20px;
+    border-bottom: 2px solid yellow;
+    justify-content: flex-start;
+    text-align: flex-start;
+  }
+
+  @media screen and (max-width: 960px) {
     font-size: 12px;
-    line-height: 1.8rem;
-    letter-spacing: 1.1px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* line-height: 1.8rem;
+    letter-spacing: 1.1px; */
+    justify-content: flex-start;
+    text-align: flex-start;
   }
 `;
 
@@ -91,7 +102,7 @@ export const Text = styled.p`
   padding-left: 0px;
   text-align: center;
   background: transparent;
-  color: grey;
+  color: #f5f5f5;
 `;
 
 export const Image = styled(LazyLoadImage)`

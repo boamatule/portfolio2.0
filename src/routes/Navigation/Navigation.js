@@ -78,7 +78,7 @@ const NavBar = () => {
                 />
               )}
             </MobileIcon>
-            <LogoContainer to="/">
+            <LogoContainer to="/" aria-current="homepage">
               <Avatar>
                 <Img src="../../images/avatar.webp" alt="Boa" />
               </Avatar>
@@ -86,14 +86,6 @@ const NavBar = () => {
 
 
             <NavMenu onClick={handleClick} click={click}>
-
-
-              {/* <NavItem>
-                <NavLinks to="/">HOME</NavLinks>
-              </NavItem> */}
-              {/* <NavItem>
-                <NavLinks to="/about_me">ABOUT</NavLinks>
-              </NavItem> */}
               <NavItem>
                 <NavLinks to="/curated_projects">PORTFOLIO</NavLinks>
               </NavItem>

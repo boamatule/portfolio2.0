@@ -15,15 +15,28 @@ export const ContactContainer = styled(Container)`
   }
 `;
 
-export const Title = styled.h1`
-  letter-spacing: 1.6px;
+export const Title = styled.h2`
+  /* letter-spacing: 1.6px;
   line-height: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 20px;
   justify-content: flex-start;
-  color: yellow;
-  /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
+  color: yellow; */
+
+  &::after {
+    content: "Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.";
+    margin-left: 0px;
+    top: 40px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    line-height: 20px;
+  }
+
+
   @media screen and (max-width: 800px) {
     font-size: 14px;
     letter-spacing: 1.6px;

@@ -6,11 +6,20 @@ export const FooterContainer = styled(Container)`
   text-align: center;
   justify-content: center;
   display: flex;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
   height: 80px;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')};
+
+  @media screen and (min-width: 960px) {
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1px;
+    letter-spacing: 1px;
+  }
+  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
 `;
 
 export const FooterWrapper = styled.div`
@@ -37,12 +46,12 @@ export const Copyright = styled.p`
   color: yellow;
   margin: 0px 0px;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 960px) {
     font-weight: normal;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1px;
     letter-spacing: 1px;
   }

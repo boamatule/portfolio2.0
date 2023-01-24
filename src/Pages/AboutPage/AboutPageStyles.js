@@ -34,10 +34,22 @@ export const Heading = styled.h2`
   align-items: center;
   font-size: 16px;
   margin-bottom: 0px;
-  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
   padding: 0px 44px;
   color: yellow;
 
+  &::after {
+    content: "Hello, I'm Boa Matule.";
+    margin-left: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    line-height: 20px;
+    border-bottom: 2px solid yellow;
+    margin-bottom: 20px;
+
+  }
 
   @media screen and (max-width: 800px) {
     font-weight: bold;

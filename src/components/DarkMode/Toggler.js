@@ -7,8 +7,6 @@ let Moon;
 
 Sun = Moon = styled.svg`
   position: stycky;
-  /* top: 40px;
-  right: 6rem; */
   color: yellow;
   transition: all transform 2s;
   cursor: pointer;
