@@ -84,7 +84,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   text-align: center;
   justify-content: center;
-  /* letter-spacing: 2px; */
   text-decoration: none;
   margin-top: 80px;
   cursor: pointer;
@@ -112,10 +111,9 @@ export const NavLinks = styled(Link)`
   display: flex;
   font-size: 16px;
   color: grey;
-  /* font-family: 'IBM Plex Mono', monospace; */
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 
   text-decoration: none;
   align-items: center;
@@ -123,7 +121,6 @@ export const NavLinks = styled(Link)`
 
   &:hover {
     color: yellow;
-    /* border-bottom: 4px solid #fff; */
     transition: all 0.2s ease-out;
   }
 

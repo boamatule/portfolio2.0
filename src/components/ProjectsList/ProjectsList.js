@@ -25,7 +25,7 @@ const ProjectsList = () => {
     <Container>
       <ProjectsProvider>
         <ProjectContainer>
-          <Heading />
+          <Heading>Projects</Heading>
           <SubTitle>
             A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
             <a

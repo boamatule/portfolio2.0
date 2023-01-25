@@ -15,13 +15,28 @@ export const GlobalStyles = createGlobalStyle`
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-  @media only screen and (max-width: 1200px){
+  /* font-size: 62.5%; */
+/*   
+  @media screen and (min-width: 640px) {
     font-size: 58%;
+
   }
-  @media only screen and (min-width: 1980px){
+
+  @media screen and (min-width: 768px) {
+    font-size: 58%;
+
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 58%;
+
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 70%;
+
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 80%;
+  } */
 }
 a {
   text-decoration: none;
@@ -36,19 +51,53 @@ export const Container = styled.div`
   margin-left: auto;
   padding-right: 4px;
   padding-left: 4px;
-  background: none;
 
-  /** Breakpoints:
-  sm: min-width: 640px;
-  md: min-width: 768px;
-  lg: min-width: 1024px;
-  xl: min-width: 1280px;
-  2xl: min-width: 1536px;
-**/
-  @media screen and (max-width: 800px) {
-    padding-left: 4px;
+  @media screen and (min-width: 600px) {
+    /* margin-right: auto;
+    margin-left: auto; */
     padding-right: 4px;
+  padding-left: 4px
   }
+
+  @media screen and (max-width:768px) {
+  padding-right: 4px;
+  padding-left: 4px
+}
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  /* max-width: 1200px; */
+}
+@media screen and (min-width: 1025px) {
+  /* max-width: 1400px; */
+} 
+
+/*     
+  @media screen and (min-width: 640px) {
+    width: 100%;
+  max-width: 1200px;
+  padding-right: 2px;
+  padding-left: 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  padding-right: 2px;
+  padding-left: 2px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  padding-right: 4px;
+  padding-left: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+  padding-right: 4px;
+  padding-left: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+  padding-right: 4px;
+  padding-left: 4px;
+  } */
 `;
 
 export const Button = styled.button`

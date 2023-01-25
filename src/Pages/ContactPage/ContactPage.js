@@ -44,7 +44,9 @@ const ContactPage = () => {
 
   return (
     <ContactContainer>
-      <Title />
+      <Title>
+        Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.
+      </Title>
       <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
         <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
         <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />

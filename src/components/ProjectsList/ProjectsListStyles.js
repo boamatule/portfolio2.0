@@ -24,38 +24,31 @@ export const Title = styled.p`
 `;
 
 export const Heading = styled.h1`
-  padding: 0px 30px;
   font-weight: bold;
-  letter-spacing: 1.6px;
   line-height: 20px;
+  letter-spacing: 2px;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 20px;
+  margin-bottom: 0px;
+  padding: 0px 44px;
   color: yellow;
-  margin-bottom: 20px;
 
-  &::after {
-    content: "Curated projects";
-    margin-left: 0px;
-    top: 0px;
-    margin-bottom: 80px;
-    font-size: 20px;
-    color: grey;
-    font-weight: bold;
-    letter-spacing: 1.6px;
-    line-height: 20px;
-    border-bottom: 2px solid yellow;
-    justify-content: flex-start;
-    text-align: flex-start;
+  @media screen and (min-width: 600px) {
+    padding-right: 4px;
+    padding-left: 4px
   }
 
-  @media screen and (max-width: 960px) {
-    font-size: 12px;
-    /* line-height: 1.8rem;
-    letter-spacing: 1.1px; */
-    justify-content: flex-start;
-    text-align: flex-start;
+  @media screen and (max-width:768px) {
+    padding-right: 4px;
+    padding-left: 4px
   }
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  /* max-width: 1200px; */
+}
+@media screen and (min-width: 1025px) {
+  /* max-width: 1400px; */
+} 
 `;
 
 export const CardContainer = styled.div`
@@ -224,23 +217,36 @@ export const BoxStyled = styled(motion.div)`
   }
 `;
 
-export const SubTitle = styled.h2`
+export const SubTitle = styled.p`
+  margin-top: 20px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 20px;
-  padding: 0px 30px;
-  font-weight: normal;
-  justify-content: flex-start;
-  text-align: centert;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
   background: transparent;
-  margin-top: 20px;
-
-  @media screen and (max-width: 800px) {
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 20px;
-    font-weight: normal;
-    padding: 0px 10px;
+  padding: 0px 44px;
+    
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-right: 4px;
+    padding-left: 4px
   }
+
+  @media screen and (max-width:768px) {
+  max-width: 100%;
+  padding-right: 4px;
+  padding-left: 4px
+}
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  /* max-width: 1200px; */
+}
+@media screen and (min-width: 1025px) {
+  /* max-width: 1400px; */
+} 
+
 `;

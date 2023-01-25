@@ -3,39 +3,48 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  margin-top: 80px;
+  margin-top: 120px;
   ${Container}
-  justify-content: center;
-  width: 60%;
-  text-align: center;
-  padding: 40px 40px;
+  justify-content: flex-start;
+  text-align: flex-start;
+  /* padding: 40px 40px; */
+
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
   }
 `;
 
-export const Title = styled.h2`
-  /* letter-spacing: 1.6px;
-  line-height: 24px;
+export const Title = styled.p`
   font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 24px;
   justify-content: flex-start;
-  color: yellow; */
+  text-align: flex-start;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: yellow;
 
-  &::after {
-    content: "Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.";
-    margin-left: 0px;
-    top: 40px;
-    margin-bottom: 80px;
-    font-size: 20px;
-    color: grey;
-    font-weight: bold;
-    letter-spacing: 1.6px;
-    line-height: 20px;
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-right: 4px;
+    padding-left: 4px
   }
 
+  @media screen and (max-width:768px) {
+    max-width: 100%;
+    padding-right: 4px;
+    padding-left: 4px
+  }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
+  }
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
@@ -123,8 +132,8 @@ export const ContactButton = styled(Button)`
   font-size: 12px;
   background-color: none;
   color: white;
-  text-transform: none;
-  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: bold;
   border: 4px;
   cursor: pointer;
   justify-content: center;

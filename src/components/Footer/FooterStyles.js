@@ -9,17 +9,6 @@ export const FooterContainer = styled(Container)`
   bottom: 0;
   width: 100%;
   height: 80px;
-
-  @media screen and (min-width: 960px) {
-    font-weight: normal;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 14px;
-    line-height: 1px;
-    letter-spacing: 1px;
-  }
-  /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#EEE142')}; */
 `;
 
 export const FooterWrapper = styled.div`
@@ -46,13 +35,19 @@ export const Copyright = styled.p`
   color: yellow;
   margin: 0px 0px;
 
-  @media screen and (min-width: 960px) {
-    font-weight: normal;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 800px) {
+    /* display: none; */
+    font-size: 12px;
+
+  }
+
+  @media screen and (min-width: 1000px) {
+    /* background-color: #0000ff; */
     font-size: 14px;
-    line-height: 1px;
-    letter-spacing: 1px;
+
   }
 `;

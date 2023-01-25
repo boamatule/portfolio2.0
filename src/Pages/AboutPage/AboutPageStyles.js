@@ -1,12 +1,12 @@
 import styled from 'styled-components';
+import { Container } from '../../global-styles';
 
-export const AboutWrapper = styled.div`
-  border-radius: 0.75rem /* 12px */;
+
+export const AboutWrapper = styled(Container)`
   margin-top: 140px;
-  /* padding: 0px 40px; */
 `;
 
-export const Description = styled.h2`
+export const Description = styled.p`
   margin-top: 20px;
   color: grey;
   font-size: 16px;
@@ -18,46 +18,56 @@ export const Description = styled.h2`
   background: transparent;
   padding: 0px 44px;
 
-  @media screen and (max-width: 800px) {
-    font-size: 12px;
-    margin-top: 0px;
-    padding: 0px 20px;
-    justify-content: center;
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-right: 4px;
+    padding-left: 4px
   }
+
+  @media screen and (max-width:768px) {
+    max-width: 100%;
+    padding-right: 4px;
+    padding-left: 4px
+}
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  /* max-width: 1200px; */
+}
+@media screen and (min-width: 1025px) {
+  /* max-width: 1400px; */
+} 
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h1`
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 20px;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
+  justify-content: flex-start;
+  text-align: flex-start;
+  font-size: 20px;
   margin-bottom: 0px;
   padding: 0px 44px;
   color: yellow;
 
-  &::after {
-    content: "Hello, I'm Boa Matule.";
-    margin-left: 0px;
-    top: 0px;
-    font-size: 20px;
-    color: grey;
-    font-weight: bold;
-    letter-spacing: 1.6px;
-    line-height: 20px;
-    border-bottom: 2px solid yellow;
-    margin-bottom: 20px;
-
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-right: 4px;
+    padding-left: 4px
   }
 
-  @media screen and (max-width: 800px) {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.8rem;
-    letter-spacing: 1.1px;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
+  @media screen and (max-width:768px) {
+    max-width: 100%;
+    padding-right: 4px;
+    padding-left: 4px
   }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
+  } 
 `;
