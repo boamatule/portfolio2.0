@@ -23,13 +23,13 @@ export const Description = styled.p`
     /* margin-right: auto;
     margin-left: auto; */
     padding-right: 4px;
-    padding-left: 4px
+  padding-left: 4px
   }
 
   @media screen and (max-width:768px) {
-    max-width: 100%;
-    padding-right: 4px;
-    padding-left: 4px
+  max-width: 100%;
+  padding-right: 4px;
+  padding-left: 4px
 }
 @media screen and (min-width: 769px) and (max-width:1024px) {
   /* max-width: 1200px; */
@@ -41,8 +41,8 @@ export const Description = styled.p`
 
 export const Heading = styled.h1`
   font-weight: bold;
-  letter-spacing: 2px;
   line-height: 20px;
+  letter-spacing: 2px;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 20px;
@@ -51,23 +51,18 @@ export const Heading = styled.h1`
   color: yellow;
 
   @media screen and (min-width: 600px) {
-    max-width: 100%;
-    /* margin-right: auto;
-    margin-left: auto; */
     padding-right: 4px;
     padding-left: 4px
   }
 
   @media screen and (max-width:768px) {
-    max-width: 100%;
     padding-right: 4px;
     padding-left: 4px
   }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
-  } 
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  /* max-width: 1200px; */
+}
+@media screen and (min-width: 1025px) {
+  /* max-width: 1400px; */
+}
 `;

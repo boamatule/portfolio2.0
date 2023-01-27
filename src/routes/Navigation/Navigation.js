@@ -84,7 +84,6 @@ const NavBar = () => {
               </Avatar>
             </LogoContainer>
 
-
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to="/curated_projects">PORTFOLIO</NavLinks>
@@ -121,7 +120,6 @@ const NavBar = () => {
               </NavItem>
             </NavMenu>
           </NavbarContainer>
-
         </Nav>
         <Outlet />
       </IconContext.Provider>

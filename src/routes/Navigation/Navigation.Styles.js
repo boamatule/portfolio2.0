@@ -9,10 +9,26 @@ export const Nav = styled(motion.div)`
   align-items: center;
   top: 0;
   z-index: 999;
+/* 
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 4px;
+    padding-left: 4px
+  }
 
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (max-width:768px) {
+    max-width: 100%;
+    padding-right: 4px;
+    padding-left: 4px
+  } */
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
 
@@ -21,9 +37,9 @@ export const NavbarContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   height: 80px;
-  max-width: 1500px;
+  /* max-width: 1500px; */
 
-  @media (max-width: 767px) {
+  /* @media (max-width: 767px) {
     height: 60px;
   }
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -31,8 +47,28 @@ export const NavbarContainer = styled(Container)`
   }
   @media (min-width: 1200px) {
     height: 100px;
+  } */
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-right: 4px;
+    padding-left: 4px
+  }
+
+  @media screen and (max-width:768px) {
+    padding-right: 4px;
+    padding-left: 4px
+  }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
+
 
 export const LogoContainer = styled(Link)`
   justify-self: start;
@@ -88,24 +124,74 @@ export const NavMenu = styled.ul`
   margin-top: 80px;
   cursor: pointer;
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
+  @media screen and (min-width: 600px) {
+    display: flex;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 80px;
+  cursor: pointer;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (max-width:768px) {
+    /* max-width: 100%; */
+  }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
 
 export const NavItem = styled.li`
   margin-top: 80px;
+  @media screen and (min-width: 600px) {
+    margin-top: 80px;
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    font-size: 14px;
+  }
+
+  @media screen and (max-width:768px) {
+    margin-top: 80px;
+
   }
 `;
 
+export const NavItemBtn = styled.li`
+  font-family: 'Montserrat', sans-serif;
+
+  /* @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
+  }
+  
+`;
 
 export const NavLinks = styled(Link)`
   display: flex;
@@ -114,7 +200,6 @@ export const NavLinks = styled(Link)`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   letter-spacing: 4px;
-
   text-decoration: none;
   align-items: center;
   padding: 10px 40px;
@@ -124,36 +209,23 @@ export const NavLinks = styled(Link)`
     transition: all 0.2s ease-out;
   }
 
-  @media screen and (max-width: 960px) {
-    /* text-align: center;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center; */
-    padding: 4px 0px;
-    height: 100%;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    padding: 10px 20px;
+  @media screen and (min-width: 600px) {
     font-size: 14px;
-    font-weight: bold;
-  }
-`;
-
-export const NavItemBtn = styled.li`
-  font-family: 'Montserrat', sans-serif;
-
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding: 10px 20px;
+    letter-spacing: 4px;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (max-width:768px) {
+    font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+  }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
 
@@ -208,94 +280,7 @@ export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
   padding: 30px;
-
-  /* @media screen and (max-width: 800px) {
-    height: 80px;
-    padding: 30px;
-    background-color: none;
-  } */
 `;
 
 
 
-// @media screen and (max-width: 960px) {
-//   .NavbarItems {
-//     position: relative;
-//   }
-
-//   .nav-menu {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     height: 90vh;
-//     position: absolute;
-//     top: 80px;
-//     left: -100%;
-//     opacity: 1;
-//     transition: all 0.5s ease;
-//   }
-
-//   .nav-menu.active {
-//     background: #242222;
-//     left: 0;
-//     opacity: 1;
-//     transition: all 0.5s ease;
-//     z-index: 1;
-//   }
-
-//   .nav-links {
-//     text-align: center;
-//     padding: 2rem;
-//     width: 100%;
-//     display: table;
-//   }
-
-//   .nav-links:hover {
-//     background-color: #fff;
-//     color: #242424;
-//     border-radius: 0;
-//   }
-
-//   .navbar-logo {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     transform: translate(25%, 50%);
-//   }
-
-//   .menu-icon {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 60%);
-//     font-size: 1.8rem;
-//     cursor: pointer;
-//   }
-
-//   .fa-times {
-//     color: #fff;
-//     font-size: 2rem;
-//   }
-
-//   .nav-links-mobile {
-//     display: block;
-//     text-align: center;
-//     margin: 2rem auto;
-//     border-radius: 4px;
-//     width: 80%;
-//     text-decoration: none;
-//     font-size: 1.5rem;
-//     background-color: transparent;
-//     color: #fff;
-//     padding: 14px 20px;
-//     border: 1px solid #fff;
-//     transition: all 0.3s ease-out;
-//   }
-
-//   .nav-links-mobile:hover {
-//     background: #fff;
-//     color: #242424;
-//     transition: 250ms;
-//   }
-// }
