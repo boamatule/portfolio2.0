@@ -15,28 +15,6 @@ export const GlobalStyles = createGlobalStyle`
 }
 html {
   box-sizing: border-box;
-  /* font-size: 62.5%; */
-/*   
-  @media screen and (min-width: 640px) {
-    font-size: 58%;
-
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 58%;
-
-  }
-  @media screen and (min-width: 1024px) {
-    font-size: 58%;
-
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 70%;
-
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 80%;
-  } */
 }
 a {
   text-decoration: none;
@@ -68,35 +46,6 @@ export const Container = styled.div`
 @media screen and (min-width: 1025px) {
   /* max-width: 1400px; */
 } 
-
-/*     
-  @media screen and (min-width: 640px) {
-    width: 100%;
-  max-width: 1200px;
-  padding-right: 2px;
-  padding-left: 2px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  padding-right: 2px;
-  padding-left: 2px;
-  }
-  @media screen and (min-width: 1024px) {
-    width: 100%;
-  padding-right: 4px;
-  padding-left: 4px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 100%;
-  padding-right: 4px;
-  padding-left: 4px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 100%;
-  padding-right: 4px;
-  padding-left: 4px;
-  } */
 `;
 
 export const Button = styled.button`

@@ -19,118 +19,70 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
-
   z-index: 1;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
-  
-  @media screen and (min-width: 600px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  padding-right: 10px;
+  padding-left: 10px;
 
-  @media screen and (max-width:768px) {
-    /* max-width: 100%; */
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
+  @media screen and (max-width: 960px) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 `;
 
 export const LogoContainer = styled(Link)`
-  justify-self: start;
+  justify-self: center;
   display: flex;
   align-items: center;
-  margin: 40px 150px;
+  margin: 40px 0px 60px 0px;
   cursor: pointer;
   position: absolute;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 960px) {
     justify-self: start;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 40px 150px;
-  }
-
-  @media screen and (max-width:768px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 40px 150px;
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 40px 150px;
-  }
-  @media screen and (min-width: 1025px) {
+    margin-left: 20px;
   }
 `;
 
 export const NavMenu = styled.ul`
+  background: transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
   list-style: none;
-  text-align: center;
+  /* text-align: center; */
   justify-content: flex-end;
+  margin: 0 100px;
 
-  @media screen and (min-width: 600px) {
+
+  @media screen and (max-width: 960px) {
   display: flex;
-  align-items: center;
-  justify-content: center;
   list-style: none;
   text-align: center;
   justify-content: flex-end;
+  /* margin-left: 20px; */
   }
-
-  @media screen and (max-width:768px) {
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  justify-content: flex-end;
-}
-@media screen and (min-width: 769px) and (max-width:1024px) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  justify-content: flex-end;
-}
-@media screen and (min-width: 1025px) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  justify-content: flex-end;
-}
 `;
 
 export const NavItem = styled.li`
   margin-top: 80px;
   height: 80px;
 
-  @media screen and (min-width: 600px) {
+
+  @media screen and (max-width: 960px) {
     height: 80px;
+    margin-top: 100px;
   }
 `;
 
 export const NavLinks = styled(Link)`
+  background: transparent;
   color: #fff;
   display: flex;
   align-items: center;
@@ -143,28 +95,16 @@ export const NavLinks = styled(Link)`
   font-weight: bold;
   letter-spacing: 4px;
 
+
   &:hover {
     color: yellow;
     transition: all 0.2s ease-out;
   }
 
-  @media screen and (min-width: 600px) {
-    /* font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 4px; */
-  }
-
-  @media screen and (max-width:768px) {
-    /* font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 4px; */
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
+  @media screen and (max-width: 960px) {
+    font-size: 14px;
+    padding: 0.4rem 0.9rem;
+    letter-spacing: 2px;
   }
 `;
 
@@ -187,35 +127,30 @@ export const NavItemSocialIconLink = styled.a`
   padding: 0.5rem 4.2rem;
   transition: all 0.5s ease-out;
   margin-top: 80px;
+  cursor: pointer;
 
-  @media screen and (max-width: 800px) {
-    padding: 2.4rem;
+
+
+  @media screen and (max-width: 960px) {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 0px;
-
-    &:hover {
-      transition: 0.3s ease;
-    }
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin-top: 92px;
   }
 `;
 
 export const NavItemSocialIcon = styled.div`
-  &:hover {
+    &:hover {
     color: yellow;
     transition: all 0.2s ease-out;
-  }
-
-  @media screen and (max-width: 960px) {
-    display: block;
   }
 `;
 
 export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
-  padding: 28px;
+  padding: 30px;
 `;
 
 
