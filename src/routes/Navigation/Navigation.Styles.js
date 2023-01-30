@@ -5,134 +5,32 @@ import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 80px;
   top: 0;
   z-index: 999;
-/* 
-  @media screen and (min-width: 600px) {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 4px;
-    padding-left: 4px
-  }
+  position: sticky;
 
-  @media screen and (max-width:768px) {
-    max-width: 100%;
-    padding-right: 4px;
-    padding-left: 4px
-  } */
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
-  }
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   height: 80px;
-  /* max-width: 1500px; */
 
-  /* @media (max-width: 767px) {
-    height: 60px;
-  }
-  @media (min-width: 768px) and (max-width: 1199px) {
-    align-items: flex-start;
-  }
-  @media (min-width: 1200px) {
-    height: 100px;
-  } */
-  @media screen and (min-width: 600px) {
-    max-width: 100%;
-    /* margin-right: auto;
-    margin-left: auto; */
-    padding-right: 4px;
-    padding-left: 4px
-  }
-
-  @media screen and (max-width:768px) {
-    padding-right: 4px;
-    padding-left: 4px
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
-  }
-`;
-
-
-export const LogoContainer = styled(Link)`
-  justify-self: start;
-  margin-left: -140px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-top: 200px;
-  position: flex;
-  cursor: pointer;
-
-  @media screen and (max-width: 960px) {
-    justify-self: start;
-    margin-left: 100px;
-    text-decoration: none;
-    display: flex;
-    /* align-items: center; */
-    margin-top: 200px;
-    position: flex;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-basis: 100%;
-    text-align: start;
-    /* margin-bottom: 1rem; */
-  }
-`;
-
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 800px) {
-    display: none;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    transform: translate(-100%, 60%);
-    cursor: pointer;
-    background: none;
-    color: #4568dc;
-  }
-`;
-
-export const NavMenu = styled.ul`
-  box-sizing: border-box;
-  display: flex;
-  height: 80px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-top: 80px;
-  cursor: pointer;
-
+  z-index: 1;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  
   @media screen and (min-width: 600px) {
     display: flex;
-  height: 80px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-top: 80px;
-  cursor: pointer;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width:768px) {
@@ -147,62 +45,103 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  margin-top: 80px;
-  @media screen and (min-width: 600px) {
-    margin-top: 80px;
+export const LogoContainer = styled(Link)`
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  margin: 40px 150px;
+  cursor: pointer;
+  position: absolute;
 
+  @media screen and (min-width: 600px) {
+    justify-self: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px 150px;
   }
 
   @media screen and (max-width:768px) {
-    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px 150px;
+  }
 
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px 150px;
+  }
+  @media screen and (min-width: 1025px) {
   }
 `;
 
-export const NavItemBtn = styled.li`
-  font-family: 'Montserrat', sans-serif;
-
-  /* @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
 
   @media screen and (min-width: 600px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
   }
 
   @media screen and (max-width:768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 1025px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+}
+`;
 
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
+export const NavItem = styled.li`
+  margin-top: 80px;
+  height: 80px;
+
+  @media screen and (min-width: 600px) {
+    height: 80px;
   }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
-  }
-  
 `;
 
 export const NavLinks = styled(Link)`
+  color: #fff;
   display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
   font-size: 16px;
   color: grey;
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   letter-spacing: 4px;
-  text-decoration: none;
-  align-items: center;
-  padding: 10px 40px;
 
   &:hover {
     color: yellow;
@@ -210,15 +149,15 @@ export const NavLinks = styled(Link)`
   }
 
   @media screen and (min-width: 600px) {
-    font-size: 14px;
+    /* font-size: 14px;
     padding: 10px 20px;
-    letter-spacing: 4px;
+    letter-spacing: 4px; */
   }
 
   @media screen and (max-width:768px) {
-    font-size: 14px;
+    /* font-size: 14px;
     padding: 10px 20px;
-    letter-spacing: 4px;
+    letter-spacing: 4px; */
   }
 
   @media screen and (min-width: 769px) and (max-width:1024px) {
@@ -249,8 +188,6 @@ export const NavItemSocialIconLink = styled.a`
   transition: all 0.5s ease-out;
   margin-top: 80px;
 
-
-
   @media screen and (max-width: 800px) {
     padding: 2.4rem;
     display: flex;
@@ -267,20 +204,66 @@ export const NavItemSocialIconLink = styled.a`
 export const NavItemSocialIcon = styled.div`
   &:hover {
     color: yellow;
-    /* border-bottom: 4px solid #fff; */
     transition: all 0.2s ease-out;
   }
 
   @media screen and (max-width: 960px) {
-    display: none;
+    display: block;
   }
 `;
 
 export const NavItemToggle = styled(motion.div)`
   height: 80px;
   display: flex;
-  padding: 30px;
+  padding: 28px;
 `;
 
 
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+    background: none;
+    color: #4568dc;
+  }
+`;
+
+export const NavItemBtn = styled.li`
+  /* font-family: 'Montserrat', sans-serif; */
+
+  /* @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
+  }
+  
+`;
 

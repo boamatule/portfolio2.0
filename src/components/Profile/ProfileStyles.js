@@ -33,39 +33,50 @@ export const Avatar = styled.div`
   text-align: flex-start;
   justify-content: flex-start;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
+  @media screen and (min-width: 600px) {
+    position: relative;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    text-align: flex-start;
+    justify-content: flex-start;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+
+  @media screen and (max-width:768px) {
+    /* max-width: 100%; */
   }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
 
 export const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 2px solid yellow;
+  margin-right: 0.5rem;
 
-  @media screen and (max-width: 960px) {
-    width: 80px;
-    height: 80px;
-  }
 
-  @media screen and (max-width: 768px) {
-    width: 70px;
-    height: 70px;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 60px;
+  @media screen and (min-width: 600px) {
+    /* width: 60px;
     height: 60px;
+    border-radius: 50%; */
+  }
+
+  @media screen and (max-width:768px) {
+    /* max-width: 100%; */
+  }
+
+  @media screen and (min-width: 769px) and (max-width:1024px) {
+    /* max-width: 1200px; */
+  }
+  @media screen and (min-width: 1025px) {
+    /* max-width: 1400px; */
   }
 `;
 

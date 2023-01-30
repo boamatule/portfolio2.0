@@ -10,7 +10,6 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 import Toggle from '../../components/DarkMode/Toggler';
-import { Container } from '../../global-styles';
 
 import {
   Nav,
@@ -25,7 +24,14 @@ import {
   LogoContainer,
 } from './Navigation.Styles';
 
-const { Avatar, ProfileWrapper, Img, Heading, Subtitle, ProfileWrapperContainer } = require('../../components/Profile/ProfileStyles');
+import {
+  Avatar, 
+  ProfileWrapper, 
+  Img, 
+  Heading, 
+  Subtitle, 
+  ProfileWrapperContainer
+} from '../../components/Profile/ProfileStyles';
 
 
 const NavBar = () => {
@@ -56,7 +62,7 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav>
           <NavbarContainer>
-            <MobileIcon onClick={handleClick}>
+            {/* <MobileIcon onClick={handleClick}>
               {click ? (
                 <FaTimes
                   style={{
@@ -77,11 +83,9 @@ const NavBar = () => {
                   }}
                 />
               )}
-            </MobileIcon>
+            </MobileIcon> */}
             <LogoContainer to="/" aria-current="homepage">
-              <Avatar>
                 <Img src="../../images/avatar.webp" alt="Boa" />
-              </Avatar>
             </LogoContainer>
 
             <NavMenu onClick={handleClick} click={click}>
