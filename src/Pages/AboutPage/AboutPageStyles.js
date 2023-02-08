@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
-  margin-top: 140px;
+  margin-top: 200px;
 `;
 
 export const Description = styled.p`
@@ -16,27 +16,15 @@ export const Description = styled.p`
   justify-content: center;
   align-items: center;
   background: transparent;
-  padding: 0px 44px;
+  /* padding: 0px 44px; */
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 960px) {
     max-width: 100%;
-    /* margin-right: auto;
-    margin-left: auto; */
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 4px;
-  padding-left: 4px
-  }
-
-  @media screen and (max-width:768px) {
-  max-width: 100%;
-  padding-right: 4px;
-  padding-left: 4px
-}
-@media screen and (min-width: 769px) and (max-width:1024px) {
-  /* max-width: 1200px; */
-}
-@media screen and (min-width: 1025px) {
-  /* max-width: 1400px; */
-} 
+    padding-left: 4px
+  } 
 `;
 
 export const Heading = styled.h1`
@@ -50,19 +38,8 @@ export const Heading = styled.h1`
   padding: 0px 44px;
   color: yellow;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 960px) {
     padding-right: 4px;
     padding-left: 4px
   }
-
-  @media screen and (max-width:768px) {
-    padding-right: 4px;
-    padding-left: 4px
-  }
-@media screen and (min-width: 769px) and (max-width:1024px) {
-  /* max-width: 1200px; */
-}
-@media screen and (min-width: 1025px) {
-  /* max-width: 1400px; */
-}
 `;

@@ -2,7 +2,7 @@
 import React, { useState, useEffect, Profiler } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 import { ThemeProvider } from 'styled-components';
@@ -22,14 +22,17 @@ import {
   NavItemSocialIcon,
   NavItemToggle,
   LogoContainer,
+  NavItemSocialIconWrapper,
+  NavItemSocialIconLinkMotion,
+
 } from './Navigation.Styles';
 
 import {
-  Avatar, 
-  ProfileWrapper, 
-  Img, 
-  Heading, 
-  Subtitle, 
+  Avatar,
+  ProfileWrapper,
+  Img,
+  Heading,
+  Subtitle,
   ProfileWrapperContainer
 } from '../../components/Profile/ProfileStyles';
 
@@ -85,44 +88,72 @@ const NavBar = () => {
               )}
             </MobileIcon> */}
             <LogoContainer to="/" aria-current="homepage">
-                <Img src="../../images/avatar.webp" alt="Boa" />
+              <Img src="../../images/avatar.webp" alt="Boa" />
             </LogoContainer>
 
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/curated_projects">PORTFOLIO</NavLinks>
+                <NavLinks to="/curated_projects">portfolio</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contact_me">CONTACT</NavLinks>
+                <NavLinks to="/contact_me">contact</NavLinks>
               </NavItem>
+            </NavMenu>
 
-              <NavItemSocialIcon>
-                <NavItemSocialIconLink
-                  href="https://github.com/boamatule"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub"
-                >
-                  <FaGithub style={{ width: '24px', height: '24px' }} />
-                </NavItemSocialIconLink>
-              </NavItemSocialIcon>
+            <NavItemSocialIconWrapper
+              initial={{
+                x: 500,
+                opacity: 0,
+                scale: 0.5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
 
-              <NavItemSocialIcon>
+
+            >
+              <NavItemSocialIconLinkMotion
+                whileHover={{ scale: 1.1, transition: { duration: 1.5 } }}
+              >
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boa-matule-2082b068/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <FaLinkedinIn style={{ width: '24px', height: '24px' }} />
+                  <FaLinkedinIn style={{ width: '20px', height: '20px' }} />
                 </NavItemSocialIconLink>
-              </NavItemSocialIcon>
-              <NavItem>
-                <NavItemToggle whileHover={{ scale: 1, rotate: 0 }}>
-                  <Toggle theme={theme} toggleTheme={themeToggler} />
-                </NavItemToggle>
-              </NavItem>
-            </NavMenu>
+              </NavItemSocialIconLinkMotion>
+
+              <NavItemSocialIconLinkMotion
+                whileHover={{ scale: 1.1,
+                  transition: { duration: 1.5 } 
+                }}
+
+              >
+
+                <NavItemSocialIconLink
+                  href="https://github.com/boamatule"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub style={{ width: '20px', height: '20px' }} />
+                </NavItemSocialIconLink>
+              </NavItemSocialIconLinkMotion>
+
+              <NavItemToggle 
+                // whileHover={{ scale: 1, rotate: 0 }}
+              >
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+              </NavItemToggle>
+
+            </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
         <Outlet />

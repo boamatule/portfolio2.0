@@ -1,52 +1,32 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components/macro';
 
 export const GlobalStyles = createGlobalStyle`
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: #000000;
-	}
-  * {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-html {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: black;
-} 
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #000000;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  } 
 `;
 
 export const Container = styled.div`
   max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 4px;
-  padding-left: 4px;
-
-  @media screen and (min-width: 600px) {
-    /* margin-right: auto;
-    margin-left: auto; */
-    padding-right: 4px;
-  padding-left: 4px
-  }
-
-  @media screen and (max-width:768px) {
-  padding-right: 4px;
-  padding-left: 4px
-}
-@media screen and (min-width: 769px) and (max-width:1024px) {
-  /* max-width: 1200px; */
-}
-@media screen and (min-width: 1025px) {
-  /* max-width: 1400px; */
-} 
+  margin: 0 auto;
+  padding: 0 4px;
 `;
+
 
 export const Button = styled.button`
   white-space: nowrap;

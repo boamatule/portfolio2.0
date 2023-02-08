@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
 
 export const ErrorContainer = styled(Container)`

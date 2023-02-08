@@ -6,21 +6,23 @@ let Sun;
 let Moon;
 
 Sun = Moon = styled.svg`
-  position: stycky;
   color: yellow;
-  transition: all transform 2s;
+  /* transition: all transform 2s; */
   cursor: pointer;
-  color: none;
+  top: 0;
   background: 'transparent';
+  height: 80px;
+
+
   &:hover {
     transform: none;
   }
-  @media screen and (max-width: 800px) {
-    top: 0rem;
-    right: 20em;
-    transform: translate(0%, -24%);
+
+  @media screen and (max-width: 960px) {
+    top: 0;
+    /* transform: translate(0%, -24%); */
     background: 'transparent';
-    /* padding: 10px 30px; */
+    /* padding: 20px 40px; */
   }
 `;
 
@@ -29,11 +31,11 @@ const Toggle = ({ theme, toggleTheme }) => (
     <div onClick={toggleTheme}>
       {theme === 'light' ? (
         <Moon
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 24"
+          viewBox="0 0 20 20"
           stroke="currentColor"
           overflow="show"
           background="transparent"

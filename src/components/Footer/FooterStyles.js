@@ -9,6 +9,8 @@ export const FooterContainer = styled(Container)`
   bottom: 0;
   width: 100%;
   height: 80px;
+  position: sticky;
+
 `;
 
 export const FooterWrapper = styled.div`
@@ -33,21 +35,9 @@ export const Copyright = styled.p`
   align-items: center;
   text-align: center;
   color: yellow;
-  margin: 0px 0px;
+  margin: 40px 0px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 960px) {
     font-size: 12px;
-  }
-
-  @media screen and (max-width: 800px) {
-    /* display: none; */
-    font-size: 12px;
-
-  }
-
-  @media screen and (min-width: 1000px) {
-    /* background-color: #0000ff; */
-    font-size: 14px;
-
   }
 `;

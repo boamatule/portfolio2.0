@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
 
 export const ProfileWrapperContainer = styled(Container)`
@@ -33,23 +33,12 @@ export const Avatar = styled.div`
   text-align: flex-start;
   justify-content: flex-start;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 960px) {
     position: relative;
     margin-bottom: 40px;
     align-items: flex-start;
     text-align: flex-start;
     justify-content: flex-start;
-  }
-
-  @media screen and (max-width:768px) {
-    /* max-width: 100%; */
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
   }
 `;
 
@@ -62,21 +51,10 @@ export const Img = styled.img`
   margin-right: 0.5rem;
 
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 960px) {
     /* width: 60px;
     height: 60px;
     border-radius: 50%; */
-  }
-
-  @media screen and (max-width:768px) {
-    /* max-width: 100%; */
-  }
-
-  @media screen and (min-width: 769px) and (max-width:1024px) {
-    /* max-width: 1200px; */
-  }
-  @media screen and (min-width: 1025px) {
-    /* max-width: 1400px; */
   }
 `;
 
@@ -90,7 +68,7 @@ export const Subtitle = styled.p`
   background: transparent;
   font-family: 'Rubik', sans-serif; */
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 20px;

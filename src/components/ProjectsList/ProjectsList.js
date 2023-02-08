@@ -22,9 +22,8 @@ const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
 
   return (
-    <Container>
+    <ProjectContainer>
       <ProjectsProvider>
-        <ProjectContainer>
           <Heading>Projects</Heading>
           <SubTitle>
             A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
@@ -44,7 +43,6 @@ const ProjectsList = () => {
             </a>{' '}
             for more projects.
           </SubTitle>
-        </ProjectContainer>
         <CardContainer>
           {projects.map((project) => (
             <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
@@ -88,8 +86,8 @@ const ProjectsList = () => {
             </BoxStyled>
           ))}
         </CardContainer>
-      </ProjectsProvider>
-    </Container>
+      </ProjectsProvider>    
+    </ProjectContainer>
   );
 }
 
