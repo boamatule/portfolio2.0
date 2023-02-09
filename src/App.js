@@ -1,11 +1,12 @@
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import 'normalize.css';
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
 const ContactPage = lazy(() => import('./Pages/ContactPage/ContactPage'));
 const PortfolioListPage = lazy(() => import('./Pages/PortfolioPage/PortfolioListPage'));
-const SuccessPage = lazy(() => import('./Pages/SuccessPage/SuccessPage'));
+const SuccessPage = lazy(() => import('./routes/SuccessPage/SuccessPage'));
 const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
 const ScrollToTop = lazy(() => import('./components/ScrollToTop'));
 const Navigation = lazy(() => import('./routes/Navigation/Navigation'));
