@@ -62,6 +62,7 @@ export const NavMenu = styled.ul`
   margin-top: 100px;
   margin-bottom: 160px;
   text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
 
   @media (max-width: 960px) {
     margin-top: 80px;
@@ -75,7 +76,6 @@ export const NavItem = styled.li`
   display: flex;
   margin-top: 80px;
   height: 80px;
-  white-space: nowrap;
 
   @media (max-width: 960px) {
   }
@@ -83,16 +83,27 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   background: transparent;
-  font-weight: bold;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0rem 8rem;
   height: 100%;
-  font-size: 20px;
+  font-size: 16px;
   color: grey;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 4px;
+  line-height: 20px;
+  font-weight: bold;
+
+
+  @media (max-width: 960px) {
+    font-size: 14px;
+    padding: 1rem 0.8rem;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+  }
 `;
 
 export const NavItemSocialIconWrapper = styled(motion.div)`
@@ -108,20 +119,7 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
 
   @media screen and (max-width: 960px) {
     top: 0;
-    padding: 0 4px;
-    margin-left: auto;
-
     flex-wrap: nowrap;
-  }
-`;
-
-export const NavItemSocialIcon = styled.div`
-
-    &:hover {
-    transition: all 0.2s ease-out;
-  }
-
-  @media screen and (max-width: 960px) {
   }
 `;
 
@@ -140,7 +138,7 @@ export const NavItemSocialIconLink = styled.a`
 
 
   @media screen and (max-width: 960px) {
-    padding: 0rem 1rem;
+    padding: 0rem 0.4rem;
     top: 0;
   }
 `;

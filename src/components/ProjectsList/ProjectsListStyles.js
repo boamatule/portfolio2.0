@@ -5,12 +5,12 @@ import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
   margin-top: 200px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 
   @media screen and (max-width: 960px) {
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
 `;
 
@@ -32,17 +32,18 @@ export const Title = styled.p`
 export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-size: 20px;
   margin-bottom: 0px;
-  padding: 0px 44px;
+  padding: 0px 0px;
   color: yellow;
-  width: 100%;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: flex-start;
 
   @media screen and (max-width: 960px) {
-    /* padding: 0;
-    text-align: center; */
+    padding-right: 4px;
+    padding-left: 4px
+    font-size: 14px;
   }
 `;
 

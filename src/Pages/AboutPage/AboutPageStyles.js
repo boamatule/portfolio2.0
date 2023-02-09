@@ -35,11 +35,14 @@ export const Heading = styled.h1`
   text-align: flex-start;
   font-size: 20px;
   margin-bottom: 0px;
-  padding: 0px 44px;
+  padding: 0px 0px;
   color: yellow;
+  padding-right: 4px;
+  padding-left: 4px
 
   @media screen and (min-width: 960px) {
     padding-right: 4px;
     padding-left: 4px
+    font-size: 14px;
   }
 `;

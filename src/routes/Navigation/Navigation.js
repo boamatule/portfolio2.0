@@ -14,12 +14,10 @@ import Toggle from '../../components/DarkMode/Toggler';
 import {
   Nav,
   NavbarContainer,
-  MobileIcon,
   NavMenu,
   NavLinks,
   NavItem,
   NavItemSocialIconLink,
-  NavItemSocialIcon,
   NavItemToggle,
   LogoContainer,
   NavItemSocialIconWrapper,
@@ -65,28 +63,6 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav>
           <NavbarContainer>
-            {/* <MobileIcon onClick={handleClick}>
-              {click ? (
-                <FaTimes
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    color: '#6969FB',
-                    background: 'none',
-                  }}
-                />
-              ) : (
-                <FaBars
-                  size={34}
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    color: '#6969FB',
-                    background: 'none',
-                  }}
-                />
-              )}
-            </MobileIcon> */}
             <LogoContainer to="/" aria-current="homepage">
               <Img src="../../images/avatar.webp" alt="Boa" />
             </LogoContainer>
