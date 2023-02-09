@@ -1,3 +1,2515 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render NavBar Component 1`] = `ShallowWrapper {}`;
+exports[`expect to render NavBar Component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NavBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <Context.Provider
+        value={
+          Object {
+            "color": "grey",
+          }
+        }
+      >
+        <ForwardRef(NavigationStyles__Nav)>
+          <ForwardRef(NavigationStyles__NavbarContainer)>
+            <ForwardRef(NavigationStyles__LogoContainer)
+              aria-current="homepage"
+              to="/"
+            >
+              <ForwardRef(ProfileStyles__Img)
+                alt="Boa"
+                src="../../images/avatar.webp"
+              />
+            </ForwardRef(NavigationStyles__LogoContainer)>
+            <ForwardRef(NavigationStyles__NavMenu)
+              click={false}
+              onClick={[Function]}
+            >
+              <ForwardRef(NavigationStyles__NavItem)>
+                <ForwardRef(NavigationStyles__NavLinks)
+                  to="/curated_projects"
+                >
+                  portfolio
+                </ForwardRef(NavigationStyles__NavLinks)>
+              </ForwardRef(NavigationStyles__NavItem)>
+              <ForwardRef(NavigationStyles__NavItem)>
+                <ForwardRef(NavigationStyles__NavLinks)
+                  to="/contact_me"
+                >
+                  contact
+                </ForwardRef(NavigationStyles__NavLinks)>
+              </ForwardRef(NavigationStyles__NavItem)>
+            </ForwardRef(NavigationStyles__NavMenu)>
+            <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+              animate={
+                Object {
+                  "opacity": 1,
+                  "scale": 1,
+                  "x": 0,
+                }
+              }
+              initial={
+                Object {
+                  "opacity": 0,
+                  "scale": 0.5,
+                  "x": 500,
+                }
+              }
+              transition={
+                Object {
+                  "duration": 1.5,
+                }
+              }
+            >
+              <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                whileHover={
+                  Object {
+                    "scale": 1.1,
+                    "transition": Object {
+                      "duration": 1.5,
+                    },
+                  }
+                }
+              >
+                <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FaLinkedinIn
+                    style={
+                      Object {
+                        "height": "20px",
+                        "width": "20px",
+                      }
+                    }
+                  />
+                </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+              </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+              <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                whileHover={
+                  Object {
+                    "scale": 1.1,
+                    "transition": Object {
+                      "duration": 1.5,
+                    },
+                  }
+                }
+              >
+                <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                  aria-label="GitHub"
+                  href="https://github.com/boamatule"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FaGithub
+                    style={
+                      Object {
+                        "height": "20px",
+                        "width": "20px",
+                      }
+                    }
+                  />
+                </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+              </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+              <ForwardRef(NavigationStyles__NavItemToggle)>
+                <Toggle
+                  theme="dark"
+                  toggleTheme={[Function]}
+                />
+              </ForwardRef(NavigationStyles__NavItemToggle)>
+            </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+          </ForwardRef(NavigationStyles__NavbarContainer)>
+        </ForwardRef(NavigationStyles__Nav)>
+        <Outlet />
+      </Context.Provider>,
+      "theme": Object {
+        "background": "#fff",
+        "body": "#000",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef(NavigationStyles__Nav)>
+            <ForwardRef(NavigationStyles__NavbarContainer)>
+              <ForwardRef(NavigationStyles__LogoContainer)
+                aria-current="homepage"
+                to="/"
+              >
+                <ForwardRef(ProfileStyles__Img)
+                  alt="Boa"
+                  src="../../images/avatar.webp"
+                />
+              </ForwardRef(NavigationStyles__LogoContainer)>
+              <ForwardRef(NavigationStyles__NavMenu)
+                click={false}
+                onClick={[Function]}
+              >
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/curated_projects"
+                  >
+                    portfolio
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/contact_me"
+                  >
+                    contact
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+              </ForwardRef(NavigationStyles__NavMenu)>
+              <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                animate={
+                  Object {
+                    "opacity": 1,
+                    "scale": 1,
+                    "x": 0,
+                  }
+                }
+                initial={
+                  Object {
+                    "opacity": 0,
+                    "scale": 0.5,
+                    "x": 500,
+                  }
+                }
+                transition={
+                  Object {
+                    "duration": 1.5,
+                  }
+                }
+              >
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaLinkedinIn
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="GitHub"
+                    href="https://github.com/boamatule"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemToggle)>
+                  <Toggle
+                    theme="dark"
+                    toggleTheme={[Function]}
+                  />
+                </ForwardRef(NavigationStyles__NavItemToggle)>
+              </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+            </ForwardRef(NavigationStyles__NavbarContainer)>
+          </ForwardRef(NavigationStyles__Nav)>,
+          <Outlet />,
+        ],
+        "value": Object {
+          "color": "grey",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef(NavigationStyles__NavbarContainer)>
+              <ForwardRef(NavigationStyles__LogoContainer)
+                aria-current="homepage"
+                to="/"
+              >
+                <ForwardRef(ProfileStyles__Img)
+                  alt="Boa"
+                  src="../../images/avatar.webp"
+                />
+              </ForwardRef(NavigationStyles__LogoContainer)>
+              <ForwardRef(NavigationStyles__NavMenu)
+                click={false}
+                onClick={[Function]}
+              >
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/curated_projects"
+                  >
+                    portfolio
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/contact_me"
+                  >
+                    contact
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+              </ForwardRef(NavigationStyles__NavMenu)>
+              <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                animate={
+                  Object {
+                    "opacity": 1,
+                    "scale": 1,
+                    "x": 0,
+                  }
+                }
+                initial={
+                  Object {
+                    "opacity": 0,
+                    "scale": 0.5,
+                    "x": 500,
+                  }
+                }
+                transition={
+                  Object {
+                    "duration": 1.5,
+                  }
+                }
+              >
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaLinkedinIn
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="GitHub"
+                    href="https://github.com/boamatule"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemToggle)>
+                  <Toggle
+                    theme="dark"
+                    toggleTheme={[Function]}
+                  />
+                </ForwardRef(NavigationStyles__NavItemToggle)>
+              </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+            </ForwardRef(NavigationStyles__NavbarContainer)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef(NavigationStyles__LogoContainer)
+                  aria-current="homepage"
+                  to="/"
+                >
+                  <ForwardRef(ProfileStyles__Img)
+                    alt="Boa"
+                    src="../../images/avatar.webp"
+                  />
+                </ForwardRef(NavigationStyles__LogoContainer)>,
+                <ForwardRef(NavigationStyles__NavMenu)
+                  click={false}
+                  onClick={[Function]}
+                >
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/curated_projects"
+                    >
+                      portfolio
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/contact_me"
+                    >
+                      contact
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                </ForwardRef(NavigationStyles__NavMenu)>,
+                <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                  animate={
+                    Object {
+                      "opacity": 1,
+                      "scale": 1,
+                      "x": 0,
+                    }
+                  }
+                  initial={
+                    Object {
+                      "opacity": 0,
+                      "scale": 0.5,
+                      "x": 500,
+                    }
+                  }
+                  transition={
+                    Object {
+                      "duration": 1.5,
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="LinkedIn"
+                      href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaLinkedinIn
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="GitHub"
+                      href="https://github.com/boamatule"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaGithub
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemToggle)>
+                    <Toggle
+                      theme="dark"
+                      toggleTheme={[Function]}
+                    />
+                  </ForwardRef(NavigationStyles__NavItemToggle)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "aria-current": "homepage",
+                  "children": <ForwardRef(ProfileStyles__Img)
+                    alt="Boa"
+                    src="../../images/avatar.webp"
+                  />,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "alt": "Boa",
+                    "src": "../../images/avatar.webp",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": e {
+                      "baseHash": -411024116,
+                      "baseStyle": undefined,
+                      "componentId": "ProfileStyles__Img-sc-spc8yz-3",
+                      "isStatic": false,
+                      "rules": Array [
+                        "width:80px;height:80px;border-radius:50%;margin-bottom:20px;border:2px solid yellow;margin-right:0.5rem;@media screen and (min-width:960px){}",
+                      ],
+                      "staticRulesId": "",
+                    },
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "shouldForwardProp": undefined,
+                    "styledComponentId": "ProfileStyles__Img-sc-spc8yz-3",
+                    "target": "img",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": e {
+                    "baseHash": -626577923,
+                    "baseStyle": undefined,
+                    "componentId": "NavigationStyles__LogoContainer-sc-1wg22vr-2",
+                    "isStatic": false,
+                    "rules": Array [
+                      "display:flex;justify-content:center;margin:40px 0 60px 0;cursor:pointer;position:absolute;@media (max-width:960px){position:flex;margin-left:20px;margin-top:20px;margin-bottom:10px;}",
+                    ],
+                    "staticRulesId": "",
+                  },
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "shouldForwardProp": undefined,
+                  "styledComponentId": "NavigationStyles__LogoContainer-sc-1wg22vr-2",
+                  "target": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef(NavigationStyles__NavItem)>
+                      <ForwardRef(NavigationStyles__NavLinks)
+                        to="/curated_projects"
+                      >
+                        portfolio
+                      </ForwardRef(NavigationStyles__NavLinks)>
+                    </ForwardRef(NavigationStyles__NavItem)>,
+                    <ForwardRef(NavigationStyles__NavItem)>
+                      <ForwardRef(NavigationStyles__NavLinks)
+                        to="/contact_me"
+                      >
+                        contact
+                      </ForwardRef(NavigationStyles__NavLinks)>
+                    </ForwardRef(NavigationStyles__NavItem)>,
+                  ],
+                  "click": false,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <ForwardRef(NavigationStyles__NavLinks)
+                        to="/curated_projects"
+                      >
+                        portfolio
+                      </ForwardRef(NavigationStyles__NavLinks)>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "portfolio",
+                        "to": "/curated_projects",
+                      },
+                      "ref": null,
+                      "rendered": "portfolio",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": 2049193820,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                          "isStatic": false,
+                          "rules": Array [
+                            "background:transparent;display:flex;text-decoration:none;padding:0rem 8rem;height:100%;font-size:16px;color:grey;font-family:'IBM Plex Mono',monospace;letter-spacing:4px;line-height:20px;font-weight:bold;@media (max-width:960px){font-size:14px;padding:1rem 0.8rem;white-space:nowrap;align-items:center;justify-content:center;text-align:center;font-weight:bold;}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": -850028805,
+                        "baseStyle": undefined,
+                        "componentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                        "isStatic": false,
+                        "rules": Array [
+                          "display:flex;margin-top:80px;height:80px;@media (max-width:960px){}",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <ForwardRef(NavigationStyles__NavLinks)
+                        to="/contact_me"
+                      >
+                        contact
+                      </ForwardRef(NavigationStyles__NavLinks)>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "contact",
+                        "to": "/contact_me",
+                      },
+                      "ref": null,
+                      "rendered": "contact",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": 2049193820,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                          "isStatic": false,
+                          "rules": Array [
+                            "background:transparent;display:flex;text-decoration:none;padding:0rem 8rem;height:100%;font-size:16px;color:grey;font-family:'IBM Plex Mono',monospace;letter-spacing:4px;line-height:20px;font-weight:bold;@media (max-width:960px){font-size:14px;padding:1rem 0.8rem;white-space:nowrap;align-items:center;justify-content:center;text-align:center;font-weight:bold;}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": -850028805,
+                        "baseStyle": undefined,
+                        "componentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                        "isStatic": false,
+                        "rules": Array [
+                          "display:flex;margin-top:80px;height:80px;@media (max-width:960px){}",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": e {
+                    "baseHash": 1456582202,
+                    "baseStyle": undefined,
+                    "componentId": "NavigationStyles__NavMenu-sc-1wg22vr-3",
+                    "isStatic": false,
+                    "rules": Array [
+                      "background:transparent;display:flex;align-items:center;justify-content:center;text-align:center;outline:none;list-style:none;margin-top:100px;margin-bottom:160px;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;@media (max-width:960px){margin-top:80px;align-items:center;text-align:center;}",
+                    ],
+                    "staticRulesId": "",
+                  },
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "shouldForwardProp": undefined,
+                  "styledComponentId": "NavigationStyles__NavMenu-sc-1wg22vr-3",
+                  "target": "ul",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "animate": Object {
+                    "opacity": 1,
+                    "scale": 1,
+                    "x": 0,
+                  },
+                  "children": Array [
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                      whileHover={
+                        Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        }
+                      }
+                    >
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="LinkedIn"
+                        href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaLinkedinIn
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>,
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                      whileHover={
+                        Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        }
+                      }
+                    >
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="GitHub"
+                        href="https://github.com/boamatule"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaGithub
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>,
+                    <ForwardRef(NavigationStyles__NavItemToggle)>
+                      <Toggle
+                        theme="dark"
+                        toggleTheme={[Function]}
+                      />
+                    </ForwardRef(NavigationStyles__NavItemToggle)>,
+                  ],
+                  "initial": Object {
+                    "opacity": 0,
+                    "scale": 0.5,
+                    "x": 500,
+                  },
+                  "transition": Object {
+                    "duration": 1.5,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="LinkedIn"
+                        href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaLinkedinIn
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>,
+                      "whileHover": Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "aria-label": "LinkedIn",
+                        "children": <FaLinkedinIn
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />,
+                        "href": "https://www.linkedin.com/in/boa-matule-2082b068/",
+                        "rel": "noreferrer",
+                        "target": "_blank",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "style": Object {
+                            "height": "20px",
+                            "width": "20px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": -483728217,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                          "isStatic": false,
+                          "rules": Array [
+                            "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 0.4rem;top:0;}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                        "target": "a",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": 851583222,
+                        "baseStyle": undefined,
+                        "componentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                        "isStatic": false,
+                        "rules": Array [
+                          "",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="GitHub"
+                        href="https://github.com/boamatule"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaGithub
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>,
+                      "whileHover": Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "aria-label": "GitHub",
+                        "children": <FaGithub
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />,
+                        "href": "https://github.com/boamatule",
+                        "rel": "noreferrer",
+                        "target": "_blank",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "style": Object {
+                            "height": "20px",
+                            "width": "20px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": -483728217,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                          "isStatic": false,
+                          "rules": Array [
+                            "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 0.4rem;top:0;}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                        "target": "a",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": 851583222,
+                        "baseStyle": undefined,
+                        "componentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                        "isStatic": false,
+                        "rules": Array [
+                          "",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Toggle
+                        theme="dark"
+                        toggleTheme={[Function]}
+                      />,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "theme": "dark",
+                        "toggleTheme": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": -905843452,
+                        "baseStyle": undefined,
+                        "componentId": "NavigationStyles__NavItemToggle-sc-1wg22vr-9",
+                        "isStatic": false,
+                        "rules": Array [
+                          "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;background:transparent;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 1rem;top:0;}",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "NavigationStyles__NavItemToggle-sc-1wg22vr-9",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": e {
+                    "baseHash": -1492633606,
+                    "baseStyle": undefined,
+                    "componentId": "NavigationStyles__NavItemSocialIconWrapper-sc-1wg22vr-6",
+                    "isStatic": false,
+                    "rules": Array [
+                      "display:flex;justify-content:space-around;align-items:center;background:center;flex-wrap:wrap-reverse;position:sticky;top:0;margin:0px 0px;@media screen and (max-width:960px){top:0;flex-wrap:nowrap;}",
+                    ],
+                    "staticRulesId": "",
+                  },
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "shouldForwardProp": undefined,
+                  "styledComponentId": "NavigationStyles__NavItemSocialIconWrapper-sc-1wg22vr-6",
+                  "target": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": e {
+                "baseHash": 1424113661,
+                "baseStyle": e {
+                  "baseHash": 1516622439,
+                  "baseStyle": undefined,
+                  "componentId": "global-styles__Container-sc-1f5kudb-0",
+                  "isStatic": false,
+                  "rules": Array [
+                    "max-width:1000px;margin:0 auto;padding:0 4px;",
+                  ],
+                  "staticRulesId": "",
+                },
+                "componentId": "NavigationStyles__NavbarContainer-sc-1wg22vr-1",
+                "isStatic": false,
+                "rules": Array [
+                  "display:flex;justify-content:space-between;height:80px;margin-bottom:0px;z-index:1;@media (max-width:960px){margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px;width:100%;}",
+                ],
+                "staticRulesId": "",
+              },
+              "foldedComponentIds": Array [
+                "global-styles__Container-sc-1f5kudb-0",
+              ],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "NavigationStyles__NavbarContainer-sc-1wg22vr-1",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": -2051488886,
+              "baseStyle": undefined,
+              "componentId": "NavigationStyles__Nav-sc-1wg22vr-0",
+              "isStatic": false,
+              "rules": Array [
+                "background:transparent;width:100%;position:fixed;top:0;z-index:999;@media screen and (max-width:960px){width:100%;top:0px;margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "NavigationStyles__Nav-sc-1wg22vr-0",
+            "target": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.provider),
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": Object {
+            "$$typeof": Symbol(react.context),
+            "_context": [Circular],
+          },
+          "Provider": [Circular],
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": Object {
+            "attr": undefined,
+            "className": undefined,
+            "color": undefined,
+            "size": undefined,
+            "style": undefined,
+          },
+          "_currentValue2": Object {
+            "attr": undefined,
+            "className": undefined,
+            "color": undefined,
+            "size": undefined,
+            "style": undefined,
+          },
+          "_defaultValue": null,
+          "_globalName": null,
+          "_threadCount": 0,
+        },
+      },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Context.Provider
+          value={
+            Object {
+              "color": "grey",
+            }
+          }
+        >
+          <ForwardRef(NavigationStyles__Nav)>
+            <ForwardRef(NavigationStyles__NavbarContainer)>
+              <ForwardRef(NavigationStyles__LogoContainer)
+                aria-current="homepage"
+                to="/"
+              >
+                <ForwardRef(ProfileStyles__Img)
+                  alt="Boa"
+                  src="../../images/avatar.webp"
+                />
+              </ForwardRef(NavigationStyles__LogoContainer)>
+              <ForwardRef(NavigationStyles__NavMenu)
+                click={false}
+                onClick={[Function]}
+              >
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/curated_projects"
+                  >
+                    portfolio
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+                <ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavLinks)
+                    to="/contact_me"
+                  >
+                    contact
+                  </ForwardRef(NavigationStyles__NavLinks)>
+                </ForwardRef(NavigationStyles__NavItem)>
+              </ForwardRef(NavigationStyles__NavMenu)>
+              <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                animate={
+                  Object {
+                    "opacity": 1,
+                    "scale": 1,
+                    "x": 0,
+                  }
+                }
+                initial={
+                  Object {
+                    "opacity": 0,
+                    "scale": 0.5,
+                    "x": 500,
+                  }
+                }
+                transition={
+                  Object {
+                    "duration": 1.5,
+                  }
+                }
+              >
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaLinkedinIn
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                  whileHover={
+                    Object {
+                      "scale": 1.1,
+                      "transition": Object {
+                        "duration": 1.5,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                    aria-label="GitHub"
+                    href="https://github.com/boamatule"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={
+                        Object {
+                          "height": "20px",
+                          "width": "20px",
+                        }
+                      }
+                    />
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                <ForwardRef(NavigationStyles__NavItemToggle)>
+                  <Toggle
+                    theme="dark"
+                    toggleTheme={[Function]}
+                  />
+                </ForwardRef(NavigationStyles__NavItemToggle)>
+              </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+            </ForwardRef(NavigationStyles__NavbarContainer)>
+          </ForwardRef(NavigationStyles__Nav)>
+          <Outlet />
+        </Context.Provider>,
+        "theme": Object {
+          "background": "#fff",
+          "body": "#000",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef(NavigationStyles__Nav)>
+              <ForwardRef(NavigationStyles__NavbarContainer)>
+                <ForwardRef(NavigationStyles__LogoContainer)
+                  aria-current="homepage"
+                  to="/"
+                >
+                  <ForwardRef(ProfileStyles__Img)
+                    alt="Boa"
+                    src="../../images/avatar.webp"
+                  />
+                </ForwardRef(NavigationStyles__LogoContainer)>
+                <ForwardRef(NavigationStyles__NavMenu)
+                  click={false}
+                  onClick={[Function]}
+                >
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/curated_projects"
+                    >
+                      portfolio
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/contact_me"
+                    >
+                      contact
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                </ForwardRef(NavigationStyles__NavMenu)>
+                <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                  animate={
+                    Object {
+                      "opacity": 1,
+                      "scale": 1,
+                      "x": 0,
+                    }
+                  }
+                  initial={
+                    Object {
+                      "opacity": 0,
+                      "scale": 0.5,
+                      "x": 500,
+                    }
+                  }
+                  transition={
+                    Object {
+                      "duration": 1.5,
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="LinkedIn"
+                      href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaLinkedinIn
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="GitHub"
+                      href="https://github.com/boamatule"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaGithub
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemToggle)>
+                    <Toggle
+                      theme="dark"
+                      toggleTheme={[Function]}
+                    />
+                  </ForwardRef(NavigationStyles__NavItemToggle)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+              </ForwardRef(NavigationStyles__NavbarContainer)>
+            </ForwardRef(NavigationStyles__Nav)>,
+            <Outlet />,
+          ],
+          "value": Object {
+            "color": "grey",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef(NavigationStyles__NavbarContainer)>
+                <ForwardRef(NavigationStyles__LogoContainer)
+                  aria-current="homepage"
+                  to="/"
+                >
+                  <ForwardRef(ProfileStyles__Img)
+                    alt="Boa"
+                    src="../../images/avatar.webp"
+                  />
+                </ForwardRef(NavigationStyles__LogoContainer)>
+                <ForwardRef(NavigationStyles__NavMenu)
+                  click={false}
+                  onClick={[Function]}
+                >
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/curated_projects"
+                    >
+                      portfolio
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                  <ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavLinks)
+                      to="/contact_me"
+                    >
+                      contact
+                    </ForwardRef(NavigationStyles__NavLinks)>
+                  </ForwardRef(NavigationStyles__NavItem)>
+                </ForwardRef(NavigationStyles__NavMenu)>
+                <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                  animate={
+                    Object {
+                      "opacity": 1,
+                      "scale": 1,
+                      "x": 0,
+                    }
+                  }
+                  initial={
+                    Object {
+                      "opacity": 0,
+                      "scale": 0.5,
+                      "x": 500,
+                    }
+                  }
+                  transition={
+                    Object {
+                      "duration": 1.5,
+                    }
+                  }
+                >
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="LinkedIn"
+                      href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaLinkedinIn
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                    whileHover={
+                      Object {
+                        "scale": 1.1,
+                        "transition": Object {
+                          "duration": 1.5,
+                        },
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                      aria-label="GitHub"
+                      href="https://github.com/boamatule"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaGithub
+                        style={
+                          Object {
+                            "height": "20px",
+                            "width": "20px",
+                          }
+                        }
+                      />
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                  <ForwardRef(NavigationStyles__NavItemToggle)>
+                    <Toggle
+                      theme="dark"
+                      toggleTheme={[Function]}
+                    />
+                  </ForwardRef(NavigationStyles__NavItemToggle)>
+                </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>
+              </ForwardRef(NavigationStyles__NavbarContainer)>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef(NavigationStyles__LogoContainer)
+                    aria-current="homepage"
+                    to="/"
+                  >
+                    <ForwardRef(ProfileStyles__Img)
+                      alt="Boa"
+                      src="../../images/avatar.webp"
+                    />
+                  </ForwardRef(NavigationStyles__LogoContainer)>,
+                  <ForwardRef(NavigationStyles__NavMenu)
+                    click={false}
+                    onClick={[Function]}
+                  >
+                    <ForwardRef(NavigationStyles__NavItem)>
+                      <ForwardRef(NavigationStyles__NavLinks)
+                        to="/curated_projects"
+                      >
+                        portfolio
+                      </ForwardRef(NavigationStyles__NavLinks)>
+                    </ForwardRef(NavigationStyles__NavItem)>
+                    <ForwardRef(NavigationStyles__NavItem)>
+                      <ForwardRef(NavigationStyles__NavLinks)
+                        to="/contact_me"
+                      >
+                        contact
+                      </ForwardRef(NavigationStyles__NavLinks)>
+                    </ForwardRef(NavigationStyles__NavItem)>
+                  </ForwardRef(NavigationStyles__NavMenu)>,
+                  <ForwardRef(NavigationStyles__NavItemSocialIconWrapper)
+                    animate={
+                      Object {
+                        "opacity": 1,
+                        "scale": 1,
+                        "x": 0,
+                      }
+                    }
+                    initial={
+                      Object {
+                        "opacity": 0,
+                        "scale": 0.5,
+                        "x": 500,
+                      }
+                    }
+                    transition={
+                      Object {
+                        "duration": 1.5,
+                      }
+                    }
+                  >
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                      whileHover={
+                        Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        }
+                      }
+                    >
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="LinkedIn"
+                        href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaLinkedinIn
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                    <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                      whileHover={
+                        Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        }
+                      }
+                    >
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                        aria-label="GitHub"
+                        href="https://github.com/boamatule"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <FaGithub
+                          style={
+                            Object {
+                              "height": "20px",
+                              "width": "20px",
+                            }
+                          }
+                        />
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                    </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>
+                    <ForwardRef(NavigationStyles__NavItemToggle)>
+                      <Toggle
+                        theme="dark"
+                        toggleTheme={[Function]}
+                      />
+                    </ForwardRef(NavigationStyles__NavItemToggle)>
+                  </ForwardRef(NavigationStyles__NavItemSocialIconWrapper)>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "aria-current": "homepage",
+                    "children": <ForwardRef(ProfileStyles__Img)
+                      alt="Boa"
+                      src="../../images/avatar.webp"
+                    />,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "alt": "Boa",
+                      "src": "../../images/avatar.webp",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": e {
+                        "baseHash": -411024116,
+                        "baseStyle": undefined,
+                        "componentId": "ProfileStyles__Img-sc-spc8yz-3",
+                        "isStatic": false,
+                        "rules": Array [
+                          "width:80px;height:80px;border-radius:50%;margin-bottom:20px;border:2px solid yellow;margin-right:0.5rem;@media screen and (min-width:960px){}",
+                        ],
+                        "staticRulesId": "",
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "shouldForwardProp": undefined,
+                      "styledComponentId": "ProfileStyles__Img-sc-spc8yz-3",
+                      "target": "img",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": e {
+                      "baseHash": -626577923,
+                      "baseStyle": undefined,
+                      "componentId": "NavigationStyles__LogoContainer-sc-1wg22vr-2",
+                      "isStatic": false,
+                      "rules": Array [
+                        "display:flex;justify-content:center;margin:40px 0 60px 0;cursor:pointer;position:absolute;@media (max-width:960px){position:flex;margin-left:20px;margin-top:20px;margin-bottom:10px;}",
+                      ],
+                      "staticRulesId": "",
+                    },
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "shouldForwardProp": undefined,
+                    "styledComponentId": "NavigationStyles__LogoContainer-sc-1wg22vr-2",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <ForwardRef(NavigationStyles__NavItem)>
+                        <ForwardRef(NavigationStyles__NavLinks)
+                          to="/curated_projects"
+                        >
+                          portfolio
+                        </ForwardRef(NavigationStyles__NavLinks)>
+                      </ForwardRef(NavigationStyles__NavItem)>,
+                      <ForwardRef(NavigationStyles__NavItem)>
+                        <ForwardRef(NavigationStyles__NavLinks)
+                          to="/contact_me"
+                        >
+                          contact
+                        </ForwardRef(NavigationStyles__NavLinks)>
+                      </ForwardRef(NavigationStyles__NavItem)>,
+                    ],
+                    "click": false,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <ForwardRef(NavigationStyles__NavLinks)
+                          to="/curated_projects"
+                        >
+                          portfolio
+                        </ForwardRef(NavigationStyles__NavLinks)>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": "portfolio",
+                          "to": "/curated_projects",
+                        },
+                        "ref": null,
+                        "rendered": "portfolio",
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": e {
+                            "baseHash": 2049193820,
+                            "baseStyle": undefined,
+                            "componentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                            "isStatic": false,
+                            "rules": Array [
+                              "background:transparent;display:flex;text-decoration:none;padding:0rem 8rem;height:100%;font-size:16px;color:grey;font-family:'IBM Plex Mono',monospace;letter-spacing:4px;line-height:20px;font-weight:bold;@media (max-width:960px){font-size:14px;padding:1rem 0.8rem;white-space:nowrap;align-items:center;justify-content:center;text-align:center;font-weight:bold;}",
+                            ],
+                            "staticRulesId": "",
+                          },
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "shouldForwardProp": undefined,
+                          "styledComponentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        },
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": -850028805,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                          "isStatic": false,
+                          "rules": Array [
+                            "display:flex;margin-top:80px;height:80px;@media (max-width:960px){}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <ForwardRef(NavigationStyles__NavLinks)
+                          to="/contact_me"
+                        >
+                          contact
+                        </ForwardRef(NavigationStyles__NavLinks)>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": "contact",
+                          "to": "/contact_me",
+                        },
+                        "ref": null,
+                        "rendered": "contact",
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": e {
+                            "baseHash": 2049193820,
+                            "baseStyle": undefined,
+                            "componentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                            "isStatic": false,
+                            "rules": Array [
+                              "background:transparent;display:flex;text-decoration:none;padding:0rem 8rem;height:100%;font-size:16px;color:grey;font-family:'IBM Plex Mono',monospace;letter-spacing:4px;line-height:20px;font-weight:bold;@media (max-width:960px){font-size:14px;padding:1rem 0.8rem;white-space:nowrap;align-items:center;justify-content:center;text-align:center;font-weight:bold;}",
+                            ],
+                            "staticRulesId": "",
+                          },
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "shouldForwardProp": undefined,
+                          "styledComponentId": "NavigationStyles__NavLinks-sc-1wg22vr-5",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        },
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": -850028805,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                          "isStatic": false,
+                          "rules": Array [
+                            "display:flex;margin-top:80px;height:80px;@media (max-width:960px){}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItem-sc-1wg22vr-4",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": e {
+                      "baseHash": 1456582202,
+                      "baseStyle": undefined,
+                      "componentId": "NavigationStyles__NavMenu-sc-1wg22vr-3",
+                      "isStatic": false,
+                      "rules": Array [
+                        "background:transparent;display:flex;align-items:center;justify-content:center;text-align:center;outline:none;list-style:none;margin-top:100px;margin-bottom:160px;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;@media (max-width:960px){margin-top:80px;align-items:center;text-align:center;}",
+                      ],
+                      "staticRulesId": "",
+                    },
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "shouldForwardProp": undefined,
+                    "styledComponentId": "NavigationStyles__NavMenu-sc-1wg22vr-3",
+                    "target": "ul",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "animate": Object {
+                      "opacity": 1,
+                      "scale": 1,
+                      "x": 0,
+                    },
+                    "children": Array [
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                        whileHover={
+                          Object {
+                            "scale": 1.1,
+                            "transition": Object {
+                              "duration": 1.5,
+                            },
+                          }
+                        }
+                      >
+                        <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                          aria-label="LinkedIn"
+                          href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <FaLinkedinIn
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />
+                        </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>,
+                      <ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)
+                        whileHover={
+                          Object {
+                            "scale": 1.1,
+                            "transition": Object {
+                              "duration": 1.5,
+                            },
+                          }
+                        }
+                      >
+                        <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                          aria-label="GitHub"
+                          href="https://github.com/boamatule"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <FaGithub
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />
+                        </ForwardRef(NavigationStyles__NavItemSocialIconLink)>
+                      </ForwardRef(NavigationStyles__NavItemSocialIconLinkMotion)>,
+                      <ForwardRef(NavigationStyles__NavItemToggle)>
+                        <Toggle
+                          theme="dark"
+                          toggleTheme={[Function]}
+                        />
+                      </ForwardRef(NavigationStyles__NavItemToggle)>,
+                    ],
+                    "initial": Object {
+                      "opacity": 0,
+                      "scale": 0.5,
+                      "x": 500,
+                    },
+                    "transition": Object {
+                      "duration": 1.5,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                          aria-label="LinkedIn"
+                          href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <FaLinkedinIn
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />
+                        </ForwardRef(NavigationStyles__NavItemSocialIconLink)>,
+                        "whileHover": Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "aria-label": "LinkedIn",
+                          "children": <FaLinkedinIn
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />,
+                          "href": "https://www.linkedin.com/in/boa-matule-2082b068/",
+                          "rel": "noreferrer",
+                          "target": "_blank",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "style": Object {
+                              "height": "20px",
+                              "width": "20px",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": e {
+                            "baseHash": -483728217,
+                            "baseStyle": undefined,
+                            "componentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                            "isStatic": false,
+                            "rules": Array [
+                              "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 0.4rem;top:0;}",
+                            ],
+                            "staticRulesId": "",
+                          },
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "shouldForwardProp": undefined,
+                          "styledComponentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                          "target": "a",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        },
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": 851583222,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                          "isStatic": false,
+                          "rules": Array [
+                            "",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <ForwardRef(NavigationStyles__NavItemSocialIconLink)
+                          aria-label="GitHub"
+                          href="https://github.com/boamatule"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <FaGithub
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />
+                        </ForwardRef(NavigationStyles__NavItemSocialIconLink)>,
+                        "whileHover": Object {
+                          "scale": 1.1,
+                          "transition": Object {
+                            "duration": 1.5,
+                          },
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "aria-label": "GitHub",
+                          "children": <FaGithub
+                            style={
+                              Object {
+                                "height": "20px",
+                                "width": "20px",
+                              }
+                            }
+                          />,
+                          "href": "https://github.com/boamatule",
+                          "rel": "noreferrer",
+                          "target": "_blank",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "style": Object {
+                              "height": "20px",
+                              "width": "20px",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": e {
+                            "baseHash": -483728217,
+                            "baseStyle": undefined,
+                            "componentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                            "isStatic": false,
+                            "rules": Array [
+                              "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 0.4rem;top:0;}",
+                            ],
+                            "staticRulesId": "",
+                          },
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "shouldForwardProp": undefined,
+                          "styledComponentId": "NavigationStyles__NavItemSocialIconLink-sc-1wg22vr-8",
+                          "target": "a",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        },
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": 851583222,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                          "isStatic": false,
+                          "rules": Array [
+                            "",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItemSocialIconLinkMotion-sc-1wg22vr-7",
+                        "target": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <Toggle
+                          theme="dark"
+                          toggleTheme={[Function]}
+                        />,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "theme": "dark",
+                          "toggleTheme": [Function],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": e {
+                          "baseHash": -905843452,
+                          "baseStyle": undefined,
+                          "componentId": "NavigationStyles__NavItemToggle-sc-1wg22vr-9",
+                          "isStatic": false,
+                          "rules": Array [
+                            "display:flex;text-decoration:none;align-items:center;padding:0rem 1rem;transition:all 0.5s ease-out;cursor:pointer;background:transparent;top:0;height:100px;@media screen and (max-width:960px){padding:0rem 1rem;top:0;}",
+                          ],
+                          "staticRulesId": "",
+                        },
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "shouldForwardProp": undefined,
+                        "styledComponentId": "NavigationStyles__NavItemToggle-sc-1wg22vr-9",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": e {
+                      "baseHash": -1492633606,
+                      "baseStyle": undefined,
+                      "componentId": "NavigationStyles__NavItemSocialIconWrapper-sc-1wg22vr-6",
+                      "isStatic": false,
+                      "rules": Array [
+                        "display:flex;justify-content:space-around;align-items:center;background:center;flex-wrap:wrap-reverse;position:sticky;top:0;margin:0px 0px;@media screen and (max-width:960px){top:0;flex-wrap:nowrap;}",
+                      ],
+                      "staticRulesId": "",
+                    },
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "shouldForwardProp": undefined,
+                    "styledComponentId": "NavigationStyles__NavItemSocialIconWrapper-sc-1wg22vr-6",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": e {
+                  "baseHash": 1424113661,
+                  "baseStyle": e {
+                    "baseHash": 1516622439,
+                    "baseStyle": undefined,
+                    "componentId": "global-styles__Container-sc-1f5kudb-0",
+                    "isStatic": false,
+                    "rules": Array [
+                      "max-width:1000px;margin:0 auto;padding:0 4px;",
+                    ],
+                    "staticRulesId": "",
+                  },
+                  "componentId": "NavigationStyles__NavbarContainer-sc-1wg22vr-1",
+                  "isStatic": false,
+                  "rules": Array [
+                    "display:flex;justify-content:space-between;height:80px;margin-bottom:0px;z-index:1;@media (max-width:960px){margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px;width:100%;}",
+                  ],
+                  "staticRulesId": "",
+                },
+                "foldedComponentIds": Array [
+                  "global-styles__Container-sc-1f5kudb-0",
+                ],
+                "render": [Function],
+                "shouldForwardProp": undefined,
+                "styledComponentId": "NavigationStyles__NavbarContainer-sc-1wg22vr-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": e {
+                "baseHash": -2051488886,
+                "baseStyle": undefined,
+                "componentId": "NavigationStyles__Nav-sc-1wg22vr-0",
+                "isStatic": false,
+                "rules": Array [
+                  "background:transparent;width:100%;position:fixed;top:0;z-index:999;@media screen and (max-width:960px){width:100%;top:0px;margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px;}",
+                ],
+                "staticRulesId": "",
+              },
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "NavigationStyles__Nav-sc-1wg22vr-0",
+              "target": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": Object {
+            "$$typeof": Symbol(react.context),
+            "Consumer": Object {
+              "$$typeof": Symbol(react.context),
+              "_context": [Circular],
+            },
+            "Provider": [Circular],
+            "_currentRenderer": null,
+            "_currentRenderer2": null,
+            "_currentValue": Object {
+              "attr": undefined,
+              "className": undefined,
+              "color": undefined,
+              "size": undefined,
+              "style": undefined,
+            },
+            "_currentValue2": Object {
+              "attr": undefined,
+              "className": undefined,
+              "color": undefined,
+              "size": undefined,
+              "style": undefined,
+            },
+            "_defaultValue": null,
+            "_globalName": null,
+            "_threadCount": 0,
+          },
+        },
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;

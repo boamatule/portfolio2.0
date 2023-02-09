@@ -1,3 +1,275 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render Profile Component 1`] = `ShallowWrapper {}`;
+exports[`expect to render Profile Component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Profile />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ForwardRef(ProfileStyles__Heading)>
+          Boa Matule
+        </ForwardRef(ProfileStyles__Heading)>,
+        <ForwardRef(ProfileStyles__Subtitle)>
+          I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.
+        </ForwardRef(ProfileStyles__Subtitle)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Boa Matule",
+        },
+        "ref": null,
+        "rendered": "Boa Matule",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": e {
+            "baseHash": 1152693861,
+            "baseStyle": undefined,
+            "componentId": "ProfileStyles__Heading-sc-spc8yz-1",
+            "isStatic": false,
+            "rules": Array [
+              "padding:0px 40px;font-weight:bold;letter-spacing:1.6px;line-height:20px;justify-content:flex-start;text-align:flex-start;font-size:20px;color:yellow;margin-bottom:40px;@media screen and (max-width:800px){font-size:12px;line-height:1.8rem;letter-spacing:1.1px;}",
+            ],
+            "staticRulesId": "",
+          },
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "ProfileStyles__Heading-sc-spc8yz-1",
+          "target": "h1",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.",
+        },
+        "ref": null,
+        "rendered": "I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": e {
+            "baseHash": -1252532180,
+            "baseStyle": undefined,
+            "componentId": "ProfileStyles__Subtitle-sc-spc8yz-4",
+            "isStatic": false,
+            "rules": Array [
+              "font-size:106px;@media screen and (max-width:960px){font-size:14px;letter-spacing:2px;line-height:20px;}",
+            ],
+            "staticRulesId": "",
+          },
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "ProfileStyles__Subtitle-sc-spc8yz-4",
+          "target": "p",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": e {
+        "baseHash": -27793229,
+        "baseStyle": e {
+          "baseHash": 1516622439,
+          "baseStyle": undefined,
+          "componentId": "global-styles__Container-sc-1f5kudb-0",
+          "isStatic": false,
+          "rules": Array [
+            "max-width:1000px;margin:0 auto;padding:0 4px;",
+          ],
+          "staticRulesId": "",
+        },
+        "componentId": "ProfileStyles__ProfileWrapperContainer-sc-spc8yz-0",
+        "isStatic": false,
+        "rules": Array [
+          "",
+        ],
+        "staticRulesId": "",
+      },
+      "foldedComponentIds": Array [
+        "global-styles__Container-sc-1f5kudb-0",
+      ],
+      "render": [Function],
+      "shouldForwardProp": undefined,
+      "styledComponentId": "ProfileStyles__ProfileWrapperContainer-sc-spc8yz-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef(ProfileStyles__Heading)>
+            Boa Matule
+          </ForwardRef(ProfileStyles__Heading)>,
+          <ForwardRef(ProfileStyles__Subtitle)>
+            I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.
+          </ForwardRef(ProfileStyles__Subtitle)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Boa Matule",
+          },
+          "ref": null,
+          "rendered": "Boa Matule",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": 1152693861,
+              "baseStyle": undefined,
+              "componentId": "ProfileStyles__Heading-sc-spc8yz-1",
+              "isStatic": false,
+              "rules": Array [
+                "padding:0px 40px;font-weight:bold;letter-spacing:1.6px;line-height:20px;justify-content:flex-start;text-align:flex-start;font-size:20px;color:yellow;margin-bottom:40px;@media screen and (max-width:800px){font-size:12px;line-height:1.8rem;letter-spacing:1.1px;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "ProfileStyles__Heading-sc-spc8yz-1",
+            "target": "h1",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.",
+          },
+          "ref": null,
+          "rendered": "I'm a Full Stack Software Developer with background in hospitality's industry as a Chef and E-commerce Manager as a Founder. I'm based in beautiful Oslo, Norway. I'm originally from the pearl of Indian Ocean, Mozambique. I love building, architecting, and scaling web and mobile applications using the latest tech's stack in the market.",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": -1252532180,
+              "baseStyle": undefined,
+              "componentId": "ProfileStyles__Subtitle-sc-spc8yz-4",
+              "isStatic": false,
+              "rules": Array [
+                "font-size:106px;@media screen and (max-width:960px){font-size:14px;letter-spacing:2px;line-height:20px;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "ProfileStyles__Subtitle-sc-spc8yz-4",
+            "target": "p",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": e {
+          "baseHash": -27793229,
+          "baseStyle": e {
+            "baseHash": 1516622439,
+            "baseStyle": undefined,
+            "componentId": "global-styles__Container-sc-1f5kudb-0",
+            "isStatic": false,
+            "rules": Array [
+              "max-width:1000px;margin:0 auto;padding:0 4px;",
+            ],
+            "staticRulesId": "",
+          },
+          "componentId": "ProfileStyles__ProfileWrapperContainer-sc-spc8yz-0",
+          "isStatic": false,
+          "rules": Array [
+            "",
+          ],
+          "staticRulesId": "",
+        },
+        "foldedComponentIds": Array [
+          "global-styles__Container-sc-1f5kudb-0",
+        ],
+        "render": [Function],
+        "shouldForwardProp": undefined,
+        "styledComponentId": "ProfileStyles__ProfileWrapperContainer-sc-spc8yz-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;

@@ -1,3 +1,557 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render ProjectsList Component 1`] = `ShallowWrapper {}`;
+exports[`expect to render ProjectsList Component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectsList />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef(ProjectsListStyles__ProjectContainer)>
+        <ForwardRef(ProjectsListStyles__Heading)>
+          Projects
+        </ForwardRef(ProjectsListStyles__Heading)>
+        <ForwardRef(ProjectsListStyles__SubTitle)>
+          A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my
+           
+          <a
+            aria-label="GitHub"
+            href="https://github.com/boamatule"
+            rel="noopener noreferrer"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "yellow",
+                "fontSize": "14px",
+              }
+            }
+            target="_blank"
+          >
+             
+            github profile
+          </a>
+           
+          for more projects.
+        </ForwardRef(ProjectsListStyles__SubTitle)>
+        <ForwardRef(ProjectsListStyles__CardContainer) />
+      </ForwardRef(ProjectsListStyles__ProjectContainer)>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef(ProjectsListStyles__Heading)>
+            Projects
+          </ForwardRef(ProjectsListStyles__Heading)>,
+          <ForwardRef(ProjectsListStyles__SubTitle)>
+            A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my
+             
+            <a
+              aria-label="GitHub"
+              href="https://github.com/boamatule"
+              rel="noopener noreferrer"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "yellow",
+                  "fontSize": "14px",
+                }
+              }
+              target="_blank"
+            >
+               
+              github profile
+            </a>
+             
+            for more projects.
+          </ForwardRef(ProjectsListStyles__SubTitle)>,
+          <ForwardRef(ProjectsListStyles__CardContainer) />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Projects",
+          },
+          "ref": null,
+          "rendered": "Projects",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": -582426204,
+              "baseStyle": undefined,
+              "componentId": "ProjectsListStyles__Heading-sc-hwonem-2",
+              "isStatic": false,
+              "rules": Array [
+                "font-weight:bold;line-height:20px;letter-spacing:4px;font-size:20px;margin-bottom:0px;padding:0px 0px;color:yellow;justify-content:flex-start;text-align:flex-start;@media screen and (max-width:960px){padding-right:4px;padding-left:4px font-size:14px;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "ProjectsListStyles__Heading-sc-hwonem-2",
+            "target": "h1",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my",
+              " ",
+              <a
+                aria-label="GitHub"
+                href="https://github.com/boamatule"
+                rel="noopener noreferrer"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "yellow",
+                    "fontSize": "14px",
+                  }
+                }
+                target="_blank"
+              >
+                 
+                github profile
+              </a>,
+              " ",
+              "for more projects.",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-label": "GitHub",
+                "children": Array [
+                  " ",
+                  "github profile",
+                ],
+                "href": "https://github.com/boamatule",
+                "rel": "noopener noreferrer",
+                "style": Object {
+                  "backgroundColor": "transparent",
+                  "color": "yellow",
+                  "fontSize": "14px",
+                },
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "github profile",
+              ],
+              "type": "a",
+            },
+            " ",
+            "for more projects.",
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": 1865516771,
+              "baseStyle": undefined,
+              "componentId": "ProjectsListStyles__SubTitle-sc-hwonem-9",
+              "isStatic": false,
+              "rules": Array [
+                "margin-top:20px;color:grey;font-size:16px;letter-spacing:2px;line-height:20px;font-weight:bold;justify-content:center;align-items:center;background:transparent;@media screen and (max-width:960px){margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px font-size:140px;justify-content:center;align-items:center;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "ProjectsListStyles__SubTitle-sc-hwonem-9",
+            "target": "p",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [],
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": e {
+              "baseHash": 307329726,
+              "baseStyle": undefined,
+              "componentId": "ProjectsListStyles__CardContainer-sc-hwonem-3",
+              "isStatic": false,
+              "rules": Array [
+                "display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;grid-gap:14px;padding-top:4rem;padding-bottom:0.25rem;text-align:center;justify-content:center;@media screen and (max-width:960px){grid-template-columns:1fr;justify-content:center;align-items:center;margin:0px 0px;width:100%;}",
+              ],
+              "staticRulesId": "",
+            },
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "ProjectsListStyles__CardContainer-sc-hwonem-3",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": e {
+          "baseHash": 1581150908,
+          "baseStyle": e {
+            "baseHash": 1516622439,
+            "baseStyle": undefined,
+            "componentId": "global-styles__Container-sc-1f5kudb-0",
+            "isStatic": false,
+            "rules": Array [
+              "max-width:1000px;margin:0 auto;padding:0 4px;",
+            ],
+            "staticRulesId": "",
+          },
+          "componentId": "ProjectsListStyles__ProjectContainer-sc-hwonem-0",
+          "isStatic": false,
+          "rules": Array [
+            "margin-top:200px;@media screen and (max-width:960px){}",
+          ],
+          "staticRulesId": "",
+        },
+        "foldedComponentIds": Array [
+          "global-styles__Container-sc-1f5kudb-0",
+        ],
+        "render": [Function],
+        "shouldForwardProp": undefined,
+        "styledComponentId": "ProjectsListStyles__ProjectContainer-sc-hwonem-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef(ProjectsListStyles__ProjectContainer)>
+          <ForwardRef(ProjectsListStyles__Heading)>
+            Projects
+          </ForwardRef(ProjectsListStyles__Heading)>
+          <ForwardRef(ProjectsListStyles__SubTitle)>
+            A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my
+             
+            <a
+              aria-label="GitHub"
+              href="https://github.com/boamatule"
+              rel="noopener noreferrer"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "yellow",
+                  "fontSize": "14px",
+                }
+              }
+              target="_blank"
+            >
+               
+              github profile
+            </a>
+             
+            for more projects.
+          </ForwardRef(ProjectsListStyles__SubTitle)>
+          <ForwardRef(ProjectsListStyles__CardContainer) />
+        </ForwardRef(ProjectsListStyles__ProjectContainer)>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef(ProjectsListStyles__Heading)>
+              Projects
+            </ForwardRef(ProjectsListStyles__Heading)>,
+            <ForwardRef(ProjectsListStyles__SubTitle)>
+              A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my
+               
+              <a
+                aria-label="GitHub"
+                href="https://github.com/boamatule"
+                rel="noopener noreferrer"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "yellow",
+                    "fontSize": "14px",
+                  }
+                }
+                target="_blank"
+              >
+                 
+                github profile
+              </a>
+               
+              for more projects.
+            </ForwardRef(ProjectsListStyles__SubTitle)>,
+            <ForwardRef(ProjectsListStyles__CardContainer) />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Projects",
+            },
+            "ref": null,
+            "rendered": "Projects",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": e {
+                "baseHash": -582426204,
+                "baseStyle": undefined,
+                "componentId": "ProjectsListStyles__Heading-sc-hwonem-2",
+                "isStatic": false,
+                "rules": Array [
+                  "font-weight:bold;line-height:20px;letter-spacing:4px;font-size:20px;margin-bottom:0px;padding:0px 0px;color:yellow;justify-content:flex-start;text-align:flex-start;@media screen and (max-width:960px){padding-right:4px;padding-left:4px font-size:14px;}",
+                ],
+                "staticRulesId": "",
+              },
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "ProjectsListStyles__Heading-sc-hwonem-2",
+              "target": "h1",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                "A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my",
+                " ",
+                <a
+                  aria-label="GitHub"
+                  href="https://github.com/boamatule"
+                  rel="noopener noreferrer"
+                  style={
+                    Object {
+                      "backgroundColor": "transparent",
+                      "color": "yellow",
+                      "fontSize": "14px",
+                    }
+                  }
+                  target="_blank"
+                >
+                   
+                  github profile
+                </a>,
+                " ",
+                "for more projects.",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "aria-label": "GitHub",
+                  "children": Array [
+                    " ",
+                    "github profile",
+                  ],
+                  "href": "https://github.com/boamatule",
+                  "rel": "noopener noreferrer",
+                  "style": Object {
+                    "backgroundColor": "transparent",
+                    "color": "yellow",
+                    "fontSize": "14px",
+                  },
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "github profile",
+                ],
+                "type": "a",
+              },
+              " ",
+              "for more projects.",
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": e {
+                "baseHash": 1865516771,
+                "baseStyle": undefined,
+                "componentId": "ProjectsListStyles__SubTitle-sc-hwonem-9",
+                "isStatic": false,
+                "rules": Array [
+                  "margin-top:20px;color:grey;font-size:16px;letter-spacing:2px;line-height:20px;font-weight:bold;justify-content:center;align-items:center;background:transparent;@media screen and (max-width:960px){margin-right:auto;margin-left:auto;padding-right:4px;padding-left:4px font-size:140px;justify-content:center;align-items:center;}",
+                ],
+                "staticRulesId": "",
+              },
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "ProjectsListStyles__SubTitle-sc-hwonem-9",
+              "target": "p",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [],
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": e {
+                "baseHash": 307329726,
+                "baseStyle": undefined,
+                "componentId": "ProjectsListStyles__CardContainer-sc-hwonem-3",
+                "isStatic": false,
+                "rules": Array [
+                  "display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;grid-gap:14px;padding-top:4rem;padding-bottom:0.25rem;text-align:center;justify-content:center;@media screen and (max-width:960px){grid-template-columns:1fr;justify-content:center;align-items:center;margin:0px 0px;width:100%;}",
+                ],
+                "staticRulesId": "",
+              },
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "ProjectsListStyles__CardContainer-sc-hwonem-3",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": e {
+            "baseHash": 1581150908,
+            "baseStyle": e {
+              "baseHash": 1516622439,
+              "baseStyle": undefined,
+              "componentId": "global-styles__Container-sc-1f5kudb-0",
+              "isStatic": false,
+              "rules": Array [
+                "max-width:1000px;margin:0 auto;padding:0 4px;",
+              ],
+              "staticRulesId": "",
+            },
+            "componentId": "ProjectsListStyles__ProjectContainer-sc-hwonem-0",
+            "isStatic": false,
+            "rules": Array [
+              "margin-top:200px;@media screen and (max-width:960px){}",
+            ],
+            "staticRulesId": "",
+          },
+          "foldedComponentIds": Array [
+            "global-styles__Container-sc-1f5kudb-0",
+          ],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "ProjectsListStyles__ProjectContainer-sc-hwonem-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;
