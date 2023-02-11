@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
+import Toggle from '../../components/DarkMode/Toggler';
 
 export const Nav = styled(motion.div)`
   background: transparent;
@@ -58,11 +59,12 @@ export const NavMenu = styled.ul`
   justify-content: center;
   text-align: center;
   outline: none;
-  list-style: none;
   margin-top: 100px;
   margin-bottom: 160px;
   text-transform: uppercase;
-  font-family: 'IBM Plex Mono', monospace;
+  /* font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+  font-weight: bold; */
 
   @media (max-width: 960px) {
     margin-top: 80px;
@@ -84,16 +86,16 @@ export const NavItem = styled.li`
 export const NavLinks = styled(Link)`
   background: transparent;
   display: flex;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding: 0rem 8rem;
   height: 100%;
-  font-size: 16px;
   color: grey;
-  font-family: 'IBM Plex Mono', monospace;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-size: 18px;
   line-height: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
   font-weight: bold;
-
 
   @media (max-width: 960px) {
     font-size: 14px;
@@ -177,4 +179,56 @@ export const MobileIcon = styled.div`
 
 
 
+export const ToggleSwitchCheckBoxWrapper = styled.div`
+  position: relative;
+`;
+export const ToggleSwitchCheckBoxLabel = styled.label`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 26px;
+  border-radius: 15px;
+  background: #bebebe;
+  /* background: white; */
 
+  cursor: pointer;
+  &::after {
+    /* content: ""; */
+    content: ${Toggle};
+    display: block;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    background: #ffffff;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+`;
+export const ToggleSwitchCheckBox = styled.input`
+  opacity: 0;
+  z-index: 1;
+  /* top: 60; */
+
+  border-radius: 15px;
+  width: 42px;
+  height: 26px;
+
+  &:checked + ${ToggleSwitchCheckBoxLabel} {
+    /* background: #4fbe79; */
+    background: red;
+    /* top: 120; */
+    &::after {
+      content: "";
+      /* content: ${Toggle}; */
+
+      display: block;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      margin-left: 21px;
+      transition: 0.2s;
+    }
+  }
+`;

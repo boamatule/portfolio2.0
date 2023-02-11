@@ -22,7 +22,9 @@ import {
   LogoContainer,
   NavItemSocialIconWrapper,
   NavItemSocialIconLinkMotion,
-
+  ToggleSwitchCheckBoxWrapper,
+  ToggleSwitchCheckBoxLabel,
+  ToggleSwitchCheckBox,
 } from './Navigation.Styles';
 
 import {
@@ -107,8 +109,9 @@ const NavBar = () => {
               </NavItemSocialIconLinkMotion>
 
               <NavItemSocialIconLinkMotion
-                whileHover={{ scale: 1.1,
-                  transition: { duration: 1.5 } 
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 1.5 }
                 }}
 
               >
@@ -123,11 +126,18 @@ const NavBar = () => {
                 </NavItemSocialIconLink>
               </NavItemSocialIconLinkMotion>
 
-              <NavItemToggle 
-                // whileHover={{ scale: 1, rotate: 0 }}
+              <NavItemToggle
+              // whileHover={{ scale: 1, rotate: 0 }}
               >
-                <Toggle theme={theme} toggleTheme={themeToggler} />
+                <ToggleSwitchCheckBoxWrapper>
+                  <ToggleSwitchCheckBox id="checkbox" name="checkbox" type="checkbox" />
+                  <ToggleSwitchCheckBoxLabel htmlFor="checkbox">
+                    <Toggle theme={theme} toggleTheme={themeToggler} />
+                  </ToggleSwitchCheckBoxLabel>
+                </ToggleSwitchCheckBoxWrapper>
+
               </NavItemToggle>
+
 
             </NavItemSocialIconWrapper>
           </NavbarContainer>

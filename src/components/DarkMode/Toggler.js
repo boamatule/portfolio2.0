@@ -11,8 +11,7 @@ Sun = Moon = styled.svg`
   cursor: pointer;
   top: 0;
   background: 'transparent';
-  height: 80px;
-
+  /* height: 80px; */
 
   &:hover {
     transform: none;
@@ -31,11 +30,11 @@ const Toggle = ({ theme, toggleTheme }) => (
     <div onClick={toggleTheme}>
       {theme === 'light' ? (
         <Moon
-          width="20"
-          height="20"
+          width="16"
+          height="16"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 20 20"
+          viewBox="0 0 16 16"
           stroke="currentColor"
           overflow="show"
           background="transparent"
@@ -49,11 +48,11 @@ const Toggle = ({ theme, toggleTheme }) => (
         </Moon>
       ) : (
         <Sun
-          width="24"
-          height="24"
+          width="16"
+          height="16"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 24"
+          viewBox="0 0 16 16"
           stroke="currentColor"
         >
           <path
