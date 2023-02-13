@@ -1,6 +1,20 @@
 import styled, { createGlobalStyle } from 'styled-components/macro';
 
 export const GlobalStyles = createGlobalStyle`
+:root {
+  --light: grey;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+  --background-color: #000;
+}
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #fff;
+}
+
+
   *,
   *::before,
   *::after {
@@ -12,7 +26,8 @@ export const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #000000;
+    background-color: var(--background-color);
+    color: var(--font-color);
   }
   
   a {

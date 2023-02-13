@@ -9,7 +9,6 @@ import { ThemeProvider } from 'styled-components';
 
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
-import Toggle from '../../components/DarkMode/Toggler';
 
 import {
   Nav,
@@ -18,13 +17,10 @@ import {
   NavLinks,
   NavItem,
   NavItemSocialIconLink,
-  NavItemToggle,
   LogoContainer,
   NavItemSocialIconWrapper,
   NavItemSocialIconLinkMotion,
-  ToggleSwitchCheckBoxWrapper,
-  ToggleSwitchCheckBoxLabel,
-  ToggleSwitchCheckBox,
+  ToggleSwitch,
 } from './Navigation.Styles';
 
 import {
@@ -35,6 +31,7 @@ import {
   Subtitle,
   ProfileWrapperContainer
 } from '../../components/Profile/ProfileStyles';
+import DarkMode from '../../components/DarkMode/DarkMode';
 
 
 const NavBar = () => {
@@ -93,7 +90,6 @@ const NavBar = () => {
                 duration: 1.5,
               }}
 
-
             >
               <NavItemSocialIconLinkMotion
                 whileHover={{ scale: 1.1, transition: { duration: 1.5 } }}
@@ -125,20 +121,7 @@ const NavBar = () => {
                   <FaGithub style={{ width: '20px', height: '20px' }} />
                 </NavItemSocialIconLink>
               </NavItemSocialIconLinkMotion>
-
-              <NavItemToggle
-              // whileHover={{ scale: 1, rotate: 0 }}
-              >
-                <ToggleSwitchCheckBoxWrapper>
-                  <ToggleSwitchCheckBox id="checkbox" name="checkbox" type="checkbox" />
-                  <ToggleSwitchCheckBoxLabel htmlFor="checkbox">
-                    <Toggle theme={theme} toggleTheme={themeToggler} />
-                  </ToggleSwitchCheckBoxLabel>
-                </ToggleSwitchCheckBoxWrapper>
-
-              </NavItemToggle>
-
-
+                <DarkMode />
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
