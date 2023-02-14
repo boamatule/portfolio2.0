@@ -22,7 +22,7 @@ export const Title = styled.p`
   font-size: 16px;
   margin-top: 200px;
   margin-bottom: 60px;
-  color: yellow;
+  color: #4568dc;
 
   /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
   @media screen and (max-width: 960px) {
@@ -59,7 +59,7 @@ export const Input = styled.input`
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
-  border: 2px solid yellow;
+  border: 2px solid #4568dc;
   border-radius: 2px;
   padding: 8px;
   &:last-of-type {
@@ -87,7 +87,7 @@ export const TextArea = styled.textarea`
   margin-bottom: 14px;
   border-bottom: 1px solid grey;
   color: grey;
-  border: 2px solid yellow;
+  border: 2px solid #4568dc;
   border-radius: 2px;
   padding: 8px;
   height: 200px;

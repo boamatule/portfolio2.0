@@ -13,11 +13,12 @@ export const Heading = styled.h1`
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 20px;
-
-  color: yellow;
-  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
+  color: #4568dc;
   margin-bottom: 40px;
-  
+  font-size: 400;
+  font-family: 'Rubik', sans-serif;
+
+  /* color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 0)' : '#6969FB')}; */
 
   @media screen and (max-width: 800px) {
     font-size: 12px;
@@ -47,7 +48,7 @@ export const Img = styled.img`
   height: 80px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 2px solid yellow;
+  border: 2px solid grey;
   margin-right: 0.5rem;
 
 

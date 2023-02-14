@@ -36,7 +36,7 @@ export const Heading = styled.h1`
   font-size: 20px;
   margin-bottom: 0px;
   padding: 0px 0px;
-  color: yellow;
+  color: #4568dc;
   padding-right: 4px;
   padding-left: 4px
 

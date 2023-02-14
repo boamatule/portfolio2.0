@@ -33,7 +33,7 @@ export const Copyright = styled.p`
   letter-spacing: 2px;
   align-items: center;
   text-align: center;
-  color: yellow;
+  color: #4568dc;
   margin: 0px 0px;
 
   @media screen and (max-width: 960px) {

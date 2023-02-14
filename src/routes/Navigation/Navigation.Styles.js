@@ -63,7 +63,7 @@ export const NavMenu = styled.ul`
   outline: none;
   margin-top: 0px;
   margin-bottom: 160px;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
 
   @media (max-width: 960px) {
@@ -86,9 +86,9 @@ export const NavLinks = styled(Link)`
   height: 100%;
   color: grey;
   letter-spacing: 10px;
-  font-size: 18px;
+  font-size: 600;
   line-height: 20px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Rubik', monospace;
   font-style: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -101,37 +101,41 @@ export const NavLinks = styled(Link)`
 
 export const NavItemSocialIconWrapper = styled(motion.div)`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap-reverse;
   position: sticky; 
   top: 0;
+  margin: 0rem 0rem;
 
   @media screen and (max-width: 960px) {
     top: 0;
     flex-wrap: nowrap;
-
   }
 `;
 
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
+  /* margin-right: 6rem 0rem; */
+
 `;
 
 export const NavItemSocialIconLink = styled.a`
   display: flex;
-  text-decoration: none;
-  align-items: center;
-  padding: 0rem 1rem;
-  transition: all 0.5s ease-out;
-  cursor: pointer;
   top: 0;
   height: 100px;
+  text-decoration: none;
+  align-items: center;
+  padding: 0rem 1.4rem;
+  margin-right: 0rem;
 
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 
   @media screen and (max-width: 960px) {
     padding: 0rem 0.4rem;
     top: 0;
   }
 `;
+
 export const MobileIcon = styled.div`
   display: none;
 

@@ -19,7 +19,7 @@ export const Title = styled.p`
   font-weight: normal;
   letter-spacing: 4px;
   line-height: 4px;
-  color: yellow;
+  color: #4568dc;
   margin-bottom: 24px;
   text-align: center;
 
@@ -36,7 +36,7 @@ export const Heading = styled.h1`
   font-size: 20px;
   margin-bottom: 0px;
   padding: 0px 0px;
-  color: yellow;
+  color: #4568dc;
   justify-content: flex-start;
   text-align: flex-start;
 

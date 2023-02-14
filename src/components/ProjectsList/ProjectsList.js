@@ -27,7 +27,7 @@ const ProjectsList = () => {
           A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
           <a
             style={{
-              color: 'yellow',
+              color: '#4568dc',
               fontSize: '14px',
               backgroundColor: 'transparent',
             }}
