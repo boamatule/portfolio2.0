@@ -9,7 +9,6 @@ export const Nav = styled(motion.div)`
   position: fixed;
   top: 0;
   z-index: 999;
-  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
 
   @media screen and (max-width: 960px) {
     top: 0px;
@@ -53,49 +52,64 @@ export const LogoContainer = styled(Link)`
 
 export const NavMenu = styled.ul`
   display: flex;
-  text-align: end;
-  justify-content: flex-end;
+  text-align: center;
+  justify-content: center;
   list-style: none;
   margin-right: 0rem;
   width: 60vw;
-  justify-content: end;
   background: transparent;
   outline: none;
   margin-top: 0px;
   margin-bottom: 160px;
-  text-transform: none;
+  text-transform: uppercase;
   text-decoration: none;
 
   @media (max-width: 960px) {
-    margin-top: 80px;  
+    margin-top: 80px;
+    justify-content: space-between;
+    padding: 0px 0px;
+    text-align: center;
   }
 `;
 
 export const NavItem = styled.li`
+  display: flex;
+  align-items: center;
   margin-top: 40px;
   height: 80px;
 
   @media screen and (max-width: 960px) {
-    position: relative;
+    /* width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  */
   }
 `;
 
 export const NavLinks = styled(Link)`
   display: flex;
-  align-items: center;
+  text-align: center;
   height: 100%;
   color: grey;
-  letter-spacing: 10px;
-  font-size: 600;
+  letter-spacing: 8px;
+  font-size: 700;
   line-height: 20px;
-  font-family: 'Rubik', monospace;
+  font-family: 'Oswald', monospace;
   font-style: none;
   font-weight: bold;
+  /* padding: 10px 60px; */
+  text-decoration: none;
   padding: 0.5rem 1rem;
 
   @media (max-width: 960px) {
-    font-size: 14px;
-    padding: 1rem 0.8rem;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    /* padding: 0rem 1rem; */
+    margin-left: 20px;
+    font-size: 700;
+
   }
 `;
 
@@ -114,8 +128,6 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
 `;
 
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
-  /* margin-right: 6rem 0rem; */
-
 `;
 
 export const NavItemSocialIconLink = styled.a`
@@ -126,7 +138,6 @@ export const NavItemSocialIconLink = styled.a`
   align-items: center;
   padding: 0rem 1.4rem;
   margin-right: 0rem;
-
   transition: all 0.5s ease-out;
   cursor: pointer;
 

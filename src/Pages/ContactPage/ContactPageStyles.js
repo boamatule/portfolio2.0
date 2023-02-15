@@ -3,26 +3,48 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  ${Container}
-  /* margin-top: 200px; */
-  justify-content: center;
-  text-align: center;
+  margin-top: 200px;
+  justify-content: flex-start;
+  text-align: flex-start;
+
   @media screen and (max-width: 960px) {
     width: 100%;
     text-align: center;
   }
 `;
 
+export const Heading = styled.h1`
+  display: flex;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  padding: 0px 0px;
+  color: #4568dc;
+  justify-content: flex-start;
+  text-align: flex-start;
+  font-size: 400;
+  font-family: 'Rubik', sans-serif;
+
+  @media screen and (max-width: 960px) {
+    padding-right: 4px;
+    padding-left: 4px
+    font-size: 14px;
+    justify-content: flex-start;
+    text-align: flex-start;
+  }
+`;
+
 export const Title = styled.p`
+  display: flex;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 24px;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 16px;
-  margin-top: 200px;
   margin-bottom: 60px;
-  color: #4568dc;
+  color: grey;
 
   /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
   @media screen and (max-width: 960px) {
@@ -39,6 +61,7 @@ export const Form = styled.form`
   margin: 40px auto;
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
+
   @media screen and (max-width: 960px) {
     max-width: 100%;
     margin-right: auto;

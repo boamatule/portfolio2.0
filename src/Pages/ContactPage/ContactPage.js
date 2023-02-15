@@ -10,6 +10,7 @@ import {
   ContactContainer,
   ContactButtonWrapper,
   ContactButton,
+  Heading
 } from './ContactPageStyles';
 
 const ContactPage = () => {
@@ -44,6 +45,9 @@ const ContactPage = () => {
 
   return (
     <ContactContainer>
+      <Heading>
+        Contact
+      </Heading>
       <Title>
         Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.
       </Title>

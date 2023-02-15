@@ -16,7 +16,6 @@ export const Description = styled.p`
   justify-content: center;
   align-items: center;
   background: transparent;
-  /* padding: 0px 44px; */
 
   @media screen and (min-width: 960px) {
     max-width: 100%;
@@ -30,19 +29,23 @@ export const Description = styled.p`
 export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
-  letter-spacing: 2px;
-  justify-content: flex-start;
-  text-align: flex-start;
-  font-size: 20px;
+  letter-spacing: 4px;
   margin-bottom: 0px;
   padding: 0px 0px;
   color: #4568dc;
+  justify-content: flex-start;
+  text-align: flex-start;
+  font-size: 400;
+  font-family: 'Rubik', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 4px;
   padding-left: 4px
 
   @media screen and (min-width: 960px) {
-    padding-right: 4px;
-    padding-left: 4px
-    font-size: 14px;
+    line-height: 14px;
+    font-size: 100;
+    letter-spacing: 1px;
+    line-height: 30px;
   }
 `;
