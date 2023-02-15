@@ -3,21 +3,15 @@ import styled from 'styled-components/macro';
 export const ToggleSwitch = styled.div`
   display: flex;
   justify-content: flex-end;
-  /* align-items: flex-start; */
-  /* position: absolute; */
   width: 200px;
   top: 10px;
-  margin-left: 900px;
+  margin-left: 0px;
   position: absolute;
-  /* margin-right: auto;
-  margin-left: auto;
-  padding-right: 4px;
-  padding-left: 4px; */
 
   @media screen and (max-width: 960px) {
-    margin: 0px 20px; 
-    padding: 40px 0px 0px 200px; 
-    justify-content: flex-end;
+    margin: 40px 0px; 
+    margin-left: 0px;
+    justify-content: center;
     align-items: flex-end;
   }
 `;

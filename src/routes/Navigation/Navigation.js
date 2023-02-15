@@ -21,7 +21,7 @@ import {
   NavItemSocialIconWrapper,
   NavItemSocialIconLinkMotion,
   ToggleSwitch,
-  
+  NavItemSocialWrapper,
 } from './Navigation.Styles';
 
 import {
@@ -90,38 +90,40 @@ const NavBar = () => {
               transition={{
                 duration: 1.5,
               }}
-              >
-              <NavItemSocialIconLinkMotion
-                whileHover={{ scale: 1.1, transition: { duration: 1.5 } }}
-                >
-                <NavItemSocialIconLink
-                  href="https://www.linkedin.com/in/boa-matule-2082b068/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                  >
-                  <FaLinkedinIn style={{ width: '20px', height: '20px' }} />
-                </NavItemSocialIconLink>
-              </NavItemSocialIconLinkMotion>
+            >
 
-              <NavItemSocialIconLinkMotion
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 1.5 }
-                }}
+                <NavItemSocialIconLinkMotion
+                  whileHover={{ scale: 1.1, transition: { duration: 1.5 } }}
                 >
-                <NavItemSocialIconLink
-                  href="https://github.com/boamatule"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub"
-                >
-                  <FaGithub style={{ width: '20px', height: '20px' }} />
-                </NavItemSocialIconLink>
-              </NavItemSocialIconLinkMotion>
-              {/* <DarkMode /> */}
+                  <NavItemSocialIconLink
+                    href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedinIn style={{ width: '20px', height: '20px' }} />
+                  </NavItemSocialIconLink>
+                </NavItemSocialIconLinkMotion>
+
+                <NavItemSocialIconLinkMotion
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 1.5 }
+                  }}
+                  >
+                  <NavItemSocialIconLink
+                    href="https://github.com/boamatule"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <FaGithub style={{ width: '20px', height: '20px' }} />
+                  </NavItemSocialIconLink>
+                </NavItemSocialIconLinkMotion>
+                <DarkMode />
+
             </NavItemSocialIconWrapper>
-            <DarkMode />
+
           </NavbarContainer>
         </Nav>
         <Outlet />

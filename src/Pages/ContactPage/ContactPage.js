@@ -46,7 +46,7 @@ const ContactPage = () => {
   return (
     <ContactContainer>
       <Heading>
-        Contact
+        Let´s get in touch!
       </Heading>
       <Title>
         Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.

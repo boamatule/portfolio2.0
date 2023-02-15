@@ -115,19 +115,28 @@ export const NavLinks = styled(Link)`
 
 export const NavItemSocialIconWrapper = styled(motion.div)`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap-reverse;
-  position: sticky; 
+  position: relative; 
   top: 0;
-  margin: 0rem 0rem;
+  padding-right: 80px;
 
   @media screen and (max-width: 960px) {
-    top: 0;
+    padding-right: 160px;
+    justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: nowrap;
   }
 `;
 
+export const NavItemSocialWrapper = styled.div`
+    @media screen and (max-width: 960px) {
+    /* margin-left: 80px; */
+  }
+`;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
+      /* margin-right: 0.5rem; */
+
 `;
 
 export const NavItemSocialIconLink = styled.a`
@@ -136,13 +145,15 @@ export const NavItemSocialIconLink = styled.a`
   height: 100px;
   text-decoration: none;
   align-items: center;
-  padding: 0rem 1.4rem;
+  padding: 0rem 1rem;
   margin-right: 0rem;
   transition: all 0.5s ease-out;
   cursor: pointer;
 
   @media screen and (max-width: 960px) {
-    padding: 0rem 0.4rem;
+    padding: 2.9rem 0.4rem;
+    /* justify-content: space-between; */
+    /* margin-right: 80px; */
     top: 0;
   }
 `;

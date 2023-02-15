@@ -154,23 +154,25 @@ export const BoxStyled = styled(motion.div)`
 `;
 
 export const SubTitle = styled.p`
-  margin-top: 20px;
+  margin-top: 16px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 2.8px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: normal;
   justify-content: center;
   align-items: center;
   background: transparent;
     
   @media screen and (max-width: 960px) {
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
     padding-left: 4px
     font-size: 140px;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    font-size: 14px;
+
   }
 `;

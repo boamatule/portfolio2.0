@@ -30,28 +30,28 @@ export const Heading = styled.h1`
     padding-right: 4px;
     padding-left: 4px
     font-size: 14px;
-    justify-content: flex-start;
-    text-align: flex-start;
   }
 `;
 
 export const Title = styled.p`
-  display: flex;
-  font-weight: bold;
-  letter-spacing: 2px;
-  line-height: 24px;
-  justify-content: flex-start;
-  text-align: flex-start;
-  font-size: 16px;
-  margin-bottom: 60px;
+  margin-top: 16px;
   color: grey;
+  font-size: 16px;
+  letter-spacing: 2.8px;
+  line-height: 20px;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-bottom: 60px;
 
   /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
   @media screen and (max-width: 960px) {
-    font-size: 14px;
+    /* font-size: 14px;
     letter-spacing: 1.6px;
     line-height: 20px;
-    width: 100%;
+    width: 100%; */
+    font-size: 14px;
   }
 `;
 
