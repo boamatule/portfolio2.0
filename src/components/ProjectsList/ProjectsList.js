@@ -13,6 +13,7 @@ import {
   Text,
   SubTitle,
   ProjectContainer,
+  GithubLink,
 } from './ProjectsListStyles';
 
 const ProjectsList = () => {
@@ -24,21 +25,16 @@ const ProjectsList = () => {
         <Heading>Projects</Heading>
         <SubTitle>
           A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
-          <a
-            style={{
-              color: '#4568dc',
-              fontSize: '14px',
-              backgroundColor: 'transparent',
-            }}
+          <GithubLink
             href="https://github.com/boamatule"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
             {' '}
-            github profile
-          </a>{' '}
-          for more projects.
+            github
+          </GithubLink>{' '}
+          profile for more projects.
         </SubTitle>
         <CardContainer>
           {projects.map((project) => (

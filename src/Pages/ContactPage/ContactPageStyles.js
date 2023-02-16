@@ -3,33 +3,46 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  margin-top: 200px;
-  justify-content: flex-start;
-  text-align: flex-start;
+  margin-top: 100px;
+  display: grid;
+  grid-gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
 
   @media screen and (max-width: 960px) {
     width: 100%;
     text-align: center;
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const HeadingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: flex-start;
+  
+  @media screen and (max-width: 960px) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 `;
 
 export const Heading = styled.h1`
-  display: flex;
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
   margin-bottom: 20px;
   padding: 0px 0px;
   color: #4568dc;
-  justify-content: flex-start;
-  text-align: flex-start;
-  font-size: 400;
+  font-size: 40px;
   font-family: 'Rubik', sans-serif;
 
   @media screen and (max-width: 960px) {
-    padding-right: 4px;
-    padding-left: 4px
-    font-size: 14px;
+    font-size: 24px;
   }
 `;
 
@@ -40,25 +53,17 @@ export const Title = styled.p`
   letter-spacing: 2.8px;
   line-height: 20px;
   font-weight: normal;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
   margin-bottom: 60px;
 
-  /* color: ${({ lightText }) => (lightText ? '#5454CB' : '#6969FB')}; */
   @media screen and (max-width: 960px) {
-    /* font-size: 14px;
-    letter-spacing: 1.6px;
-    line-height: 20px;
-    width: 100%; */
     font-size: 14px;
   }
 `;
 
 export const Form = styled.form`
-  display: grid;
+  margin: auto;
   width: 100%;
-  margin: 40px auto;
+  display: grid;
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 

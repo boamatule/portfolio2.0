@@ -10,7 +10,8 @@ import {
   ContactContainer,
   ContactButtonWrapper,
   ContactButton,
-  Heading
+  Heading,
+  HeadingContainer
 } from './ContactPageStyles';
 
 const ContactPage = () => {
@@ -38,24 +39,26 @@ const ContactPage = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...message }),
     })
-      .then(() => { 
+      .then(() => {
         navigate('/message_sent_successfully');
         setTimeout(() => {
-        navigate('/');
-      }, 3000);
-    })
-    .catch((error) => alert(error));
+          navigate('/');
+        }, 3000);
+      })
+      .catch((error) => alert(error));
     event.target.reset();
   };
 
   return (
     <ContactContainer>
-      <Heading>
-        Let's get in touch!
-      </Heading>
-      <Title>
-        Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.
-      </Title>
+      <HeadingContainer>
+        <Heading>
+          Let's get in touch!
+        </Heading>
+        <Title>
+          Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.
+        </Title>
+      </HeadingContainer>
       <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
         <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
         <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />

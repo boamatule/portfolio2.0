@@ -3,6 +3,7 @@ import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
+
 `;
 
 export const Heading = styled.h1`

@@ -92,6 +92,20 @@ export const Text = styled.p`
   }
 `;
 
+export const GithubLink = styled.a`
+  color: grey;
+  border-bottom: 4px solid grey;
+
+  &:hover {
+		transform: none;
+		transition: all 0s ease-out 0s;
+		background: none;
+    color: #4568dc;
+	}
+  @media screen and (max-width: 960px) {
+  }
+`;
+
 export const ProjectDescription = styled.p`
   display: inline-block;
   color: grey;

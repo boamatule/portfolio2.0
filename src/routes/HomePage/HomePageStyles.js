@@ -3,9 +3,6 @@ import { Container } from '../../global-styles';
 
 export const  HomePageWrapper = styled(Container)`
   display: flex;
-  column-gap: 0px;
-  flex-direction: column;
-  justify-content: space-around;
   margin-top: 100px;
 
   @media screen and (max-width: 960px) {

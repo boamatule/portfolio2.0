@@ -78,10 +78,6 @@ export const NavItem = styled.li`
   height: 80px;
 
   @media screen and (max-width: 960px) {
-    /* width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;  */
   }
 `;
 
@@ -107,7 +103,6 @@ export const NavLinks = styled(Link)`
 		padding: 10px 22px;
     color: #4568dc;
 	}
-
 
   @media screen and (max-width: 960px) (max-width: 960px) {
     font-size: 12px;
