@@ -6,12 +6,10 @@ import { Container } from '../../global-styles';
 export const Nav = styled(motion.div)`
   background: transparent;
   width: 100%;
-  position: fixed;
   top: 0;
   z-index: 999;
 
   @media screen and (max-width: 960px) {
-    top: 0px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
@@ -23,10 +21,10 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 120px;
   z-index: 1;
 
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
@@ -42,7 +40,7 @@ export const LogoContainer = styled(Link)`
   cursor: pointer;
   position: absolute;
 
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     position: flex;
     margin-left: 20px;
     margin-top: 20px;
@@ -64,7 +62,7 @@ export const NavMenu = styled.ul`
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     margin-top: 80px;
     justify-content: space-between;
     padding: 0px 0px;
@@ -75,6 +73,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   display: flex;
   align-items: center;
+  text-align: center;
   margin-top: 40px;
   height: 80px;
 
@@ -97,11 +96,20 @@ export const NavLinks = styled(Link)`
   font-family: 'Oswald', monospace;
   font-style: none;
   font-weight: bold;
-  /* padding: 10px 60px; */
   text-decoration: none;
   padding: 0.5rem 1rem;
 
-  @media (max-width: 960px) {
+
+  &:hover {
+		transform: none;
+		transition: all 0s ease-out 0s;
+		background: none;
+		padding: 10px 22px;
+    color: #4568dc;
+	}
+
+
+  @media screen and (max-width: 960px) (max-width: 960px) {
     font-size: 12px;
     text-decoration: none;
     text-align: center;

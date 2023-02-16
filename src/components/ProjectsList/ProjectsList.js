@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ProjectsProvider, ProjectsContext } from '../../contexts/projects.context';
 
-import { Button, Glassmorphism } from '../../global-styles';
+import { Button, Glass } from '../../global-styles';
 import {
   Image,
   CardContainer,
@@ -21,7 +21,6 @@ const ProjectsList = () => {
   return (
     <ProjectsProvider>
       <ProjectContainer>
-
         <Heading>Projects</Heading>
         <SubTitle>
           A list of curated projects to showcase some of my tech stacks. Please, have a look below and check my{' '}
@@ -44,7 +43,7 @@ const ProjectsList = () => {
         <CardContainer>
           {projects.map((project) => (
             <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
-              <Glassmorphism>
+              <Glass>
                 <Image src={project.imageUrl} alt={project.alt} />
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
@@ -78,7 +77,7 @@ const ProjectsList = () => {
                     </Button>
                   </a>
                 </ButtonWrapper>
-              </Glassmorphism>
+              </Glass>
             </BoxStyled>
           ))}
         </CardContainer>

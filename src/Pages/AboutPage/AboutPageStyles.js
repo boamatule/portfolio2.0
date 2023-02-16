@@ -3,14 +3,13 @@ import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
-  margin-top: 200px;
 `;
 
 export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   padding: 0px 0px;
   color: #4568dc;
   justify-content: flex-start;
@@ -22,7 +21,6 @@ export const Heading = styled.h1`
   padding-right: 4px;
   padding-left: 4px;
   margin-bottom: 20px;
-
 
   @media screen and (min-width: 960px) {
     padding-right: 4px;
@@ -39,7 +37,8 @@ export const Description = styled.p`
   font-weight: normal;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  margin-bottom: 60px;
+
 
   @media screen and (min-width: 960px) {
     font-size: 14px;

@@ -38,15 +38,20 @@ const ContactPage = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...message }),
     })
-      .then(() => navigate('/message-sent-successfully'))
-      .catch((error) => alert(error));
+      .then(() => { 
+        navigate('/message_sent_successfully');
+        setTimeout(() => {
+        navigate('/');
+      }, 3000);
+    })
+    .catch((error) => alert(error));
     event.target.reset();
   };
 
   return (
     <ContactContainer>
       <Heading>
-        Let´s get in touch!
+        Let's get in touch!
       </Heading>
       <Title>
         Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.

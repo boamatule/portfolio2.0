@@ -8,8 +8,12 @@ import { HomePageWrapper } from './HomePageStyles';
 const HomePage = () => {
   return (
     <HomePageWrapper>
+        <div>
+
       <About />
       <ProjectsList />
+      </div>
+
     </HomePageWrapper>
   );
 }

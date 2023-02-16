@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
-  margin-top: 200px;
+  /* margin-top: 200px; */
 
   @media screen and (max-width: 960px) {
   }
@@ -29,13 +29,13 @@ export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
-  margin-bottom: 0px;
   padding: 0px 0px;
   color: #4568dc;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 400;
   font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 960px) {
     padding-right: 4px;
@@ -165,13 +165,6 @@ export const SubTitle = styled.p`
   background: transparent;
     
   @media screen and (max-width: 960px) {
-    /* margin-right: auto;
-    margin-left: auto;
-    padding-right: 4px;
-    padding-left: 4px
-    font-size: 140px;
-    justify-content: center;
-    align-items: center; */
     font-size: 14px;
 
   }

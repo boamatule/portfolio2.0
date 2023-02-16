@@ -1,12 +1,14 @@
 import styled from 'styled-components/macro';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
 
 export const  HomePageWrapper = styled(Container)`
-  margin-top: 120px;
+  display: flex;
+  column-gap: 0px;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 100px;
 
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
