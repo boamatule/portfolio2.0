@@ -67,13 +67,13 @@ const NavBar = () => {
               <Img src="../../images/avatar.webp" alt="Boa" />
             </LogoContainer>
 
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
+            <NavMenu>
+              {/* <NavItem>
                 <NavLinks to="/curated_projects">portfolio</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/contact_me">contact</NavLinks>
-              </NavItem>
+              </NavItem> */}
             </NavMenu>
 
             <NavItemSocialIconWrapper

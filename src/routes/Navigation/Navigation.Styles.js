@@ -5,15 +5,15 @@ import { Container } from '../../global-styles';
 
 export const Nav = styled(motion.div)`
   background: transparent;
-  width: 100%;
+  /* width: 100%; */
   top: 0;
   z-index: 999;
 
   @media screen and (max-width: 960px) {
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
-    padding-left: 4px;
+    padding-left: 4px; */
   }
 `;
 
@@ -22,7 +22,7 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 80px;
   margin-bottom: 120px;
-  z-index: 1;
+  /* z-index: 1; */
 
   @media screen and (max-width: 960px) {
     margin-right: auto;
@@ -42,7 +42,7 @@ export const LogoContainer = styled(Link)`
 
   @media screen and (max-width: 960px) {
     position: flex;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -98,7 +98,6 @@ export const NavLinks = styled(Link)`
 
   &:hover {
 		transform: none;
-		transition: all 0s ease-out 0s;
 		background: none;
 		padding: 10px 22px;
     color: #4568dc;
@@ -109,10 +108,8 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    /* padding: 0rem 1rem; */
     margin-left: 20px;
     font-size: 700;
-
   }
 `;
 
@@ -133,13 +130,9 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
 `;
 
 export const NavItemSocialWrapper = styled.div`
-    @media screen and (max-width: 960px) {
-    /* margin-left: 80px; */
-  }
+    @media screen and (max-width: 960px) {  }
 `;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
-      /* margin-right: 0.5rem; */
-
 `;
 
 export const NavItemSocialIconLink = styled.a`
@@ -155,8 +148,6 @@ export const NavItemSocialIconLink = styled.a`
 
   @media screen and (max-width: 960px) {
     padding: 2.9rem 0.4rem;
-    /* justify-content: space-between; */
-    /* margin-right: 80px; */
     top: 0;
   }
 `;

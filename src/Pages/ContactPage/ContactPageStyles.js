@@ -42,7 +42,7 @@ export const Heading = styled.h1`
   font-family: 'Rubik', sans-serif;
 
   @media screen and (max-width: 960px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 

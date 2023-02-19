@@ -3,7 +3,7 @@ import { ErrorContainer, TextRaw } from './SuccessPageStyles.js';
 
 const SuccessPage = () => (
   <ErrorContainer>
-    <TextRaw>Message sent successfully :). I will be back at you as soon as possible.</TextRaw>
+    <TextRaw>Message sent successfully :). I will get back to you as soon as possible.</TextRaw>
   </ErrorContainer>
 );
 

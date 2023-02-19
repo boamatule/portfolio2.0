@@ -56,7 +56,9 @@ const ContactPage = () => {
           Let's get in touch!
         </Heading>
         <Title>
-          Fill up the form and i will be back at you as soon as possible. Stay healthy and keep smiling.
+          Are you interested in working together or have any questions?
+          Fill in the form and I will get back to you as soon as possible.
+          Until then, stay healthy.        
         </Title>
       </HeadingContainer>
       <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">

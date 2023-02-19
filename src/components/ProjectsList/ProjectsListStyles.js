@@ -5,9 +5,6 @@ import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
   /* margin-top: 200px; */
-
-  @media screen and (max-width: 960px) {
-  }
 `;
 
 export const Title = styled.p`
@@ -38,9 +35,9 @@ export const Heading = styled.h1`
   margin-bottom: 20px;
 
   @media screen and (max-width: 960px) {
-    padding-right: 4px;
-    padding-left: 4px
-    font-size: 14px;
+    /* padding-right: 4px;
+    padding-left: 4px */
+    font-size: 20px;
   }
 `;
 
@@ -92,10 +89,14 @@ export const Text = styled.p`
   }
 `;
 
+export const GithubLinkContainer = styled.div`
+
+`;
+
 export const GithubLink = styled.a`
   color: grey;
-  border-bottom: 4px solid grey;
-
+  border-bottom: 4px solid #4568dc;
+  
   &:hover {
 		transform: none;
 		transition: all 0s ease-out 0s;
@@ -180,6 +181,5 @@ export const SubTitle = styled.p`
     
   @media screen and (max-width: 960px) {
     font-size: 14px;
-
   }
 `;
