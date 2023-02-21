@@ -1,22 +1,47 @@
 import styled from 'styled-components/macro';
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  margin-top: 100px;
-  display: grid;
-  grid-gap: 14px;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 960px) {
-    width: 100%;
-    text-align: center;
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
 
-export const HeadingContainer = styled.div`
+export const ContactFormColumn = styled.div`
+  width: 50%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+`;
+
+
+export const HeadingContainer = styled(ContactFormColumn)`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  @media screen and (max-width: 960px) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+`;
+
+export const FormContainerColumn = styled(ContactFormColumn)`
+padding: 0 20px;
+`;
+
+export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,15 +56,27 @@ export const HeadingContainer = styled.div`
   }
 `;
 
+
 export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
   margin-bottom: 20px;
-  padding: 0px 0px;
-  color: #4568dc;
+  color:  #4568dc;
   font-size: 40px;
   font-family: 'Rubik', sans-serif;
+
+  &::after {
+    content: "";
+    background: orange;
+    height: 0.3em;
+    width: 34%;
+    display: block;
+    margin-top: -0.4rem;
+    margin-left: -0.1%;
+    position: absolute;
+    z-index: -1;
+  }
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -130,6 +167,8 @@ export const TextArea = styled.textarea`
 
 export const ContactButton = styled(Button)`
   display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 165px;
   width: auto;
   height: 50px;
@@ -143,8 +182,6 @@ export const ContactButton = styled(Button)`
   font-weight: normal;
   border: 4px;
   cursor: pointer;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 20px;
 `;
 
@@ -159,13 +196,13 @@ export const ContactButtonWrapper = styled.div`
   }
 `;
 
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
 
+export const TrendingFlatSpan = styled(MdOutlineArrowRightAlt)`
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  height: 40px;
+`;
 

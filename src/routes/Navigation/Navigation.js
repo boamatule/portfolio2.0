@@ -63,17 +63,20 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav>
           <NavbarContainer>
-            <LogoContainer to="/" aria-current="homepage">
+            {/* <LogoContainer to="/" aria-current="homepage">
               <Img src="../../images/avatar.webp" alt="Boa" />
-            </LogoContainer>
+            </LogoContainer> */}
 
             <NavMenu>
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks to="/curated_projects">portfolio</NavLinks>
               </NavItem>
               <NavItem>
+                <NavLinks to="/about_me">about</NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks to="/contact_me">contact</NavLinks>
-              </NavItem> */}
+              </NavItem>
             </NavMenu>
 
             <NavItemSocialIconWrapper

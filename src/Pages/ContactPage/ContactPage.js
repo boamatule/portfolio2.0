@@ -11,7 +11,12 @@ import {
   ContactButtonWrapper,
   ContactButton,
   Heading,
-  HeadingContainer
+  HeadingContainer,
+  FormContainer,
+  ContactFormColumn,
+  FormContainerColumn,
+  ArrowForward,
+  TrendingFlatSpan,
 } from './ContactPageStyles';
 
 const ContactPage = () => {
@@ -51,26 +56,30 @@ const ContactPage = () => {
 
   return (
     <ContactContainer>
-      <HeadingContainer>
+      <ContactFormColumn>
         <Heading>
           Let's get in touch!
         </Heading>
         <Title>
           Are you interested in working together or have any questions?
           Fill in the form and I will get back to you as soon as possible.
-          Until then, stay healthy.        
+          Until then, stay healthy.
         </Title>
-      </HeadingContainer>
-      <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
-        <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-        <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
-        <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
-        <ContactButtonWrapper>
-          <ContactButton small fontSmall primary type="submit">
-            Submit
-          </ContactButton>
-        </ContactButtonWrapper>
-      </Form>
+      </ContactFormColumn>
+      <FormContainerColumn>
+        <FormContainer>
+          <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
+            <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+            <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+            <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+            <ContactButtonWrapper>
+              <ContactButton small fontSmall primary type="submit">
+                <TrendingFlatSpan />
+              </ContactButton>
+            </ContactButtonWrapper>
+          </Form>
+        </FormContainer>
+      </FormContainerColumn>
     </ContactContainer>
   );
 };

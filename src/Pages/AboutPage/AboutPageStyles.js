@@ -3,7 +3,40 @@ import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+
+export const Column = styled.div`
+  width: 50%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+`;
+
+export const ImageColumn = styled(Column)`
+  display: flex;
+  justify-content: center;
+`;
+
+export const TextColumn = styled(Column)`
+  padding: 0 20px;
 `;
 
 export const Heading = styled.h1`
@@ -17,6 +50,19 @@ export const Heading = styled.h1`
   font-size: 200;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 20px;
+
+
+  &::after {
+    content: "";
+    background: orange;
+    height: 0.3em;
+    width: 24%;
+    display: block;
+    margin-top: -0.4rem;
+    margin-left: -0.1%;
+    position: absolute;
+    z-index: -1;
+  }
 
   @media screen and (max-width: 960px) {
     font-size: 20px;

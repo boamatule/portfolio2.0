@@ -27,16 +27,27 @@ export const Heading = styled.h1`
   line-height: 20px;
   letter-spacing: 4px;
   padding: 0px 0px;
-  color: #4568dc;
+  color: orange;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 400;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 20px;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    background: #4568dc;
+    height: 0.3em;
+    width: 14%;
+    display: block;
+    margin-top: -0.4rem;
+    margin-left: -0.1%;
+    position: absolute;
+    z-index: -1;
+  }
 
   @media screen and (max-width: 960px) {
-    /* padding-right: 4px;
-    padding-left: 4px */
     font-size: 20px;
   }
 `;
@@ -96,6 +107,16 @@ export const GithubLinkContainer = styled.div`
 export const GithubLink = styled.a`
   color: grey;
   border-bottom: 4px solid #4568dc;
+  /* &::after {
+    content: "";
+    background: #4568dc;
+    height: 0.3em;
+    width: 2%;
+    display: block;
+    margin-top: -0.4rem;
+    margin-left: 0%;
+    z-index: -1;
+  } */
   
   &:hover {
 		transform: none;
@@ -103,6 +124,7 @@ export const GithubLink = styled.a`
 		background: none;
     color: #4568dc;
 	}
+
   @media screen and (max-width: 960px) {
   }
 `;
@@ -139,7 +161,8 @@ export const Image = styled(LazyLoadImage)`
   justify-content: center;
   text-align: center;
   align-items: center;
-  
+  /* border-radius: 25% 10%;; */
+
   @media screen and (max-width: 960px) {
     display: block;
     height: 100%;
