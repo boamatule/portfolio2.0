@@ -11,12 +11,10 @@ import {
   ContactButtonWrapper,
   ContactButton,
   Heading,
-  HeadingContainer,
   FormContainer,
   ContactFormColumn,
   FormContainerColumn,
-  ArrowForward,
-  TrendingFlatSpan,
+  ArrowRight,
 } from './ContactPageStyles';
 
 const ContactPage = () => {
@@ -74,7 +72,7 @@ const ContactPage = () => {
             <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton small fontSmall primary type="submit">
-                <TrendingFlatSpan />
+                <ArrowRight />
               </ContactButton>
             </ContactButtonWrapper>
           </Form>

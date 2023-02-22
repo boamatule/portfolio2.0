@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
+import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled(motion.div)`
   background: transparent;
@@ -130,7 +131,11 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
 `;
 
 export const NavItemSocialWrapper = styled.div`
-    @media screen and (max-width: 960px) {  }
+  &:hover {
+  border: 2px solid red;
+  }
+
+  @media screen and (max-width: 960px) {  }
 `;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
 `;
@@ -142,9 +147,14 @@ export const NavItemSocialIconLink = styled.a`
   text-decoration: none;
   align-items: center;
   padding: 0rem 1rem;
-  margin-right: 0rem;
-  transition: all 0.5s ease-out;
   cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  justify-content: space-between;
+
+  &:hover {
+    border: 50% solid red;
+  }
 
   @media screen and (max-width: 960px) {
     padding: 2.9rem 0.4rem;
@@ -153,16 +163,51 @@ export const NavItemSocialIconLink = styled.a`
 `;
 
 export const MobileIcon = styled.div`
+  display: block;
+
+  // @media screen and (max-width: 760px) {
+  // 	display: block;
+  // 	position: absolute;
+  // 	top: 0;
+  // 	right: 0;
+  // 	transform: translate(-100%, 75%);
+  // 	font-size: 1.8rem;
+  // 	cursor: pointer;
+  // 	color: purple;
+  // }
   display: none;
 
   @media screen and (max-width: 960px) {
-    display: none;
+    z-index: 999;
+    display: block;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    transform: translate(-100%, 60%);
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
     cursor: pointer;
-    background: none;
-    color: #4568dc;
+    // color: white;
   }
 `;
+
+export const Bars = styled(FaBars)`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 14px 10px;
+  transform: translate(-100%, 75%);
+  font-size: 2rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    // color: purple;
+  }
+  `;

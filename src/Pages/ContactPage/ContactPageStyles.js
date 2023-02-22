@@ -3,12 +3,12 @@ import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  /* margin-top: 100px; */
+  top: 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-
+  
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -20,20 +20,6 @@ export const ContactFormColumn = styled.div`
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 20px;
-  }
-`;
-
-
-export const HeadingContainer = styled(ContactFormColumn)`
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  
-  @media screen and (max-width: 960px) {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 `;
 
@@ -65,6 +51,7 @@ export const Heading = styled.h1`
   color:  #4568dc;
   font-size: 40px;
   font-family: 'Rubik', sans-serif;
+  margin-top: -10px;
 
   &::after {
     content: "";
@@ -197,10 +184,10 @@ export const ContactButtonWrapper = styled.div`
 `;
 
 
-export const TrendingFlatSpan = styled(MdOutlineArrowRightAlt)`
+export const ArrowRight = styled(MdOutlineArrowRightAlt)`
   display: flex;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 200px;
+  font-weight: normal;
   color: white;
   width: 100px;
   height: 40px;

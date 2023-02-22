@@ -25,10 +25,14 @@ export const Column = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  max-width: 200px;
+  max-width: 120px;
   height: auto;
   border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid grey;
+  margin-right: 0.5rem;
 `;
+
 
 export const ImageColumn = styled(Column)`
   display: flex;
@@ -85,4 +89,9 @@ export const Description = styled.p`
     font-size: 14px;
   } 
 `;
+
+
+
+
+
 
