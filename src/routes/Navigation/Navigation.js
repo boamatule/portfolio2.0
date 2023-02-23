@@ -24,7 +24,6 @@ import {
   ToggleSwitch,
   NavItemSocialWrapper,
   MobileIcon,
-  Bars
 } from './Navigation.Styles';
 
 import {
@@ -42,28 +41,14 @@ import SideBar from '../../components/SideBar/SideBar';
 const NavBar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const handleClick = () => setClick(!click);
 
-  // {click ? (
-  //   <FaTimes
-  //     style={{
-  //       width: '25px',
-  //       height: '25px',
-  //       color: 'purple',
-  //     }}
-  //   />
-  // ) : (
-  //   <FaBars
-  //     style={{
-  //       width: '25px',
-  //       height: '25px',
-  //       color: 'purple',
-  //     }}
-  //   />
-  // )}
-
-  
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -102,7 +87,9 @@ const NavBar = () => {
                 style={{
                   width: '25px',
                   height: '25px',
-                  color: 'purple',
+                  color: 'grey',
+                  background: 'none',
+                  font: 'normal',
                 }}
               />
             ) : (
@@ -110,7 +97,9 @@ const NavBar = () => {
                 style={{
                   width: '25px',
                   height: '25px',
-                  color: 'purple',
+                  color: 'grey',
+                  background: 'none',
+                  font: 'normal',
                 }}
               />
             )}
@@ -189,10 +178,7 @@ const NavBar = () => {
                   </NavItemSocialIconLink>
                 </NavItemSocialIconLinkMotion>
                 <DarkMode />
-              {/* <Bars /> */}
-              <SideBar />
             </NavItemSocialIconWrapper>
-            {/* <MobileIcon /> */}
           </NavbarContainer>
         </Nav>
         <Outlet />

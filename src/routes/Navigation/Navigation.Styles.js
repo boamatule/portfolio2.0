@@ -2,7 +2,6 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
-import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled(motion.div)`
   background: transparent;
@@ -64,10 +63,21 @@ export const NavMenu = styled.ul`
   text-decoration: none;
 
   @media screen and (max-width: 960px) {
-    margin-top: 80px;
-    justify-content: space-between;
-    padding: 0px 0px;
+    display: ${({ click }) => (click ? "flex" : "none")};
+    /* display: flex; */
+
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    list-style: none;
     text-align: center;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: none;
   }
 `;
 
@@ -79,6 +89,8 @@ export const NavItem = styled.li`
   height: 80px;
 
   @media screen and (max-width: 960px) {
+    align-items: center;
+    text-align: center;
   }
 `;
 
@@ -96,21 +108,20 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
 
-
-  &:hover {
-		transform: none;
-		background: none;
-		padding: 10px 22px;
-    color: #4568dc;
-	}
-
-  @media screen and (max-width: 960px) (max-width: 960px) {
-    font-size: 12px;
-    text-decoration: none;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    height: 100%;
     text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    font-size: 700;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+
+    &:hover {
+      transition: 0.3s ease-out;
+    }
   }
 `;
 
@@ -163,22 +174,10 @@ export const NavItemSocialIconLink = styled.a`
 `;
 
 export const MobileIcon = styled.div`
-  display: block;
-
-  // @media screen and (max-width: 760px) {
-  // 	display: block;
-  // 	position: absolute;
-  // 	top: 0;
-  // 	right: 0;
-  // 	transform: translate(-100%, 75%);
-  // 	font-size: 1.8rem;
-  // 	cursor: pointer;
-  // 	color: purple;
-  // }
-  display: none;
+    display: none;
 
   @media screen and (max-width: 960px) {
-    z-index: 999;
+    z-index: 1;
     display: block;
     position: absolute;
     top: 0;
@@ -186,28 +185,5 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
-    // color: white;
   }
 `;
-
-export const Bars = styled(FaBars)`
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 14px 10px;
-  transform: translate(-100%, 75%);
-  font-size: 2rem;
-  cursor: pointer;
-
-  @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    // color: purple;
-  }
-  `;
