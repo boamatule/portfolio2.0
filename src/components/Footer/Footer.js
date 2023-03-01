@@ -1,6 +1,6 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
-import { FooterContainer, FooterWrapper, Copyright } from './FooterStyles';
+import { FooterContainer, FooterWrapper, Copyright } from './Footer.Styles';
 
 const Footer = () => (
   <FooterContainer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ErrorContainer, TextRaw } from './SuccessPageStyles.js';
+import { ErrorContainer, TextRaw } from './SuccessPage.Styles';
 
 const SuccessPage = () => (
   <ErrorContainer>

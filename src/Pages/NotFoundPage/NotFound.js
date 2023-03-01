@@ -1,5 +1,5 @@
 import React from 'react';
-import { ErrorContainer, TextRaw } from './NotFoundStyle';
+import { ErrorContainer, TextRaw } from './NotFound.Style';
 
 const NotFound = () => {
   return (

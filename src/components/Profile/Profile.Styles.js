@@ -46,7 +46,7 @@ export const Avatar = styled.div`
 export const Img = styled.img`
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-bottom: 20px;
   border: 2px solid grey;
   margin-right: 0.5rem;

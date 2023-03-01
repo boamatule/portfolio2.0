@@ -62,22 +62,12 @@ export const NavMenu = styled.ul`
   text-transform: uppercase;
   text-decoration: none;
 
-  @media screen and (max-width: 960px) {
-    display: ${({ click }) => (click ? "flex" : "none")};
-    /* display: flex; */
+  &.active {
+    border-bottom: 3px solid #4568dc;
+  }
 
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    opacity: 1;
-    transition: all 0.5s ease;
-    background: none;
+  @media screen and (max-width: 960px) {
+    display: none;
   }
 `;
 
@@ -86,12 +76,16 @@ export const NavItem = styled.li`
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  height: 80px;
+  height: 20px;
 
-  @media screen and (max-width: 960px) {
+  &:hover {
+    border-bottom: 4px solid #4568dc;
+  }
+
+  /* @media screen and (max-width: 960px) {
     align-items: center;
     text-align: center;
-  }
+  } */
 `;
 
 export const NavLinks = styled(Link)`
@@ -108,14 +102,18 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
 
+  &.active {
+    border-bottom: 3px solid #4568dc;
+  }
+
   @media screen and (max-width: 960px) {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     text-align: center;
     font-size: 14px;
     text-decoration: none;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     padding: 1rem 0.5rem;
     margin: 0.5rem 0;
 
@@ -177,13 +175,21 @@ export const MobileIcon = styled.div`
     display: none;
 
   @media screen and (max-width: 960px) {
-    z-index: 1;
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    background: transparent;
+    /* display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    outline: none;
+    background: transparent;
+    cursor: pointer; */
   }
 `;

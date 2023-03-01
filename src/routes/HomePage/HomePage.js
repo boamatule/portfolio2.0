@@ -1,20 +1,19 @@
-import React from 'react';
-import { Container } from '../../global-styles';
+import React, { useState } from 'react';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import About from '../../Pages/AboutPage/AboutPage';
+import ContactPage from '../../Pages/ContactPage/ContactPage';
 
-import { HomePageWrapper } from './HomePageStyles';
+import { HomeContainer, HomeWrapper } from './HomePage.Styles';
 
 const HomePage = () => {
   return (
-    <HomePageWrapper>
-        <div>
-
+    <HomeContainer>
       <About />
       <ProjectsList />
-      </div>
-
-    </HomePageWrapper>
+      <HomeWrapper>
+        <ContactPage />
+      </HomeWrapper>
+    </HomeContainer>
   );
 }
 

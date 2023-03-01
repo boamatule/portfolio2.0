@@ -4,7 +4,6 @@ import { Container } from '../../global-styles';
 
 export const AboutWrapper = styled(Container)`
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 

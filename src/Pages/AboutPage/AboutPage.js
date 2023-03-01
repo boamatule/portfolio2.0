@@ -1,7 +1,7 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
 import { Container } from '../../global-styles';
-import { AboutWrapper, Heading, Description, ImageColumn, TextColumn, Image } from './AboutPageStyles';
+import { AboutWrapper, Heading, Description, ImageColumn, TextColumn, Image } from './AboutPage.Styles';
 
 const AboutPage = () => (
   <AboutWrapper>
