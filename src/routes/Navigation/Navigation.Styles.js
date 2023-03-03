@@ -1,28 +1,37 @@
 import styled from 'styled-components/macro';
-import { Link } from 'react-router-dom';
+import { Link as LinkRoute } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { Container } from '../../global-styles';
 
-export const Nav = styled(motion.div)`
-  background: transparent;
-  /* width: 100%; */
+
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -80px; */
+  height: 80px;
+  background: ${({ scrollNav}) => ( scrollNav ? 'transparent' : 'transparent')};
   top: 0;
-  z-index: 999;
+  z-index: 10;
+  position: sticky;
 
   @media screen and (max-width: 960px) {
-    /* margin-right: auto;
-    margin-left: auto;
-    padding-right: 4px;
-    padding-left: 4px; */
+    transition: 0.8s all ease;
   }
 `;
+
 
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
   margin-bottom: 120px;
-  /* z-index: 1; */
+  z-index: 1;
+  width: 100%;
+  padding: 140px 24px;
+  max-width: 1100px;
+
 
   @media screen and (max-width: 960px) {
     margin-right: auto;
@@ -33,7 +42,7 @@ export const NavbarContainer = styled(Container)`
   }
 `;
 
-export const LogoContainer = styled(Link)`
+export const LogoContainer = styled(LinkRoute)`
   display: flex;
   justify-content: center;
   margin: 40px 0 60px 0;
@@ -55,6 +64,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   margin-right: 0rem;
   width: 60vw;
+  height: 80px;
   background: transparent;
   outline: none;
   margin-top: 0px;
@@ -76,11 +86,13 @@ export const NavItem = styled.li`
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  height: 20px;
+  height: 80px;
+  cursor: pointer;
 
-  &:hover {
+
+  /* &:hover {
     border-bottom: 4px solid #4568dc;
-  }
+  } */
 
   /* @media screen and (max-width: 960px) {
     align-items: center;
@@ -88,7 +100,7 @@ export const NavItem = styled.li`
   } */
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkScroll)`
   display: flex;
   text-align: center;
   height: 100%;
@@ -182,14 +194,6 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    background: transparent;
-    /* display: block;
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    outline: none;
-    background: transparent;
-    cursor: pointer; */
+    background: transparent,
   }
 `;

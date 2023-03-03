@@ -1,11 +1,31 @@
-/* eslint-disable react/function-component-definition */
 import React from 'react';
-import { FooterContainer, FooterWrapper, Copyright } from './Footer.Styles';
+import { animateScroll as scroll } from "react-scroll";
 
-const Footer = () => (
-  <FooterContainer>
-    <Copyright>©2022&nbsp; Boa Matule. All rights reserved.</Copyright>
-  </FooterContainer>
-);
+import {
+  FooterContainer,
+  FooterWrapper,
+  Copyright,
+  ScrollToTopContainer,
+  ScrollToTopButton,
+  ScrollToTopIcon,
+} from './Footer.Styles';
+
+const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+  return (
+    <FooterContainer>
+      <Copyright>©2022&nbsp; Boa Matule. All rights reserved.</Copyright>
+      <ScrollToTopContainer>
+        <ScrollToTopButton>
+          <ScrollToTopIcon
+            onClick={toggleHome}
+          />
+        </ScrollToTopButton>
+      </ScrollToTopContainer>
+    </FooterContainer>
+  );
+}
 
 export default Footer;

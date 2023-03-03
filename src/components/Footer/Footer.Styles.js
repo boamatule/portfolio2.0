@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
+import { FaAngleUp } from 'react-icons/fa';
+
 
 export const FooterContainer = styled(Container)`
   align-items: center;
@@ -39,3 +41,33 @@ export const Copyright = styled.p`
     font-size: 12px;
   }
 `;
+
+export const ScrollToTopContainer = styled.div`
+  display: flex;
+  justify-content: flex-end; /* align to right */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+`;
+
+export const ScrollToTopButton = styled.div`
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    cursor: pointer;
+`;
+
+export const ScrollToTopIcon = styled(FaAngleUp)`
+  width: 20px;
+  height: 20px;
+  color: grey;
+`;
+
+
+
+

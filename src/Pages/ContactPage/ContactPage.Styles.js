@@ -63,6 +63,10 @@ export const Heading = styled.h1`
     margin-left: -0.1%;
     position: absolute;
     z-index: -1;
+
+    @media screen and (max-width: 960px) {
+      width: 68%;
+    }
   }
 
   @media screen and (max-width: 960px) {

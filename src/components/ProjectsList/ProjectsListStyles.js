@@ -45,6 +45,10 @@ export const Heading = styled.h1`
     margin-left: -0.1%;
     position: absolute;
     z-index: -1;
+
+    @media screen and (max-width: 960px) {
+      width: 32%;
+    }
   }
 
   @media screen and (max-width: 960px) {
@@ -107,17 +111,7 @@ export const GithubLinkContainer = styled.div`
 export const GithubLink = styled.a`
   color: grey;
   border-bottom: 4px solid #4568dc;
-  /* &::after {
-    content: "";
-    background: #4568dc;
-    height: 0.3em;
-    width: 2%;
-    display: block;
-    margin-top: -0.4rem;
-    margin-left: 0%;
-    z-index: -1;
-  } */
-  
+
   &:hover {
 		transform: none;
 		transition: all 0s ease-out 0s;

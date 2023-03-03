@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { ThemeProvider } from 'styled-components';
-
+import { animateScroll as scroll } from 'react-scroll';
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
@@ -36,8 +35,24 @@ import DarkMode from '../../components/DarkMode/DarkMode';
 
 const NavBar = ({ toggle }) => {
   // const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-  // const [isOpen, setIsOpen] = useState(false);
+  // const [changeNav, setChangeNav] = useState(true);
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY <= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
 
   // const handleClick = () => setClick(!click);
 
@@ -59,64 +74,86 @@ const NavBar = ({ toggle }) => {
   //   }
   // };
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
 
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovering(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovering(false);
+  // };
 
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav>
+        <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <MobileIcon onClick={toggle}>
-              <FaBars 
+              <FaBars
                 style={{
                   color: '#4568dc'
                 }}
-                />
+              />
             </MobileIcon>
-            {/* <LogoContainer to="/" aria-current="homepage">
+            {/* <LogoContainer to="/" aria-current="homepage" onClick={toggleHome}>
               <Img src="../../images/logo_boa.PNG" alt="Boa" />
             </LogoContainer> */}
-            {/* onClick={handleClick} click={click} */}
             <NavMenu>
               <NavItem>
-                <NavLinks to="/">home</NavLinks>
+                <NavLinks 
+                  to="/" 
+                  spy={true} 
+                  smooth={true} 
+                  duration={500}
+                  offset={-80}
+                  exact='true'
+                  >
+                  home
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/curated_projects" >portfolio</NavLinks>
+                <NavLinks 
+                  to="/curated_projects"
+                  spy={true} 
+                  smooth={true} 
+                  duration={500}
+                  offset={-80}
+                  exact='true'
+                >
+                  portfolio
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/about_me" >about</NavLinks>
+                <NavLinks 
+                  to="/about_me"
+                  spy={true} 
+                  smooth={true} 
+                  duration={500}
+                  offset={-80}
+                  exact='true'
+                  >
+                  about
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/contact_me">contact</NavLinks>
+                <NavLinks 
+                  to="/contact_me"
+                  spy={true} 
+                  smooth={true} 
+                  duration={500}
+                  offset={-80}
+                  exact='true'
+                  >
+                  contact
+                </NavLinks>
               </NavItem>
             </NavMenu>
 

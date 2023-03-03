@@ -15,7 +15,7 @@ import {
   ContactFormColumn,
   FormContainerColumn,
   ArrowRight,
-} from './ContactPageStyles';
+} from './ContactPage.Styles';
 
 const ContactPage = () => {
   const navigate = useNavigate();

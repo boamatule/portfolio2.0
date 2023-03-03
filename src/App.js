@@ -8,7 +8,6 @@ const ContactPage = lazy(() => import('./Pages/ContactPage/ContactPage'));
 const PortfolioListPage = lazy(() => import('./Pages/PortfolioPage/PortfolioListPage'));
 const SuccessPage = lazy(() => import('./routes/SuccessPage/SuccessPage'));
 const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
-const ScrollToTop = lazy(() => import('./components/ScrollToTop'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
 const Profile = lazy(() => import('./components/Profile/Profile'));
 const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.component'));
@@ -19,7 +18,7 @@ const App = () => {
   return (
     <Suspense fallback={renderLoader()}>
         <Routes>
-            <Route path="/" element={<Header />}>
+          <Route path="/" element={<Header />}>
             <Route index element={<HomePage />} />
             <Route path="profile" element={<Profile />} />
             <Route path="about_me" element={<AboutPage />} />
@@ -29,8 +28,7 @@ const App = () => {
             <Route element={<NotFound />} />
           </Route>
         </Routes>
-        <Footer />
-        <ScrollToTop />
+      <Footer />
     </Suspense >
   );
 }
