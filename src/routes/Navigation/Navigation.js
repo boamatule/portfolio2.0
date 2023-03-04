@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { IconContext } from 'react-icons/lib';
-import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaBars, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { ThemeProvider } from 'styled-components';
 import { animateScroll as scroll } from 'react-scroll';
 import { lightTheme, darkTheme } from '../../components/DarkMode/Themes';
@@ -18,9 +18,8 @@ import {
   LogoContainer,
   NavItemSocialIconWrapper,
   NavItemSocialIconLinkMotion,
-  ToggleSwitch,
-  NavItemSocialWrapper,
   MobileIcon,
+  NavItemSocialIconLinkWrapper,
 } from './Navigation.Styles';
 
 import {
@@ -34,8 +33,6 @@ import {
 import DarkMode from '../../components/DarkMode/DarkMode';
 
 const NavBar = ({ toggle }) => {
-  // const [click, setClick] = useState(false);
-  // const [changeNav, setChangeNav] = useState(true);
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -91,131 +88,132 @@ const NavBar = ({ toggle }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
-            <MobileIcon onClick={toggle}>
-              <FaBars
-                style={{
-                  color: '#4568dc'
-                }}
-              />
-            </MobileIcon>
-            {/* <LogoContainer to="/" aria-current="homepage" onClick={toggleHome}>
+          <Nav scrollNav={scrollNav}>
+            <NavbarContainer>
+              <MobileIcon onClick={toggle}>
+                <FaBars
+                  style={{
+                    color: '#4568dc'
+                  }}
+                />
+              </MobileIcon>
+              {/* <LogoContainer to="/" aria-current="homepage" onClick={toggleHome}>
               <Img src="../../images/logo_boa.PNG" alt="Boa" />
             </LogoContainer> */}
-            <NavMenu>
-              <NavItem>
-                <NavLinks 
-                  to="/" 
-                  spy={true} 
-                  smooth={true} 
-                  duration={500}
-                  offset={-80}
-                  exact='true'
+              <NavMenu>
+                <NavItem>
+                  <NavLinks
+                    to=""
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    exact='true'
                   >
-                  home
-                </NavLinks>
-              </NavItem>
+                    home
+                  </NavLinks>
+                </NavItem>
 
-              <NavItem>
-                <NavLinks 
-                  to="/curated_projects"
-                  spy={true} 
-                  smooth={true} 
-                  duration={500}
-                  offset={-80}
-                  exact='true'
-                >
-                  portfolio
-                </NavLinks>
-              </NavItem>
-
-              <NavItem>
-                <NavLinks 
-                  to="/about_me"
-                  spy={true} 
-                  smooth={true} 
-                  duration={500}
-                  offset={-80}
-                  exact='true'
+                <NavItem>
+                  <NavLinks
+                    to="curated_projects"
+                    // spy={true}
+                    // smooth={true}
+                    // duration={500}
+                    // offset={-80}
+                    // exact='true'
                   >
-                  about
-                </NavLinks>
-              </NavItem>
+                    portfolio
+                  </NavLinks>
+                </NavItem>
 
-              <NavItem>
-                <NavLinks 
-                  to="/contact_me"
-                  spy={true} 
-                  smooth={true} 
-                  duration={500}
-                  offset={-80}
-                  exact='true'
+                <NavItem>
+                  <NavLinks
+                    to="about_me"
+                    // spy={true}
+                    // smooth={true}
+                    // duration={500}
+                    // offset={-80}
+                    // exact='true'
                   >
-                  contact
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
+                    about
+                  </NavLinks>
+                </NavItem>
 
-            <NavItemSocialIconWrapper
-              initial={{
-                x: 500,
-                opacity: 0,
-                scale: 0.5,
-              }}
-              animate={{
-                x: 0,
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{
-                duration: 1.5,
-              }}
-            >
+                <NavItem>
+                  <NavLinks
+                    to="contact_me"
+                    // spy={true}
+                    // smooth={true}
+                    // duration={500}
+                    // offset={-80}
+                    // exact='true'
+                  >
+                    contact
+                  </NavLinks>
+                </NavItem>
+              </NavMenu>
 
-              <NavItemSocialIconLinkMotion
-                whileHover={{ scale: 1.1, transition: { duration: 0 } }}
-              >
-                <NavItemSocialIconLink
-                  href="https://www.linkedin.com/in/boa-matule-2082b068/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedinIn
-                    style={{
-                      width: '20px',
-                      height: '20px'
-                    }}
-                  />
-                </NavItemSocialIconLink>
-              </NavItemSocialIconLinkMotion>
 
-              <NavItemSocialIconLinkMotion
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0 },
+              <NavItemSocialIconWrapper
+                initial={{
+                  x: 500,
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 1.5,
                 }}
               >
-                <NavItemSocialIconLink
-                  href="https://github.com/boamatule"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub"
+
+                <NavItemSocialIconLinkMotion
+                  whileHover={{ scale: 1.1, transition: { duration: 0 } }}
                 >
-                  <FaGithub
-                    style={{
-                      width: '20px',
-                      height: '20px'
-                    }}
-                  />
-                </NavItemSocialIconLink>
-              </NavItemSocialIconLinkMotion>
-              <DarkMode />
-            </NavItemSocialIconWrapper>
-          </NavbarContainer>
-        </Nav>
-        <Outlet />
+                  <NavItemSocialIconLink
+                    href="https://www.linkedin.com/in/boa-matule-2082b068/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedinIn
+                      style={{
+                        width: '20px',
+                        height: '20px'
+                      }}
+                    />
+                  </NavItemSocialIconLink>
+                </NavItemSocialIconLinkMotion>
+
+                <NavItemSocialIconLinkMotion
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0 },
+                  }}
+                >
+                  <NavItemSocialIconLink
+                    href="https://github.com/boamatule"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <FaGithub
+                      style={{
+                        width: '20px',
+                        height: '20px'
+                      }}
+                    />
+                  </NavItemSocialIconLink>
+                </NavItemSocialIconLinkMotion>
+                <DarkMode />
+              </NavItemSocialIconWrapper>
+            </NavbarContainer>
+          </Nav>
+          <Outlet />
       </IconContext.Provider>
     </ThemeProvider >
   );

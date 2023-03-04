@@ -3,9 +3,12 @@ import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 60px;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -39,7 +42,7 @@ export const ImageColumn = styled(Column)`
 `;
 
 export const TextColumn = styled(Column)`
-  padding: 0 20px;
+  padding: 0 0px;
 `;
 
 export const Heading = styled.h1`
@@ -57,7 +60,7 @@ export const Heading = styled.h1`
 
   &::after {
     content: "";
-    background: orange;
+    background: grey;
     height: 0.3em;
     width: 24%;
     display: block;

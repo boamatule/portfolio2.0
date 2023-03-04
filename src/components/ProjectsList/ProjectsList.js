@@ -15,7 +15,7 @@ import {
   ProjectContainer,
   GithubLinkContainer,
   GithubLink,
-} from './ProjectsListStyles';
+} from './ProjectsList.Styles';
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);

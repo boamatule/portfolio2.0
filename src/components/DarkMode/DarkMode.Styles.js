@@ -2,40 +2,44 @@ import styled from 'styled-components/macro';
 
 export const ToggleSwitch = styled.div`
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 200px;
-  top: 60px;
-  margin-right: 100px;
+  justify-content: center;
+  width: 104px;
+  top: 24px;
+  margin-left: 60px;
   position: absolute;
+  background: #4568dc;
 
   @media screen and (max-width: 960px) {
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 100px;
-
+    /* margin: 0px 0px; 
+    margin-left: 0px;
+    justify-self: flex-start;
+    align-items: flex-start; */
   }
 `;
 
 export const Label = styled.label`
   position: absolute;
-  width: 40%;
-  height: 40px;
+  width: 60%;
+  height: 30px;
   background-color: var(--dark);
   border-radius: 50px;
   cursor: pointer;
 
   &::before {
     content: "";
+    display: flex;
     position: absolute;
-    top: 8px;
+    top: 6px;
     bottom: 0px;
-    left: 12px;
-    width: 24px;
-    height: 24px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    box-shadow: inset 10px -2px 0px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 8px -1px 0px 0px rgba(0, 0, 0, 0.9);
     transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
   }
 `;
 
@@ -48,9 +52,7 @@ export const Input = styled.input`
       transform: translateX(36px);
       background-color: #fff;
       box-shadow: none;
-      transition: 0.2s;
+      transition: 0.2s; 
     }
   }
 `;
-
-

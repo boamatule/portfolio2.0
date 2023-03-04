@@ -27,7 +27,7 @@ export const Heading = styled.h1`
   line-height: 20px;
   letter-spacing: 4px;
   padding: 0px 0px;
-  color: orange;
+  color: #4568dc;
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 400;
@@ -37,7 +37,7 @@ export const Heading = styled.h1`
 
   &::after {
     content: "";
-    background: #4568dc;
+    background: grey;
     height: 0.3em;
     width: 14%;
     display: block;
@@ -109,8 +109,10 @@ export const GithubLinkContainer = styled.div`
 `;
 
 export const GithubLink = styled.a`
-  color: grey;
-  border-bottom: 4px solid #4568dc;
+  color: #4568dc;
+
+  /* color: grey; */
+  /* border-bottom: 4px solid #4568dc; */
 
   &:hover {
 		transform: none;

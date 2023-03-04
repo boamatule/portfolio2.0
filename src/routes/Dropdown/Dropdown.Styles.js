@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { Link as LinkScroll} from 'react-scroll';
 
 
 export const DropdownContainer = styled.div`

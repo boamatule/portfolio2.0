@@ -24,7 +24,11 @@ export const ContactFormColumn = styled.div`
 `;
 
 export const FormContainerColumn = styled(ContactFormColumn)`
-padding: 0 20px;
+  padding: 0 20px;
+  @media (max-width: 960px) {
+    width: 100%;
+    /* margin-bottom: 20px; */
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -37,8 +41,10 @@ export const FormContainer = styled.div`
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    width: 100%;
+
   }
 `;
 
@@ -55,7 +61,7 @@ export const Heading = styled.h1`
 
   &::after {
     content: "";
-    background: orange;
+    background: grey;
     height: 0.3em;
     width: 34%;
     display: block;

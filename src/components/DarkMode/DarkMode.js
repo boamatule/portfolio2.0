@@ -1,6 +1,4 @@
 import React from "react";
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
   ToggleSwitch,
@@ -8,7 +6,7 @@ import {
   Input,
   ToggleButton,
   ToggleIcon,
-} from './DarkModeStyles';
+} from './DarkMode.Styles';
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -41,11 +39,6 @@ const toggleTheme = (e) => {
   }
 };
 
-const MoonIcon = <FontAwesomeIcon icon={faMoon} />;
-const SunIcon = <FontAwesomeIcon icon={faSun} />;
-
-
-
 const DarkMode = () => {
   return (
     <ToggleSwitch>
@@ -57,7 +50,6 @@ const DarkMode = () => {
           defaultChecked={defaultDark}
         />
       <Label htmlFor="checkbox" />
-      {/* <ToggleIcon icon={toggleTheme ? faSun : faMoon} /> */}
     </ToggleSwitch>
 
   );

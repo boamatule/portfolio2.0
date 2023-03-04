@@ -9,10 +9,8 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 [data-theme="dark"] {
-  /* --font-color: #eee; */
   --background-color: #fff;
 }
-
 
   *,
   *::before,

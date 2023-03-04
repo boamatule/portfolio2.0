@@ -12,7 +12,7 @@ import {
 const Dropdown = ({ isOpen, toggle }) => {
 	return (
 	<DropdownContainer isOpen={isOpen} onClick={toggle}>
-		<DropdownIcon onClick={toggle}>
+		<DropdownIcon isOpen={isOpen} onClick={toggle}>
 			<DropdownCloseIcon />
 		</DropdownIcon>
 		<DropdownWrapper>
