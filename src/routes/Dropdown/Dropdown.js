@@ -6,6 +6,7 @@ import {
 	DropdownCloseIcon,
 	DropdownWrapper,
 	DropdownMenu,
+	DropdownItem,
 	DropdownLink,
 } from './Dropdown.Styles'
 
@@ -17,10 +18,12 @@ const Dropdown = ({ isOpen, toggle }) => {
 		</DropdownIcon>
 		<DropdownWrapper>
 				<DropdownMenu>
-					<DropdownLink to="/" onClick={toggle}>Home</DropdownLink>
-					<DropdownLink to="curated_projects" onClick={toggle}>Portfolio</DropdownLink>
-					<DropdownLink to="about_me" onClick={toggle}>About</DropdownLink>
-					<DropdownLink to="contact_me" onClick={toggle}>Contact</DropdownLink>
+					<DropdownItem>
+						<DropdownLink to="/" onClick={toggle}>Home</DropdownLink>
+						<DropdownLink to="projects" onClick={toggle}>Portfolio</DropdownLink>
+						<DropdownLink to="about_me" onClick={toggle}>About</DropdownLink>
+						<DropdownLink to="contact_me" onClick={toggle}>Contact</DropdownLink>
+					</DropdownItem>
 				</DropdownMenu>
 			</DropdownWrapper>
 		</DropdownContainer>

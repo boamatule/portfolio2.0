@@ -51,6 +51,10 @@ align-items: flex-start;
 }
 `;
 
+export const DropdownItem = styled.li`
+  height: 100%;
+`;
+
 
 export const DropdownLink = styled(Link)`
 display: flex;
