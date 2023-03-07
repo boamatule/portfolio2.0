@@ -4,8 +4,6 @@ import {
   ToggleSwitch,
   Label, 
   Input,
-  ToggleButton,
-  ToggleIcon,
 } from './DarkMode.Styles';
 
 const setDark = () => {

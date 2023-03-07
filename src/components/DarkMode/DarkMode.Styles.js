@@ -8,13 +8,6 @@ export const ToggleSwitch = styled.div`
   margin-left: 60px;
   position: absolute;
   background: #4568dc;
-
-  @media screen and (max-width: 960px) {
-    /* margin: 0px 0px; 
-    margin-left: 0px;
-    justify-self: flex-start;
-    align-items: flex-start; */
-  }
 `;
 
 export const Label = styled.label`

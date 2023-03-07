@@ -4,7 +4,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
-  /* margin-top: 200px; */
 `;
 
 export const Title = styled.p`
@@ -104,15 +103,10 @@ export const Text = styled.p`
   }
 `;
 
-export const GithubLinkContainer = styled.div`
-
-`;
-
 export const GithubLink = styled.a`
-  color: #4568dc;
+  /* color: #454fdc; */
+  color: grey;
 
-  /* color: grey; */
-  /* border-bottom: 4px solid #4568dc; */
 
   &:hover {
 		transform: none;

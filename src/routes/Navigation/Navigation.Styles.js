@@ -1,24 +1,9 @@
 import styled from 'styled-components/macro';
 import { Link as LinkRoute } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 import { Container } from '../../global-styles';
 
-
-export const NavWrapper = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* margin-top: 120px; */
-  /* top: 0;
-  z-index: 10;
-  position: sticky; */
-
-  /* @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  } */
-`;
 
 export const Nav = styled.nav`
   display: flex;

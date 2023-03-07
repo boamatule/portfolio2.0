@@ -26,9 +26,8 @@ export const Column = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 100%;
-  max-width: 120px;
-  height: auto;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 2px solid grey;

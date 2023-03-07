@@ -13,7 +13,6 @@ import {
   Text,
   SubTitle,
   ProjectContainer,
-  GithubLinkContainer,
   GithubLink,
 } from './ProjectsList.Styles';
 

@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 
 import { FaBars, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll } from 'react-scroll';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
@@ -36,14 +35,6 @@ const NavBar = ({ toggle }) => {
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
-
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
-
-  // const handleClick = () => setClick(!click);
-
-  // const closeMobileMenu = () => setClick(false);
 
   // const onMouseEnter = () => {
   //   if (window.innerWidth < 960) {
