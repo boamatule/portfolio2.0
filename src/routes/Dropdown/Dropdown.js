@@ -13,10 +13,9 @@ import {
 const Dropdown = ({ isOpen, toggle }) => {
 	return (
 	<DropdownContainer isOpen={isOpen} onClick={toggle}>
-		<DropdownIcon isOpen={isOpen} onClick={toggle}>
+		<DropdownIcon isOpen={isOpen}>
 			<DropdownCloseIcon />
 		</DropdownIcon>
-		<DropdownWrapper>
 				<DropdownMenu>
 					<DropdownItem>
 						<DropdownLink to="/" onClick={toggle}>Home</DropdownLink>
@@ -25,7 +24,6 @@ const Dropdown = ({ isOpen, toggle }) => {
 						<DropdownLink to="contact_me" onClick={toggle}>Contact</DropdownLink>
 					</DropdownItem>
 				</DropdownMenu>
-			</DropdownWrapper>
 		</DropdownContainer>
 	);
 };

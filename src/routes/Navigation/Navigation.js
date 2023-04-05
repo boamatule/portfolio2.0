@@ -115,7 +115,7 @@ const NavBar = ({ toggle }) => {
 
             <NavItemSocialIconWrapper
               initial={{
-                x: 500,
+                x: -500,
                 opacity: 0,
                 scale: 0.5,
               }}

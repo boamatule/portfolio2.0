@@ -1,15 +1,18 @@
 import styled from 'styled-components/macro';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 
 export const AboutWrapper = styled(Container)`
   top: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* min-height: 100%; */
   flex-direction: row;
-  margin-bottom: 60px;
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: auto;
+  padding: 0 38px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -25,12 +28,12 @@ export const Column = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+export const Image = styled(LazyLoadImage)`
+  width: 200px;
+  height: 200px;
+  /* border-radius: 10px; */
   margin-bottom: 20px;
-  border: 2px solid grey;
+  /* border: 0px solid #474747; */
   margin-right: 0.5rem;
 `;
 
@@ -56,11 +59,11 @@ export const Heading = styled.h1`
   font-family: 'Rubik', sans-serif;
   margin-bottom: 20px;
 
-
+/* 
   &::after {
     content: "";
     background: grey;
-    height: 0.3em;
+    height: 0.2em;
     width: 24%;
     display: block;
     margin-top: -0.4rem;
@@ -75,12 +78,12 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
-  }
+  } */
 `;
 
 export const Description = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #474747;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;
@@ -88,7 +91,7 @@ export const Description = styled.p`
   justify-content: center;
   align-items: center;
   background: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
     
   @media screen and (max-width: 960px) {
     font-size: 14px;

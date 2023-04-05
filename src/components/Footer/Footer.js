@@ -15,7 +15,7 @@ const Footer = () => {
     scroll.scrollToTop();
   };
   return (
-    <FooterContainer>
+    <FooterWrapper>
       <Copyright>©2022&nbsp; Boa Matule. All rights reserved.</Copyright>
       <ScrollToTopContainer>
         <ScrollToTopButton>
@@ -24,7 +24,7 @@ const Footer = () => {
           />
         </ScrollToTopButton>
       </ScrollToTopContainer>
-    </FooterContainer>
+    </FooterWrapper>
   );
 }
 

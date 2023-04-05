@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   --light: grey;
   --dark: grey;
-  --font-color: #333;
+  --font-color: #000;
   --background-color: #000;
 }
 
@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Rubik', monospace;
     background-color: var(--background-color);
     color: var(--font-color);
+    height: 100%;
   }
   
   a {
@@ -34,14 +35,8 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 4px;
-
-  @media screen and (max-width: 960px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 `;
 
 

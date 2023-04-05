@@ -61,7 +61,7 @@ const ContactPage = () => {
         <Title>
           Are you interested in working together or have any questions?
           Fill in the form and I will get back to you as soon as possible.
-          Until then, stay healthy.
+          Until then, stay healthy & be positive!
         </Title>
       </ContactFormColumn>
       <FormContainerColumn>

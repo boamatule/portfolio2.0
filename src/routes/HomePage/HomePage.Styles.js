@@ -14,13 +14,14 @@ export const  HomeContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
   justify-content: space-between; 
+  margin-top: 300px;
 
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
     padding-left: 4px;
-    height: 100vh;
+    /* height: 100vh; */
   }
 `;
 
@@ -33,20 +34,4 @@ export const ProjectsListContainer = styled.div`
   margin-top: auto; 
   margin-bottom: 60px;
   justify-content: space-between; 
-`;
-
-export const Moon = styled.div`
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  box-shadow: 
-    -10px -10px 0 0 #fff,
-    30px 30px 0 0 #fff,
-    50px -10px 0 0 #fff,
-    90px 90px 0 0 #fff,
-    30px 110px 0 0 #fff,
-    -10px 70px 0 0 #fff,
-    -10px -10px 0 0 #fff,
-    -10px 30px 0 0 #bbb;
 `;

@@ -5,19 +5,22 @@ import { FaAngleUp } from 'react-icons/fa';
 
 export const FooterContainer = styled(Container)`
   display: flex;
-  align-items: center;
-  /* text-align: center; */
-  justify-content: center;
+  position: fixed;
   bottom: 0;
-  height: 80px;
   width: 100%;
-  /* position: fixed; */
+  height: 50px;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const FooterWrapper = styled.div`
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 `;
 
 export const FooterLinksContainer = styled.div`

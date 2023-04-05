@@ -3,12 +3,13 @@ import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import { Container, Button } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  top: 0;
+  margin-top: 300px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  
+  justify-content: center;
+  align-items: center;
+  padding: 0 38px;
+
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -27,7 +28,6 @@ export const FormContainerColumn = styled(ContactFormColumn)`
   padding: 0 20px;
   @media (max-width: 960px) {
     width: 100%;
-    /* margin-bottom: 20px; */
   }
 `;
 
@@ -41,13 +41,9 @@ export const FormContainer = styled.div`
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
-    /* padding-right: 10px;
-    padding-left: 10px; */
     width: 100%;
-
   }
 `;
-
 
 export const Heading = styled.h1`
   font-weight: bold;
@@ -55,39 +51,21 @@ export const Heading = styled.h1`
   letter-spacing: 4px;
   margin-bottom: 20px;
   color:  #4568dc;
-  font-size: 40px;
+  font-size: 400;
   font-family: 'Rubik', sans-serif;
-  margin-top: -10px;
-
-  &::after {
-    content: "";
-    background: grey;
-    height: 0.3em;
-    width: 34%;
-    display: block;
-    margin-top: -0.4rem;
-    margin-left: -0.1%;
-    position: absolute;
-    z-index: -1;
-
-    @media screen and (max-width: 960px) {
-      width: 68%;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-  }
+  margin-bottom: 20px;
+  padding: 0px 0px;
 `;
 
 export const Title = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #474747;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;
   font-weight: normal;
   margin-bottom: 60px;
+  font-weight: normal;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
@@ -111,13 +89,13 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  background: none;
+  background: transparent;
   border: none;
-  color: grey;
+  color: #474747;
   font-weight: normal;
   letter-spacing: 1.6px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 4px 1px;
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
@@ -138,17 +116,17 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  background: none;
+  background: transparent;
   border: 0;
   border: none;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 24px;
   padding: 20px 1px;
   margin-bottom: 14px;
-  border-bottom: 1px solid grey;
-  color: grey;
+  /* border-bottom: 1px solid #474747; */
+  color: #474747;
   border: 2px solid #4568dc;
   border-radius: 2px;
   padding: 8px;
@@ -172,7 +150,7 @@ export const ContactButton = styled(Button)`
   letter-spacing: 1.6px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 12px;
+  font-size: 14px;
   background-color: none;
   color: white;
   text-transform: uppercase;
@@ -193,11 +171,10 @@ export const ContactButtonWrapper = styled.div`
   }
 `;
 
-
 export const ArrowRight = styled(MdOutlineArrowRightAlt)`
   display: flex;
   font-size: 200px;
-  font-weight: normal;
+  font-weight: bold;
   color: white;
   width: 100px;
   height: 40px;

@@ -81,7 +81,7 @@ export const NavLinks = styled(LinkRoute)`
   text-align: center;
   align-items: center;
   height: 100%;
-  color: grey;
+  color: #474747;
   letter-spacing: 8px;
   font-size: 700;
   line-height: 20px;
@@ -118,14 +118,10 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
   @media screen and (max-width: 960px) {
     padding-right: 160px;
     align-items: center;
-    /* text-align: center; */
     flex-wrap: wrap-reverse;
     position: absolute; 
     align-items: center;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* margin: 10px 1px; */
-
   }
 `;
 
@@ -140,9 +136,7 @@ export const NavItemSocialWrapper = styled.div`
 `;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
   @media screen and (max-width: 960px) {
-    /* padding: 2.9rem 0.4rem; */
     top: 0px;
-    /* margin-left: -40px; */
   }
 `;
 
@@ -165,7 +159,6 @@ export const NavItemSocialIconLink = styled.a`
   justify-content: space-between;
 
   @media screen and (max-width: 960px) {
-    /* padding: 2.9rem 0.4rem; */
     top: 0px;
     margin-left: 0px;
   }

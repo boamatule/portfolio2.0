@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
+  /* padding: 0 38px; */
 `;
 
 export const Title = styled.p`
@@ -11,7 +12,8 @@ export const Title = styled.p`
   font-weight: normal;
   letter-spacing: 4px;
   line-height: 4px;
-  color: #4568dc;
+  color: #474747;
+  /* color: #4568dc; */
   margin-bottom: 24px;
   text-align: center;
 
@@ -34,10 +36,10 @@ export const Heading = styled.h1`
   margin-bottom: 20px;
   z-index: 1;
 
-  &::after {
+  /* &::after {
     content: "";
     background: grey;
-    height: 0.3em;
+    height: 0.2em;
     width: 14%;
     display: block;
     margin-top: -0.4rem;
@@ -48,7 +50,7 @@ export const Heading = styled.h1`
     @media screen and (max-width: 960px) {
       width: 32%;
     }
-  }
+  } */
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -71,7 +73,8 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0px 0px;
-    width: 100%;  
+    width: 100%;
+    z-index: -1;
   }
 `;
 
@@ -121,7 +124,7 @@ export const GithubLink = styled.a`
 
 export const ProjectDescription = styled.p`
   display: inline-block;
-  color: grey;
+  color: #474747;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -169,21 +172,21 @@ export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
   &:hover {
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   @media screen and (max-width: 960px) {
     border-radius: 10px 10px 0px 0px;
     position: relative;
     &:hover {
-      z-index: 1;
+      /* z-index: 1; */
     }
   }
 `;
 
 export const SubTitle = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #474747;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;

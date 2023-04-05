@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 export const DropdownContainer = styled.div`
 position: fixed;
 z-index: 999,
-height: 100%;
 width: 100%;
+height: 100vh;
 background: purple;
-display: grid;
+display: flex;
 align-items: center;
-top: 0;
+margin-top: 80px;
 left: 0;
 transition: 0.3s ease-in-out;
 opacity: ${({ isOpen }) => (isOpen ? '100%' :  '0')};
@@ -37,13 +37,14 @@ export const DropdownWrapper = styled.div`
 `;
 
 export const DropdownMenu = styled.ul`
-margin-top: 100px;
-display: grid;
+/* margin-top: 100px; */
+display: flex;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(6, 80px);
 text-align: flex-start;
 justify-contact: flex-start;
 align-items: flex-start;
+
 
 @media screen and (max-width: 960px) {
 	grid-template-rows: repeat(6, 60px);
@@ -51,7 +52,8 @@ align-items: flex-start;
 `;
 
 export const DropdownItem = styled.li`
-  height: 100%;
+	/* width: 100%; */
+	height: 100vh;
 `;
 
 
@@ -66,6 +68,8 @@ transition: 0.2s ease-in-out;
 text-decoration: none;
 color: grey;
 cursor: pointer;
+padding: 0.5rem 1rem;
+margin-top: 0%;
 
 &:hover {
 	color:  #4568dc;
