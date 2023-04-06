@@ -5,7 +5,8 @@ import {
   Heading, 
   Image, 
   ImageColumn, 
-  TextColumn 
+  TextColumn,
+  ImageWrapper,
 } from './AboutPage.Styles';
 
 const AboutPage = () => (

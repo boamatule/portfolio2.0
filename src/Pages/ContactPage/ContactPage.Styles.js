@@ -9,10 +9,9 @@ export const ContactContainer = styled(Container)`
   align-items: center;
   padding: 0 38px;
   margin-bottom: 60px;
-
+  height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    height: auto; /* set height to auto for smaller screens */
   }
 `;
 
