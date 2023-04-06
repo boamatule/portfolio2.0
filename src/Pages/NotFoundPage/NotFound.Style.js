@@ -5,7 +5,6 @@ export const ErrorContainer = styled(Container)`
   display: flex;
   justify-content: center;
   padding: 200px 0px 200px 0px;
-  /* ${Container}; */
 
   @media screen and (max-width: 800px) {
     display: flex;

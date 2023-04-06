@@ -17,7 +17,7 @@ export const FooterWrapper = styled.div`
   align-items: center;
   /* margin-top: 80px; */
   position: relative;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
   /* height: 80px; */
 `;

@@ -64,6 +64,7 @@ const ContactPage = () => {
           Until then, stay healthy & be positive!
         </Title>
       </ContactFormColumn>
+
       <FormContainerColumn>
         <FormContainer>
           <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
@@ -76,7 +77,6 @@ const ContactPage = () => {
                 letterSpacing: '1.6px',
                 lineHeight: '24px',
                 fontSize: '16px',
-                // padding: '4px 1px', 
                 marginBottom: '20px',
                 borderBottom: '1px solid grey',
                 border: '2px solid #4568dc',

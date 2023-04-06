@@ -3,7 +3,6 @@ import styled from 'styled-components/macro';
 import { Button, Container } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  /* margin-top: 300px; */
   display: flex;
   flex-direction: row;
   justify-content: center;

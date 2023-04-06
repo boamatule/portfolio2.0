@@ -1,13 +1,15 @@
-/* eslint-disable react/function-component-definition */
 import React from 'react';
-import { Container } from '../../global-styles';
-import { AboutWrapper, Heading, Description, ImageColumn, TextColumn, Image } from './AboutPage.Styles';
+import { 
+  AboutWrapper, 
+  Description, 
+  Heading, 
+  Image, 
+  ImageColumn, 
+  TextColumn 
+} from './AboutPage.Styles';
 
 const AboutPage = () => (
   <AboutWrapper>
-    {/* <ImageColumn>
-      <Image  src="../../images/avatar_1.png" alt="Boa"  />
-    </ImageColumn> */}
     <TextColumn>
       <Heading>I'm Boa Matule.</Heading>
       <Description>
@@ -20,7 +22,7 @@ const AboutPage = () => (
       </Description>
     </TextColumn>
     <ImageColumn>
-      <Image  src="../../images/avatar_1.png" alt="Boa"  />
+      <Image src="../../images/BOA.png" alt="Boa" />
     </ImageColumn>
   </AboutWrapper>
 );

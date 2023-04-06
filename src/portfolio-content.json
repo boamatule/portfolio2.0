@@ -58,5 +58,25 @@
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
 		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
 		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
+	},
+	{
+		"id": 7,
+		"title": "Kind Like Netflix",
+		"stack": "Nextjs ☆ Serveless ☆ Framer ☆ GraphQL ☆ Redis ☆ Hasura ☆ Vercel ☆ Serveless ☆ Magic ☆ ISG ☆ JWT ☆ Framer ☆ React Hooks",
+		"imageUrl": "../../images/netflix.webp",
+		"alt": "Netflix",
+		"description": "Blog built in ReactJs and Backended using MongoDB",
+		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
+		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
+	},
+	{
+		"id": 8,
+		"title": "Crwn Clothing Platform",
+		"stack": "React.js ☆ Firebase ☆ Stripe ☆ Styled-Components ☆ Express.js",
+		"imageUrl": "../../images/crown.svg",
+		"alt": "Clothes",
+		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
+		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
+		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
 	}
 ]

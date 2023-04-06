@@ -6,17 +6,11 @@ import { Container } from '../../global-styles';
 export const AboutWrapper = styled(Container)`
   top: 0;
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: auto; */
-  /* padding: 0 38px; */
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
-
 
 export const Column = styled.div`
   width: 50%;
@@ -28,15 +22,14 @@ export const Column = styled.div`
 `;
 
 export const Image = styled(LazyLoadImage)`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  /* border: 0px solid #474747; */
-  margin-right: 0.5rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 4px;
+  /* margin-bottom: 20px; */
+  /* border: 4px solid #4568dc; */
+  /* margin-right: 0.5rem; */
   object-fit: fill;
 `;
-
 
 export const ImageColumn = styled(Column)`
   display: flex;
