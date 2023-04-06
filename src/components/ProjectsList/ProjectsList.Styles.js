@@ -5,6 +5,7 @@ import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
   /* padding: 0 38px; */
+  margin-bottom: 60px;
 `;
 
 export const Title = styled.p`
@@ -33,24 +34,8 @@ export const Heading = styled.h1`
   text-align: flex-start;
   font-size: 400;
   font-family: 'Rubik', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   z-index: 1;
-
-  /* &::after {
-    content: "";
-    background: grey;
-    height: 0.2em;
-    width: 14%;
-    display: block;
-    margin-top: -0.4rem;
-    margin-left: -0.1%;
-    position: absolute;
-    z-index: -1;
-
-    @media screen and (max-width: 960px) {
-      width: 32%;
-    }
-  } */
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
@@ -59,7 +44,7 @@ export const Heading = styled.h1`
 
 export const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 14px;
   padding-top: 4rem;
@@ -83,7 +68,8 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
 
   @media screen and (max-width: 960px) {
     cursor: pointer;
@@ -96,7 +82,7 @@ export const ButtonWrapper = styled.div`
 
 export const Text = styled.p`
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   padding-left: 0px;
   text-align: center;
   background: transparent;
@@ -155,7 +141,7 @@ export const Image = styled(LazyLoadImage)`
   text-align: center;
   align-items: center;
   /* border-radius: 25% 10%;; */
-
+  
   @media screen and (max-width: 960px) {
     display: block;
     height: 100%;

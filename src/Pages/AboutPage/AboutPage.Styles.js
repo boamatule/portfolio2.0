@@ -6,13 +6,12 @@ import { Container } from '../../global-styles';
 export const AboutWrapper = styled(Container)`
   top: 0;
   display: flex;
-  /* min-height: 100%; */
-  flex-direction: row;
-  justify-content: center;
+  /* flex-direction: row; */
+  /* justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: auto;
-  padding: 0 38px;
+  margin-bottom: auto; */
+  /* padding: 0 38px; */
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -31,10 +30,11 @@ export const Column = styled.div`
 export const Image = styled(LazyLoadImage)`
   width: 200px;
   height: 200px;
-  /* border-radius: 10px; */
+  border-radius: 50%;
   margin-bottom: 20px;
   /* border: 0px solid #474747; */
   margin-right: 0.5rem;
+  object-fit: fill;
 `;
 
 
@@ -45,6 +45,7 @@ export const ImageColumn = styled(Column)`
 
 export const TextColumn = styled(Column)`
   padding: 0 0px;
+  justify-content: flex-start;
 `;
 
 export const Heading = styled.h1`
@@ -53,32 +54,9 @@ export const Heading = styled.h1`
   letter-spacing: 4px;
   padding: 0px 0px;
   color: #4568dc;
-  justify-content: flex-start;
-  text-align: flex-start;
   font-size: 200;
+  margin-bottom: 60px;
   font-family: 'Rubik', sans-serif;
-  margin-bottom: 20px;
-
-/* 
-  &::after {
-    content: "";
-    background: grey;
-    height: 0.2em;
-    width: 24%;
-    display: block;
-    margin-top: -0.4rem;
-    margin-left: -0.1%;
-    position: absolute;
-    z-index: -1;
-
-    @media screen and (max-width: 960px) {
-      width: 56%;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-  } */
 `;
 
 export const Description = styled.p`
@@ -88,11 +66,11 @@ export const Description = styled.p`
   letter-spacing: 2.8px;
   line-height: 20px;
   font-weight: normal;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
   margin-bottom: 100px;
-    
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: flex-start;
+
   @media screen and (max-width: 960px) {
     font-size: 14px;
   } 

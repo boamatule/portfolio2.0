@@ -15,12 +15,11 @@ export const FooterContainer = styled(Container)`
 
 export const FooterWrapper = styled.div`
   align-items: center;
-  margin-top: 40px;
-  /* margin-bottom: 20px; */
-  position: fixed;
+  /* margin-top: 80px; */
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  /* height: 80px; */
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -40,8 +39,6 @@ export const Copyright = styled.p`
   text-align: center;
   color: #4568dc;
   margin: 0px 0px;
-  /* border-bottom: 2px solid #4568dc; */
-
 
   @media screen and (max-width: 960px) {
     font-size: 12px;

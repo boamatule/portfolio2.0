@@ -1,6 +1,7 @@
-import styled from 'styled-components/macro';
-import { Link as LinkRoute } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link as LinkRoute } from 'react-router-dom';
+import styled from 'styled-components/macro';
 
 import { Container } from '../../global-styles';
 
@@ -9,20 +10,18 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -80px;
   height: 80px;
-  margin-bottom: 180px;
-  background: ${({ scrollNav}) => ( scrollNav ? 'transparent' : 'transparent')};
+  margin-bottom: 200px;
+  /* background: ${({ scrollNav }) => (scrollNav ? 'transparent' : 'transparent')}; */
   top: 0;
   font-size: 1rem;
-  z-index: 10;
+  z-index: 999;
   position: sticky;
-
+  background: transparent;
   @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+    transition: 0.8s all ease-out;
   }
 `;
-
 
 export const NavbarContainer = styled(Container)`
   display: flex;
@@ -30,9 +29,7 @@ export const NavbarContainer = styled(Container)`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0px 24px;
-  max-width: 1100px;
-
+  padding: 0px 0px;
   @media screen and (max-width: 960px) {
 
   }
@@ -58,14 +55,10 @@ export const NavMenu = styled.ul`
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   list-style: none;
-  margin-right: -22px;
   text-transform: uppercase;
-
-  &.active {
-    border-bottom: 3px solid #4568dc;
-  }
+  justify-self: flex-start;
 
   @media screen and (max-width: 960px) {
     display: none;
@@ -74,6 +67,12 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+
+  &:hover {
+    transition: border-bottom 0.2s ease-in-out;
+    margin-top: -2rem0.2s ease-in-out;
+    border-bottom: 4px solid #4568dc;    
+  }
 `;
 
 export const NavLinks = styled(LinkRoute)`
@@ -177,4 +176,12 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     background: transparent,
   }
+`;
+
+
+export const Image = styled(LazyLoadImage)`
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 0.5rem;
 `;

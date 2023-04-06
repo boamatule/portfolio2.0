@@ -15,7 +15,8 @@ export const  HomeContainer = styled(Container)`
   align-items: center;
   justify-content: space-between; 
   margin-top: 300px;
-
+  margin-bottom: 80px;
+  
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;

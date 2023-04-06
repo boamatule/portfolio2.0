@@ -16,7 +16,9 @@ import {
   NavItemSocialIconWrapper,
   NavLinks,
   NavMenu,
-  NavbarContainer
+  NavbarContainer,
+  LogoContainer,
+  Image,
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
@@ -78,8 +80,8 @@ const NavBar = ({ toggle }) => {
                 }}
               />
             </MobileIcon>
-            {/* <LogoContainer to="/" aria-current="homepage" onClick={toggleHome}>
-              <Img src="../../images/logo_boa.PNG" alt="Boa" />
+            {/* <LogoContainer to="/">
+              <Image  src="../../images/avatar.webp" alt="Boa"  />
             </LogoContainer> */}
             <NavMenu>
               <NavItem>

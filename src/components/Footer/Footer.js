@@ -16,7 +16,7 @@ const Footer = () => {
   };
   return (
     <FooterWrapper>
-      <Copyright>©2022&nbsp; Boa Matule. All rights reserved.</Copyright>
+      <Copyright>©<span id="year">2023</span>&nbsp; Boa Matule. All rights reserved.</Copyright>
       <ScrollToTopContainer>
         <ScrollToTopButton>
           <ScrollToTopIcon

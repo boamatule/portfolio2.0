@@ -5,9 +5,9 @@ import { AboutWrapper, Heading, Description, ImageColumn, TextColumn, Image } fr
 
 const AboutPage = () => (
   <AboutWrapper>
-    <ImageColumn>
-      <Image  src="../../images/avatar.webp" alt="Boa"  />
-    </ImageColumn>
+    {/* <ImageColumn>
+      <Image  src="../../images/avatar_1.png" alt="Boa"  />
+    </ImageColumn> */}
     <TextColumn>
       <Heading>I'm Boa Matule.</Heading>
       <Description>
@@ -19,6 +19,9 @@ const AboutPage = () => (
         I love building, architecting, and scaling web and mobile applications using the latest tech stack in the market.
       </Description>
     </TextColumn>
+    <ImageColumn>
+      <Image  src="../../images/avatar_1.png" alt="Boa"  />
+    </ImageColumn>
   </AboutWrapper>
 );
 

@@ -35,10 +35,10 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  /* padding: 0 30px; */
 `;
-
 
 export const Button = styled.button`
   white-space: nowrap;

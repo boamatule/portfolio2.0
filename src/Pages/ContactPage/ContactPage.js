@@ -3,18 +3,18 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import {
-  Form,
-  TextArea,
-  Input,
-  Title,
-  ContactContainer,
-  ContactButtonWrapper,
-  ContactButton,
-  Heading,
-  FormContainer,
-  ContactFormColumn,
-  FormContainerColumn,
   ArrowRight,
+  ContactButton,
+  ContactButtonWrapper,
+  ContactContainer,
+  ContactFormColumn,
+  Form,
+  FormContainer,
+  FormContainerColumn,
+  Heading,
+  Input,
+  TextArea,
+  Title,
 } from './ContactPage.Styles';
 
 const ContactPage = () => {
@@ -68,7 +68,27 @@ const ContactPage = () => {
         <FormContainer>
           <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
             <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
-            <Input placeholder="Email Address" type="email" name="email" onChange={handleChange} required />
+            <Input
+              style={{
+                background: 'transparent',
+                color: '#474747',
+                fontWeight: 'normal',
+                letterSpacing: '1.6px',
+                lineHeight: '24px',
+                fontSize: '16px',
+                // padding: '4px 1px', 
+                marginBottom: '20px',
+                borderBottom: '1px solid grey',
+                border: '2px solid #4568dc',
+                borderRadius: '2px',
+                padding: '8px'
+              }}
+              placeholder="Email Address"
+              type="email"
+              name="email"
+              onChange={handleChange}
+              required
+            />
             <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton small fontSmall primary aria-label="Contact" type="submit">
@@ -78,7 +98,7 @@ const ContactPage = () => {
           </Form>
         </FormContainer>
       </FormContainerColumn>
-    </ContactContainer>
+    </ContactContainer >
   );
 };
 

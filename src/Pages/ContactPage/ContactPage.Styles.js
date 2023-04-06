@@ -1,14 +1,15 @@
-import styled from 'styled-components/macro';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
-import { Container, Button } from '../../global-styles';
+import styled from 'styled-components/macro';
+import { Button, Container } from '../../global-styles';
 
 export const ContactContainer = styled(Container)`
-  margin-top: 300px;
+  /* margin-top: 300px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0 38px;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
@@ -17,6 +18,7 @@ export const ContactContainer = styled(Container)`
 
 export const ContactFormColumn = styled.div`
   width: 50%;
+  align-self: flex-start;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -49,12 +51,13 @@ export const Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
-  margin-bottom: 20px;
   color:  #4568dc;
   font-size: 400;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 20px;
   padding: 0px 0px;
+  margin-bottom: 60px;
+
 `;
 
 export const Title = styled.p`
@@ -65,7 +68,7 @@ export const Title = styled.p`
   line-height: 20px;
   font-weight: normal;
   margin-bottom: 60px;
-  font-weight: normal;
+  align-self: flex-start;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
