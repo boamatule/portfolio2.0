@@ -32,7 +32,7 @@ export const FooterLinksContainer = styled.div`
 
 export const Copyright = styled.p`
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 4px;
   letter-spacing: 2px;
   align-items: center;
@@ -56,14 +56,18 @@ export const ScrollToTopContainer = styled.div`
 `;
 
 export const ScrollToTopButton = styled.div`
-    display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center; /* center vertically */
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 1px solid silver;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid silver;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: silver;
+  } 
 `;
 
 export const ScrollToTopIcon = styled(FaAngleUp)`

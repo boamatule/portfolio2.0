@@ -16,9 +16,7 @@ import {
   NavItemSocialIconWrapper,
   NavLinks,
   NavMenu,
-  NavbarContainer,
-  LogoContainer,
-  Image,
+  NavbarContainer
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
@@ -33,7 +31,6 @@ const NavBar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
