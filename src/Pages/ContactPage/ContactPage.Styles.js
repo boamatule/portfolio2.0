@@ -12,6 +12,7 @@ export const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
+    height: auto; /* set height to auto for smaller screens */
   }
 `;
 

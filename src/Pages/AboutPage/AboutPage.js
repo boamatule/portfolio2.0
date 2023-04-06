@@ -22,7 +22,7 @@ const AboutPage = () => (
       </Description>
     </TextColumn>
     <ImageColumn>
-      <Image src="../../images/BOA.png" alt="Boa" />
+      <Image src="../../images/moi.webp" alt="Boa" />
     </ImageColumn>
   </AboutWrapper>
 );

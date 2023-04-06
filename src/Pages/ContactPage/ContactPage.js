@@ -68,7 +68,13 @@ const ContactPage = () => {
       <FormContainerColumn>
         <FormContainer>
           <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
-            <Input placeholder="Full Name" type="text" name="name" onChange={handleChange} required />
+            <Input
+              placeholder="Enter your name"
+              type="text"
+              name="name"
+              onChange={handleChange}
+              required
+            />
             <Input
               style={{
                 background: 'transparent',
@@ -83,13 +89,13 @@ const ContactPage = () => {
                 borderRadius: '2px',
                 padding: '8px'
               }}
-              placeholder="Email Address"
+              placeholder="Enter your email address"
               type="email"
               name="email"
               onChange={handleChange}
               required
             />
-            <TextArea placeholder="What are we going to build today?" name="message" onChange={handleChange} required />
+            <TextArea placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton small fontSmall primary aria-label="Contact" type="submit">
                 <ArrowRight />

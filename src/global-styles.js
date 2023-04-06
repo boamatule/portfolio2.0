@@ -37,7 +37,9 @@ export const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  /* padding: 0 30px; */
+  height: 100vh; /* add this property to set the height of the container to 100% of the viewport height */
+  width: 100%; /* add this property to set the width of the container to 100% */
+  box-sizing: border-box; /* add this property to include padding in the total width and height of the container */
 `;
 
 export const Button = styled.button`
