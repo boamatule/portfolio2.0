@@ -1,21 +1,8 @@
 import styled from 'styled-components/macro';
-import { Container } from '../../global-styles';
 import { FaAngleUp } from 'react-icons/fa';
-
-
-export const FooterContainer = styled(Container)`
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  justify-content: center;
-`;
 
 export const FooterWrapper = styled.div`
   align-items: center;
-  /* margin-top: 80px; */
   position: relative;
   bottom: 20px;
   width: 100%;

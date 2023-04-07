@@ -2,7 +2,6 @@ import React from 'react';
 import { animateScroll as scroll } from "react-scroll";
 
 import {
-  FooterContainer,
   FooterWrapper,
   Copyright,
   ScrollToTopContainer,

@@ -4,7 +4,6 @@ import ContactPage from '../../Pages/ContactPage/ContactPage';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 
 import {
-  Border,
   HomeContainer,
   ProjectsListContainer
 } from './HomePage.Styles';
@@ -19,7 +18,6 @@ const HomePage = () => {
         </ProjectsListContainer>
         <ContactPage />
       </HomeContainer>
-      {/* <Border /> */}
     </>
   );
 }

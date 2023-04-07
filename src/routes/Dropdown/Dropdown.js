@@ -4,7 +4,6 @@ import {
 	DropdownContainer,
 	DropdownIcon,
 	DropdownCloseIcon,
-	DropdownWrapper,
 	DropdownMenu,
 	DropdownItem,
 	DropdownLink,

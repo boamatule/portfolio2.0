@@ -35,35 +35,8 @@ const NavBar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-  // const onMouseEnter = () => {
-  //   if (window.innerWidth < 960) {
-  //     setShowDropdown(false);
-  //   } else {
-  //     setShowDropdown(true);
-  //   }
-  // };
-
-  // const onMouseLeave = () => {
-  //   if (window.innerWidth < 960) {
-  //     setShowDropdown(false);
-  //   } else {
-  //     setShowDropdown(false);
-  //   }
-  // };
-
-
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-  // const [isHovering, setIsHovering] = useState(false);
-
-  // const handleMouseEnter = () => {
-  //   setIsHovering(true);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsHovering(false);
-  // };
 
   return (
     <ThemeProvider theme={themeMode}>

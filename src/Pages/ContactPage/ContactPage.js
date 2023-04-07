@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -36,7 +35,7 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

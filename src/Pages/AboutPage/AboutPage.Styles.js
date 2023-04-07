@@ -2,7 +2,6 @@ import styled from 'styled-components/macro';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
-
 export const AboutWrapper = styled(Container)`
   top: 0;
   display: flex;
@@ -22,16 +21,10 @@ export const Column = styled.div`
   }
 `;
 
-export const ImageWrapper = styled(LazyLoadImage)`
-  width: 0px;
-  height: 0px;
-  border-radius: 4px;
-  background-color: #e6e6e6;
-`;
 
 export const Image = styled(LazyLoadImage)`
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   border-radius: 4px;
   object-fit: fill;
 `;
@@ -41,13 +34,10 @@ export const ImageColumn = styled(Column)`
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width: 420px;
-  height: 420px;
-  margin-left: 40px;
-  border: 4px solid  #4568dc;
+  width: 600px;
+  height: 400px;
   border-radius: 4px;
-  margin-left: 10px;
-
+  background-image: url(${props => props.backgroundImage});
 `;
 
 export const TextColumn = styled(Column)`
