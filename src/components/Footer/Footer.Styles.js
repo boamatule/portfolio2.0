@@ -19,7 +19,7 @@ export const FooterWrapper = styled.div`
   position: relative;
   bottom: 20px;
   width: 100%;
-  /* height: 80px; */
+  height: 80px;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -62,18 +62,23 @@ export const ScrollToTopButton = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid silver;
+  border: 2px solid #4568dc;
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    background-color: silver;
+    background-color: #4568dc;
   } 
 `;
 
 export const ScrollToTopIcon = styled(FaAngleUp)`
   width: 20px;
   height: 20px;
-  color: grey;
+  color: #4568dc;
+  cursor: pointer;
+
+  &:hover {
+    color: grey;
+  } 
 `;
 
 

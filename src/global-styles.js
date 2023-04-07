@@ -1,6 +1,8 @@
 import styled, { createGlobalStyle } from 'styled-components/macro';
+import normalize from 'normalize.css';
 
 export const GlobalStyles = createGlobalStyle`
+  ${normalize}
 :root {
   --light: grey;
   --dark: grey;
@@ -22,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   
   html {
     box-sizing: border-box;
-    font-family: 'Rubik', monospace;
+    font-family: 'Rubik', 'IBM Plex Mono', monospace;
     background-color: var(--background-color);
     color: var(--font-color);
     height: 100%;
@@ -50,7 +52,6 @@ export const Button = styled.button`
   outline: none;
   cursor: pointer;
   background: #4568dc;
-  /* background: #4568dc; */
 
   transition: 0.5s;
   border-radius: 2px;
