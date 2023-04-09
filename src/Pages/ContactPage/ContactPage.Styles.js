@@ -51,9 +51,8 @@ export const Heading = styled.h1`
   line-height: 20px;
   letter-spacing: 4px;
   color:  #4568dc;
-  font-size: 400;
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 20px;
+  font-size: 32px;
+  /* font-family: 'Rubik', sans-serif; */
   padding: 0px 0px;
   margin-bottom: 60px;
 
@@ -61,7 +60,7 @@ export const Heading = styled.h1`
 
 export const Title = styled.p`
   margin-top: 16px;
-  color: #474747;
+  color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;

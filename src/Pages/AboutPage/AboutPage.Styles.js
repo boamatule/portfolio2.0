@@ -47,23 +47,22 @@ export const TextColumn = styled(Column)`
 
 export const Heading = styled.h1`
   font-weight: bold;
-  line-height: 20px;
-  letter-spacing: 4px;
+  /* line-height: 20px; */
+  /* letter-spacing: 4px; */
   padding: 0px 0px;
   color: #4568dc;
-  font-size: 200;
+  font-size: 32px;
   margin-bottom: 60px;
-  font-family: 'Rubik', sans-serif;
 `;
 
 export const Description = styled.p`
   margin-top: 16px;
-  color: #474747;
+  color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;
   font-weight: normal;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   align-items: flex-start;
   justify-content: flex-start;
   text-align: flex-start;

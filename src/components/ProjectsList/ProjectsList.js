@@ -42,7 +42,7 @@ const ProjectsList = () => {
           {projects.map((project) => (
             <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
               <Glass>
-                <Image src={project.imageUrl} alt={project.alt} />
+                <Image src={project.imageUrl} alt={project.alt} loading="lazy" />
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
                 <ButtonWrapper>

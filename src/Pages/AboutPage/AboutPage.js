@@ -24,7 +24,7 @@ const AboutPage = () => (
     </Description>
   </TextColumn>
   <ImageColumn backgroundImage={backgroundImage}>
-    <Image src="../../images/moi.webp" alt="Boa" />
+    <Image src="../../images/moi.webp" alt="Boa" loading="lazy" />
   </ImageColumn>
 </AboutWrapper>
 

@@ -32,11 +32,10 @@ export const Heading = styled.h1`
   color: #4568dc;
   justify-content: flex-start;
   text-align: flex-start;
-  font-size: 400;
+  font-size: 32px;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 60px;
-  z-index: 1;
-
+  /* z-index: 1; */
   @media screen and (max-width: 960px) {
     font-size: 20px;
   }
@@ -172,7 +171,7 @@ export const BoxStyled = styled(motion.div)`
 
 export const SubTitle = styled.p`
   margin-top: 16px;
-  color: #474747;
+  color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
   line-height: 20px;
