@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link as LinkRoute } from 'react-router-dom';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 import { Container } from '../../global-styles';
 
@@ -107,12 +107,12 @@ export const NavLinks = styled(LinkRoute)`
 
 export const NavItemSocialIconWrapper = styled(motion.div)`
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;  
+  /* align-items: center;  */
   flex-wrap: wrap-reverse;
   position: relative; 
   top: 0;
   height: 80px;
-  padding-right: 80px;
 
   @media screen and (max-width: 960px) {
     padding-right: 160px;
@@ -124,6 +124,7 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
   }
 `;
 
+
 export const NavItemSocialWrapper = styled.div`
   /* &:hover {
   border: 2px solid red;
@@ -134,34 +135,67 @@ export const NavItemSocialWrapper = styled.div`
   } */
 `;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8rem;
   @media screen and (max-width: 960px) {
     top: 0px;
+    /* flex-direction: column; */
+    align-items: flex-start;
   }
 `;
 
+
 export const NavItemSocialIconLinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   @media screen and (max-width: 960px) {
-    /* margin-left: 0px; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0rem;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* & > * {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      font-size: 5rem;
+    } */
   }
 `;
 
 export const NavItemSocialIconLink = styled.a`
   display: flex;
-  top: 0;
-  height: 80px;
-  text-decoration: none;
   align-items: center;
-  padding: 0rem 0.5rem;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0rem;
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
-  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color:  #4568dc;
+  }
 
   @media screen and (max-width: 960px) {
-    top: 0px;
-    margin-left: 0px;
+    margin-left: 1rem;
   }
-`;
+
+  /* increase touch target size */
+  width: 38px;
+  height: 38px;
+  padding-left: 0rem;
+  margin-right: 0rem;
+
+  /* remove unnecessary styles */
+  top: auto;
+  justify-content: center;
+  `;
 
 export const MobileIcon = styled.div`
     display: none;

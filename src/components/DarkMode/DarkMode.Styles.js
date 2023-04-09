@@ -8,6 +8,10 @@ export const ToggleSwitch = styled.div`
   margin-left: 60px;
   position: absolute;
   background: #4568dc;
+
+  @media screen and (max-width: 960px) {
+    /* padding-right: 2rem; */
+  }
 `;
 
 export const Label = styled.label`
@@ -33,7 +37,11 @@ export const Label = styled.label`
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-  }
+  };
+
+  /* &:hover {
+    background-color: blue;
+  } */
 `;
 
 export const Input = styled.input`
@@ -47,5 +55,5 @@ export const Input = styled.input`
       box-shadow: none;
       transition: 0.2s; 
     }
-  }
+  };
 `;

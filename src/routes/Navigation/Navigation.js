@@ -21,7 +21,7 @@ import {
 
 import DarkMode from '../../components/DarkMode/DarkMode';
 
-const NavBar = ({ toggle }) => {
+const NavBar = ({ toggle, dropdownOpen }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -35,7 +35,7 @@ const NavBar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-  const [theme, themeToggler] = useDarkMode();
+  const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
@@ -43,7 +43,9 @@ const NavBar = ({ toggle }) => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <MobileIcon onClick={toggle}>
+            <MobileIcon
+              onClick={toggle}
+            >
               <FaBars
                 style={{
                   color: '#4568dc'
@@ -53,7 +55,7 @@ const NavBar = ({ toggle }) => {
             {/* <LogoContainer to="/">
               <Image  src="../../images/avatar.webp" alt="Boa"  />
             </LogoContainer> */}
-            <NavMenu>
+            <NavMenu >
               <NavItem>
                 <NavLinks
                   to=""
@@ -84,7 +86,6 @@ const NavBar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
 
-
             <NavItemSocialIconWrapper
               initial={{
                 x: -500,
@@ -100,7 +101,6 @@ const NavBar = ({ toggle }) => {
                 duration: 1.5,
               }}
             >
-
               <NavItemSocialIconLinkMotion
                 whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
@@ -117,14 +117,6 @@ const NavBar = ({ toggle }) => {
                     }}
                   />
                 </NavItemSocialIconLink>
-              </NavItemSocialIconLinkMotion>
-
-              <NavItemSocialIconLinkMotion
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0 },
-                }}
-              >
                 <NavItemSocialIconLink
                   href="https://github.com/boamatule"
                   target="_blank"
@@ -134,7 +126,8 @@ const NavBar = ({ toggle }) => {
                   <FaGithub
                     style={{
                       width: '20px',
-                      height: '20px'
+                      height: '20px',
+                      marginLeft: '4px'
                     }}
                   />
                 </NavItemSocialIconLink>

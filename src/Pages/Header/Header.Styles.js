@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   background-color: #171923;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 300px;
   left: ${props => props.sidebar ? '0' : '-100%'};
   animation: showSidebar .4s;
-  > svg {
+  svg {
     position: fixed;
     color: white;
     width: 30px;

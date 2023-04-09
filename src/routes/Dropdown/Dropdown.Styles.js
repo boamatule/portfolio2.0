@@ -4,19 +4,20 @@ import { Link } from 'react-router-dom';
 
 
 export const DropdownContainer = styled.div`
-position: fixed;
-z-index: 999,
-width: 100%;
-height: 100vh;
-background: purple;
-display: flex;
-align-items: center;
-margin-top: 80px;
-left: 0;
-transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' :  '0')};
-top: ${({ isOpen }) => (isOpen ? '0' :  '-100%')};
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: purple;
+	display: flex; /* left */
+	align-items: flex-start;
+	justify-content: flex-start;
+	top: 0;
+  left: 0;
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  transition: opacity 0.3s ease-in-out;
 `;
+
 
 export const DropdownIcon = styled.div`
 	position: absolute;
@@ -29,7 +30,9 @@ export const DropdownIcon = styled.div`
 `;
 
 export const DropdownCloseIcon = styled(FaTimes)`
-	color:  #4568dc;
+	/* color:  #4568dc; */
+	color:  red;
+
 `;
 
 export const DropdownWrapper = styled.div`
@@ -37,45 +40,43 @@ export const DropdownWrapper = styled.div`
 `;
 
 export const DropdownMenu = styled.ul`
-/* margin-top: 100px; */
-display: flex;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(6, 80px);
-text-align: flex-start;
-justify-contact: flex-start;
-align-items: flex-start;
-
-
-@media screen and (max-width: 960px) {
-	grid-template-rows: repeat(6, 60px);
-}
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column; /* added */
+  justify-content: center; /* added */
+  align-items: center; /* added */
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 80px);
+  text-align: center;
+  @media screen and (max-width: 960px) {
+    grid-template-rows: repeat(6, 60px);
+  }
 `;
 
+
 export const DropdownItem = styled.li`
-	/* width: 100%; */
+	width: 100%;
 	height: 100vh;
 `;
 
-
 export const DropdownLink = styled(Link)`
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.5rem;
-text-decoration: none;
-list-style: none;
-transition: 0.2s ease-in-out;
-text-decoration: none;
-color: grey;
-cursor: pointer;
-padding: 0.5rem 1rem;
-margin-top: 0%;
-
-&:hover {
-	color:  #4568dc;
+	display: flex; /* left */
+	font-size: 1.5rem;
+	text-decoration: none;
+	list-style: none;
 	transition: 0.2s ease-in-out;
-}
+	text-decoration: none;
+	color: grey;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	margin-top: 0%;
+	
+	&:hover {
+		color:  #4568dc;
+		transition: 0.2s ease-in-out;
+	}
 `;
+
 
 // export const SideBarRoute = styled(Route)`
 // color: purple;

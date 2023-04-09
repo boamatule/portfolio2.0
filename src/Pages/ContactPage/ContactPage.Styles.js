@@ -9,11 +9,27 @@ export const ContactContainer = styled(Container)`
   align-items: center;
   padding: 0 38px;
   margin-bottom: 60px;
+  font-family: 'Rubik', sans-serif;
+
   height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
   @media screen and (max-width: 960px) {
     flex-direction: column;
+  };
+
+  @media screen and (max-width: 768px) {
+    /* flex-direction: column; */
   }
 `;
+
+// export const ContactFormColumn = styled.div`
+//   width: 50%;
+//   align-self: flex-start;
+
+//   @media (max-width: 960px) {
+//     width: 100%;
+//     margin-bottom: 20px;
+//   }
+// `;
 
 export const ContactFormColumn = styled.div`
   width: 50%;
@@ -23,14 +39,35 @@ export const ContactFormColumn = styled.div`
     width: 100%;
     margin-bottom: 20px;
   }
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 `;
 
 export const FormContainerColumn = styled(ContactFormColumn)`
   padding: 0 20px;
   @media (max-width: 960px) {
     width: 100%;
+    max-width: none;
   }
 `;
+
+// export const FormContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   text-align: flex-start;
+//   width: 100%;
+//   padding: 0 20px;
+// ´
+//   @media screen and (max-width: 960px) {
+//   margin-right: auto;
+//   margin-left: auto;
+//   max-width: none;
+// }
+// `;
 
 export const FormContainer = styled.div`
   display: flex;
@@ -38,11 +75,13 @@ export const FormContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   text-align: flex-start;
-  
+  width: 100%;
+  padding: 0 20px;
+
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    max-width: none;
   }
 `;
 
@@ -56,6 +95,9 @@ export const Heading = styled.h1`
   padding: 0px 0px;
   margin-bottom: 60px;
 
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Title = styled.p`
@@ -70,6 +112,10 @@ export const Title = styled.p`
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 `;
 
@@ -84,8 +130,8 @@ export const Form = styled.form`
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 `;
 
@@ -159,7 +205,11 @@ export const ContactButton = styled(Button)`
   border: 4px;
   cursor: pointer;
   margin-bottom: 20px;
-`;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 36px;  }
+  `;
 
 export const ContactButtonWrapper = styled.div`
   justify-content: center;
@@ -179,5 +229,9 @@ export const ArrowRight = styled(MdOutlineArrowRightAlt)`
   color: white;
   width: 100px;
   height: 40px;
-`;
+
+  @media screen and (max-width: 768px) {
+    font-size: 120px;
+  }
+  `;
 
