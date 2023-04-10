@@ -9,11 +9,12 @@ export const DropdownContainer = styled.div`
   width: 100%;
   height: 100%;
   background: purple;
-	display: flex; /* left */
-	align-items: flex-start;
-	justify-content: flex-start;
-	top: 0;
+  display: flex;
+  justify-content: center; /* centers the child items horizontally */
+  align-items: center; /* centers the child items vertically */
+  top: 0;
   left: 0;
+	text-decoration: none;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   transition: opacity 0.3s ease-in-out;
 `;
@@ -48,11 +49,12 @@ export const DropdownMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+	text-decoration: none;
+
   @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);
   }
 `;
-
 
 export const DropdownItem = styled.li`
 	width: 100%;

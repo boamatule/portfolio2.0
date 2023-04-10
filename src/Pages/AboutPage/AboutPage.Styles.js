@@ -77,10 +77,10 @@ export const Heading = styled.h1`
   /* line-height: 20px; */
   /* letter-spacing: 4px; */
   padding: 0px 0px;
-  color: #4568dc;/about_me
+  color: #4568dc;
   font-size: 32px;
   margin-bottom: 60px;
-  
+
   @media screen and (max-width: 768px) {
   font-size: 28px;
   margin-bottom: 20px;
@@ -96,9 +96,9 @@ export const Description = styled.p`
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
-  line-height: 20px;
   font-weight: normal;
   margin-bottom: 60px;
+  line-height: 22px;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;

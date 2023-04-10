@@ -7,13 +7,13 @@ export const ContactContainer = styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 38px;
-  margin-bottom: 60px;
-  font-family: 'Rubik', sans-serif;
-
+  padding: 0 0px;
+  margin-bottom: 0px;
   height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
   @media screen and (max-width: 960px) {
     flex-direction: column;
+    /* height: 100vh; */
+     /* add this property to set the height of the container to 100% of the viewport height */
   };
 
   @media screen and (max-width: 768px) {
@@ -21,53 +21,28 @@ export const ContactContainer = styled(Container)`
   }
 `;
 
-// export const ContactFormColumn = styled.div`
-//   width: 50%;
-//   align-self: flex-start;
-
-//   @media (max-width: 960px) {
-//     width: 100%;
-//     margin-bottom: 20px;
-//   }
-// `;
-
 export const ContactFormColumn = styled.div`
   width: 50%;
   align-self: flex-start;
-
+  /* padding: 20px; */
+  /* margin: 10px; */
   @media (max-width: 960px) {
     width: 100%;
+    /* max-width: unset; */
     margin-bottom: 20px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 0 10px;
+    padding: 0 20px;
+/*  */
   }
 `;
 
 export const FormContainerColumn = styled(ContactFormColumn)`
-  padding: 0 20px;
+  /* padding: 0 20px; */
+
   @media (max-width: 960px) {
     width: 100%;
-    max-width: none;
+    max-width: unset;
   }
 `;
-
-// export const FormContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   justify-content: flex-start;
-//   text-align: flex-start;
-//   width: 100%;
-//   padding: 0 20px;
-// ´
-//   @media screen and (max-width: 960px) {
-//   margin-right: auto;
-//   margin-left: auto;
-//   max-width: none;
-// }
-// `;
 
 export const FormContainer = styled.div`
   display: flex;
@@ -79,10 +54,11 @@ export const FormContainer = styled.div`
   padding: 0 20px;
 
   @media screen and (max-width: 960px) {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: none;
-  }
+  margin-right: auto;
+  margin-left: auto;
+  max-width: unset;
+  width: 100%;
+}
 `;
 
 export const Heading = styled.h1`
@@ -91,12 +67,14 @@ export const Heading = styled.h1`
   letter-spacing: 4px;
   color:  #4568dc;
   font-size: 32px;
-  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'Rubik', sans-serif;
   padding: 0px 0px;
   margin-bottom: 60px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    padding: 0 26px;
+
   }
 `;
 
@@ -105,17 +83,14 @@ export const Title = styled.p`
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: normal;
   margin-bottom: 60px;
   align-self: flex-start;
 
   @media screen and (max-width: 960px) {
     font-size: 14px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0 26px;
   }
 `;
 
@@ -131,7 +106,7 @@ export const Form = styled.form`
     margin-right: auto;
     margin-left: auto;
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 10px;
   }
 `;
 
@@ -229,9 +204,5 @@ export const ArrowRight = styled(MdOutlineArrowRightAlt)`
   color: white;
   width: 100px;
   height: 40px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 120px;
-  }
   `;
 

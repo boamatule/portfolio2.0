@@ -12,7 +12,7 @@ export const HomeContainer = styled(Container)`
   @media screen and (max-width: 960px) {
     margin-right: 10px;
     margin-left: 10px;
-    height: 400vh;
+    height: auto;
   }
 `;
 

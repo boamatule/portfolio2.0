@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { FaBars, FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -21,8 +21,9 @@ import {
 
 import DarkMode from '../../components/DarkMode/DarkMode';
 
-const NavBar = ({ toggle, dropdownOpen }) => {
+const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const dropdownRef = useRef(null);
 
   const changeNav = () => {
     if (window.scrollY <= 80) {
@@ -31,9 +32,23 @@ const NavBar = ({ toggle, dropdownOpen }) => {
       setScrollNav(false);
     }
   };
+  
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      toggle();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [dropdownRef, toggle]);
 
   const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -52,10 +67,9 @@ const NavBar = ({ toggle, dropdownOpen }) => {
                 }}
               />
             </MobileIcon>
-            {/* <LogoContainer to="/">
-              <Image  src="../../images/avatar.webp" alt="Boa"  />
-            </LogoContainer> */}
-            <NavMenu >
+            <NavMenu 
+              // ref={dropdownRef}
+            >
               <NavItem>
                 <NavLinks
                   to=""
