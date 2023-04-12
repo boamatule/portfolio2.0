@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Dropdown from '../../routes/Dropdown/Dropdown';
 import NavBar from '../../routes/Navigation/Navigation';
 
@@ -11,10 +11,15 @@ const Header = () => {
 
   return (
     <>
-      <Dropdown isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
+      {
+        isOpen && <Dropdown 
+        toggle={toggle} 
+        active={setIsOpen} 
+        />
+      }
     </>
   );
-}
+};
 
 export default Header;

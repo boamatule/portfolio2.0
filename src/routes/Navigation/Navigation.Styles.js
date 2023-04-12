@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link as LinkRoute } from 'react-router-dom';
 import styled from 'styled-components';
-
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Container } from '../../global-styles';
 
 
@@ -12,7 +12,6 @@ export const Nav = styled.nav`
   align-items: center;
   height: 80px;
   margin-bottom: 200px;
-  /* background: ${({ scrollNav }) => (scrollNav ? 'transparent' : 'transparent')}; */
   top: 0;
   font-size: 1rem;
   z-index: 999;
@@ -22,6 +21,33 @@ export const Nav = styled.nav`
     transition: 0.8s all ease-out;
   }
 `;
+export const MobileIconIconWrapper = styled.div`
+	position: absolute;
+	top: 1.2rem;
+	right: 1.5rem;
+	font-size: 2rem;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+  color:  #4568dc;
+`;
+
+export const MobileIconBars= styled(FaBars)`
+    display: none;
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(-100%, 60%); */
+  font-size: 1.8rem;
+  background: transparent;
+  /* color: #4568dc */
+  }
+`;
+export const DropdownCloseIcon = styled(FaTimes)`
+	color: red;
+`;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
@@ -30,6 +56,7 @@ export const NavbarContainer = styled(Container)`
   z-index: 1;
   width: 100%;
   padding: 0px 0px;
+  font-family: Rubik;
   @media screen and (max-width: 960px) {
 
   }
@@ -55,7 +82,6 @@ export const NavMenu = styled.ul`
   display: flex;
   text-align: center;
   align-items: center;
-  /* justify-content: center; */
   list-style: none;
   text-transform: uppercase;
   justify-self: flex-start;
@@ -67,11 +93,16 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-
+  display: flex;
+  align-items: center;
+  /* padding: 0 1rem; */
+  /* border-bottom: 4px solid transparent; */
+  
   &:hover {
-    transition: border-bottom 0.2s ease-in-out;
-    margin-top: -2rem0.2s ease-in-out;
-    border-bottom: 4px solid #4568dc;    
+    transition: all 0.2s ease-in-out;
+    margin-top: -0.5rem;
+    border-bottom: 4px solid #4568dc;
+    padding-bottom: 0;
   }
 `;
 
@@ -80,7 +111,8 @@ export const NavLinks = styled(LinkRoute)`
   text-align: center;
   align-items: center;
   height: 100%;
-  color: #474747;
+  color: grey;
+  /* color: #474747; */
   letter-spacing: 8px;
   font-size: 700;
   line-height: 20px;
@@ -108,7 +140,6 @@ export const NavLinks = styled(LinkRoute)`
 export const NavItemSocialIconWrapper = styled(motion.div)`
   display: flex;
   justify-content: flex-end;  
-  /* align-items: center;  */
   flex-wrap: wrap-reverse;
   position: relative; 
   top: 0;
@@ -139,9 +170,9 @@ export const NavItemSocialIconLinkMotion = styled(motion.div)`
   flex-direction: row;
   align-items: center;
   margin-right: 8rem;
+
   @media screen and (max-width: 960px) {
     top: 0px;
-    /* flex-direction: column; */
     align-items: flex-start;
   }
 `;
@@ -151,6 +182,7 @@ export const NavItemSocialIconLinkWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   @media screen and (max-width: 960px) {
     position: fixed;
     bottom: 0;
@@ -218,4 +250,30 @@ export const Image = styled(LazyLoadImage)`
   height: 50px;
   margin-bottom: 20px;
   margin-right: 0.5rem;
+`;
+
+
+export const DropdownMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+`;
+
+export const DropdownMenuItem = styled(LinkRoute)`
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  color: grey;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
 `;

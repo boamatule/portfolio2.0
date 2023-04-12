@@ -2,23 +2,19 @@ import React from 'react';
 import About from '../../Pages/AboutPage/AboutPage';
 import ContactPage from '../../Pages/ContactPage/ContactPage';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
-
+import SuccessPage from '../SuccessPage/SuccessPage';
 import {
-  HomeContainer,
-  ProjectsListContainer
+  HomeContainer
 } from './HomePage.Styles';
 
 const HomePage = () => {
   return (
-    <>
-      <HomeContainer>
-        <About />
-        <ProjectsListContainer>
-          <ProjectsList />
-        </ProjectsListContainer>
-        <ContactPage />
-      </HomeContainer>
-    </>
+    <HomeContainer>
+      <About />
+      <ProjectsList />
+      <ContactPage />
+      <SuccessPage />
+    </HomeContainer>
   );
 }
 

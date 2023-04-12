@@ -53,6 +53,7 @@ const ProjectsList = () => {
                       primary
                       style={{
                         color: 'white',
+                        size: '12px'
                       }}
                     >
                       <Text>See Live</Text>

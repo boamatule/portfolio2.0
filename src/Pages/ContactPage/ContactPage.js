@@ -45,7 +45,7 @@ const ContactPage = () => {
         navigate('/message_sent_successfully');
         setTimeout(() => {
           navigate('/');
-        }, 3000);
+        }, 30000);
       })
       .catch((error) => alert(error));
     event.target.reset();

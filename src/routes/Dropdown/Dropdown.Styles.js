@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const DropdownContainer = styled.div`
   position: fixed;
-  z-index: 999;
+  /* z-index: 999; */
   width: 100%;
   height: 100%;
   background: purple;
@@ -31,9 +31,7 @@ export const DropdownIcon = styled.div`
 `;
 
 export const DropdownCloseIcon = styled(FaTimes)`
-	/* color:  #4568dc; */
-	color:  red;
-
+	color:  #4568dc;
 `;
 
 export const DropdownWrapper = styled.div`
@@ -49,7 +47,7 @@ export const DropdownMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-	text-decoration: none;
+	/* text-decoration: none; */
 
   @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);

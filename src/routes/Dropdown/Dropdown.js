@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   DropdownCloseIcon,
   DropdownContainer,
@@ -8,19 +8,23 @@ import {
   DropdownMenu,
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ isOpen, toggle }) => {
+const Dropdown = ({ toggle, active }) => {
+
+  const closeDropdown = () => {
+    active(false)
+  };
 
   return (
-    <DropdownContainer isOpen={isOpen} onClick={toggle}>
+    <DropdownContainer isOpen={active}>
       <DropdownIcon
-      onClick={toggle}
+        onClick={closeDropdown}
       >
         <DropdownCloseIcon />
       </DropdownIcon>
       <DropdownMenu>
         <DropdownItem>
           <DropdownLink to="/"
-            onClick={toggle} 
+            onClick={toggle}
           >
             Home
           </DropdownLink>

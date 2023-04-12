@@ -1,14 +1,15 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { FaBars, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
 import {
-  MobileIcon,
+  MobileIconBars,
+  MobileIconIconWrapper,
   Nav,
   NavItem,
   NavItemSocialIconLink,
@@ -16,14 +17,20 @@ import {
   NavItemSocialIconWrapper,
   NavLinks,
   NavMenu,
-  NavbarContainer
+  NavbarContainer,
+  DropdownCloseIcon,
+  
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
 
-const NavBar = ({ toggle }) => {
+const NavBar = ({ toggle, active, isOpen, setIsOpen, closeDropdown }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const dropdownRef = useRef(null);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
+
 
   const changeNav = () => {
     if (window.scrollY <= 80) {
@@ -32,23 +39,10 @@ const NavBar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
-
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      toggle();
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside);
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, [dropdownRef, toggle]);
 
   const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -57,18 +51,20 @@ const NavBar = ({ toggle }) => {
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
-            <MobileIcon
+          <NavbarContainer isOpen={active}>
+
+            <MobileIconIconWrapper
               onClick={toggle}
-            >
-              <FaBars
+ 
+              >
+              <MobileIconBars
                 style={{
-                  color: '#4568dc'
+                  // color: '#4568dc '
                 }}
               />
-            </MobileIcon>
-            <NavMenu 
-              // ref={dropdownRef}
+
+            </MobileIconIconWrapper>
+            <NavMenu
             >
               <NavItem>
                 <NavLinks
@@ -149,6 +145,15 @@ const NavBar = ({ toggle }) => {
               <DarkMode />
             </NavItemSocialIconWrapper>
           </NavbarContainer>
+          {/* <MobileIconIconWrapper
+            onClick={toggle}
+          >
+            <MobileIconBars
+              style={{
+                color: '#4568dc '
+              }}
+            />
+          </MobileIconIconWrapper> */}
         </Nav>
         <Outlet />
       </IconContext.Provider>
