@@ -1,40 +1,26 @@
 import React from "react";
 import {
-  DropdownCloseIcon,
   DropdownContainer,
-  DropdownIcon,
   DropdownItem,
   DropdownLink,
   DropdownMenu,
 } from "./Dropdown.Styles";
 
 const Dropdown = ({ toggle, active }) => {
-
-  const closeDropdown = () => {
-    active(false)
-  };
-
   return (
     <DropdownContainer isOpen={active}>
-      <DropdownIcon
-        onClick={closeDropdown}
-      >
-        <DropdownCloseIcon />
-      </DropdownIcon>
-      <DropdownMenu>
+      <DropdownMenu onClick={toggle}>
         <DropdownItem>
-          <DropdownLink to="/"
-            onClick={toggle}
-          >
+          <DropdownLink to="/">
             Home
           </DropdownLink>
-          <DropdownLink to="projects" onClick={toggle}>
+          <DropdownLink to="projects">
             Portfolio
           </DropdownLink>
-          <DropdownLink to="about_me" onClick={toggle}>
+          <DropdownLink to="about_me">
             About
           </DropdownLink>
-          <DropdownLink to="contact_me" onClick={toggle}>
+          <DropdownLink to="contact_me">
             Contact
           </DropdownLink>
         </DropdownItem>
@@ -44,3 +30,5 @@ const Dropdown = ({ toggle, active }) => {
 };
 
 export default Dropdown;
+
+

@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaBars,  FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
 import {
-  MobileIconBars,
   MobileIconIconWrapper,
   Nav,
   NavItem,
@@ -17,20 +16,13 @@ import {
   NavItemSocialIconWrapper,
   NavLinks,
   NavMenu,
-  NavbarContainer,
-  DropdownCloseIcon,
-  
+  NavbarContainer
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
 
-const NavBar = ({ toggle, active, isOpen, setIsOpen, closeDropdown }) => {
+const NavBar = ({ toggle, isOpen }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
-
 
   const changeNav = () => {
     if (window.scrollY <= 80) {
@@ -44,28 +36,38 @@ const NavBar = ({ toggle, active, isOpen, setIsOpen, closeDropdown }) => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-  const [theme, themeToggle] = useDarkMode();
+  const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer isOpen={active}>
-
+          <NavbarContainer>
             <MobileIconIconWrapper
               onClick={toggle}
- 
-              >
-              <MobileIconBars
-                style={{
-                  // color: '#4568dc '
-                }}
-              />
-
-            </MobileIconIconWrapper>
-            <NavMenu
             >
+              {isOpen ? (
+                <FaTimes
+                  style={{
+                    width: '26px',
+                    height: '26px',
+                    color: ' #4568dc;',
+                    background: 'none',
+                  }}
+                />
+              ) : (
+                <FaBars
+                  style={{
+                    width: '26px',
+                    height: '26px',
+                    color: ' #4568dc;',
+                    background: 'none',
+                  }}
+                />
+              )}
+            </MobileIconIconWrapper>
+            <NavMenu>
               <NavItem>
                 <NavLinks
                   to=""
@@ -145,15 +147,6 @@ const NavBar = ({ toggle, active, isOpen, setIsOpen, closeDropdown }) => {
               <DarkMode />
             </NavItemSocialIconWrapper>
           </NavbarContainer>
-          {/* <MobileIconIconWrapper
-            onClick={toggle}
-          >
-            <MobileIconBars
-              style={{
-                color: '#4568dc '
-              }}
-            />
-          </MobileIconIconWrapper> */}
         </Nav>
         <Outlet />
       </IconContext.Provider>
@@ -162,4 +155,7 @@ const NavBar = ({ toggle, active, isOpen, setIsOpen, closeDropdown }) => {
 };
 
 export default NavBar;
+
+
+
 

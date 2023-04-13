@@ -11,12 +11,15 @@ const Header = () => {
 
   return (
     <>
-      <NavBar toggle={toggle} />
+      <NavBar 
+      toggle={toggle} 
+      // style={{ display: window.innerWidth > 768 ? 'block' : 'none' }} 
+      />
       {
-        isOpen && <Dropdown 
-        toggle={toggle} 
-        active={setIsOpen} 
-        />
+        isOpen && <Dropdown
+          toggle={toggle}
+          active={setIsOpen}
+          />
       }
     </>
   );
