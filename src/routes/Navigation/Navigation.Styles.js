@@ -86,7 +86,7 @@ export const NavMenu = styled.ul`
   text-transform: uppercase;
   justify-self: flex-start;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

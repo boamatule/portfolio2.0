@@ -6,7 +6,7 @@ export const DropdownContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  /* background: transparent; */
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@ export const DropdownMenu = styled.ul`
 	text-decoration: none;
   list-style: none;
   text-align: center;
-  background: blue;
+  background: none;
   @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);
   }
@@ -77,6 +77,13 @@ export const DropdownLink = styled(Link)`
 		transition: 0.2s ease-in-out;
     border-bottom: 4px solid #4568dc;
 	}
+
+  @media screen and (max-width: 960px) {
+  font-size: 1rem;
+  padding: 14px;
+  margin-right: 60px; 
+  }
+
 `;
 
 

@@ -48,12 +48,8 @@ const NavBar = () => {
 
   useEffect(() => {
     screenResize();
-  }, []);
-
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav);
     window.addEventListener('resize', screenResize);
+    window.addEventListener('scroll', changeNav);
   }, []);
 
   const handleLinkClick = () => {
