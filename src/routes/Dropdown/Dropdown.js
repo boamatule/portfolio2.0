@@ -6,23 +6,35 @@ import {
   DropdownMenu,
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ toggle, isOpen }) => {
+const Dropdown = ({ toggle }) => {
+
+
   return (
-    <DropdownContainer
-      onClick={toggle} isOpen={isOpen}
-    >
-      <DropdownMenu onClick={toggle} isOpen={isOpen}>
+    <DropdownContainer>
+      <DropdownMenu>
         <DropdownItem>
-          <DropdownLink to="/">
+          <DropdownLink
+            to="/"
+            onClick={toggle}
+          >
             My Homepage
           </DropdownLink>
-          <DropdownLink to="projects">
+          <DropdownLink
+            to="/projects"
+            onClick={toggle}
+          >
             My Portfolio
           </DropdownLink>
-          <DropdownLink to="about_me">
+          <DropdownLink
+            to="/about_me"
+            onClick={toggle}
+          >
             About Me
           </DropdownLink>
-          <DropdownLink to="contact_me">
+          <DropdownLink
+            to="/contact_me"
+            onClick={toggle}
+          >
             Get In Touch
           </DropdownLink>
         </DropdownItem>
@@ -32,5 +44,3 @@ const Dropdown = ({ toggle, isOpen }) => {
 };
 
 export default Dropdown;
-
-

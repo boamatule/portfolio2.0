@@ -6,7 +6,7 @@ export const DropdownContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: purple;
+  /* background: transparent; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ export const DropdownContainer = styled.div`
   text-decoration: none;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   transition: opacity 0.3s ease-in-out;
-  cursor: pointer; /* Add cursor: pointer to make it clickable */
+  cursor: pointer;
 
   /* Handle click event and call toggle function from props */
   &:hover {
@@ -46,6 +46,7 @@ export const DropdownMenu = styled.ul`
 	text-decoration: none;
   list-style: none;
   text-align: center;
+  background: blue;
   @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);
   }
@@ -70,7 +71,7 @@ export const DropdownLink = styled(Link)`
   text-align: left;
   font-family: Rubik;
   font-style: bold;
-  
+
 	&:hover {
 		color:  #4568dc;
 		transition: 0.2s ease-in-out;

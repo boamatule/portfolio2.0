@@ -38,13 +38,35 @@ const NavBar = () => {
       setScrollNav(false);
     }
   };
+  const screenResize = () => {
+    if (window.innerWidth <= 960) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    screenResize();
+  }, []);
+
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
+    window.addEventListener('resize', screenResize);
   }, []);
+
+  const handleLinkClick = () => {
+    setIsOpen(false); // Reset the isOpen state when a link is clicked
+    screenResize();
+
+  };
+
+
 
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -59,7 +81,7 @@ const NavBar = () => {
                   style={{
                     width: '26px',
                     height: '26px',
-                    color: ' #4568dc;',
+                    color: ' #4568dc',
                     background: 'none',
                   }}
                 />
@@ -68,43 +90,54 @@ const NavBar = () => {
                   style={{
                     width: '26px',
                     height: '26px',
-                    color: ' #4568dc;',
+                    color: ' #4568dc',
                     background: 'none',
                   }}
                 />
               )}
             </MobileIconIconWrapper>
-            <NavMenu>
-              <NavItem>
-                <NavLinks
-                  to=""
-                >
-                  home
-                </NavLinks>
-              </NavItem>
-              <NavItem>
+            {isOpen && (
+              <Dropdown
+                isOpen={isOpen}
+                toggle={toggle}
+                handleLinkClick={handleLinkClick}
+                onScreenResize={screenResize}
+              />
+            )}
+            {!isOpen && (
+              <NavMenu>
+                <NavItem>
+                  <NavLinks
+                    to=""
+                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
+                  >
+                    home
+                  </NavLinks>
+                </NavItem>
                 <NavLinks
                   to="projects"
+                  onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
                 >
                   portfolio
                 </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="about_me"
-                >
-                  about
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="contact_me"
-                >
-                  contact
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
-            {isOpen && <Dropdown isOpen={isOpen} /> }
+                <NavItem>
+                  <NavLinks
+                    to="about_me"
+                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
+                  >
+                    about
+                  </NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks
+                    to="contact_me"
+                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
+                  >
+                    contact
+                  </NavLinks>
+                </NavItem>
+              </NavMenu>
+            )}
             <NavItemSocialIconWrapper
               initial={{
                 x: -500,
@@ -154,7 +187,9 @@ const NavBar = () => {
               <DarkMode />
             </NavItemSocialIconWrapper>
           </NavbarContainer>
+
         </Nav>
+
         <Outlet />
       </IconContext.Provider>
     </ThemeProvider >

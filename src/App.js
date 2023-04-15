@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './routes/Navigation/Navigation';
 
-const Header = lazy(() => import('./Pages/Header/Header'));
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
 const ContactPage = lazy(() => import('./Pages/ContactPage/ContactPage'));
