@@ -12,7 +12,8 @@ const Header = () => {
   return (
     <>
       <NavBar 
-      toggle={toggle} 
+      toggle={toggle}
+      // active={isOpen}
       // style={{ display: window.innerWidth > 768 ? 'block' : 'none' }} 
       />
       {

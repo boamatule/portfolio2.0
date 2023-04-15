@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { FaBars,  FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
 import {
+  FaBarsIcon,
   MobileIconIconWrapper,
   Nav,
   NavItem,
@@ -20,9 +21,15 @@ import {
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
+import Dropdown from '../Dropdown/Dropdown';
 
-const NavBar = ({ toggle, isOpen }) => {
+const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   const changeNav = () => {
     if (window.scrollY <= 80) {
@@ -43,7 +50,7 @@ const NavBar = ({ toggle, isOpen }) => {
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
+          <NavbarContainer >
             <MobileIconIconWrapper
               onClick={toggle}
             >
@@ -57,7 +64,7 @@ const NavBar = ({ toggle, isOpen }) => {
                   }}
                 />
               ) : (
-                <FaBars
+                <FaBarsIcon
                   style={{
                     width: '26px',
                     height: '26px',
@@ -97,7 +104,7 @@ const NavBar = ({ toggle, isOpen }) => {
                 </NavLinks>
               </NavItem>
             </NavMenu>
-
+            {isOpen && <Dropdown isOpen={isOpen} /> }
             <NavItemSocialIconWrapper
               initial={{
                 x: -500,

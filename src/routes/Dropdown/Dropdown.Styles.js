@@ -1,37 +1,35 @@
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import styled from "styled-components";
 
 
 export const DropdownContainer = styled.div`
   position: fixed;
-  /* z-index: 999; */
   width: 100%;
   height: 100%;
   background: purple;
   display: flex;
-  justify-content: center; /* centers the child items horizontally */
-  align-items: center; /* centers the child items vertically */
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
-	text-decoration: none;
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  text-decoration: none;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   transition: opacity 0.3s ease-in-out;
-`;
+  cursor: pointer; /* Add cursor: pointer to make it clickable */
 
+  /* Handle click event and call toggle function from props */
+  &:hover {
+    opacity: 0.8; /* Add hover effect */
+  }
 
-export const DropdownIcon = styled.div`
-	position: absolute;
-	top: 1.2rem;
-	right: 1.5rem;
-	font-size: 2rem;
-	outline: none;
-	background: transparent;
-	cursor: pointer;
-`;
-
-export const DropdownCloseIcon = styled(FaTimes)`
-	color:  #4568dc;
+  /* Add hover effect when the dropdown is open */
+  ${({ isOpen }) =>
+    isOpen &&
+    `opacity: 100%;
+    &:hover {
+      opacity: 100%;
+    }
+  `}
 `;
 
 export const DropdownWrapper = styled.div`
@@ -39,16 +37,15 @@ export const DropdownWrapper = styled.div`
 `;
 
 export const DropdownMenu = styled.ul`
-  margin-top: 180px;
+  /* margin-top: 180px; */
   display: flex;
-  flex-direction: column; /* added */
-  justify-content: center; /* added */
-  align-items: center; /* added */
+  flex-direction: row; /* added */
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-	/* text-decoration: none; */
-
+	text-decoration: none;
+  list-style: none;
+  text-align: center;
   @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);
   }
@@ -56,47 +53,30 @@ export const DropdownMenu = styled.ul`
 
 export const DropdownItem = styled.li`
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
+  display: block;
 `;
 
 export const DropdownLink = styled(Link)`
-	display: flex; /* left */
-	font-size: 1.5rem;
-	text-decoration: none;
+	display: flex;
+	font-size: 1.2rem;
 	list-style: none;
 	transition: 0.2s ease-in-out;
-	text-decoration: none;
 	color: grey;
 	cursor: pointer;
-	padding: 0.5rem 1rem;
 	margin-top: 0%;
-	
+  margin-right: 300px; 
+  padding: 14px;
+  text-align: left;
+  font-family: Rubik;
+  font-style: bold;
+  
 	&:hover {
 		color:  #4568dc;
 		transition: 0.2s ease-in-out;
+    border-bottom: 4px solid #4568dc;
 	}
 `;
-
-
-// export const SideBarRoute = styled(Route)`
-// color: purple;
-// border-radius: 50px;
-// background: #01bf71;
-// white-space: none;
-// padding: 16px 64px;
-// font-size: 16px;
-// outline: none;
-// border: none;
-
-// cursor: pointer;
-// 	transition: all 0.2s ease-in-out;
-// 	text-decoration: none:
-
-// 	&:hover {
-// 		color: #000;
-// 		transition: 0.2s ease-in-out;
-// 	}
-// `;
 
 
 

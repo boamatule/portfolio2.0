@@ -6,22 +6,24 @@ import {
   DropdownMenu,
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ toggle, active }) => {
+const Dropdown = ({ toggle, isOpen }) => {
   return (
-    <DropdownContainer isOpen={active}>
-      <DropdownMenu onClick={toggle}>
+    <DropdownContainer
+      onClick={toggle} isOpen={isOpen}
+    >
+      <DropdownMenu onClick={toggle} isOpen={isOpen}>
         <DropdownItem>
           <DropdownLink to="/">
-            Home
+            My Homepage
           </DropdownLink>
           <DropdownLink to="projects">
-            Portfolio
+            My Portfolio
           </DropdownLink>
           <DropdownLink to="about_me">
-            About
+            About Me
           </DropdownLink>
           <DropdownLink to="contact_me">
-            Contact
+            Get In Touch
           </DropdownLink>
         </DropdownItem>
       </DropdownMenu>

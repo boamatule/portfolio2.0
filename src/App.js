@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import NavBar from './routes/Navigation/Navigation';
 
 const Header = lazy(() => import('./Pages/Header/Header'));
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <Suspense fallback={renderLoader()}>
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route path="/" element={<NavBar />}>
           <Route index element={<HomePage />} />
           <Route path="profile" element={<Profile />} />
           <Route path="about_me" element={<AboutPage />} />

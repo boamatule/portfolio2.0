@@ -32,7 +32,7 @@ export const MobileIconIconWrapper = styled.div`
   color:  #4568dc;
 `;
 
-export const MobileIconBars= styled(FaBars)`
+export const FaBarsIcon = styled(FaBars)`
     display: none;
   @media screen and (max-width: 960px) {
     display: block;
