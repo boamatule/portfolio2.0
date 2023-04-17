@@ -27,10 +27,6 @@ const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   const changeNav = () => {
     if (window.scrollY <= 80) {
       setScrollNav(true);
@@ -38,26 +34,21 @@ const NavBar = () => {
       setScrollNav(false);
     }
   };
-  const screenResize = () => {
-    if (window.innerWidth <= 960) {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
-    }
-  };
+
+const toggle = () => {
+  if (window.innerWidth <= 960) {
+    setIsOpen(!isOpen); // Update isOpen to its opposite value
+  } else {
+    setIsOpen(false);
+  }
+};
+const handleItemClick = () => {
+  setIsOpen(false); // Update isOpen to false when any dropdown item is clicked
+};
 
   useEffect(() => {
-    screenResize();
-    window.addEventListener('resize', screenResize);
     window.addEventListener('scroll', changeNav);
   }, []);
-
-  const handleLinkClick = () => {
-    setIsOpen(false); // Reset the isOpen state when a link is clicked
-    screenResize();
-
-  };
-
 
 
   const [theme] = useDarkMode();
@@ -95,31 +86,28 @@ const NavBar = () => {
             {isOpen && (
               <Dropdown
                 isOpen={isOpen}
-                toggle={toggle}
-                handleLinkClick={handleLinkClick}
-                onScreenResize={screenResize}
+                onClick={toggle}
+                onItemClick={handleItemClick} // Pass the handleItemClick callback to Dropdown component
+
               />
             )}
-            {!isOpen && (
+            {!isOpen &&  (
               <NavMenu>
                 <NavItem>
                   <NavLinks
                     to=""
-                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
                   >
                     home
                   </NavLinks>
                 </NavItem>
                 <NavLinks
                   to="projects"
-                  onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
                 >
                   portfolio
                 </NavLinks>
                 <NavItem>
                   <NavLinks
                     to="about_me"
-                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
                   >
                     about
                   </NavLinks>
@@ -127,7 +115,6 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="contact_me"
-                    onClick={handleLinkClick} // Add onClick event handler to reset isOpen state
                   >
                     contact
                   </NavLinks>

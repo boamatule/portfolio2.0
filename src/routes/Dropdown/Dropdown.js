@@ -6,34 +6,28 @@ import {
   DropdownMenu,
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ toggle }) => {
-
-
+const Dropdown = ({ onItemClick }) => {
   return (
-    <DropdownContainer>
+    <DropdownContainer onClick={onItemClick}>
       <DropdownMenu>
         <DropdownItem>
           <DropdownLink
             to="/"
-            onClick={toggle}
           >
             My Homepage
           </DropdownLink>
           <DropdownLink
             to="/projects"
-            onClick={toggle}
           >
             My Portfolio
           </DropdownLink>
           <DropdownLink
             to="/about_me"
-            onClick={toggle}
           >
             About Me
           </DropdownLink>
           <DropdownLink
             to="/contact_me"
-            onClick={toggle}
           >
             Get In Touch
           </DropdownLink>

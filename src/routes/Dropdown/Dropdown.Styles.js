@@ -6,14 +6,14 @@ export const DropdownContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: white;
+  background: purple;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
   text-decoration: none;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")}; */
   transition: opacity 0.3s ease-in-out;
   cursor: pointer;
 
@@ -47,14 +47,14 @@ export const DropdownMenu = styled.ul`
   list-style: none;
   text-align: center;
   background: none;
-  @media screen and (max-width: 960px) {
+  /* @media screen and (max-width: 960px) {
     grid-template-rows: repeat(6, 60px);
-  }
+  } */
 `;
 
 export const DropdownItem = styled.li`
-	width: 100%;
-	height: 50vh;
+	/* width: 100%;
+	height: 50vh; */
   display: block;
 `;
 

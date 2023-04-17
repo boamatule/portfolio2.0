@@ -21,7 +21,6 @@ export const Title = styled.p`
   font-weight: normal;
   letter-spacing: 4px;
   line-height: 4px;
-  /* color: #474747; */
   color: grey
   margin-bottom: 24px;
   text-align: center;
