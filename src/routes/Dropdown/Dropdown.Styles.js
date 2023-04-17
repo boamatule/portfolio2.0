@@ -14,7 +14,7 @@ export const DropdownContainer = styled.div`
   left: 0;
   text-decoration: none;
   /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")}; */
-  transition: opacity 0.3s ease-in-out;
+  /* transition: opacity 0.3s ease-in-out; */
   cursor: pointer;
 
   /* Handle click event and call toggle function from props */
@@ -32,24 +32,15 @@ export const DropdownContainer = styled.div`
   `}
 `;
 
-export const DropdownWrapper = styled.div`
-	color: #fff;
-`;
-
 export const DropdownMenu = styled.ul`
-  /* margin-top: 180px; */
   display: flex;
-  flex-direction: row; /* added */
+  flex-direction: row;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-	text-decoration: none;
   list-style: none;
   text-align: center;
   background: none;
-  /* @media screen and (max-width: 960px) {
-    grid-template-rows: repeat(6, 60px);
-  } */
 `;
 
 export const DropdownItem = styled.li`
@@ -66,7 +57,7 @@ export const DropdownLink = styled(Link)`
 	color: grey;
 	cursor: pointer;
 	margin-top: 0%;
-  margin-right: 300px; 
+  margin-right: 60px; 
   padding: 14px;
   text-align: left;
   font-family: Rubik;
@@ -74,16 +65,9 @@ export const DropdownLink = styled(Link)`
 
 	&:hover {
 		color:  #4568dc;
-		transition: 0.2s ease-in-out;
+		/* transition: 0.2s ease-in-out; */
     border-bottom: 4px solid #4568dc;
 	}
-
-  @media screen and (max-width: 960px) {
-  font-size: 1rem;
-  padding: 14px;
-  margin-right: 60px; 
-  }
-
 `;
 
 

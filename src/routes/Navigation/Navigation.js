@@ -9,7 +9,7 @@ import useDarkMode from '../../components/DarkMode/useDarkMode';
 
 import {
   FaBarsIcon,
-  MobileIconIconWrapper,
+  MobileIconContainer,
   Nav,
   NavItem,
   NavItemSocialIconLink,
@@ -35,33 +35,38 @@ const NavBar = () => {
     }
   };
 
-const toggle = () => {
-  if (window.innerWidth <= 960) {
-    setIsOpen(!isOpen); // Update isOpen to its opposite value
-  } else {
-    setIsOpen(false);
-  }
-};
-const handleItemClick = () => {
-  setIsOpen(false); // Update isOpen to false when any dropdown item is clicked
-};
+  const toggle = () => {
+    if (window.innerWidth <= 960) {
+      setIsOpen(!isOpen); // Update isOpen to its opposite value
+    } else {
+      setIsOpen(false);
+    }
+  };
+  const handleItemClick = () => {
+    setIsOpen(false); // Update isOpen to false when any dropdown item is clicked
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      toggle();
+    }
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
 
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <MobileIconIconWrapper
+            <MobileIconContainer
               onClick={toggle}
+              onKeyPress={handleKeyPress} tabIndex={0}
             >
               {isOpen ? (
                 <FaTimes
@@ -82,16 +87,15 @@ const handleItemClick = () => {
                   }}
                 />
               )}
-            </MobileIconIconWrapper>
+            </MobileIconContainer>
             {isOpen && (
               <Dropdown
                 isOpen={isOpen}
                 onClick={toggle}
                 onItemClick={handleItemClick} // Pass the handleItemClick callback to Dropdown component
-
               />
             )}
-            {!isOpen &&  (
+            {!isOpen && (
               <NavMenu>
                 <NavItem>
                   <NavLinks
@@ -170,9 +174,7 @@ const handleItemClick = () => {
               <DarkMode />
             </NavItemSocialIconWrapper>
           </NavbarContainer>
-
         </Nav>
-
         <Outlet />
       </IconContext.Provider>
     </ThemeProvider >

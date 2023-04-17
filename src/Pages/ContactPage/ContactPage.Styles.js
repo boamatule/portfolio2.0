@@ -7,13 +7,11 @@ export const ContactContainer = styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* padding: 0 0px; */
   margin-bottom: 0px;
-  height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
+  height: 60vh; 
   @media screen and (max-width: 960px) {
     flex-direction: column;
     height: 100vh;
-     /* add this property to set the height of the container to 100% of the viewport height */
   };
 
   @media screen and (max-width: 768px) {

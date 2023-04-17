@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link as LinkRoute } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { Container } from '../../global-styles';
 
 
@@ -21,15 +21,18 @@ export const Nav = styled.nav`
     transition: 0.8s all ease-out;
   }
 `;
-export const MobileIconIconWrapper = styled.div`
+
+export const MobileIconContainer = styled.div`
 	position: absolute;
-	top: 1.2rem;
+	top: 1.6rem;
 	right: 1.5rem;
 	font-size: 2rem;
 	outline: none;
 	background: transparent;
 	cursor: pointer;
   color:  #4568dc;
+  transform: translate(-100%, 60%);
+
 `;
 
 export const FaBarsIcon = styled(FaBars)`
@@ -42,11 +45,7 @@ export const FaBarsIcon = styled(FaBars)`
     /* transform: translate(-100%, 60%); */
   font-size: 1.8rem;
   background: transparent;
-  /* color: #4568dc */
   }
-`;
-export const DropdownCloseIcon = styled(FaTimes)`
-	color: red;
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -95,8 +94,6 @@ export const NavItem = styled.li`
   height: 80px;
   display: flex;
   align-items: center;
-  /* padding: 0 1rem; */
-  /* border-bottom: 4px solid transparent; */
   
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -112,7 +109,6 @@ export const NavLinks = styled(LinkRoute)`
   align-items: center;
   height: 100%;
   color: grey;
-  /* color: #474747; */
   letter-spacing: 8px;
   font-size: 700;
   line-height: 20px;
@@ -121,7 +117,6 @@ export const NavLinks = styled(LinkRoute)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-
 
   &.active {
     border-bottom: 3px solid #4568dc;
@@ -155,16 +150,6 @@ export const NavItemSocialIconWrapper = styled(motion.div)`
   }
 `;
 
-
-export const NavItemSocialWrapper = styled.div`
-  /* &:hover {
-  border: 2px solid red;
-  }
-
-  @media screen and (max-width: 960px) {  
-    margin-left: 40px;
-  } */
-`;
 export const NavItemSocialIconLinkMotion = styled(motion.div)`
   display: flex;
   flex-direction: row;
@@ -191,12 +176,6 @@ export const NavItemSocialIconLinkWrapper = styled.div`
     padding: 0rem;
     background-color: #fff;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    
-    /* & > * {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      font-size: 5rem;
-    } */
   }
 `;
 
@@ -219,8 +198,8 @@ export const NavItemSocialIconLink = styled.a`
   }
 
   /* increase touch target size */
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   padding-left: 0rem;
   margin-right: 0rem;
 
@@ -228,22 +207,6 @@ export const NavItemSocialIconLink = styled.a`
   top: auto;
   justify-content: center;
   `;
-
-export const MobileIcon = styled.div`
-    display: none;
-
-  @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    background: transparent,
-  }
-`;
-
 
 export const Image = styled(LazyLoadImage)`
   width: 50px;
