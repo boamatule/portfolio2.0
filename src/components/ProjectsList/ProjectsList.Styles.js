@@ -1,21 +1,80 @@
-import styled, { css } from 'styled-components/macro';
+// import styled, { css } from 'styled-components/macro';
+// import { motion } from 'framer-motion';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { Container } from '../../global-styles';
+
+// const padding = css`
+//   padding: 0 0rem;
+
+//   @media screen and (max-width: 960px) {
+//     padding: 0;
+//   }
+// `;
+// export const ProjectContainer = styled(Container)`
+//   ${padding}
+//   margin-bottom: 60px;
+// `;
+
+// export const Title = styled.p`
+//   font-size: 14px;
+//   font-weight: normal;
+//   letter-spacing: 4px;
+//   line-height: 4px;
+//   color: grey
+//   margin-bottom: 24px;
+//   text-align: center;
+
+//   @media screen and (max-width: 960px) {
+//     font-size: 14px;
+//     text-align: center;
+//   }
+// `;
+
+// export const Heading = styled.h1`
+//   font-weight: bold;
+//   line-height: 20px;
+//   letter-spacing: 4px;
+//   color: #4568dc;
+//   justify-content: flex-start;
+//   text-align: flex-start;
+//   font-size: 32px;
+//   font-family: 'Rubik', sans-serif;
+//   margin-bottom: 60px;
+
+//   @media screen and (max-width: 960px) {
+//     font-size: 28px;
+//     padding: 0px 20px;
+//   }
+// `;
+
+// export const CardWrapper = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   align-items: center;
+//   grid-gap: 14px;
+//   padding-top: 4rem;
+//   padding-bottom: 0.25rem;
+//   text-align: center;
+//   justify-content: center;
+
+//   @media screen and (max-width: 960px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
+
+// export const ButtonWrapper = styled.div`
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Container } from '../../global-styles';
 
-const padding = css`
-  padding: 0 0rem;
-
-  @media screen and (max-width: 960px) {
-    padding: 0;
-  }
+export const ProjectContainer = styled.div`
+  margin-top: 140px;
 `;
-
-export const ProjectContainer = styled(Container)`
-  ${padding}
-  margin-bottom: 60px;
-`;
-
 export const Title = styled.p`
   font-size: 14px;
   font-weight: normal;

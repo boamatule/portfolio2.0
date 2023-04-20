@@ -1,37 +1,29 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Container } from '../../global-styles';
 
-export const HomeContainer = styled(Container)`
+export const  HomeContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-
+  justify-content: space-between; 
+  margin-bottom: 80px;
+  
   @media screen and (max-width: 960px) {
-    margin-right: 10px;
-    margin-left: 10px;
-    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 4px;
+    padding-left: 4px;
+    /* height: 100vh; */
   }
 `;
-export const AboutWrapper = styled.div`
-  background-color: none;
-  color: #ffffff;
-  padding: 16px;
-  border-radius: 4px;
+
+export const  HomeWrapper = styled.div`
+  margin-top: 80px;
+  margin-bottom: 100px;
 `;
 
-export const ProjectsListWrapper = styled.div`
-  background-color: none;
-  color: #000000;
-  padding: 16px;
-  border-radius: 4px;
-`;
-
-export const ContactPageWrapper = styled.div`
-  background-color: none;
-  color: #ffffff;
-  padding: 16px;
-  border-radius: 4px;
-  top: 100vh;
+export const ProjectsListContainer = styled.div`
+  margin-top: auto; 
+  margin-bottom: 60px;
+  justify-content: space-between; 
 `;

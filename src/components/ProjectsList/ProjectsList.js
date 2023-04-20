@@ -26,7 +26,6 @@ const ProjectsList = () => {
         <SubTitle>
           A list of selected projects to showcase some of my tech stacks.
           Please, do have a look below and also check my {' '}
-
           <GithubLink
             href="https://github.com/boamatule"
             target="_blank"

@@ -1,20 +1,18 @@
 import React from 'react';
+import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import About from '../../Pages/AboutPage/AboutPage';
 import ContactPage from '../../Pages/ContactPage/ContactPage';
-import ProjectsList from '../../components/ProjectsList/ProjectsList';
 
-
-import {
-  HomeContainer
-} from './HomePage.Styles';
+import { HomeContainer,  ProjectsListContainer } from './HomePage.Styles';
 
 const HomePage = () => {
   return (
     <HomeContainer>
+      <About />
+      <ProjectsListContainer>
+        <ProjectsList />
+      </ProjectsListContainer>
       <ContactPage />
-      <About />
-      <ProjectsList />
-      <About />
     </HomeContainer>
   );
 }

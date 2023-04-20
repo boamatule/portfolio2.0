@@ -52,7 +52,7 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   padding: 0px 0px;
   font-family: Rubik;
