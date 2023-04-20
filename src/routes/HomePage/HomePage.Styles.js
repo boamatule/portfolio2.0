@@ -14,3 +14,24 @@ export const HomeContainer = styled(Container)`
     height: 100vh;
   }
 `;
+export const AboutWrapper = styled.div`
+  background-color: none;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+`;
+
+export const ProjectsListWrapper = styled.div`
+  background-color: none;
+  color: #000000;
+  padding: 16px;
+  border-radius: 4px;
+`;
+
+export const ContactPageWrapper = styled.div`
+  background-color: none;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  top: 100vh;
+`;

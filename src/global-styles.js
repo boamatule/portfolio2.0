@@ -1,5 +1,5 @@
+import { normalize } from 'normalize.css';
 import styled, { createGlobalStyle } from 'styled-components/macro';
-import normalize from 'normalize.css';
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize}
@@ -24,10 +24,10 @@ export const GlobalStyles = createGlobalStyle`
   
   html {
     box-sizing: border-box;
-    font-family: 'Rubik', 'IBM Plex Mono', monospace;
+    font-family: 'Rubik';
     background-color: var(--background-color);
     color: var(--font-color);
-    height: 100%;
+    height: 100vh;
   }
   
   a {

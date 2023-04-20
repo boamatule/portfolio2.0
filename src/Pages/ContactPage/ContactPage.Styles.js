@@ -8,14 +8,10 @@ export const ContactContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
-  height: 60vh; 
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    height: 100vh;
-  };
-
-  @media screen and (max-width: 768px) {
-    /* flex-direction: column; */
+    /* height: 90vh; */
+    align-self: flex-end; /* Add align-self property */
   }
 `;
 
@@ -37,7 +33,7 @@ export const FormContainerColumn = styled(ContactFormColumn)`
   /* padding: 0 20px; */
 
   @media (max-width: 960px) {
-    width: 100%;
+    /* width: 100%; */
     /* max-width: unset; */
   }
 `;
@@ -54,8 +50,8 @@ export const FormContainer = styled.div`
   @media screen and (max-width: 960px) {
   margin-right: auto;
   margin-left: auto;
-  max-width: unset;
-  width: 100%;
+  /* max-width: unset;
+  width: 100%; */
 }
 `;
 
@@ -144,7 +140,6 @@ export const TextArea = styled.textarea`
   line-height: 24px;
   padding: 20px 1px;
   margin-bottom: 14px;
-  /* border-bottom: 1px solid #474747; */
   color: #474747;
   border: 2px solid #4568dc;
   border-radius: 2px;
@@ -187,16 +182,10 @@ export const ContactButtonWrapper = styled.div`
   justify-content: center;
   display: flex;
   margin-top: 20px;
-  @media screen and (max-width: 960px) {
-    /* justify-content: center;
-    display: flex; */
-    
-  }
 `;
 
 export const ArrowRight = styled(MdOutlineArrowRightAlt)`
   display: flex;
-  /* font-size: 200px; */
   font-weight: bold;
   color: white;
   width: auto;

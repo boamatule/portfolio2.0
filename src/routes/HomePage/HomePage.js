@@ -11,9 +11,10 @@ import {
 const HomePage = () => {
   return (
     <HomeContainer>
+      <ContactPage />
       <About />
       <ProjectsList />
-      <ContactPage />
+      <About />
     </HomeContainer>
   );
 }

@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Container } from '../../global-styles';
 
 const padding = css`
-  padding: 0 2rem;
+  padding: 0 0rem;
 
   @media screen and (max-width: 960px) {
     padding: 0;
