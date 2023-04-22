@@ -6,15 +6,13 @@ export const DropdownContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: purple;
+  background: orange;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
   text-decoration: none;
-  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")}; */
-  /* transition: opacity 0.3s ease-in-out; */
   cursor: pointer;
 
   /* Handle click event and call toggle function from props */

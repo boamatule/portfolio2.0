@@ -6,14 +6,14 @@ export const  HomeContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
   justify-content: space-between; 
-  margin-bottom: 80px;
-  
+  /* margin: 80px; */
+  margin-bottom: 240px; /* Add margin-bottom to create spacing */
+
   @media screen and (max-width: 960px) {
     margin-right: auto;
     margin-left: auto;
     padding-right: 4px;
     padding-left: 4px;
-    /* height: 100vh; */
   }
 `;
 

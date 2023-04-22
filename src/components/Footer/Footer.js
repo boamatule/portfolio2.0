@@ -2,10 +2,10 @@ import React from 'react';
 import { animateScroll as scroll } from "react-scroll";
 
 import {
-  FooterWrapper,
   Copyright,
-  ScrollToTopContainer,
+  FooterWrapper,
   ScrollToTopButton,
+  ScrollToTopContainer,
   ScrollToTopIcon,
 } from './Footer.Styles';
 

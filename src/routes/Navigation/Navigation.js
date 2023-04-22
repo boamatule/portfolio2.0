@@ -36,18 +36,27 @@ const NavBar = () => {
   };
 
   const toggle = () => {
+    console.log("Toggle love");
     if (window.innerWidth <= 960) {
       setIsOpen(!isOpen); // Update isOpen to its opposite value
     } else {
       setIsOpen(false);
     }
   };
+
   const handleItemClick = () => {
     setIsOpen(false); // Update isOpen to false when any dropdown item is clicked
   };
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
+      console.log("What's up?");
+      toggle();
+    }
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      console.log("handleKeyDown called");
       toggle();
     }
   };
@@ -64,67 +73,58 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <MobileIconContainer
-              onClick={toggle}
-              onKeyPress={handleKeyPress} tabIndex={0}
-            >
-              {isOpen ? (
-                <FaTimes
-                  style={{
-                    width: '26px',
-                    height: '26px',
-                    color: ' #4568dc',
-                    background: 'none',
-                  }}
-                />
-              ) : (
-                <FaBarsIcon
-                  style={{
-                    width: '26px',
-                    height: '26px',
-                    color: ' #4568dc',
-                    background: 'none',
-                  }}
-                />
-              )}
-            </MobileIconContainer>
-            {isOpen && (
-              <Dropdown
-                isOpen={isOpen}
+            <NavbarContainer>
+              <MobileIconContainer
                 onClick={toggle}
-                onItemClick={handleItemClick} // Pass the handleItemClick callback to Dropdown component
-              />
-            )}
-            {!isOpen && (
-              <NavMenu>
-                <NavItem>
-                  <NavLinks
-                    to=""
-                  >
-                    home
-                  </NavLinks>
-                </NavItem>
-                <NavLinks
-                  to="projects"
-                >
-                  portfolio
-                </NavLinks>
-                <NavItem>
-                  <NavLinks
-                    to="about_me"
-                  >
-                    about
-                  </NavLinks>
-                </NavItem>
-                <NavItem>
-                  <NavLinks
-                    to="contact_me"
-                  >
-                    contact
-                  </NavLinks>
-                </NavItem>
-              </NavMenu>
-            )}
+                onKeyPress={handleKeyPress}
+                handleKeyDown={handleKeyDown}
+                tabIndex={0}
+              >
+                {isOpen ? (
+                  <FaTimes
+                    style={{
+                      width: '26px',
+                      height: '26px',
+                      color: ' #4568dc',
+                      background: 'none',
+                    }}
+                  />
+                ) : (
+                  <FaBarsIcon
+                    style={{
+                      width: '26px',
+                      height: '26px',
+                      color: ' #4568dc',
+                      background: 'none',
+                    }}
+                  />
+                )}
+              </MobileIconContainer>
+              {isOpen && (
+                <Dropdown isOpen={isOpen} onClick={toggle} onItemClick={handleItemClick} />
+              )}
+              {!isOpen && (
+                <NavMenu>
+                  <NavItem>
+                    <NavLinks to="">home</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks to="projects">portfolio</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks to="about_me">about</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks to="contact_me">contact</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinks to="my_skills_set">Skills</NavLinks>
+                  </NavItem>
+                </NavMenu>
+              )}
+            </NavbarContainer>
+
+
             <NavItemSocialIconWrapper
               initial={{
                 x: -500,

@@ -7,7 +7,8 @@ export const ContactContainer = styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
+  margin-bottom: 100px;
+  background: transparent;
   @media screen and (max-width: 960px) {
     flex-direction: column;
     /* height: 90vh; */

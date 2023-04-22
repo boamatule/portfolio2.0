@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './routes/Navigation/Navigation';
+// import NavBar from './routes/Navigation/Navigation';
+const NavBar = lazy(() => import('./routes/Navigation/Navigation'));
 
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
@@ -11,6 +12,7 @@ const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
 const Profile = lazy(() => import('./components/Profile/Profile'));
 const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.component'));
+const SkillsSet = lazy(() => import('./components/SkillsSet/SkillsSet'));
 
 const renderLoader = () => <WithSpinner />;
 
@@ -24,6 +26,7 @@ const App = () => {
           <Route path="about_me" element={<AboutPage />} />
           <Route path="contact_me" element={<ContactPage />} />
           <Route path="projects" element={<PortfolioListPage />} />
+          <Route path="my_skills_set" element={<SkillsSet />} />
           <Route path="message_sent_successfully" element={<SuccessPage />} />
           <Route element={<NotFound />} />
         </Route>

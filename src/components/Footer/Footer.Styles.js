@@ -1,12 +1,14 @@
-import styled from 'styled-components/macro';
 import { FaAngleUp } from 'react-icons/fa';
+import styled from 'styled-components/macro';
 
 export const FooterWrapper = styled.div`
-  align-items: center;
-  position: relative;
-  bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  bottom: 40px;
+  left: 0px;
+  right: 0;
   width: 100%;
-  height: 80px;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -25,10 +27,12 @@ export const Copyright = styled.p`
   align-items: center;
   text-align: center;
   color: #4568dc;
-  margin: 0px 0px;
+  margin: 0px 140px;
 
   @media screen and (max-width: 960px) {
     font-size: 12px;
+    line-height: 2px;
+    letter-spacing: 1px;
   }
 `;
 

@@ -1,23 +1,24 @@
 import React, { useContext } from 'react';
-import { ProjectsProvider, ProjectsContext } from '../../contexts/projects.context';
+import { ProjectsContext, ProjectsProvider } from '../../contexts/projects.context';
 
 import { Button, Glass } from '../../global-styles';
 import {
-  Image,
-  CardContainer,
-  ButtonWrapper,
-  Heading,
-  ProjectDescription,
-  Title,
   BoxStyled,
-  Text,
-  SubTitle,
-  ProjectContainer,
+  ButtonWrapper,
+  CardContainer,
   GithubLink,
+  Heading,
+  Image,
+  ProjectContainer,
+  ProjectDescription,
+  SubTitle,
+  Text,
+  Title,
 } from './ProjectsList.Styles';
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
+  console.log(projects);
 
   return (
     <ProjectsProvider>

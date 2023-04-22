@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link as LinkRoute } from 'react-router-dom';
-import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import { Container } from '../../global-styles';
-
 
 export const Nav = styled.nav`
   display: flex;
@@ -42,9 +41,9 @@ export const FaBarsIcon = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    /* transform: translate(-100%, 60%); */
-  font-size: 1.8rem;
-  background: transparent;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    background: transparent;
   }
 `;
 
@@ -61,7 +60,7 @@ export const NavbarContainer = styled(Container)`
   }
 `;
 
-export const LogoContainer = styled(LinkRoute)`
+export const LogoContainer = styled(Link)`
   display: flex;
   justify-self: flex-start;
   align-items: center;
@@ -103,7 +102,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(LinkRoute)`
+export const NavLinks = styled(Link)`
   display: flex;
   text-align: center;
   align-items: center;
@@ -227,7 +226,7 @@ export const DropdownMenu = styled.div`
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
-export const DropdownMenuItem = styled(LinkRoute)`
+export const DropdownMenuItem = styled(Link)`
   display: flex;
   align-items: center;
   height: 50px;

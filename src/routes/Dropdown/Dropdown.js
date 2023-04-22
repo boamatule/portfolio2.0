@@ -6,9 +6,11 @@ import {
   DropdownMenu,
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ onItemClick }) => {
+const Dropdown = ({ onItemClick, toggle }) => {
   return (
-    <DropdownContainer onClick={onItemClick}>
+    <DropdownContainer
+      onClick={onItemClick}
+    >
       <DropdownMenu>
         <DropdownItem>
           <DropdownLink

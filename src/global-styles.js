@@ -3,16 +3,16 @@ import styled, { createGlobalStyle } from 'styled-components/macro';
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize}
-:root {
-  --light: grey;
-  --dark: grey;
-  --font-color: #000;
-  --background-color: #000;
-}
+  :root {
+    --light: grey;
+    --dark: grey;
+    --font-color: #000;
+    --background-color: #000;
+  }
 
-[data-theme="dark"] {
-  --background-color: #fff;
-}
+  [data-theme="dark"] {
+    --background-color: #fff;
+  }
 
   *,
   *::before,
@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-  
+
   html {
     box-sizing: border-box;
     font-family: 'Rubik';
@@ -29,19 +29,20 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--font-color);
     height: 100vh;
   }
-  
+
   a {
     text-decoration: none;
     color: black;
-  } 
+  }
 `;
 
 export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  height: 100vh; /* add this property to set the height of the container to 100% of the viewport height */
-  width: 100%; /* add this property to set the width of the container to 100% */
-  box-sizing: border-box; /* add this property to include padding in the total width and height of the container */
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  /* margin-bottom: 200px; */
 `;
 
 export const Button = styled.button`

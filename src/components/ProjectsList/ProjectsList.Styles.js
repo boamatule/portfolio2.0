@@ -74,6 +74,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const ProjectContainer = styled.div`
   margin-top: 140px;
+  /* padding: 10px 24rem; */
+  margin-bottom: 40px;
+  background: none;
 `;
 export const Title = styled.p`
   font-size: 14px;
@@ -98,7 +101,7 @@ export const Heading = styled.h1`
   justify-content: flex-start;
   text-align: flex-start;
   font-size: 32px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik';
   margin-bottom: 60px;
 
   @media screen and (max-width: 960px) {
@@ -205,7 +208,7 @@ export const Image = styled(LazyLoadImage)`
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px 10px 0px 0px;
-  object-fit: fill;
+  object-fit: cover;
   margin: 0 auto;
   justify-content: center;
   text-align: center;

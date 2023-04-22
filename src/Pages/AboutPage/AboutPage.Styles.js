@@ -6,8 +6,9 @@ export const AboutWrapper = styled(Container)`
   top: 0;
   display: flex;
   height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   padding: 0 20px;
+  background-color: transparent;
   @media (max-width: 960px) {
     flex-direction: column;
   };
