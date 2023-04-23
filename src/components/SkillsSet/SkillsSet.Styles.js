@@ -6,25 +6,29 @@ import { Container } from '../../global-styles';
 export const SkillsSetsContainer = styled(Container)`
   top: 0;
   display: flex;
-  height: 100vh; /* add this property to set the height of the container to 100% of the viewport height */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
   background: transparent;
   color: grey;
-  /* justify-content: center;
-  align-items: center; */
-  @media screen and (max-width: 768px) {
-    height: auto;
-    margin-bottom: 20px;
-    padding: 0 0px;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    /* height: 90vh; */
+    align-self: flex-end; /* Add align-self property */
   }
 `;
 
 export const SkillsSetWrapper = styled(motion.div)`
-  border-radius: 10px 10px 0px 0px;
-  position: relative;
-
-  @media screen and (max-width: 960px) {
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
+  width: 50%;
+  align-self: flex-start;
+  /* padding: 20px; */
+  /* margin: 10px; */
+  @media (max-width: 960px) {
+    width: 100%;
+    /* max-width: unset; */
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
 `;
 export const SkillsetItem = styled.li`

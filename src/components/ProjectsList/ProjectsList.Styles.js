@@ -74,14 +74,14 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const ProjectContainer = styled.div`
   margin-top: 140px;
-  /* padding: 10px 24rem; */
-  margin-bottom: 40px;
+  padding: 0px 4rem;
+  margin-bottom: 120px;
   background: none;
 `;
 export const Title = styled.p`
   font-size: 14px;
   font-weight: normal;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   line-height: 4px;
   color: grey
   margin-bottom: 24px;
@@ -134,8 +134,7 @@ export const ButtonWrapper = styled.div`
   padding: 10px;
 
   @media screen and (max-width: 960px) {
-    padding: 4
-    6px;
+    padding: 46px;
   }
 `;
 
@@ -184,7 +183,6 @@ export const CardContainer = styled.div`
 
 export const ProjectDescription = styled.p`
   display: inline-block;
-  /* color: #474747; */
   color: grey;
   padding: 10px;
   font-size: 14px;
