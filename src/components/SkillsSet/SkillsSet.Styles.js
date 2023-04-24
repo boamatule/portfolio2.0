@@ -1,9 +1,4 @@
-import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import styled from 'styled-components';
-import { Container } from '../../global-styles';
-
-export const SkillsSetsContainer = styled(Container)`
+import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"styled-components";import{Container}from"../../global-styles";const SkillsSetsContainer=styled(Container)`
   top: 0;
   display: flex;
   flex-direction: row;
@@ -17,9 +12,7 @@ export const SkillsSetsContainer = styled(Container)`
     /* height: 90vh; */
     align-self: flex-end; /* Add align-self property */
   }
-`;
-
-export const SkillsSetWrapper = styled(motion.div)`
+`,SkillsSetWrapper=styled(motion.div)`
   width: 50%;
   align-self: flex-start;
   /* padding: 20px; */
@@ -30,8 +23,7 @@ export const SkillsSetWrapper = styled(motion.div)`
     margin-bottom: 20px;
     padding: 0 20px;
   }
-`;
-export const SkillsetItem = styled.li`
+`,SkillsetItem=styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -40,9 +32,7 @@ export const SkillsetItem = styled.li`
     flex-direction: column;
     align-items: flex-start;
   }
-`;
-
-export const SkillsetImage = styled(LazyLoadImage)`
+`,SkillsetImage=styled(LazyLoadImage)`
   height: 100%;
   width: 100%;
   object-fit: fill;
@@ -60,12 +50,9 @@ export const SkillsetImage = styled(LazyLoadImage)`
     margin-bottom: 10px;
     margin-right: 0;
   }
-`;
-
-export const SkillsetInfo = styled.div`
+`,SkillsetInfo=styled.div`
   flex: 1;
-`;
-export const SkillsSetsImageWrapper = styled.div`
+`,SkillsSetsImageWrapper=styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -83,4 +70,4 @@ export const SkillsSetsImageWrapper = styled.div`
     margin: 0px 0px;
     width: 100%;
     z-index: -1;
-  }`;
+  }`;export{SkillsSetsContainer,SkillsSetWrapper,SkillsetItem,SkillsetImage,SkillsetInfo,SkillsSetsImageWrapper};

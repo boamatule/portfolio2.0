@@ -107,4 +107,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default React.memo(ContactPage);

@@ -1,29 +1,38 @@
 import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"styled-components";import{Container}from"../../global-styles";const SkillsSetsContainer=styled(Container)`
   top: 0;
   display: flex;
-  height: 100vh; /* add this property to set the height of the container to 100% of the viewport height */
-  background: transparent;
+  flex-direction: row;
+  margin-bottom: 100px;
+  background:  transparent;
   color: grey;
-  /* justify-content: center;
-  align-items: center; */
+  width: 100%;
+align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center; 
   @media screen and (max-width: 768px) {
     height: auto;
     margin-bottom: 20px;
     padding: 0 0px;
+    flex-direction: column;
+    align-self: flex-end;
   }
 `,SkillsSetWrapper=styled(motion.div)`
-  border-radius: 10px 10px 0px 0px;
-  position: relative;
-
-  @media screen and (max-width: 960px) {
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
+  width: 50%;
+  align-self: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  
+  @media (max-width: 960px) {
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
 `,SkillsetItem=styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
+ 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;

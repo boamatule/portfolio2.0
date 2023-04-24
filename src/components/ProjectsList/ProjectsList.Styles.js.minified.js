@@ -109,8 +109,8 @@ import styled from"styled-components";import{motion}from"framer-motion";import{L
   }
 `,Image=styled(LazyLoadImage)`
   display: block;
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   padding-bottom: 10px;
   background-color: transparent;
   border-radius: 10px 10px 0px 0px;

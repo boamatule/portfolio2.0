@@ -1,0 +1,1 @@
+const reportWebVitals=r=>{r&&r instanceof Function&&import("web-vitals").then(({getCLS:t,getFID:e,getFCP:o,getLCP:i,getTTFB:n})=>{t(r),e(r),o(r),i(r),n(r)})};export default reportWebVitals;

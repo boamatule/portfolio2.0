@@ -9,4 +9,4 @@ function WithSpinner() {
   );
 }
 
-export default WithSpinner;
+export default React.memo(WithSpinner);
