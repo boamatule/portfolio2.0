@@ -4,6 +4,8 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
   height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
   margin-bottom: 0px;
   padding: 0 20px;
+  font-family: Rubik;
+  font-style: normal;
   background-color: transparent;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -76,23 +78,23 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
   padding: 0px 20px;
 
 }
-`,Description=styled.p`
+`,Description=styled.h2`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
   font-weight: normal;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   line-height: 22px;
 
   @media screen and (max-width: 960px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 20px; 
+    /* margin-bottom: 20px;  */
     padding: 20px;
     text-align: left;
     margin-left: 0;

@@ -3,8 +3,8 @@ import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro
   align-items: flex-start;
   position: fixed;
   bottom: 40px;
-  left: 0px;
-  right: 0;
+  /* left: 0px; */
+  /* right: 0; */
   width: 100%;
 `,FooterLinksContainer=styled.div`
   display: flex;
@@ -44,7 +44,7 @@ import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro
   border-radius: 50%;
   border: 2px solid #4568dc;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: #4568dc;
   } 
@@ -53,7 +53,7 @@ import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro
   height: 20px;
   color: #4568dc;
   cursor: pointer;
-
+  /* transition: all 0.3s ease-in-out;   */
   &:hover {
     color: grey;
   } 

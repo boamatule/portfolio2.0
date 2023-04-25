@@ -8,16 +8,17 @@ import {
   CardContainer,
   GithubLink,
   Heading,
+  Image,
   ProjectContainer,
   ProjectDescription,
   SubTitle,
   Text,
-  Title
+  Title,
 } from './ProjectsList.Styles';
-import OptimizedBlurhasImage from '../../OptimizedBlurhasImage';
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
+  console.log(projects);
 
   return (
     <ProjectsProvider>
@@ -41,7 +42,7 @@ const ProjectsList = () => {
           {projects.map((project) => (
             <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
               <Glass>
-                <OptimizedBlurhasImage />
+                <Image src={project.imageUrl} alt={project.alt} />
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
                 <ButtonWrapper>

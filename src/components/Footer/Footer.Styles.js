@@ -1,4 +1,7 @@
-import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro";const FooterWrapper=styled.div`
+import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro";import { Container } from "../../global-styles";
+const 
+
+FooterWrapper=styled(Container)`
   display: flex;
   align-items: flex-start;
   position: fixed;
@@ -6,6 +9,8 @@ import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro
   left: 0px;
   right: 0;
   width: 100%;
+  /* padding: 0px 4rem; */
+
 `,FooterLinksContainer=styled.div`
   display: flex;
   justify-content: center;
@@ -20,7 +25,9 @@ import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro
   align-items: center;
   text-align: center;
   color: #4568dc;
-  margin: 0px 140px;
+  margin: 0px 100px;
+  /* padding: 0px 4rem; */
+
 
   @media screen and (max-width: 960px) {
     font-size: 12px;

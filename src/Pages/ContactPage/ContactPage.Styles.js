@@ -1,4 +1,6 @@
-import{MdOutlineArrowRightAlt}from"react-icons/md";import styled from"styled-components";import{Button,Container}from"../../global-styles";const ContactContainer=styled(Container)`
+import{MdOutlineArrowRightAlt}from"react-icons/md";import styled from"styled-components";import{Button,Container}from"../../global-styles";
+
+const ContactContainer=styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;

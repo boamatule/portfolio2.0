@@ -1,4 +1,6 @@
-import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"styled-components/macro";const GlobalStyles=createGlobalStyle`
+import { normalize } from "normalize.css";
+import styled, { createGlobalStyle } from "styled-components/macro";
+const GlobalStyles = createGlobalStyle`
   ${normalize}
   :root {
     --light: grey;
@@ -31,18 +33,30 @@ import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"style
     text-decoration: none;
     color: black;
   }
-`,Container=styled.div`
+`, Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   height: auto;
   width: 100%;
   box-sizing: border-box;
+  padding: 0 4rem; /* Update with your desired padding value */
+
+  @media (max-width: 767px) {
+    /* Mobile styles */
+    margin: 0 0rem; /* Update with your desired margin value */
+    padding: 0 0rem; /* Update with your desired padding value */
+    /* text-align: center; */
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box; /* Update with your desired box-sizing value */
+  }
+
   /* margin-bottom: 200px; */
-`,Button=styled.button`
+`, Button = styled.button`
   white-space: nowrap;
-  padding: ${({big:o})=>o?"12px 4px":"10px 20px"};
+  padding: ${({ big: o }) => o ? "12px 4px" : "10px 20px"};
   color: grey;
-  font-size: ${({fontBig:o})=>o?"20px":"16px"};
+  font-size: ${({ fontBig: o }) => o ? "20px" : "16px"};
   outline: none;
   cursor: pointer;
   background: #4568dc;
@@ -52,11 +66,11 @@ import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"style
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({})=>"purple"};
+    background: ${({ }) => "purple"};
     color: grey;
     text-decoration: none;
   }
-`,Span=styled.span`
+`, Span = styled.span`
   font-weight: normal;
   font-size: 1rem;
   line-height: 20px;
@@ -65,11 +79,11 @@ import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"style
   background: transparent;
   font-size: 12px;
   text-transform: uppercase;
-`,Glass=styled.div`
+`, Glass = styled.div`
   background: transparent;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px 10px 0 0;
   border: 1px solid rgba(255, 255, 255, 0.18);
-`;export{GlobalStyles,Container,Button,Span,Glass};
+`; export { Button, Container, Glass, GlobalStyles, Span };

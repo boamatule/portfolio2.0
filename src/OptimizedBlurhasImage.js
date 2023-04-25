@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Blurhash } from "react-blurhash";
+import { Blurhash, BlurhashCanvas} from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 
@@ -33,7 +33,7 @@ const Image = styled(LazyLoadImage)`
   }
 `;
 
-const StyledBlurhash = styled(Blurhash)`
+const StyledBlurhash = styled(BlurhashCanvas)`
   z-index: 20;
   position: absolute;
   top: 0;

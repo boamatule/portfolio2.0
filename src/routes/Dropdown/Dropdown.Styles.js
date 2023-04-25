@@ -53,5 +53,20 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
 		color:  #4568dc;
 		/* transition: 0.2s ease-in-out; */
     border-bottom: 4px solid #4568dc;
-	}
-`;export{DropdownContainer,DropdownMenu,DropdownItem,DropdownLink};
+}
+`,
+
+DropdownMobileIcon=styled.div`
+	position: absolute;
+	top: 1.6rem;
+	right: 1.5rem;
+	font-size: 2rem;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+  color:  #4568dc;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+`;
+
+export{DropdownContainer,DropdownMenu,DropdownItem,DropdownLink, DropdownMobileIcon};
