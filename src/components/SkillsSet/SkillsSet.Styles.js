@@ -5,18 +5,21 @@ import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-imag
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  text-align: left;
   background: transparent;
   color: grey;
+  top: 10%;
+  left: 50%;
+  /* right: 50%; */
+  transform: translate(0%, 10%);
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    /* height: 90vh; */
-    align-self: flex-end; /* Add align-self property */
+    align-self: flex-end; 
   }
 `,SkillsSetWrapper=styled(motion.div)`
   width: 50%;
   align-self: flex-start;
-  /* padding: 20px; */
-  /* margin: 10px; */
+
   @media (max-width: 960px) {
     width: 100%;
     /* max-width: unset; */

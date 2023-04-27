@@ -1,12 +1,15 @@
-import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"styled-components/macro";import{Container}from"../../global-styles";const AboutWrapper=styled(Container)`
-  top: 0;
+import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"styled-components/macro";
+
+import{Container}from"../../global-styles";const AboutWrapper=styled(Container)`
   display: flex;
-  height: 60vh; /* add this property to set the height of the container to 100% of the viewport height */
-  margin-bottom: 0px;
-  padding: 0 20px;
+  margin-bottom: 120px;
   font-family: Rubik;
   font-style: normal;
   background-color: transparent;
+  position: flex;
+  top: 0;
+  left: 50%;
+  transform: translate(0%, 50%);
   @media (max-width: 960px) {
     flex-direction: column;
   };
@@ -23,14 +26,14 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
     width: 100%;
     margin-bottom: 20px;
   }
-`,Image=styled(LazyLoadImage)`
+`,
+
+Image=styled(LazyLoadImage)`
   width: 280px;
   height: 280px;
   border-radius: 4px;
   border: 2px solid grey;
-;
   object-fit: fill;
-
   @media screen and (max-width: 960px) {
     width: 200px;
     height: 200px;
@@ -65,8 +68,6 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
 `,Heading=styled.h1`
   display: flex;
   font-weight: bold;
-  /* line-height: 20px; */
-  /* letter-spacing: 4px; */
   padding: 0px 0px;
   color: #4568dc;
   font-size: 32px;
@@ -80,26 +81,22 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
   padding: 0px 20px;
 
 }
-`,Description=styled.h2`
+`,Description=styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
   font-weight: normal;
-  /* margin-bottom: 60px; */
   line-height: 22px;
+  text-align: left;
 
   @media screen and (max-width: 960px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    /* margin-bottom: 20px;  */
     padding: 20px;
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
   } 
 `;export{AboutWrapper,Column,Image,ImageColumn,TextColumn,Heading,Description};

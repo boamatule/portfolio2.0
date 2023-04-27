@@ -22,12 +22,11 @@ FooterWrapper=styled(Container)`
   font-size: 16px;
   line-height: 4px;
   letter-spacing: 2px;
-  align-items: center;
-  text-align: center;
+  /* align-items: center;
+  text-align: center; */
   color: #4568dc;
-  margin: 0px 100px;
-  /* padding: 0px 4rem; */
-
+  /* margin: 0px 100px; */
+  text-align: left;
 
   @media screen and (max-width: 960px) {
     font-size: 12px;
@@ -36,10 +35,11 @@ FooterWrapper=styled(Container)`
   }
 `,ScrollToTopContainer=styled.div`
   display: flex;
-  justify-content: flex-end; /* align to right */
+  justify-content: flex-end; 
+  /* align to right */
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 160px;
   z-index: 1000;
   background: transparent,
 `,ScrollToTopButton=styled.div`

@@ -5,8 +5,12 @@ const ContactContainer=styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 220px;
   background: transparent;
+  top: 10%;
+  left: 50%;
+  /* right: 50%; */
+  transform: translate(0%, 50%);
   @media screen and (max-width: 960px) {
     flex-direction: column;
     align-self: flex-end; 
@@ -54,6 +58,7 @@ const ContactContainer=styled(Container)`
   font-family: 'Rubik', sans-serif;
   padding: 0px 0px;
   margin-bottom: 60px;
+  text-align: left;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -64,14 +69,21 @@ const ContactContainer=styled(Container)`
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
-  line-height: 22px;
   font-weight: normal;
-  margin-bottom: 60px;
-  align-self: flex-start;
-
+  line-height: 24px;
+  text-align: left;
+  max-width: 92%;
   @media screen and (max-width: 960px) {
     font-size: 14px;
-    padding: 0 26px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 `,Form=styled.form`
   margin: auto;

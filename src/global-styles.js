@@ -32,13 +32,16 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: black;
   }
-`, Container = styled.div`
+`, 
+
+Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   height: auto;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 4rem; /* Update with your desired padding value */
+  /* padding: 0 4rem;  */
+  text-align: center;
 
   @media (max-width: 767px) {
     /* Mobile styles */
@@ -47,7 +50,6 @@ const GlobalStyles = createGlobalStyle`
     /* text-align: center; */
     max-width: 100%;
     height: auto;
-    box-sizing: content-box; /* Update with your desired box-sizing value */
   }
 
   /* margin-bottom: 200px; */
@@ -65,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({ }) => "purple"};
+    background: "purple";
     color: grey;
     text-decoration: none;
   }

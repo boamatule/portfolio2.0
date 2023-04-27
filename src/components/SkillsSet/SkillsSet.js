@@ -34,8 +34,18 @@ const CoreSkills = () => {
             <img
               src={item.imageSrc}
               alt={item.text}
-              style={{ maxWidth: '100%', width: '26px', height: '26px', loading: 'lazy', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', marginRight: "8px", marginTop: "8px" }}
-
+              style={{ 
+                maxWidth: '100%', 
+                width: '26px', 
+                height: '26px', 
+                loading: 'lazy', 
+                borderRadius: '50%', 
+                border: '2px solid grey',
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                marginRight: "8px", 
+                marginTop: "8px" 
+              }}
             />
             <span
               style={{

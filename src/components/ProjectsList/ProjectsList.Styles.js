@@ -1,16 +1,21 @@
-import styled from"styled-components";
+import styled from "styled-components";
 
-import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-image-component";
+import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Container } from "../../global-styles";
 
-const ProjectContainer=styled(Container)`
-  margin-top: 140px;
-  padding: 0px 4rem;
-  margin-bottom: 120px;
+const ProjectContainer = styled(Container)`
+  /* margin-top: 140px; */
+  padding: 0px 0rem;
+  margin-bottom: 100px;
   background: none;
+  top: 10%;
+  left: 50%;
+  /* right: 50%; */
+  transform: translate(0%, 10%);
 `,
 
-Title=styled.p`
+  Title = styled.p`
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 8px;
@@ -25,7 +30,7 @@ Title=styled.p`
   }
 `,
 
-Heading=styled.h1`
+  Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
@@ -35,12 +40,13 @@ Heading=styled.h1`
   font-size: 32px;
   font-family: 'Rubik';
   margin-bottom: 60px;
+  padding: 0px 0px;
+  text-align: left;
 
   @media screen and (max-width: 960px) {
     font-size: 28px;
-    padding: 0px 20px;
   }
-`,CardWrapper=styled.div`
+`, CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
@@ -53,7 +59,7 @@ Heading=styled.h1`
   @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
   }
-`,ButtonWrapper=styled.div`
+`, ButtonWrapper = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -64,7 +70,7 @@ Heading=styled.h1`
   @media screen and (max-width: 960px) {
     padding: 46px;
   }
-`,Text=styled.p`
+`, Text = styled.p`
   font-weight: normal;
   font-size: 14px;
   padding-left: 0;
@@ -76,13 +82,13 @@ Heading=styled.h1`
     font-size: 12px;
     
   }
-`,GithubLink=styled.a`
+`, GithubLink = styled.a`
   color: grey;
 
   &:hover {
     color: #4568dc;
   }
-`,CardContainer=styled.div`
+`, CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -101,7 +107,7 @@ Heading=styled.h1`
     width: 100%;
     z-index: -1;
   }
-`,ProjectDescription=styled.p`
+`, ProjectDescription = styled.p`
   display: inline-block;
   color: grey;
   padding: 10px;
@@ -116,7 +122,7 @@ Heading=styled.h1`
     font-size: 12px;
     padding: 0px 20px;
   }
-`,Image=styled(LazyLoadImage)`
+`, Image = styled(LazyLoadImage)`
   display: block;
   height: 100%;
   width: 100%;
@@ -138,7 +144,7 @@ Heading=styled.h1`
     text-align: center;
     align-items: center;
   }
-`,ProjectBox=styled(motion.div)`
+`, ProjectBox = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
 
@@ -146,7 +152,7 @@ Heading=styled.h1`
     border-radius: 10px 10px 0px 0px;
     position: relative;
   }
-`,ProjectSubtitle=styled.p`
+`, ProjectSubtitle = styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
@@ -161,7 +167,7 @@ Heading=styled.h1`
     font-size: 16px;
     padding: 0px 20px;
   }
-`,BoxStyled=styled(motion.div)`
+`, BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
 
@@ -170,19 +176,26 @@ Heading=styled.h1`
     position: relative;
     padding: 0px 20px;
   }
-`,SubTitle=styled.p`
+`, SubTitle = styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
   letter-spacing: 2.8px;
-  line-height: 20px;
   font-weight: normal;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-    
+  line-height: 22px;
+  text-align: left;
+
   @media screen and (max-width: 960px) {
     font-size: 14px;
-    padding: 0px 20px;
   }
-`;export{ProjectContainer,Title,Heading,CardWrapper,ButtonWrapper,Text,GithubLink,CardContainer,ProjectDescription,Image,ProjectBox,ProjectSubtitle,BoxStyled,SubTitle};
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 18px;
+    /* margin-bottom: 20px;  */
+    padding: 20px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+`; export { BoxStyled, ButtonWrapper, CardContainer, CardWrapper, GithubLink, Heading, Image, ProjectBox, ProjectContainer, ProjectDescription, ProjectSubtitle, SubTitle, Text, Title };
