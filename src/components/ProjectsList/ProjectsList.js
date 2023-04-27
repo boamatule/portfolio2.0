@@ -18,8 +18,7 @@ import {
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
-  console.log(projects);
-
+  
   return (
     <ProjectsProvider>
       <ProjectContainer>

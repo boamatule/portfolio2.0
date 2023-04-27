@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet } from 'react-router-dom';
-
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
 import {
+  AnimatedFaBars,
+  AnimatedFaTimes,
   Nav,
   NavItem,
   NavItemSocialIconLink,
@@ -15,32 +16,47 @@ import {
   NavItemSocialIconWrapper,
   NavLinks,
   NavMenu,
-  NavbarContainer
+  NavbarContainer,
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
 import Dropdown from '../Dropdown/Dropdown';
+import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 
-const NavBar = ({ click, handleClick }) => {
+const NavBar = ({ handleLinkClick }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [button, setButton] = useState(true);
-  const isMobileView = window.innerWidth < 768; // Set the mobile view breakpoint
 
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth < 960) {
       setButton(false);
     } else {
       setButton(true);
     }
   };
 
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton)
   const changeNav = () => {
     if (window.scrollY <= 80) {
       setScrollNav(true);
@@ -50,8 +66,22 @@ const NavBar = ({ click, handleClick }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    showButton();
+    changeNav();
   }, []);
+
+  // window.addEventListener('resize', 'scroll', changeNav, showButton)
+  // const changeNav = () => {
+  //   if (window.scrollY <= 80) {
+  //     setScrollNav(true);
+  //   } else {
+  //     setScrollNav(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', changeNav);
+  // }, []);
 
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -61,29 +91,73 @@ const NavBar = ({ click, handleClick }) => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <NavbarContainer>
-              {isMobileView ? (
-                <Dropdown  />
+            <DropdownMobileIcon 
+            onClick={handleClick}
+            onMouseLeave={onMouseLeave}
+            >
+              {click ? (
+                <AnimatedFaTimes />
               ) : (
-                <NavMenu>
+                <AnimatedFaBars />
+              )}
+            </DropdownMobileIcon>
+            <NavbarContainer>
+              {click ? (
+                <Dropdown
+                  click={click}
+                  handleClick={handleClick}
+                  handleLinkClick={handleLinkClick}
+
+                  onMouseEnter={onMouseEnter}
+
+                  onMouseLeave={onMouseLeave}
+                  dropdown={dropdown}
+                />
+              ) : (
+                <NavMenu 
+                onMouseEnter={onMouseEnter}
+                >
                   <NavItem>
-                    <NavLinks to="/">home</NavLinks>
+                    <NavLinks to="/"
+                      onClick={closeMobileMenu}
+                    >
+                      home
+                    </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="projects">portfolio</NavLinks>
+                    <NavLinks
+                      to="projects"
+                      onClick={closeMobileMenu}
+                    >
+                      portfolio
+                    </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="about_me">about</NavLinks>
+                    <NavLinks
+                      to="about_me"
+                      onClick={closeMobileMenu}
+                    >
+                      about
+                    </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="contact_me">contact</NavLinks>
+                    <NavLinks
+                      to="contact_me"
+                      onClick={closeMobileMenu}
+                    >
+                      contact
+                    </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="my_skills_set">Skills</NavLinks>
+                    <NavLinks
+                      to="my_skills_set"
+                      onClick={closeMobileMenu}
+                    >
+                      Skills
+                    </NavLinks>
                   </NavItem>
                 </NavMenu>
-              )
-              }
+              )}
             </NavbarContainer>
             <NavItemSocialIconWrapper
               initial={{

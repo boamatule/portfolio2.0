@@ -1,8 +1,12 @@
-import{Link}from"react-router-dom";import styled from"styled-components";const DropdownContainer=styled.div`
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const DropdownContainer = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: orange;
+  background: purple;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,19 +14,12 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
   left: 0;
   text-decoration: none;
   cursor: pointer;
-
-  /* Handle click event and call toggle function from props */
+  
   &:hover {
-    opacity: 0.8; /* Add hover effect */
+    opacity: 0.8; 
   }
-
-  /* Add hover effect when the dropdown is open */
-  ${({isOpen:e})=>e&&`opacity: 100%;
-    &:hover {
-      opacity: 100%;
-    }
-  `}
-`,DropdownMenu=styled.ul`
+  
+`, DropdownMenu = styled.ul`
   display: flex;
   flex-direction: row;
   grid-template-columns: 1fr;
@@ -31,11 +28,11 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
   list-style: none;
   text-align: center;
   background: none;
-`,DropdownItem=styled.li`
-	/* width: 100%;
-	height: 50vh; */
+`, DropdownItem = styled.li`
   display: block;
-`,DropdownLink=styled(Link)`
+`,
+
+  DropdownLink = styled(Link)`
 	display: flex;
 	font-size: 1.2rem;
 	list-style: none;
@@ -51,22 +48,54 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
 
 	&:hover {
 		color:  #4568dc;
-		/* transition: 0.2s ease-in-out; */
-    border-bottom: 4px solid #4568dc;
-}
+	  border-bottom: 4px solid #4568dc;
+  }
 `,
 
-DropdownMobileIcon=styled.div`
+  DropdownMobileIcon = styled.div`
 	position: absolute;
-	top: 1.6rem;
+	top: 0.5rem;
 	right: 1.5rem;
 	font-size: 2rem;
 	outline: none;
 	background: transparent;
-	cursor: pointer;
+	/* cursor: pointer; */
   color:  #4568dc;
-  transform: translate(-100%, 60%);
+  transform: translate(-100%, 50%);
   font-size: 1.8rem;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translate(-100%, 50%); 
+  }
+
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+`,
+
+  AnimatedFaTimes = styled(FaTimes)`
+width: 24px;
+height: 24px;
+color: #6969FB;
+background: none;
+transition: transform 0.3s ease-in-out; 
+cursor: pointer;
+&:hover {
+  transform: rotate(90deg); 
+}
+`,
+
+  AnimatedFaBars = styled(FaBars)`
+width: 24px;
+height: 24px;
+color: #6969FB;
+background: none;
+transition: transform 0.3s ease-in-out; 
+cursor: pointer;
+&:hover {
+  transform: scale(1.2); 
+}
 `;
 
-export{DropdownContainer,DropdownMenu,DropdownItem,DropdownLink, DropdownMobileIcon};
+export { AnimatedFaBars, AnimatedFaTimes, DropdownContainer, DropdownItem, DropdownLink, DropdownMenu, DropdownMobileIcon };

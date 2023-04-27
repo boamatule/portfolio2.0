@@ -1,4 +1,4 @@
-import{motion}from"framer-motion";import{FaBars}from"react-icons/fa";import{LazyLoadImage}from"react-lazy-load-image-component";import{Link}from"react-router-dom";import styled from"styled-components";import{Container}from"../../global-styles";const Nav=styled.nav`
+import{motion}from"framer-motion";import{FaBars, FaTimes}from"react-icons/fa";import{LazyLoadImage}from"react-lazy-load-image-component";import{Link}from"react-router-dom";import styled from"styled-components";import{Container}from"../../global-styles";const Nav=styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +69,8 @@ import{motion}from"framer-motion";import{FaBars}from"react-icons/fa";import{Lazy
 
   @media screen and (max-width: 768px) {
     display: none;
+    left: ${({ click }) => (click ? 0 : '-100%')};
+
   }
 `,NavItem=styled.li`
   height: 80px;
@@ -201,4 +203,29 @@ import{motion}from"framer-motion";import{FaBars}from"react-icons/fa";import{Lazy
   &:hover {
     background-color: #f8f8f8;
   }
-`;export{Nav,MobileIconContainer,FaBarsIcon,NavbarContainer,LogoContainer,NavMenu,NavItem,NavLinks,NavItemSocialIconWrapper,NavItemSocialIconLinkMotion,NavItemSocialIconLinkWrapper,NavItemSocialIconLink,Image,DropdownMenu,DropdownMenuItem};
+`,
+
+AnimatedFaTimes = styled(FaTimes)`
+width: 24px;
+height: 24px;
+color: #6969FB;
+background: none;
+transition: transform 0.3s ease-in-out; 
+cursor: pointer;
+&:hover {
+  transform: rotate(90deg); 
+}
+`,
+
+AnimatedFaBars = styled(FaBars)`
+width: 24px;
+height: 24px;
+color: #6969FB;
+background: none;
+transition: transform 0.3s ease-in-out; 
+cursor: pointer;
+&:hover {
+  transform: scale(1.2); 
+}
+`
+export{Nav,MobileIconContainer,FaBarsIcon,NavbarContainer,LogoContainer,NavMenu,NavItem,NavLinks,NavItemSocialIconWrapper,NavItemSocialIconLinkMotion,NavItemSocialIconLinkWrapper,NavItemSocialIconLink,Image,DropdownMenu,DropdownMenuItem,AnimatedFaTimes,AnimatedFaBars};

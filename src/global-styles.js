@@ -1,7 +1,6 @@
-import { normalize } from "normalize.css";
+import 'normalize.css';
 import styled, { createGlobalStyle } from "styled-components/macro";
 const GlobalStyles = createGlobalStyle`
-  ${normalize}
   :root {
     --light: grey;
     --dark: grey;

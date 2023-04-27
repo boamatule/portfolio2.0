@@ -10,7 +10,9 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
   left: 0;
   text-decoration: none;
   cursor: pointer;
-
+  &.clicked {
+    display: none;
+  }
   /* Handle click event and call toggle function from props */
   &:hover {
     opacity: 0.8; /* Add hover effect */
@@ -51,7 +53,6 @@ import{Link}from"react-router-dom";import styled from"styled-components";const D
 
 	&:hover {
 		color:  #4568dc;
-		/* transition: 0.2s ease-in-out; */
-    border-bottom: 4px solid #4568dc;
+	  border-bottom: 4px solid #4568dc;
 	}
 `;export{DropdownContainer,DropdownMenu,DropdownItem,DropdownLink};
