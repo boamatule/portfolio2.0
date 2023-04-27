@@ -1,6 +1,6 @@
 import{MdOutlineArrowRightAlt}from"react-icons/md";import styled from"styled-components";import{Button,Container}from"../../global-styles";
 
-const ContactContainer=styled.div`
+const ContactContainer=styled(Container)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -9,8 +9,7 @@ const ContactContainer=styled.div`
   background: transparent;
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    /* height: 90vh; */
-    align-self: flex-end; /* Add align-self property */
+    align-self: flex-end; 
   }
 `,ContactFormColumn=styled.div`
   width: 50%;

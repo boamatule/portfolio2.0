@@ -1,9 +1,16 @@
-import styled from"styled-components";import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-image-component";const ProjectContainer=styled.div`
+import styled from"styled-components";
+
+import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-image-component";
+import { Container } from "../../global-styles";
+
+const ProjectContainer=styled(Container)`
   margin-top: 140px;
   padding: 0px 4rem;
   margin-bottom: 120px;
   background: none;
-`,Title=styled.p`
+`,
+
+Title=styled.p`
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 8px;
@@ -16,7 +23,9 @@ import styled from"styled-components";import{motion}from"framer-motion";import{L
     font-size: 14px;
     text-align: center;
   }
-`,Heading=styled.h1`
+`,
+
+Heading=styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
