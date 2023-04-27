@@ -126,17 +126,21 @@ import{motion}from"framer-motion";import{FaBars, FaTimes}from"react-icons/fa";im
     align-items: center;
     flex-direction: row;
   }
-`,NavItemSocialIconLinkMotion=styled(motion.div)`
+`,
+NavItemSocialIconLinkMotion = styled(motion.div)`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-right: 8rem;
 
   @media screen and (max-width: 960px) {
     top: 0px;
     align-items: flex-start;
   }
-`,NavItemSocialIconLinkWrapper=styled.div`
+`,
+
+NavItemSocialIconLinkWrapper=styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

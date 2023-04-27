@@ -11,13 +11,13 @@ import {
 } from "./Dropdown.Styles";
 
 
-const Dropdown = ({ click,setClick, handleClick }) => {
+const Dropdown = ({ setClick, handleClick }) => {
   
   return (
     <DropdownContainer >
-      <DropdownMenu> what do you do you are you are you a boy or a mum they contact Rikka La La La Lala oh lovely card who is 
+      <DropdownMenu>
         <DropdownItem 
-          onClick={handleClick}
+          // onClick={handleClick}
           >
           <DropdownLink 
             to="/" 

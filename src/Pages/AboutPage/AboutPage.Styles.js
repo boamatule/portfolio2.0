@@ -27,6 +27,8 @@ import{LazyLoadImage}from"react-lazy-load-image-component";import styled from"st
   width: 280px;
   height: 280px;
   border-radius: 4px;
+  border: 2px solid grey;
+;
   object-fit: fill;
 
   @media screen and (max-width: 960px) {

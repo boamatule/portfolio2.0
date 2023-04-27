@@ -34,7 +34,7 @@ const NavBar = ({ handleLinkClick }) => {
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth <= 760) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -42,15 +42,16 @@ const NavBar = ({ handleLinkClick }) => {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth <= 760) {
       setDropdown(false);
     } else {
-      setDropdown(false);
+      setDropdown(true);
     }
   };
 
+
   const showButton = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth <= 760) {
       setButton(false);
     } else {
       setButton(true);
@@ -70,19 +71,6 @@ const NavBar = ({ handleLinkClick }) => {
     changeNav();
   }, []);
 
-  // window.addEventListener('resize', 'scroll', changeNav, showButton)
-  // const changeNav = () => {
-  //   if (window.scrollY <= 80) {
-  //     setScrollNav(true);
-  //   } else {
-  //     setScrollNav(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', changeNav);
-  // }, []);
-
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -91,9 +79,10 @@ const NavBar = ({ handleLinkClick }) => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <DropdownMobileIcon 
-            onClick={handleClick}
-            onMouseLeave={onMouseLeave}
+            <DropdownMobileIcon
+              onClick={handleClick}
+              handleLinkClick={handleLinkClick}
+              onMouseLeave={onMouseLeave}
             >
               {click ? (
                 <AnimatedFaTimes />
@@ -106,16 +95,14 @@ const NavBar = ({ handleLinkClick }) => {
                 <Dropdown
                   click={click}
                   handleClick={handleClick}
-                  handleLinkClick={handleLinkClick}
-
-                  onMouseEnter={onMouseEnter}
-
+                  // handleLinkClick={handleLinkClick}
+                  // onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
-                  dropdown={dropdown}
+                  dropdown={Dropdown}
                 />
               ) : (
-                <NavMenu 
-                onMouseEnter={onMouseEnter}
+                <NavMenu
+        
                 >
                   <NavItem>
                     <NavLinks to="/"
@@ -174,9 +161,18 @@ const NavBar = ({ handleLinkClick }) => {
                 duration: 1.5,
               }}
             >
+              <DarkMode
+                style={{
+
+                }}
+
+              />
               <NavItemSocialIconLinkMotion
                 whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
+
+                <NavItemSocialIconLink>
+                </NavItemSocialIconLink>
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boa-matule-2082b068/"
                   target="_blank"
@@ -205,7 +201,7 @@ const NavBar = ({ handleLinkClick }) => {
                   />
                 </NavItemSocialIconLink>
               </NavItemSocialIconLinkMotion>
-              <DarkMode />
+              {/* <DarkMode /> */}
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>

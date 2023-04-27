@@ -5,7 +5,7 @@ export const ToggleSwitch = styled.div`
   justify-content: center;
   width: 104px;
   top: 24px;
-  margin-left: 60px;
+  margin-left: 20px;
   position: absolute;
   background: #4568dc;
 
