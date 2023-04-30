@@ -1,46 +1,48 @@
-import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import React from "react";
 import {
   DropdownContainer,
   DropdownItem,
   DropdownLink,
-  DropdownMenu,
-  DropdownMobileIcon,
-  AnimatedFaTimes,
-  AnimatedFaBars 
+  DropdownMenu
 } from "./Dropdown.Styles";
 
-
-const Dropdown = ({ setClick, handleClick }) => {
-  
+const Dropdown = ({ setClick, handleClick, closeMobileMenu}) => {
   return (
     <DropdownContainer >
-      <DropdownMenu>
-        <DropdownItem 
+      <DropdownMenu
+      // onClick={handleClick}
+      // handleLinkClick={handleLinkClick}
+      >
+        <DropdownItem
           // onClick={handleClick}
+          // handleLinkClick={handleLinkClick}
+        >
+          <DropdownLink
+            to="/"
+            // onClick={() => setClick(false)}
+            onClick={closeMobileMenu}
+
           >
-          <DropdownLink 
-            to="/" 
-              onClick={() => setClick(false)}
-            > 
             My Homepage
           </DropdownLink>
-          <DropdownLink 
-            to="/projects" 
-              onClick={() => setClick(false)}
-            >
+          <DropdownLink
+            to="/projects"
+            // onClick={() => setClick(false)}
+            onClick={closeMobileMenu}
+
+          >
             My Portfolio
           </DropdownLink>
           <DropdownLink
             to="/about_me"
-              onClick={() => setClick(false)}
-            >
+            onClick={() => setClick(false)}
+          >
             About Me
           </DropdownLink>
-          <DropdownLink 
-            to="/contact_me" 
+          <DropdownLink
+            to="/contact_me"
             onClick={() => setClick(false)}
-            >
+          >
             Get In Touch
           </DropdownLink>
         </DropdownItem>

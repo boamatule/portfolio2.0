@@ -6,11 +6,41 @@ const GlobalStyles = createGlobalStyle`
     --dark: grey;
     --font-color: #000;
     --background-color: #000;
+    --theme-color: #007bff;
   }
 
   [data-theme="dark"] {
     --background-color: #fff;
   }
+
+  /* Chrome, Firefox, Opera, Edge */
+@media (prefers-color-scheme: light) {
+  /* Light mode styles */
+  /* Use the --theme-color variable for the browser UI elements */
+  :root {
+    --color-on-background: #fff;
+    --color-on-primary: #007bff;
+  }
+}
+
+/* Chrome, Firefox, Opera, Edge */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles */
+  /* Use a different color for the --theme-color variable */
+  :root {
+    --color-on-background: #000;
+    --color-on-primary: #0cf;
+  }
+}
+
+/* Safari */
+@supports (-webkit-touch-callout: none) {
+  /* Use a separate meta tag for Safari */
+  meta[name="apple-mobile-web-app-status-bar-style"] {
+    content: var(--theme-color);
+  }
+}
+
 
   *,
   *::before,

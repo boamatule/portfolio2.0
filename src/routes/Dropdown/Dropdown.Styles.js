@@ -52,50 +52,57 @@ const DropdownContainer = styled.div`
   }
 `,
 
+
   DropdownMobileIcon = styled.div`
-	position: absolute;
-	top: 0.5rem;
-	right: 1.5rem;
-	font-size: 2rem;
-	outline: none;
-	background: transparent;
-	/* cursor: pointer; */
-  color:  #4568dc;
-  transform: translate(-100%, 50%);
+  display: none;
+
+  @media screen and (max-width: 640px) {
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
   font-size: 1.8rem;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: #4568dc;
+  transform: translate(-100%, 50%);
   transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: translate(-100%, 50%);
+  }
+}
+`;
+
+const AnimatedFaTimes = styled(FaTimes)`
+  width: 24px;
+  height: 24px;
+  color: #6969FB;
+  background: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
-    transform: translate(-100%, 50%); 
+    transform: rotate(90deg);
+  }
+`;
+
+const AnimatedFaBars = styled(FaBars)`
+  width: 24px;
+  height: 24px;
+  color: #6969FB;
+  background: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (max-width: 640px) {
     display: none;
   }
-`,
-
-  AnimatedFaTimes = styled(FaTimes)`
-width: 24px;
-height: 24px;
-color: #6969FB;
-background: none;
-transition: transform 0.3s ease-in-out; 
-cursor: pointer;
-&:hover {
-  transform: rotate(90deg); 
-}
-`,
-
-  AnimatedFaBars = styled(FaBars)`
-width: 24px;
-height: 24px;
-color: #6969FB;
-background: none;
-transition: transform 0.3s ease-in-out; 
-cursor: pointer;
-&:hover {
-  transform: scale(1.2); 
-}
 `;
 
 export { AnimatedFaBars, AnimatedFaTimes, DropdownContainer, DropdownItem, DropdownLink, DropdownMenu, DropdownMobileIcon };

@@ -23,18 +23,27 @@ import DarkMode from '../../components/DarkMode/DarkMode';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 
-const NavBar = ({ handleLinkClick }) => {
+const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
   const [button, setButton] = useState(true);
 
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click)
+  };
+
   const closeMobileMenu = () => setClick(false);
 
+  // const handleClick = () => {
+  //   if (window.innerWidth <= 640) {
+  //     setClick(!click);
+  //   }
+  // };
+
   const onMouseEnter = () => {
-    if (window.innerWidth <= 760) {
+    if (window.innerWidth <= 640) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -42,7 +51,7 @@ const NavBar = ({ handleLinkClick }) => {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth <= 760) {
+    if (window.innerWidth <= 640) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -51,7 +60,7 @@ const NavBar = ({ handleLinkClick }) => {
 
 
   const showButton = () => {
-    if (window.innerWidth <= 760) {
+    if (window.innerWidth <= 640) {
       setButton(false);
     } else {
       setButton(true);
@@ -69,7 +78,12 @@ const NavBar = ({ handleLinkClick }) => {
   useEffect(() => {
     showButton();
     changeNav();
+    // onMouseEnter();
+    // onMouseLeave();
+    // handleClick();
   }, []);
+  
+  window.addEventListener('resize', showButton);
 
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -81,32 +95,54 @@ const NavBar = ({ handleLinkClick }) => {
           <NavbarContainer >
             <DropdownMobileIcon
               onClick={handleClick}
-              handleLinkClick={handleLinkClick}
-              onMouseLeave={onMouseLeave}
+              // onMouseLeave={onMouseLeave}
+              onMouseEnter={onMouseEnter}
+            // showButton={showButton}
+
             >
               {click ? (
                 <AnimatedFaTimes />
               ) : (
                 <AnimatedFaBars />
               )}
+              {/* {click ? (
+                <FaTimes
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
+              ) : (
+                <FaBars
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    color: '#6969FB',
+                    background: 'none',
+                  }}
+                />
+              )} */}
+
             </DropdownMobileIcon>
             <NavbarContainer>
               {click ? (
                 <Dropdown
-                  click={click}
                   handleClick={handleClick}
-                  // handleLinkClick={handleLinkClick}
-                  // onMouseEnter={onMouseEnter}
-                  onMouseLeave={onMouseLeave}
-                  dropdown={Dropdown}
+                // onMouseEnter={onMouseEnter}
+                // onMouseLeave={onMouseLeave}
+                // dropdown={dropdown}
                 />
               ) : (
                 <NavMenu
-        
+                  // onClick={handleClick}
+                  // click={click}
+                  // onMouseLeave={onMouseLeave}
                 >
                   <NavItem>
                     <NavLinks to="/"
-                      onClick={closeMobileMenu}
+                      // onClick={closeMobileMenu}
                     >
                       home
                     </NavLinks>
@@ -114,7 +150,7 @@ const NavBar = ({ handleLinkClick }) => {
                   <NavItem>
                     <NavLinks
                       to="projects"
-                      onClick={closeMobileMenu}
+                      // onClick={closeMobileMenu}
                     >
                       portfolio
                     </NavLinks>
@@ -122,7 +158,7 @@ const NavBar = ({ handleLinkClick }) => {
                   <NavItem>
                     <NavLinks
                       to="about_me"
-                      onClick={closeMobileMenu}
+                      // onClick={closeMobileMenu}
                     >
                       about
                     </NavLinks>
@@ -130,7 +166,7 @@ const NavBar = ({ handleLinkClick }) => {
                   <NavItem>
                     <NavLinks
                       to="contact_me"
-                      onClick={closeMobileMenu}
+                      // onClick={closeMobileMenu}
                     >
                       contact
                     </NavLinks>
@@ -138,7 +174,7 @@ const NavBar = ({ handleLinkClick }) => {
                   <NavItem>
                     <NavLinks
                       to="my_skills_set"
-                      onClick={closeMobileMenu}
+                      // onClick={closeMobileMenu}
                     >
                       Skills
                     </NavLinks>
@@ -201,7 +237,6 @@ const NavBar = ({ handleLinkClick }) => {
                   />
                 </NavItemSocialIconLink>
               </NavItemSocialIconLinkMotion>
-              {/* <DarkMode /> */}
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
