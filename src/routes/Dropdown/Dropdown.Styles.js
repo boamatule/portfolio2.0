@@ -55,8 +55,10 @@ const DropdownContainer = styled.div`
 
   DropdownMobileIcon = styled.div`
   display: none;
+  z-index: 999;
+  color: #4568dc;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
   display: flex;
   position: absolute;
   top: 0.5rem;
@@ -78,8 +80,7 @@ const DropdownContainer = styled.div`
 const AnimatedFaTimes = styled(FaTimes)`
   width: 24px;
   height: 24px;
-  color: #6969FB;
-  background: none;
+  background: transparent;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 
@@ -91,17 +92,12 @@ const AnimatedFaTimes = styled(FaTimes)`
 const AnimatedFaBars = styled(FaBars)`
   width: 24px;
   height: 24px;
-  color: #6969FB;
-  background: none;
+  background: transparent;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
-  }
-
-  @media screen and (max-width: 640px) {
-    display: none;
   }
 `;
 

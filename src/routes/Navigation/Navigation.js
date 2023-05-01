@@ -26,41 +26,28 @@ import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
   const [button, setButton] = useState(true);
-
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
+  // const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   const handleClick = () => {
-    setClick(!click)
+    console.log(handleClick);
+    if (window.innerWidth <= 640) {
+      setClick(!click);
+    } else {
+      setClick(true);
+    }
   };
 
-  const closeMobileMenu = () => setClick(false);
-
-  // const handleClick = () => {
+  // const showButton = () => {
   //   if (window.innerWidth <= 640) {
-  //     setClick(!click);
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
   //   }
   // };
-
-  const onMouseEnter = () => {
-    if (window.innerWidth <= 640) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth <= 640) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-
   const showButton = () => {
-    if (window.innerWidth <= 640) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
       setButton(false);
     } else {
       setButton(true);
@@ -78,11 +65,8 @@ const NavBar = () => {
   useEffect(() => {
     showButton();
     changeNav();
-    // onMouseEnter();
-    // onMouseLeave();
-    // handleClick();
   }, []);
-  
+
   window.addEventListener('resize', showButton);
 
   const [theme] = useDarkMode();
@@ -93,95 +77,44 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <DropdownMobileIcon
-              onClick={handleClick}
-              // onMouseLeave={onMouseLeave}
-              onMouseEnter={onMouseEnter}
-            // showButton={showButton}
-
-            >
+            <DropdownMobileIcon onClick={handleClick}>
               {click ? (
-                <AnimatedFaTimes />
+                <AnimatedFaTimes
+                  style={{
+                    color: '#4568dc'
+                  }}
+                />
               ) : (
-                <AnimatedFaBars />
+                <AnimatedFaBars
+                  style={{
+                    color: '#4568dc'
+                  }}
+                />
               )}
-              {/* {click ? (
-                <FaTimes
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    color: '#6969FB',
-                    background: 'none',
-                  }}
-                />
-              ) : (
-                <FaBars
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    color: '#6969FB',
-                    background: 'none',
-                  }}
-                />
-              )} */}
-
             </DropdownMobileIcon>
-            <NavbarContainer>
-              {click ? (
-                <Dropdown
-                  handleClick={handleClick}
-                // onMouseEnter={onMouseEnter}
-                // onMouseLeave={onMouseLeave}
-                // dropdown={dropdown}
-                />
-              ) : (
-                <NavMenu
-                  // onClick={handleClick}
-                  // click={click}
-                  // onMouseLeave={onMouseLeave}
-                >
-                  <NavItem>
-                    <NavLinks to="/"
-                      // onClick={closeMobileMenu}
-                    >
-                      home
-                    </NavLinks>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinks
-                      to="projects"
-                      // onClick={closeMobileMenu}
-                    >
-                      portfolio
-                    </NavLinks>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinks
-                      to="about_me"
-                      // onClick={closeMobileMenu}
-                    >
-                      about
-                    </NavLinks>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinks
-                      to="contact_me"
-                      // onClick={closeMobileMenu}
-                    >
-                      contact
-                    </NavLinks>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinks
-                      to="my_skills_set"
-                      // onClick={closeMobileMenu}
-                    >
-                      Skills
-                    </NavLinks>
-                  </NavItem>
-                </NavMenu>
-              )}
-            </NavbarContainer>
+
+            {click ? (
+              <Dropdown />
+            ) : (
+              <NavMenu onClick={showButton}>
+                <NavItem>
+                  <NavLinks to="/">home</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="projects">portfolio</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="about_me">about</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="contact_me">contact</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="my_skills_set">Skills</NavLinks>
+                </NavItem>
+              </NavMenu>
+            )}
+
             <NavItemSocialIconWrapper
               initial={{
                 x: -500,

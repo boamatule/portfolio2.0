@@ -6,30 +6,20 @@ import {
   DropdownMenu
 } from "./Dropdown.Styles";
 
-const Dropdown = ({ setClick, handleClick, closeMobileMenu}) => {
+const Dropdown = ({ setClick }) => {
   return (
     <DropdownContainer >
-      <DropdownMenu
-      // onClick={handleClick}
-      // handleLinkClick={handleLinkClick}
-      >
-        <DropdownItem
-          // onClick={handleClick}
-          // handleLinkClick={handleLinkClick}
-        >
+      <DropdownMenu>
+        <DropdownItem>
           <DropdownLink
             to="/"
-            // onClick={() => setClick(false)}
-            onClick={closeMobileMenu}
-
+            onClick={() => setClick(false)}
           >
             My Homepage
           </DropdownLink>
           <DropdownLink
             to="/projects"
-            // onClick={() => setClick(false)}
-            onClick={closeMobileMenu}
-
+            onClick={() => setClick(false)}
           >
             My Portfolio
           </DropdownLink>
