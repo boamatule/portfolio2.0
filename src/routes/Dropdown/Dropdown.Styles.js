@@ -1,4 +1,3 @@
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -13,7 +12,6 @@ const DropdownContainer = styled.div`
   top: 0;
   left: 0;
   text-decoration: none;
-  cursor: pointer;
   
   &:hover {
     opacity: 0.8; 
@@ -52,7 +50,6 @@ const DropdownContainer = styled.div`
   }
 `,
 
-
   DropdownMobileIcon = styled.div`
   display: none;
   z-index: 999;
@@ -61,13 +58,11 @@ const DropdownContainer = styled.div`
   @media screen and (max-width: 768px) {
   display: flex;
   position: absolute;
-  top: 0.5rem;
+  top: 0.8rem;
   right: 1.5rem;
-  font-size: 1.8rem;
   outline: none;
   background: transparent;
-  cursor: pointer;
-  color: #4568dc;
+  /* cursor: pointer; */
   transform: translate(-100%, 50%);
   transition: transform 0.3s ease-in-out;
   
@@ -75,30 +70,6 @@ const DropdownContainer = styled.div`
     transform: translate(-100%, 50%);
   }
 }
-`;
+`
 
-const AnimatedFaTimes = styled(FaTimes)`
-  width: 24px;
-  height: 24px;
-  background: transparent;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    transform: rotate(90deg);
-  }
-`;
-
-const AnimatedFaBars = styled(FaBars)`
-  width: 24px;
-  height: 24px;
-  background: transparent;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-
-export { AnimatedFaBars, AnimatedFaTimes, DropdownContainer, DropdownItem, DropdownLink, DropdownMenu, DropdownMobileIcon };
+export { DropdownContainer, DropdownItem, DropdownLink, DropdownMenu, DropdownMobileIcon };

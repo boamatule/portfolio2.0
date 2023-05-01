@@ -113,4 +113,4 @@ const SkillsSet = () => {
   );
 };
 
-export default SkillsSet;
+export default React.memo(SkillsSet);

@@ -8,11 +8,8 @@ import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-imag
   text-align: left;
   background: transparent;
   color: grey;
-  top: 10%;
-  left: 50%;
-  /* right: 50%; */
-  transform: translate(0%, 10%);
-  @media screen and (max-width: 960px) {
+  height: 100vh;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     align-self: flex-end; 
   }
@@ -22,9 +19,9 @@ import{motion}from"framer-motion";import{LazyLoadImage}from"react-lazy-load-imag
 
   @media (max-width: 960px) {
     width: 100%;
-    /* max-width: unset; */
+    max-width: unset;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 `,SkillsetItem=styled.li`
   display: flex;

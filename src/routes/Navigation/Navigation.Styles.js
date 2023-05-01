@@ -38,7 +38,6 @@ import{motion}from"framer-motion";import{FaBars, FaTimes}from"react-icons/fa";im
   display: flex;
   justify-content: space-between;
   height: 80px;
-  /* z-index: 1; */
   width: 100%;
   padding: 0px 0px;
   font-family: Rubik;
@@ -152,7 +151,7 @@ NavItemSocialIconLinkWrapper=styled.div`
     width: 100%;
     padding: 0rem;
     background-color: #fff;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); */
   }
 `,NavItemSocialIconLink=styled.a`
   display: flex;
@@ -169,7 +168,7 @@ NavItemSocialIconLinkWrapper=styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 
   /* increase touch target size */

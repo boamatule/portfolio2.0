@@ -37,7 +37,6 @@ import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"style
   height: auto;
   width: 100%;
   box-sizing: border-box;
-  /* margin-bottom: 200px; */
 `,Button=styled.button`
   white-space: nowrap;
   padding: ${({big:o})=>o?"12px 4px":"10px 20px"};
@@ -46,7 +45,6 @@ import{normalize}from"normalize.css";import styled,{createGlobalStyle}from"style
   outline: none;
   cursor: pointer;
   background: #4568dc;
-
   transition: 0.5s;
   border-radius: 2px;
 

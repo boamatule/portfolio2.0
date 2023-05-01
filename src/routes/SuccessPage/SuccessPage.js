@@ -16,4 +16,4 @@ const SuccessPage = () => (
     </PageWrapper>
 );
 
-export default SuccessPage;
+export default React.memo(SuccessPage);

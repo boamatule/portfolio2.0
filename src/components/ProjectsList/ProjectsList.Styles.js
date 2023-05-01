@@ -5,14 +5,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Container } from "../../global-styles";
 
 const ProjectContainer = styled(Container)`
-  /* margin-top: 140px; */
   padding: 0px 0rem;
   margin-bottom: 100px;
   background: none;
-  top: 10%;
-  left: 50%;
-  /* right: 50%; */
-  transform: translate(0%, 10%);
+  top: 40%;
 `,
 
   Title = styled.p`
@@ -40,15 +36,14 @@ const ProjectContainer = styled(Container)`
   font-size: 32px;
   font-family: 'Rubik';
   margin-bottom: 60px;
-  padding: 0px 0px;
   text-align: left;
-
   @media screen and (max-width: 960px) {
     font-size: 28px;
+    padding: 0px 20px;
   }
 `, CardWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   grid-gap: 14px;
   padding-top: 4rem;
@@ -76,16 +71,15 @@ const ProjectContainer = styled(Container)`
   padding-left: 0;
   text-align: center;
   background: transparent;
-  /* color: grey; */
 
   @media screen and (max-width: 960px) {
     font-size: 12px;
     
   }
 `, GithubLink = styled.a`
-  color: grey;
+    color: grey;
 
-  &:hover {
+    &:hover {
     color: #4568dc;
   }
 `, CardContainer = styled.div`

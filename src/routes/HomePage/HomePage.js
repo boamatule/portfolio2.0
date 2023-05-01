@@ -15,4 +15,4 @@ const HomePage = () => {
     </HomeContainer>
   );
 }
-export default HomePage;
+export default React.memo(HomePage);

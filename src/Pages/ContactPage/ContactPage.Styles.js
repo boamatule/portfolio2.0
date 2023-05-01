@@ -5,27 +5,23 @@ const ContactContainer=styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 220px;
+  margin-bottom: 100px;
   background: transparent;
-  top: 10%;
-  left: 50%;
-  /* right: 50%; */
-  transform: translate(0%, 50%);
+  top: 30%;
+  /* margin-bottom: 80px; */
+  height: 100vh;
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    align-self: flex-end; 
   }
 `,ContactFormColumn=styled.div`
   width: 50%;
   align-self: flex-start;
-  /* padding: 20px; */
-  /* margin: 10px; */
+
   @media (max-width: 960px) {
     width: 100%;
-    /* max-width: unset; */
+    max-width: unset;
     margin-bottom: 20px;
-    padding: 0 20px;
-/*  */
+    padding: 0 10px;
   }
 `,FormContainerColumn=styled(ContactFormColumn)`
   /* padding: 0 20px; */
@@ -48,6 +44,8 @@ const ContactContainer=styled(Container)`
   margin-left: auto;
   /* max-width: unset;
   width: 100%; */
+  padding: 0 10px;
+
 }
 `,Heading=styled.h1`
   font-weight: bold;
@@ -57,12 +55,12 @@ const ContactContainer=styled(Container)`
   font-size: 32px;
   font-family: 'Rubik', sans-serif;
   padding: 0px 0px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: left;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
-    padding: 20px;
+    padding: 0px 10px;
   }
 `,Title=styled.p`
   margin-top: 16px;
@@ -73,14 +71,12 @@ const ContactContainer=styled(Container)`
   line-height: 24px;
   text-align: left;
   max-width: 92%;
-  @media screen and (max-width: 960px) {
-    font-size: 14px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 20px;
+    padding: 0px 10px;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -97,7 +93,7 @@ const ContactContainer=styled(Container)`
     margin-right: auto;
     margin-left: auto;
     padding-right: 0px;
-    padding-left: 10px;
+    padding-left: 0px;
   }
 `,Input=styled.input`
   background: transparent;

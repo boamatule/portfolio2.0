@@ -7,9 +7,8 @@ import{Container}from"../../global-styles";const AboutWrapper=styled(Container)`
   font-style: normal;
   background-color: transparent;
   position: flex;
-  top: 0;
-  left: 50%;
-  transform: translate(0%, 50%);
+  /* top: 30px; */
+
   @media (max-width: 960px) {
     flex-direction: column;
   };
@@ -17,7 +16,7 @@ import{Container}from"../../global-styles";const AboutWrapper=styled(Container)`
   @media screen and (max-width: 768px) {
     height: auto;
     margin-bottom: 20px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 `,Column=styled.div`
   width: 50%;
@@ -79,7 +78,6 @@ Image=styled(LazyLoadImage)`
   justify-content: flex-start;
   text-align: flex-start;
   padding: 0px 20px;
-
 }
 `,Description=styled.p`
   margin-top: 16px;

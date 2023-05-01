@@ -9,7 +9,7 @@ FooterWrapper=styled(Container)`
   left: 0px;
   right: 0;
   width: 100%;
-  /* padding: 0px 4rem; */
+  padding: 0px 10px;
 
 `,FooterLinksContainer=styled.div`
   display: flex;
@@ -22,10 +22,7 @@ FooterWrapper=styled(Container)`
   font-size: 16px;
   line-height: 4px;
   letter-spacing: 2px;
-  /* align-items: center;
-  text-align: center; */
   color: #4568dc;
-  /* margin: 0px 100px; */
   text-align: left;
 
   @media screen and (max-width: 960px) {
@@ -36,11 +33,10 @@ FooterWrapper=styled(Container)`
 `,ScrollToTopContainer=styled.div`
   display: flex;
   justify-content: flex-end; 
-  /* align to right */
   position: fixed;
   bottom: 30px;
   right: 160px;
-  z-index: 1000;
+  z-index: 999;
   background: transparent,
 `,ScrollToTopButton=styled.div`
   display: flex;

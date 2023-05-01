@@ -3,8 +3,7 @@ import styled from"styled-components/macro";import{Container}from"../../global-s
   flex-direction: column;
   align-items: center;
   justify-content: space-between; 
-  /* margin: 80px; */
-  margin-bottom: 240px; /* Add margin-bottom to create spacing */
+  margin-bottom: 240px; 
 
   @media screen and (max-width: 960px) {
     margin-right: auto;

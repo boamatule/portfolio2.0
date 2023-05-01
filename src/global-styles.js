@@ -70,19 +70,16 @@ Container = styled.div`
   height: auto;
   width: 100%;
   box-sizing: border-box;
-  /* padding: 0 4rem;  */
   text-align: center;
+  padding: 0px 10px;
 
-  @media (max-width: 767px) {
-    /* Mobile styles */
-    margin: 0 0rem; /* Update with your desired margin value */
-    padding: 0 0rem; /* Update with your desired padding value */
-    /* text-align: center; */
+  @media (max-width: 768px) {
+    margin: 0 0rem; 
+    padding: 0px 4px;
     max-width: 100%;
     height: auto;
   }
 
-  /* margin-bottom: 200px; */
 `, Button = styled.button`
   white-space: nowrap;
   padding: ${({ big: o }) => o ? "12px 4px" : "10px 20px"};
