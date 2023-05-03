@@ -17,6 +17,8 @@ import {
   NavLinks,
   NavMenu,
   NavbarContainer,
+  LogoContainer,
+  StyledLogo,
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
@@ -25,35 +27,10 @@ import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [button, setButton] = useState(true);
   const [click, setClick] = useState(false);
 
-  // const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const handleClick = () => {
-    console.log(handleClick);
-    if (window.innerWidth <= 640) {
-      setClick(!click);
-    } else {
-      setClick(true);
-    }
-  };
-
-  // const showButton = () => {
-  //   if (window.innerWidth <= 640) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-  const showButton = () => {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
   const changeNav = () => {
     if (window.scrollY <= 80) {
       setScrollNav(true);
@@ -63,11 +40,8 @@ const NavBar = () => {
   };
 
   useEffect(() => {
-    showButton();
     changeNav();
   }, []);
-
-  window.addEventListener('resize', showButton);
 
   const [theme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -77,6 +51,13 @@ const NavBar = () => {
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
+            <LogoContainer to="/"> 
+              <StyledLogo
+                src="../../../images/logo.png"
+                alt='logo'
+                loading="lazy"
+                />
+            </LogoContainer>
             <DropdownMobileIcon onClick={handleClick}>
               {click ? (
                 <AnimatedFaTimes
@@ -96,7 +77,7 @@ const NavBar = () => {
             {click ? (
               <Dropdown />
             ) : (
-              <NavMenu onClick={showButton}>
+              <NavMenu onClick={closeMobileMenu}>
                 <NavItem>
                   <NavLinks to="/">home</NavLinks>
                 </NavItem>
@@ -109,15 +90,14 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks to="contact_me">contact</NavLinks>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <NavLinks to="my_skills_set">Skills</NavLinks>
-                </NavItem>
+                </NavItem> */}
               </NavMenu>
             )}
-
             <NavItemSocialIconWrapper
               initial={{
-                x: -500,
+                x: 500,
                 opacity: 0,
                 scale: 0.5,
               }}
@@ -130,18 +110,10 @@ const NavBar = () => {
                 duration: 1.5,
               }}
             >
-              <DarkMode
-                style={{
-
-                }}
-
-              />
+              <DarkMode />
               <NavItemSocialIconLinkMotion
-                whileHover={{ scale: 1.1, transition: { duration: 0 } }}
+                // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
-
-                <NavItemSocialIconLink>
-                </NavItemSocialIconLink>
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boa-matule-2082b068/"
                   target="_blank"
@@ -165,7 +137,7 @@ const NavBar = () => {
                     style={{
                       width: '20px',
                       height: '20px',
-                      marginLeft: '4px'
+                      marginLeft: '0px'
                     }}
                   />
                 </NavItemSocialIconLink>

@@ -1,21 +1,25 @@
-import styled from"styled-components/macro";import{Container}from"../../global-styles";const HomeContainer=styled(Container)`
+import styled from "styled-components/macro";
+import { Container } from "../../global-styles";
+
+export const HomeContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
-  margin-bottom: 240px; 
-
+  justify-content: space-between;
+  
   @media screen and (max-width: 960px) {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 4px;
-    padding-left: 4px;
+    margin: 0 auto;
+    padding: 0 4px;
   }
-`,HomeWrapper=styled.div`
+`;
+
+export const HomeWrapper = styled.div`
   margin-top: 80px;
-  margin-bottom: 100px;
-`,ProjectsListContainer=styled.div`
-  margin-top: auto; 
+`;
+
+export const ProjectsListContainer = styled.div`
+  margin-top: auto;
   margin-bottom: 60px;
-  justify-content: space-between; 
-`;export{HomeContainer,HomeWrapper,ProjectsListContainer};
+  justify-content: space-between;
+`;
+

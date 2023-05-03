@@ -18,14 +18,13 @@ import {
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
-  
+
   return (
     <ProjectsProvider>
       <ProjectContainer>
-        <Heading>Projects</Heading>
+        <Heading>Selected Projects</Heading>
         <SubTitle>
-          A list of selected projects to showcase some of my tech stacks.
-          Please, do have a look below and also check my {' '}
+          A curated selection of projects that demonstrate my skills and expertise in various technologies and frameworks. Browse through the list below to get a glimpse of my portfolio. Don't forget to also check out my other work on my {' '}
           <GithubLink
             href="https://github.com/boamatule"
             target="_blank"
@@ -67,7 +66,7 @@ const ProjectsList = () => {
                         paddingLeft: '80px',
                         background: 'transparent',
                         border: 'none',
-                        color: '#6969FB',
+                        color: '#4568dc',
                       }}
                     >
                       <Text>Source Code</Text>

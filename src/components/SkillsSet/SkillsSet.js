@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa"; // Import the icon you want to use from React Icons
+import { FaCheckCircle, FaStripe, FaGoogle} from "react-icons/fa"; // Import the icon you want to use from React Icons
 import { SkillsSetsContainer, SkillsSetWrapper } from "./SkillsSet.Styles";
 
 const CoreSkills = () => {
@@ -18,7 +18,18 @@ const CoreSkills = () => {
   ];
 
   return (
-    <div>
+    <div
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "column",
+      //   alignItems: "center",
+      //   justifyContent: "center",
+      //   width: "100%",
+      //   maxWidth: "1000px",
+      //   margin: "0 auto",
+      //   padding: "0 20px",
+      // }}
+    >
       <h2
         style={{
           color: "#4568dc",
@@ -34,17 +45,17 @@ const CoreSkills = () => {
             <img
               src={item.imageSrc}
               alt={item.text}
-              style={{ 
-                maxWidth: '100%', 
-                width: '26px', 
-                height: '26px', 
-                loading: 'lazy', 
-                borderRadius: '50%', 
+              style={{
+                maxWidth: '100%',
+                width: '26px',
+                height: '26px',
+                loading: 'lazy',
+                borderRadius: '50%',
                 border: '2px solid grey',
-                justifyContent: 'center', 
-                alignItems: 'center', 
-                marginRight: "8px", 
-                marginTop: "8px" 
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginRight: "8px",
+                marginTop: "8px"
               }}
             />
             <span
@@ -62,8 +73,8 @@ const CoreSkills = () => {
 
 const AnotherCoreSkills = () => {
   const rightItems = [
-    { text: "Stripe", icon: FaCheckCircle }, // Update list items to include text and icon
-    { text: "Firebase", icon: FaCheckCircle },
+    { text: "Stripe", icon: FaStripe }, // Update list items to include text and icon
+    { text: "Firebase", icon: FaGoogle },
     { text: "JWT", icon: FaCheckCircle },
     { text: "E2E Testing", icon: FaCheckCircle },
     { text: "PWAs", icon: FaCheckCircle },
@@ -74,7 +85,18 @@ const AnotherCoreSkills = () => {
   ];
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        maxWidth: "1000px",
+        // margin: "0 auto",
+        // padding: "0 0px",
+      }}
+    >
       <h2
         style={{
           color: "#4568dc",
@@ -89,13 +111,13 @@ const AnotherCoreSkills = () => {
 
         {rightItems.map((item, index) => (
           <li key={index}>
-            {React.createElement(item.icon, { style: { marginRight: "8px", loading: 'lazy'} })} {/* Render the icon using React.createElement */}
+            {React.createElement(item.icon, { style: { marginRight: "8px", loading: 'lazy' } })} {/* Render the icon using React.createElement */}
             {item.text}
           </li>
         ))}
 
       </ul>
-    </>
+    </div>
   );
 };
 

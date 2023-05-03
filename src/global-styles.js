@@ -1,6 +1,7 @@
 import 'normalize.css';
 import styled, { createGlobalStyle } from "styled-components/macro";
-const GlobalStyles = createGlobalStyle`
+
+export const GlobalStyles = createGlobalStyle`
   :root {
     --light: grey;
     --dark: grey;
@@ -14,33 +15,32 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Chrome, Firefox, Opera, Edge */
-@media (prefers-color-scheme: light) {
-  /* Light mode styles */
-  /* Use the --theme-color variable for the browser UI elements */
-  :root {
-    --color-on-background: #fff;
-    --color-on-primary: #007bff;
+  @media (prefers-color-scheme: light) {
+    /* Light mode styles */
+    /* Use the --theme-color variable for the browser UI elements */
+    :root {
+      --color-on-background: #fff;
+      --color-on-primary: #007bff;
+    }
   }
-}
 
-/* Chrome, Firefox, Opera, Edge */
-@media (prefers-color-scheme: dark) {
-  /* Dark mode styles */
-  /* Use a different color for the --theme-color variable */
-  :root {
-    --color-on-background: #000;
-    --color-on-primary: #0cf;
+  /* Chrome, Firefox, Opera, Edge */
+  @media (prefers-color-scheme: dark) {
+    /* Dark mode styles */
+    /* Use a different color for the --theme-color variable */
+    :root {
+      --color-on-background: #000;
+      --color-on-primary: #0cf;
+    }
   }
-}
 
-/* Safari */
-@supports (-webkit-touch-callout: none) {
-  /* Use a separate meta tag for Safari */
-  meta[name="apple-mobile-web-app-status-bar-style"] {
-    content: var(--theme-color);
+  /* Safari */
+  @supports (-webkit-touch-callout: none) {
+    /* Use a separate meta tag for Safari */
+    meta[name="apple-mobile-web-app-status-bar-style"] {
+      content: var(--theme-color);
+    }
   }
-}
-
 
   *,
   *::before,
@@ -62,9 +62,9 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: black;
   }
-`, 
+`;
 
-Container = styled.div`
+export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   height: auto;
@@ -79,26 +79,28 @@ Container = styled.div`
     max-width: 100%;
     height: auto;
   }
+`;
 
-`, Button = styled.button`
+export const Button = styled.button`
   white-space: nowrap;
-  padding: ${({ big: o }) => o ? "12px 4px" : "10px 20px"};
+  padding: ${({ big }) => big ? "12px 4px" : "10px 20px"};
   color: grey;
-  font-size: ${({ fontBig: o }) => o ? "20px" : "16px"};
+  font-size: ${({ fontBig }) => fontBig ? "20px" : "16px"};
   outline: none;
   cursor: pointer;
   background: #4568dc;
-
   transition: 0.5s;
   border-radius: 2px;
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: "purple";
+    background: purple;
     color: grey;
     text-decoration: none;
   }
-`, Span = styled.span`
+`;
+
+export const Span = styled.span`
   font-weight: normal;
   font-size: 1rem;
   line-height: 20px;
@@ -107,11 +109,14 @@ Container = styled.div`
   background: transparent;
   font-size: 12px;
   text-transform: uppercase;
-`, Glass = styled.div`
+`;
+
+export const Glass = styled.div`
   background: transparent;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px 10px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-`; export { Button, Container, Glass, GlobalStyles, Span };
+  border: 1px solid rgba(255
+    border: 1px solid rgba(255, 255, 255, 0.18);
+`;

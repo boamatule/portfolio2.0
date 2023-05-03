@@ -11,7 +11,7 @@ const HomePage = () => {
       <About />
       <ProjectsList />
       <ContactPage />
-      <SkillsSet />
+      {/* <SkillsSet /> */}
     </HomeContainer>
   );
 }

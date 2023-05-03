@@ -35,7 +35,7 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -55,12 +55,10 @@ const ContactPage = () => {
     <ContactContainer>
       <ContactFormColumn>
         <Heading>
-          Let's get in touch!
+          Contact Me!
         </Heading>
         <Title>
-          Are you interested in working together or have any questions?
-          Fill in the form and I will get back to you as soon as possible.
-          Until then, stay healthy & be positive!
+          Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. Stay healthy and keep a positive attitude in the meantime!
         </Title>
       </ContactFormColumn>
 

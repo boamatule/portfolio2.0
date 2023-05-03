@@ -68,7 +68,7 @@ align-items: flex-start;
   justify-content: center;    
 
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;

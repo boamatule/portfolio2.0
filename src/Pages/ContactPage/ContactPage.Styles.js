@@ -8,16 +8,16 @@ const ContactContainer=styled(Container)`
   margin-bottom: 100px;
   background: transparent;
   top: 30%;
-  /* margin-bottom: 80px; */
-  height: 100vh;
-  @media screen and (max-width: 960px) {
+  height: auto;
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `,ContactFormColumn=styled.div`
   width: 50%;
   align-self: flex-start;
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     width: 100%;
     max-width: unset;
     margin-bottom: 20px;
@@ -26,10 +26,6 @@ const ContactContainer=styled(Container)`
 `,FormContainerColumn=styled(ContactFormColumn)`
   /* padding: 0 20px; */
 
-  @media (max-width: 960px) {
-    /* width: 100%; */
-    /* max-width: unset; */
-  }
 `,FormContainer=styled.div`
   display: flex;
   flex-direction: column;
@@ -37,36 +33,35 @@ const ContactContainer=styled(Container)`
   justify-content: flex-start;
   text-align: flex-start;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
   margin-right: auto;
   margin-left: auto;
   /* max-width: unset;
   width: 100%; */
-  padding: 0 10px;
-
+  padding: 0 0;
 }
 `,Heading=styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
-  color:  #4568dc;
+  color: #4568dc;
   font-size: 32px;
-  font-family: 'Rubik', sans-serif;
-  padding: 0px 0px;
-  margin-bottom: 40px;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin-bottom: 30px;
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
-    padding: 0px 10px;
+    font-size: 20px;
+    padding: 0 10px;
   }
 `,Title=styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
-  letter-spacing: 2.8px;
+  /* letter-spacing: 2.8px; */
   font-weight: normal;
   line-height: 24px;
   text-align: left;
@@ -76,7 +71,7 @@ const ContactContainer=styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 0px 10px;
+    padding: 0 10px;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -88,7 +83,7 @@ const ContactContainer=styled(Container)`
   box-shadow: rgba(0, 0, 0, 0.1);
   background: transparent;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -117,7 +112,7 @@ const ContactContainer=styled(Container)`
     outline: true;
     box-shadow: none;
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 `,TextArea=styled.textarea`
@@ -139,7 +134,7 @@ const ContactContainer=styled(Container)`
     outline: true;
     box-shadow: none;
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 `,ContactButton=styled(Button)`
