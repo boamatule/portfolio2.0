@@ -35,7 +35,14 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  
+    // email validation check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(message.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+  
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -45,12 +52,12 @@ const ContactPage = () => {
         navigate('/message_sent_successfully');
         setTimeout(() => {
           navigate('/');
-        }, 30000);
+        }, 3000);
       })
       .catch((error) => alert(error));
     event.target.reset();
   };
-
+  
   return (
     <ContactContainer>
       <ContactFormColumn>
