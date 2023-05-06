@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"title": "Kind Like Netflix",
-		"stack": "Nextjs ☆ Serveless ☆ Framer ☆ GraphQL ☆ Redis ☆ Hasura ☆ Vercel ☆ Serveless ☆ Magic ☆ ISG ☆ JWT ☆ Framer ☆ React Hooks",
+		"stack": "Next.js | Serveless | Framer | GraphQL | Redis | Hasura | Vercel | Serveless | Magic | ISG | JWT | Framer | React Hooks",
 		"imageUrl": "../../images/netflix.webp",
 		"alt": "Netflix",
 		"description": "Blog built in ReactJs and Backended using MongoDB",
@@ -12,7 +12,7 @@
 	{
 		"id": 2,
 		"title": "Crwn Clothing Platform",
-		"stack": "React.js ☆ Firebase ☆ Stripe ☆ Styled-Components ☆ Express.js",
+		"stack": "React.js | Firebase | Stripe | Styled-Components | Express.js",
 		"imageUrl": "../../images/crown.svg",
 		"alt": "Clothes",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
@@ -22,7 +22,7 @@
   {
 		"id": 3,
 		"title": "NASA Mission Control",
-		"stack": "Nextjs ☆ Serveless ☆ Framer ☆ GraphQL ☆ Redis ☆ Hasura ☆ Vercel ☆ Serveless ☆ Magic ☆ ISG ☆ JWT ☆ Framer ☆ React Hooks",
+		"stack": "Nextjs | Serveless | Framer | GraphQL | Redis | Hasura | Vercel | Magic Link | ISG | JWT | Framer-motion | React Hooks",
 		"imageUrl": "../../images/space.webp",
 		"alt": "Space",
 		"description": "Blog built in ReactJs and Backended using MongoDB",
@@ -32,7 +32,7 @@
 	{
 		"id": 4,
 		"title": "Meals To Go",
-		"stack": "React.js ☆ Firebase ☆ Stripe ☆ Styled-Components ☆ Express.js",
+		"stack": "React.js | Firebase | Stripe  | Styled-Components | Express.js",
 		"imageUrl": "../../images/mealstogo.webp",
 		"alt": "Meals",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
@@ -42,7 +42,7 @@
   {
 		"id": 5,
 		"title": "Newsroom",
-		"stack": "Nextjs ☆ Serveless ☆ Framer ☆ GraphQL ☆ Redis ☆ Hasura ☆ Vercel ☆ Serveless ☆ Magic ☆ ISG ☆ JWT ☆ Framer ☆ React Hooks",
+		"stack": "Nextjs | Framer | GraphQL | Redis | Hasura | Vercel | Serveless | Magic",
 		"imageUrl": "../../images/newsroom.webp",
 		"alt": "Newsroom",
 		"description": "Blog built in ReactJs and Backended using MongoDB",
@@ -52,7 +52,7 @@
 	{
 		"id": 6,
 		"title": "Cat BnB",
-		"stack": "React.js ☆ Firebase ☆ Stripe ☆ Styled-Components ☆ Express.js",
+		"stack": "React.js | Firebase | Stripe | Styled-Components | Express.js",
 		"imageUrl": "../../images/cat.webp",
 		"alt": "Cat",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",

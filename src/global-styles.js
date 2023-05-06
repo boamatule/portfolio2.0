@@ -8,6 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     --font-color: #000;
     --background-color: #000;
     --theme-color: #007bff;
+    width: 100%;
+    height: 100%;
   }
 
   [data-theme="dark"] {
@@ -55,7 +57,6 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Rubik';
     background-color: var(--background-color);
     color: var(--font-color);
-    height: 100vh;
   }
 
   a {
@@ -68,14 +69,12 @@ export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   height: auto;
-  width: 100%;
-  box-sizing: border-box;
   text-align: center;
   padding: 0px 10px;
-
+  
   @media (max-width: 768px) {
     margin: 0 0rem; 
-    padding: 0px 4px;
+    padding: 40px 40px;
     max-width: 100%;
     height: auto;
   }

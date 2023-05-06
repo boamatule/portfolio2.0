@@ -9,7 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "airbnb-prop-types": "^18.2.0",
+    "airbnb-prop-types": "^2.16.0",
     "babel-loader": "^9.1.2",
     "babel-minify-webpack-plugin": "^0.3.1",
     "blurhash": "^2.0.5",

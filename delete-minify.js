@@ -6,7 +6,9 @@ const path = require("path");
 const directoryPath = "./src"; // Replace with your desired directory path
 
 // Delete all files ending with ".minified.js" and ".min.js"
-const files = glob.sync(`${directoryPath}/**/*.minified.js/*.min.js`, { nodir: true });
+const filePattern = `${directoryPath}/**/*.{minified,min}.js`;
+const files = glob.sync(filePattern, { nodir: true });
+
 files.forEach(file => {
   const filePath = path.join(file);
   fs.unlinkSync(filePath); // Delete file

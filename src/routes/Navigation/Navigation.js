@@ -122,21 +122,21 @@ const NavBar = () => {
                 >
                   <FaLinkedinIn
                     style={{
-                      width: '20px',
-                      height: '20px'
+                      width: '18px',
+                      height: '18px'
                     }}
                   />
                 </NavItemSocialIconLink>
                 <NavItemSocialIconLink
-                  href="https://github.com/boamatule"
+                  href="https://takringen.no/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
                 >
                   <FaGithub
                     style={{
-                      width: '20px',
-                      height: '20px',
+                      width: '18px',
+                      height: '18px',
                       marginLeft: '0px'
                     }}
                   />

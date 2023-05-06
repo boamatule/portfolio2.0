@@ -5,11 +5,11 @@ const ContactContainer=styled(Container)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 80px; */
   background: transparent;
-  top: 30%;
+  /* top: 30%; */
   height: auto;
-
+  padding: 10em 0em;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }

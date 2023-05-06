@@ -9,7 +9,8 @@ FooterWrapper=styled(Container)`
   left: 0px;
   right: 0;
   width: 100%;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
+  margin: 0em 15em;
 
 `,FooterLinksContainer=styled.div`
   display: flex;

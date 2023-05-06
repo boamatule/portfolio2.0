@@ -4,42 +4,55 @@ import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
-  padding: 0 0rem;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  /* margin: 20em 10em; */
   background: none;
-  top: 40%;
+  padding: 2em 0em;
+  @media screen and (max-width: 768px) {
+    /* padding: 40px 40px;   */
+  }
 `;
 
 export const Title = styled.p`
   font-size: 14px;
   font-weight: normal;
-  letter-spacing: 8px;
+  letter-spacing: 2px;
   line-height: 4px;
   color: grey;
   margin-bottom: 24px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
 `;
 
 export const Heading = styled.h1`
+  display: flex;
   font-weight: bold;
-  line-height: 20px;
-  letter-spacing: 4px;
+  padding: 0px 0px;
   color: #4568dc;
-  justify-content: flex-start;
-  text-align: flex-start;
   font-size: 32px;
-  font-family: 'Rubik';
   margin-bottom: 30px;
-  text-align: left;
 
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-    padding: 0 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    text-align: flex-start;
+    padding: 0px 0px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
   }
 `;
 
@@ -66,7 +79,7 @@ export const ButtonWrapper = styled.div`
   margin: 0;
   padding: 10px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     padding: 46px;
   }
 `;
@@ -76,7 +89,7 @@ export const Text = styled.p`
   font-size: 14px;
   padding-left: 0;
   text-align: center;
-  background: transparent;
+  /* background: transparent; */
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
@@ -101,13 +114,14 @@ export const CardContainer = styled.div`
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin: 0;
     width: 100%;
     z-index: -1;
+    /* padding: 40px 40px; */
   }
 `;
 
@@ -116,15 +130,15 @@ export const ProjectDescription = styled.p`
   color: grey;
   padding: 10px;
   font-size: 14px;
-  letter-spacing: 1.6px;
+  /* letter-spacing: 1.6px; */
   line-height: 20px;
   font-weight: normal;
   background: transparent;
-  height: 120px;
+  /* height: 120px; */
 
   @media screen and (max-width: 768px) {
-    font-size: 14px;
-    padding: 0px 20px;
+    font-size: 12px;
+    padding: 4px 4px;
   }
 `;
 
@@ -140,7 +154,8 @@ export const Image = styled(LazyLoadImage)`
   justify-content: center;
   text-align: center;
   align-items: center;
-  
+  /* padding: 40px 40px; */
+
   @media screen and (max-width: 960px) {
     display: block;
     height: 100%;
@@ -149,13 +164,14 @@ export const Image = styled(LazyLoadImage)`
     justify-content: center;
     text-align: center;
     align-items: center;
+    /* padding: 40px 40px; */
   }
 `;
 export const ProjectBox = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     border-radius: 10px 10px 0px 0px;
     position: relative;
   }
@@ -173,7 +189,7 @@ export const ProjectSubtitle = styled.p`
     
   @media screen and (max-width: 960px) {
     font-size: 14px;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
   }
 `;
 export const BoxStyled = styled(motion.div)`
@@ -190,18 +206,18 @@ export const SubTitle = styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
-  /* letter-spacing: 2.8px; */
   font-weight: normal;
   line-height: 22px;
   text-align: left;
 
   @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 20px;
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 10px;
   }
 `;
 

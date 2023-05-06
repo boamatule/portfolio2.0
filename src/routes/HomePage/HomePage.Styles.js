@@ -6,20 +6,13 @@ export const HomeContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
-  @media screen and (max-width: 960px) {
+  overflow: hidden;
+  width: 100%;
+  margin: 8em 15em;
+
+  @media screen and (max-width: 768px) {
     margin: 0 auto;
     padding: 0 4px;
   }
-`;
-
-export const HomeWrapper = styled.div`
-  margin-top: 80px;
-`;
-
-export const ProjectsListContainer = styled.div`
-  margin-top: auto;
-  margin-bottom: 60px;
-  justify-content: space-between;
 `;
 

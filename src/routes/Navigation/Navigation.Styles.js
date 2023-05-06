@@ -16,9 +16,9 @@ const Nav = styled.nav`
   width:100%;
   font-size: 1rem;
   z-index: 999;
-  position: sticky;
+  /* position: sticky; */
   background: transparent;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     transition: 0.8s all ease-out;
   }
 `,
