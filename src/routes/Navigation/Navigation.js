@@ -128,7 +128,7 @@ const NavBar = () => {
                   />
                 </NavItemSocialIconLink>
                 <NavItemSocialIconLink
-                  href="https://takringen.no/"
+                  href="https://github.com/boamatule"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"

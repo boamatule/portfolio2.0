@@ -10,6 +10,7 @@ export const ProjectContainer = styled(Container)`
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
+  height: auto;
   /* margin: 20em 10em; */
   background: none;
   padding: 2em 0em;

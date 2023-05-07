@@ -1,45 +1,86 @@
-import{FaAngleUp}from"react-icons/fa";import styled from"styled-components/macro";import { Container } from "../../global-styles";
-const 
+import styled from 'styled-components';
+import { FaAngleUp } from 'react-icons/fa';
 
-FooterWrapper=styled(Container)`
-  display: flex;
-  align-items: flex-start;
-  position: fixed;
-  bottom: 40px;
-  left: 0px;
-  right: 0;
+export const FooterContainer = styled.footer`
+  background-color: none;
+  padding: 0 10em;
+  text-align: center;
+  bottom: 0;
   width: 100%;
-  /* padding: 0px 10px; */
-  margin: 0em 15em;
-
-`,FooterLinksContainer=styled.div`
+  /* height: 100px; */
+  margin-bottom: 30px;
   display: flex;
-  justify-content: center;
-  @media screen and (max-width: 800) {
-    padding-top: 32px;
-  }
-`,Copyright=styled.p`
-  font-weight: normal;
+  /* justify-content: center; */
+  align-items: left;
+  /* z-index: 1000; */
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1em;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    align-items: left;
+`;
+
+export const Copyright = styled.p`
+  margin: 0;
   font-size: 16px;
-  line-height: 4px;
-  letter-spacing: 2px;
-  color: #4568dc;
   text-align: left;
+  color: #4568dc;
 
-  @media screen and (max-width: 960px) {
-    font-size: 12px;
-    line-height: 2px;
-    letter-spacing: 1px;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    text-align: left;
+    /* margin-bottom: 60px; */
+
   }
-`,ScrollToTopContainer=styled.div`
+`;
+
+export const SocialLinks = styled.div`
+  margin-top: 0px;
+  padding: 0 1em;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    
+  }
+`;
+
+export const SocialLink = styled.a`
+  margin: 0 5px;
+  color: #4568dc;
+  text-decoration: none;
+
+  &:hover {
+    color: #666;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    margin: 0 5px;
+    color: #4568dc;
+    text-decoration: none;
+  }
+`;
+
+export const ScrollToTopContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
-  bottom: 30px;
+  bottom: 38px;
   right: 160px;
   z-index: 999;
-  background: transparent,
-`,ScrollToTopButton=styled.div`
+  background: transparent;
+
+  @media screen and (max-width: 768px) {
+    right: 20px;
+  }
+`;
+
+export const ScrollToTopButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,10 +90,18 @@ FooterWrapper=styled(Container)`
   border: 2px solid #4568dc;
   cursor: pointer;
   transition: all 0.3s ease;
+
   &:hover {
     background-color: #4568dc;
-  } 
-`,ScrollToTopIcon=styled(FaAngleUp)`
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
+
+export const ScrollToTopIcon = styled(FaAngleUp)`
   width: 20px;
   height: 20px;
   color: #4568dc;
@@ -60,5 +109,10 @@ FooterWrapper=styled(Container)`
 
   &:hover {
     color: grey;
-  } 
-`;export{FooterWrapper,FooterLinksContainer,Copyright,ScrollToTopContainer,ScrollToTopButton,ScrollToTopIcon};
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 16px;
+    height: 16px;
+  }
+`;

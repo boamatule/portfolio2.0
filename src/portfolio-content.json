@@ -17,7 +17,7 @@
 		"alt": "Clothes",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
 		"deployedUrl": "https://crwn-live-clothing-app.herokuapp.com/",
-		"sourceCodeUrl": "https://crwn-live-clothing-app.herokuapp.com/"
+		"sourceCodeUrl": "https://github.com/boamatule/crwn-clothing"
 	},
   {
 		"id": 3,
@@ -26,8 +26,8 @@
 		"imageUrl": "../../images/space.webp",
 		"alt": "Space",
 		"description": "Blog built in ReactJs and Backended using MongoDB",
-		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
-		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
+		"deployedUrl": "http://13.50.105.59:8000",
+		"sourceCodeUrl": "https://github.com/boamatule/nasa_nodejs_projects"
 	},
 	{
 		"id": 4,
@@ -36,27 +36,7 @@
 		"imageUrl": "../../images/mealstogo.webp",
 		"alt": "Meals",
 		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
-		"deployedUrl": "https://crwn-live-clothing-app.herokuapp.com/",
-		"sourceCodeUrl": "https://crwn-live-clothing-app.herokuapp.com/"
-	},
-  {
-		"id": 5,
-		"title": "Newsroom",
-		"stack": "Nextjs | Framer | GraphQL | Redis | Hasura | Vercel | Serveless | Magic",
-		"imageUrl": "../../images/newsroom.webp",
-		"alt": "Newsroom",
-		"description": "Blog built in ReactJs and Backended using MongoDB",
-		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
-		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
-	},
-	{
-		"id": 6,
-		"title": "Cat BnB",
-		"stack": "React.js | Firebase | Stripe | Styled-Components | Express.js",
-		"imageUrl": "../../images/cat.webp",
-		"alt": "Cat",
-		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
-		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
-		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
+		"deployedUrl": "https://github.com/boamatule/MealsToGo",
+		"sourceCodeUrl": "https://github.com/boamatule/MealsToGo"
 	}
 ]

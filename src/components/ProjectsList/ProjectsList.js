@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
 import { ProjectsContext, ProjectsProvider } from '../../contexts/projects.context';
-
 import { Button, Glass } from '../../global-styles';
+import BlurhashImage from '../Blurhash/Blurhash';
 import {
   BoxStyled,
   ButtonWrapper,
   CardContainer,
   GithubLink,
   Heading,
-  Image,
   ProjectContainer,
   ProjectDescription,
   SubTitle,
   Text,
   Title,
+  Image,
 } from './ProjectsList.Styles';
 
 const ProjectsList = () => {
@@ -41,6 +41,9 @@ const ProjectsList = () => {
             <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
               <Glass>
                 <Image src={project.imageUrl} alt={project.alt} />
+                {/* <BlurhashImage
+                  hash={project.imageUrl} alt={project.alt}width={400} height={300} /> */}
+
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
                 <ButtonWrapper>

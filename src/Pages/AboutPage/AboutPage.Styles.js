@@ -6,16 +6,8 @@ import { Container } from "../../global-styles";
 
 const AboutWrapper = styled(Container)`
   display: flex;
-  /* width: 100vh;
-  height: 100vh; */
-  /* align-items: center;
-  justify-content: center; */
-
-  /* margin: 20em 10em; */
   font-family: Rubik;
-  /* font-style: normal; */
   background-color: transparent;
-  /* margin-top: 12em; */
   padding: 0em 0em;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -30,7 +22,7 @@ const AboutWrapper = styled(Container)`
   Column = styled.div`
   /* width: 50%; */
   width: 100vh;
-  height: 80vh;
+  height: auto;
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 20px;
@@ -84,7 +76,6 @@ const AboutWrapper = styled(Container)`
   padding: 0px 0px;
   color: #4568dc;
   font-size: 32px;
-  /* margin-bottom: 30px; */
   justify-content: flex-start;
   text-align: flex-start;
 
@@ -163,13 +154,22 @@ const GradientButton = styled.a`
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(to right, #ff9f01, #ffc800);
+  @media screen and (max-width: 768px) {
+    display: none;
+  } 
 `;
 
 const Text = styled.span`
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9em;
   font-weight: bold;
+  padding: 0.5em 1em;
+  display: block;
+  position: relative;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+  line-height: 1em;
 `;
 
 const SlideAnimation = styled.span`

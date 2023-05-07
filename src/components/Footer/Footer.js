@@ -1,21 +1,24 @@
 import React from 'react';
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-
-import {
-  Copyright,
-  FooterWrapper,
-  ScrollToTopButton,
-  ScrollToTopContainer,
-  ScrollToTopIcon,
-} from './Footer.Styles';
+import { Copyright, FooterContainer, ScrollToTopButton, ScrollToTopContainer, ScrollToTopIcon, SocialLink, SocialLinks } from './Footer.Styles';
 
 const Footer = () => {
+  const currentDate = new Date().getFullYear();
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
-    <FooterWrapper>
-      <Copyright>©&nbsp;Boa Matule <span id="year">2023</span></Copyright>
+    <FooterContainer>
+      <Copyright>&copy; {currentDate} Boa Matule. All rights reserved.</Copyright>
+      {/* <SocialLinks>
+        <SocialLink href="https://www.linkedin.com/in/boa-matule-2082b068">
+          <FaLinkedinIn />
+        </SocialLink>
+        <SocialLink href="https://github.com/boamatule">
+          <FaGithub />
+        </SocialLink>
+      </SocialLinks> */}
       <ScrollToTopContainer>
         <ScrollToTopButton>
           <ScrollToTopIcon
@@ -23,8 +26,8 @@ const Footer = () => {
           />
         </ScrollToTopButton>
       </ScrollToTopContainer>
-    </FooterWrapper>
+    </FooterContainer>
   );
-}
+};
 
 export default React.memo(Footer);
