@@ -6,16 +6,13 @@ import { Container } from '../../global-styles';
 export const ProjectContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
   height: auto;
-  /* margin: 20em 10em; */
   background: none;
   padding: 2em 0em;
   @media screen and (max-width: 768px) {
-    /* padding: 40px 40px;   */
   }
 `;
 
@@ -90,7 +87,6 @@ export const Text = styled.p`
   font-size: 14px;
   padding-left: 0;
   text-align: center;
-  /* background: transparent; */
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
@@ -107,7 +103,8 @@ export const GithubLink = styled.a`
 
 export const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
   align-items: center;
   grid-gap: 14px;
   padding-top: 4rem;
@@ -117,15 +114,34 @@ export const CardContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    /* justify-content: center;
-    align-items: center; */
     margin: 0;
     width: 100%;
     z-index: -1;
-    /* padding: 40px 40px; */
   }
 `;
-
+export const Image = styled(LazyLoadImage)`
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+ 
+  @media screen and (max-width: 960px) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+`;
 export const ProjectDescription = styled.p`
   display: inline-block;
   color: grey;
@@ -143,31 +159,6 @@ export const ProjectDescription = styled.p`
   }
 `;
 
-export const Image = styled(LazyLoadImage)`
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding-bottom: 10px;
-  background-color: transparent;
-  border-radius: 10px 10px 0px 0px;
-  object-fit: cover;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  /* padding: 40px 40px; */
-
-  @media screen and (max-width: 960px) {
-    display: block;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    /* padding: 40px 40px; */
-  }
-`;
 export const ProjectBox = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
