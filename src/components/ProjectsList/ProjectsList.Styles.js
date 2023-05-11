@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styled from 'styled-components';
 import { Container } from '../../global-styles';
+import { SCREENS } from "../../components/responsive";
 
 export const ProjectContainer = styled(Container)`
   display: flex;
@@ -12,7 +13,21 @@ export const ProjectContainer = styled(Container)`
   height: auto;
   background: none;
   padding: 2em 0em;
-  @media screen and (max-width: 768px) {
+
+  @media (min-width: ${SCREENS.sm}) {
+    padding: 2em 0em;
+	}
+
+  @media (min-width: ${SCREENS.md}) {
+    padding: 2em 0em;
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    padding: 2em 0em;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    padding: 2em 0em;
   }
 `;
 
@@ -25,8 +40,27 @@ export const Title = styled.p`
   margin-bottom: 24px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
+  @media (min-width: ${SCREENS.sm}) {
+    font-size: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+	}
+
+  @media (min-width: ${SCREENS.md}) {
+    font-size: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  @media (min-width: ${SCREENS.lg}) {
+    font-size: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    font-size: 16px;
+    margin-bottom: 24px;
     text-align: center;
   }
 `;
@@ -64,8 +98,32 @@ export const CardWrapper = styled.div`
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 960px) {
+  /* @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
+  } */
+
+  @media (min-width: ${SCREENS.sm}) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+	}
+
+  @media (min-width: ${SCREENS.md}) {
+    grid-template-columns: 2fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    grid-template-columns: 4fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    grid-template-columns: 4fr;
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -77,9 +135,26 @@ export const ButtonWrapper = styled.div`
   margin: 0;
   padding: 10px;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     padding: 46px;
+  } */
+
+  @media (min-width: ${SCREENS.sm}) {
+    padding: 10px;
+	}
+
+  @media (min-width: ${SCREENS.md}) {
+    padding: 10px;
   }
+
+  @media (min-width: ${SCREENS.lg}) {
+    padding: 10px;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    padding: 10px;
+  }
+
 `;
 
 export const Text = styled.p`
@@ -88,9 +163,25 @@ export const Text = styled.p`
   padding-left: 0;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     font-size: 12px;
+  } */
+  @media (min-width: ${SCREENS.sm}) {
+    font-size: 14px;
+	}
+
+  @media (min-width: ${SCREENS.md}) {
+    font-size: 14px;
   }
+
+  @media (min-width: ${SCREENS.lg}) {
+    font-size: 14px;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    font-size: 14px;
+  }
+
 `;
 
 export const GithubLink = styled.a`
@@ -112,7 +203,35 @@ export const CardContainer = styled.div`
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+  } */
+
+  @media (min-width: ${SCREENS.sm}) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media (min-width: ${SCREENS.md}) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
     grid-template-columns: 1fr;
     margin: 0;
     width: 100%;
@@ -131,7 +250,7 @@ export const Image = styled(LazyLoadImage)`
   justify-content: center;
   text-align: center;
   align-items: center;
- 
+
   @media screen and (max-width: 960px) {
     display: block;
     height: 100%;
@@ -141,6 +260,7 @@ export const Image = styled(LazyLoadImage)`
     text-align: center;
     align-items: center;
   }
+    
 `;
 export const ProjectDescription = styled.p`
   display: inline-block;

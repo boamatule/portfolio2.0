@@ -1,6 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
+import styled from "styled-components";
+import tw from "twin.macro";
+// import './index.css';
 const NavBar = lazy(() => import('./routes/Navigation/Navigation'));
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
@@ -15,8 +17,13 @@ const SkillsSet = lazy(() => import('./components/SkillsSet/SkillsSet'));
 
 const renderLoader = () => <WithSpinner />;
 
+const AppContainer = styled.div`
+  /* ${tw`w-full h-full flex flex-col justify-between items-center overflow-hidden relative`} */
+`;
+
 const App = () => {
   return (
+    <AppContainer>
     <Suspense fallback={renderLoader()}>
       <Routes>
         <Route path="/" element={<NavBar />}>
@@ -31,7 +38,8 @@ const App = () => {
         </Route>
       </Routes>
       <Footer />
-    </Suspense >
+    </Suspense>
+    </AppContainer>
   );
 }
 

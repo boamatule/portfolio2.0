@@ -3,28 +3,22 @@ import About from '../../Pages/AboutPage/AboutPage';
 import ContactPage from '../../Pages/ContactPage/ContactPage';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import { HomeContainer } from './HomePage.Styles';
-import SkillsSet from '../../components/SkillsSet/SkillsSet';
-import Banner from '../../components/Banner/Banner';
+import Profile from '../../components/Profile/Profile';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+
+const HomePageContaner  = styled.div`
+${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
+`;
 
 const HomePage = () => {
   return (
-    <HomeContainer>
-      {/* <Banner /> */}
-      <About 
-        style={{
-          // width: '100vh',
-          // height: '100vh',
-          // margin: '20em 10em',
-          // fontFamily: 'Rubik',
-          // backgroundColor: 'transparent',
-          // marginTop: '12em',
-          // padding: '0em 0em',
-        }}
-        />
+    <HomePageContaner>
+      {/* <Profile /> */}
+      <About />
       <ProjectsList />
       <ContactPage />
-      {/* <SkillsSet /> */}
-    </HomeContainer>
+    </HomePageContaner>
   );
 }
 export default React.memo(HomePage);

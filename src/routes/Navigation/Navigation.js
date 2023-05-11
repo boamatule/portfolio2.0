@@ -90,9 +90,9 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks to="contact_me">contact</NavLinks>
                 </NavItem>
-                {/* <NavItem>
-                  <NavLinks to="my_skills_set">Skills</NavLinks>
-                </NavItem> */}
+                <NavItem>
+                  <NavLinks to="profile">Profile</NavLinks>
+                </NavItem>
               </NavMenu>
             )}
             <NavItemSocialIconWrapper

@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`expect to render NavBar Component 1`] = `ShallowWrapper {}`;
-
-exports[`matches the snapshot 1`] = `ShallowWrapper {}`;

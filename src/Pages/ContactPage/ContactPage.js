@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 import {
   ArrowRight,
@@ -15,6 +17,10 @@ import {
   TextArea,
   Title,
 } from './ContactPage.Styles';
+
+// const ContactContainer = styled.div`
+//   ${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
+// `;
 
 const ContactPage = () => {
   const navigate = useNavigate();
