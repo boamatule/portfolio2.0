@@ -73,7 +73,7 @@ export const ScrollToTopContainer = styled.div`
   position: fixed;
   bottom: 38px;
   right: 160px;
-  z-index: 999;
+  /* z-index: -1; */
   background: transparent;
 
   @media screen and (max-width: 768px) {

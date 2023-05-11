@@ -33,7 +33,7 @@ const Dropdown = ({ setClick }) => {
             to="/contact_me"
             onClick={() => setClick(false)}
           >
-            Get In Touch
+            Contact me
           </DropdownLink>
         </DropdownItem>
       </DropdownMenu>

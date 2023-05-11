@@ -11,14 +11,13 @@ const PortfolioListPage = lazy(() => import('./Pages/PortfolioPage/PortfolioList
 const SuccessPage = lazy(() => import('./routes/SuccessPage/SuccessPage'));
 const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
-const Profile = lazy(() => import('./components/Profile/Profile'));
 const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.component'));
 const SkillsSet = lazy(() => import('./components/SkillsSet/SkillsSet'));
 
 const renderLoader = () => <WithSpinner />;
 
 const AppContainer = styled.div`
-  /* ${tw`w-full h-full flex flex-col justify-between items-center overflow-hidden relative`} */
+  /* ${tw`relative flex flex-col items-center justify-between w-full h-full overflow-hidden`} */
 `;
 
 const App = () => {
@@ -28,11 +27,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<HomePage />} />
-          <Route path="profile" element={<Profile />} />
           <Route path="about_me" element={<AboutPage />} />
           <Route path="contact_me" element={<ContactPage />} />
           <Route path="projects" element={<PortfolioListPage />} />
-          <Route path="my_skills_set" element={<SkillsSet />} />
           <Route path="message_sent_successfully" element={<SuccessPage />} />
           <Route element={<NotFound />} />
         </Route>

@@ -29,30 +29,7 @@ export const Title = styled.p`
   color: grey;
   margin-bottom: 24px;
   text-align: center;
-
-  /* @media (min-width: ${SCREENS.sm}) {
-    font-size: 16px;
-    margin-bottom: 24px;
-    text-align: center;
-	}
-
-  @media (min-width: ${SCREENS.md}) {
-    font-size: 16px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  
-  @media (min-width: ${SCREENS.lg}) {
-    font-size: 16px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
-    font-size: 16px;
-    margin-bottom: 24px;
-    text-align: center;
-  } */
+  font-family: Rubik;
 `;
 
 export const Heading = styled.h1`
