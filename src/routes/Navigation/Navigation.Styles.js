@@ -16,8 +16,8 @@ const Nav = styled.nav`
   width:100%;
   font-size: 1rem;
   z-index: 999;
-  /* position: sticky; */
   background: transparent;
+
   @media screen and (max-width: 768px) {
     transition: 0.8s all ease-out;
   }
@@ -36,7 +36,7 @@ MobileIconContainer = styled.div`
   width: 100%;
 `, FaBarsIcon = styled(FaBars)`
     display: none;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
@@ -54,7 +54,7 @@ NavbarContainer = styled(Container)`
   width: 100%;
   padding: 0 0;
   font-family: Rubik;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
 
   }
 `,
@@ -120,7 +120,7 @@ NavbarContainer = styled(Container)`
     border-bottom: 3px solid #4568dc;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     padding: 1rem 0.5rem;
     margin: 0.5rem 0;
 
@@ -137,7 +137,7 @@ NavbarContainer = styled(Container)`
   top: 0;
   height: 80px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     padding-right: 60px;
     align-items: center;
     flex-direction: row;
@@ -158,7 +158,7 @@ NavbarContainer = styled(Container)`
   justify-content: space-between;
   margin-right: 6rem;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     top: 0px;
     align-items: flex-start;
   }
@@ -169,7 +169,7 @@ NavbarContainer = styled(Container)`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -191,7 +191,7 @@ NavbarContainer = styled(Container)`
     background-color:  #4568dc;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     margin-left: 0rem;
   }
 

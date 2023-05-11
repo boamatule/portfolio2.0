@@ -1,21 +1,29 @@
-import{MdOutlineArrowRightAlt}from"react-icons/md";import styled from"styled-components";import{Button,Container}from"../../global-styles";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import styled from "styled-components";
+import { Button, Container } from "../../global-styles";
 
-const ContactContainer=styled(Container)`
+const ContactContainer = styled(Container)`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 80px; */
-  background: transparent;
-  /* top: 30%; */
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
   height: auto;
-  padding: 10em 0em;
+  padding: 6em 4em;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0em 1em;
+    margin-bottom: 60px;
+    background-color: none;
+
   }
-`,ContactFormColumn=styled.div`
+`, ContactFormColumn = styled.div`
   width: 50%;
   align-self: flex-start;
+  background-color: transparent;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -23,10 +31,10 @@ const ContactContainer=styled(Container)`
     margin-bottom: 20px;
     padding: 0 10px;
   }
-`,FormContainerColumn=styled(ContactFormColumn)`
+`, FormContainerColumn = styled(ContactFormColumn)`
   /* padding: 0 20px; */
 
-`,FormContainer=styled.div`
+`, FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,11 +46,9 @@ const ContactContainer=styled(Container)`
   @media screen and (max-width: 768px) {
   margin-right: auto;
   margin-left: auto;
-  /* max-width: unset;
-  width: 100%; */
-  padding: 0 0;
+  padding: 0em 1em;
 }
-`,Heading=styled.h1`
+`, Heading = styled.h1`
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 4px;
@@ -55,9 +61,9 @@ const ContactContainer=styled(Container)`
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
-    padding: 0 10px;
+    padding: 0em 0.6em;
   }
-`,Title=styled.p`
+`, Title = styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
@@ -71,12 +77,12 @@ const ContactContainer=styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 0 10px;
+    padding: 0em 1em;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
   }
-`,Form=styled.form`
+`, Form = styled.form`
   margin: auto;
   width: 100%;
   display: grid;
@@ -90,7 +96,7 @@ const ContactContainer=styled(Container)`
     padding-right: 0px;
     padding-left: 0px;
   }
-`,Input=styled.input`
+`, Input = styled.input`
   background: transparent;
   border: none;
   color: #474747;
@@ -115,7 +121,7 @@ const ContactContainer=styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
-`,TextArea=styled.textarea`
+`, TextArea = styled.textarea`
   background: transparent;
   border: 0;
   border: none;
@@ -137,7 +143,7 @@ const ContactContainer=styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
-`,ContactButton=styled(Button)`
+`, ContactButton = styled(Button)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,21 +158,21 @@ const ContactContainer=styled(Container)`
   color: white;
   text-transform: uppercase;
   font-weight: normal;
-  border: 4px;
+  /* border: 4px; */
   cursor: pointer;
   margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
     line-height: 36px;  }
-  `,ContactButtonWrapper=styled.div`
+  `, ContactButtonWrapper = styled.div`
   justify-content: center;
   display: flex;
   margin-top: 20px;
-`,ArrowRight=styled(MdOutlineArrowRightAlt)`
+`, ArrowRight = styled(MdOutlineArrowRightAlt)`
   display: flex;
   font-weight: bold;
   color: white;
   width: auto;
   height: 40px;
-  `;export{ContactContainer,ContactFormColumn,FormContainerColumn,FormContainer,Heading,Title,Form,Input,TextArea,ContactButton,ContactButtonWrapper,ArrowRight};
+  `; export { ArrowRight, ContactButton, ContactButtonWrapper, ContactContainer, ContactFormColumn, Form, FormContainer, FormContainerColumn, Heading, Input, TextArea, Title };

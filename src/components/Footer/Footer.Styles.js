@@ -3,20 +3,21 @@ import { FaAngleUp } from 'react-icons/fa';
 
 export const FooterContainer = styled.footer`
   background-color: none;
-  padding: 0 10em;
+  padding: 0 14em;
   text-align: center;
   bottom: 0;
   width: 100%;
-  /* height: 100px; */
+  /* height: 80px; */
   margin-bottom: 30px;
   display: flex;
   /* justify-content: center; */
   align-items: left;
   /* z-index: 1000; */
   position: relative;
+  /* padding: 6em 4em; */
 
   @media screen and (max-width: 768px) {
-    padding: 0 1em;
+    padding: 0 3em;
     margin-top: 0px;
     margin-bottom: 60px;
     align-items: left;
@@ -90,6 +91,7 @@ export const ScrollToTopButton = styled.div`
   border: 2px solid #4568dc;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 12px;
 
   &:hover {
     background-color: #4568dc;

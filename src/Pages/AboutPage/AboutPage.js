@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React from 'react';
+import styled from "styled-components";
+import tw from "twin.macro";
 
 import { Button } from "../../global-styles";
 import {
@@ -14,6 +16,10 @@ import {
   Text,
   TextColumn,
 } from './AboutPage.Styles';
+
+// const Heading = styled(motion.h1)`
+//   ${tw`flex mb-4 text-4xl font-bold indigo-800 text- md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-9xl 4xl:text-10xl`}  
+// `;
 
 const backgroundImage = "../../images/background.svg";
 
@@ -46,7 +52,7 @@ const AboutPage = () => (
   <AboutWrapper>
     <TextColumn>
       <Heading variants={variants} initial="hidden" animate="visible">
-        {"Hello, I'm Boa Matule".split("").map((letter, index) => {
+        {"Hello, I'm Boa Matule.".split("").map((letter, index) => {
           return (
             <React.Fragment key={index}>
               <motion.span variants={letterVariants}>{letter}</motion.span>

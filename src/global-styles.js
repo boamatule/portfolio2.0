@@ -117,5 +117,5 @@ export const Glass = styled.div`
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px 10px 0 0;
   border: 1px solid rgba(255
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;

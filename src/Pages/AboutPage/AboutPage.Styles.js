@@ -8,14 +8,16 @@ const AboutWrapper = styled(Container)`
   display: flex;
   font-family: Rubik;
   background-color: transparent;
-  padding: 0em 0em;
+  width: 100%;
+  height: 76vh;
+  padding: 8em 4em;
+  
   @media (max-width: 768px) {
     flex-direction: column;
-  }
-
-  @media screen and (max-width: 768px) {
     height: auto;
     margin-bottom: 20px;
+    padding: 0em 1em;
+    height: 76vh;
   }
 `,
 

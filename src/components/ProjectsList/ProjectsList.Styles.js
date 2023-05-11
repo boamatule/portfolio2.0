@@ -12,22 +12,12 @@ export const ProjectContainer = styled(Container)`
   width: 100%;
   height: auto;
   background: none;
-  padding: 2em 0em;
+  padding: 8em 4em;
 
-  @media (min-width: ${SCREENS.sm}) {
-    padding: 2em 0em;
-	}
-
-  @media (min-width: ${SCREENS.md}) {
-    padding: 2em 0em;
-  }
-
-  @media (min-width: ${SCREENS.lg}) {
-    padding: 2em 0em;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
-    padding: 2em 0em;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0em 1em;
+    margin-bottom: 60px;
   }
 `;
 
@@ -40,7 +30,7 @@ export const Title = styled.p`
   margin-bottom: 24px;
   text-align: center;
 
-  @media (min-width: ${SCREENS.sm}) {
+  /* @media (min-width: ${SCREENS.sm}) {
     font-size: 16px;
     margin-bottom: 24px;
     text-align: center;
@@ -62,7 +52,7 @@ export const Title = styled.p`
     font-size: 16px;
     margin-bottom: 24px;
     text-align: center;
-  }
+  } */
 `;
 
 export const Heading = styled.h1`
@@ -71,19 +61,13 @@ export const Heading = styled.h1`
   padding: 0px 0px;
   color: #4568dc;
   font-size: 32px;
-  margin-bottom: 30px;
+  justify-content: flex-start;
+  text-align: flex-start;
 
   @media screen and (max-width: 768px) {
-    font-size: 28px;
-    margin-bottom: 20px;
-    justify-content: flex-start;
-    text-align: flex-start;
-    padding: 0px 0px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    justify-content: left;
+    text-align: left;
     padding: 0px 10px;
   }
 `;
@@ -101,7 +85,7 @@ export const CardWrapper = styled.div`
   /* @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
   } */
-
+/* 
   @media (min-width: ${SCREENS.sm}) {
     grid-template-columns: 1fr;
     margin: 0;
@@ -109,11 +93,11 @@ export const CardWrapper = styled.div`
 	}
 
   @media (min-width: ${SCREENS.md}) {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
-  }
-
+  } */
+/* 
   @media (min-width: ${SCREENS.lg}) {
     grid-template-columns: 4fr;
     margin: 0;
@@ -124,7 +108,7 @@ export const CardWrapper = styled.div`
     grid-template-columns: 4fr;
     margin: 0;
     padding: 0;
-  }
+  } */
 `;
 
 export const ButtonWrapper = styled.div`
@@ -166,7 +150,7 @@ export const Text = styled.p`
   /* @media screen and (max-width: 768px) {
     font-size: 12px;
   } */
-  @media (min-width: ${SCREENS.sm}) {
+  /* @media (min-width: ${SCREENS.sm}) {
     font-size: 14px;
 	}
 
@@ -180,7 +164,7 @@ export const Text = styled.p`
 
   @media (min-width: ${SCREENS.xl}) {
     font-size: 14px;
-  }
+  } */
 
 `;
 
@@ -194,8 +178,8 @@ export const GithubLink = styled.a`
 
 export const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   grid-gap: 14px;
   padding-top: 4rem;
@@ -203,35 +187,7 @@ export const CardContainer = styled.div`
   text-align: center;
   justify-content: center;
 
-  /* @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    width: 100%;
-    z-index: -1;
-  } */
-
-  @media (min-width: ${SCREENS.sm}) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    width: 100%;
-    z-index: -1;
-  }
-
-  @media (min-width: ${SCREENS.md}) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    width: 100%;
-    z-index: -1;
-  }
-
-  @media (min-width: ${SCREENS.lg}) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    width: 100%;
-    z-index: -1;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     margin: 0;
     width: 100%;

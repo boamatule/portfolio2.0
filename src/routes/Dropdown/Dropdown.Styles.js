@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 const DropdownContainer = styled.div`
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 100vh;
   top: 0;
-  left: 0;
+  left: 30%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: right; */
   background: white;
   animation: slideIn 0.3s ease-out forwards;
-
+  z-index: 999;
   @keyframes slideIn {
     from {
       transform: translateX(100%);
@@ -24,22 +24,25 @@ const DropdownContainer = styled.div`
 `,
 
 DropdownMenu = styled.ul`
-  display: flex; flex-direction: row; align-items: center; list-style: none; background: none;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  list-style: none; 
+  background: transparent;
+  text-transform: uppercase;
 `, DropdownItem = styled.li`
   display: block;
 `,
 
   DropdownLink = styled(Link)`
 	display: flex;
-	font-size: 1.2rem;
-	list-style: none;
-	transition: 0.2s ease-in-out;
+	font-size: 1rem;
+  transition: 0.2s ease-in-out;
 	color: grey;
 	cursor: pointer;
 	margin-top: 0%;
-  margin-right: 60px; 
   padding: 14px;
-  text-align: left;
+  text-align: center;
   font-family: Rubik;
   font-style: bold;
 

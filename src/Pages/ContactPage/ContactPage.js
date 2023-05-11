@@ -17,6 +17,7 @@ import {
   TextArea,
   Title,
 } from './ContactPage.Styles';
+import { Button } from '../../global-styles';
 
 // const ContactContainer = styled.div`
 //   ${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
@@ -107,7 +108,9 @@ const ContactPage = () => {
             />
             <TextArea placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
-              <ContactButton small fontSmall primary aria-label="Contact" type="submit">
+              <ContactButton
+                // small fontSmall primary
+                aria-label="Contact" type="submit">
                 <ArrowRight />
               </ContactButton>
             </ContactButtonWrapper>

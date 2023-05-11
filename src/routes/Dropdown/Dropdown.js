@@ -15,13 +15,13 @@ const Dropdown = ({ setClick }) => {
             to="/"
             onClick={() => setClick(false)}
           >
-            My Homepage
+            Home
           </DropdownLink>
           <DropdownLink
             to="/projects"
             onClick={() => setClick(false)}
           >
-            My Portfolio
+            Portfolio
           </DropdownLink>
           <DropdownLink
             to="/about_me"
