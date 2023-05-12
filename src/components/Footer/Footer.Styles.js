@@ -7,20 +7,17 @@ export const FooterContainer = styled.footer`
   text-align: center;
   bottom: 0;
   width: 100%;
-  /* height: 80px; */
   margin-bottom: 30px;
   display: flex;
-  /* justify-content: center; */
   align-items: left;
-  /* z-index: 1000; */
-  position: relative;
-  /* padding: 6em 4em; */
+  position: fixed;
 
   @media screen and (max-width: 768px) {
     padding: 0 3em;
     margin-top: 0px;
     margin-bottom: 60px;
     align-items: left;
+  }
 `;
 
 export const Copyright = styled.p`
@@ -32,8 +29,6 @@ export const Copyright = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     text-align: left;
-    /* margin-bottom: 60px; */
-
   }
 `;
 
@@ -45,7 +40,6 @@ export const SocialLinks = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: flex-start;
-    
   }
 `;
 
@@ -57,7 +51,6 @@ export const SocialLink = styled.a`
   &:hover {
     color: #666;
   }
-
 
   @media screen and (max-width: 768px) {
     margin: 0 5px;
@@ -71,13 +64,12 @@ export const ScrollToTopContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  bottom: 38px;
-  right: 160px;
-  /* z-index: -1; */
+  bottom: 20px;
+  right: 20px;
   background: transparent;
 
   @media screen and (max-width: 768px) {
-    right: 20px;
+    right: 10px;
   }
 `;
 

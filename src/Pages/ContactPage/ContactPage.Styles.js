@@ -10,7 +10,7 @@ const ContactContainer = styled(Container)`
   background-color: transparent;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  /* height: 100vh; */
   padding: 6em 4em;
 
   @media screen and (max-width: 768px) {
