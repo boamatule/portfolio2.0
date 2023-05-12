@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styled from 'styled-components';
 import { Container } from '../../global-styles';
-import { SCREENS } from "../../components/responsive";
 
 export const ProjectContainer = styled(Container)`
   display: flex;
@@ -59,33 +58,6 @@ export const CardWrapper = styled.div`
   text-align: center;
   justify-content: center;
 
-  /* @media screen and (max-width: 960px) {
-    grid-template-columns: 1fr;
-  } */
-/* 
-  @media (min-width: ${SCREENS.sm}) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-	}
-
-  @media (min-width: ${SCREENS.md}) {
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-  } */
-/* 
-  @media (min-width: ${SCREENS.lg}) {
-    grid-template-columns: 4fr;
-    margin: 0;
-    padding: 0;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
-    grid-template-columns: 4fr;
-    margin: 0;
-    padding: 0;
-  } */
 `;
 
 export const ButtonWrapper = styled.div`
@@ -95,27 +67,6 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   margin: 0;
   padding: 10px;
-
-  /* @media screen and (max-width: 768px) {
-    padding: 46px;
-  } */
-
-  @media (min-width: ${SCREENS.sm}) {
-    padding: 10px;
-	}
-
-  @media (min-width: ${SCREENS.md}) {
-    padding: 10px;
-  }
-
-  @media (min-width: ${SCREENS.lg}) {
-    padding: 10px;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
-    padding: 10px;
-  }
-
 `;
 
 export const Text = styled.p`
@@ -123,26 +74,6 @@ export const Text = styled.p`
   font-size: 14px;
   padding-left: 0;
   text-align: center;
-
-  /* @media screen and (max-width: 768px) {
-    font-size: 12px;
-  } */
-  /* @media (min-width: ${SCREENS.sm}) {
-    font-size: 14px;
-	}
-
-  @media (min-width: ${SCREENS.md}) {
-    font-size: 14px;
-  }
-
-  @media (min-width: ${SCREENS.lg}) {
-    font-size: 14px;
-  }
-
-  @media (min-width: ${SCREENS.xl}) {
-    font-size: 14px;
-  } */
-
 `;
 
 export const GithubLink = styled.a`

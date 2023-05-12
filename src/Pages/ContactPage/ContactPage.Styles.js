@@ -16,9 +16,8 @@ const ContactContainer = styled(Container)`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0em 1em;
-    margin-bottom: 60px;
+    margin-bottom: 200px;
     background-color: none;
-
   }
 `, ContactFormColumn = styled.div`
   width: 50%;

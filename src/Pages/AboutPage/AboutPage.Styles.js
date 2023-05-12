@@ -11,13 +11,13 @@ const AboutWrapper = styled(Container)`
   width: 100%;
   height: 76vh;
   padding: 8em 4em;
-  
+  overflow: hidden;
+
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
     margin-bottom: 20px;
     padding: 0em 1em;
-    height: 76vh;
   }
 `,
 

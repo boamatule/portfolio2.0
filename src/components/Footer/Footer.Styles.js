@@ -3,19 +3,19 @@ import { FaAngleUp } from 'react-icons/fa';
 
 export const FooterContainer = styled.footer`
   background-color: none;
-  padding: 0 14em;
+  padding: 4em 14em;
   text-align: center;
   bottom: 0;
   width: 100%;
-  margin-bottom: 30px;
   display: flex;
   align-items: left;
   position: fixed;
 
   @media screen and (max-width: 768px) {
-    padding: 0 3em;
+    /* top: 60px; */
+    padding: 1em 2em;
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     align-items: left;
   }
 `;
@@ -64,12 +64,13 @@ export const ScrollToTopContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 160px;
   background: transparent;
 
   @media screen and (max-width: 768px) {
-    right: 10px;
+    right: 28px;
+    bottom: 0px;
   }
 `;
 
