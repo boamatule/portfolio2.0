@@ -86,11 +86,11 @@ const AboutWrapper = styled(Container)`
     margin-bottom: 0px;
     justify-content: left;
     text-align: left;
-    padding: 0px 0px;
+    /* padding: 0px 10px; */
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     padding: 0px 10px;
   }

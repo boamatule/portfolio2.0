@@ -9,8 +9,8 @@ export const FooterContainer = styled.footer`
   width: 100%;
   display: flex;
   align-items: left;
-  position: fixed;
-
+  /* position: fixed; */
+  z-index: -1;
   @media screen and (max-width: 768px) {
     /* top: 60px; */
     padding: 1em 2em;

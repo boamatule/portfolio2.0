@@ -255,4 +255,24 @@ cursor: pointer;
   transform: scale(1.2); 
 }
 `
+
+export const NavItemToggle = styled(motion.div)`
+  height: 80px;
+  display: flex;
+  padding: 30px;
+  &:hover {
+    color: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 80px;
+    padding: 30px;
+    background-color: none;
+
+    &:hover {
+      transition: none;
+    }
+  }
+`;
+
 export { AnimatedFaBars, AnimatedFaTimes, DropdownMenu, DropdownMenuItem, FaBarsIcon, Image, LogoContainer, MobileIconContainer, Nav, NavItem, NavItemSocialIconLink, NavItemSocialIconLinkMotion, NavItemSocialIconLinkWrapper, NavItemSocialIconWrapper, NavLinks, NavMenu, NavbarContainer, StyledLogo };

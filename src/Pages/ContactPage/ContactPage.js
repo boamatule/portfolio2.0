@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
-import tw from 'twin.macro';
 
 import {
   ArrowRight,
@@ -17,7 +15,6 @@ import {
   TextArea,
   Title,
 } from './ContactPage.Styles';
-import { Button } from '../../global-styles';
 
 // const ContactContainer = styled.div`
 //   ${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
@@ -42,14 +39,14 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+
     // email validation check
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(message.email)) {
       alert('Please enter a valid email address.');
       return;
     }
-  
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -64,12 +61,12 @@ const ContactPage = () => {
       .catch((error) => alert(error));
     event.target.reset();
   };
-  
+
   return (
     <ContactContainer>
       <ContactFormColumn>
         <Heading>
-          Contact Me.
+          Contact me.
         </Heading>
         <Title>
           Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. Stay healthy and keep a positive attitude in the meantime!
@@ -80,6 +77,20 @@ const ContactPage = () => {
         <FormContainer>
           <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
             <Input
+
+              style={{
+                background: 'transparent',
+                color: 'grey',
+                fontWeight: 'normal',
+                letterSpacing: '1px',
+                lineHeight: '24px',
+                fontSize: '14px',
+                // marginBottom: '20px',
+                // borderBottom: '1px solid grey',
+                // border: '2px solid #4568dc',
+                // borderRadius: '2px',
+                // padding: '8px'
+              }}
               placeholder="Enter your name"
               type="text"
               name="name"
@@ -89,16 +100,16 @@ const ContactPage = () => {
             <Input
               style={{
                 background: 'transparent',
-                color: '#474747',
+                color: 'grey',
                 fontWeight: 'normal',
-                letterSpacing: '1.6px',
+                letterSpacing: '1px',
                 lineHeight: '24px',
-                fontSize: '16px',
-                marginBottom: '20px',
-                borderBottom: '1px solid grey',
-                border: '2px solid #4568dc',
-                borderRadius: '2px',
-                padding: '8px'
+                fontSize: '14px',
+                // marginBottom: '20px',
+                // borderBottom: '1px solid grey',
+                // border: '2px solid #4568dc',
+                // borderRadius: '2px',
+                // padding: '8px'
               }}
               placeholder="Enter your email address"
               type="email"
@@ -106,7 +117,21 @@ const ContactPage = () => {
               onChange={handleChange}
               required
             />
-            <TextArea placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
+            <TextArea
+              style={{
+                // background: 'transparent',
+                color: 'grey',
+                fontWeight: 'normal',
+                letterSpacing: '1px',
+                lineHeight: '24px',
+                fontSize: '14px',
+                // marginBottom: '20px',
+                // borderBottom: '1px solid grey',
+                // border: '2px solid #4568dc',
+                // borderRadius: '2px',
+                // padding: '8px'
+              }}
+              placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton
                 // small fontSmall primary

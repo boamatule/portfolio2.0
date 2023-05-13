@@ -10,14 +10,12 @@ const ContactContainer = styled(Container)`
   background-color: transparent;
   overflow: hidden;
   width: 100%;
-  /* height: 100vh; */
   padding: 6em 4em;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0em 1em;
-    margin-bottom: 200px;
-    background-color: none;
+    background-color: transparent; 
   }
 `, ContactFormColumn = styled.div`
   width: 50%;
@@ -32,6 +30,7 @@ const ContactContainer = styled(Container)`
   }
 `, FormContainerColumn = styled(ContactFormColumn)`
   /* padding: 0 20px; */
+  background-color: transparent;
 
 `, FormContainer = styled.div`
   display: flex;
@@ -41,6 +40,7 @@ const ContactContainer = styled(Container)`
   text-align: flex-start;
   width: 100%;
   padding: 0 40px;
+  background-color: transparent;
 
   @media screen and (max-width: 768px) {
   margin-right: auto;
@@ -81,12 +81,18 @@ const ContactContainer = styled(Container)`
     margin-left: 0;
     margin-right: 0;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 18px;
+    /* padding: 10px; */
+  }
 `, Form = styled.form`
   margin: auto;
   width: 100%;
   display: grid;
   box-shadow: rgba(0, 0, 0, 0.1);
-  background: transparent;
+  background-color: transparent;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -121,7 +127,7 @@ const ContactContainer = styled(Container)`
     font-size: 12px;
   }
 `, TextArea = styled.textarea`
-  background: transparent;
+  background-color: transparent;
   border: 0;
   border: none;
   font-weight: normal;

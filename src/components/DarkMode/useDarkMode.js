@@ -19,4 +19,4 @@ const useDarkMode = () => {
   return [theme, themeToggler];
 };
 
-export default (useDarkMode);
+export default useDarkMode;

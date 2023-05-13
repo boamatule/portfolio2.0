@@ -48,17 +48,17 @@ export const Heading = styled.h1`
   }
 `;
 
-export const CardWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  grid-gap: 14px;
-  padding-top: 4rem;
-  padding-bottom: 0.25rem;
-  text-align: center;
-  justify-content: center;
+// export const CardWrapper = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   align-items: center;
+//   grid-gap: 14px;
+//   padding-top: 4rem;
+//   padding-bottom: 0.25rem;
+//   text-align: center;
+//   justify-content: center;
 
-`;
+// `;
 
 export const ButtonWrapper = styled.div`
   cursor: pointer;
@@ -86,8 +86,7 @@ export const GithubLink = styled.a`
 
 export const CardContainer = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   grid-gap: 14px;
   padding-top: 4rem;
@@ -135,11 +134,11 @@ export const ProjectDescription = styled.p`
   line-height: 20px;
   font-weight: normal;
   background: transparent;
-  /* height: 120px; */
+  height: 120px;
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
-    padding: 4px 4px;
+    /* padding: 4px 4px; */
   }
 `;
 
@@ -163,7 +162,7 @@ export const ProjectSubtitle = styled.p`
   align-items: center;
   background: transparent;
     
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     font-size: 14px;
     /* padding: 0px 20px; */
   }
@@ -172,7 +171,7 @@ export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     border-radius: 10px 10px 0px 0px;
     position: relative;
     padding: 0px 20px;
@@ -187,14 +186,16 @@ export const SubTitle = styled.p`
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 14px;
     line-height: 18px;
     padding: 10px;
-  }
+  } 
 `;
 
 

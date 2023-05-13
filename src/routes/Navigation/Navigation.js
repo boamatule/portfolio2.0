@@ -5,25 +5,27 @@ import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
-
 import {
   AnimatedFaBars,
   AnimatedFaTimes,
+  LogoContainer,
   Nav,
   NavItem,
   NavItemSocialIconLink,
   NavItemSocialIconLinkMotion,
   NavItemSocialIconWrapper,
+  NavItemToggle,
   NavLinks,
   NavMenu,
   NavbarContainer,
-  LogoContainer,
   StyledLogo,
 } from './Navigation.Styles';
 
-import DarkMode from '../../components/DarkMode/DarkMode';
+import { GlobalStyles } from '../../global-styles';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
+// import Toggle from '../../components/DarkMode/Toggle';
+import DarkMode from '../../components/DarkMode/DarkMode';
 
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -43,20 +45,21 @@ const NavBar = () => {
     changeNav();
   }, []);
 
-  const [theme] = useDarkMode();
+  const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
+        <GlobalStyles />
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
-            <LogoContainer to="/"> 
+            <LogoContainer to="/">
               <StyledLogo
                 src="../../../images/logo.png"
                 alt='logo'
                 loading="lazy"
-                />
+              />
             </LogoContainer>
             <DropdownMobileIcon onClick={handleClick}>
               {click ? (
@@ -92,6 +95,21 @@ const NavBar = () => {
                 </NavItem>
               </NavMenu>
             )}
+
+            {/* <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}
+
+              onClick={() => {
+                console.log('NavItemToggle clicked');
+                themeToggler();
+              }}
+
+            >
+              <Toggle
+                theme={theme} toggleTheme={themeToggler} 
+                />
+            </NavItemToggle> */}
+
+
             <NavItemSocialIconWrapper
               initial={{
                 x: 500,
@@ -109,7 +127,7 @@ const NavBar = () => {
             >
               <DarkMode />
               <NavItemSocialIconLinkMotion
-                // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
+              // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
                 <NavItemSocialIconLink
                   href="https://www.linkedin.com/in/boa-matule-2082b068/"
