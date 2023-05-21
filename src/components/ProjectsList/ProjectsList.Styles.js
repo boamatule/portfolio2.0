@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
@@ -12,6 +12,11 @@ export const ProjectContainer = styled(Container)`
   height: auto;
   background: none;
   padding: 8em 4em;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -26,9 +31,12 @@ export const Title = styled.p`
   letter-spacing: 2px;
   line-height: 4px;
   color: grey;
-  margin-bottom: 24px;
+  margin: 20px;
   text-align: center;
   font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+
 `;
 
 export const Heading = styled.h1`
@@ -48,25 +56,16 @@ export const Heading = styled.h1`
   }
 `;
 
-// export const CardWrapper = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   align-items: center;
-//   grid-gap: 14px;
-//   padding-top: 4rem;
-//   padding-bottom: 0.25rem;
-//   text-align: center;
-//   justify-content: center;
-
-// `;
-
 export const ButtonWrapper = styled.div`
-  cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  /* margin: 0 auto; */
+  width: 100%;
+  /* margin: 0 auto; */
+  margin: 10px;
   padding: 10px;
+  overflow: hidden;
 `;
 
 export const Text = styled.p`
@@ -98,7 +97,6 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr;
     margin: 0;
     width: 100%;
-    z-index: -1;
   }
 `;
 export const Image = styled(LazyLoadImage)`
@@ -113,8 +111,7 @@ export const Image = styled(LazyLoadImage)`
   justify-content: center;
   text-align: center;
   align-items: center;
-
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: block;
     height: 100%;
     width: 100%;
@@ -128,6 +125,8 @@ export const Image = styled(LazyLoadImage)`
 export const ProjectDescription = styled.p`
   display: inline-block;
   color: grey;
+  /* padding: 10px; */
+  margin: 10px;
   padding: 10px;
   font-size: 14px;
   /* letter-spacing: 1.6px; */
@@ -135,7 +134,7 @@ export const ProjectDescription = styled.p`
   font-weight: normal;
   background: transparent;
   height: 120px;
-
+  width: 100%;
   @media screen and (max-width: 768px) {
     font-size: 12px;
     /* padding: 4px 4px; */
@@ -145,12 +144,8 @@ export const ProjectDescription = styled.p`
 export const ProjectBox = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
-
-  @media screen and (max-width: 768px) {
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-  }
 `;
+
 export const ProjectSubtitle = styled.p`
   margin-top: 16px;
   color: grey;
@@ -170,13 +165,21 @@ export const ProjectSubtitle = styled.p`
 export const BoxStyled = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
-
-  @media screen and (max-width: 768px) {
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-    padding: 0px 20px;
-  }
+	box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.9);
+  /* z-index: -1; */
+    border: 1px solid #4568dc;
+    background: transparent;
+    /* transition: all 0.3s ease-in-out; */
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
+    @media screen and (max-width: 768px) {
+      border-radius: 10px 10px 0px 0px;
+      position: relative;
+    }
 `;
+
 export const SubTitle = styled.p`
   margin-top: 16px;
   color: grey;
@@ -184,18 +187,26 @@ export const SubTitle = styled.p`
   font-weight: normal;
   line-height: 22px;
   text-align: left;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
     padding: 10px;
   }
-
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-    line-height: 18px;
-    padding: 10px;
-  } 
 `;
 
-
+export const ProjectDetailsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  ${props =>
+    props.hasShadow &&
+    css`
+      box-shadow: 0 1.3px 12px -3px ${props => (props.darkTheme ? 'rgba(255, 255, 255, 0.9)' : 'rgba(0, 0, 0, 0.9)')};
+    `}
+	/* box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.9); */
+  margin: 10px;
+`;

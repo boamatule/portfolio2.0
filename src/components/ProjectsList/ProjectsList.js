@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ProjectsContext, ProjectsProvider } from '../../contexts/projects.context';
 import { Button, Glass } from '../../global-styles';
-import BlurhashImage from '../Blurhash/Blurhash';
+
 import {
   BoxStyled,
   ButtonWrapper,
@@ -14,10 +14,14 @@ import {
   Text,
   Title,
   Image,
+  ProjectBox,
+  ProjectDetailsWrapper,
 } from './ProjectsList.Styles';
 
 const ProjectsList = () => {
   const { projects } = useContext(ProjectsContext);
+  const hasShadow = true; // Set this based on your condition
+  const darkTheme = true; // Set this based on your dark theme logic
 
   return (
     <ProjectsProvider>
@@ -38,12 +42,10 @@ const ProjectsList = () => {
         </SubTitle>
         <CardContainer>
           {projects.map((project) => (
-            <BoxStyled key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
+            <ProjectBox key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
               <Glass>
                 <Image src={project.imageUrl} alt={project.alt} />
-                {/* <BlurhashImage
-                  hash={project.imageUrl} alt={project.alt}width={400} height={300} /> */}
-
+                <ProjectDetailsWrapper  hasShadow={hasShadow}>
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
                 <ButtonWrapper>
@@ -66,18 +68,22 @@ const ProjectsList = () => {
                       fontSmall
                       primary
                       style={{
-                        paddingLeft: '80px',
+                        // paddingLeft: '100px',
                         background: 'transparent',
                         border: 'none',
                         color: '#4568dc',
+                        // color: 'white',
+
                       }}
                     >
                       <Text>Source Code</Text>
                     </Button>
                   </a>
                 </ButtonWrapper>
+                </ProjectDetailsWrapper>
+
               </Glass>
-            </BoxStyled>
+            </ProjectBox>
           ))}
         </CardContainer>
       </ProjectContainer>
