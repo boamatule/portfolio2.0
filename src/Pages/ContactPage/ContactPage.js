@@ -63,7 +63,7 @@ const ContactPage = () => {
     <ContactContainer>
       <ContactFormColumn>
         <Heading>
-          Contact me.
+          Lets Get in Touch.
         </Heading>
         <Title>
           Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. 
