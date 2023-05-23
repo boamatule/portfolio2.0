@@ -17,6 +17,7 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
+  /* padding: 10px 24px; */
 
   @media screen and (max-width: 768px) {
     transition: 0.8s all ease-out;
@@ -34,6 +35,7 @@ MobileIconContainer = styled.div`
   color:  #4568dc;
   transform: translate(-100%, 50%);
   width: 100%;
+  padding: 0 0;
 `, FaBarsIcon = styled(FaBars)`
     display: none;
   @media screen and (max-width: 768px) {
@@ -66,11 +68,13 @@ NavbarContainer = styled(Container)`
   cursor: pointer;
   margin-left: -60px;
   z-index: 999;
+  padding: 0 40px;
 
   @media screen and (max-width: 768px) {
     display: flex;
-    margin-left: -60px;
+    margin-left: -100px;
     margin-top: 0;
+    /* padding: 0px -160px 0 0; */
   }
 `,
   StyledLogo = styled.img`

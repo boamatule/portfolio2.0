@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ProjectsContext, ProjectsProvider } from '../../contexts/projects.context';
-import { Button, Glass } from '../../global-styles';
+import { Button, Glass, Span } from '../../global-styles';
 
 import {
   BoxStyled,
@@ -26,9 +26,11 @@ const ProjectsList = () => {
   return (
     <ProjectsProvider>
       <ProjectContainer>
-        <Heading>Selected Projects</Heading>
+        <Heading>Selected Projects.</Heading>
         <SubTitle>
-          A curated selection of projects that demonstrate my skills and expertise in various technologies and frameworks. Browse through the list below to get a glimpse of my portfolio. Don't forget to also check out my other work on my {' '}
+          A curated selection of projects that demonstrate my skills and expertise in various technologies and frameworks. Browse through the list below to get a glimpse of my portfolio. 
+          <h1 />
+          Please, don't forget to also check out my other work on my {' '}
           <GithubLink
             href="https://github.com/boamatule"
             target="_blank"
@@ -38,7 +40,7 @@ const ProjectsList = () => {
             {' '}
             GitHub
           </GithubLink>{' '}
-          profile for more details
+          profile for more details.
         </SubTitle>
         <CardContainer>
           {projects.map((project) => (
@@ -68,12 +70,10 @@ const ProjectsList = () => {
                       fontSmall
                       primary
                       style={{
-                        // paddingLeft: '100px',
                         background: 'transparent',
                         border: 'none',
                         color: '#4568dc',
-                        // color: 'white',
-
+                        size: '12px'
                       }}
                     >
                       <Text>Source Code</Text>

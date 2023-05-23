@@ -13,9 +13,6 @@ export const ProjectContainer = styled(Container)`
   background: none;
   padding: 8em 4em;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   border-radius: 10px;
 
   @media screen and (max-width: 768px) {
@@ -36,25 +33,32 @@ export const Title = styled.p`
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
+  text-align: left;
 
 `;
-
 export const Heading = styled.h1`
-  display: flex;
-  font-weight: bold;
-  padding: 0px 0px;
-  color: #4568dc;
-  font-size: 32px;
-  justify-content: flex-start;
-  text-align: flex-start;
+display: flex;
+font-weight: bold;
+padding: 0px 0px;
+color: #4568dc;
+font-size: 32px;
+justify-content: flex-start;
+text-align: flex-start;
 
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-    justify-content: left;
-    text-align: left;
-    padding: 0px 10px;
-  }
-`;
+@media screen and (max-width: 768px) {
+  font-size: 20px;
+  margin-bottom: 0px;
+  justify-content: left;
+  text-align: left;
+  /* padding: 0px 10px; */
+}
+
+@media screen and (max-width: 480px) {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+`; 
 
 export const ButtonWrapper = styled.div`
   display: flex;
@@ -205,7 +209,7 @@ export const ProjectDetailsWrapper = styled.div`
   ${props =>
     props.hasShadow &&
     css`
-      box-shadow: 0 1.3px 12px -3px ${props => (props.darkTheme ? 'rgba(255, 255, 255, 0.9)' : 'rgba(0, 0, 0, 0.9)')};
+      box-shadow: 0 1.3px 12px -3px ${props => (props.darkTheme ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.4)')};
     `}
 	/* box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.9); */
   margin: 10px;

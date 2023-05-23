@@ -14,10 +14,18 @@ const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0em 1em;
+    /* padding: 0em 1em; */
     background-color: transparent; 
   }
-`, ContactFormColumn = styled.div`
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 0em 1em;
+    background-color: transparent;
+  }
+`,
+
+ContactFormColumn = styled.div`
   width: 50%;
   align-self: flex-start;
   background-color: transparent;
@@ -26,10 +34,9 @@ const ContactContainer = styled(Container)`
     width: 100%;
     max-width: unset;
     margin-bottom: 20px;
-    padding: 0 10px;
+    padding: 0 0px;
   }
 `, FormContainerColumn = styled(ContactFormColumn)`
-  /* padding: 0 20px; */
   background-color: transparent;
 
 `, FormContainer = styled.div`
@@ -45,7 +52,17 @@ const ContactContainer = styled(Container)`
   @media screen and (max-width: 768px) {
   margin-right: auto;
   margin-left: auto;
-  padding: 0em 1em;
+  width: 100%;
+  padding: 0 0px;
+  background-color: transparent;
+
+
+  @media screen and (max-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 0 0px;
+    background-color: transparent;
 }
 `, Heading = styled.h1`
   font-weight: bold;
@@ -60,13 +77,11 @@ const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
-    padding: 0em 0.6em;
   }
 `, Title = styled.p`
   margin-top: 16px;
   color: grey;
   font-size: 16px;
-  /* letter-spacing: 2.8px; */
   font-weight: normal;
   line-height: 24px;
   text-align: left;
@@ -76,7 +91,7 @@ const ContactContainer = styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 0em 1em;
+    /* padding: 0em 1em; */
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -163,7 +178,6 @@ const ContactContainer = styled(Container)`
   color: white;
   text-transform: uppercase;
   font-weight: normal;
-  /* border: 4px; */
   cursor: pointer;
   margin-bottom: 20px;
 

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import React from 'react';
-import styled from "styled-components";
-import tw from "twin.macro";
+import React from "react";
 
 import { Button } from "../../global-styles";
 import {
@@ -16,10 +14,6 @@ import {
   Text,
   TextColumn,
 } from './AboutPage.Styles';
-
-// const Heading = styled(motion.h1)`
-//   ${tw`flex mb-4 text-4xl font-bold indigo-800 text- md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-9xl 4xl:text-10xl`}  
-// `;
 
 const backgroundImage = "../../images/background.svg";
 
@@ -62,7 +56,11 @@ const AboutPage = () => (
         })}
       </Heading>
       <Description>
-        I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager. Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>. I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
+        I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager. 
+        <h1 />
+        Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>. 
+        <h1 />
+        I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
       </Description>
       <GradientButton href="/contact_me">
         <Button>

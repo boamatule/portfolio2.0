@@ -8,8 +8,8 @@ export const HomeContainer = styled(Container)`
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
-  height: auto;
-  margin-top: 12em;
+  height: 100%;
+  /* margin-top: 12em; */
   @media screen and (max-width: 768px) {
     margin: 0 auto;
     /* padding: 0 4px; */

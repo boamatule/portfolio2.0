@@ -16,9 +16,6 @@ import {
   Title,
 } from './ContactPage.Styles';
 
-// const ContactContainer = styled.div`
-//   ${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
-// `;
 
 const ContactPage = () => {
   const navigate = useNavigate();
@@ -69,15 +66,15 @@ const ContactPage = () => {
           Contact me.
         </Heading>
         <Title>
-          Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. Stay healthy and keep a positive attitude in the meantime!
+          Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. 
+          <h1 />
+          Stay healthy and keep a positive attitude in the meantime!
         </Title>
       </ContactFormColumn>
-
       <FormContainerColumn>
         <FormContainer>
           <Form name="contact" method="POST" onSubmit={handleSubmit} action="/success">
             <Input
-
               style={{
                 background: 'transparent',
                 color: 'grey',
@@ -85,11 +82,6 @@ const ContactPage = () => {
                 letterSpacing: '1px',
                 lineHeight: '24px',
                 fontSize: '14px',
-                // marginBottom: '20px',
-                // borderBottom: '1px solid grey',
-                // border: '2px solid #4568dc',
-                // borderRadius: '2px',
-                // padding: '8px'
               }}
               placeholder="Enter your name"
               type="text"
@@ -105,11 +97,6 @@ const ContactPage = () => {
                 letterSpacing: '1px',
                 lineHeight: '24px',
                 fontSize: '14px',
-                // marginBottom: '20px',
-                // borderBottom: '1px solid grey',
-                // border: '2px solid #4568dc',
-                // borderRadius: '2px',
-                // padding: '8px'
               }}
               placeholder="Enter your email address"
               type="email"
@@ -119,22 +106,16 @@ const ContactPage = () => {
             />
             <TextArea
               style={{
-                // background: 'transparent',
                 color: 'grey',
                 fontWeight: 'normal',
                 letterSpacing: '1px',
                 lineHeight: '24px',
                 fontSize: '14px',
-                // marginBottom: '20px',
-                // borderBottom: '1px solid grey',
-                // border: '2px solid #4568dc',
-                // borderRadius: '2px',
-                // padding: '8px'
               }}
               placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton
-                // small fontSmall primary
+                small fontSmall primary
                 aria-label="Contact" type="submit">
                 <ArrowRight />
               </ContactButton>
