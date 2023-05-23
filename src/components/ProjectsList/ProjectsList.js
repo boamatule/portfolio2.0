@@ -44,10 +44,11 @@ const ProjectsList = () => {
         </SubTitle>
         <CardContainer>
           {projects.map((project) => (
-            <ProjectBox key={project.id} whileHover={{ scale: 1.1, transition: { duration: 1 } }}>
-              <Glass>
+            <ProjectBox key={project.id} 
+            // whileHover={{ scale: 1.1, transition: { duration: 1 } }}
+            >
                 <Image src={project.imageUrl} alt={project.alt} />
-                <ProjectDetailsWrapper  hasShadow={hasShadow}>
+                <ProjectDetailsWrapper>
                 <Title>{project.title.toLowerCase()}</Title>
                 <ProjectDescription>{project.stack}</ProjectDescription>
                 <ButtonWrapper>
@@ -81,8 +82,6 @@ const ProjectsList = () => {
                   </a>
                 </ButtonWrapper>
                 </ProjectDetailsWrapper>
-
-              </Glass>
             </ProjectBox>
           ))}
         </CardContainer>
