@@ -2,10 +2,9 @@
 	{
 		"id": 1,
 		"title": "Kind Like Netflix",
-		"stack": "Next.js | Serveless | Framer | GraphQL | Redis | Hasura | Vercel | Serveless | Magic | ISG | JWT | Framer | React Hooks",
+		"stack": "Next.js | Serveless | Framer | GraphQL | Hasura | Vercel | Magic | JWT | React ",
 		"imageUrl": "../../images/netflix.webp",
 		"alt": "Netflix",
-		"description": "Blog built in ReactJs and Backended using MongoDB",
 		"deployedUrl": "https://discover-videos-nextjs.vercel.app/",
 		"sourceCodeUrl": "https://github.com/boamatule/discover_videos_nextjs"
 	},
@@ -15,27 +14,24 @@
 		"stack": "React.js | Firebase | Stripe | Styled-Components | Express.js",
 		"imageUrl": "../../images/crown.svg",
 		"alt": "Clothes",
-		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
 		"deployedUrl": "https://crwn-live-clothing-app.herokuapp.com/",
 		"sourceCodeUrl": "https://github.com/boamatule/crwn-clothing"
 	},
   {
 		"id": 3,
 		"title": "NASA Mission Control",
-		"stack": "Nextjs | Serveless | Framer | GraphQL | Redis | Hasura | Vercel | Magic Link | ISG | JWT | Framer-motion | React Hooks",
+		"stack": "Node.js",
 		"imageUrl": "../../images/space.webp",
 		"alt": "Space",
-		"description": "Blog built in ReactJs and Backended using MongoDB",
 		"deployedUrl": "http://13.50.105.59:8000",
 		"sourceCodeUrl": "https://github.com/boamatule/nasa_nodejs_projects"
 	},
 	{
 		"id": 4,
 		"title": "Meals To Go",
-		"stack": "React.js | Firebase | Stripe  | Styled-Components | Express.js",
+		"stack": "React Native | Firebase | Stripe  | Styled-Components | Express.js",
 		"imageUrl": "../../images/mealstogo.webp",
 		"alt": "Meals",
-		"description": "A simple address book that stores the information in your local storage. Built in JavaScript and styled using Tailwind CSS.",
 		"deployedUrl": "https://github.com/boamatule/MealsToGo",
 		"sourceCodeUrl": "https://github.com/boamatule/MealsToGo"
 	}

@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow: hidden; */
+  overflow: hidden;
   width: 100%;
   height: auto;
   background: none;
@@ -15,7 +15,6 @@ export const ProjectContainer = styled(Container)`
   margin: 0 auto;
   border-radius: 10px;
   background: transparent;
-  z-index: 1;
   
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -99,7 +98,7 @@ export const CardContainer = styled.div`
   border-radius: 10px;
   margin: 0 auto;
   width: 100%;
-    
+  /* z-index: 1; */
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     margin: 0;
@@ -138,6 +137,7 @@ export const ProjectDescription = styled.p`
 export const ProjectBox = styled(motion.div)`
   border-radius: 10px 10px 0px 0px;
   position: relative;
+  border: 1px solid #86829c;
 `;
 
 export const ProjectSubtitle = styled.p`

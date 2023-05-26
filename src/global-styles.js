@@ -5,8 +5,8 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --light: grey;
     --dark: grey;
-    --font-color: #000;
-    --background-color: #000;
+    --font-color: #86829c;
+    --background-color: #232129;
     --theme-color: #007bff;
     width: 100%;
     height: 100%;

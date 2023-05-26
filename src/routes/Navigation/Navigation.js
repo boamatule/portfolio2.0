@@ -95,21 +95,6 @@ const NavBar = () => {
                 </NavItem>
               </NavMenu>
             )}
-
-            {/* <NavItemToggle whileHover={{ scale: 1.2, rotate: 0 }}
-
-              onClick={() => {
-                console.log('NavItemToggle clicked');
-                themeToggler();
-              }}
-
-            >
-              <Toggle
-                theme={theme} toggleTheme={themeToggler} 
-                />
-            </NavItemToggle> */}
-
-
             <NavItemSocialIconWrapper
               initial={{
                 x: 500,

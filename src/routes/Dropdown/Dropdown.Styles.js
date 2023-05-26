@@ -10,10 +10,8 @@ const DropdownContainer = styled.div`
   display: flex;
   font-family: Rubik;
   justify-content: center;
-  /* align-items: right; */
-  background: white;
+  background: purple;
   animation: slideIn 0.3s ease-out forwards;
-  /* z-index: 999; */
   @keyframes slideIn {
     from {
       transform: translateX(100%);
