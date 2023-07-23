@@ -14,18 +14,15 @@ import {
   NavItemSocialIconLink,
   NavItemSocialIconLinkMotion,
   NavItemSocialIconWrapper,
-  NavItemToggle,
   NavLinks,
   NavMenu,
   NavbarContainer,
   StyledLogo,
 } from './Navigation.Styles';
 
-import { GlobalStyles } from '../../global-styles';
+import DarkMode from '../../components/DarkMode/DarkMode';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
-// import Toggle from '../../components/DarkMode/Toggle';
-import DarkMode from '../../components/DarkMode/DarkMode';
 
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -51,7 +48,7 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <GlobalStyles />
+        {/* <GlobalStyles /> */}
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
             <LogoContainer to="/">
@@ -123,7 +120,9 @@ const NavBar = () => {
                   <FaLinkedinIn
                     style={{
                       width: '18px',
-                      height: '18px'
+                      height: '18px',
+                      marginLeft: '-20px'
+
                     }}
                   />
                 </NavItemSocialIconLink>
@@ -137,7 +136,7 @@ const NavBar = () => {
                     style={{
                       width: '18px',
                       height: '18px',
-                      marginLeft: '0px'
+                      marginRight: '0px'
                     }}
                   />
                 </NavItemSocialIconLink>

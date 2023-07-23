@@ -7,7 +7,7 @@ import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import Marginer from '../../components/marginer/marginer';
 
 const HomePageContaner = styled.div`
-${tw`flex flex-col items-center w-full h-full overflow-x-hidden`}
+/* ${tw`flex flex-col items-center w-full h-full overflow-x-hidden`} */
 `;
 
 const HomePage = () => {

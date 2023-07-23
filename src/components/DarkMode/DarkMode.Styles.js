@@ -14,9 +14,10 @@ export const ToggleSwitch = styled.div`
 
   @media screen and (max-width: 768px) {  
     display: flex;
-    margin-left: 0;
+    justify-content: center;
+    margin-left: 0em;
     margin-top: 0;
-    right: 3em;
+    right: 4em;
     z-index: 1000; // Updated value to ensure it appears above dropdown
   }
 `;

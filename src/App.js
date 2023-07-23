@@ -17,25 +17,25 @@ const SkillsSet = lazy(() => import('./components/SkillsSet/SkillsSet'));
 const renderLoader = () => <WithSpinner />;
 
 const AppContainer = styled.div`
-  /* ${tw`relative flex flex-col items-center justify-between w-full h-full overflow-hidden`} */
+  ${tw`relative flex flex-col items-center justify-between w-full h-full overflow-hidden`}
 `;
 
 const App = () => {
   return (
     <AppContainer>
-    <Suspense fallback={renderLoader()}>
-      <Routes>
-        <Route path="/" element={<NavBar />}>
-          <Route index element={<HomePage />} />
-          <Route path="about_me" element={<AboutPage />} />
-          <Route path="contact_me" element={<ContactPage />} />
-          <Route path="projects" element={<PortfolioListPage />} />
-          <Route path="message_sent_successfully" element={<SuccessPage />} />
-          <Route element={<NotFound />} />
-        </Route>
-      </Routes>
-      <Footer />
-    </Suspense>
+      <Suspense fallback={renderLoader()}>
+        <Routes>
+          <Route path="/" element={<NavBar />}>
+            <Route index element={<HomePage />} />
+            <Route path="about_me" element={<AboutPage />} />
+            <Route path="contact_me" element={<ContactPage />} />
+            <Route path="projects" element={<PortfolioListPage />} />
+            <Route path="message_sent_successfully" element={<SuccessPage />} />
+            <Route element={<NotFound />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </Suspense>
     </AppContainer>
   );
 }

@@ -73,9 +73,9 @@ export const Container = styled.div`
   padding: 0px 10px;
   
   @media (max-width: 768px) {
-    margin: 0 0rem; 
-    padding: 40px 40px;
-    max-width: 100%;
+    /* margin: 0 0rem;  */
+    /* padding: 40px 40px; */
+    /* max-width: 100%; */
     height: auto;
   }
 `;

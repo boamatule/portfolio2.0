@@ -57,9 +57,9 @@ const AboutPage = () => (
       </Heading>
       <Description>
         I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager. 
-        <h1 />
+        <br />
         Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>. 
-        <h1 />
+        <br />
         I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
       </Description>
       <GradientButton href="/contact_me">
@@ -76,3 +76,55 @@ const AboutPage = () => (
 );
 
 export default React.memo(AboutPage);
+
+// import React from 'react';
+// import styled from 'styled-components';
+
+// // Styles for the components
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   background-color: #f2f2f2;
+// `;
+
+// const Title = styled.h1`
+//   font-size: 36px;
+//   color: #333;
+//   margin-bottom: 20px;
+// `;
+
+// const Subtitle = styled.p`
+//   font-size: 18px;
+//   color: #666;
+//   margin-bottom: 40px;
+// `;
+
+// const Button = styled.button`
+//   padding: 12px 24px;
+//   font-size: 16px;
+//   color: #fff;
+//   background-color: #4568dc;
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+
+//   &:hover {
+//     background-color: #1237a3;
+//   }
+// `;
+
+// const LandingPage = () => {
+//   return (
+//     <Container>
+//       <Title>Welcome to My Landing Page</Title>
+//       <Subtitle>Start exploring the amazing features!</Subtitle>
+//       <Button>Get Started</Button>
+//     </Container>
+//   );
+// };
+
+// export default LandingPage;
+

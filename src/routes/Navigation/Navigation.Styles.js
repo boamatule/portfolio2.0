@@ -72,14 +72,14 @@ NavbarContainer = styled(Container)`
 
   @media screen and (max-width: 768px) {
     display: flex;
-    margin-left: -100px;
+    margin-left: -124px;
     margin-top: 0;
     /* padding: 0px -160px 0 0; */
   }
 `,
   StyledLogo = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
 `,
   NavMenu = styled.ul`
   display: flex;
@@ -142,8 +142,10 @@ NavbarContainer = styled(Container)`
   height: 80px;
 
   @media screen and (max-width: 768px) {
-    padding-right: 60px;
+    padding-right: 0px;
     align-items: center;
+    justify-content: space-between;  
+
     flex-direction: row;
     top: 0;
     & {
@@ -164,7 +166,11 @@ NavbarContainer = styled(Container)`
 
   @media screen and (max-width: 768px) {
     top: 0px;
-    align-items: flex-start;
+    margin-left: -14em;
+
+    /* margin-right: 12em; */
+    /* flex-direction: row-reverse; */
+    /* align-items: flex-start; */
   }
 `,
 
@@ -196,14 +202,14 @@ NavbarContainer = styled(Container)`
   }
 
   @media screen and (max-width: 768px) {
-    margin-left: 0rem;
+    /* margin-left: -4rem; */
   }
 
   /* increase touch target size */
   width: 36px;
   height: 36px;
   padding-left: 0rem;
-  margin-right: 0rem;
+  margin-right: 0em;
 
   /* remove unnecessary styles */
   top: auto;
