@@ -121,7 +121,7 @@ const NavBar = () => {
                     style={{
                       width: '18px',
                       height: '18px',
-                      marginLeft: '-20px'
+                      marginLeft: '0px'
 
                     }}
                   />
