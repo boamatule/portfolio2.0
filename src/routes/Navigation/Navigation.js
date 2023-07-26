@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Outlet } from 'react-router-dom';
+// import { Link } from 'react-scroll';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
@@ -79,16 +80,51 @@ const NavBar = () => {
             ) : (
               <NavMenu onClick={closeMobileMenu}>
                 <NavItem>
-                  <NavLinks to="/">home</NavLinks>
+                  <NavLinks
+                    to=""
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    home
+                  </NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="projects">portfolio</NavLinks>
+                  <NavLinks
+                    to="projects"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={500}
+                    duration={500}
+                  >
+                    portfolio
+                  </NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="about_me">about</NavLinks>
+                  <NavLinks
+                    to="about_me"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={500}
+                  >
+                    about
+                  </NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to="contact_me">contact</NavLinks>
+                  <NavLinks
+                    to="contact_me"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={2000}
+                    duration={600}
+                  >
+                    contact
+                  </NavLinks>
                 </NavItem>
               </NavMenu>
             )}
@@ -144,6 +180,29 @@ const NavBar = () => {
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
+        <div 
+        // style={
+        //   {
+        //     height: '100vh',
+        //     width: '100vw',
+        //     backgroundColor: 'pink'
+        //   }
+        // }
+        >
+          <section id="/">
+            {/* Content for Section 1 */}
+          </section>
+          <section id="projects">
+            {/* Content for Section 2 */}
+          </section>
+          <section id="about_me">
+            {/* Content for Section 2 */}
+          </section>
+          <section id="contact_me">
+            {/* Content for Section 2 */}
+          </section>
+          {/* Add more sections */}
+        </div>
         <Outlet />
       </IconContext.Provider>
     </ThemeProvider >

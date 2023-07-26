@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import { Link as smoothScroll } from 'react-scroll';
+
 import styled from "styled-components";
 import { Container } from "../../global-styles";
 
@@ -24,7 +26,7 @@ const Nav = styled.nav`
   }
 `,
 
-MobileIconContainer = styled.div`
+  MobileIconContainer = styled.div`
 	position: absolute;
 	top: 1.6rem;
 	right: 1.5rem;
@@ -47,9 +49,9 @@ MobileIconContainer = styled.div`
     font-size: 1.8rem;
     background: transparent;
   }
-`, 
+`,
 
-NavbarContainer = styled(Container)`
+  NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -105,7 +107,7 @@ NavbarContainer = styled(Container)`
     border-bottom: 4px solid #4568dc;
     padding-bottom: 0;
   }
-`, NavLinks = styled(Link)`
+`, NavLinks = styled(smoothScroll)`
   display: flex;
   text-align: center;
   align-items: center;
