@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Outlet } from 'react-router-dom';
-// import { Link } from 'react-scroll';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
@@ -49,7 +48,6 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        {/* <GlobalStyles /> */}
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
             <LogoContainer to="/">
@@ -78,6 +76,7 @@ const NavBar = () => {
             {click ? (
               <Dropdown />
             ) : (
+
               <NavMenu onClick={closeMobileMenu}>
                 <NavItem>
                   <NavLinks
@@ -128,6 +127,7 @@ const NavBar = () => {
                 </NavItem>
               </NavMenu>
             )}
+            
             <NavItemSocialIconWrapper
               initial={{
                 x: 500,
