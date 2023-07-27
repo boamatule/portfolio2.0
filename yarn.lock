@@ -214,6 +214,11 @@
   resolved "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.22.5.tgz#dd7ee3735e8a313b9f7b05a773d892e88e6d7295"
   integrity sha512-uLls06UVKgFG9QD4OeFYLEGteMIAa5kpTPcFL28yuCIIzsf6ZyKZMllKVOCZFhiZ5ptnwX4mtKdWCBE/uT4amg==
 
+"@babel/helper-plugin-utils@^8.0.0-alpha.1":
+  version "8.0.0-alpha.1"
+  resolved "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-8.0.0-alpha.1.tgz#962f98936f7fa8c4dd7af2940dc6131ae3f5e5d9"
+  integrity sha512-m+zK45DtY7FCyNLxNEpKRVkWvE3lFAZYBwtIeogko7zQs5it4pKYFID8TpYlTiU7IYMcYi5RGK51yDQ4SgnUiQ==
+
 "@babel/helper-remap-async-to-generator@^7.22.5":
   version "7.22.9"
   resolved "https://registry.npmjs.org/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.22.9.tgz#53a25b7484e722d7efb9c350c75c032d4628de82"
@@ -499,6 +504,13 @@
   integrity sha512-gvyP4hZrgrs/wWMaocvxZ44Hw0b3W8Pe+cMxc8V1ULQ07oh8VNbIRaoD1LRZVTvD+0nieDKjfgKg89sD7rrKrg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.22.5"
+
+"@babel/plugin-syntax-jsx@^8.0.0-alpha.1":
+  version "8.0.0-alpha.1"
+  resolved "https://registry.npmjs.org/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-8.0.0-alpha.1.tgz#ed0034bcaed60ed31b2693b257364f0c30de8bda"
+  integrity sha512-uuazir36SMbUMPkoLvYl4akYTLE4GeC838Fp+HXblJfJioRaLEZMaSsVRQ8GNKha1YpLZvihXa/dhgwxB6o5FA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^8.0.0-alpha.1"
 
 "@babel/plugin-syntax-logical-assignment-operators@^7.10.4", "@babel/plugin-syntax-logical-assignment-operators@^7.8.3":
   version "7.10.4"

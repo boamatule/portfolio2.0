@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import styled from "styled-components";
 import tw from "twin.macro";
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 // import './index.css';
 const NavBar = lazy(() => import('./routes/Navigation/Navigation'));
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
@@ -13,7 +14,6 @@ const NotFound = lazy(() => import('./Pages/NotFoundPage/NotFound'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
 const WithSpinner = lazy(() => import('./components/with-spinner/with-spinner.component'));
 const SkillsSet = lazy(() => import('./components/SkillsSet/SkillsSet'));
-
 const renderLoader = () => <WithSpinner />;
 
 const AppContainer = styled.div`
@@ -24,6 +24,7 @@ const App = () => {
   return (
     <AppContainer>
       <Suspense fallback={renderLoader()}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<NavBar />}>
             <Route index element={<HomePage />} />
