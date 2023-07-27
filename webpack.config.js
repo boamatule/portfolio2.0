@@ -35,6 +35,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          '@svgr/webpack'
         ],
       },
       // ... other rules ...

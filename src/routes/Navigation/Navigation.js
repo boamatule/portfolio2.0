@@ -20,6 +20,9 @@ import {
   StyledLogo,
 } from './Navigation.Styles';
 
+import AboutPage from '../../Pages/AboutPage/AboutPage';
+import ContactPage from '../../Pages/ContactPage/ContactPage';
+import PortfolioListPage from '../../Pages/PortfolioPage/PortfolioListPage';
 import DarkMode from '../../components/DarkMode/DarkMode';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
@@ -81,8 +84,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to=""
-                    activeClass="active"
-                    spy={true}
+                    // activeClass="active"
+                    // spy={true}
                     smooth={true}
                     duration={500}
                   >
@@ -92,10 +95,10 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="projects"
-                    activeClass="active"
-                    spy={true}
+                    // activeClass="active"
+                    // spy={true}
                     smooth={true}
-                    offset={500}
+                    offset={800}
                     duration={500}
                   >
                     portfolio
@@ -104,8 +107,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="about_me"
-                    activeClass="active"
-                    spy={true}
+                    // activeClass="active"
+                    // spy={true}
                     smooth={true}
                     offset={70}
                     duration={500}
@@ -116,18 +119,18 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="contact_me"
-                    activeClass="active"
-                    spy={true}
+                    // activeClass="active"
+                    // spy={true}
                     smooth={true}
                     offset={2000}
-                    duration={600}
+                    duration={500}
                   >
                     contact
                   </NavLinks>
                 </NavItem>
               </NavMenu>
             )}
-            
+
             <NavItemSocialIconWrapper
               initial={{
                 x: 500,
@@ -180,28 +183,19 @@ const NavBar = () => {
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
-        <div 
-        // style={
-        //   {
-        //     height: '100vh',
-        //     width: '100vw',
-        //     backgroundColor: 'pink'
-        //   }
-        // }
-        >
+        <div>
           <section id="/">
-            {/* Content for Section 1 */}
-          </section>
-          <section id="projects">
-            {/* Content for Section 2 */}
+
           </section>
           <section id="about_me">
-            {/* Content for Section 2 */}
+            {/* <AboutPage /> */}
+          </section>
+          <section id="projects">
+            {/* <PortfolioListPage /> */}
           </section>
           <section id="contact_me">
-            {/* Content for Section 2 */}
+            {/* <ContactPage /> */}
           </section>
-          {/* Add more sections */}
         </div>
         <Outlet />
       </IconContext.Provider>
