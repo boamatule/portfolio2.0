@@ -2,8 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import styled from "styled-components";
 import tw from "twin.macro";
-// import ScrollToTop from './components/ScrollToTop';
-// import './index.css';
 const NavBar = lazy(() => import('./routes/Navigation/Navigation'));
 const AboutPage = lazy(() => import('./Pages/AboutPage/AboutPage'));
 const HomePage = lazy(() => import('./routes/HomePage/HomePage'));
@@ -24,7 +22,6 @@ const App = () => {
   return (
     <AppContainer>
       <Suspense fallback={renderLoader()}>
-        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<NavBar />}>
             <Route index element={<HomePage />} />
