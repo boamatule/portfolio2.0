@@ -84,8 +84,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to=""
-                    // activeClass="active"
-                    // spy={true}
+                    activeClass="active"
+                    spy={true}
                     smooth={true}
                     duration={500}
                   >
@@ -95,8 +95,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="projects"
-                    // activeClass="active"
-                    // spy={true}
+                    activeClass="active"
+                    spy={true}
                     smooth={true}
                     offset={800}
                     duration={500}
@@ -107,8 +107,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="about_me"
-                    // activeClass="active"
-                    // spy={true}
+                    activeClass="active"
+                    spy={true}
                     smooth={true}
                     offset={70}
                     duration={500}
@@ -119,8 +119,8 @@ const NavBar = () => {
                 <NavItem>
                   <NavLinks
                     to="contact_me"
-                    // activeClass="active"
-                    // spy={true}
+                    activeClass="active"
+                    spy={true}
                     smooth={true}
                     offset={2000}
                     duration={500}

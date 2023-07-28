@@ -178,7 +178,7 @@ export const ProjectDetailsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   font-style: normal;
-  box-shadow: 0 1.3px 12px -3px #4568dc;
+  /* box-shadow: 0 1.3px 12px -3px #4568dc; */
   margin: 0px;
   top: 0;
 `;
