@@ -8,7 +8,7 @@ const useDarkMode = () => {
     setTheme(mode);
   };
 
-  const themeToggler = () => {
+  const toggleTheme = () => {
     theme === 'light' ? setMode('dark') : setMode('light');
   };
 
@@ -16,7 +16,7 @@ const useDarkMode = () => {
     const localTheme = window.localStorage.getItem('theme');
     localTheme && setTheme(localTheme);
   }, []);
-  return [theme, themeToggler];
+  return [theme, toggleTheme];
 };
 
 export default useDarkMode;

@@ -45,7 +45,7 @@ const NavBar = () => {
     changeNav();
   }, []);
 
-  const [theme, themeToggler] = useDarkMode();
+  const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
