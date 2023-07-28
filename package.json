@@ -47,7 +47,9 @@
 		"eject": "react-scripts eject"
 	},
 	"resolutions": {
-		"nth-check": ">=2.0.1"
+		"nth-check": ">=2.0.1",
+		"@types/node": "20.4.4",
+		"eslint-config-react-app": "7.0.1"
 	},
 	"eslintConfig": {
 		"extends": [
