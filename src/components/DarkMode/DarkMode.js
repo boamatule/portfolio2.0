@@ -144,8 +144,6 @@
 import PropTypes from 'prop-types';
 import React from "react";
 import styled from 'styled-components/macro';
-import useDarkMode from './useDarkMode';
-import { lightTheme, darkTheme } from './Themes'; // Replace 'your-theme-file' with the actual path to your theme file
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -205,7 +203,8 @@ const Sun = styled.svg`
   position: sticky;
   top: 0px;
   right: 0rem;
-  color: #4568dc;
+  /* color: #4568dc; */
+  color: 'grey';
   transition: all transform 2s;
   cursor: pointer;
   color: none;
@@ -224,10 +223,16 @@ const Sun = styled.svg`
 `;
 
 const Moon = styled.svg`
-  /* Add styles for the Moon component here if needed */
-`;
+  position: sticky;
+  top: 0px;
+  right: 0rem;
+  color: 'grey';
+  /* color: #4568dc; */
+  transition: all transform 2s;
+  cursor: pointer;
+  color: none;`;
 
-const DarkMode = ({theme, toggleTheme }) => {
+const DarkMode = ({ theme, toggleTheme }) => {
   // const [theme, toggleTheme] = useDarkMode();
   // console.log("Theme:", theme);
   // console.log("Toggle Theme Function:", toggleTheme);
@@ -236,9 +241,9 @@ const DarkMode = ({theme, toggleTheme }) => {
   return (
     <div
       onClick={toggleTheme}
-      // theme={themeObject}
-      // onChange={toggleTheme}
-      // defaultChecked={defaultDark}
+    // theme={themeObject}
+    // onChange={toggleTheme}
+    // defaultChecked={defaultDark}
     >
       {theme === 'light' ? (
         <Moon

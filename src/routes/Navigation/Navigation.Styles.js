@@ -190,7 +190,8 @@ const Nav = styled.nav`
     padding: 0rem;
     background-color: #fff;
   }
-`, NavItemSocialIconLink = styled.a`
+`,
+  NavItemSocialIconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,12 +218,44 @@ const Nav = styled.nav`
   /* remove unnecessary styles */
   top: auto;
   justify-content: center;
-  `, Image = styled(LazyLoadImage)`
+  `,
+
+  DarkModeWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color:  #4568dc;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* margin-left: -4rem; */
+  }
+
+  /* increase touch target size */
+  width: 36px;
+  height: 36px;
+  padding-left: 0rem;
+  margin-right: 0em;
+
+  /* remove unnecessary styles */
+  top: auto;
+  justify-content: center;
+`,
+
+  Image = styled(LazyLoadImage)`
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
   margin-right: 0.5rem;
-`, DropdownMenu = styled.div`
+`,
+  DropdownMenu = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -287,5 +320,5 @@ export const NavItemToggle = styled(motion.div)`
     }
   }
 `;
+export { AnimatedFaBars, AnimatedFaTimes, DarkModeWrapper, DropdownMenu, DropdownMenuItem, FaBarsIcon, Image, LogoContainer, MobileIconContainer, Nav, NavItem, NavItemSocialIconLink, NavItemSocialIconLinkMotion, NavItemSocialIconLinkWrapper, NavItemSocialIconWrapper, NavLinks, NavMenu, NavbarContainer, StyledLogo };
 
-export { AnimatedFaBars, AnimatedFaTimes, DropdownMenu, DropdownMenuItem, FaBarsIcon, Image, LogoContainer, MobileIconContainer, Nav, NavItem, NavItemSocialIconLink, NavItemSocialIconLinkMotion, NavItemSocialIconLinkWrapper, NavItemSocialIconWrapper, NavLinks, NavMenu, NavbarContainer, StyledLogo };

@@ -8,6 +8,7 @@ import useDarkMode from '../../components/DarkMode/useDarkMode';
 import {
   AnimatedFaBars,
   AnimatedFaTimes,
+  DarkModeWrapper,
   LogoContainer,
   Nav,
   NavItem,
@@ -17,7 +18,7 @@ import {
   NavLinks,
   NavMenu,
   NavbarContainer,
-  StyledLogo,
+  StyledLogo
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
@@ -49,10 +50,6 @@ const NavBar = () => {
 
   const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-
-  // const [theme, toggleTheme] = useDarkMode();
-  // const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -154,10 +151,10 @@ const NavBar = () => {
                 duration: 1.5,
               }}
             >
-              <DarkMode
+              {/* <DarkMode
                 theme={theme}
                 toggleTheme={themeToggle}
-              />
+              /> */}
               <NavItemSocialIconLinkMotion
               // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
@@ -190,6 +187,13 @@ const NavBar = () => {
                     }}
                   />
                 </NavItemSocialIconLink>
+                <DarkModeWrapper
+                >
+                  <DarkMode
+                    theme={theme}
+                    toggleTheme={themeToggle}
+                  />
+                </DarkModeWrapper>
               </NavItemSocialIconLinkMotion>
             </NavItemSocialIconWrapper>
           </NavbarContainer>

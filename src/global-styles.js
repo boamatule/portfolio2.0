@@ -2,29 +2,27 @@ import 'normalize.css';
 import styled, { createGlobalStyle } from "styled-components/macro";
 
 export const GlobalStyles = createGlobalStyle`
-  /* :root { */
-    /* --light: grey;
+  :root {
+    --light: grey;
     --dark: grey;
     --font-color: #86829c;
     --background-color: #232129;
-    --theme-color: #007bff; */
+    --theme-color: #007bff;
     /* width: 100%;
     height: 100%; */
-    /* background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text}; */
-  /* } */
-/* 
+  }
+
   [data-theme="dark"] {
     --background-color: #fff;
-  } */
+  }
 
   /* Chrome, Firefox, Opera, Edge */
   @media (prefers-color-scheme: light) {
     /* Light mode styles */
     /* Use the --theme-color variable for the browser UI elements */
     :root {
-      /* --color-on-background: #fff;
-      --color-on-primary: #007bff; */
+      --color-on-background: #fff;
+      --color-on-primary: #007bff;
     }
   }
 
@@ -33,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
     /* Dark mode styles */
     /* Use a different color for the --theme-color variable */
     :root {
-      /* --color-on-background: #000;
-      --color-on-primary: #0cf; */
+      --color-on-background: #000;
+      --color-on-primary: #0cf;
     }
   }
 
@@ -45,24 +43,6 @@ export const GlobalStyles = createGlobalStyle`
       content: var(--theme-color);
     }
   }
-
-  * {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-    transition: all 0.5s linear;  
-	}
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-}
 
   *,
   *::before,
