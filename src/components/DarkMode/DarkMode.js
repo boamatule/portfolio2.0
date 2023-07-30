@@ -227,16 +227,16 @@ const Moon = styled.svg`
   /* Add styles for the Moon component here if needed */
 `;
 
-const DarkMode = () => {
-  const [theme, toggleTheme] = useDarkMode();
-  console.log("Theme:", theme);
-  console.log("Toggle Theme Function:", toggleTheme);
-  const themeObject = theme === 'light' ? lightTheme : darkTheme; // Use lightTheme for 'light' theme and darkTheme for 'dark' theme
+const DarkMode = ({theme, toggleTheme }) => {
+  // const [theme, toggleTheme] = useDarkMode();
+  // console.log("Theme:", theme);
+  // console.log("Toggle Theme Function:", toggleTheme);
+  // const themeObject = theme === 'light' ? lightTheme : darkTheme; // Use lightTheme for 'light' theme and darkTheme for 'dark' theme
 
   return (
-    <Button
+    <div
       onClick={toggleTheme}
-      theme={themeObject}
+      // theme={themeObject}
       // onChange={toggleTheme}
       // defaultChecked={defaultDark}
     >
@@ -275,7 +275,7 @@ const DarkMode = () => {
           />
         </Sun>
       )}
-    </Button>
+    </div>
   );
 }
 

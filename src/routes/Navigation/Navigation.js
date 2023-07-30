@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
+// import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 import {
   AnimatedFaBars,
@@ -21,8 +21,13 @@ import {
 } from './Navigation.Styles';
 
 import DarkMode from '../../components/DarkMode/DarkMode';
+import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
+
+
+// const [theme, themeToggle] = useDarkMode();
+// const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -42,14 +47,18 @@ const NavBar = () => {
     changeNav();
   }, []);
 
-  const [theme, toggleTheme] = useDarkMode();
+  const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+
+  // const [theme, toggleTheme] = useDarkMode();
+  // const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav 
-        scrollNav={scrollNav}
+        <Nav
+          scrollNav={scrollNav}
         >
           <NavbarContainer >
             <LogoContainer to="/">
@@ -146,7 +155,8 @@ const NavBar = () => {
               }}
             >
               <DarkMode
-              // onClick={{toggleTheme}}
+                theme={theme}
+                toggleTheme={themeToggle}
               />
               <NavItemSocialIconLinkMotion
               // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
