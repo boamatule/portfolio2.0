@@ -20,9 +20,6 @@ import {
   StyledLogo,
 } from './Navigation.Styles';
 
-import AboutPage from '../../Pages/AboutPage/AboutPage';
-import ContactPage from '../../Pages/ContactPage/ContactPage';
-import PortfolioListPage from '../../Pages/PortfolioPage/PortfolioListPage';
 import DarkMode from '../../components/DarkMode/DarkMode';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
@@ -30,7 +27,7 @@ import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
   const [click, setClick] = useState(false);
-
+  // const [theme, toggleTheme] = useDarkMode();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const changeNav = () => {
@@ -51,7 +48,9 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav scrollNav={scrollNav}>
+        <Nav 
+        scrollNav={scrollNav}
+        >
           <NavbarContainer >
             <LogoContainer to="/">
               <StyledLogo
@@ -146,7 +145,9 @@ const NavBar = () => {
                 duration: 1.5,
               }}
             >
-              <DarkMode />
+              <DarkMode
+              // onClick={{toggleTheme}}
+              />
               <NavItemSocialIconLinkMotion
               // whileHover={{ scale: 1.1, transition: { duration: 0 } }}
               >
