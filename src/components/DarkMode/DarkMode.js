@@ -144,7 +144,7 @@
 import PropTypes from 'prop-types';
 import React from "react";
 import styled from 'styled-components/macro';
-
+import Toggle from "react-toggle";
 const setDark = () => {
   localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
@@ -239,11 +239,12 @@ const DarkMode = ({ theme, toggleTheme }) => {
   // const themeObject = theme === 'light' ? lightTheme : darkTheme; // Use lightTheme for 'light' theme and darkTheme for 'dark' theme
 
   return (
-    <div
-      onClick={toggleTheme}
-    // theme={themeObject}
-    // onChange={toggleTheme}
-    // defaultChecked={defaultDark}
+    <
+      // id="checkbox"
+      // type="checkbox"
+      // name="checkbox"
+      // onChange={toggleTheme}
+      // defaultChecked={defaultDark}
     >
       {theme === 'light' ? (
         <Moon
@@ -280,7 +281,7 @@ const DarkMode = ({ theme, toggleTheme }) => {
           />
         </Sun>
       )}
-    </div>
+    </>
   );
 }
 

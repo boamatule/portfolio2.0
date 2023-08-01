@@ -57,7 +57,7 @@ const NavBar = () => {
         <Nav
           scrollNav={scrollNav}
         >
-          <NavbarContainer >
+          <NavbarContainer style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <LogoContainer to="/">
               <StyledLogo
                 src="../../../images/logo.png"
@@ -92,6 +92,7 @@ const NavBar = () => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
+                    offset={-80}
                     duration={500}
                   >
                     home
@@ -103,7 +104,7 @@ const NavBar = () => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
-                    offset={800}
+                    offset={720}
                     duration={500}
                   >
                     portfolio
@@ -115,7 +116,7 @@ const NavBar = () => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
-                    offset={70}
+                    offset={-10}
                     duration={500}
                   >
                     about
@@ -127,7 +128,7 @@ const NavBar = () => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
-                    offset={2000}
+                    offset={3080}
                     duration={500}
                   >
                     contact
