@@ -8,8 +8,6 @@ export const GlobalStyles = createGlobalStyle`
     --font-color: #86829c;
     --background-color: #232129;
     --theme-color: #007bff;
-    /* width: 100%;
-    height: 100%; */
   }
 
   [data-theme="dark"] {

@@ -108,7 +108,7 @@ const Nav = styled.nav`
     border-bottom: 4px solid #4568dc;
     padding-bottom: 0;
   }
-`, NavLinks = styled(smoothScroll)`
+`, NavLinks = styled(Link)`
   display: flex;
   text-align: center;
   align-items: center;
@@ -170,10 +170,6 @@ const Nav = styled.nav`
   @media screen and (max-width: 768px) {
     top: 0px;
     margin-left: -14em;
-
-    /* margin-right: 12em; */
-    /* flex-direction: row-reverse; */
-    /* align-items: flex-start; */
   }
 `,
 
