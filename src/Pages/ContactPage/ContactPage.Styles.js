@@ -55,7 +55,7 @@ ContactFormColumn = styled.div`
   width: 100%;
   padding: 0 0px;
   background-color: transparent;
-
+  }
 
   @media screen and (max-width: 480px) {
     margin-right: auto;
@@ -80,7 +80,7 @@ ContactFormColumn = styled.div`
   }
 `, Title = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #999999;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;

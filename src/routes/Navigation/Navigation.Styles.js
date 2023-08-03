@@ -19,8 +19,6 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
-  /* padding: 10px 24px; */
-  /* background-color: ${(props) => props.theme.background}; */
 
   @media screen and (max-width: 768px) {
     transition: 0.8s all ease-out;
@@ -108,12 +106,12 @@ const Nav = styled.nav`
     border-bottom: 4px solid #4568dc;
     padding-bottom: 0;
   }
-`, NavLinks = styled(Link)`
+`, NavLinks = styled(smoothScroll)`
   display: flex;
   text-align: center;
   align-items: center;
   height: 100%;
-  color: grey;
+  color: #999999;
   letter-spacing: 8px;
   font-size: 700;
   line-height: 20px;

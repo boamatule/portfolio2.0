@@ -28,7 +28,7 @@ export const Title = styled.p`
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 4px;
-  color: grey;
+  color: #999999;
   margin: 20px;
   text-align: center;
   font-family: Rubik;
@@ -78,7 +78,7 @@ export const Text = styled.p`
 `;
 
 export const GithubLink = styled.a`
-  color: grey;
+  color: #999999;
 
   &:hover {
     color: #4568dc;
@@ -98,7 +98,6 @@ export const CardContainer = styled.div`
   border-radius: 10px;
   margin: 0 auto;
   width: 100%;
-  /* z-index: 1; */
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     margin: 0;
@@ -120,7 +119,7 @@ export const Image = styled(LazyLoadImage)`
 `;
 export const ProjectDescription = styled.p`
   display: inline-block;
-  color: grey;
+  color: #999999;
   margin: 10px;
   padding: 10px;
   font-size: 14px;
@@ -158,7 +157,7 @@ export const ProjectSubtitle = styled.p`
 
 export const SubTitle = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #999999;
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;

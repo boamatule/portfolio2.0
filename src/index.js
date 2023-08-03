@@ -1,14 +1,14 @@
+import 'normalize.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import 'normalize.css';
 import { GlobalStyles } from './global-styles';
 
-import { ProjectsProvider } from './contexts/projects.context';
 import App from './App';
+import { ProjectsProvider } from './contexts/projects.context';
 
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

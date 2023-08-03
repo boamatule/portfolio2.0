@@ -98,7 +98,7 @@ const AboutWrapper = styled(Container)`
 
   Description = styled.p`
   margin-top: 16px;
-  color: grey;
+  color: #999999;
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;

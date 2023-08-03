@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Outlet } from 'react-router-dom';
+import { animateScroll as scroll } from "react-scroll";
 import { ThemeProvider } from 'styled-components';
-// import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
+
 import {
   AnimatedFaBars,
   AnimatedFaTimes,
@@ -20,44 +21,24 @@ import {
   StyledLogo
 } from './Navigation.Styles';
 
+import DarkMode from '../../components/DarkMode/DarkMode';
 import { darkTheme, lightTheme } from '../../components/DarkMode/Themes';
 import Dropdown from '../Dropdown/Dropdown';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
-import DarkMode from '../../components/DarkMode/DarkMode';
-// import DarkModeToggle from '../../components/DarkMode/DarkModeToggle';
-
-
 
 const NavBar = () => {
-  const [scrollNav, setScrollNav] = useState(false);
   const [click, setClick] = useState(false);
-  // const [theme, toggleTheme] = useDarkMode();
+
   const handleClick = () => setClick(!click);
+
   const closeMobileMenu = () => setClick(false);
-  // const changeNav = () => {
-  //   if (window.scrollY <= 80) {
-  //     setScrollNav(true);
-  //   } else {
-  //     setScrollNav(false);
-  //   }
-  // };
 
-  // useEffect(() => {
-  //   changeNav();
-  // }, []);
-
-
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+  const toggleHome = () => {
+    scroll.scrollToTop();
   };
 
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const portfolioRef = useRef(null);
-  const contactRef = useRef(null);
+
+
 
   const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -65,13 +46,15 @@ const NavBar = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
-        <Nav scrollNav={scrollNav}>
+        <Nav>
           <NavbarContainer style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <LogoContainer to="/">
               <StyledLogo
                 src="../../../images/logo.png"
                 alt='logo'
-                loading="lazy"
+                // loading="lazy"
+                title="Just a logo"
+                onClick={toggleHome}
               />
             </LogoContainer>
             <DropdownMobileIcon onClick={handleClick}>
@@ -93,56 +76,47 @@ const NavBar = () => {
             {click ? (
               <Dropdown />
             ) : (
-
               <NavMenu onClick={closeMobileMenu}>
                 <NavItem>
                   <NavLinks
-                    // to=""
-                    // activeClass="active"
-                    // spy={true}
-                    // smooth={true}
-                    // offset={-80}
-                    // duration={500}
-                    onClick={() => scrollToSection(homeRef)}
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
                   >
                     home
                   </NavLinks>
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    // to="projects"
-                    // activeClass="active"
-                    // spy={true}
-                    // smooth={true}
-                    // offset={720}
-                    // duration={500}
-                    onClick={() => scrollToSection(portfolioRef)}
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={720}
+                    duration={500}
                   >
                     portfolio
                   </NavLinks>
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    // to="about_me"
-                    // activeClass="active"
-                    // spy={true}
-                    // smooth={true}
-                    // offset={-10}
-                    // duration={500}
-                    onClick={() => scrollToSection(aboutRef)}
+                    to="about_me"
+                    spy={true}
+                    smooth={true}
+                    offset={-10}
+                    duration={500}
                   >
                     about
                   </NavLinks>
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    // to="contact_me"
-                    // activeClass="active"
-                    // spy={true}
-                    // smooth={true}
-                    // offset={3080}
-                    // duration={500}
-                    onClick={() => scrollToSection(contactRef)}
+                    to="contact_me"
+                    spy={true}
+                    smooth={true}
+                    offset={3080}
+                    duration={500}
                   >
                     contact
                   </NavLinks>
@@ -201,30 +175,23 @@ const NavBar = () => {
                     }}
                   />
                 </NavItemSocialIconLink>
-                {/* <DarkModeWrapper> */}
-                  {/* <DarkMode
-                    theme={theme}
-                    toggleTheme={themeToggle}
-                  /> */}
-                {/* </DarkModeWrapper> */}
-                {/* <DarkModeToggle /> */}
               </NavItemSocialIconLinkMotion>
             </NavItemSocialIconWrapper>
           </NavbarContainer>
         </Nav>
         <div>
-          <section id="/" ref={homeRef}>
-            {/* ... */}
-          </section>
-          <section id="about_me" ref={aboutRef}>
-            {/* ... */}
-          </section>
-          <section id="projects" ref={portfolioRef}>
-            {/* ... */}
-          </section>
-          <section id="contact_me" ref={contactRef}>
-            {/* ... */}
-          </section>
+          <section
+            id="/"
+          />
+          <section
+            id="about_me"
+          />
+          <section
+            id="projects"
+          />
+          <section
+            id="contact_me"
+          />
         </div>
         <Outlet />
       </IconContext.Provider>

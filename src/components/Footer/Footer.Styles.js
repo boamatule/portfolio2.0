@@ -9,10 +9,8 @@ export const FooterContainer = styled.footer`
   width: 100%;
   display: flex;
   align-items: left;
-  /* position: fixed; */
-  z-index: -1;
+
   @media screen and (max-width: 768px) {
-    /* top: 60px; */
     padding: 1em 2em;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -24,7 +22,8 @@ export const Copyright = styled.p`
   margin: 0;
   font-size: 16px;
   text-align: left;
-  color: #4568dc;
+  /* color: #4568dc; */
+  color: #c4c4c4;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -100,7 +99,6 @@ export const ScrollToTopIcon = styled(FaAngleUp)`
   width: 20px;
   height: 20px;
   color: #4568dc;
-  cursor: pointer;
 
   &:hover {
     color: grey;

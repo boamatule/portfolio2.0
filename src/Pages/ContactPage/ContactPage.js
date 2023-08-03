@@ -77,7 +77,7 @@ const ContactPage = () => {
             <Input
               style={{
                 background: 'transparent',
-                color: 'grey',
+                color: '#999999',
                 fontWeight: 'normal',
                 letterSpacing: '1px',
                 lineHeight: '24px',
@@ -92,7 +92,7 @@ const ContactPage = () => {
             <Input
               style={{
                 background: 'transparent',
-                color: 'grey',
+                color: '#999999',
                 fontWeight: 'normal',
                 letterSpacing: '1px',
                 lineHeight: '24px',
@@ -106,7 +106,7 @@ const ContactPage = () => {
             />
             <TextArea
               style={{
-                color: 'grey',
+                color: '#999999',
                 fontWeight: 'normal',
                 letterSpacing: '1px',
                 lineHeight: '24px',

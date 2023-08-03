@@ -69,7 +69,7 @@ const ProjectsList = () => {
                       style={{
                         background: 'transparent',
                         border: 'none',
-                        color: '#4568dc',
+                        color: '#8899a6',
                         size: '12px'
                       }}
                     >

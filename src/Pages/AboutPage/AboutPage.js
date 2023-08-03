@@ -56,9 +56,9 @@ const AboutPage = () => (
         })}
       </Heading>
       <Description>
-        I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager. 
+        I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager.
         <br />
-        Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>. 
+        Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>.
         <br />
         I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
       </Description>
@@ -70,7 +70,7 @@ const AboutPage = () => (
       </GradientButton>
     </TextColumn>
     <ImageColumn backgroundImage={backgroundImage}>
-      <Image src="../../images/moi.webp" alt="Boa" />
+      <Image src="../../images/moi.webp" alt="Boa" title="This is Boa" />
     </ImageColumn>
   </AboutWrapper>
 );
