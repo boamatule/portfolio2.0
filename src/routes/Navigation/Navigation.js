@@ -93,7 +93,7 @@ const NavBar = () => {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={720}
+                    offset={900}
                     duration={500}
                   >
                     portfolio
@@ -104,7 +104,7 @@ const NavBar = () => {
                     to="about_me"
                     spy={true}
                     smooth={true}
-                    offset={-10}
+                    offset={-80}
                     duration={500}
                   >
                     about
@@ -115,7 +115,7 @@ const NavBar = () => {
                     to="contact_me"
                     spy={true}
                     smooth={true}
-                    offset={3080}
+                    offset={2400}
                     duration={500}
                   >
                     contact
@@ -123,7 +123,6 @@ const NavBar = () => {
                 </NavItem>
               </NavMenu>
             )}
-
             <NavItemSocialIconWrapper
             // initial={{
             //   x: 500,

@@ -11302,6 +11302,7 @@ __metadata:
     tailwindcss: ^3.3.3
     terser-webpack-plugin: ^5.3.9
     twin.macro: ^3.4.0
+    uglify-js: ^3.17.4
     web-vitals: ^3.4.0
     webpack: ^5.88.2
     workbox-background-sync: ^7.0.0
@@ -14570,6 +14571,15 @@ __metadata:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: 99c11aaa8f45189fcfba6b8a4825fd684a321caa9bd7a76a27cf0c7732c174d198b99f449c52c3818107430b5f41c0ccbbfb75cb2ee3ca4a9451710986d61a60
+  languageName: node
+  linkType: hard
+
+"uglify-js@npm:^3.17.4":
+  version: 3.17.4
+  resolution: "uglify-js@npm:3.17.4"
+  bin:
+    uglifyjs: bin/uglifyjs
+  checksum: 7b3897df38b6fc7d7d9f4dcd658599d81aa2b1fb0d074829dd4e5290f7318dbca1f4af2f45acb833b95b1fe0ed4698662ab61b87e94328eb4c0a0d3435baf924
   languageName: node
   linkType: hard
 

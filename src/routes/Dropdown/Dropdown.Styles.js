@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Link as smoothScroll } from 'react-scroll';
 import styled from "styled-components";
 
 const DropdownContainer = styled.div`

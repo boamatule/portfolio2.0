@@ -6,7 +6,6 @@ const Footer = () => {
   const currentDate = new Date().getFullYear();
 
   const toggleHome = () => {
-    console.log('Scroll button clicked');
     scroll.scrollToTop({
       duration: 1000,
       smooth: true,

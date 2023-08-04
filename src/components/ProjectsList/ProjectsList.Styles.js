@@ -9,7 +9,8 @@ export const ProjectContainer = styled(Container)`
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
+  /* height: auto; */
   background: none;
   padding: 8em 4em;
   margin: 0 auto;

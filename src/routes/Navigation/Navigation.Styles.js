@@ -69,18 +69,19 @@ const Nav = styled.nav`
   cursor: pointer;
   margin-left: -60px;
   z-index: 999;
-  padding: 0 40px;
+  padding: 0 20px;
 
   @media screen and (max-width: 768px) {
-    display: flex;
-    margin-left: -124px;
-    margin-top: 0;
-    /* padding: 0px -160px 0 0; */
+    margin-left: -76px;
   }
 `,
   StyledLogo = styled.img`
   width: 260px;
   height: 260px;
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  } 
 `,
   NavMenu = styled.ul`
   display: flex;

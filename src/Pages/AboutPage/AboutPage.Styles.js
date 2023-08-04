@@ -9,7 +9,7 @@ const AboutWrapper = styled(Container)`
   font-family: Rubik;
   background-color: transparent;
   width: 100%;
-  /* height: 76vh; */
+  min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
   padding: 8em 4em;
   overflow: hidden;
 
@@ -17,7 +17,8 @@ const AboutWrapper = styled(Container)`
     flex-direction: column;
     height: auto;
     margin-bottom: 20px;
-    padding: 0em 1em;
+    padding: 4em 1em; /* Adjust padding for smaller screens */
+    /* padding: 0em 1em; */
   }
 `,
 

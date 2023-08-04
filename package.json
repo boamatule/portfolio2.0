@@ -46,6 +46,7 @@
 		"tailwindcss": "^3.3.3",
 		"terser-webpack-plugin": "^5.3.9",
 		"twin.macro": "^3.4.0",
+		"uglify-js": "^3.17.4",
 		"web-vitals": "^3.4.0",
 		"webpack": "^5.88.2",
 		"workbox-background-sync": "^7.0.0",
