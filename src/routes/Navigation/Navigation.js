@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Outlet } from 'react-router-dom';
-import { animateScroll as scroll } from "react-scroll";
+import { Element, animateScroll as scroll } from "react-scroll";
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from '../../components/DarkMode/useDarkMode';
 
@@ -79,7 +79,7 @@ const NavBar = () => {
               <NavMenu onClick={closeMobileMenu}>
                 <NavItem>
                   <NavLinks
-                    to="/"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-80}
@@ -90,7 +90,7 @@ const NavBar = () => {
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    to="projects"
+                    href="projects"
                     spy={true}
                     smooth={true}
                     offset={900}
@@ -101,7 +101,7 @@ const NavBar = () => {
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    to="about_me"
+                    href="about_me"
                     spy={true}
                     smooth={true}
                     offset={-80}
@@ -112,7 +112,7 @@ const NavBar = () => {
                 </NavItem>
                 <NavItem>
                   <NavLinks
-                    to="contact_me"
+                    href="contact_me"
                     spy={true}
                     smooth={true}
                     offset={2400}
@@ -179,16 +179,16 @@ const NavBar = () => {
           </NavbarContainer>
         </Nav>
         <div>
-          <section
+          <Element
             id="/"
           />
-          <section
+          <Element
             id="about_me"
           />
-          <section
+          <Element
             id="projects"
           />
-          <section
+          <Element
             id="contact_me"
           />
         </div>

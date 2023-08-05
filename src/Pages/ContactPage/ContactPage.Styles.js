@@ -12,18 +12,18 @@ const ContactContainer = styled(Container)`
   width: 100%;
   min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
   padding: 6em 4em;
-
+  
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    /* padding: 0em 1em; */
+    padding: 0em 2em; 
     background-color: transparent; 
   }
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     flex-direction: column;
-    padding: 0em 1em;
+    padding: 0em 2em;
     background-color: transparent;
-  }
+  } */
 `,
 
 ContactFormColumn = styled.div`
@@ -71,7 +71,7 @@ ContactFormColumn = styled.div`
   letter-spacing: 4px;
   color: #4568dc;
   font-size: 32px;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   padding: 0;
   margin-bottom: 30px;
   text-align: left;
@@ -83,10 +83,10 @@ ContactFormColumn = styled.div`
   margin-top: 16px;
   color: #999999;
   font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   line-height: 24px;
   text-align: left;
-  max-width: 92%;
   margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {

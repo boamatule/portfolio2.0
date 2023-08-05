@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Link as smoothScroll } from 'react-scroll';
 import styled from "styled-components";
 
 const DropdownContainer = styled.div`
@@ -9,7 +8,7 @@ const DropdownContainer = styled.div`
   top: 0;
   left: 30%;
   display: flex;
-  font-family: Rubik;
+  font-family: 'Roboto Mono', monospace;
   justify-content: center;
   background: #0f172a;
   animation: slideIn 0.3s ease-out forwards;
@@ -42,7 +41,7 @@ const DropdownContainer = styled.div`
     letter-spacing: 6px;
     font-size: 700;
     line-height: 10px;
-    font-family: 'Rubik', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     text-decoration: none;
     padding: 0rem 0.5rem;

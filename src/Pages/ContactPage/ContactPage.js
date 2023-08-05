@@ -67,7 +67,7 @@ const ContactPage = () => {
         </Heading>
         <Title>
           Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. 
-          <h1 />
+          {/* <h1 /> */}
           Stay healthy and keep a positive attitude in the meantime!
         </Title>
       </ContactFormColumn>

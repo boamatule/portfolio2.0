@@ -3,7 +3,7 @@ import{FaCheck}from"react-icons/fa";import styled,{keyframes}from"styled-compone
   height: 60vh;
   margin: 0 auto;
   padding: 40px;
-  font-family: Rubik;
+  font-family: 'Roboto Mono', monospace; 
   justify-content: center;
   text-align: center;
 `,fadeIn=keyframes`

@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   [data-theme="dark"] {
-    --background-color: #fff;
+    --background-color: #fafaf8;
   }
 
   /* Chrome, Firefox, Opera, Edge */
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-family: 'Rubik';
+    font-family: 'Roboto Mono', monospace;  
     background-color: var(--background-color);
     color: var(--font-color);
   }

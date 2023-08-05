@@ -10,17 +10,14 @@ export const ProjectContainer = styled(Container)`
   overflow: hidden;
   width: 100%;
   min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
-  /* height: auto; */
-  background: none;
-  padding: 8em 4em;
+  padding: 6em 4em;
   margin: 0 auto;
-  border-radius: 10px;
   background: transparent;
   
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0em 1em;
-    margin-bottom: 60px;
+    padding: 2em 1em; 
+    margin-bottom: 20px;
   }
 `;
 
@@ -32,7 +29,7 @@ export const Title = styled.p`
   color: #999999;
   margin: 20px;
   text-align: center;
-  font-family: Rubik;
+  font-family: 'Roboto Mono', monospace; 
   font-style: normal;
   font-weight: 500;
   text-align: left;
@@ -43,7 +40,10 @@ display: flex;
 font-weight: bold;
 padding: 0px 0px;
 color: #4568dc;
+font-family: 'Roboto Mono', monospace;
+font-style: normal;
 font-size: 32px;
+margin-bottom: 10px;
 justify-content: flex-start;
 text-align: flex-start;
 
@@ -59,7 +59,7 @@ text-align: flex-start;
   margin-bottom: 10px;
   padding: 0px 10px;
 }
-`; 
+`;
 
 export const ButtonWrapper = styled.div`
   display: flex;

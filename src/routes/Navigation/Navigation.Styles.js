@@ -21,7 +21,8 @@ const Nav = styled.nav`
   background: transparent;
 
   @media screen and (max-width: 768px) {
-    transition: 0.8s all ease-out;
+    /* transition: 0.8s all ease-out; */
+    margin-bottom: 10px;
   }
 `,
 
@@ -56,7 +57,8 @@ const Nav = styled.nav`
   height: 80px;
   width: 100%;
   padding: 0 0;
-  font-family: Rubik;
+  font-family: 'Roboto Mono', monospace; 
+  
   @media screen and (max-width: 768px) {
 
   }
@@ -112,16 +114,15 @@ const Nav = styled.nav`
   text-align: center;
   align-items: center;
   height: 100%;
-  color: #999999;
+  color: #8e9188;
   letter-spacing: 8px;
-  font-size: 700;
-  line-height: 20px;
-  font-family: 'Rubik', monospace;
+  line-height: 28px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-
   &.active {
     border-bottom: 3px solid #4568dc;
   }

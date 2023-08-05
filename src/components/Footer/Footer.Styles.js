@@ -22,9 +22,10 @@ export const Copyright = styled.p`
   margin: 0;
   font-size: 16px;
   text-align: left;
-  /* color: #4568dc; */
   color: #c4c4c4;
-
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  
   @media screen and (max-width: 768px) {
     font-size: 14px;
     text-align: left;
