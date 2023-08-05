@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <>
       <About />
-      <Marginer direction="vertical" margin="2em" />
+      {/* <Marginer direction="vertical" margin="1em" /> */}
       <ProjectsList />
-      <Marginer direction="vertical" margin="2em" />
+      {/* <Marginer direction="vertical" margin="1em" /> */}
       <ContactPage />
     </>
   );

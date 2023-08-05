@@ -77,17 +77,16 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   white-space: nowrap;
-  padding: ${({ big }) => big ? "12px 4px" : "10px 20px"};
-  color: grey;
-  font-size: ${({ fontBig }) => fontBig ? "20px" : "16px"};
+  padding: ${({ big }) => (big ? '12px 4px' : '10px 20px')};
+  color: none;
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   cursor: pointer;
   background: #4568dc;
-  transition: 0.5s;
-  border-radius: 2px;
+  transition: background 0.5s, color 0.5s; /* Combine transitions */
+  border-radius: 0;
 
   &:hover {
-    transition: all 0.3s ease-out;
     background: purple;
     color: grey;
     text-decoration: none;

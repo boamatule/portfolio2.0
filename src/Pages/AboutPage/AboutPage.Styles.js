@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled, { keyframes } from "styled-components/macro";
 import { Container } from "../../global-styles";
-
+import { Link as smoothScroll } from 'react-scroll';
 
 const AboutWrapper = styled(Container)`
   display: flex;
@@ -10,14 +10,13 @@ const AboutWrapper = styled(Container)`
   justify-content: center;
   background-color: transparent;
   width: 100%;
-  min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
-  padding: 6em 4em;
+  min-height: 100vh;
+  padding: 0em 4em;
   overflow: hidden;
   @media (max-width: 768px) {
     flex-direction: column;
-    height: auto;
-    margin-bottom: 20px;
-    padding: 2em 1em; 
+    padding: 0em 0em;
+    /* padding: 0em 2em;  */
   }
 `,
 
@@ -73,27 +72,20 @@ const AboutWrapper = styled(Container)`
 
   Heading = styled(motion.h1)`
   display: flex;
+  align-items: center;
   font-weight: bold;
-  padding: 0px 0px;
   color: #4568dc;
   justify-content: flex-start;
-  text-align: flex-start;
+  text-align: left;
   font-family: 'Roboto Mono', monospace;
-  font-style: normal;
   font-size: 32px;
-  margin-bottom: 0px;
-  
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-    margin-bottom: 0px;
-    justify-content: left;
-    text-align: left;
-  }
+  margin: 0; 
 
-  @media screen and (max-width: 480px) {
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 0px 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    padding: 0 20px; /* Add padding to left and right */
+    margin-left: auto;
+    margin-right: auto;
   }
 `,
 
@@ -114,7 +106,7 @@ const AboutWrapper = styled(Container)`
   @media screen and (max-width: 480px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 10px;
+    padding: 0 20px; /* Add padding to left and right */ 
   } 
 `;
 
@@ -145,16 +137,8 @@ const MozambiqueText = styled.span`
   `} 5s linear infinite;
 `;
 
-const slideAnimation = keyframes`
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-`;
 
-const GradientButton = styled.a`
+const GradientButton = styled(smoothScroll)`
   display: inline-block;
   position: relative;
   overflow: hidden;

@@ -15,9 +15,9 @@ export const ProjectContainer = styled(Container)`
   background: transparent;
   
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    padding: 2em 1em; 
-    margin-bottom: 20px;
+    /* flex-direction: column; */
+    padding: 0em 1em; 
+    
   }
 `;
 
@@ -36,29 +36,21 @@ export const Title = styled.p`
 
 `;
 export const Heading = styled.h1`
-display: flex;
-font-weight: bold;
-padding: 0px 0px;
-color: #4568dc;
-font-family: 'Roboto Mono', monospace;
-font-style: normal;
-font-size: 32px;
-margin-bottom: 10px;
-justify-content: flex-start;
-text-align: flex-start;
-
-@media screen and (max-width: 768px) {
-  font-size: 20px;
-  margin-bottom: 0px;
-  justify-content: left;
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #4568dc;
+  font-size: 32px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0;
   text-align: left;
-  }
 
-@media screen and (max-width: 480px) {
-  font-size: 20px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
-}
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    padding: 0em 0.5em;
+    /* margin-left: auto;
+    margin-right: auto; *
+  }
 `;
 
 export const ButtonWrapper = styled.div`

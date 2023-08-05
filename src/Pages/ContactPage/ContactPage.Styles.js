@@ -15,15 +15,9 @@ const ContactContainer = styled(Container)`
   
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0em 2em; 
+    padding: 0em 0em; 
     background-color: transparent; 
   }
-
-  /* @media screen and (max-width: 480px) {
-    flex-direction: column;
-    padding: 0em 2em;
-    background-color: transparent;
-  } */
 `,
 
 ContactFormColumn = styled.div`
@@ -39,6 +33,7 @@ ContactFormColumn = styled.div`
   }
 `, FormContainerColumn = styled(ContactFormColumn)`
   background-color: transparent;
+  padding: 0 20px; /* Add padding to left and right */ 
 
 `, FormContainer = styled.div`
   display: flex;
@@ -54,7 +49,6 @@ ContactFormColumn = styled.div`
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  padding: 0 0px;
   background-color: transparent;
   }
 
@@ -66,38 +60,41 @@ ContactFormColumn = styled.div`
     background-color: transparent;
 }
 `, Heading = styled.h1`
+  display: flex;
   font-weight: bold;
-  line-height: 20px;
   letter-spacing: 4px;
   color: #4568dc;
   font-size: 32px;
   font-family: 'Roboto Mono', monospace;
   padding: 0;
-  margin-bottom: 30px;
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0 20px; /* Add padding to left and right */
+    margin-left: auto;
+    margin-right: auto;
   }
 `, Title = styled.p`
   margin-top: 16px;
   color: #999999;
   font-size: 16px;
-  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
-  line-height: 24px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  line-height: 22px;
   text-align: left;
-  margin-bottom: 20px;
-
+  margin-bottom: 30px;
   @media screen and (max-width: 768px) {
-    font-size: 14px;
-    line-height: 18px;
-    /* padding: 0em 1em; */
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 16px;
   }
 
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 20px; /* Add padding to left and right */ 
+  } 
+  
   @media screen and (max-width: 480px) {
     font-size: 14px;
     line-height: 18px;

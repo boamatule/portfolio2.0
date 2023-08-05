@@ -46,11 +46,11 @@ const AboutPage = () => (
   <AboutWrapper>
     <TextColumn>
       <Heading variants={variants} initial="hidden" animate="visible">
-        {"Hello, I'm Boa Matule.".split("").map((letter, index) => {
+        {"I am Boa Matule.".split("").map((letter, index) => {
           return (
             <React.Fragment key={index}>
               <motion.span variants={letterVariants}>{letter}</motion.span>
-              {index !== "Hello, I'm Boa Matule!".length - 2 && <span>&nbsp;</span>}
+              {index !== "I am Boa Matule.".length - 2 && <span>&nbsp;</span>}
             </React.Fragment>
           );
         })}
@@ -62,7 +62,7 @@ const AboutPage = () => (
         <br />
         I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
       </Description>
-      <GradientButton href="/contact_me">
+      <GradientButton href="contact_me">
         <Button>
           <Text>Get in Touch</Text>
           <SlideAnimation />
@@ -76,55 +76,3 @@ const AboutPage = () => (
 );
 
 export default React.memo(AboutPage);
-
-// import React from 'react';
-// import styled from 'styled-components';
-
-// // Styles for the components
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   background-color: #f2f2f2;
-// `;
-
-// const Title = styled.h1`
-//   font-size: 36px;
-//   color: #333;
-//   margin-bottom: 20px;
-// `;
-
-// const Subtitle = styled.p`
-//   font-size: 18px;
-//   color: #666;
-//   margin-bottom: 40px;
-// `;
-
-// const Button = styled.button`
-//   padding: 12px 24px;
-//   font-size: 16px;
-//   color: #fff;
-//   background-color: #4568dc;
-//   border: none;
-//   border-radius: 4px;
-//   cursor: pointer;
-
-//   &:hover {
-//     background-color: #1237a3;
-//   }
-// `;
-
-// const LandingPage = () => {
-//   return (
-//     <Container>
-//       <Title>Welcome to My Landing Page</Title>
-//       <Subtitle>Start exploring the amazing features!</Subtitle>
-//       <Button>Get Started</Button>
-//     </Container>
-//   );
-// };
-
-// export default LandingPage;
-
