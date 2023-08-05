@@ -2,17 +2,19 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled, { keyframes } from "styled-components/macro";
 import { Container } from "../../global-styles";
-import { Link as smoothScroll } from 'react-scroll';
+
 
 const AboutWrapper = styled(Container)`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   background-color: transparent;
   width: 100%;
   min-height: 100vh;
   padding: 0em 4em;
   overflow: hidden;
+  margin-bottom: -400px;
+  margin-top: 100px;
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0em 0em;
@@ -138,13 +140,13 @@ const MozambiqueText = styled.span`
 `;
 
 
-const GradientButton = styled(smoothScroll)`
+const GradientButton = styled.a`
   display: inline-block;
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(to right, #ff9f01, #ffc800);
   @media screen and (max-width: 768px) {
-    display: none;
+    /* display: none; */
   } 
 `;
 

@@ -38,8 +38,6 @@ const NavBar = () => {
   };
 
 
-
-
   const [theme, themeToggle] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -82,7 +80,7 @@ const NavBar = () => {
                     href="/"
                     spy={true}
                     smooth={true}
-                    offset={-80}
+                    offset={-300}
                     duration={500}
                   >
                     home
@@ -93,7 +91,7 @@ const NavBar = () => {
                     href="projects"
                     spy={true}
                     smooth={true}
-                    offset={900}
+                    offset={600}
                     duration={500}
                   >
                     portfolio
@@ -104,7 +102,7 @@ const NavBar = () => {
                     href="about_me"
                     spy={true}
                     smooth={true}
-                    offset={-80}
+                    offset={-200}
                     duration={500}
                   >
                     about
@@ -115,7 +113,7 @@ const NavBar = () => {
                     href="contact_me"
                     spy={true}
                     smooth={true}
-                    offset={2400}
+                    offset={11000}
                     duration={500}
                   >
                     contact

@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import { Button } from "../../global-styles";
 import {
   AboutWrapper,
   Description,
-  GradientButton,
   Heading,
   Image,
   ImageColumn,
   MozambiqueText,
-  SlideAnimation,
-  Text,
-  TextColumn,
+  TextColumn
 } from './AboutPage.Styles';
 
 const backgroundImage = "../../images/background.svg";
@@ -42,37 +38,60 @@ const letterVariants = {
   },
 };
 
-const AboutPage = () => (
-  <AboutWrapper>
-    <TextColumn>
-      <Heading variants={variants} initial="hidden" animate="visible">
-        {"I am Boa Matule.".split("").map((letter, index) => {
-          return (
-            <React.Fragment key={index}>
-              <motion.span variants={letterVariants}>{letter}</motion.span>
-              {index !== "I am Boa Matule.".length - 2 && <span>&nbsp;</span>}
-            </React.Fragment>
-          );
-        })}
-      </Heading>
-      <Description>
-        I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager.
-        <br />
-        Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>.
-        <br />
-        I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
-      </Description>
-      <GradientButton href="contact_me">
-        <Button>
-          <Text>Get in Touch</Text>
-          <SlideAnimation />
-        </Button>
-      </GradientButton>
-    </TextColumn>
-    <ImageColumn backgroundImage={backgroundImage}>
-      <Image src="../../images/moi.webp" alt="Boa" title="This is Boa" />
-    </ImageColumn>
-  </AboutWrapper>
-);
+const AboutPage = ({ email, subject, body }) => {
+  const customEmail = "boa.matule@gmail.com";
+  const handleEmailClick = () => {
+    const mailtoLink = `mailto:${customEmail}?subject=${encodeURIComponent("")}&body=${encodeURIComponent("")}`;
+    window.location.href = mailtoLink;
+  };
+  return (
+    <AboutWrapper>
+      <TextColumn>
+        <Heading variants={variants} initial="hidden" animate="visible">
+          {"I am Boa Matule.".split("").map((letter, index) => {
+            return (
+              <React.Fragment key={index}>
+                <motion.span variants={letterVariants}>{letter}</motion.span>
+                {index !== "I am Boa Matule.".length - 2 && <span>&nbsp;</span>}
+              </React.Fragment>
+            );
+          })}
+        </Heading>
+        <Description>
+          I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager.
+          <br />
+          Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>.
+          <br />
+          I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
+          <br />
+          {/* <div 
+            style={{ height: "1em", color
+          }}> */}
+
+          <a href="#" onClick={handleEmailClick}>
+            Get in Touch            </a>
+          {/* </div> */}
+          {/* <a href="#" onClick={handleEmailClick}>
+              Click here to send an email
+            </a> */}
+
+        </Description>
+
+        {/* <GradientButton href="/contact_me">
+          <Button>
+            <Text>Get in Touch</Text>
+            <a href="#" onClick={handleEmailClick}>
+              Click here to send an email
+            </a>
+            <SlideAnimation />
+          </Button>
+        </GradientButton> */}
+      </TextColumn>
+      <ImageColumn backgroundImage={backgroundImage}>
+        <Image src="../../images/moi.webp" alt="Boa" title="This is Boa" />
+      </ImageColumn>
+    </AboutWrapper>
+  )
+}
 
 export default React.memo(AboutPage);
