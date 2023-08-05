@@ -6,7 +6,6 @@ import { Container } from "../../global-styles";
 
 const AboutWrapper = styled(Container)`
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-color: transparent;
   width: 100%;
@@ -18,7 +17,8 @@ const AboutWrapper = styled(Container)`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0em 0em;
-    /* padding: 0em 2em;  */
+    margin-top: -80px;
+    margin-bottom: -100px;
   }
 `,
 
@@ -85,7 +85,7 @@ const AboutWrapper = styled(Container)`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    padding: 0 20px; /* Add padding to left and right */
+    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -108,7 +108,7 @@ const AboutWrapper = styled(Container)`
   @media screen and (max-width: 480px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 0 20px; /* Add padding to left and right */ 
+    padding: 0 20px;
   } 
 `;
 
@@ -138,17 +138,46 @@ const MozambiqueText = styled.span`
     }
   `} 5s linear infinite;
 `;
-
-
-const GradientButton = styled.a`
-  display: inline-block;
+const GetInTouchLink = styled.a`
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
   position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(to right, #ff9f01, #ffc800);
+  transition: 0.5s ease-in-out;
+  line-height: 1em;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  /* color: inherit; */
+  color: #999999;
+  justify-content: flex-start;
+  text-align: left;
+
   @media screen and (max-width: 768px) {
-    /* display: none; */
-  } 
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
 `;
+
+const GetInTouch = styled.span`
+  /* color: #999999;   */
+  position: relative;
+  display: inline-block;
+
+  ${GetInTouchLink}:hover &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #4568dc;
+  }
+`;
+
 
 const Text = styled.span`
   text-decoration: none;
@@ -173,5 +202,6 @@ const SlideAnimation = styled.span`
   opacity: 0.8;
 `;
 
-export { AboutWrapper, Column, Description, GradientButton, Heading, Image, ImageColumn, MozambiqueText, SlideAnimation, Text, TextColumn };
+
+export { AboutWrapper, Column, Description, GetInTouch, GetInTouchLink, Heading, Image, ImageColumn, MozambiqueText, SlideAnimation, Text, TextColumn };
 

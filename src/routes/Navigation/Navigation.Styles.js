@@ -19,7 +19,7 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
-
+  /* padding: 80px 40px; */
   @media screen and (max-width: 768px) {
     /* transition: 0.8s all ease-out; */
     margin-bottom: 10px;
@@ -56,7 +56,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   height: 80px;
   width: 100%;
-  padding: 0 0;
+  padding: 0 40px;
   font-family: 'Roboto Mono', monospace; 
   
   @media screen and (max-width: 768px) {
@@ -67,14 +67,13 @@ const Nav = styled.nav`
   display: flex;
   justify-self: flex-start;
   align-items: center;
-  margin: 0 0 0 0;
   cursor: pointer;
-  margin-left: -60px;
+  margin-left: -80px;
   z-index: 999;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 
   @media screen and (max-width: 768px) {
-    margin-left: -76px;
+    margin-left: -102px;
   }
 `,
   StyledLogo = styled.img`

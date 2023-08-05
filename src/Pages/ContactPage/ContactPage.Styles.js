@@ -17,7 +17,9 @@ const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0em 0em; 
+    padding: 0em 0em;
+    margin-top: -50px;
+    margin-bottom: -100px;
     background-color: transparent; 
   }
 `,

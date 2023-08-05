@@ -4,6 +4,8 @@ import React from "react";
 import {
   AboutWrapper,
   Description,
+  GetInTouch,
+  GetInTouchLink,
   Heading,
   Image,
   ImageColumn,
@@ -63,29 +65,10 @@ const AboutPage = ({ email, subject, body }) => {
           Currently, I'm based in the beautiful city of Oslo, Norway, but I'm originally from the pearl of the Indian Ocean, <MozambiqueText>Mozambique </MozambiqueText>.
           <br />
           I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
-          <br />
-          {/* <div 
-            style={{ height: "1em", color
-          }}> */}
-
-          <a href="#" onClick={handleEmailClick}>
-            Get in Touch            </a>
-          {/* </div> */}
-          {/* <a href="#" onClick={handleEmailClick}>
-              Click here to send an email
-            </a> */}
-
         </Description>
-
-        {/* <GradientButton href="/contact_me">
-          <Button>
-            <Text>Get in Touch</Text>
-            <a href="#" onClick={handleEmailClick}>
-              Click here to send an email
-            </a>
-            <SlideAnimation />
-          </Button>
-        </GradientButton> */}
+        <GetInTouchLink href="#" onClick={handleEmailClick}>
+          Feel free to <GetInTouch>get in touch</GetInTouch> with me!
+        </GetInTouchLink>
       </TextColumn>
       <ImageColumn backgroundImage={backgroundImage}>
         <Image src="../../images/moi.webp" alt="Boa" title="This is Boa" />
