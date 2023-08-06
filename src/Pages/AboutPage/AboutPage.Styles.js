@@ -14,10 +14,11 @@ const AboutWrapper = styled(Container)`
   overflow: hidden;
   margin-bottom: -400px;
   margin-top: 100px;
+
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0em 0em;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: -100px;
   }
 `,
@@ -138,7 +139,7 @@ const MozambiqueText = styled.span`
     }
   `} 5s linear infinite;
 `;
-const GetInTouchLink = styled.a`
+const GetInTouchLink = styled.p`
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
@@ -158,26 +159,26 @@ const GetInTouchLink = styled.a`
 
   @media screen and (max-width: 768px) {
     padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 `;
 
 const GetInTouch = styled.span`
-  /* color: #999999;   */
+ color: #999999;  
   position: relative;
   display: inline-block;
+  cursor: pointer;
 
-  ${GetInTouchLink}:hover &::after {
+  &::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10px;
+    height: 4px;
     background-color: #4568dc;
   }
 `;
-
 
 const Text = styled.span`
   text-decoration: none;

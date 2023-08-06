@@ -19,7 +19,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const Copyright = styled.p`
-  margin: 0;
+  margin: 0;a
   font-size: 16px;
   text-align: left;
   color: #c4c4c4;
@@ -27,8 +27,10 @@ export const Copyright = styled.p`
   font-weight: 400;
   
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
+    justify-content: flex-start;
+    
   }
 `;
 

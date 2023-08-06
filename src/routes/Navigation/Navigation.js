@@ -45,7 +45,7 @@ const NavBar = () => {
     <ThemeProvider theme={themeMode}>
       <IconContext.Provider value={{ color: 'grey' }}>
         <Nav>
-          <NavbarContainer style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
+          <NavbarContainer>
             <LogoContainer to="/">
               <StyledLogo
                 src="../../../images/logo.png"

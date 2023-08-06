@@ -15,7 +15,6 @@ export const ProjectContainer = styled(Container)`
   background: transparent;
   
   @media screen and (max-width: 768px) {
-    /* flex-direction: column; */
     padding: 0em 1em; 
     
   }
@@ -47,9 +46,9 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    padding: 0em 0.5em;
-    /* margin-left: auto;
-    margin-right: auto; *
+    /* padding: 0em 0.5em; */
+    /* /* margin-left: auto;
+    margin-right: auto; * */
   }
 `;
 
@@ -160,7 +159,6 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
-    padding: 10px;
   }
 `;
 
@@ -170,7 +168,6 @@ export const ProjectDetailsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   font-style: normal;
-  /* box-shadow: 0 1.3px 12px -3px #4568dc; */
   margin: 0px;
   top: 0;
 `;

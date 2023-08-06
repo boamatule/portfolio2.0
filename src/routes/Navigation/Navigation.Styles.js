@@ -19,26 +19,13 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
-  /* padding: 80px 40px; */
   @media screen and (max-width: 768px) {
     /* transition: 0.8s all ease-out; */
     margin-bottom: 10px;
   }
 `,
 
-  MobileIconContainer = styled.div`
-	position: absolute;
-	top: 1.6rem;
-	right: 1.5rem;
-	font-size: 2rem;
-	outline: none;
-	background: transparent;
-	cursor: pointer;
-  color:  #4568dc;
-  transform: translate(-100%, 50%);
-  width: 100%;
-  padding: 0 0;
-`, FaBarsIcon = styled(FaBars)`
+FaBarsIcon = styled(FaBars)`
     display: none;
   @media screen and (max-width: 768px) {
     display: block;
@@ -58,6 +45,7 @@ const Nav = styled.nav`
   width: 100%;
   padding: 0 40px;
   font-family: 'Roboto Mono', monospace; 
+  font-weight: 700;
   
   @media screen and (max-width: 768px) {
 
@@ -70,7 +58,6 @@ const Nav = styled.nav`
   cursor: pointer;
   margin-left: -80px;
   z-index: 999;
-  /* padding: 0 20px; */
 
   @media screen and (max-width: 768px) {
     margin-left: -102px;
@@ -117,6 +104,7 @@ const Nav = styled.nav`
   letter-spacing: 8px;
   line-height: 28px;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -315,5 +303,5 @@ export const NavItemToggle = styled(motion.div)`
     }
   }
 `;
-export { AnimatedFaBars, AnimatedFaTimes, DarkModeWrapper, DropdownMenu, DropdownMenuItem, FaBarsIcon, Image, LogoContainer, MobileIconContainer, Nav, NavItem, NavItemSocialIconLink, NavItemSocialIconLinkMotion, NavItemSocialIconLinkWrapper, NavItemSocialIconWrapper, NavLinks, NavMenu, NavbarContainer, StyledLogo };
+export { AnimatedFaBars, AnimatedFaTimes, DarkModeWrapper, DropdownMenu, DropdownMenuItem, FaBarsIcon, Image, LogoContainer, Nav, NavItem, NavItemSocialIconLink, NavItemSocialIconLinkMotion, NavItemSocialIconLinkWrapper, NavItemSocialIconWrapper, NavLinks, NavMenu, NavbarContainer, StyledLogo };
 

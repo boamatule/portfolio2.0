@@ -66,8 +66,8 @@ const AboutPage = ({ email, subject, body }) => {
           <br />
           I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
         </Description>
-        <GetInTouchLink href="#" onClick={handleEmailClick}>
-          Feel free to <GetInTouch>get in touch</GetInTouch> with me!
+        <GetInTouchLink onClick={handleEmailClick}>
+          Feel free to get in <GetInTouch>touch</GetInTouch> with me!
         </GetInTouchLink>
       </TextColumn>
       <ImageColumn backgroundImage={backgroundImage}>
