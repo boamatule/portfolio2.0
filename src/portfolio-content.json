@@ -14,7 +14,7 @@
 		"stack": "React.js | Firebase | Stripe | Styled-Components | Express.js",
 		"imageUrl": "../../images/crown.svg",
 		"alt": "Clothes",
-		"deployedUrl": "https://crwn-live-clothing-app.herokuapp.com/",
+		"deployedUrl": "https://crwn-clothing-root.herokuapp.com/",
 		"sourceCodeUrl": "https://github.com/boamatule/crwn-clothing"
 	},
   {
