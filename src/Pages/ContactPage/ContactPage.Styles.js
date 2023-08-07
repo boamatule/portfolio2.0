@@ -63,7 +63,7 @@ ContactFormColumn = styled.div`
     padding: 0 0px;
     background-color: transparent;
 }
-`, Heading = styled.h1`
+`, Heading = styled.h2`
   display: flex;
   font-weight: bold;
   letter-spacing: 4px;

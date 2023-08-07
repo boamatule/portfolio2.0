@@ -30,11 +30,11 @@ export const Title = styled.p`
   text-align: center;
   font-family: 'Roboto Mono', monospace; 
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 
 `;
-export const Heading = styled.h1`
+export const Heading = styled.h2`
   display: flex;
   font-weight: bold;
   letter-spacing: 4px;
@@ -46,9 +46,6 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    /* padding: 0em 0.5em; */
-    /* /* margin-left: auto;
-    margin-right: auto; * */
   }
 `;
 

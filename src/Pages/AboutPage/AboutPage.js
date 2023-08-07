@@ -10,7 +10,7 @@ import {
   Image,
   ImageColumn,
   MozambiqueText,
-  TextColumn
+  TextColumn,
 } from './AboutPage.Styles';
 
 const backgroundImage = "../../images/background.svg";
@@ -66,8 +66,14 @@ const AboutPage = ({ email, subject, body }) => {
           <br />
           I'm passionate about building, architecting, and scaling web and mobile applications using cutting-edge technology stacks. Let's create something amazing together!
         </Description>
-        <GetInTouchLink onClick={handleEmailClick}>
-          Feel free to get in <GetInTouch>touch</GetInTouch> with me!
+        <GetInTouchLink>
+          Let us connect
+          <span>&nbsp;</span>
+          <GetInTouch
+            onClick={handleEmailClick}
+            title="Send me an email to get in touch"
+            aria-label="Send me an email to get in touch"
+          />.
         </GetInTouchLink>
       </TextColumn>
       <ImageColumn backgroundImage={backgroundImage}>

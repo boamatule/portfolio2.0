@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaEnvelope } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled, { keyframes } from "styled-components/macro";
 import { Container } from "../../global-styles";
@@ -145,8 +146,8 @@ const GetInTouchLink = styled.p`
   font-weight: bold;
   position: relative;
   transition: 0.5s ease-in-out;
-  line-height: 1em;
   font-size: 16px;
+  line-height: 22px;
   font-weight: normal;
   font-family: 'Roboto Mono', monospace;
   display: inline-block;
@@ -156,6 +157,7 @@ const GetInTouchLink = styled.p`
   color: #999999;
   justify-content: flex-start;
   text-align: left;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 0 20px;
@@ -163,22 +165,18 @@ const GetInTouchLink = styled.p`
   }
 `;
 
-const GetInTouch = styled.span`
- color: #999999;  
-  position: relative;
-  display: inline-block;
+const GetInTouch = styled(FaEnvelope)`
+  color: #999999;  
   cursor: pointer;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #4568dc;
-  }
+  font-size: 0.9em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  top: 0px;
 `;
+
+
 
 const Text = styled.span`
   text-decoration: none;

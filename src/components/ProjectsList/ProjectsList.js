@@ -25,7 +25,7 @@ const ProjectsList = () => {
         <Heading>Selected Projects.</Heading>
         <SubTitle>
           A curated selection of projects that demonstrate my skills and expertise in various technologies and frameworks. Browse through the list below to get a glimpse of my portfolio.
-          <h1 />
+          <br />
           Please, don't forget to also check out my other work on my {' '}
           <GithubLink
             href="https://github.com/boamatule"

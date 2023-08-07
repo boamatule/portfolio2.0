@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     --dark: grey;
     --font-color: #86829c;
     --background-color: #232129;
-    --theme-color: #007bff;
+    /* --theme-color: #007bff; */
   }
 
   [data-theme="dark"] {
@@ -49,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-
+  
   html {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;  
@@ -108,8 +108,6 @@ export const Glass = styled.div`
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   border-radius: 10px 10px 0px 0px;
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
   -webkit-backdrop-filter: blur(20px);
-  /* border-radius: 10px 10px 0 0; */
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
