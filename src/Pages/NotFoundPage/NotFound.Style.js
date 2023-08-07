@@ -1,26 +1,37 @@
-import styled from"styled-components/macro";import{Container}from"../../global-styles";const ErrorContainer=styled(Container)`
+import styled from "styled-components/macro";
+
+const ErrorContainer = styled.div`
   display: flex;
+  flex-direction: column; /* Set flex direction to column for mobile responsiveness */
   justify-content: center;
-  padding: 200px 0px 200px 0px;
+  align-items: center;
+  background-color: transparent;
+  height: 100vh;
+`;
 
-  @media screen and (max-width: 800px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-  }
-`,TextRaw=styled.h1`
-  color: grey;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  line-height: 24px;
+const TextRaw = styled.h1`
+  margin-top: 16px;
+  color: #999999;
+  font-size: 32px;
   font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  line-height: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 60%;
 
-  @media screen and (max-width: 800px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    margin: 20px 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    width: 80%; /* Adjust width for smaller screens */
   }
-`;export{ErrorContainer,TextRaw};
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 20px;
+    width: 100%; /* Full width for smallest screens */
+  }
+`;
+
+export { ErrorContainer, TextRaw };

@@ -29,7 +29,7 @@ const App = () => {
             <Route path="contact_me" element={<ContactPage />} />
             <Route path="projects" element={<PortfolioListPage />} />
             <Route path="message_sent_successfully" element={<SuccessPage />} />
-            <Route  path="*"  element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
         <Footer />
