@@ -2,6 +2,11 @@
 	"name": "portfolio2.0",
 	"version": "0.1.0",
 	"private": true,
+	"jest": {
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		]
+	},
 	"dependencies": {
 		"@babel/cli": "^7.22.9",
 		"@babel/core": "^7.22.9",
@@ -21,6 +26,7 @@
 		"blurhash": "^2.0.5",
 		"core-js": "^3.32.0",
 		"cypress": "^12.17.3",
+		"enzyme-to-json": "^3.6.1",
 		"eslint": "^8.46.0",
 		"eslint-config-react-app": "^7.0.1",
 		"esm": "^3.2.25",
@@ -97,7 +103,8 @@
 		"@cfaester/enzyme-adapter-react-18": "^0.7.0",
 		"@svgr/webpack": "^8.0.1",
 		"@testing-library/cypress": "^9.0.0",
-		"enzyme": "^3.11.0"
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.7"
 	},
 	"packageManager": "yarn@3.6.1"
 }
