@@ -50,9 +50,9 @@ const ProjectsList = () => {
                 <ButtonWrapper>
                   <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">
                     <Button
-                      small
-                      fontSmall
-                      primary
+                      small="true"
+                      // fontSmall
+                      // primary
                       style={{
                         color: 'white',
                         size: '12px'
@@ -63,9 +63,9 @@ const ProjectsList = () => {
                   </a>
                   <a href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
                     <Button
-                      small
-                      fontSmall
-                      primary
+                      small="true"
+                      // fontSmall
+                      // primary
                       style={{
                         background: 'transparent',
                         border: 'none',

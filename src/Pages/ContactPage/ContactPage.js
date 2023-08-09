@@ -66,7 +66,7 @@ const ContactPage = () => {
           Lets Get in Touch.
         </Heading>
         <Title>
-          Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible. 
+          Whether you have a question or want to collaborate, I'm here to help. Just fill out the contact form and I'll respond as soon as possible.
           {/* <h1 /> */}
           Stay healthy and keep a positive attitude in the meantime!
         </Title>
@@ -115,8 +115,11 @@ const ContactPage = () => {
               placeholder="Hi, let me know when we can start working together!" name="message" onChange={handleChange} required />
             <ContactButtonWrapper>
               <ContactButton
-                small fontSmall primary
-                aria-label="Contact" type="submit">
+                // small
+                // fontSmall
+                // primary
+                aria-label="Contact" 
+                type="submit">
                 <ArrowRight />
               </ContactButton>
             </ContactButtonWrapper>
