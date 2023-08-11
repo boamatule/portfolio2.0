@@ -3,7 +3,7 @@ import { FaAngleUp } from 'react-icons/fa';
 
 export const FooterContainer = styled.footer`
   background-color: none;
-  padding: 4em 14em;
+  padding: 1em 4em;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -66,9 +66,10 @@ export const ScrollToTopContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  bottom: 40px;
-  right: 160px;
+  bottom: 6px;
+  right: 60px;
   background: transparent;
+  padding: 1em 1em;
 
   @media screen and (max-width: 768px) {
     right: 28px;

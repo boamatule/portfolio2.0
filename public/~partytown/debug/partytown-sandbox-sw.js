@@ -49,10 +49,10 @@
     };
     const InstanceIdKey = Symbol();
     const CreatedKey = Symbol();
-    const instances = new Map;
-    const mainRefs = new Map;
+    const instances = new Map();
+    const mainRefs = new Map();
     const winCtxs = {};
-    const windowIds = new WeakMap;
+    const windowIds = new WeakMap();
     const getAndSetInstanceId = (instance, instanceId) => {
         if (instance) {
             if (instanceId = windowIds.get(instance)) {
@@ -119,7 +119,7 @@
         Cstr.observedAttributes = ceData[1];
         return Cstr;
     };
-    const serializeForWorker = ($winId$, value, added, type, cstrName) => void 0 !== value && (type = typeof value) ? "string" === type || "number" === type || "boolean" === type || null == value ? [ 0, value ] : "function" === type ? [ 6 ] : (added = added || new Set) && Array.isArray(value) ? added.has(value) ? [ 1, [] ] : added.add(value) && [ 1, value.map((v => serializeForWorker($winId$, v, added))) ] : "object" === type ? serializedValueIsError(value) ? [ 14, {
+    const serializeForWorker = ($winId$, value, added, type, cstrName) => void 0 !== value && (type = typeof value) ? "string" === type || "number" === type || "boolean" === type || null == value ? [ 0, value ] : "function" === type ? [ 6 ] : (added = added || new Set()) && Array.isArray(value) ? added.has(value) ? [ 1, [] ] : added.add(value) && [ 1, value.map((v => serializeForWorker($winId$, v, added))) ] : "object" === type ? serializedValueIsError(value) ? [ 14, {
         name: value.name,
         message: value.message,
         stack: value.stack
@@ -153,7 +153,7 @@
             return 0 === serializedType ? serializedValue : 4 === serializedType ? deserializeRefFromWorker(worker, serializedValue) : 1 === serializedType ? serializedValue.map((v => deserializeFromWorker(worker, v))) : 3 === serializedType ? getInstance(serializedValue[0], serializedValue[1]) : 5 === serializedType ? constructEvent(deserializeObjectFromWorker(worker, serializedValue)) : 2 === serializedType ? deserializeObjectFromWorker(worker, serializedValue) : 8 === serializedType ? serializedValue : 9 === serializedType ? new window[serializedTransfer[2]](serializedValue) : void 0;
         }
     };
-    const deserializeRefFromWorker = (worker, {$winId$: $winId$, $instanceId$: $instanceId$, $refId$: $refId$}, ref) => {
+    const deserializeRefFromWorker = (worker, {$winId$, $instanceId$, $refId$}, ref) => {
         ref = mainRefs.get($refId$);
         if (!ref) {
             ref = function(...args) {

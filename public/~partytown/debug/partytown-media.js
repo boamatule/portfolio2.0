@@ -363,7 +363,7 @@
         winURL.createObjectURL = obj => callMethod(win, [ "URL", "createObjectURL" ], [ obj ]);
         winURL.revokeObjectURL = obj => callMethod(win, [ "URL", "revokeObjectURL" ], [ obj ]);
     };
-    const isStaticTypeSupported = new Map;
+    const isStaticTypeSupported = new Map();
     self.$bridgeFromMedia$ = (WorkerBase, WorkerEventTargetProxy, env, win, windowMediaConstructors) => {
         windowMediaConstructors.map((mediaCstrName => {
             delete win[mediaCstrName];

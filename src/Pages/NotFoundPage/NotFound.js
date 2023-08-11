@@ -7,7 +7,7 @@ const Footer = lazy(() => import('../../components/Footer/Footer'));
 
 const NotFound = () => {
   const navigate = useNavigate();
-  const [show404Page, setShow404Page] = useState(true); // Set this state variable based on your logic
+  const [show404Page] = useState(true); // Set this state variable based on your logic
 
   // useEffect(() => {
   //   const timeoutId = setTimeout(() => {

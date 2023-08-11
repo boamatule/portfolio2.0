@@ -64,14 +64,14 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 1400px;
+  /* max-width: 1400px;
   margin: 0 auto;
-  /* height: auto; */
+  height: auto;
   text-align: center;
   padding: 0px 10px;
   @media (max-width: 768px) {
     height: auto;
-  }
+  } */
 `;
 
 export const Button = styled.button`

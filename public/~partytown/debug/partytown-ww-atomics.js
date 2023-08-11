@@ -8,16 +8,16 @@
     const InstanceStateKey = Symbol();
     const HookContinue = Symbol();
     const HookPrevent = Symbol();
-    const webWorkerInstances = new Map;
+    const webWorkerInstances = new Map();
     const webWorkerRefsByRefId = {};
-    const webWorkerRefIdsByRef = new WeakMap;
+    const webWorkerRefIdsByRef = new WeakMap();
     const postMessages = [];
     const webWorkerCtx = {};
-    const webWorkerlocalStorage = new Map;
-    const webWorkerSessionStorage = new Map;
+    const webWorkerlocalStorage = new Map();
+    const webWorkerSessionStorage = new Map();
     const environments = {};
-    const cachedDimensions = new Map;
-    const cachedStructure = new Map;
+    const cachedDimensions = new Map();
+    const cachedStructure = new Map();
     const commaSplit = str => str.split(",");
     const partytownLibUrl = url => {
         url = webWorkerCtx.$libPath$ + url;
@@ -138,7 +138,7 @@
         $winId$: $winId$,
         $instanceId$: $instanceId$,
         $refId$: setWorkerRef(value)
-    } ] : (added = added || new Set) && Array.isArray(value) ? added.has(value) ? [ 1, [] ] : added.add(value) && [ 1, value.map((v => serializeForMain($winId$, $instanceId$, v, added))) ] : "object" === type ? value[InstanceIdKey] ? [ 3, [ value[WinIdKey], value[InstanceIdKey] ] ] : value instanceof Event ? [ 5, serializeObjectForMain($winId$, $instanceId$, value, false, added) ] : supportsTrustedHTML && value instanceof TrustedHTML ? [ 0, value.toString() ] : value instanceof ArrayBuffer ? [ 8, value ] : ArrayBuffer.isView(value) ? [ 9, value.buffer, getConstructorName(value) ] : [ 2, serializeObjectForMain($winId$, $instanceId$, value, true, added) ] : void 0 : value;
+    } ] : (added = added || new Set()) && Array.isArray(value) ? added.has(value) ? [ 1, [] ] : added.add(value) && [ 1, value.map((v => serializeForMain($winId$, $instanceId$, v, added))) ] : "object" === type ? value[InstanceIdKey] ? [ 3, [ value[WinIdKey], value[InstanceIdKey] ] ] : value instanceof Event ? [ 5, serializeObjectForMain($winId$, $instanceId$, value, false, added) ] : supportsTrustedHTML && value instanceof TrustedHTML ? [ 0, value.toString() ] : value instanceof ArrayBuffer ? [ 8, value ] : ArrayBuffer.isView(value) ? [ 9, value.buffer, getConstructorName(value) ] : [ 2, serializeObjectForMain($winId$, $instanceId$, value, true, added) ] : void 0 : value;
     const supportsTrustedHTML = "undefined" != typeof TrustedHTML;
     const serializeObjectForMain = (winId, instanceId, obj, includeFunctions, added, serializedObj, propName, propValue) => {
         serializedObj = {};
@@ -210,7 +210,7 @@
         }
     };
     const getOrCreateSerializedInstance = ([winId, instanceId, nodeName]) => instanceId === winId && environments[winId] ? environments[winId].$window$ : getOrCreateNodeInstance(winId, instanceId, nodeName);
-    const deserializeRefFromMain = (applyPath, {$winId$: $winId$, $instanceId$: $instanceId$, $nodeName$: $nodeName$, $refId$: $refId$}) => {
+    const deserializeRefFromMain = (applyPath, {$winId$, $instanceId$, $nodeName$, $refId$}) => {
         webWorkerRefsByRefId[$refId$] || webWorkerRefIdsByRef.set(webWorkerRefsByRefId[$refId$] = function(...args) {
             const instance = getOrCreateNodeInstance($winId$, $instanceId$, $nodeName$);
             return callMethod(instance, applyPath, args);
@@ -268,7 +268,7 @@
         try {
             const config = webWorkerCtx.$config$;
             if (config.logStackTraces) {
-                const frames = (new Error).stack.split("\n");
+                const frames = (new Error()).stack.split("\n");
                 const i = frames.findIndex((f => f.includes("logWorker")));
                 msg += "\n" + frames.slice(i + 1).join("\n");
             }
@@ -1205,7 +1205,7 @@
                         if (src.startsWith("javascript:")) {
                             setInstanceStateValue(this, 0, src);
                         } else if (!src.startsWith("about:")) {
-                            let xhr = new XMLHttpRequest;
+                            let xhr = new XMLHttpRequest();
                             let xhrStatus;
                             let env = getIframeEnv(this);
                             env.$location$.href = src = resolveUrl(env, src, "iframe");
@@ -1260,7 +1260,7 @@
     };
     const patchSvgElement = WorkerSVGGraphicsElement => {
         const getMatrix = (elm, methodName) => {
-            const {a: a, b: b, c: c, d: d, e: e, f: f} = callMethod(elm, [ methodName ], EMPTY_ARRAY);
+            const {a, b, c, d, e, f} = callMethod(elm, [ methodName ], EMPTY_ARRAY);
             return new DOMMatrixReadOnly([ a, b, c, d, e, f ]);
         };
         const SVGGraphicsElementDescriptorMap = {
@@ -1379,7 +1379,7 @@
                     cstrInstanceId = instanceId;
                     cstrNodeName = nodeName;
                     cstrNamespace = namespace;
-                    return new NodeCstr;
+                    return new NodeCstr();
                 };
                 win.Window = WorkerWindow;
                 win.name = name + `${normalizedWinId($winId$)} (${$winId$})`;
@@ -1397,7 +1397,7 @@
                     }, cstrName);
                 })(win, WorkerBase, "Performance");
                 ((win, nodeCstrs) => {
-                    const registry = new Map;
+                    const registry = new Map();
                     win.customElements = {
                         define(tagName, Cstr, opts) {
                             registry.set(tagName, Cstr);
@@ -1705,14 +1705,14 @@
         cachedProps(WorkerWindow, "devicePixelRatio");
         cachedDimensionProps(WorkerWindow);
         cachedDimensionMethods(WorkerWindow, [ "getComputedStyle" ]);
-        new WorkerWindow;
+        new WorkerWindow();
         return env;
     };
     const TrapConstructors = {
         DOMStringMap: 1,
         NamedNodeMap: 1
     };
-    const createEnvironment = ({$winId$: $winId$, $parentWinId$: $parentWinId$, $url$: $url$, $visibilityState$: $visibilityState$}, isIframeWindow, isDocumentImplementation) => {
+    const createEnvironment = ({$winId$, $parentWinId$, $url$, $visibilityState$}, isIframeWindow, isDocumentImplementation) => {
         if (!environments[$winId$]) {
             environments[$winId$] = createWindow($winId$, $parentWinId$, $url$, $visibilityState$, isIframeWindow, isDocumentImplementation);
             {
@@ -1775,7 +1775,7 @@
                     webWorkerCtx.$postMessage$([ 6, winId, instanceId, errorMsg ]);
                 })(msgValue);
             } else if (9 === msgType) {
-                (({$winId$: $winId$, $instanceId$: $instanceId$, $refId$: $refId$, $thisArg$: $thisArg$, $args$: $args$}) => {
+                (({$winId$, $instanceId$, $refId$, $thisArg$, $args$}) => {
                     if (webWorkerRefsByRefId[$refId$]) {
                         try {
                             webWorkerRefsByRefId[$refId$].apply(deserializeFromMain($winId$, $instanceId$, [], $thisArg$), deserializeFromMain($winId$, $instanceId$, [], $args$));
@@ -1785,7 +1785,7 @@
                     }
                 })(msgValue);
             } else if (10 === msgType) {
-                (({$winId$: $winId$, $forward$: $forward$, $args$: $args$}) => {
+                (({$winId$, $forward$, $args$}) => {
                     try {
                         let target = environments[$winId$].$window$;
                         let i = 0;

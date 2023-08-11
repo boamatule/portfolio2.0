@@ -1,5 +1,5 @@
 /* Partytown 0.7.5 - MIT builder.io */
-const resolves = new Map;
+const resolves = new Map();
 
 const swMessageError = (accessReq, $error$) => ({
     $msgId$: accessReq.$msgId$,
