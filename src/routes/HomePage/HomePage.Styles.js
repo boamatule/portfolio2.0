@@ -4,7 +4,7 @@ import { Container } from "../../global-styles";
 export const HomeContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   overflow: hidden;
   width: 100%;

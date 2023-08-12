@@ -35,7 +35,6 @@ const NotFound = () => {
         <>
           <Button
             style={{
-              // background: '#007bff',
               color: '#999999',
               padding: '10px 20px',
               border: 'none',
@@ -43,13 +42,12 @@ const NotFound = () => {
               cursor: 'pointer',
               fontSize: '16px',
               fontWeight: 'bold',
-              // boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-              // transition: 'background-color 0.3s ease',
+              fontFamily: 'Roboto Mono, monospace',
             }}
             onClick={() => navigate('/')}
             aria-label='Take me back to the homepage'
             title='Take me back to the homepage'
-            >
+          >
             Take me back to the homepage
           </Button>
         </>

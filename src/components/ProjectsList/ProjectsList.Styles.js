@@ -3,20 +3,23 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styled from 'styled-components';
 import { Container } from '../../global-styles';
 
-export const ProjectContainer = styled(Container)`
+export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  background-color: transparent;
   width: 100%;
-  min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
-  padding: 6em 4em;
-  margin: 0 auto;
-  background: transparent;
-  
-  @media screen and (max-width: 768px) {
-    padding: 0em 1em; 
-    
+  min-height: 100vh;
+  padding: 0em 10em;
+  overflow: hidden;
+  margin-bottom: -400px;
+  margin-top: 100px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 5em 0em;
+    margin-top: -50px;
+    margin-bottom: -100px;
   }
 `;
 
@@ -37,7 +40,7 @@ export const Title = styled.p`
 export const Heading = styled.h2`
   display: flex;
   font-weight: bold;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   color: #4568dc;
   font-size: 32px;
   font-family: 'Roboto Mono', monospace;
@@ -46,6 +49,9 @@ export const Heading = styled.h2`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
+    padding: 0 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 `;
 
@@ -91,6 +97,7 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr;
     margin: 0;
     width: 100%;
+    padding: 40px 20px;
   }
 `;
 export const Image = styled(LazyLoadImage)`
@@ -156,6 +163,7 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 18px;
+    padding: 0 20px;
   }
 `;
 

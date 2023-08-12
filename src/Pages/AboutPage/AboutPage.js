@@ -50,14 +50,15 @@ const AboutPage = ({ email, subject, body }) => {
     <AboutWrapper>
       <TextColumn>
         <Heading variants={variants} initial="hidden" animate="visible">
-          {"I am Boa Matule.".split("").map((letter, index) => {
+          {/* {"I am Boa Matule.".split("").map((letter, index) => {
             return (
               <React.Fragment key={index}>
                 <motion.span variants={letterVariants}>{letter}</motion.span>
                 {index !== "I am Boa Matule.".length - 2 && <span>&nbsp;</span>}
               </React.Fragment>
             );
-          })}
+          })} */}
+          I am Boa Matule.
         </Heading>
         <Description>
           I'm a Full Stack Software Developer with a diverse background spanning from the hospitality industry as a chef to E-commerce as a Co-founder and Manager.

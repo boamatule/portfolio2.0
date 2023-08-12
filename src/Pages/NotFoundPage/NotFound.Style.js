@@ -2,11 +2,14 @@ import styled from "styled-components/macro";
 
 const ErrorContainer = styled.div`
   display: flex;
-  flex-direction: column; /* Set flex direction to column for mobile responsiveness */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: transparent;
   height: 100vh;
+  width: 100%;
+  padding: 0em 10em;
 `;
 
 const TextRaw = styled.h1`
@@ -17,9 +20,11 @@ const TextRaw = styled.h1`
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   line-height: 32px;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 60%;
+  /* margin-bottom: 30px; */
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
@@ -30,7 +35,7 @@ const TextRaw = styled.h1`
     font-size: 14px;
     line-height: 18px;
     padding: 0 20px;
-    width: 100%; /* Full width for smallest screens */
+    /* width: 100%;  */
   }
 `;
 

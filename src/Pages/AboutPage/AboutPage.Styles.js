@@ -2,26 +2,24 @@ import { motion } from 'framer-motion';
 import { FaEnvelope } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled, { keyframes } from "styled-components/macro";
-import { Container } from "../../global-styles";
 
-
-const AboutWrapper = styled(Container)`
+const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: transparent;
   width: 100%;
   min-height: 100vh;
-  padding: 0em 4em;
+  padding: 0em 10em;
   overflow: hidden;
   margin-bottom: -400px;
   margin-top: 100px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0em 0em;
+    padding: 5em 0em;
     margin-top: -50px;
     margin-bottom: -100px;
-  }
+}
 `,
 
   Column = styled.div`
@@ -76,11 +74,8 @@ const AboutWrapper = styled(Container)`
 
   Heading = styled(motion.h1)`
   display: flex;
-  align-items: center;
   font-weight: bold;
   color: #4568dc;
-  justify-content: flex-start;
-  text-align: left;
   font-family: 'Roboto Mono', monospace;
   font-size: 32px;
   margin: 0; 
@@ -88,8 +83,6 @@ const AboutWrapper = styled(Container)`
   @media screen and (max-width: 768px) {
     font-size: 18px;
     padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
   }
 `,
 
@@ -141,27 +134,23 @@ const MozambiqueText = styled.span`
   `} 5s linear infinite;
 `;
 const GetInTouchLink = styled.p`
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: bold;
-  position: relative;
-  transition: 0.5s ease-in-out;
+  margin-top: 16px;
+  color: #999999;
   font-size: 16px;
-  line-height: 22px;
   font-weight: normal;
   font-family: 'Roboto Mono', monospace;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  /* color: inherit; */
-  color: #999999;
-  justify-content: flex-start;
+  font-style: normal;
+  line-height: 22px;
   text-align: left;
-  align-items: center;
-
+  margin-bottom: 30px;
   @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 18px;
     padding: 0 20px;
-    margin-bottom: 40px;
   }
 `;
 
@@ -175,8 +164,6 @@ const GetInTouch = styled(FaEnvelope)`
   transition: 0.5s ease-in-out;
   top: 0px;
 `;
-
-
 
 const Text = styled.span`
   text-decoration: none;
@@ -200,7 +187,6 @@ const SlideAnimation = styled.span`
   background: linear-gradient(to right, #ff9f01, #ffc800);
   opacity: 0.8;
 `;
-
 
 export { AboutWrapper, Column, Description, GetInTouch, GetInTouchLink, Heading, Image, ImageColumn, MozambiqueText, SlideAnimation, Text, TextColumn };
 
