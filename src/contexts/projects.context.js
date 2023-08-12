@@ -7,7 +7,7 @@ export const ProjectsContext = createContext({
 });
 
 export function ProjectsProvider({ children }) {
-  const [projects, setProjects] = useState(PROJECTS);
+  const [projects] = useState(PROJECTS);
   const value = { projects };
   return <ProjectsContext.Provider value={value}>{children}</ProjectsContext.Provider>;
 }

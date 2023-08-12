@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Link as smoothScroll } from 'react-scroll';
 
 import styled from "styled-components";
-import { Container } from "../../global-styles";
 
 
 const Nav = styled.nav`
@@ -19,10 +18,27 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
+  /* padding: 0em 8em; */
+  font-family: 'Roboto Mono', monospace;
   @media screen and (max-width: 768px) {
-    /* transition: 0.8s all ease-out; */
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  padding: 0em 2.4em;
   }
+`,
+
+
+NavbarContainer = styled.div`
+display: flex;
+justify-content: space-between;
+height: 80px;
+width: 100%;
+/* padding: 0em 10em; */
+font-family: 'Roboto Mono', monospace; 
+font-weight: 700;
+
+@media screen and (max-width: 768px) {
+
+}
 `,
 
 FaBarsIcon = styled(FaBars)`
@@ -38,19 +54,6 @@ FaBarsIcon = styled(FaBars)`
   }
 `,
 
-  NavbarContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
-  padding: 0 40px;
-  font-family: 'Roboto Mono', monospace; 
-  font-weight: 700;
-  
-  @media screen and (max-width: 768px) {
-
-  }
-`,
   LogoContainer = styled(Link)`
   display: flex;
   justify-self: flex-start;

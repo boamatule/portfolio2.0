@@ -63,16 +63,33 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const Container = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  /* height: auto; */
-  text-align: center;
-  padding: 0px 10px;
+export const ResponsiveText = styled.p`
+  font-size: 16px;
+  
   @media (max-width: 768px) {
-    height: auto;
+    font-size: 14px;
   }
 `;
+
+export const ResponsiveImage = styled.img`
+  width: 100%;
+  max-width: 800px;
+  
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
+
+// export const FlexContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+  
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// `;
+
 
 export const Button = styled.button`
   white-space: nowrap;

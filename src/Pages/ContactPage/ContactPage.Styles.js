@@ -2,7 +2,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import styled from "styled-components";
 import { Button, Container } from "../../global-styles";
 
-const ContactContainer = styled(Container)`
+const ContactContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,9 +11,9 @@ const ContactContainer = styled(Container)`
   overflow: hidden;
   width: 100%;
   min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
-  padding: 6em 4em;
-  margin-bottom: -300px;
-  margin-top: 100px;
+  padding: 40em 10em;
+  /* margin-bottom: -300px; */
+  /* margin-top: 100px; */
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -75,9 +75,10 @@ ContactFormColumn = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    padding: 0 20px; /* Add padding to left and right */
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 20px; 
+    margin-top: 60px;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 `, Title = styled.p`
   margin-top: 16px;

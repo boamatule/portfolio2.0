@@ -1,6 +1,4 @@
-import { func, string } from 'prop-types';
 import React from "react";
-import styled from 'styled-components/macro';
 import {
   ToggleSwitch,
   Label, 
