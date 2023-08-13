@@ -12,7 +12,7 @@ const ContactContainer = styled.div`
   width: 100%;
   min-height: 100vh; 
   padding: 40em 10em;
-  margin-bottom: -300px;
+  margin-bottom: -380px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

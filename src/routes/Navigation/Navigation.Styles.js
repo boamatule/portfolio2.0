@@ -19,7 +19,9 @@ const Nav = styled.nav`
   z-index: 999;
   background: transparent;
   padding: 0em 8em;
-  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace;
+  font-weight: 400; */
+
   @media screen and (max-width: 768px) {
   margin-bottom: 10px;
   padding: 0em 2.4em;
@@ -32,10 +34,6 @@ display: flex;
 justify-content: space-between;
 height: 80px;
 width: 100%;
-/* padding: 0em 10em; */
-font-family: 'Roboto Mono', monospace; 
-font-weight: 700;
-
 @media screen and (max-width: 768px) {
 
 }
@@ -61,6 +59,8 @@ FaBarsIcon = styled(FaBars)`
   cursor: pointer;
   margin-left: -80px;
   z-index: 999;
+  text-decoration: none;
+  
 
   @media screen and (max-width: 768px) {
     margin-left: -102px;
@@ -85,7 +85,6 @@ FaBarsIcon = styled(FaBars)`
   @media screen and (max-width: 768px) {
     display: none;
     left: ${({ click }) => (click ? 0 : '-100%')};
-
   }
 `, NavItem = styled.li`
   height: 80px;
@@ -105,9 +104,9 @@ FaBarsIcon = styled(FaBars)`
   height: 100%;
   color: #8e9188;
   letter-spacing: 8px;
-  line-height: 28px;
+  /* line-height: 28px; */
   font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
+  /* font-weight: 400; */
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;

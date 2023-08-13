@@ -9,7 +9,7 @@ const ErrorContainer = styled.div`
   background-color: transparent;
   height: 100vh;
   width: 100%;
-  padding: 0em 10em;
+  /* padding: 0em 10em; */
 `;
 
 const TextRaw = styled.h1`
