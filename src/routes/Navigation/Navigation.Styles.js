@@ -18,7 +18,7 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
-  /* padding: 0em 8em; */
+  padding: 0em 8em;
   font-family: 'Roboto Mono', monospace;
   @media screen and (max-width: 768px) {
   margin-bottom: 10px;

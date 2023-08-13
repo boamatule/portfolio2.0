@@ -98,6 +98,7 @@ const AboutWrapper = styled.div`
   margin-bottom: 30px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   @media screen and (max-width: 480px) {
@@ -145,6 +146,7 @@ const GetInTouchLink = styled.p`
   margin-bottom: 30px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   @media screen and (max-width: 480px) {

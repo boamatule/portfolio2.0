@@ -1,6 +1,6 @@
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import styled from "styled-components";
-import { Button, Container } from "../../global-styles";
+import { Button } from "../../global-styles";
 
 const ContactContainer = styled.div`
   display: flex;
@@ -10,10 +10,9 @@ const ContactContainer = styled.div`
   background-color: transparent;
   overflow: hidden;
   width: 100%;
-  min-height: 100vh; /* Set a minimum height of 100vh to ensure it fits well on the page */
+  min-height: 100vh; 
   padding: 40em 10em;
-  /* margin-bottom: -300px; */
-  /* margin-top: 100px; */
+  margin-bottom: -300px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -24,11 +23,11 @@ const ContactContainer = styled.div`
   }
 `,
 
-ContactFormColumn = styled.div`
+  ContactFormColumn = styled.div`
   width: 50%;
   align-self: flex-start;
   background-color: transparent;
-
+  
   @media (max-width: 768px) {
     width: 100%;
     max-width: unset;
@@ -92,6 +91,7 @@ ContactFormColumn = styled.div`
   margin-bottom: 30px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   @media screen and (max-width: 480px) {
@@ -99,12 +99,7 @@ ContactFormColumn = styled.div`
     line-height: 18px;
     padding: 0 20px; /* Add padding to left and right */ 
   } 
-  
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-    line-height: 18px;
-    /* padding: 10px; */
-  }
+
 `, Form = styled.form`
   margin: auto;
   width: 100%;

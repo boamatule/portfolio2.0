@@ -13,7 +13,7 @@ export const FooterContainer = styled.footer`
 
   @media screen and (max-width: 768px) {
     padding: 1em 2em;
-    margin-top: 0px;
+    margin-top: 80px;
     margin-bottom: 0px;
     align-items: left;
   }
