@@ -18,18 +18,7 @@ const CoreSkills = () => {
   ];
 
   return (
-    <div
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   alignItems: "center",
-      //   justifyContent: "center",
-      //   width: "100%",
-      //   maxWidth: "1000px",
-      //   margin: "0 auto",
-      //   padding: "0 20px",
-      // }}
-    >
+    <div>
       <h2
         style={{
           color: "#4568dc",
@@ -93,8 +82,6 @@ const AnotherCoreSkills = () => {
         justifyContent: "center",
         width: "100%",
         maxWidth: "1000px",
-        // margin: "0 auto",
-        // padding: "0 0px",
       }}
     >
       <h2

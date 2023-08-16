@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Blurhash } from "react-blurhash";
 
 import {
   AboutWrapper,
@@ -6,13 +7,14 @@ import {
   GetInTouch,
   GetInTouchLink,
   Heading,
-  Image,
+  // Image,
   ImageColumn,
   MozambiqueText,
   TextColumn,
 } from './AboutPage.Styles';
 
 const backgroundImage = "../../images/background.svg";
+const avatarImage = "../../images/moi.webp";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -39,12 +41,22 @@ const letterVariants = {
   },
 };
 
-const AboutPage = ({ email, subject, body }) => {
+const AboutPage = () => {
   const customEmail = "boa.matule@gmail.com";
   const handleEmailClick = () => {
     const mailtoLink = `mailto:${customEmail}?subject=${encodeURIComponent("")}&body=${encodeURIComponent("")}`;
     window.location.href = mailtoLink;
   };
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () =>
+      setImageLoaded(true);
+    img.src = avatarImage;
+  }, [avatarImage]);
+
   return (
     <AboutWrapper>
       <TextColumn>
@@ -77,7 +89,32 @@ const AboutPage = ({ email, subject, body }) => {
         </GetInTouchLink>
       </TextColumn>
       <ImageColumn backgroundImage={backgroundImage}>
-        <Image src="../../images/moi.webp" alt="Boa" title="This is Boa" />
+        <>
+          {imageLoaded && (
+            <Blurhash
+              hash="UEKT0s$k=L%1{.NaxsRkwdtQEMRk?ZRQM{sC"
+              width={280}
+              height={280}
+              resolutionX={32}
+              resolutionY={32}
+              punch={1}
+            />
+          )}
+          {!imageLoaded && (
+            <img
+              onLoad={() => setImageLoaded(true)}
+              src={avatarImage}
+              style={{
+                width: "280px",
+                height: "280px",
+                borderRadius: "4px",
+                objectFit: "cover",
+              }}
+              alt="Boa"
+              title="This is Boa"
+            />
+          )}
+        </>
       </ImageColumn>
     </AboutWrapper>
   )

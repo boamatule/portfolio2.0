@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FaEnvelope } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled, { keyframes } from "styled-components/macro";
+import { BlurhashCanvas } from "react-blurhash";
 
 const AboutWrapper = styled.div`
   display: flex;

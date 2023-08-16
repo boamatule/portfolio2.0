@@ -27,6 +27,7 @@
 		"blurhash": "^2.0.5",
 		"core-js": "^3.32.0",
 		"enzyme": "^3.11.0",
+		"enzyme-to-json": "^3.6.2",
 		"eslint": "^8.46.0",
 		"eslint-config-react-app": "^7.0.1",
 		"esm": "^3.2.25",
@@ -39,6 +40,7 @@
 		"postcss": "^8.4.27",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
+		"react-blurhash": "^0.3.0",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.10.1",
 		"react-lazy-load-image-component": "^1.6.0",
@@ -66,7 +68,8 @@
 		"workbox-range-requests": "^7.0.0",
 		"workbox-routing": "^7.0.0",
 		"workbox-strategies": "^7.0.0",
-		"workbox-streams": "^7.0.0"
+		"workbox-streams": "^7.0.0",
+		"yarn": "^1.22.19"
 	},
 	"scripts": {
 		"analyze": "source-map-explorer 'build/static/js/*.js'",

@@ -3101,6 +3101,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cheerio@npm:^0.22.22":
+  version: 0.22.31
+  resolution: "@types/cheerio@npm:0.22.31"
+  dependencies:
+    "@types/node": "*"
+  checksum: 8d73d22fdd384c290514dad6f9f4a436f5a90bc836bbe9b46fe4f557041a03484f0547291d0347185a806149f465355fc225dc87477b8cf5af5be307bb75e6a4
+  languageName: node
+  linkType: hard
+
 "@types/connect-history-api-fallback@npm:^1.3.5":
   version: 1.5.0
   resolution: "@types/connect-history-api-fallback@npm:1.5.0"
@@ -6196,6 +6205,19 @@ __metadata:
     has: ^1.0.3
     object-is: ^1.1.5
   checksum: e18a728225b3ef501a223608955e2c8e915adf24dfe4d778bdbc89e4ecd80384723e9d44780176be1529f6b642e7837211f502bff89f62833d8f9cae027997e0
+  languageName: node
+  linkType: hard
+
+"enzyme-to-json@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "enzyme-to-json@npm:3.6.2"
+  dependencies:
+    "@types/cheerio": ^0.22.22
+    lodash: ^4.17.21
+    react-is: ^16.12.0
+  peerDependencies:
+    enzyme: ^3.4.0
+  checksum: e81f3dc05b5c440da416544a3cbc41fb9e79de0777453e48fe55de822f7d6f56ee08e5173d46a7624cf2781198396509c470bdd616a1ea441e6fa9ddf4396477
   languageName: node
   linkType: hard
 
@@ -10617,6 +10639,7 @@ __metadata:
     blurhash: ^2.0.5
     core-js: ^3.32.0
     enzyme: ^3.11.0
+    enzyme-to-json: ^3.6.2
     eslint: ^8.46.0
     eslint-config-react-app: ^7.0.1
     esm: ^3.2.25
@@ -10629,6 +10652,7 @@ __metadata:
     postcss: ^8.4.27
     prop-types: ^15.8.1
     react: ^18.2.0
+    react-blurhash: ^0.3.0
     react-dom: ^18.2.0
     react-icons: ^4.10.1
     react-lazy-load-image-component: ^1.6.0
@@ -10657,6 +10681,7 @@ __metadata:
     workbox-routing: ^7.0.0
     workbox-strategies: ^7.0.0
     workbox-streams: ^7.0.0
+    yarn: ^1.22.19
   languageName: unknown
   linkType: soft
 
@@ -11728,6 +11753,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-blurhash@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "react-blurhash@npm:0.3.0"
+  peerDependencies:
+    blurhash: ^2.0.3
+    react: ">=15"
+  checksum: 684d506594004ce1906f4fce7e3773785aaadc6a88b4be800d1ee3580069195fed90585937bf4a328979d3131c8213a55dc12a65353eaaa0472a4b155a7e2f15
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^12.0.1":
   version: 12.0.1
   resolution: "react-dev-utils@npm:12.0.1"
@@ -11795,7 +11830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1":
+"react-is@npm:^16.12.0, react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -14811,6 +14846,16 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: b14afbb51e3251a204d81937c86a7e9d4bdbf9a2bcee38226c900d00f522969ab675703bee2a6f99f8e20103f608382936034e64d921b74df82b63c07c5e8f59
+  languageName: node
+  linkType: hard
+
+"yarn@npm:^1.22.19":
+  version: 1.22.19
+  resolution: "yarn@npm:1.22.19"
+  bin:
+    yarn: bin/yarn.js
+    yarnpkg: bin/yarn.js
+  checksum: b43d2cc5fee7e933beb12a8aee7dfceca9e9ef2dd17c5d04d15a12ab7bec5f5744ea34a07b86e013da7f291a18c4e1ad8f70e150f5ed2f4666e6723c7f0a8452
   languageName: node
   linkType: hard
 

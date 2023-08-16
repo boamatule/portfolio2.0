@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styled from 'styled-components';
-import { Container } from '../../global-styles';
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -50,8 +49,6 @@ export const Heading = styled.h2`
   @media screen and (max-width: 768px) {
     font-size: 18px;
     padding: 0 20px;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 `;
 

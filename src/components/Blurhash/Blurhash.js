@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
 import { decode } from 'blurhash';
+import React, { useEffect, useRef } from 'react';
 
 const BlurhashImage = ({ hash, width, height }) => {
   const canvasRef = useRef(null);
