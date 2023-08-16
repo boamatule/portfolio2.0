@@ -52,8 +52,9 @@ const AboutPage = () => {
 
   useEffect(() => {
     const img = new Image();
-    img.onload = () =>
-      setImageLoaded(true);
+    img.onload = () => {
+      setImageLoaded(true)
+    }
     img.src = avatarImage;
   }, [avatarImage]);
 
@@ -90,7 +91,7 @@ const AboutPage = () => {
       </TextColumn>
       <ImageColumn backgroundImage={backgroundImage}>
         <>
-          {imageLoaded && (
+          <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
             <Blurhash
               hash="UEKT0s$k=L%1{.NaxsRkwdtQEMRk?ZRQM{sC"
               width={280}
@@ -99,21 +100,19 @@ const AboutPage = () => {
               resolutionY={32}
               punch={1}
             />
-          )}
-          {!imageLoaded && (
-            <img
-              onLoad={() => setImageLoaded(true)}
-              src={avatarImage}
-              style={{
-                width: "280px",
-                height: "280px",
-                borderRadius: "4px",
-                objectFit: "cover",
-              }}
-              alt="Boa"
-              title="This is Boa"
-            />
-          )}
+          </div>
+          <img
+            src={avatarImage}
+            style={{
+              display: !imageLoaded ? "none" : "inline",
+              width: "280px",
+              height: "280px",
+              borderRadius: "4px",
+              objectFit: "cover",
+            }}
+            alt="Boa"
+            title="This is Boa"
+          />
         </>
       </ImageColumn>
     </AboutWrapper>
