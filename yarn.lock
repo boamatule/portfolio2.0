@@ -1990,6 +1990,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/react@npm:1":
+  version: 1.0.6
+  resolution: "@heroicons/react@npm:1.0.6"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 372b1eda3ce735ef069777bc96304f70de585ebb71a6d1cedc121bb695f9bca235619112e3ee14e8779e95a03096813cbbe3b755927a54b7580d1ce084fa4096
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.10":
   version: 0.11.10
   resolution: "@humanwhocodes/config-array@npm:0.11.10"
@@ -10604,6 +10613,7 @@ __metadata:
     "@babel/preset-react": ^7.22.5
     "@cfaester/enzyme-adapter-react-18": ^0.7.0
     "@craco/craco": ^7.1.0
+    "@heroicons/react": 1
     "@svgr/webpack": ^8.0.1
     "@testing-library/cypress": ^9.0.0
     "@testing-library/dom": 9.3.1
@@ -10630,13 +10640,15 @@ __metadata:
     prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-icons: ^4.10.1
+    react-icons: ^4.11.0
     react-lazy-load-image-component: ^1.6.0
     react-responsive: ^9.0.2
     react-router-dom: ^6.14.2
     react-scripts: ^5.0.1
     react-scroll: ^1.8.9
+    react-theme-provider: ^0.1.3
     react-toggle: ^4.1.3
+    ri: ^0.0.0
     styled-components: ^6.0.6
     svgo: ^3.0.2
     tailwindcss: ^3.3.3
@@ -11779,12 +11791,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.10.1":
-  version: 4.10.1
-  resolution: "react-icons@npm:4.10.1"
+"react-icons@npm:^4.11.0":
+  version: 4.11.0
+  resolution: "react-icons@npm:4.11.0"
   peerDependencies:
     react: "*"
-  checksum: b6c8d4fe482b112e1041515d93ef7670a0af128855c926052a076b64d0b991cdd4391394b26467100f8da3859db1ebd8f9c6b7614fa5969fde83de45c71031a3
+  checksum: 7b8b80bbe2dabcc54b6c2129b7761a04b19caebe24389adc7683478ef41212b9ca0b53c63abcc06b3c01b94c84855ec5142b4c357e19c4aaaad9a4db23a3c485
   languageName: node
   linkType: hard
 
@@ -11969,6 +11981,13 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 6b6980ced93fa2b72662d5e4ab3b4896833586940047ce52ca9aca801e5432adf05fcbe28289b0af3ce6a2a7c590974e25dcc8aa43d0de658bfe8bbcd686f958
+  languageName: node
+  linkType: hard
+
+"react-theme-provider@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "react-theme-provider@npm:0.1.3"
+  checksum: c42329318220665ed8257da74fe031c2163e1e47cd3a3696d7390b92fd1245f1a2e972c3604a75e901861cbe8795ec39aa5654dbb0aa2975071d0ee0727909f5
   languageName: node
   linkType: hard
 
@@ -12308,6 +12327,13 @@ __metadata:
   version: 1.0.4
   resolution: "reusify@npm:1.0.4"
   checksum: c3076ebcc22a6bc252cb0b9c77561795256c22b757f40c0d8110b1300723f15ec0fc8685e8d4ea6d7666f36c79ccc793b1939c748bf36f18f542744a4e379fcc
+  languageName: node
+  linkType: hard
+
+"ri@npm:^0.0.0":
+  version: 0.0.0
+  resolution: "ri@npm:0.0.0"
+  checksum: 55e10b7388b25f08f3ec791c32d4bc3836b4b2af3a929ad0ef7ba60e69034204a400154cb41409adddc4971093ba86c92e997010b2202a84a4172c4a340f4eaa
   languageName: node
   linkType: hard
 

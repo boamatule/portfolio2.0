@@ -1,37 +1,26 @@
 import 'normalize.css';
 import styled, { createGlobalStyle } from "styled-components/macro";
 
+
 export const GlobalStyles = createGlobalStyle`
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
   :root {
     --light: grey;
     --dark: grey;
     --font-color: #86829c;
     --background-color: #232129;
-    /* --theme-color: #007bff; */
+    --color-on-primary: #007bff;
   }
 
   [data-theme="dark"] {
     --background-color: #fafaf8;
-  }
-
-  /* Chrome, Firefox, Opera, Edge */
-  @media (prefers-color-scheme: light) {
-    /* Light mode styles */
-    /* Use the --theme-color variable for the browser UI elements */
-    :root {
-      --color-on-background: #fff;
-      --color-on-primary: #007bff;
-    }
-  }
-
-  /* Chrome, Firefox, Opera, Edge */
-  @media (prefers-color-scheme: dark) {
-    /* Dark mode styles */
-    /* Use a different color for the --theme-color variable */
-    :root {
-      --color-on-background: #000;
-      --color-on-primary: #0cf;
-    }
   }
 
   /* Safari */
@@ -42,14 +31,6 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
   html {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;  
@@ -59,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: black;
+    color: unset;
   }
 `;
 
@@ -71,6 +52,19 @@ export const ResponsiveText = styled.p`
   }
 `;
 
+export const Responsive = styled.div`
+  @media (max-width: 700px) {
+    padding: 4rem;
+    margin: 4rem;
+  }
+`;
+// export const Responsive = styled.div`
+//   @media (max-width: 550px) {
+//     padding: 4rem 2rem;
+//     margin: 4rem 2rem;
+//   }
+// `;
+
 export const ResponsiveImage = styled.img`
   width: 100%;
   max-width: 800px;
@@ -79,16 +73,6 @@ export const ResponsiveImage = styled.img`
     max-width: 100%;
   }
 `;
-
-// export const FlexContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-  
-//   @media (max-width: 768px) {
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// `;
 
 
 export const Button = styled.button`
@@ -128,3 +112,4 @@ export const Glass = styled.div`
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
+

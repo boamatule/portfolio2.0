@@ -3,9 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { Link as smoothScroll } from 'react-scroll';
-
 import styled from "styled-components";
-
 
 const Nav = styled.nav`
   display: flex;
@@ -18,14 +16,21 @@ const Nav = styled.nav`
   font-size: 1rem;
   z-index: 999;
   background: transparent;
-  padding: 0em 8em;
-  /* font-family: 'Roboto Mono', monospace;
-  font-weight: 400; */
+  padding: 2rem 6rem;
 
-  @media screen and (max-width: 768px) {
-  margin-bottom: 10px;
-  padding: 0em 2.4em;
+
+  @media screen and (max-width:  1050px) {
+  padding: 2rem 4rem;
   }
+
+  @media screen and (max-width:  700px) {
+  padding: 2rem 4rem;
+  }
+
+  @media screen and (max-width:  300px) {
+  padding: 2em;
+  }
+
 `,
 
 
@@ -34,14 +39,14 @@ display: flex;
 justify-content: space-between;
 height: 80px;
 width: 100%;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 
 }
 `,
 
 FaBarsIcon = styled(FaBars)`
     display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     display: block;
     position: absolute;
     top: 0;
@@ -62,14 +67,14 @@ FaBarsIcon = styled(FaBars)`
   text-decoration: none;
   
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     margin-left: -102px;
   }
 `,
   StyledLogo = styled.img`
   width: 260px;
   height: 260px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     width: 200px;
     height: 200px;
   } 
@@ -82,7 +87,7 @@ FaBarsIcon = styled(FaBars)`
   text-transform: uppercase;
   justify-self: flex-start;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     display: none;
     left: ${({ click }) => (click ? 0 : '-100%')};
   }
@@ -127,17 +132,13 @@ FaBarsIcon = styled(FaBars)`
 `,
   NavItemSocialIconWrapper = styled(motion.div)`
   display: flex;
-  justify-content: flex-end;  
   flex-wrap: wrap-reverse;
-  position: relative; 
-  top: 0;
-  height: 80px;
-
+  position: relative;
+  align-items: center;
   @media screen and (max-width: 768px) {
     padding-right: 0px;
     align-items: center;
     justify-content: space-between;  
-
     flex-direction: row;
     top: 0;
     & {
@@ -151,23 +152,49 @@ FaBarsIcon = styled(FaBars)`
 `,
   NavItemSocialIconLinkMotion = styled(motion.div)`
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-right: 6rem;
-
-  @media screen and (max-width: 768px) {
-    top: 0px;
-    margin-left: -14em;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  @media screen and (max-width: 700px) {
   }
 `,
+
+NavItemSocialIconLink = styled.a`
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+margin: 0.5rem 1rem;
+background-color: transparent;
+border-radius: 50%;
+transition: background-color 0.3s ease-in-out;
+&:hover {
+  background-color:  #4568dc;
+}
+
+@media screen and (max-width: 700px) {
+  /* margin-left: -4rem; */
+}
+
+/* increase touch target size */
+width: 36px;
+height: 36px;
+padding-left: 0rem;
+margin-right: 0em;
+
+/* remove unnecessary styles */
+top: auto;
+justify-content: center;
+`,
+
 
   NavItemSocialIconLinkWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -176,34 +203,7 @@ FaBarsIcon = styled(FaBars)`
     background-color: #fff;
   }
 `,
-  NavItemSocialIconLink = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0rem;
-  cursor: pointer;
-  background-color: transparent;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-  &:hover {
-    background-color:  #4568dc;
-  }
 
-  @media screen and (max-width: 768px) {
-    /* margin-left: -4rem; */
-  }
-
-  /* increase touch target size */
-  width: 36px;
-  height: 36px;
-  padding-left: 0rem;
-  margin-right: 0em;
-
-  /* remove unnecessary styles */
-  top: auto;
-  justify-content: center;
-  `,
 
   DarkModeWrapper = styled.div`
   display: flex;
@@ -219,7 +219,7 @@ FaBarsIcon = styled(FaBars)`
     background-color:  #4568dc;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     /* margin-left: -4rem; */
   }
 
@@ -275,7 +275,7 @@ cursor: pointer;
 }
 `,
 
-  AnimatedFaBars = styled(FaBars)`
+AnimatedFaBars = styled(FaBars)`
 width: 24px;
 height: 24px;
 color: #6969FB;
@@ -295,7 +295,7 @@ export const NavItemToggle = styled(motion.div)`
     color: none;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 700px) {
     height: 80px;
     padding: 30px;
     background-color: none;
