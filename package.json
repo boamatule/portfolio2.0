@@ -2,10 +2,22 @@
 	"name": "portfolio2.0",
 	"version": "0.1.0",
 	"private": true,
+	"type": "module",
 	"jest": {
 		"snapshotSerializers": [
 			"enzyme-to-json/serializer"
 		]
+	},
+	"scripts": {
+		"analyze": "source-map-explorer 'build/static/js/*.js'",
+		"lint": "eslint --fix -- .",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "craco test --env=jsdom",
+		"test:coverage": "npm test -- --coverage",
+		"test:badges": "npm run test:coverage && jest-coverage-badges",
+		"eject": "react-scripts eject"
 	},
 	"dependencies": {
 		"@babel/cli": "^7.22.9",
@@ -57,7 +69,6 @@
 		"ri": "^0.0.0",
 		"styled-components": "^6.0.6",
 		"svgo": "^3.0.2",
-		"tailwindcss": "^3.3.3",
 		"terser-webpack-plugin": "^5.3.9",
 		"three": "^0.157.0",
 		"twin.macro": "^3.4.0",
@@ -76,16 +87,6 @@
 		"workbox-routing": "^7.0.0",
 		"workbox-strategies": "^7.0.0",
 		"workbox-streams": "^7.0.0"
-	},
-	"scripts": {
-		"analyze": "source-map-explorer 'build/static/js/*.js'",
-		"lint": "eslint --fix -- .",
-		"start": "craco start",
-		"build": "craco build",
-		"test": "craco test --env=jsdom",
-		"test:coverage": "npm test -- --coverage",
-		"test:badges": "npm run test:coverage && jest-coverage-badges",
-		"eject": "react-scripts eject"
 	},
 	"resolutions": {
 		"nth-check": ">=2.0.1",
@@ -114,7 +115,14 @@
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
 		"@svgr/webpack": "^8.0.1",
 		"@testing-library/cypress": "^9.0.0",
-		"enzyme": "^3.11.0"
+		"@types/react": "^18.0.27",
+		"@types/react-dom": "^18.0.10",
+		"@vitejs/plugin-react": "^3.1.0",
+		"autoprefixer": "^10.4.14",
+		"enzyme": "^3.11.0",
+		"postcss": "^8.4.27",
+		"tailwindcss": "^3.2.6",
+		"vite": "^4.1.0"
 	},
 	"packageManager": "yarn@3.6.1"
 }
