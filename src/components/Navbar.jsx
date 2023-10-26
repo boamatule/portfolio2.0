@@ -24,7 +24,7 @@ const Navbar = () => {
 
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
-	
+
 	return (
 		<nav
 			className={`${
@@ -99,4 +99,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default React.memo(Navbar);

@@ -30,11 +30,13 @@ const Hero = () => {
           flex justify-center items-start p-2"
 					>
 						<motion.div
-							animate={{ y: [0, 24, 0] }}
+							animate={{ 
+								y: [0, 24, 0],
+							}}
 							transition={{
 								duration: 1.5,
 								repeat: Infinity,
-								reapeatType: "loop",
+								repeatType: "loop",
 							}}
 							className="w-3 h-3 bg-secondary rounded-full mb-1"
 						/>

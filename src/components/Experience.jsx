@@ -3,6 +3,7 @@ import {
 	VerticalTimeline,
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -19,11 +20,11 @@ const ExperienceCard = ({ experience }) => {
 			iconStyle={{ background: experience.iconBg }}
 			icon={
 				<div className="flex justify-center items-center w-full h-full ">
-					<img
+					<LazyLoadImage
 						src={experience.icon}
 						alt={experience.company_name}
 						className="w-[60%] h-[60%] 
-          object-contain"
+          	object-contain"
 					/>
 				</div>
 			}
