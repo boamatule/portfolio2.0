@@ -18,30 +18,49 @@ const Contact = () => {
 	const [loading, setLoading] = useState(false);
 
 	const handleChange = (e) => {
+		const { target } = e;
+		const { name, value } = target;
+
 		setForm({
 			...form,
-			[e.target.name]: e.target.value,
+			[name]: value,
 		});
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
+
 		emailjs
-			.sendForm(
-				"service_1q2q9qf",
-				"template_1q2q9qf",
-				formRef.current,
-				"user_1q2q9qf",
+			.send(
+				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+				{
+					from_name: form.name,
+					to_name: "Boa Matule",
+					from_email: form.email,
+					to_email: "boa.matule@gmail.com",
+					message: form.message,
+				},
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
 					setLoading(false);
+					console.log(result.text);
+					alert("Message Sent, I'll get back to you shortly");
+
+					setForm({
+						name: "",
+						email: "",
+						message: "",
+					});
 				},
 				(error) => {
-					console.log(error.text);
 					setLoading(false);
+					console.log(error.text);
+
+					alert("Ops! Something went terribly wrong, please try again");
 				},
 			);
 	};
@@ -61,7 +80,6 @@ const Contact = () => {
 					className="flex flex-col gap-4 mt-12"
 				>
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
 							className="bg-tertiary rounded-lg py-4 px-6 text-white outline-none placeholder:text-secondary border-none font-medium"
 							type="text"
@@ -73,7 +91,6 @@ const Contact = () => {
 					</label>
 
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4">Your Email</span>
 						<input
 							className="bg-tertiary rounded-lg py-4 px-6 text-white outline-none placeholder:text-secondary border-none font-medium"
 							type="email"
@@ -85,7 +102,6 @@ const Contact = () => {
 					</label>
 
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4">Your Message</span>
 						<textarea
 							className="bg-tertiary rounded-lg py-4 px-6 text-white outline-none placeholder:text-secondary border-none font-medium"
 							rows="7"
