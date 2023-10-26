@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
 	Decal,
@@ -52,4 +52,4 @@ const BallCanvas = ({ icon }) => {
 	);
 };
 
-export default BallCanvas;
+export default React.memo(BallCanvas);

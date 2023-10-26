@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
@@ -115,4 +115,4 @@ const Contact = () => {
 	);
 };
 
-export default SectionWrapper(Contact, "contact");
+export default React.memo(SectionWrapper(Contact, "contact"));

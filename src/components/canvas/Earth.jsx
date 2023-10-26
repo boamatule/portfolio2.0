@@ -43,4 +43,4 @@ const EarthCanvas = () => {
 	);
 };
 
-export default EarthCanvas;
+export default React.memo(EarthCanvas);

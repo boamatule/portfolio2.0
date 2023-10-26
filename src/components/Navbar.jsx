@@ -8,10 +8,30 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY;
+			if (scrollTop > 100) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+	
 	return (
 		<nav
-			className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+			className={`${
+				styles.paddingX
+			} w-full flex items-center py-5 fixed top-0 z-20 ${
+				scrolled ? "bg-primary" : "bg-transparent"
+			}`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
@@ -27,17 +47,15 @@ const Navbar = () => {
 						Boa Matule &nbsp;
 					</p>
 				</Link>
-				<ul className="list-none hidden sm:flex flex-row gap-10">
+				<ul className="list-none hidden sm:flex flex-row gap-10 sm:hidden">
 					{navLinks.map((link) => (
 						<li
 							key={link.id}
 							className={`${
-								active === link.title 
-                ? "text-white" 
-                : "text-gray-400"
+								active === link.title ? "text-white" : "text-gray-400"
 							} font-poppins cursor-pointer text-[16px] font-medium`}
 							onClick={() => {
-                setToggle(!toggle);
+								setToggle(!toggle);
 								setActive(link.title);
 							}}
 						>
@@ -46,11 +64,11 @@ const Navbar = () => {
 					))}
 				</ul>
 
-				<div className="sm:hidden flex flex-1 justify-end items-center">
+				<div className=" flex flex-1 justify-end items-center">
 					<img
 						src={toggle ? close : menu}
 						alt="menu"
-						className="w-[28px] h-[28px] object-contain cursor-pointer sm:hidden"
+						className="w-[28px] h-[28px] object-contain cursor-pointer"
 						onClick={() => setToggle(!toggle)}
 					/>
 
@@ -65,7 +83,7 @@ const Navbar = () => {
 									<li
 										className="text-white hover:text-gray-400 cursor-pointer text-[18px] font-medium"
 										onClick={() => {
-                      setToggle(!toggle);
+											setToggle(!toggle);
 											setActive(link.title);
 										}}
 									>

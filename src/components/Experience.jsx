@@ -67,4 +67,4 @@ const Experience = () => {
 	);
 };
 
-export default SectionWrapper(Experience, "work");
+export default React.memo(SectionWrapper(Experience, "work"));

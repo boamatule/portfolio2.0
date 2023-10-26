@@ -1,9 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
+import React, { Suspense, lazy } from 'react';
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 const App = () => {
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
@@ -11,7 +13,6 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
         <Tech />
         <Works />
         <div className='relative z-0'>
@@ -20,6 +21,7 @@ const App = () => {
         </div>
       </div>
     </BrowserRouter>
+    </Suspense>
   );
 }
 
