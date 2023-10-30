@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { IconContext } from "react-icons/lib";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import DarkModeButton from "../components/DarkMode/darkModeButton";
+import DarkTheme from "./DarkTheme";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -29,7 +32,9 @@ const Navbar = () => {
 		<nav
 			className={`${
 				styles.paddingX
-			} w-full flex items-center py-5 fixed top-0 z-20 ${
+				// styles.paddingY
+	
+			} w-full flex items-center py-5 fixed top-0 z-20  ${
 				scrolled ? "bg-primary" : "bg-transparent"
 			}`}
 		>
@@ -47,35 +52,44 @@ const Navbar = () => {
 						Boa Matule &nbsp;
 					</p>
 				</Link>
-				<ul className="list-none hidden sm:flex flex-row gap-10 sm:hidden">
-					{navLinks.map((link) => (
-						<li
-							key={link.id}
-							className={`${
-								active === link.title ? "text-white" : "text-gray-400"
-							} font-poppins cursor-pointer text-[16px] font-medium`}
-							onClick={() => {
-								setToggle(!toggle);
-								setActive(link.title);
-							}}
-						>
-							<a href={`#${link.id}`}>{link.title}</a>
-						</li>
-					))}
-				</ul>
 
-				<div className=" flex flex-1 justify-end items-center">
+				<div className="ml-auto flex-1 items-center flex space-x-3 justify-end">
+					<Link
+						to="https://github.com/boamatule/"
+						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
+					>
+						<FaGithub
+							style={{
+								width: "18px",
+								height: "18px",
+							}}
+						/>
+					</Link>
+					<Link
+						to="https://www.linkedin.com/in/boa-matule-2082b068/"
+						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
+					>
+						<FaLinkedinIn
+							style={{
+								width: "18px",
+								height: "18px",
+							}}
+						/>
+					</Link>
+					<DarkTheme />
+
+						<div className="">
 					<img
 						src={toggle ? close : menu}
 						alt="menu"
-						className="w-[28px] h-[28px] object-contain cursor-pointer"
+						className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-gray-400"
 						onClick={() => setToggle(!toggle)}
 					/>
 
 					<div
 						className={`${
 							toggle ? "flex" : "hidden"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						} p-6 black-gradient absolute top-20 right-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
 					>
 						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
 							{navLinks.map((link) => (
@@ -93,8 +107,26 @@ const Navbar = () => {
 							))}
 						</ul>
 					</div>
+					</div>
 				</div>
-			</div>
+
+				<ul className="list-none hidden sm:flex flex-row gap-10 sm:hidden">
+					{navLinks.map((link) => (
+						<li
+							key={link.id}
+							className={`${
+								active === link.title ? "text-white" : "text-gray-400"
+							} font-poppins cursor-pointer text-[16px] font-medium`}
+							onClick={() => {
+								setToggle(!toggle);
+								setActive(link.title);
+							}}
+						>
+							<a href={`#${link.id}`}>{link.title}</a>
+						</li>
+					))}
+				</ul>
+				</div>
 		</nav>
 	);
 };

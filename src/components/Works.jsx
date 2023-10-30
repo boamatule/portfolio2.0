@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-tilt";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { github, globe } from "../assets";
@@ -40,7 +40,7 @@ const ProjectCard = ({
 								onClick={() => window.open(source_code_link, "_blank")}
 								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 							>
-								<img
+								<LazyLoadImage
 									src={github}
 									alt="source code"
 									className="w-1/2 h-1/2 object-contain"
@@ -52,7 +52,7 @@ const ProjectCard = ({
 								onClick={() => window.open(source_deployed_link, "_blank")}
 								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 							>
-								<img
+								<LazyLoadImage
 									src={globe}
 									alt="deployed website"
 									className="w-1/2 h-1/2 object-contain"

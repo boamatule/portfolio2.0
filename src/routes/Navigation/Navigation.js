@@ -20,7 +20,7 @@ import {
 } from './Navigation.Styles';
 
 import DarkModeButton from '../../components/DarkMode/darkModeButton';
-import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown.jsx';
 import { DropdownMobileIcon } from '../Dropdown/Dropdown.Styles';
 
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
@@ -8,6 +9,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+	const navigate = useNavigate();
+
+	const [loading, setLoading] = useState(false);
+
 	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: "",
@@ -15,8 +20,7 @@ const Contact = () => {
 		message: "",
 	});
 
-	const [loading, setLoading] = useState(false);
-
+	
 	const handleChange = (e) => {
 		const { target } = e;
 		const { name, value } = target;
@@ -42,7 +46,7 @@ const Contact = () => {
 					to_email: "boa.matule@gmail.com",
 					message: form.message,
 				},
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
 			)
 			.then(
 				(result) => {
@@ -55,6 +59,11 @@ const Contact = () => {
 						email: "",
 						message: "",
 					});
+
+					setTimeout(() => {
+						navigate("/Success");
+					}, 3000);
+
 				},
 				(error) => {
 					setLoading(false);
