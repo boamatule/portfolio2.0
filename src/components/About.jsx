@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => {
 						alt={title}
 						className="w-16 h-16 object-contain"
 					/>
-					<h3 className="text-white text-[20px] font-bold mt-5 text-center">
+					<h3 className="text-white text-[20px] font-bold mt-5 text-center dark:text-gray-400">
 						{title}
 					</h3>
 				</div>
@@ -46,7 +46,7 @@ const About = () => {
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="max-w-3full text-[17px] text-secondary leading-[30px]"
+					className="max-w-3full text-[17px] text-secondary leading-[30px] dark:text-gray-400"
 				>
 					I am a full stack developer with a passion for building beautiful and
 					functional web applications. I have experience working with React,

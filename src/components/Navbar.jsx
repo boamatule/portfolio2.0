@@ -33,7 +33,6 @@ const Navbar = () => {
 			className={`${
 				styles.paddingX
 				// styles.paddingY
-	
 			} w-full flex items-center py-5 fixed top-0 z-20  ${
 				scrolled ? "bg-primary" : "bg-transparent"
 			}`}
@@ -54,8 +53,11 @@ const Navbar = () => {
 				</Link>
 
 				<div className="ml-auto flex-1 items-center flex space-x-3 justify-end">
-					<Link
-						to="https://github.com/boamatule/"
+					<a
+						href="https://github.com/boamatule/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="GitHub"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
 						<FaGithub
@@ -64,9 +66,12 @@ const Navbar = () => {
 								height: "18px",
 							}}
 						/>
-					</Link>
-					<Link
-						to="https://www.linkedin.com/in/boa-matule-2082b068/"
+					</a>
+					<a
+						href="https://www.linkedin.com/in/boa-matule-2082b068/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="LinkedIn"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
 						<FaLinkedinIn
@@ -75,38 +80,42 @@ const Navbar = () => {
 								height: "18px",
 							}}
 						/>
-					</Link>
+					</a>
 					<DarkTheme />
 
-						<div className="">
-					<img
-						src={toggle ? close : menu}
-						alt="menu"
-						className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-gray-400"
-						onClick={() => setToggle(!toggle)}
-					/>
+					<div className="">
+					
+						<img
+							src={toggle ? close : menu}
+							alt="menu"
+							className="w-[20px] h-[20px] object-contain cursor-pointer"
+							onClick={() => setToggle(!toggle)}
+						/>
 
-					<div
-						className={`${
-							toggle ? "flex" : "hidden"
-						} p-6 black-gradient absolute top-20 right-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-					>
-						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-							{navLinks.map((link) => (
-								<div key={link.id} className="flex flex-col items-center gap-5">
-									<li
-										className="text-white hover:text-gray-400 cursor-pointer text-[18px] font-medium"
-										onClick={() => {
-											setToggle(!toggle);
-											setActive(link.title);
-										}}
+						<div
+							className={`${
+								toggle ? "flex" : "hidden"
+							} p-6 black-gradient absolute top-20 right-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						>
+							<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+								{navLinks.map((link) => (
+									<div
+										key={link.id}
+										className="flex flex-col items-center gap-5"
 									>
-										<a href={`#${link.id}`}>{link.title}</a>
-									</li>
-								</div>
-							))}
-						</ul>
-					</div>
+										<li
+											className="text-white hover:text-gray-400 cursor-pointer text-[18px] font-medium"
+											onClick={() => {
+												setToggle(!toggle);
+												setActive(link.title);
+											}}
+										>
+											<a href={`#${link.id}`}>{link.title}</a>
+										</li>
+									</div>
+								))}
+							</ul>
+						</div>
 					</div>
 				</div>
 
@@ -126,7 +135,7 @@ const Navbar = () => {
 						</li>
 					))}
 				</ul>
-				</div>
+			</div>
 		</nav>
 	);
 };
