@@ -1,0 +1,1 @@
+import{a as t}from"./index-7bf6e378.js";import{S as e}from"./SectionWrapper-b7184468.js";import"./styles-bea25d13.js";import"./motion-45f4dbe7.js";const r=()=>t("div",{children:t("h1",{className:"text-4xl text-center text-white font-bold",children:"Success"})}),a=e(r);export{a as default};

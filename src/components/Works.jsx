@@ -63,7 +63,9 @@ const ProjectCard = ({
 				</div>
 
 				<div className="mt-5">
-					<h3 className="mt-5 text-white font-bold text-[24px] dark:text-gray-400">{name}</h3>
+					<h3 className="mt-5 text-white font-bold text-[24px] dark:text-gray-400">
+						{name}
+					</h3>
 					<p className="mt-2 text-sm text-secondary text-[14px] dark:text-gray-400">
 						{description}
 					</p>
@@ -85,21 +87,20 @@ const Works = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>My projects</p>
-				<h2 className={styles.sectionHeadText}>Projects.</h2>
+				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
+					Projects.
+				</h2>
 			</motion.div>
-
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="max-w-3full text-[17px] text-secondary leading-[30px]"
+					className="max-w-3full text-[17px] text-secondary leading-[30px] dark:text-gray-400"
 				>
 					I have worked on a few projects, some of which are open source and
 					available on my GitHub. I am currently working on a few more projects
 					which will be available on my GitHub soon.
 				</motion.p>
 			</div>
-
 			<div className="mt-20 flex flex-wrap gap-7">
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />

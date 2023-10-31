@@ -1,28 +1,28 @@
 import {
-  mobile,
   backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
+  crw,
   css,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  jobit,
+  meta,
+  mobile,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  starbucks,
+  tailwind,
+  tesla,
   threejs,
+  tripguide,
+  typescript,
+  web,
+  nasa
 } from "../assets";
 
 export const navLinks = [
@@ -194,43 +194,113 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Crw Clothing",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Scalable e-commerce application built with React, Redux, GraphQL, Firebase, and Stripe.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "stripe",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Styled-Components",
         color: "pink-text-gradient",
       },
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    source_deployed_link: "https://github.com/",
+    image: crw,
+    source_code_link: "https://github.com/boamatule/crwn-clothing",
+    source_deployed_link: "https://crwn-clothing-root.herokuapp.com/",
   },
   {
-    name: "Job IT",
+    name: "NASA Mission Control",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Styled-Components",
+        color: "pink-text-gradient",
       },
       {
         name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Redux",
         color: "pink-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: nasa,
+    source_code_link: "https://github.com/boamatule/nasa_nodejs_project",
+    source_deployed_link: "http://13.50.105.59:8000/",
+  },
+  {
+    name: "Netflix Clone",
+    description:
+      "A Netflix clone built with Nextjs.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Hasura",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Framer-motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "blue-text-gradient",
       },
     ],
     image: jobit,
@@ -238,28 +308,6 @@ const projects = [
     source_deployed_link: "https://github.com/",
 
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    source_deployed_link: "https://github.com/",
-  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };

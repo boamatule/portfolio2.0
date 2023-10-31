@@ -40,9 +40,11 @@ const About = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>Introduction</p>
-				<h2 className={styles.sectionHeadText}>Overview.</h2>
+				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
+					Overview
+				</h2>
 			</motion.div>
+
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}

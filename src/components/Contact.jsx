@@ -20,7 +20,6 @@ const Contact = () => {
 		message: "",
 	});
 
-	
 	const handleChange = (e) => {
 		const { target } = e;
 		const { name, value } = target;
@@ -63,7 +62,6 @@ const Contact = () => {
 					setTimeout(() => {
 						navigate("/Success");
 					}, 3000);
-
 				},
 				(error) => {
 					setLoading(false);
@@ -75,15 +73,14 @@ const Contact = () => {
 	};
 
 	return (
-		
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
 			>
-				<p className={styles.sectionSubText}>Get in touch</p>
-				<h3 className={styles.sectionHeadText}>Contact.</h3>
-
+				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
+					Projects.
+				</h2>
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}

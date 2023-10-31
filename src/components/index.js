@@ -20,11 +20,12 @@ const Feedbacks = lazy(() => import('./Feedbacks'));
 const Works = lazy(() => import('./Works'));
 const Success = lazy(() => import('./Success'));
 const Contact = lazy(() => import('./Contact'));
+const NotFound = lazy(() => import('./NotFound'));
 
 export {
   About, BallCanvas,
   ComputersCanvas, Contact,
   EarthCanvas, Experience, Feedbacks, Hero,
   Navbar, StarsCanvas,
-  Success, Tech, Works
+  Success, Tech, Works, NotFound,
 };
