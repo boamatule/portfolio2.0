@@ -21,6 +21,7 @@ const Works = lazy(() => import('./Works'));
 const Success = lazy(() => import('./Success'));
 const Contact = lazy(() => import('./Contact'));
 const NotFound = lazy(() => import('./NotFound'));
+const Loader = lazy(() => import('./AppLoader'));
 
 export {
   About, BallCanvas,
@@ -28,4 +29,5 @@ export {
   EarthCanvas, Experience, Feedbacks, Hero,
   Navbar, StarsCanvas,
   Success, Tech, Works, NotFound,
+  Loader
 };

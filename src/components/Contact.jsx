@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import emailValidator from "email-validator";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -10,7 +11,6 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
 	const navigate = useNavigate();
-
 	const [loading, setLoading] = useState(false);
 
 	const formRef = useRef();
@@ -34,6 +34,12 @@ const Contact = () => {
 		e.preventDefault();
 		setLoading(true);
 
+		if (!emailValidator.validate(form.email)) {
+			alert("Please enter a valid email address.");
+			setLoading(false);
+			return;
+		}
+
 		emailjs
 			.send(
 				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -47,29 +53,30 @@ const Contact = () => {
 				},
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
 			)
-			.then(
-				(result) => {
-					setLoading(false);
-					console.log(result.text);
-					alert("Message Sent, I'll get back to you shortly");
+			.then((result) => {
+				setLoading(false);
+				console.log(result.text);
+				const successMessage = "Message sent successfully!"; // Define your success message
+				navigate("/Success", { state: { successMessage } });
+				console.log("Message sent! Rejoice!");
+				setTimeout(() => {
+					navigate("/");
+				}, 3000);
 
-					setForm({
-						name: "",
-						email: "",
-						message: "",
-					});
+				setForm({
+					name: "",
+					email: "",
+					message: "",
+				});
+			})
+			.catch((error) => {
+				setLoading(false);
+				console.log(error.text);
 
-					setTimeout(() => {
-						navigate("/Success");
-					}, 3000);
-				},
-				(error) => {
-					setLoading(false);
-					console.log(error.text);
+				alert("Ops! Something went terribly wrong, please try again");
+			});
 
-					alert("Ops! Something went terribly wrong, please try again");
-				},
-			);
+		e.target.reset();
 	};
 
 	return (
@@ -94,6 +101,7 @@ const Contact = () => {
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name"
+							required
 						/>
 					</label>
 
@@ -105,6 +113,7 @@ const Contact = () => {
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your Email"
+							required
 						/>
 					</label>
 
@@ -117,6 +126,7 @@ const Contact = () => {
 							value={form.message}
 							onChange={handleChange}
 							placeholder="What are you looking for today?"
+							required
 						/>
 					</label>
 					<button

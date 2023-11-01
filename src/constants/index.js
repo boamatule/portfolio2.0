@@ -22,7 +22,11 @@ import {
   tripguide,
   typescript,
   web,
-  nasa
+  nasa,
+  aws,
+  redis,
+  firebase,
+  netflix,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +55,10 @@ const services = [
   },
   {
     title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "E-commerce Manager",
     icon: backend,
   },
 ];
@@ -108,6 +116,15 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "aws",
+    icon: docker,
+  },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
+  
 ];
 
 const experiences = [
@@ -196,7 +213,7 @@ const projects = [
   {
     name: "Crw Clothing",
     description:
-      "Scalable e-commerce application built with React, Redux, GraphQL, Firebase, and Stripe.",
+      "A Scalable e-commerce application built with React, Redux, GraphQL, Firebase, Stripe.",
     tags: [
       {
         name: "react",
@@ -234,7 +251,7 @@ const projects = [
   {
     name: "NASA Mission Control",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Space launch system built with React and Node.js using the NASA and SpaceX APIs.",
     tags: [
       {
         name: "react",
@@ -272,38 +289,34 @@ const projects = [
   {
     name: "Netflix Clone",
     description:
-      "A Netflix clone built with Nextjs.",
+      "A Netflix clone built with Nextjs using YouTube's API.",
     tags: [
       {
-        name: "nextjs",
+        name: "next.js",
         color: "blue-text-gradient",
-      },
-      {
-        name: "GraphQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JWT",
-        color: "pink-text-gradient",
       },
       {
         name: "restapi",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Hasura",
         color: "green-text-gradient",
       },
       {
-        name: "Framer-motion",
+        name: "scss",
         color: "pink-text-gradient",
       },
       {
-        name: "GraphQL",
+        name: "magic-link",
         color: "blue-text-gradient",
       },
+      {
+        name: "jwt",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "pink-text-gradient",
+      },
     ],
-    image: jobit,
+    image: netflix,
     source_code_link: "https://github.com/",
     source_deployed_link: "https://github.com/",
 

@@ -32,7 +32,6 @@ const Navbar = () => {
 		<nav
 			className={`${
 				styles.paddingX
-				// styles.paddingY
 			} w-full flex items-center py-5 fixed top-0 z-20  ${
 				scrolled ? "bg-primary" : "bg-transparent"
 			}`}
@@ -47,9 +46,6 @@ const Navbar = () => {
 					}}
 				>
 					<img src={logo} alt="logo" className="w-10 h-10 object-contain" />
-					<p className="text-white text-[18px] font-bold cursor-pointer flex">
-						Boa Matule &nbsp;
-					</p>
 				</Link>
 
 				<div className="ml-auto flex-1 items-center flex space-x-3 justify-end">

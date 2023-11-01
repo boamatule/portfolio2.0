@@ -1,5 +1,6 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [react()],
@@ -7,6 +8,20 @@ export default defineConfig({
         port: 3000,
         envDir: './',
     },
+    build: {
+        rollupOptions: {
+            minify: 'terser', // This enables minification using Terser.
+
+            input: {
+                app: resolve(__dirname, 'index.html'),
+            },
+            output: {
+                chunkFileNames: 'assets/[name]-[hash].js',
+                assetFileNames: 'assets/[name]-[hash][extname]',
+            },
+        },
+    },
+
 })
 
 // import { image } from '@rollup/plugin-image';

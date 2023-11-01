@@ -21,6 +21,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import redis from "./tech/redis.png";
+import firebase from "./tech/firebase.png";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,6 +35,8 @@ import crw from "./crw.png";
 import nasa from "./nasa.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import netflix from "./netflix.png";
+
 
 export {
   logo,
@@ -63,4 +69,8 @@ export {
   globe,
   crw,
   nasa,
+  aws,
+  redis,
+  firebase,
+  netflix
 };
