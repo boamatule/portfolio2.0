@@ -6,7 +6,7 @@ import DarkModeButton from "../components/DarkMode/darkModeButton";
 import DarkTheme from "./DarkTheme";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { avatar, menu, close } from "../assets";
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -45,7 +45,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src={logo} alt="logo" className="w-10 h-10 object-contain" />
+					<img src={avatar} alt="logo" className="w-10 h-10 object-contain" />
 				</Link>
 
 				<div className="ml-auto flex-1 items-center flex space-x-3 justify-end">
@@ -80,7 +80,6 @@ const Navbar = () => {
 					<DarkTheme />
 
 					<div className="">
-					
 						<img
 							src={toggle ? close : menu}
 							alt="menu"

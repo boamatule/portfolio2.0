@@ -36,15 +36,6 @@ const NavBar = () => {
     <IconContext.Provider value={{ color: 'grey' }}>
       <Nav>
         <NavbarContainer>
-          <LogoContainer to="/">
-            <StyledLogo
-              src="../../../images/logo.png"
-              alt='logo'
-              loading="lazy"
-              title="Just a logo"
-              onClick={toggleHome}
-            />
-          </LogoContainer>
           <DropdownMobileIcon onClick={handleClick}>
             {click ? (
               <AnimatedFaTimes

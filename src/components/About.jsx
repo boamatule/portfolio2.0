@@ -50,10 +50,15 @@ const About = () => {
 					variants={fadeIn("", "", 0.1, 1)}
 					className="max-w-3full text-[17px] text-secondary leading-[30px] dark:text-gray-400"
 				>
-					I am a full stack developer with a passion for building beautiful and
+					I am a Full Stack Software Developer with a passion for building beautiful and
 					functional web applications. I have experience working with React,
-					TyspeScript, Next.js, Redux, Node, Express, MongoDB, and PostgreSQL. I
-					am currently looking for a full time position as a software engineer.
+					TyspeScript, Next.js, Redux, Node, Express, MongoDB, Firebae,
+					PostgreSQL & a lot more tech stack. I'm actively seeking a full-time
+					position as a full stack developer to continue delivering high-quality
+					web solutions.
+					<br />
+					I have also experience as a E-business Manager & willing to help you
+					with your business to reach the next level.
 				</motion.p>
 			</div>
 			<div className="mt-20 flex flex-wrap gap-10">

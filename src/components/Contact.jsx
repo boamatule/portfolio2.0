@@ -55,14 +55,10 @@ const Contact = () => {
 			)
 			.then((result) => {
 				setLoading(false);
-				console.log(result.text);
-				const successMessage = "Message sent successfully!"; // Define your success message
-				navigate("/Success", { state: { successMessage } });
-				console.log("Message sent! Rejoice!");
+				navigate("/Success");
 				setTimeout(() => {
 					navigate("/");
 				}, 3000);
-
 				setForm({
 					name: "",
 					email: "",
@@ -86,7 +82,7 @@ const Contact = () => {
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
 			>
 				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
-					Projects.
+					Get in touch.
 				</h2>
 				<form
 					ref={formRef}

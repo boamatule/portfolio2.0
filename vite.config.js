@@ -9,17 +9,12 @@ export default defineConfig({
         envDir: './',
     },
     build: {
+        sourcemap: true,
         rollupOptions: {
-            minify: 'terser', // This enables minification using Terser.
-
             input: {
                 app: resolve(__dirname, 'index.html'),
-            },
-            output: {
-                chunkFileNames: 'assets/[name]-[hash].js',
-                assetFileNames: 'assets/[name]-[hash][extname]',
-            },
-        },
+            }
+        }
     },
 
 })

@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import avatar from "./avatar.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -7,6 +8,7 @@ import github from "./github.png";
 import globe from "./globe.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import love from "./love.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,6 +41,7 @@ import netflix from "./netflix.png";
 
 
 export {
+  avatar,
   logo,
   backend,
   creator,
@@ -72,5 +75,6 @@ export {
   aws,
   redis,
   firebase,
-  netflix
+  netflix,
+  love,
 };
