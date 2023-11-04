@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+// import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import DarkModeButton from "../components/DarkMode/darkModeButton";
 import DarkTheme from "./DarkTheme";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { avatar, menu, close } from "../assets";
 
+async function loadIcons() {
+	const { FaGithub, FaLinkedinIn } = await import("react-icons/fa");
+	return { FaGithub, FaLinkedinIn };
+}
+
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const [icons, setIcons] = useState(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -22,6 +28,10 @@ const Navbar = () => {
 				setScrolled(false);
 			}
 		};
+
+		loadIcons().then((loadedIcons) => {
+			setIcons(loadedIcons);
+		});
 
 		window.addEventListener("scroll", handleScroll);
 
@@ -56,12 +66,7 @@ const Navbar = () => {
 						aria-label="GitHub"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
-						<FaGithub
-							style={{
-								width: "18px",
-								height: "18px",
-							}}
-						/>
+						{icons && icons.FaGithub && <icons.FaGithub />}
 					</a>
 					<a
 						href="https://www.linkedin.com/in/boa-matule-2082b068/"
@@ -70,12 +75,7 @@ const Navbar = () => {
 						aria-label="LinkedIn"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
-						<FaLinkedinIn
-							style={{
-								width: "18px",
-								height: "18px",
-							}}
-						/>
+						{icons && icons.FaLinkedinIn && <icons.FaLinkedinIn />}
 					</a>
 					<DarkTheme />
 

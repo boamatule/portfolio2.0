@@ -8,7 +8,7 @@ import github from "./github.png";
 import globe from "./globe.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import love from "./love.png";
+import love from "./love.webp";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -33,11 +33,11 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import crw from "./crw.png";
-import nasa from "./nasa.png";
+import crw from "./crw.webp";
+import nasa from "./nasa.webp";
+import netflix from "./netflix.webp";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import netflix from "./netflix.png";
 
 
 export {
@@ -67,8 +67,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  jobit,
-  tripguide,
   globe,
   crw,
   nasa,
@@ -77,4 +75,6 @@ export {
   firebase,
   netflix,
   love,
+  jobit,
+  tripguide
 };

@@ -1,19 +1,18 @@
-import { lazy } from 'react';
+import React from 'react';
 
 import { BallCanvas, ComputersCanvas, EarthCanvas, StarsCanvas } from './canvas';
 
-const Hero = lazy(() => import('./Hero'));
-const Navbar = lazy(() => import('./Navbar'));
-const About = lazy(() => import('./About'));
-const Tech = lazy(() => import('./Tech'));
-const Experience = lazy(() => import('./Experience'));
-const Feedbacks = lazy(() => import('./Feedbacks'));
-const Works = lazy(() => import('./Works'));
-const Contact = lazy(() => import('./Contact'));
-const Loader = lazy(() => import('./AppLoader'));
+const Hero = React.lazy(() => import('./Hero'));
+const Navbar = React.lazy(() => import('./Navbar'));
+const About = React.lazy(() => import('./About'));
+const Tech = React.lazy(() => import('./Tech'));
+const Experience = React.lazy(() => import('./Experience'));
+const Feedbacks = React.lazy(() => import('./Feedbacks'));
+const Works = React.lazy(() => import('./Works'));
+const Contact = React.lazy(() => import('./Contact'));
 
 export {
   About, BallCanvas,
   ComputersCanvas, Contact,
-  EarthCanvas, Experience, Feedbacks, Hero, Loader, Navbar, StarsCanvas, Tech, Works
+  EarthCanvas, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works
 };

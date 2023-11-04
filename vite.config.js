@@ -1,69 +1,48 @@
 import react from '@vitejs/plugin-react';
-import { resolve } from 'path';
+import brotli from "rollup-plugin-brotli";
+import gzipPlugin from 'rollup-plugin-gzip';
 import { defineConfig } from 'vite';
+import zlib from "zlib";
 
 export default defineConfig({
-    plugins: [react()],
+    plugins: [
+        react(),
+        // Brotli plugin with some defaults.
+        brotli({
+            test: /\.(js|jsx|css|html|txt|xml|json|svg|png|jpeg|webp)$/, // file extensions to compress
+            options: {
+                params: {
+                    [zlib.constants.BROTLI_PARAM_MODE]: zlib.constants.BROTLI_MODE_GENERIC,
+                    [zlib.constants.BROTLI_PARAM_QUALITY]: 11, // Compression quality (adjust as needed)
+                }
+            },
+            minSize: 1000, // Minimum file size for compression
+        }),
+        // Gzip plugin with some defaults.
+        gzipPlugin({
+            gzipOptions: {
+                level: 9, // Gzip compression level
+                minSize: 1000, // Minimum file size for compression
+            }
+        })
+    ],
     server: {
         port: 3000,
         envDir: './',
     },
+
     build: {
-        sourcemap: true,
+        emptyOutDir: true,
+        manifest: true,
         rollupOptions: {
-            input: {
-                app: resolve(__dirname, 'index.html'),
-            }
-        }
+            output: {
+                assetFileNames: (info) => {
+                    if (info.name.match(/\.(js|jsx|css|html|txt|xml|json|svg|png|jpeg|webp)$/)) {
+                        return `dist/assets/${info.name}`;
+                    }
+                },
+            },
+        },
     },
+});
 
-})
-
-// import { image } from '@rollup/plugin-image';
-// import react from '@vitejs/plugin-react';
-// import autoprefixer from 'autoprefixer';
-// import { resolve } from 'path';
-// import imports from 'postcss-import';
-// import { defineConfig } from 'vite';
-// import glsl from 'vite-plugin-glsl';
-// import gltf from 'vite-plugin-gltf';
-// import svgPlugin from 'vite-plugin-svg';
-// import postHtml from './plugin-post-html';
-
-// export default defineConfig({
-//     plugins: [
-//         react(),
-//         glsl(),
-//         gltf(),
-//         postHtml(),
-//         svgPlugin(),
-//         image()
-//     ],
-
-//     css: {
-//         devSourcemap: true,
-//         postcss: {
-//             plugins: [
-//                 imports(),
-//                 autoprefixer()
-//             ]
-//         }
-//     },
-
-//     build: {
-//         sourcemap: true,
-//         rollupOptions: {
-//             input: {
-//                 app: resolve(__dirname, 'index.html'),
-//                 404: resolve(__dirname, '404.html'),
-//                 // assetsInclude: /\.(png|jpe?g|gif|svg|woff2?|ttf|eot)$/, // Include these file types
-//                 // assetsExclude: /\.map$/, // Exclude files that match this pattern
-//                  },
-//         }
-//     },
-
-//     server: {
-//         port: 3000,
-//         envDir: './',
-//     }
-// });

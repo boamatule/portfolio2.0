@@ -5168,7 +5168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:*, @types/react-dom@npm:^18.0.0":
+"@types/react-dom@npm:*, @types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.10":
   version: 18.2.14
   resolution: "@types/react-dom@npm:18.2.14"
   dependencies:
@@ -5223,6 +5223,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 98a862efb06e53f6a0cc6b5fade44ba6d85e94cdc8ade19437f77b942c818fac63b4fc395c0afbeea2b919f40e0940bef63d8bfd4d63b2bd7ac92662acf022f9
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.0.27":
+  version: 18.2.34
+  resolution: "@types/react@npm:18.2.34"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 16446542228cba827143caf0ecb4718cbf02ae5befd4a6bc6d67ed144fe1c0cb4b06b20facf3d2b972d86c67a17cc82f5ec8a03fce42d50e12b2dcd0592fc66e
   languageName: node
   linkType: hard
 
@@ -19427,6 +19438,8 @@ __metadata:
     "@testing-library/react": ^14.0.0
     "@testing-library/user-event": ^14.4.3
     "@types/node": 20.4.5
+    "@types/react": ^18.0.27
+    "@types/react-dom": ^18.0.10
     "@types/three": ^0.156.0
     "@vercel/analytics": ^1.1.1
     "@vitejs/plugin-react": ^3.1.0
@@ -19474,6 +19487,8 @@ __metadata:
     react-typed: ^1.2.0
     react-vertical-timeline-component: ^3.6.0
     ri: ^0.0.0
+    rollup-plugin-brotli: ^3.1.0
+    rollup-plugin-gzip: ^3.1.0
     sitemap: ^7.1.1
     styled-components: ^6.0.6
     svgo: ^3.0.2
@@ -19482,7 +19497,7 @@ __metadata:
     three: ^0.157.0
     twin.macro: ^3.4.0
     uglify-js: ^3.17.4
-    vite: ^4.1.0
+    vite: ^4.4.9
     vite-plugin-glsl: ^1.1.2
     vite-plugin-gltf: ^4.0.0
     vite-plugin-svg: ^0.7.0
@@ -22938,6 +22953,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-brotli@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "rollup-plugin-brotli@npm:3.1.0"
+  checksum: 5ea743b42e5db66d145933996029b85ebc6c377bcccd13e45ec794aebca9b041c81d383b75da542d0e6f8161faf5aa413470d4041f3e9e0db5713ed554a10493
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-gzip@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "rollup-plugin-gzip@npm:3.1.0"
+  peerDependencies:
+    rollup: ">=2.0.0"
+  checksum: b6e9671639f50bd4fda586603d784597abe19925ceda81fd4d3aa44f538b3be45f4d4b29ea1e251c20b2f2c3c16f498e762fac266114751f827b324acfca8b4f
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-terser@npm:^7.0.0":
   version: 7.0.2
   resolution: "rollup-plugin-terser@npm:7.0.2"
@@ -26058,7 +26089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.1.0":
+"vite@npm:^4.4.9":
   version: 4.5.0
   resolution: "vite@npm:4.5.0"
   dependencies:

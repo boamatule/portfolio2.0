@@ -214,6 +214,19 @@
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<script>
+			if (typeof PerformanceObserver !== 'undefined') {
+				const observer = new PerformanceObserver((entryList) => {
+					const entries = entryList.getEntriesByName('first-contentful-paint');
+					for (const entry of entries) {
+						console.log('FCP:', entry.startTime);
+					}
+				});
+	
+				observer.observe({ type: 'paint', buffered: true });
+			}
+		</script>
+	
 		<form
 			name="contact"
 			method="post"
