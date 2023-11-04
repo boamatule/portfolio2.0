@@ -34,6 +34,7 @@ export default defineConfig({
     build: {
         emptyOutDir: true,
         manifest: true,
+        sourcemap: true,
         rollupOptions: {
             output: {
                 assetFileNames: (info) => {
