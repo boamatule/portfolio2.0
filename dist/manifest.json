@@ -1,26 +1,25 @@
 {
-  "_SectionWrapper-de908c20.js": {
-    "file": "assets/SectionWrapper-de908c20.js",
+  "_SectionWrapper-98931f92.js": {
+    "file": "assets/SectionWrapper-98931f92.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_motion-9dbb0517.js"
+      "_motion-e9d1ba78.js"
     ]
   },
-  "_index-22a33d64.js": {
-    "file": "assets/index-22a33d64.js",
+  "_index-d4a3546e.js": {
+    "file": "assets/index-d4a3546e.js",
     "imports": [
       "index.html"
     ]
   },
-  "_index-50acd4fb.js": {
+  "_index-e953b3c5.js": {
     "assets": [
       "dist/assets/backend.png",
       "dist/assets/mobile.png",
       "dist/assets/web.png",
       "dist/assets/css.png",
       "dist/assets/docker.png",
-      "dist/assets/figma.png",
       "dist/assets/html.png",
       "dist/assets/mongodb.png",
       "dist/assets/nodejs.png",
@@ -37,10 +36,10 @@
       "dist/assets/nasa.webp",
       "dist/assets/netflix.webp"
     ],
-    "file": "assets/index-50acd4fb.js"
+    "file": "assets/index-e953b3c5.js"
   },
-  "_motion-9dbb0517.js": {
-    "file": "assets/motion-9dbb0517.js",
+  "_motion-e9d1ba78.js": {
+    "file": "assets/motion-e9d1ba78.js",
     "imports": [
       "index.html"
     ]
@@ -48,8 +47,8 @@
   "_styles-bea25d13.js": {
     "file": "assets/styles-bea25d13.js"
   },
-  "_tilt-eb0ec6cb.js": {
-    "file": "assets/tilt-eb0ec6cb.js",
+  "_tilt-d97be867.js": {
+    "file": "assets/tilt-d97be867.js",
     "imports": [
       "index.html"
     ]
@@ -74,12 +73,12 @@
       "src/components/ErrorPage.jsx",
       "src/components/Success.jsx"
     ],
-    "file": "assets/index-541256d7.js",
+    "file": "assets/index-b0c9de15.js",
     "isEntry": true,
     "src": "index.html"
   },
   "node_modules/react-icons/fa/index.esm.js": {
-    "file": "assets/index.esm-a7daf478.js",
+    "file": "assets/index.esm-fee44215.js",
     "imports": [
       "index.html"
     ],
@@ -219,32 +218,32 @@
     "src": "src/assets/web.png"
   },
   "src/components/About.jsx": {
-    "file": "assets/About-cea7adfc.js",
+    "file": "assets/About-c3920032.js",
     "imports": [
       "index.html",
-      "_tilt-eb0ec6cb.js",
-      "_index-22a33d64.js",
+      "_tilt-d97be867.js",
+      "_index-d4a3546e.js",
       "_styles-bea25d13.js",
-      "_index-50acd4fb.js",
-      "_SectionWrapper-de908c20.js",
-      "_motion-9dbb0517.js"
+      "_index-e953b3c5.js",
+      "_SectionWrapper-98931f92.js",
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/About.jsx"
   },
   "src/components/Contact.jsx": {
-    "file": "assets/Contact-bdd873a1.js",
+    "file": "assets/Contact-2b935fa5.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_SectionWrapper-de908c20.js",
-      "_motion-9dbb0517.js"
+      "_SectionWrapper-98931f92.js",
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Contact.jsx"
   },
   "src/components/ErrorPage.jsx": {
-    "file": "assets/ErrorPage-4d8e0905.js",
+    "file": "assets/ErrorPage-d3f45d28.js",
     "imports": [
       "index.html"
     ],
@@ -259,20 +258,20 @@
     "css": [
       "dist/assets/Experience.css"
     ],
-    "file": "assets/Experience-e36641d2.js",
+    "file": "assets/Experience-961f8a9e.js",
     "imports": [
       "index.html",
-      "_index-22a33d64.js",
+      "_index-d4a3546e.js",
       "_styles-bea25d13.js",
-      "_index-50acd4fb.js",
-      "_SectionWrapper-de908c20.js",
-      "_motion-9dbb0517.js"
+      "_index-e953b3c5.js",
+      "_SectionWrapper-98931f92.js",
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Experience.jsx"
   },
   "src/components/Feedbacks.jsx": {
-    "file": "assets/Feedbacks-64406df1.js",
+    "file": "assets/Feedbacks-44aa8384.js",
     "imports": [
       "index.html"
     ],
@@ -280,11 +279,11 @@
     "src": "src/components/Feedbacks.jsx"
   },
   "src/components/Hero.jsx": {
-    "file": "assets/Hero-b92f9bb4.js",
+    "file": "assets/Hero-9ad0093a.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_motion-9dbb0517.js"
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Hero.jsx"
@@ -298,11 +297,11 @@
     "dynamicImports": [
       "node_modules/react-icons/fa/index.esm.js"
     ],
-    "file": "assets/Navbar-17508695.js",
+    "file": "assets/Navbar-8b10cbdb.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_index-50acd4fb.js"
+      "_index-e953b3c5.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Navbar.jsx"
@@ -311,25 +310,25 @@
     "assets": [
       "dist/assets/love.webp"
     ],
-    "file": "assets/Success-403c2596.js",
+    "file": "assets/Success-d7f09272.js",
     "imports": [
       "index.html",
-      "_index-22a33d64.js",
-      "_SectionWrapper-de908c20.js",
+      "_index-d4a3546e.js",
+      "_SectionWrapper-98931f92.js",
       "_styles-bea25d13.js",
-      "_motion-9dbb0517.js"
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Success.jsx"
   },
   "src/components/Tech.jsx": {
-    "file": "assets/Tech-4e15e0f5.js",
+    "file": "assets/Tech-71225c60.js",
     "imports": [
       "index.html",
-      "_index-50acd4fb.js",
-      "_SectionWrapper-de908c20.js",
+      "_index-e953b3c5.js",
+      "_SectionWrapper-98931f92.js",
       "_styles-bea25d13.js",
-      "_motion-9dbb0517.js"
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Tech.jsx"
@@ -339,15 +338,15 @@
       "dist/assets/github.png",
       "dist/assets/globe.svg"
     ],
-    "file": "assets/Works-301a590f.js",
+    "file": "assets/Works-d448674d.js",
     "imports": [
       "index.html",
-      "_tilt-eb0ec6cb.js",
-      "_index-22a33d64.js",
-      "_SectionWrapper-de908c20.js",
+      "_tilt-d97be867.js",
+      "_index-d4a3546e.js",
+      "_SectionWrapper-98931f92.js",
       "_styles-bea25d13.js",
-      "_index-50acd4fb.js",
-      "_motion-9dbb0517.js"
+      "_index-e953b3c5.js",
+      "_motion-e9d1ba78.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Works.jsx"
