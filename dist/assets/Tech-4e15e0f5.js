@@ -1,0 +1,2 @@
+import{a,B as e}from"./index-541256d7.js";import{t as o}from"./index-50acd4fb.js";import{S as s}from"./SectionWrapper-de908c20.js";import"./styles-bea25d13.js";import"./motion-9dbb0517.js";const i=()=>a("div",{className:"flex flex-row flex-wrap justify-center gap-10",children:o.map(r=>a("div",{className:"w-28 h-28",children:a(e,{icon:r.icon,color:r.color})},r.name))}),n=s(i,"");export{n as default};
+//# sourceMappingURL=Tech-4e15e0f5.js.map
