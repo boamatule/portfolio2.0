@@ -1,1 +1,0 @@
-{"version":3,"file":"Feedbacks-44aa8384.js","sources":["../../src/components/Feedbacks.jsx"],"sourcesContent":["import React from 'react'\n\nconst Feedbacks = () => {\n  return (\n    <div>Feedbacks</div>\n  )\n}\n\nexport default Feedbacks"],"names":["Feedbacks","jsx"],"mappings":"wCAEA,MAAMA,EAAY,IAEdC,EAAC,OAAI,SAAS,WAAA,CAAA"}

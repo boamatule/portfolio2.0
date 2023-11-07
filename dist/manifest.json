@@ -1,14 +1,20 @@
 {
-  "_SectionWrapper-98931f92.js": {
-    "file": "assets/SectionWrapper-98931f92.js",
+  "_Loader-30cbc525.js": {
+    "file": "assets/Loader-30cbc525.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_SectionWrapper-8891d4b3.js": {
+    "file": "assets/SectionWrapper-8891d4b3.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_motion-e9d1ba78.js"
+      "_motion-a1f6b7b8.js"
     ]
   },
-  "_index-d4a3546e.js": {
-    "file": "assets/index-d4a3546e.js",
+  "_index-cef83f53.js": {
+    "file": "assets/index-cef83f53.js",
     "imports": [
       "index.html"
     ]
@@ -38,8 +44,8 @@
     ],
     "file": "assets/index-e953b3c5.js"
   },
-  "_motion-e9d1ba78.js": {
-    "file": "assets/motion-e9d1ba78.js",
+  "_motion-a1f6b7b8.js": {
+    "file": "assets/motion-a1f6b7b8.js",
     "imports": [
       "index.html"
     ]
@@ -47,8 +53,8 @@
   "_styles-bea25d13.js": {
     "file": "assets/styles-bea25d13.js"
   },
-  "_tilt-d97be867.js": {
-    "file": "assets/tilt-d97be867.js",
+  "_tilt-00f1b3ce.js": {
+    "file": "assets/tilt-00f1b3ce.js",
     "imports": [
       "index.html"
     ]
@@ -73,12 +79,12 @@
       "src/components/ErrorPage.jsx",
       "src/components/Success.jsx"
     ],
-    "file": "assets/index-b0c9de15.js",
+    "file": "assets/index-22e0b2bd.js",
     "isEntry": true,
     "src": "index.html"
   },
   "node_modules/react-icons/fa/index.esm.js": {
-    "file": "assets/index.esm-fee44215.js",
+    "file": "assets/index.esm-f6b799b5.js",
     "imports": [
       "index.html"
     ],
@@ -218,32 +224,33 @@
     "src": "src/assets/web.png"
   },
   "src/components/About.jsx": {
-    "file": "assets/About-c3920032.js",
+    "file": "assets/About-9cd8fe9f.js",
     "imports": [
       "index.html",
-      "_tilt-d97be867.js",
-      "_index-d4a3546e.js",
+      "_tilt-00f1b3ce.js",
+      "_index-cef83f53.js",
       "_styles-bea25d13.js",
       "_index-e953b3c5.js",
-      "_SectionWrapper-98931f92.js",
-      "_motion-e9d1ba78.js"
+      "_SectionWrapper-8891d4b3.js",
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/About.jsx"
   },
   "src/components/Contact.jsx": {
-    "file": "assets/Contact-2b935fa5.js",
+    "file": "assets/Contact-3a3f26a5.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_SectionWrapper-98931f92.js",
-      "_motion-e9d1ba78.js"
+      "_Loader-30cbc525.js",
+      "_SectionWrapper-8891d4b3.js",
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Contact.jsx"
   },
   "src/components/ErrorPage.jsx": {
-    "file": "assets/ErrorPage-d3f45d28.js",
+    "file": "assets/ErrorPage-b207fc21.js",
     "imports": [
       "index.html"
     ],
@@ -258,20 +265,20 @@
     "css": [
       "dist/assets/Experience.css"
     ],
-    "file": "assets/Experience-961f8a9e.js",
+    "file": "assets/Experience-5ef5a3ed.js",
     "imports": [
       "index.html",
-      "_index-d4a3546e.js",
+      "_index-cef83f53.js",
       "_styles-bea25d13.js",
       "_index-e953b3c5.js",
-      "_SectionWrapper-98931f92.js",
-      "_motion-e9d1ba78.js"
+      "_SectionWrapper-8891d4b3.js",
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Experience.jsx"
   },
   "src/components/Feedbacks.jsx": {
-    "file": "assets/Feedbacks-44aa8384.js",
+    "file": "assets/Feedbacks-3b9615c4.js",
     "imports": [
       "index.html"
     ],
@@ -279,11 +286,12 @@
     "src": "src/components/Feedbacks.jsx"
   },
   "src/components/Hero.jsx": {
-    "file": "assets/Hero-9ad0093a.js",
+    "file": "assets/Hero-a4edc986.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
-      "_motion-e9d1ba78.js"
+      "_Loader-30cbc525.js",
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Hero.jsx"
@@ -297,7 +305,7 @@
     "dynamicImports": [
       "node_modules/react-icons/fa/index.esm.js"
     ],
-    "file": "assets/Navbar-8b10cbdb.js",
+    "file": "assets/Navbar-5a83b2e6.js",
     "imports": [
       "index.html",
       "_styles-bea25d13.js",
@@ -310,25 +318,26 @@
     "assets": [
       "dist/assets/love.webp"
     ],
-    "file": "assets/Success-d7f09272.js",
+    "file": "assets/Success-84870959.js",
     "imports": [
       "index.html",
-      "_index-d4a3546e.js",
-      "_SectionWrapper-98931f92.js",
+      "_index-cef83f53.js",
+      "_SectionWrapper-8891d4b3.js",
       "_styles-bea25d13.js",
-      "_motion-e9d1ba78.js"
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Success.jsx"
   },
   "src/components/Tech.jsx": {
-    "file": "assets/Tech-71225c60.js",
+    "file": "assets/Tech-18ae1666.js",
     "imports": [
       "index.html",
+      "_Loader-30cbc525.js",
       "_index-e953b3c5.js",
-      "_SectionWrapper-98931f92.js",
+      "_SectionWrapper-8891d4b3.js",
       "_styles-bea25d13.js",
-      "_motion-e9d1ba78.js"
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Tech.jsx"
@@ -338,15 +347,15 @@
       "dist/assets/github.png",
       "dist/assets/globe.svg"
     ],
-    "file": "assets/Works-d448674d.js",
+    "file": "assets/Works-ddcaf60c.js",
     "imports": [
       "index.html",
-      "_tilt-d97be867.js",
-      "_index-d4a3546e.js",
-      "_SectionWrapper-98931f92.js",
+      "_tilt-00f1b3ce.js",
+      "_index-cef83f53.js",
+      "_SectionWrapper-8891d4b3.js",
       "_styles-bea25d13.js",
       "_index-e953b3c5.js",
-      "_motion-e9d1ba78.js"
+      "_motion-a1f6b7b8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/components/Works.jsx"
