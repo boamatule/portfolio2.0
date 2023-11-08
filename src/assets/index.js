@@ -36,8 +36,6 @@ import tesla from "./company/tesla.png";
 import crw from "./crw.webp";
 import nasa from "./nasa.webp";
 import netflix from "./netflix.webp";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 
 export {
@@ -74,7 +72,5 @@ export {
   redis,
   firebase,
   netflix,
-  love,
-  jobit,
-  tripguide
+  love
 };

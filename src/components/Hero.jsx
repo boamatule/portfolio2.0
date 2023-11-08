@@ -24,11 +24,9 @@ const Hero = () => {
 			</div>
 			<ComputersCanvas />
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-				<a href="about" aria-label="scroll to section">
+				<a href="#about" aria-label="scroll to section">
 					<div
-						className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary 
-          flex justify-center items-start p-2"
-					>
+						className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
 						<motion.div
 							animate={{ 
 								y: [0, 24, 0],
@@ -47,4 +45,4 @@ const Hero = () => {
 	);
 };
 
-export default React.memo(Hero);
+export default Hero;

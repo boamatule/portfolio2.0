@@ -33,7 +33,7 @@ export default defineConfig({
 
     build: {
         emptyOutDir: true,
-        manifest: true,
+        manifest: false,
         sourcemap: true,
         rollupOptions: {
             output: {

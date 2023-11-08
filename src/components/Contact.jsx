@@ -33,13 +33,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
-
-		if (!emailValidator.validate(form.email)) {
-			alert("Please enter a valid email address.");
-			setLoading(false);
-			return;
-		}
-
+		
 		emailjs
 			.send(
 				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -53,26 +47,27 @@ const Contact = () => {
 				},
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
 			)
-			.then((result) => {
-				setLoading(false);
-				navigate("/Success");
-				setTimeout(() => {
-					navigate("/");
-				}, 3000);
-				setForm({
-					name: "",
-					email: "",
-					message: "",
-				});
-			})
-			.catch((error) => {
-				setLoading(false);
-				console.log(error.text);
+			.then(
+				() => {
+					setLoading(false);
+					navigate("/Success");
+					setTimeout(() => {
+						navigate("/");
+					}, 3000);
 
-				alert("Ops! Something went terribly wrong, please try again");
-			});
-
-		e.target.reset();
+					setForm({
+						name: "",
+						email: "",
+						message: "",
+					});
+				},
+				(error) => {
+					setLoading(false);
+					console.log(error.text);
+					alert("Ops! Something went terribly wrong, please try again");
+				},
+			);
+		// e.target.reset();
 	};
 
 	return (

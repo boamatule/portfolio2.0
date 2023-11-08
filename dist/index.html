@@ -90,6 +90,7 @@
 			content="Q6-ufLQK36I4mSSZ3eDu4ei9DtdKYhsoshYdseJ3UmY"
 		/>
 		<meta name="msapplication-TileColor" content="#da532c" />
+
 		<script type="text/javascript">
 			!(function (t, e, n, i, r, o, a, d, s, c, p, l) {
 				function u() {
@@ -204,31 +205,30 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-16x16.png" />
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 
-	
 		<style>
 			::-webkit-scrollbar {
 				overflow-y: hidden;
 				overflow-x: hidden;
 			}
 		</style>
-		<script type="module" crossorigin src="/assets/index-22e0b2bd.js"></script>
+		<script type="module" crossorigin src="/assets/index-a330bde9.js"></script>
 		<link rel="stylesheet" href="/dist/assets/index.css">
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<script>
-			if (typeof PerformanceObserver !== 'undefined') {
+			if (typeof PerformanceObserver !== "undefined") {
 				const observer = new PerformanceObserver((entryList) => {
-					const entries = entryList.getEntriesByName('first-contentful-paint');
+					const entries = entryList.getEntriesByName("first-contentful-paint");
 					for (const entry of entries) {
-						console.log('FCP:', entry.startTime);
+						console.log("FCP:", entry.startTime);
 					}
 				});
-	
-				observer.observe({ type: 'paint', buffered: true });
+
+				observer.observe({ type: "paint", buffered: true });
 			}
 		</script>
-	
+
 		<form
 			name="contact"
 			method="post"
@@ -240,7 +240,7 @@
 			<input type="email" name="email" label="Your Email Address" />
 			<textarea name="message" label="message"></textarea>
 		</form>
-		<div id="root" />
+		<div id="root"></div>
 		
 	</body>
 </html>

@@ -15,22 +15,19 @@ import {
 
 const App = () => {
 	return (
-		<Suspense fallback={<div>Loading...</div>}>
-				<div className="relative z-0 bg-primary dark:bg-white">
-					<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-						<Navbar />
-						<Hero />
-					</div>
-					<About />
-					<Tech />
-					<Works />
-					<div className="relative z-0">
-						<Contact />
-						<StarsCanvas />
-					</div>
+			<div className="relative z-0 bg-primary dark:bg-white">
+				<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+					<Navbar />
+					<Hero />
 				</div>
-				<Outlet />
-				</Suspense>
+				<About />
+				<Works />
+				<div className="relative z-0">
+					<Contact />
+					<StarsCanvas />
+				</div>
+			</div>
+	
 	);
 };
 
