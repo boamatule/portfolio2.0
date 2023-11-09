@@ -89,9 +89,11 @@ const Contact = () => {
 							className="bg-tertiary rounded-lg py-4 px-6 text-white outline-none placeholder:text-secondary border-none font-medium"
 							type="text"
 							name="name"
+							id="name"
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name"
+							autoComplete="on"
 							required
 						/>
 					</label>
@@ -101,9 +103,11 @@ const Contact = () => {
 							className="bg-tertiary rounded-lg py-4 px-6 text-white outline-none placeholder:text-secondary border-none font-medium"
 							type="email"
 							name="email"
+							id="email"
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your Email"
+							autoComplete="on"
 							required
 						/>
 					</label>
@@ -114,9 +118,11 @@ const Contact = () => {
 							rows="7"
 							type="text"
 							name="message"
+							id="message"
 							value={form.message}
 							onChange={handleChange}
 							placeholder="What are you looking for today?"
+							autoComplete="on"
 							required
 						/>
 					</label>
