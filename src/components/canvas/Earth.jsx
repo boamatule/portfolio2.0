@@ -10,7 +10,7 @@ const Earth = () => {
 
 	useEffect(() => {
 		const loader = new GLTFLoader();
-		loader.load("./planet/scene.glb", (gltf) => {
+		loader.load("./planet/scene.gltf", (gltf) => {
 			setModel(gltf.scene);
 		});
 	}, []);

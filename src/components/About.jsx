@@ -22,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => {
 					}}
 					className="bg-tertiary rounded-[20px] py-5 px-12 h-[280px] flex justify-evenly items-center flex-col"
 				>
-					<LazyLoadImage
+					<img
 						src={icon}
 						alt={title}
 						className="w-16 h-16 object-contain"
