@@ -23,10 +23,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import aws from "./tech/aws.png";
-import redis from "./tech/redis.png";
-import firebase from "./tech/firebase.png";
-
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -68,9 +64,6 @@ export {
   globe,
   crw,
   nasa,
-  aws,
-  redis,
-  firebase,
   netflix,
   love
 };

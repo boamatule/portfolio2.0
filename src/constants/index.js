@@ -21,9 +21,6 @@ import {
   typescript,
   web,
   nasa,
-  aws,
-  redis,
-  firebase,
   netflix,
 } from "../assets";
 
@@ -109,14 +106,6 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
-  },
-  {
-    name: "aws",
-    icon: docker,
-  },
-  {
-    name: "firebase",
-    icon: firebase,
   },
   
 ];

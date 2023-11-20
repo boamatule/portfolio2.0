@@ -77,8 +77,6 @@ const Navbar = () => {
 					>
 						{icons && icons.FaLinkedinIn && <icons.FaLinkedinIn />}
 					</a>
-					<DarkTheme />
-
 					<div className="">
 						<img
 							src={toggle ? close : menu}
