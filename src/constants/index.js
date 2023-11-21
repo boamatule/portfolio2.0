@@ -196,7 +196,7 @@ const projects = [
   {
     name: "Crw Clothing",
     description:
-      "A Scalable e-commerce application built with React, Redux, GraphQL, Firebase, Stripe.",
+      "A Scalable e-commerce application built with React, Redux, GraphQL, Firebase, Stripe...",
     tags: [
       {
         name: "react",
@@ -234,7 +234,7 @@ const projects = [
   {
     name: "NASA Mission Control",
     description:
-      "A Space launch system built with React and Node.js using the NASA and SpaceX APIs.",
+      "A Space launch system built with React and Node.js using the NASA and SpaceX APIs...",
     tags: [
       {
         name: "react",
@@ -272,7 +272,7 @@ const projects = [
   {
     name: "Netflix Clone",
     description:
-      "A Netflix clone built with Nextjs using YouTube's API.",
+      "A Netflix clone built with Nextjs using YouTube's API, GraphQL, Magic-Link...",
     tags: [
       {
         name: "next.js",
