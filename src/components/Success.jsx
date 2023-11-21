@@ -9,7 +9,7 @@ const Success = () => {
 				alt="Success"
 				className="font-bold text-7xl mb-5 text-center w-1/2 h-1/2 object-contain"
 			/>
-			<p to="/" className="font-poppins text-center">
+			<p to="/" className="font-Roboto-Mono text-center">
 				Your message has been sent successfully. I will contact you soon!
 			</p>
 		</div>

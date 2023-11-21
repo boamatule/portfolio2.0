@@ -1,16 +1,11 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
-
-  return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
-  );
-};
+// Lazy load the Earth component
+const EarthModel = lazy(() => import("./EarthModel"));
 
 const EarthCanvas = () => {
   return (
@@ -33,7 +28,9 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+
+        {/* Use the lazily loaded Earth component */}
+        <EarthModel />
 
         <Preload all />
       </Suspense>

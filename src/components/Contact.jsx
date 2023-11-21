@@ -33,7 +33,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
-		
+
 		emailjs
 			.send(
 				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -42,7 +42,7 @@ const Contact = () => {
 					from_name: form.name,
 					to_name: "Boa Matule",
 					from_email: form.email,
-					to_email: "boa.matule@gmail.com",
+					to_email: form.email,
 					message: form.message,
 				},
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
@@ -67,17 +67,16 @@ const Contact = () => {
 					alert("Ops! Something went terribly wrong, please try again");
 				},
 			);
-		// e.target.reset();
 	};
 
 	return (
-		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-0 overflow-hidden">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
 			>
 				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
-					Get in touch.
+					Get in touch
 				</h2>
 				<form
 					ref={formRef}

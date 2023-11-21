@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
-// import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import DarkModeButton from "../components/DarkMode/darkModeButton";
 import DarkTheme from "./DarkTheme";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -47,18 +45,8 @@ const Navbar = () => {
 			}`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-				<Link
-					to="/"
-					className="flex items-center gap-2"
-					onClick={() => {
-						setActive("");
-						window.scrollTo(0, 0);
-					}}
-				>
-					<img src={avatar} alt="logo" className="w-10 h-10 object-contain" />
-				</Link>
-
-				<div className="ml-auto flex-1 items-center flex space-x-3 justify-end">
+					<DarkTheme />
+				<div className="ml-auto flex-1 items-center flex space-x-6 gap-4 justify-end">
 					<a
 						href="https://github.com/boamatule/"
 						target="_blank"
@@ -118,7 +106,7 @@ const Navbar = () => {
 							key={link.id}
 							className={`${
 								active === link.title ? "text-white" : "text-gray-400"
-							} font-poppins cursor-pointer text-[16px] font-medium`}
+							} font-roboto-mono cursor-pointer text-[16px] font-medium`}
 							onClick={() => {
 								setToggle(!toggle);
 								setActive(link.title);

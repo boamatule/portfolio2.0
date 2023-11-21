@@ -8,6 +8,7 @@ const Hero = lazy(() => import("./components/Hero"));
 const Contact = lazy(() => import("./components/Contact"));
 const Works = lazy(() => import("./components/Works"));
 const About = lazy(() => import("./components/About"));
+const Footer = lazy(() => import("./components/Footer"));
 
 const App = () => {
   useEffect(() => {
@@ -61,6 +62,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       </Suspense>
     </>
