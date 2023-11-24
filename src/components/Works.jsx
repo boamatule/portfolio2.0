@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
@@ -88,7 +88,7 @@ const Works = () => {
 		<>
 			<motion.div variants={textVariant()}>
 				<h2 className={`${styles.sectionHeadText} dark:text-gray-400`}>
-					Projects.
+					Projects
 				</h2>
 			</motion.div>
 			<div className="w-full flex">

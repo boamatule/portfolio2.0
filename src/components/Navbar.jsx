@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
 import DarkTheme from "./DarkTheme";
+
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { avatar, menu, close } from "../assets";
 
-async function loadIcons() {
+const loadIcons = async () => {
 	const { FaGithub, FaLinkedinIn } = await import("react-icons/fa");
 	return { FaGithub, FaLinkedinIn };
-}
+};
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -45,7 +46,7 @@ const Navbar = () => {
 			}`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-					<DarkTheme />
+				<DarkTheme />
 				<div className="ml-auto flex-1 items-center flex space-x-6 gap-4 justify-end">
 					<a
 						href="https://github.com/boamatule/"
@@ -54,7 +55,11 @@ const Navbar = () => {
 						aria-label="GitHub"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
-						{icons && icons.FaGithub && <icons.FaGithub />}
+						{icons ? (
+							icons.FaGithub && <icons.FaGithub />
+						) : (
+							<span>Loading...</span>
+						)}
 					</a>
 					<a
 						href="https://www.linkedin.com/in/boa-matule-2082b068/"
@@ -63,7 +68,11 @@ const Navbar = () => {
 						aria-label="LinkedIn"
 						className="text-white hover:text-gray-400 cursor-pointer text-[18px] dark:text-gray-400"
 					>
-						{icons && icons.FaLinkedinIn && <icons.FaLinkedinIn />}
+						{icons ? (
+							icons.FaLinkedinIn && <icons.FaLinkedinIn />
+						) : (
+							<span>Loading...</span>
+						)}
 					</a>
 					<div className="">
 						<img
@@ -106,7 +115,7 @@ const Navbar = () => {
 							key={link.id}
 							className={`${
 								active === link.title ? "text-white" : "text-gray-400"
-							} font-roboto-mono cursor-pointer text-[16px] font-medium`}
+							} font-poppins cursor-pointer text-[16px] font-medium`}
 							onClick={() => {
 								setToggle(!toggle);
 								setActive(link.title);

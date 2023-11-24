@@ -3,13 +3,14 @@ import {
   crw,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
   meta,
   mobile,
   mongodb,
+  nasa,
+  netflix,
   nodejs,
   reactjs,
   redux,
@@ -19,9 +20,7 @@ import {
   tesla,
   threejs,
   typescript,
-  web,
-  nasa,
-  netflix,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -50,10 +49,6 @@ const services = [
   },
   {
     title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "E-commerce Manager",
     icon: backend,
   },
 ];
@@ -107,7 +102,7 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-  
+
 ];
 
 const experiences = [

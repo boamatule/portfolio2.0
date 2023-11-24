@@ -2,12 +2,21 @@ import react from '@vitejs/plugin-react';
 import brotli from 'rollup-plugin-brotli';
 import gzipPlugin from 'rollup-plugin-gzip';
 import { defineConfig } from 'vite';
+import { analyzer } from "vite-bundle-analyzer";
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
+
 import zlib from 'zlib';
 
 export default defineConfig({
   plugins: [
     react(),
+    analyzer(
+      {
+        openAnalyzer: false,
+        analyzerMode: 'static',
+        reportFilename: 'report.html',
+      },
+    ),
     ViteMinifyPlugin({
       // Minify JavaScript and JSX files
       terserOptions: {
@@ -49,13 +58,14 @@ export default defineConfig({
     chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
+        sourcemap: true,
         assetFileNames: (info) => {
           if (info.name.match(/\.(js|jsx|css|html|txt|xml|json|svg|png|jpeg|webp)$/)) {
             return `assets/${info.name}`;
           }
         },
         manualChunks: {
-          'vendor': ['react', 'react-dom', 'framer-motion', 'react-router',  'react-router-dom'],
+          'vendor': ['react', 'react-dom', 'framer-motion', 'react-router', 'react-router-dom'],
           // 'index_chunk': ['dist/assets/index-9c2b9848.js'],
           // 'index_esm_chunk': ['dist/assets/index.esm-3554e272.js'],
         },

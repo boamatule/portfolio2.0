@@ -30,7 +30,9 @@ const ExperienceCard = ({ experience }) => {
 			}
 		>
 			<div>
-				<h3 className="text-white text-[24px] font-bold dark:text-gray-400">{experience.title}</h3>
+				<h3 className="text-white text-[24px] font-bold dark:text-gray-400">
+					{experience.title}
+				</h3>
 				<p className="text-secondary text-semibold text-[16px] style={{ margin: 0 }} dark:text-gray-400">
 					{experience.company_name}
 				</p>
@@ -68,4 +70,4 @@ const Experience = () => {
 	);
 };
 
-export default React.memo(SectionWrapper(Experience, "work"));
+export default React.memo(SectionWrapper(Experience, "experience"));

@@ -4,7 +4,6 @@ import { OrbitControls, Preload } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-// Lazy load the Ball component
 const BallModel = lazy(() => import("./BallModel"));
 
 const BallCanvas = ({ icon }) => {
@@ -12,8 +11,6 @@ const BallCanvas = ({ icon }) => {
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-
-        {/* Use the lazily loaded Ball component */}
         <BallModel imgUrl={icon} />
       </Suspense>
       <Preload all />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -13,11 +13,11 @@ const Hero = () => {
 				</div>
 				<div>
 					<h1 className={`${styles.heroHeadText} dark:text-gray-400`}>
-						Hi, I'm <span className="text-[#915eff]">Boa Matule</span>
+						Hi, I'm <span className="text-[#915eff]">Boa Matule.</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-gray-400`}>
 						I'm a Full Stack Software Developer based in Oslo, Norway.{" "}
-						<br className="sm:block hidden" />Specialize in crafting scalable, secure and highly performant web
+						<br className="sm:block hidden" />Specialized in crafting scalable, secure and highly performant web
 						applications.
 					</p>
 				</div>

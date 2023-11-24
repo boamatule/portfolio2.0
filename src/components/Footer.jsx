@@ -1,13 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
-import emailValidator from "email-validator";
-
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import React from "react";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+
 
 const Footer = () => {
 	const currentDate = new Date().getFullYear();
@@ -21,4 +14,4 @@ const Footer = () => {
 	);
 };
 
-export default React.memo(SectionWrapper(Footer, ""));
+export default React.memo(SectionWrapper(Footer, "footer"));
