@@ -16,10 +16,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
     "@emailjs/browser": "^3.11.0",
-    "@gltf-transform/core": "^3.9.0",
-    "@gltf-transform/extensions": "^3.9.0",
     "@gltf-transform/functions": "^3.9.0",
     "@heroicons/react": "1",
     "@react-three/drei": "^9.88.4",
@@ -79,7 +76,6 @@
     "autoprefixer": "^10.4.13",
     "babel-eslint": "^10.1.0",
     "depcheck": "^1.4.7",
-    "enzyme": "^3.11.0",
     "eslint": "^8.50.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
