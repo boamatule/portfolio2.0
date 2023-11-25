@@ -66,8 +66,6 @@ export default defineConfig({
         },
         manualChunks: {
           'vendor': ['react', 'react-dom', 'framer-motion', 'react-router', 'react-router-dom'],
-          // 'index_chunk': ['dist/assets/index-9c2b9848.js'],
-          // 'index_esm_chunk': ['dist/assets/index.esm-3554e272.js'],
         },
       },
     },
