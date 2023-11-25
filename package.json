@@ -18,8 +18,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@gltf-transform/functions": "^3.9.0",
-    "@heroicons/react": "1",
-    "@react-three/drei": "^9.88.4",
+    "@heroicons/react": "^1.0.6",
+    "@react-three/drei": "^9.88.17",
     "@react-three/fiber": "^8.14.5",
     "@types/node": "20.4.5",
     "email-validator": "^2.0.4",
