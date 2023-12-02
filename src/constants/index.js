@@ -3,6 +3,7 @@ import {
   crw,
   css,
   docker,
+  dropbox,
   git,
   html,
   javascript,
@@ -296,8 +297,46 @@ const projects = [
     ],
     image: netflix,
     source_code_link: "https://github.com/",
-    source_deployed_link: "https://github.com/",
+    source_deployed_link: "https://discover-videos-nextjs.vercel.app/",
 
+  },
+  {
+    name: "Dropbox Clone",
+    description:
+      "A CRUD app built with Nextjs, Firebase, Clerk, Tailwind CSS, and Vercel...",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Clerk",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dropbox,
+    source_code_link: "https://github.com/boamatule/dropbox-clone-nextjs14",
+    source_deployed_link: "https://dropbox-clone-nextjs-14.vercel.app/",
   },
 ];
 
